@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rachel.fast.ai/posts/post-with-code/index.html</loc>
-    <lastmod>2023-02-03T23:04:05.486Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/welcome/index.html</loc>
-    <lastmod>2023-02-03T23:04:05.745Z</lastmod>
+    <loc>https://rachel.fast.ai/about.html</loc>
+    <lastmod>2023-02-03T23:22:25.041Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/index.html</loc>
-    <lastmod>2023-02-03T23:04:06.017Z</lastmod>
+    <lastmod>2023-02-03T23:22:25.734Z</lastmod>
   </url>
   <url>
-    <loc>https://rachel.fast.ai/about.html</loc>
-    <lastmod>2023-02-03T23:04:06.247Z</lastmod>
+    <loc>https://rachel.fast.ai/posts/post-with-code/index.html</loc>
+    <lastmod>2023-02-03T23:22:26.343Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/welcome/index.html</loc>
+    <lastmod>2023-02-03T23:22:26.892Z</lastmod>
   </url>
 </urlset>
