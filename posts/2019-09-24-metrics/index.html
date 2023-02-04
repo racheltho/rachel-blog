@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2019-09-24">
+<meta name="description" content="Unthinkingly optimizing metrics can lead to a variety of grave harms, and what most current AI approaches do is to optimize metrics.">
+
+<title>Rachel Thomas, PhD - The problem with metrics is a big problem for AI</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">The problem with metrics is a big problem for AI</h1>
+                  <div>
+        <div class="description">
+          Unthinkingly optimizing metrics can lead to a variety of grave harms, and what most current AI approaches do is to optimize metrics.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">ethics</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 24, 2019</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><em>Update: This post was expanded into a paper, <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Reliance on metrics is a fundamental challenge for AI</a>, by Rachel Thomas and David Uminsky, which was accepted to the <a href="https://www.sydney.edu.au/data-science/news-and-events/ethics-of-data-science-conference.html">Ethics of Data Science Conference 2020</a> and to <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Cell Patterns</a>. The paper version includes more grounding in previous academic work and a framework towards mitigating these harms.</em></p>
+<p>Goodhart’s Law states that <em>“When a measure becomes a target, it ceases to be a good measure.”</em> At their heart, what most current AI approaches do is to optimize metrics. The practice of optimizing metrics is not new nor unique to AI, yet AI can be particularly efficient (even <em>too</em> efficient!) at doing so.</p>
+<p>This is important to understand, because any risks of optimizing metrics are heightened by AI. While metrics can be useful in their proper place, there are harms when they are unthinkingly applied. Some of the scariest instances of algorithms run amok (such as <a href="https://www.fast.ai/posts/2019-05-28-google-nyt-mohan.html">Google’s algorithm contributing to radicalizing people into white supremacy</a>, <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">teachers being fired by an algorithm</a>, or <a href="https://www.vice.com/en_us/article/pa7dj9/flawed-algorithms-are-grading-millions-of-students-essays">essay grading software</a> that rewards sophisticated garbage) all result from over-emphasizing metrics. We have to understand this dynamic in order to understand the urgent risks we are facing due to misuse of AI.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="metrics.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Headlines from HBR, Washington Post, and Vice on some of the outcomes of over-optimizing metrics: rewarding gibberish essays, promoting propaganda, massive fraud at Wells Fargo, and firing good teachers</figcaption><p></p>
+</figure>
+</div>
+The following principles will be illustrated through a series of case studies:
+<ul>
+<li>
+<a href="#proxy">Any metric is just a proxy for what you really care about</a>
+</li>
+<li>
+<a href="#gamed">Metrics can, and will, be gamed</a>
+</li>
+<li>
+<a href="#short-term">Metrics tend to overemphasize short-term concerns</a>
+</li>
+<li>
+<a href="#addictive">Many online metrics are gathered in highly addictive environments</a>
+</li>
+<li>
+<a href="#better">Metrics are most likely to be useful when they are treated as one piece of a bigger picture</a>
+</li>
+</ul>
+<h2 id="proxy" class="anchored">
+We can’t measure the things that matter most
+</h2>
+<p>Metrics are typically just a proxy for what we really care about. The paper <a href="https://scholar.harvard.edu/files/sendhil/files/aer.p20171084.pdf">Does Machine Learning Automate Moral Hazard and Error?</a> covers an interesting example: the researchers investigate which factors in someone’s electronic medical record are most predictive of a future stroke. However, the researchers found that several of the most predictive factors (such as accidental injury, a benign breast lump, or colonoscopy) don’t make sense as risk factors for stroke. So, just what is going on? It turned out that the model was just identifying people who <em>utilize</em> health care a lot. They didn’t actually have data of who had a stroke (a physiological event in which regions of the brain are denied new oxygen); they had data about who had access to medical care, chose to go to a doctor, were given the needed tests, and had this billing code added to their chart. But a number of factors influence this process: who has health insurance or can afford their co-pay, who can take time off of work or find childcare, gender and racial biases that impact who gets accurate diagnoses, cultural factors, and more. As a result, the model was largely picking out people who utilized healthcare versus who did not.</p>
+<p>This an example of the common phenomenon of having to use proxies: You want to know what content users like, so you measure what they click on. You want to know which teachers are most effective, so you measure their students test scores. You want to know about crime, so you measure arrests. These things are not the same. Many things we <em>do</em> care about can not be measured. Metrics can be helpful, but we can’t forget that they are just proxies.</p>
+<p>As another example, Google used hours spent watching YouTube as a proxy for how happy users were with the content, <a href="https://youtube-creators.googleblog.com/2012/08/youtube-now-why-we-focus-on-watch-time.html">writing on the Google blog</a> that <em>“If viewers are watching more YouTube, it signals to us that they’re happier with the content they’ve found.”</em> Guillaume Chaslot, an AI engineer who formerly worked at Google/YouTube, shares how this had the <a href="https://medium.com/@guillaumechaslot/how-algorithms-can-learn-to-discredit-the-media-d1360157c4fa">side effect of incentivizing conspiracy theories</a>, since convincing users that the rest of the media is lying kept them watching more YouTube.</p>
+<h2 id="gamed" class="anchored">
+Metrics can, and will, be gamed
+</h2>
+<p>It is almost inevitable that metrics will be gamed, particularly when they are given too much power. One week this spring, Chaslot collected 84,695 videos from YouTube and analyzed the number of views and the number of channels from which they were recommended. This is <a href="https://twitter.com/gchaslot/status/1121603851675553793?s=20">what he found</a> (also covered in <a href="https://www.washingtonpost.com/technology/2019/04/26/youtube-recommended-russian-media-site-above-all-others-analysis-mueller-report-watchdog-group-says/">the Washington Post</a>):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="YTRT.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Chart showing Russia Today’s video on the Mueller Report as being an outlier in how many YouTube channels recommended it.</figcaption><p></p>
+</figure>
+</div>
+<p>The state-owned media outlet Russia Today was an extreme outlier in how much YouTube’s algorithm had selected it to be recommended by a wide-variety of other YouTube channels. Such algorithmic selections, which begin autoplaying as soon as your current video is done, account for 70% of the time that users spend on YouTube. This chart strongly suggests that Russia Today has in some way gamed YouTube’s algorithm. Platforms are rife with attempts to game their algorithms, to show up higher in search results or recommended content, through fake clicks, fake reviews, fake followers, and more.</p>
+<p><a href="https://www.vice.com/en_us/article/pa7dj9/flawed-algorithms-are-grading-millions-of-students-essays">Automatic essay grading software</a> focuses primarily on metrics like sentence length, vocabulary, spelling, and subject-verb agreement, but is unable to evaluate aspects of writing that are hard to quantify, such as creativity. As a result, gibberish essays randomly generated by computer programs to contain lots of sophisticated words score well. Essays from students in mainland China, which do well on essay length and sophisticated word choice, received higher scores from the algorithms than from expert human graders, suggesting that these students may be using chunks of pre-memorized text.</p>
+<p>As USA education policy began over-emphasizing student test scores as the primary way to evaluate teachers, there have been <a href="https://www.nytimes.com/2010/06/11/education/11cheat.html">widespread scandals</a> of teachers and principals cheating by altering students scores, in Georgia, Indiana, Massachusetts, Nevada, Virginia, Texas, and elsewhere. One consequence of this is that <strong>teachers who don’t cheat may be penalized or <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">even fired</a></strong> (when it appears student test scores have dropped to more average levels under their instruction). When metrics are given undue importance, attempts to game those metrics become common.</p>
+<h2 id="short-term" class="anchored">
+Metrics tend to overemphasize short-term concerns
+</h2>
+<p>It is much easier to measure short-term quantities: click through rates, month-over-month churn, quarterly earnings. Many long-term trends have a complex mix of factors and are tougher to quantify. What is the long-term impact on user trust of having your brand associated with <a href="https://www.nytimes.com/2019/06/03/world/americas/youtube-pedophiles.html">promoting pedophilia</a>, <a href="https://www.theverge.com/2018/9/19/17876892/youtube-extremism-report-rebecca-lewis-data-society">white supremacy</a>, and <a href="https://www.bbc.com/news/technology-47279253">flat-earth theories</a>? What is the long-term impact on hiring to be the subject of years worth of <a href="https://www.wired.com/story/why-zuckerberg-15-year-apology-tour-hasnt-fixed-facebook/">privacy scandals</a>, <a href="https://www.vox.com/policy-and-politics/2019/1/22/18177076/social-media-facebook-far-right-authoritarian-populism">political manipulation</a>, and <a href="https://www.fast.ai/posts/2017-11-02-ethics.html">facilitating genocide</a>?</p>
+<p>Simply measuring what users click on is a short-term concern, and does not take into account factors like the potential long-term impact of a long-form investigative article which may have taken months to research and which could help shape a reader’s understanding of a complex issue and even lead to significant societal changes.</p>
+<p>A recent <a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business">Harvard Business Review article</a> looked at Wells Fargo as a case study of how letting metrics replace strategy can harm a business. After identifying cross-selling as a measure of long-term customer relationships, Wells Fargo went overboard emphasizing the cross-selling metric: intense pressure on employees combined with an unethical sales culture led to 3.5 million fraudulent deposit and credit card accounts being opened without customers’ consent. The metric of cross-selling is a much more short-term concern compared to the loftier goal of nurturing long-term customer relationships. Overemphasizing metrics removes our focus from long-term concerns such as our values, trust and reputation, and our impact on society and the environment, and myopically focuses on the short-term.</p>
+<h2 id="addictive" class="anchored">
+Many metrics gather data of what we do in highly addictive environments
+</h2>
+<p>It matters which metrics we gather and in what environment we do so. Metrics such as what users click on, how much time they spend on sites, and “engagement” are heavily relied on by tech companies as proxies for user preference, and are used to drive important business decisions. Unfortunately, these metrics are gathered in environments engineered to be highly addictive, <a href="https://twitter.com/random_walker/status/1143601343279579137?s=20">laden with dark patterns</a>, and where financial and design decisions have already greatly circumscribed the range of options.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="junkfood.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Our online environment is a buffet of junk food</figcaption><p></p>
+</figure>
+</div>
+<p>Zeynep Tufekci, a professor at UNC and regular contributor to the New York Times, compares recommendation algorithms (such as YouTube choosing which videos to auto-play for you and Facebook deciding what to put at the top of your newsfeed) to a <a href="https://www.theguardian.com/technology/2018/feb/02/how-youtubes-algorithm-distorts-truth">cafeteria shoving junk food</a> into children’s faces. <em>“This is a bit like an autopilot cafeteria in a school that has figured out children have sweet teeth, and also like fatty and salty foods. So you make a line offering such food, automatically loading the next plate as soon as the bag of chips or candy in front of the young person has been consumed.”</em> As those selections get normalized, the output becomes ever more extreme: <em>“So the food gets higher and higher in sugar, fat and salt – natural human cravings – while the videos recommended and auto-played by YouTube get more and more bizarre or hateful.”</em> Too many of our online environments are like this, with metrics capturing that we love sugar, fat, and salt, not taking into account that we are in the digital equivalent of a <a href="https://en.wikipedia.org/wiki/Food_desert">food desert</a> and that companies haven’t been required to put nutrition labels on what they are offering. Such metrics are not indicative of what we would prefer in a healthier or more empowering environment.</p>
+<h2 id="better" class="anchored">
+When Metrics are Useful
+</h2>
+<p>All this is not to say that we should throw metrics out altogether. Data can be valuable in helping us understand the world, test hypotheses, and move beyond gut instincts or hunches. Metrics can be useful when they are in their proper context and place. One way to keep metrics in their place is to consider a slate of many metrics for a fuller picture (and resist the temptation to try to boil these down to a single score). For instance, knowing the rates at which tech companies hire people from under-indexed groups is a very limited data point. For evaluating diversity and inclusion at tech companies, we need to know comparative promotion rates, cap table ownership, retention rates (many tech companies are revolving doors driving people from under-indexed groups away with their toxic cultures), number of harassment victims silenced by NDAs, rates of under-leveling, and more. Even then, all this data should still be combined with <strong>listening to first-person experiences</strong> of those working at these companies.</p>
+<p>Columbia professor and New York Times Chief Data Scientist <a href="https://datascience.columbia.edu/ethical-principles-okrs-and-kpis-what-youtube-and-facebook-could-learn-tukey">Chris Wiggins wrote</a> that quantitative measures should always be combined with qualitative information, <em>“Since we can not know in advance every phenomenon users will experience, we can not know in advance what metrics will quantify these phenomena. To that end, data scientists and machine learning engineers must partner with or learn the skills of user experience research, giving users a voice.”</em></p>
+<p>Another key to keeping metrics in their proper place is to keep domain experts and those who will be most impacted closely involved in their development and use. Surely most teachers could have foreseen that evaluating teachers primarily on the standardized test scores of their students would lead to a host of negative consequences.</p>
+<p>I am not opposed to metrics; I am alarmed about the harms caused when metrics are overemphasized, a phenomenon that we see frequently with AI, and which is having a negative, real-world impact. AI running unchecked to optimize metrics has led to Google/YouTube’s heavy promotion of white supremacist material, essay grading software that rewards garbage, and more. By keeping the risks of metrics in mind, we can try to prevent these harms.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
