@@ -1,20 +1,58 @@
 ---
 title: "About"
-image: profile.jpg
+image: images/thomas-2020-small.jpg
 about:
-  template: jolla
+  template: solana
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/math_rachel
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/in/rachel-thomas-942a7923/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/racheltho
 
 ---
 
-About this blog
+I am cofounder of fast.ai, which created one of the most popular deep learning courses in the world. I have a PhD in mathematics and was previously the founding director of the Center for Applied Data Ethics at the University of San Francisco.  
 
+I live in Queensland, Australia with my husband and daughter.  My interests include <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a>.
+
+<h3 id="mathbio">Mathematical Biology and AI in Medicine</h3>
+
+- [A Mathematical Model of Glutathione Metabolism](https://tbiomed.biomedcentral.com/articles/10.1186/1742-4682-5-8), Journal of Theoretical Biology and Medical Modeling
+- [Medicine's Machine Learning Problem](https://bostonreview.net/science-nature/rachel-thomas-medicines-machine-learning-problem), Boston Review
+- Earned a PhD in mathematics from Duke University
+- Howard Hughes Medical Institute Fellowship
+- keynote speaker at [Stanford’s Artificial Intelligence in Medicine symposium](https://youtu.be/vVRWeGlMkGk)
+
+<h3 id="ethics">Data Ethics</h3>
+
+- Professor of Practice at [Queensland University of Technology Centre for Data Science](https://research.qut.edu.au/qutcds/)
+- Founding director of [Center for Applied Data Ethics (CADE)](https://www.usfca.edu/data-institute/initiatives/center-applied-data-ethics) 
+at University of San Francisco
+- [Reliance on Metrics is a Fundamental Challenge for AI](https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3), Patterns. Optimizing metrics is a central aspect of most current AI approaches, yet overemphasizing metrics leads to manipulation, gaming, and a myopic short-term focus.
+- Created and taught [data ethics course](https://ethics.fast.ai/)
+- Wrote ethics chapter of best-selling book, 
+- Wrote book chapters for:
+    - [97 Things About Ethics Everyone in Data Science Should Know](https://www.oreilly.com/library/view/97-things-about/9781492072652/)
+    - [Deep Learning for Coders with Fastai and PyTorch: AI Applications Without a PhD](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
+    - [Redesigning AI](https://store.bostonreview.net/redesigning-ai)
+
+<h3 id="ml">Machine Learning and Data Science</h3>
+
+- Co-founder of [course.fast.ai](https://course.fast.ai/)
+- Designed and taught graduate level courses on [Natural Language Processing](https://www.fast.ai/2019/07/08/fastai-nlp/) and 
+[Computational Linear Algebra](https://www.fast.ai/2017/07/17/num-lin-alg/) in the USF Masters of Data Science program
+- [The New Era in NLP](https://www.youtube.com/watch?v=KChtdexd5Jo&list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&index=4), Keynote at SciPy (Scientific Python) Conference 2019
+- [Keynote at ICML AutoML](https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml) workshop, based on my popular series of [AutoML posts](https://www.fast.ai/2018/07/23/auto-ml-3/)
+- [Beginner friendly workshop on Word Embeddings (such as Word2Vec)](https://www.youtube.com/watch?v=25nC0n9ERq4&list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&index=13)
+- Forbes [20 Incredible Women in AI](https://www.forbes.com/sites/mariyayao/2017/05/18/meet-20-incredible-women-advancing-a-i-research/?sh=3662785a26f9)
+- Featured in book [Women Tech Founders on the Rise](https://www.amazon.com/WTF-Happening-Women-Tech-Founders-ebook/dp/B07Q5B53N8)
+- Early data scientist and software engineer at Uber
+
+<br>
+
+![A few events I've spoken at](images/prof-collage.jpg)

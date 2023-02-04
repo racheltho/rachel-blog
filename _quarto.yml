@@ -2,17 +2,22 @@ project:
   type: website
 
 website:
-  title: "rachel-blog"
+  title: "Rachel Thomas, PhD"
+  description: "a blog about science, data, ethics, & education"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/racheltho
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/math_rachel
+      - icon: linkedin
+        href: https://www.linkedin.com/in/rachel-thomas-942a7923/
+      - icon: rss
+        href: index.xml
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
 
 

@@ -1,0 +1,86 @@
+---
+title: "8 Things You Need to Know about Surveillance"
+image: "ibm-hitler.jpg"
+date: "2019-08-07"
+author: "Rachel Thomas"
+categories: [ethics]
+description: How surveillance makes us less safe
+---
+
+Over 225 police departments have partnered with Amazon to have access to Amazon’s video footage obtained as part of the “smart” doorbell product Ring, and in many cases these partnerships are [heavily subsidized with taxpayer money](https://www.vice.com/en_us/article/d3ag37/us-cities-are-helping-people-buy-amazon-surveillance-cameras-using-taxpayer-money). Police departments are allowing Amazon [to stream 911 call](https://gizmodo.com/cops-are-giving-amazons-ring-your-real-time-911-data-1836883867) information directly in real-time, and Amazon requires police departments to [read pre-approved scripts](https://gizmodo.com/everything-cops-say-about-amazons-ring-is-scripted-or-a-1836812538) when talking about the program. If a homeowner doesn’t want to share data from their video camera doorbell with police, an officer for the Fresno County Sheriff's Office said [they can just go directly to Amazon](https://gizmodo.com/amazons-ring-is-teaching-cops-how-to-persuade-customers-1837000515) to obtain it. This creation of an extensive surveillance network, the murky private-public partnership surrounding it, and a lack of any sort of regulations or oversight is frightening.  And this is just one of many examples related to surveillance technology that have recently come to light.
+
+I frequently talk with people who are not that concerned about surveillance, or who feel that the positives outweigh the risks. Here, I want to share some important truths about surveillance:
+
+<ol>
+<li><a href="#genocide">Surveillance can facilitate human rights abuses and even genocide</a></li>
+<li><a href="#purposes">Data is often used for different purposes than why it was collected</a></li>
+<li><a href="#errors">Data often contains errors</a></li>
+<li><a href="#accountability">Surveillance typically operates with no accountability</a></li>
+<li><a href="#behavior">Surveillance changes our behavior</a></li>
+<li><a href="#uneven">Surveillance disproportionately impacts the marginalized</a></li>
+<li><a href="#aggregate">Data privacy is a public good</a></li>
+<li><a href="#hope">We don’t have to accept invasive surveillance</a></li>
+</ol>
+
+While I was writing this post, a number of investigative articles came out with disturbing new developments related to surveillance. I decided that rather than attempt to include everything in one post (which would make it too long and too dense), I would go ahead and share the above facts about surveillance, as they are just a relevant as ever.
+
+<center>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The last 24 hours:<br>- NYC police using facial recognition on 11 year old kids<br>- Cops are giving Amazon real-time 911 caller data<br>- California Facial Recognition Interconnect<br>- contd facial rec on protesters in Hong Kong<br>- Palantir founder Peter Thiel gets op-ed in NYTimes</p>&mdash; Rachel Thomas (@math_rachel) <a href="https://twitter.com/math_rachel/status/1157357983036137473?ref_src=twsrc%5Etfw">August 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+
+<h2 id="genocide">1. Surveillance can facilitate human rights abuses and even genocide</h2>
+
+[There is a long history](https://www.theengineroom.org/dangerous-data-the-role-of-data-collection-in-genocides/) of data about sensitive attributes being misused, including the use of the 1940 USA Census to intern Japanese Americans, a system of identity cards introduced by the Belgian colonial government that were later used during the 1994 Rwandan genocide (in which nearly a million people were murdered), and the [role of IBM in helping Nazi Germany](https://www.huffpost.com/entry/ibm-holocaust_b_1301691) use punchcard computers to identify and track the mass killing of millions of Jewish people. More recently, the mass internment of over one million people who are part of an ethnic minority in Western China was facilitated through [the use of a surveillance network](https://www.wired.com/story/inside-chinas-massive-surveillance-operation/) of cameras, biometric data (including images of people’s faces, audio of their voices, and blood samples), and phone monitoring. 
+
+![Adolf Hitler meeting with IBM CEO Tom Watson Sr. in 1937.  Source: https://www.computerhistory.org/revolution/punched-cards/2/15/109](ibm-hitler.jpg){width=50%}
+
+Pictured above is Adolf Hitler (far left) meeting with IBM CEO Tom Watson Sr. (2nd from left), shortly before Hitler awarded Watson a special “Service to the Reich” medal in 1937 ([for a timeline of the Holocaust, see here](https://www.jewishgen.org/ForgottenCamps/General/TimeEng.html)). Watson returned the medal in 1940, although IBM continued to do business with the Nazis. IBM technology helped the Nazis conduct detailed censuses in countries they occupied, to thoroughly identify anyone of Jewish descent. [Nazi concentration camps used IBM's punchcard machines](https://www.huffpost.com/entry/ibm-holocaust_b_1301691) to tabulate prisoners, recording whether they were Jewish, gay, or Gypsies, and whether they died of “natural causes,” execution, suicide, or via “special treatment” in gas chambers. It is not the case that IBM sold the machines and then was done with it. Rather, IBM and its subsidiaries provided regular training and maintenance on-site at the concentration camps: printing off cards, configuring machines, and repairing them as they broke frequently.
+
+<h2 id="purposes">2. Data is often used for different purposes than why it was collected</h2>
+
+In the above examples, the data collection began before genocide was committed. IBM began selling to Nazi Germany well before the Holocaust (although continued for far too long), including helping with Germany’s 1933 census conducted by Adolf Hitler, which was effective at identifying far more Jewish people than had previously been recognized in Germany.
+
+It is important to recognize how data and images gathered through surveillance can be weaponized later. Columbia professor [Tim Wu wrote](https://www.nytimes.com/2019/04/10/opinion/sunday/privacy-capitalism.html) that *“One [hard truth] is that data and surveillance networks created for one purpose can and will be used for others. You must assume that any personal data that Facebook or Android keeps are data that governments around the world will try to get or that thieves will try to steal.”*
+
+Plenty of data collection is not involved with such extreme abuse as genocide; however, in a time of global resurgence of white supremacist, ethno-nationalist, and authoritarian movements, it would be deeply irresponsible to not consider how data & surveillance can and will be weaponized against already vulnerable groups.
+
+<h2 id="errors">3. Data often has errors (and no mechanism for correcting them)</h2>
+
+A [database of suspected gang members](https://www.latimes.com/local/lanow/la-me-ln-calgangs-audit-20160811-snap-story.html) maintained by California law enforcement officials was found to be full of errors, including 42 babies who had been added to the database when they were less than 1 year old (28 of whom were marked as “admitting to being gang members”).  Even worse, there was no process in place for correcting mistakes or removing people once they’ve been added.
+
+An [NPR reporter recounts his experience](https://www.washingtonpost.com/posteverything/wp/2016/09/08/how-the-careless-errors-of-credit-reporting-agencies-are-ruining-peoples-lives/) of trying to rent an apartment and discovering that TransUnion, one of the 3 major credit bureaus, incorrectly reported him as having two felony firearms convictions. TransUnion only removed the mistakes after a dozen phone calls and notification that the story would be reported on. This is not an unusual story: the FTC’s large-scale study of credit reports in 2012 found 26% of consumers had at least one mistake in their files and 5% had errors that could be devastating.  An even more opaque, [unregulated “4th bureau” exists](https://www.washingtonpost.com/business/economy/little-known-firms-tracking-data-used-in-credit-scores/2011/05/24/gIQAXHcWII_story.html?utm_term=.19efcc7df056): a collection of companies buying and selling personal information about people on the margins of the banking system (such as immigrants, students, and people with low incomes), with no standards on what types of data are included, no way to opt out, and no system for identifying or correcting mistakes. 
+
+<h2 id="accountability">4. Surveillance typically operates with no accountability</h2>
+
+What makes the examples in the previous section disturbing is not just that errors occurred, but that there was no way to identify or correct them, and no accountability for those profiting off the error-laden data. Often, even the existence of the systems being used is not publicly known (much less details of how these systems work), unless discovered by journalists or revealed by whistleblowers. The [Detroit Police Dept](https://www.metrotimes.com/news-hits/archives/2019/07/29/bipartisan-panel-why-detroits-facial-recognition-technology-should-be-banned) used facial recognition technology for nearly two years without public input and in violation of a requirement that a policy be approved by the city's Board of Police Commissioners, until a [study from Georgetown Law’s Center for Privacy & Technology](https://www.americaunderwatch.com/) drew attention to the issue. Palantir, the defense startup founded by billionaire Peter Thiel, ran a program with [New Orleans Police Department for 6 years](https://www.theverge.com/2018/2/27/17054740/palantir-predictive-policing-tool-new-orleans-nopd) which city council members did not even know about, much less have any oversight.
+
+After two studies found that Amazon’s facial recognition software produced [inaccurate](https://www.nytimes.com/2018/07/26/technology/amazon-aclu-facial-recognition-congress.html) and [racially biased results](https://www.theverge.com/2019/1/25/18197137/amazon-rekognition-facial-recognition-bias-race-gender), Amazon countered that the researchers should have changed the default parameters.  However, it turned out that [Amazon was not instructing police departments](https://gizmodo.com/defense-of-amazons-face-recognition-tool-undermined-by-1832238149) that use its software to do this either. Surveillance programs are operating with few regulations, no oversight, no accountability around accuracy or mistakes, and in many cases, no public knowledge of what is going on.
+
+<h2 id="behavior">5. Surveillance changes our behavior</h2>
+
+Hundreds of thousands of people in [Hong Kong are protesting](https://www.bbc.com/news/world-asia-china-48656471) an unpopular new bill which would allow extradition to China. Typically, Hong Kong locals use their rechargeable smart cards to ride the subway. However, during the protests, [long lines of people](https://qz.com/1642441/extradition-law-why-hong-kong-protesters-didnt-use-own-metro-cards/) waited to use cash to buy paper tickets (usually something that only tourists do) concerned that they would be tracked for having attended the protests. Would fewer people protest if this was not an option?
+
+In the United States, in 2015 the [Baltimore Police Department used facial recognition](https://www.theverge.com/2016/10/11/13243890/facebook-twitter-instagram-police-surveillance-geofeedia-api) technology to surveil people protesting the death of Freddie Grey, a young Black man who was killed in police custody, and arrested protesters with outstanding warrants. Mass surveillance could have a chilling impact on our rights to move about freely, to express ourselves, and to protest. *"We act differently when we know we are 'on the record.' Mass privacy is the freedom to act without being watched and thus in a sense, to be who we really are,"* Columbia professor [Tim Wu wrote](https://www.nytimes.com/2019/04/10/opinion/sunday/privacy-capitalism.html) in the New York Times.  
+
+![Flyer from the company Geofeedia. Source: https://www.aclunc.org/docs/20161011_geofeedia_baltimore_case_study.pdf](geofeedia.png){width=60%}
+
+
+<h2 id="uneven">6. Surveillance disproportionately impacts those who are already marginalized</h2>
+
+Surveillance is applied unevenly, causing the greatest harm to people who are already marginalized, including immigrants, people of color, and people living in poverty. These groups are more heavily policed and surveilled. [The Perpetual Line-Up](https://www.law.georgetown.edu/privacy-technology-center/publications/the-perpetual-line-up/) from the Georgetown Law Center on Privacy and Technology studied the unregulated use of facial recognition by police, with half of all Americans appearing in law enforcement databases, and the risks of errors, racial bias, misuses, and threats to civil liberties. The researchers pointed out that African Americans are [more likely to appear](https://www.perpetuallineup.org/findings/racial-bias) in these databases (many of which are drawn from mug shots) since they are disproportionately likely to be stopped, interrogated, or arrested.  For another example, consider the contrast between how easily people over 65 can apply for Medicare benefits by filling out an online form, with [the invasive personal questions](https://tcf.org/content/report/disparate-impact-surveillance/) asked of a low-income mother on Medicaid about her lovers, hygiene, parental shortcomings, and personal habits.
+
+In an article titled [Trading privacy for survival is another tax on the poor](https://www.fastcompany.com/90317495/another-tax-on-the-poor-surrendering-privacy-for-survival), Ciara Byrne wrote, *“Current public benefits programs ask applicants extremely detailed and personal questions and sometimes mandate home visits, drug tests, fingerprinting, and collection of biometric information... Employers of low-income workers listen to phone calls, conduct drug tests, monitor closed-circuit television, and require psychometric tests as conditions of employment. Prisoners in some states have to consent to be voiceprinted in order to make phone calls.”*
+
+<h2 id="aggregate">7. Data privacy is a public good, like air quality or safe drinking water</h2>
+
+Data is more revealing in aggregate. It can be nearly impossible to know what your individual data could reveal when combined with the data of others or with data from other sources, or when machine learning inference is performed on it. For instance, as [Zeynep Tufekci wrote](https://www.nytimes.com/2018/01/30/opinion/strava-privacy.html) in the New York Times, individual Strava users could not have predicted how in aggregate their data could be used to identify the locations of US military bases. *“Data privacy is not like a consumer good, where you click 'I accept' and all is well. Data privacy is more like air quality or safe drinking water, a public good that cannot be effectively regulated by trusting in the wisdom of millions of individual choices. A more collective response is needed.”*
+
+Unfortunately, this also means that you can’t fully safeguard your privacy on your own.  You may choose not to purchase Amazon’s ring doorbell, yet you can still show up in the video footage collected by others. You might strengthen your online privacy practices, yet conclusions will still be inferred about you based on the behavior of others. As Professor Tufekci wrote, **we need a collective response**.
+
+<h2 id="hope">8. We don’t have to accept invasive surveillance</h2>
+
+Many people are uncomfortable with surveillance, but feel like they have no say in the matter. While the threats surveillance poses are large, it is not too late to act. We are seeing success: in response to community organizing and an audit, Los Angeles Police Department [scrapped a controversial program](https://www.latimes.com/local/lanow/la-me-lapd-predictive-policing-big-data-20190405-story.html) to predict who is most likely to commit violent crimes.  [Citizens, researchers, and activists in Detroit](https://www.metrotimes.com/news-hits/archives/2019/07/29/bipartisan-panel-why-detroits-facial-recognition-technology-should-be-banned) have been effective at drawing attention to the Detroit Police Department’s unregulated use of facial recognition and a bill calling for a 5-year moratorium has been introduced to the state legislature. Local governments in [San Francisco](https://www.bbc.com/news/technology-48276660), [Oakland](https://www.sfchronicle.com/bayarea/article/Oakland-bans-use-of-facial-recognition-14101253.php), and [Somerville](https://www.bostonglobe.com/metro/2019/06/27/somerville-city-council-passes-facial-recognition-ban/SfaqQ7mG3DGulXonBHSCYK/story.html) have banned the use of facial recognition by police.
+
+For further resources, please check out:
+- [Georgetown Law Center on Privacy and Technology](https://www.law.georgetown.edu/privacy-technology-center/)
+- [Digital Defense Playbook](https://www.odbproject.org/tools/)

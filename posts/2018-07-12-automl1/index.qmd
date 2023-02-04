@@ -1,0 +1,126 @@
+---
+title: "What do machine learning practitioners actually do?"
+date: "2018-07-12"
+author: "Rachel Thomas"
+categories: [machine learning, advice]
+image: "woc4.jpg"
+description: "Machine learning is an in-demand field, but there are misconceptions about what the work entails in practice."
+---
+
+*This post is part 1 of a series. [Part 2](http://www.fast.ai/2018/07/16/auto-ml2/) is an opinionated introduction to AutoML and neural architecture search, and [Part 3](http://www.fast.ai/2018/07/23/auto-ml-3/) looks at Google's AutoML in particular.*
+
+There are frequent media headlines about both the **scarcity of machine learning talent** (see [here](https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html), [here](https://www.bloomberg.com/news/articles/2018-02-07/just-how-shallow-is-the-artificial-intelligence-talent-pool), and [here](https://towardsdatascience.com/ai-scientists-how-can-companies-deal-with-the-shortage-of-talent-11ab48566677)) and about the promises of companies **claiming their products automate machine learning** and eliminate the need for ML expertise altogether (see [here](https://www.zdnet.com/article/google-launches-cloud-automl-an-effort-to-simplify-and-automate-the-grunt-work-behind-ai-and-machine/), [here](https://www.theverge.com/2018/6/12/17452742/deep-learning-ai-learn-lobe-made-easy-coding), and [here](https://www.engadget.com/2018/01/17/google-unveils-automl-ai-training-tool/)). In his keynote at the [TensorFlow DevSummit](https://www.youtube.com/watch?v=kSa3UObNS6o), Google's head of AI Jeff Dean estimated that there are **tens of millions** of organizations that have electronic data that could be used for machine learning but **lack the necessary expertise and skills**.  I follow these issues closely since [my work](https://www.forbes.com/sites/mariyayao/2017/04/10/why-we-need-to-democratize-ai-machine-learning-education/#4dd4ae321197) [at fast.ai](https://www.technologyreview.com/s/610633/the-startup-diversifying-the-ai-workforce-beyond-just-techies/) focuses on enabling more people to use machine learning and on making it easier to use.
+
+In thinking about how we can automate some of the work of machine learning, as well as how to make it more accessible to people with a wider variety of backgrounds, it's first necessary to ask, *what is it that machine learning practitioners do?* Any solution to the shortage of machine learning expertise requires answering this question: whether it's so we know what skills to teach, what tools to build, or what processes to automate.
+
+![What do machine learning practitioners do? (Image Source: #WOCinTech Chat)](woc4.jpg){width=70%}
+
+This post is the first in a 3-part series.  It will address what it is that machine learning practitioners do, with Part 2 explaining AutoML and neural architecture search (which several high profile figures have suggested will be key to decreasing the need for data scientists) and Part 3 will cover Google's heavily hyped AutoML product in particular.
+
+<h2 id="complex">Building Data Products is Complex Work</h2>
+
+While many academic machine learning sources focus almost exclusively on predictive modeling, that is just one piece of what machine learning practitioners do in the wild.  The processes of appropriately framing a business problem, collecting and cleaning the data, building the model, implementing the result, and then monitoring for changes are interconnected in many ways that often make it hard to silo off just a single piece (without at least being aware of what the other pieces entail). As Jeremy Howard et al. wrote in [Designing great data products](https://www.oreilly.com/ideas/drivetrain-approach-data-products), *Great predictive modeling is an important part of the solution, but it no longer stands on its own; as products become more sophisticated, it disappears into the plumbing.*
+
+![Building Data Products is Complex Work (Source: Wikimedia Commons)](complicated-gears.gif)
+
+A team from Google, D. Sculley et al., wrote the classic [Machine Learning: The High-Interest Credit Card of Technical Debt](https://ai.google/research/pubs/pub43146) about the code complexity and technical debt often created when using machine learning in practice. The authors identify a number of system-level interactions, risks, and anti-patterns, including:
+
+- *glue code*: massive amount of supporting code written to get data into and out of general-purpose packages
+- *pipeline jungles*: the system for preparing data in an ML-friendly format may become a jungle of scrapes, joins, and sampling steps, often with intermediate files output
+- re-use input signals in ways that create unintended tight coupling of otherwise disjoint systems
+- risk that changes in the external world may make models or input signals change behavior in unintended ways, and these can be difficult to monitor
+
+The authors write, <i>A remarkable portion of real-world “machine learning” work is devoted to tackling issues of this form... It’s worth noting that glue code and pipeline jungles are symptomatic of integration issues that may have a <b>root cause in overly separated “research” and “engineering” roles</b>... It may be surprising to the academic community to know that <b>only a tiny fraction of the code in many machine learning systems is actually doing “machine learning”</b>.</i> (emphasis mine)
+
+<h2 id="fail">When machine learning projects fail</h2>
+
+In a [previous post](https://www.fast.ai/posts/2016-12-08-org-structure.html), I identified some failure modes in which machine learning projects are not effective in the workplace:
+
+- The data science team builds really cool stuff that never gets used. There’s no buy-in from the rest of the organization for what they’re working on, and some of the data scientists don’t have a good sense of what can realistically be put into production.
+- There is a backlog with data scientists producing models much faster than there is engineering support to put them in production.
+- The data infrastructure engineers are separate from the data scientists. The pipelines don’t have the data the data scientists are asking for now, and the data scientists are under-utilizing the data sources the infrastructure engineers have collected.
+- The company has definitely decided on feature/product X. They need a data scientist to gather some data that supports this decision. The data scientist feels like the PM is ignoring data that contradicts the decision; the PM feels that the data scientist is ignoring other business logic.
+- The data science team interviews a candidate with impressive math modeling and engineering skills. Once hired, the candidate is embedded in a vertical product team that needs simple business analytics. The data scientist is bored and not utilizing their skills.
+
+I framed these as organizational failures in my original post, but they can also be described as various participants being overly focused on just one slice of the complex system that makes up a full data product. These are failures of communication and goal alignment between different parts of the data product pipeline.
+
+<h2 id="steps">So, what do machine learning practitioners do?</h2>
+
+As suggested above, building a machine learning product is a multi-faceted and complex task. Here are some of the things that machine learning practitioners may need to do during the process:
+
+**Understanding the context**:
+
+- identify areas of the business that could benefit from machine learning
+- communicate with other stakeholders about what machine learning is and is not capable of (there are often many misconceptions)
+- develop understanding of business strategy, risks, and goals to make sure everyone is on the same page 
+- identify what kind of data the organization has
+- appropriately frame and scope the task
+- understand operational constraints (e.g. what data is actually available at inference time)
+- proactively identify ethical risks, including how your work could be mis-used by harassers, trolls, authoritarian governments, or for propaganda/disinformation campaigns (and plan how to reduce these risks)
+- identify [potential biases and potential negative feedback loops](https://www.infoq.com/presentations/unconscious-bias-machine-learning)
+
+**Data**:
+- make plans to collect more of different data (if needed and if possible)
+- stitch together data from many different sources: often this data has been collected in different formats or with inconsistent conventions
+- deal with missing or corrupted data
+- visualize the data
+- create appropriate [training, validation, and test sets](https://www.fast.ai/posts/2017-11-13-validation-sets.html)
+
+**Modeling**:
+- choose which model to use
+- fit model resource needs into constraints (e.g. will the completed model need to run on an edge device, in a low memory or high latency environment, etc)
+- choose hyperparameters (e.g. in the case of deep learning, this includes choosing an architecture, loss function, and optimizer)
+- train the model (and debug why it's not training). This can involve:
+  - adjusting hyperparmeters (e.g. such as the learning rate)
+  - outputing intermediate results to see how the loss, training error, and validation error are changing with time
+  - inspecting the data the model is wrong on to look for patterns
+  - identifying underlying errors or issues with the data
+  - realizing you need to change how you clean and pre-process the data
+  - realizing you need more or different data augmentation
+  - realizing you need more or different data
+  - trying out different models
+  - identifying if you are under- or over-fitting
+
+**Productionize**:
+- creating an API or web app with your model as an endpoint in order to productionize
+- exporting your model into the needed format
+- plan for how often your model will need to be retrained with updated data (e.g. perhaps you will retrain nightly or weekly)
+
+**Monitor**:
+- track model performance over time
+- monitor the input data, to identify if it changes with time in a way that would invalidate your model
+- communicate your results to the rest of the organization
+- have a plan in place for how you will monitor and respond to mistakes or unexpected consequences
+
+Certainly, not every machine learning practitioner needs to do all of the above steps, but components of this process will be a part of many machine learning applications. Even if you are working on just a subset of these steps, a familiarity with the rest of the process will help ensure that you are not overlooking considerations that would keep your project from being successful!
+ 
+<h2 id="hard"> Two of the hardest parts of Machine Learning</h2>
+
+For myself and many others I know, I would highlight two of the most time-consuming and frustrating aspects of machine learning (in particular, deep learning) as:
+
+1. Dealing with **data formatting, inconsistencies, and errors** is often a messy and tedious process.
+2. Training deep learning models is a **notoriously brittle process** right now. 
+
+<h3 id="cleaning"> Is cleaning data really part of ML? Yes.</h3>
+
+Dealing with data formatting, inconsistencies, and errors is often a messy and tedious process.  People will sometimes describe machine learning as separate from data science, as though for machine learning, you can just begin with your nicely cleaned, formatted data set.  However, in my experience, the process of cleaning a data set and training a model are usually interwoven: I frequently find issues in the model training that cause me to go back and change the pre-processing for the input data.
+
+![Dealing with messy and inconsistent data is necessary](floppy-disks.jpg){width=60%}
+
+<h3 id="training"> Training Deep Learning Models is Brittle and Finicky (for now) </h3>
+
+The difficulty of getting models to train deters many beginners, who often wind up feeling discouraged.  Even experts frequently complain of **how frustrating and fickle** the training process can be. One AI researcher at [Stanford told me](https://www.fast.ai/posts/2018-04-10-stanford-salon.html), *I taught a course on deep learning and had all the students do their own projects. It was so hard. The students couldn't get their models to train, and we were like "well, that's deep learning".*  Ali Rahimi, an AI researcher with over a decade of experience and winner of the NIPS 2017 Test of Time Award, complained about the brittleness of training in his [NeurIPS award speech](https://www.youtube.com/watch?v=ORHFOnaEzPc). *How many of you have designed a deep net from scratch, built it from the ground up, architecture and all, and when it didn't work, you felt bad about yourself?* Rahimi asked the audience of AI researchers, and many raised their hands. Rahimi continued, *This happens to me about every 3 months.*
+
+The fact that even AI experts sometimes have trouble training new models implies that the process has yet to be automated in a way where it could be incorporated into a general-purpose product. **Some of the biggest advances in deep learning will come through discovering more robust training methods**. We have already seen this some with advances like dropout, [super convergence](https://arxiv.org/abs/1708.07120), and transfer learning, all of which make training easier. Through the power of transfer learning (to be discussed in Part 3) training can be a robust process when defined for a narrow enough problem domain; however, we still have a ways to go in making training more robust in general.
+
+<h2 id="academic"> For Academic Researchers </h2>
+
+Even if you are working on theoretical machine learning research, it is useful to understand the process that machine learning practitioners working on practical problems go through, as that might provide insights on what the most relevant or high-impact areas of research are.
+
+As Googler engineers [D. Sculley et al. wrote](https://ai.google/research/pubs/pub43146), <i>Technical debt is an issue that both engineers and researchers need to be aware of. <b>Research solutions that provide a tiny accuracy benefit at the cost of massive increases in system complexity are rarely wise practice</b>... Paying down technical debt is not always as exciting as proving a new theorem, but it is a critical part of consistently strong innovation. And developing holistic, elegant solutions for complex machine learning systems is deeply rewarding work.</i> (emphasis mine)
+
+<h2 id="automl"> AutoML </h2>
+
+Now that we have an overview of some of the tasks that machine learning practitioners do as part of their work, we are ready to evaluate attempts to automate this work. As it's name suggests, *AutoML* is one field in particular that has focused on automating machine learning, and a subfield of AutoML called *neural architecture search* is currently receiving a ton of attention.  In part 2, I will explain what AutoML and neural architecture search are, and in part 3, look at Google's AutoML in particular. 
+
+**Be sure to check out Part 2: [An Opinionated Introduction to AutoML Neural Architecture Search](http://www.fast.ai/2018/07/16/auto-ml2/), and  Part 3: [Google's AutoML: Cutting Through the Hype](https://www.fast.ai/2018/07/23/auto-ml-3/)**
