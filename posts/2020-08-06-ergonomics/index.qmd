@@ -1,0 +1,76 @@
+---
+title: "Essential Work-From-Home Advice: Cheap and Easy Ergonomic Setups"
+description: "You can permanently damage your back, neck, and wrists from working without an ergonomic setup.  Learn how to create one for less."
+image: "ergonomic1-short.jpg"
+date: "2020-08-06"
+author: "Rachel Thomas"
+categories: [advice, work]
+toc: true
+---
+
+You weren’t expecting to spend 2020 working from home.  You can’t afford a fancy standing desk.  You don’t have a home office, or even much spare space, in your apartment. Your neck is getting a permanent crick from hunching over your laptop on the couch. While those of us who are able to work from home are privileged to have this option, we still don’t want to permanently damage our backs, necks, or arms from a bad ergonomic setup.
+
+This is not a post for ergonomic aficionados (the setups I share could all be further optimized).  This is a post for folks who don’t know where to get started, have a limited budget, and are willing to try simple, scrappy approaches.  Key takeway: for 34 dollars (21 for a good mouse, and 13 for a cheap keyboard), as well as some household items, you can create an ergonomic setup like the one below. I will show many other options throughout the post, for both sitting and standing, as well as approaches you can easily assemble/disassemble (if you are using the family dinner table and need to clear it off each evening).
+
+![While visiting family, I created an ergonomic setup on a counter](ergonomic1.jpg){width=40%}
+
+<h2 id="damage">You can permanently damage your body with bad ergonomics</h2>
+
+You can permanently damage your back, neck, and wrists from working without an ergonomic setup. Almost two decades ago, my partner Jeremy suffered from repetitive stress injury due to working without an ergonomic setup.  At the time, his arms were paralyzed and he had to take months off from work.  Even now and after years filled with good ergonomics and yoga, this still impacts his life, severely limiting how much time he can spend in cars or on planes, and creating painful flare-ups. Please take this issue seriously.
+
+<h2 id="separate">Key advice: Have a separate keyboard and mouse</h2>
+
+The most important thing to know is that you want your screen approximately at eye height, and your elbows at approximately right angles to your torso as they type and use the mouse. This is the case whether you are sitting or standing. If you are using a laptop, this will be impossible with the built-in keyboard and trackpad (no matter how nice they are). It is essential to have a separate keyboard and mouse. If you only do one thing to address ergonomics, obtain a separate keyboard and mouse.
+
+If you can't afford an external monitor, no worries, you can just elevate your laptop. Over the years, I have used cardboard boxes, drinking glasses, bottles of soda, board games, and stacks of books to elevate my laptop. I will recommend some keyboards and mice that I like below, but anything is better than using the ones built into your laptop (since that forces you to keep your screen at the wrong height). For example, the picture in the intro is of a set-up I created while visiting a family member's apartment in 2014, using books and a cardboard box to elevate my keyboard, mouse, and laptop to the appropriate heights.
+
+![For the deep learning study group, I routinely used a brown cardboard box. Bonus: I could store everything in the box when we had the clear out of that room each night.](ergonomic5.jpg){width=40%}
+
+Above is a picture from the deep learning study group, which meets 5 days a week, for 7 weeks, every time we run the deep learning course. I use a brown cardboard box to elevate my keyboard.  We have to clear out of that conference room each evening, and it is simple for me to put my items in the box.  This sort of solution could work if you don't have a dedicated office space in your home, and need to be able to set up/take down your workstation regularly.
+
+I rarely worked in coffee shops pre-pandemic (and never do now), but when I had to I would still try to create an ergonomic setup (and go to a coffeeshop where there was enough space!). Here, I've stacked my laptop on top of my rolled-up backpack. Ideally, my screen would be higher, but this is still better than having it at table level. Don't let the perfect be the enemy of the good. Every step you take towards a more ergonomic setup is helpful.
+
+![When working at a coffee shop (pre-pandemic), I brought an external keyboard and mouse, and used my rolled-up backpack to raise the height of my laptop screen](ergonomic2.jpg){width=40%}
+
+<h2 id="standing-desks">About standing desks</h2>
+
+If you have a regular desk (or even just a table) at home and want a standing desk, one option is to convert it using the [$22 standing desk approach](https://alphacolin.com/ikea-standing-desk-for-22-dollars/), which involves an Ikea side table and shelf. I had a previous job in which this was quite popular. Here is a photo of my work desk from that time.
+
+![In a previous job, many of us set up $22 standing desks using Ikea side tables](ergonomic3.jpg){width=40%}
+
+Standing on a hard floor can be difficult for your back. I have a GelPro mat, which I love.  If you can't afford a GelPro mat, standing on a folded-up yoga mat works great too.
+
+Note that standing desks are not a cure-all.  I've often seen people with expensive standing-desk converters (also known as desktop risers) that still have their monitor way too low.  Even if you have an external monitor and desktop riser, makes sure your monitor is at an appropriate height.  It is likely you will still need to stack it on top of something.  If you don't like the aesthetics of using books or other household items, you can buy a monitor stand, [such as this one](https://www.kensington.com/p/products/ergonomic-desk-accessorries/laptop-risers-monitor-stands/kensington-smartfit-monitor-stand-plus-for-up-to-21-screens/).
+
+Using a standing desk with poor posture is not very ergonomic, so be cognizant of when you start feeling fatigued.  I prefer to switch between standing and sitting throughout the day, as my energy fluctuates.
+
+<h2 id="budget-recs">Budget Recommendations</h2>
+
+My "budget recommendation" would be to get an [Anker vertical mouse](https://www.newegg.com/p/0TP-005H-00095) for $21 and literally any keyboard. If you have to choose, I've found that having a good mouse is way more important than a good keyboard.  It is important that you get some keyboard though, so that you can elevate your laptop screen.  In the setup below, I'm using a lightweight travel keyboard that isn't particularly ergonomic, but it works fine.  
+
+![The barista at this coffee shop kindly let me use 2 plastic tubs to prop up my laptop (pre-pandemic).](ergonomic4.jpg){width=40%}
+
+I realize that at a time when many Americans do not have enough to eat, that you may not have 34 dollars to spare (21 dollars for a mouse and 13 dollars for a cheap keyboard). However, if this is an option for you, it is well worth the cost. If you permanently damage your back, neck, or arms, no amount of money may be enough to heal them later.
+
+<h2 id="products">Other products I like</h2>
+
+My favorite mouse is the [Logitech wireless trackball mouse](https://www.newegg.com/Logitech-910-001799/p/24W-001B-00008). I have also used and liked the [Anker vertical mouse](https://www.newegg.com/p/0TP-005H-00095).  For keyboards, I like [Goldtouch](https://www.newegg.com/p/12K-00XE-00002) (I use an older version of this one) or the [Microsoft Ergonomic Keyboard](https://www.newegg.com/microsoft-natural-4000-b2m-00012-usb-wired/p/N82E16823109148). And if you are looking for a compact, lightweight travel keyboard, I like the [iClever foldup keyboard](https://www.iclever.com/products/BK03-Bluetooth-Portable-Keyboard).
+
+As mentioned above, [GelPro mats](https://www.gelpro.com/) are great if you are going to be standing, and a folded-up yoga mat is a cheaper alternative.
+
+I have a [Roost portable, lightweight laptop stand](https://www.therooststand.com/), which is great, although I can't use it since I switched from a Macbook Air to a Microsoft Surface Pro. None of the links in this post are affiliate links; I'm just recommending what I've personally used and like.
+
+For more about home office set-ups, Jeremy recently posted a twitter thread about his preferred computer set-up (which includes some pricier options). It's also worth noting that his desk has a small footprint, and fits in the corner of our living room.
+
+<center>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I couldn&#39;t be happier with my little standing desk setup. I have tried far to many products over the years, and here&#39;s what I highly recommend:<br>1/ <a href="https://t.co/lMagQPLys1">pic.twitter.com/lMagQPLys1</a></p>&mdash; Jeremy Howard (@jeremyphoward) <a href="https://twitter.com/jeremyphoward/status/1285747820482318336?ref_src=twsrc%5Etfw">July 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+
+
+
+ 
+
+
+
+
+

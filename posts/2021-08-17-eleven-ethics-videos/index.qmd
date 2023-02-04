@@ -1,0 +1,38 @@
+---
+title: "11 Short Videos About AI Ethics"
+date: "2021-08-16"
+image: "short-ethics-playlist.jpg"
+author: "Rachel Thomas"
+categories: [ethics, machine learning]
+description: Short videos about machine learning ethics to watch and share.
+---
+
+I made a playlist of 11 short videos (most are 6-13 mins long) on Ethics in Machine Learning. This is from my [ethics lecture](https://course.fast.ai/videos/?lesson=5) in [Practical Deep Learning for Coders v4](https://course.fast.ai/). I thought these short videos would be easier to watch, share, or skip around.
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/F0cxzESR7ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+[**What are Ethics and Why do they Matter? Machine Learning Edition**](https://www.youtube.com/watch?v=F0cxzESR7ec&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR): Through 3 key case studies, I cover how people can be harmed by machine learning gone wrong, why we as machine learning practitioners should care, and what tech ethics are.
+
+[**All machine learning systems need ways to identify & address mistakes**](https://www.youtube.com/watch?v=j3nqdZoQjy0&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=2). It is crucial that all machine learning systems are implemented with ways to correctly surface and correct mistakes, and to provide recourse to those harmed.
+
+[**The Problem with Metrics, Feedback Loops, and Hypergrowth**](https://www.youtube.com/watch?v=bqCEUQq0z4o&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=3): Overreliance on metrics is a core problem both in the field of machine learning and in the tech industry more broadly. As Goodhart's Law tells us, when a measure becomes the target, it ceases to be a good measure, yet the incentives of venture capital push companies in this direction.  We see out-of-control feedback loops, widespread gaming of metrics, and people being harmed as a result.
+
+[**Not all types of bias are fixed by diversifying your dataset**](https://www.youtube.com/watch?v=pbnqvS2yjNg&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=4). The idea of bias is often too general to be useful. There are several different types of bias, and different types require different interventions to try to address them. Through a series of cases studies, we will go deeper into some of the various causes of bias.
+
+![Part of the Ethics Videos Playlist](short-ethics-playlist.jpg)
+
+[**Humans are biased too, so why does machine learning bias matter?**](https://www.youtube.com/watch?v=igVrrfDznOo&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=5) A common objection to concerns about bias in machine learning models is to point out that humans are really biased too.  This is correct, yet machine learning bias differs from human bias in several key ways that we need to understand and which can heighten the impact.
+
+[**7 Questions to Ask About Your Machine Learning Project**](https://www.youtube.com/watch?v=zoAsnJAsLo8&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=6) 
+
+[**What You Need to Know about Disinformation**](https://www.youtube.com/watch?v=PaowVrW3TZg&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=7): With a particular focus on how machine learning advances can contribute to disinformation, this covers some of the fundamental things to understand.
+
+[**Foundations of Ethics**](https://www.youtube.com/watch?v=2A6js_EJ6MA&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=8): We consider different lenses through which to evaluate ethics, and what sort of questions to ask.
+
+[**Tech Ethics Practices to Implement at your Workplace**](https://www.youtube.com/watch?v=av7utkFXbU4&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=9): Practical tech ethics practices you can implement at your workplace.
+
+[**How to Address the Machine Learning Diversity Crisis**](https://www.youtube.com/watch?v=LbNO51E7NUs&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=10): Only 12% of machine learning researchers are women.  Based on research studies, I outline some evidence-based steps to take towards addressing this diversity crisis.
+
+[**Advanced Technology is not a Substitute for Good Policy**](https://www.youtube.com/watch?v=IlrP4jqxYR8&list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&index=11): We will look at some examples of what incentives cause companies to change their behavior or not (e.g. being warned for years of your role in an escalating genocide vs. threat of a hefty fine), how many AI ethics concerns are actually about human rights, and case studies of what happened when regulation & safety standards came to other industries.
+
+You can find the [playlist of 11 short videos here](https://www.youtube.com/playlist?list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR). And here is a longer, [full-length free fast.ai course on practical data ethics](https://ethics.fast.ai/).
