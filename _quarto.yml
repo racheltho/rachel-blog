@@ -18,7 +18,8 @@ website:
         href: index.xml
 format:
   html:
-    theme: spacelab
+    theme: flatly
+    linkcolor: "#168873"
     css: styles.css
 
 

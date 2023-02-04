@@ -1,1 +1,9 @@
 /* css styles */
+
+a {
+    color: var(#118671);
+    text-decoration: underline;
+  }
+  a:hover {
+    color: var(#0c5f50);
+  }
