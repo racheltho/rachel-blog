@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2018-04-29">
+<meta name="description" content="Deep learning is not just for images and text.">
+
+<title>Rachel Thomas, PhD - An Introduction to Deep Learning for Tabular Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">An Introduction to Deep Learning for Tabular Data</h1>
+                  <div>
+        <div class="description">
+          Deep learning is not just for images and text.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">technical</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 29, 2018</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>There is a powerful technique that is <a href="http://blog.kaggle.com/2015/07/27/taxi-trajectory-winners-interview-1st-place-team-%F0%9F%9A%95/">winning Kaggle competitions</a> and is widely used at Google (<a href="https://twimlai.com/twiml-talk-124-systems-software-machine-learning-scale-jeff-dean/">according to Jeff Dean</a>), <a href="https://medium.com/the-graph/applying-deep-learning-to-related-pins-a6fee3c92f5e">Pinterest</a>, and <a href="https://tech.instacart.com/deep-learning-with-emojis-not-math-660ba1ad6cdc">Instacart</a>, yet that many people don’t even realize is possible: the <strong>use of deep learning for tabular data</strong>, and in particular, the creation of <strong>embeddings for categorical variables</strong>.</p>
+<p>Despite what you may have heard, you <em>can</em> use deep learning for the type of data you might keep in a SQL database, a Pandas DataFrame, or an Excel spreadsheet (including time-series data). I will refer to this as <em>tabular data</em>, although it can also be known as <em>relational data</em>, <em>structured data</em>, or other terms (see my <a href="https://twitter.com/math_rachel/status/990375128314736640">twitter poll and comments</a> for more discussion).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Pin2Vec.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">From the Pinterest blog post ‘Applying deep learning to Related Pins’</figcaption><p></p>
+</figure>
+</div>
+<p>Tabular data is the most commonly used type of data in industry, but deep learning on tabular data receives far less attention than deep learning for computer vision and natural language processing. This post covers some key concepts from applying neural networks to tabular data, in particular the idea of creating embeddings for categorical variables, and highlights 2 relevant modules of the <a href="https://github.com/fastai/fastai">fastai library</a>:</p>
+<ul>
+<li><code>fastai.structured</code>: this module works with Pandas DataFrames, is not dependent on PyTorch, and can be used separately from the rest of the fastai library to process and work with tabular data.</li>
+<li><code>fastai.column_data</code>: this module also works with Pandas DataFrames, and provides methods to convert DataFrames (with both continuous and categorical variables) into ModelData objects that can easily be used when training neural networks. It also includes an implementation for creating embeddings of categorical variables, a powerful technique I will explain below.</li>
+</ul>
+<p>The material from this post is covered in much more detail starting around 1:59:45 in <a href="http://course.fast.ai/lessons/lesson3.html">the Lesson 3 video</a> and continuing in <a href="http://course.fast.ai/lessons/lesson4.html">Lesson 4</a> of our free, online <a href="http://course.fast.ai">Practical Deep Learning for Coders</a> course. To see example code of how this approach can be used in practice, check out our <a href="https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb">Lesson 3 jupyter notebook</a>.</p>
+<section id="embeddings-for-categorical-variables" class="level2">
+<h2 class="anchored" data-anchor-id="embeddings-for-categorical-variables">Embeddings for Categorical Variables</h2>
+<p>A key technique to making the most of deep learning for tabular data is to use embeddings for your categorical variables. This approach allows for relationships between categories to be captured. Perhaps Saturday and Sunday have similar behavior, and maybe Friday behaves like an average of a weekend and a weekday. Similarly, for zip codes, there may be patterns for zip codes that are geographically near each other, and for zip codes that are of similar socio-economic status.</p>
+<section id="taking-inspiration-from-word-embeddings" class="level3">
+<h3 class="anchored" data-anchor-id="taking-inspiration-from-word-embeddings">Taking Inspiration from Word Embeddings</h3>
+<p>A way to capture these multi-dimensional relationships between categories is to use embeddings. This is the same idea as is used with word embeddings, such as Word2Vec. For instance, a 3-dimensional version of a word embedding might look like:</p>
+<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 25%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>puppy</td>
+<td>[0.9, 1.0, 0.0]</td>
+</tr>
+<tr class="even">
+<td>dog</td>
+<td>[1.0, 0.2, 0.0]</td>
+</tr>
+<tr class="odd">
+<td>kitten</td>
+<td>[0.0, 1.0, 0.9]</td>
+</tr>
+<tr class="even">
+<td>cat</td>
+<td>[0.0, 0.2, 1.0]</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that the first dimension is capturing something related to being a dog, and the second dimension captures youthfulness. This example was made up by hand, but in practice you would use machine learning to find the best representations (while semantic values such as dogginess and youth would be captured, they might not line up with a single dimension so cleanly). You can check out <a href="https://www.youtube.com/watch?v=25nC0n9ERq4">my workshop on word embeddings</a> for more details about how word embeddings work.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="kittenavalanche.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">illustration from my word embeddings workshop: vectors for baby animal words are closer together, and an unrelated word like ‘avalanche’ is further away</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="applying-embeddings-for-categorical-variables" class="level3">
+<h3 class="anchored" data-anchor-id="applying-embeddings-for-categorical-variables">Applying Embeddings for Categorical Variables</h3>
+<p>Similarly, when working with categorical variables, we will represent each category by a vector of floating point numbers (the values of this representation are learned as the network is trained).</p>
+<p>For instance, a 4-dimensional version of an embedding for day of week could look like:</p>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 31%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Sunday</td>
+<td>[.8, .2, .1, .1]</td>
+</tr>
+<tr class="even">
+<td>Monday</td>
+<td>[.1, .2, .9, .9]</td>
+</tr>
+<tr class="odd">
+<td>Tuesday</td>
+<td>[.2, .1, .9, .8]</td>
+</tr>
+</tbody>
+</table>
+<p>Here, Monday and Tuesday are fairly similar, yet they are both quite different from Sunday. Again, this is a toy example. In practice, our neural network would learn the best representations for each category while it is training, and each dimension (or direction, which doesn’t necessarily line up with ordinal dimensions) could have multiple meanings. Rich relationships can be captured in these <em>distributed representations</em>.</p>
+</section>
+<section id="reusing-pretrained-categorical-embeddings" class="level3">
+<h3 class="anchored" data-anchor-id="reusing-pretrained-categorical-embeddings">Reusing Pretrained Categorical Embeddings</h3>
+<p>Embeddings <strong>capture richer relationships and complexities than the raw categories</strong>. Once you have learned embeddings for a category which you commonly use in your business (e.g.&nbsp;product, store id, or zip code), you can use these pre-trained embeddings for other models. For instance, Pinterest has created <a href="https://medium.com/the-graph/applying-deep-learning-to-related-pins-a6fee3c92f5e">128-dimensional embeddings for its pins</a> in a library called Pin2Vec, and <a href="https://tech.instacart.com/deep-learning-with-emojis-not-math-660ba1ad6cdc">Instacart has embeddings</a> for its grocery items, stores, and customers.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="instacart.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">From the Instacart blog post ‘Deep Learning with Emojis (not Math)’</figcaption><p></p>
+</figure>
+</div>
+<p>The fastai library contains an implementation for categorical variables, which work with Pytorch’s <code>nn.Embedding</code> module, so this is not something you need to code from hand each time you want to use it.</p>
+</section>
+</section>
+<section id="treating-some-continuous-variables-as-categorical" class="level2">
+<h2 class="anchored" data-anchor-id="treating-some-continuous-variables-as-categorical">Treating some Continuous Variables as Categorical</h2>
+<p>We generally recommend treating month, year, day of week, and some other variables as categorical, even though they could be treated as continuous. Often for variables with a relatively small number of categories, this results in better performance. This is a modeling decision that the data scientist makes. Generally, we want to keep continuous variables represented by floating point numbers as continuous.</p>
+<p>Although we can choose to treat continuous variables as categorical, the reverse is not true: any variables that are categorical must be treated as categorical.</p>
+</section>
+<section id="time-series-data" class="level2">
+<h2 class="anchored" data-anchor-id="time-series-data">Time Series Data</h2>
+<p>The approach of using neural networks together with categorical embeddings can be applied to time series data as well. In fact, this was the model used by students of Yoshua Bengio to <a href="http://blog.kaggle.com/2015/07/27/taxi-trajectory-winners-interview-1st-place-team-%F0%9F%9A%95/">win 1st place in the Kaggle Taxi competition</a>(paper <a href="https://arxiv.org/pdf/1508.00021.pdf">here</a>), using a trajectory of GPS points and timestamps to predict the length of a taxi ride. It was also used by the <a href="http://blog.kaggle.com/2016/01/22/rossmann-store-sales-winners-interview-3rd-place-cheng-gui/">3rd place winners in the Kaggle Rossmann Competition</a>, which involved using time series data from a chain of stores to predict future sales. The 1st and 2nd place winners of this competition used complicated ensembles that relied on specialist knowledge, while the 3rd place entry was a single model with no domain-specific feature engineering.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="kaggle_taxi.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">The winning architecture from the Kaggle Taxi Trajectory Competition</figcaption><p></p>
+</figure>
+</div>
+<p>In our <a href="https://github.com/fastai/fastai/blob/master/courses/dl1/lesson3-rossman.ipynb">Lesson 3 jupyter notebook</a> we walk through a solution for the <a href="https://www.kaggle.com/c/rossmann-store-sales">Kaggle Rossmann Competition</a>. This data set (like many data sets) includes both <strong>categorical data</strong> (such as the state the store is located in, or being one of 3 different store types) and <strong>continuous data</strong> (such as the distance to the nearest competitor or the temperature of the local weather). The fastai library lets you enter both categorical and continuous variables as input to a neural network.</p>
+<p>When applying machine learning to time-series data, you nearly always want to choose a validation set that is a continuous selection with <strong>the latest available dates</strong> that you have data for. As I wrote in <a href="../../posts/2017-11-13-validation-sets">a previous post</a>, “If your data is a time series, choosing a random subset of the data will be both too easy (you can look at the data both before and after the dates your are trying to predict) and not representative of most business use cases (where you are using historical data to build a model for use in the future).”</p>
+<p>One key to successfully using deep learning with time series data is to split the date into multiple categorical variables (year, month, week, day of week, day of month, and Booleans for whether it’s the start/end of a month/quarter/year). The fastai library has implemented a method to handle this for you, as described below.</p>
+</section>
+<section id="modules-to-know-in-the-fastai-library" class="level2">
+<h2 class="anchored" data-anchor-id="modules-to-know-in-the-fastai-library">Modules to Know in the Fastai Library</h2>
+<p>We will be releasing more documentation for the fastai library in coming months, but it is already available on pip and on github, and it is used in the <a href="http://course.fast.ai">Practical Deep Learning for Coders</a> course. The fastai library is built on top of Pytorch and encodes best practices and helpful high-level abstractions for using neural networks. The fastai library achieves state-of-the-art results and was recently used to win the <a href="https://dawn.cs.stanford.edu/benchmark/#cifar10">Stanford DAWNBench competition</a> (fastest CIFAR10 training).</p>
+<section id="fastai.column_data" class="level3">
+<h3 class="anchored" data-anchor-id="fastai.column_data">fastai.column_data</h3>
+<p><code>fastai.column_data.ColumnarModelData</code> takes a Pandas DataFrame as input and creates a type of ModelData object (an object which contains data loaders for the training, validation, and test sets, and which is the fundamental way of keeping track of your data while training models).</p>
+</section>
+<section id="fastai.structured" class="level3">
+<h3 class="anchored" data-anchor-id="fastai.structured">fastai.structured</h3>
+<p>The <code>fastai.structured</code> module of the fastai library is built on top of Pandas, and includes methods to transform DataFrames in a number of ways, improving the performance of machine learning models by pre-processing the data appropriately and creating the right types of variables.</p>
+<p>For instance, <code>fastai.structured.add_datepart</code> converts dates (e.g.&nbsp;2000-03-11) into a number of variables (year, month, week, day of week, day of month, and booleans for whether it’s the start/end of a month/quarter/year.)</p>
+<p>Other useful methods in the module allow you to:</p>
+<ul>
+<li>Fill in missing values with the median whilst adding a boolean indicator variable (<code>fix_missing</code>)</li>
+<li>Change any columns of strings in a Pandas DataFrame to a column of categorical values (<code>train_cats</code>)</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

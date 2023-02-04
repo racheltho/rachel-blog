@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2018-07-12">
+<meta name="description" content="Machine learning is an in-demand field, but there are misconceptions about what the work entails in practice.">
+
+<title>Rachel Thomas, PhD - What do machine learning practitioners actually do?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">What do machine learning practitioners actually do?</h1>
+                  <div>
+        <div class="description">
+          Machine learning is an in-demand field, but there are misconceptions about what the work entails in practice.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">advice</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 12, 2018</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><em>This post is part 1 of a series. <a href="http://www.fast.ai/2018/07/16/auto-ml2/">Part 2</a> is an opinionated introduction to AutoML and neural architecture search, and <a href="http://www.fast.ai/2018/07/23/auto-ml-3/">Part 3</a> looks at Google’s AutoML in particular.</em></p>
+<p>There are frequent media headlines about both the <strong>scarcity of machine learning talent</strong> (see <a href="https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html">here</a>, <a href="https://www.bloomberg.com/news/articles/2018-02-07/just-how-shallow-is-the-artificial-intelligence-talent-pool">here</a>, and <a href="https://towardsdatascience.com/ai-scientists-how-can-companies-deal-with-the-shortage-of-talent-11ab48566677">here</a>) and about the promises of companies <strong>claiming their products automate machine learning</strong> and eliminate the need for ML expertise altogether (see <a href="https://www.zdnet.com/article/google-launches-cloud-automl-an-effort-to-simplify-and-automate-the-grunt-work-behind-ai-and-machine/">here</a>, <a href="https://www.theverge.com/2018/6/12/17452742/deep-learning-ai-learn-lobe-made-easy-coding">here</a>, and <a href="https://www.engadget.com/2018/01/17/google-unveils-automl-ai-training-tool/">here</a>). In his keynote at the <a href="https://www.youtube.com/watch?v=kSa3UObNS6o">TensorFlow DevSummit</a>, Google’s head of AI Jeff Dean estimated that there are <strong>tens of millions</strong> of organizations that have electronic data that could be used for machine learning but <strong>lack the necessary expertise and skills</strong>. I follow these issues closely since <a href="https://www.forbes.com/sites/mariyayao/2017/04/10/why-we-need-to-democratize-ai-machine-learning-education/#4dd4ae321197">my work</a> <a href="https://www.technologyreview.com/s/610633/the-startup-diversifying-the-ai-workforce-beyond-just-techies/">at fast.ai</a> focuses on enabling more people to use machine learning and on making it easier to use.</p>
+<p>In thinking about how we can automate some of the work of machine learning, as well as how to make it more accessible to people with a wider variety of backgrounds, it’s first necessary to ask, <em>what is it that machine learning practitioners do?</em> Any solution to the shortage of machine learning expertise requires answering this question: whether it’s so we know what skills to teach, what tools to build, or what processes to automate.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="woc4.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">What do machine learning practitioners do? (Image Source: #WOCinTech Chat)</figcaption><p></p>
+</figure>
+</div>
+<p>This post is the first in a 3-part series. It will address what it is that machine learning practitioners do, with Part 2 explaining AutoML and neural architecture search (which several high profile figures have suggested will be key to decreasing the need for data scientists) and Part 3 will cover Google’s heavily hyped AutoML product in particular.</p>
+<h2 id="complex" class="anchored">
+Building Data Products is Complex Work
+</h2>
+<p>While many academic machine learning sources focus almost exclusively on predictive modeling, that is just one piece of what machine learning practitioners do in the wild. The processes of appropriately framing a business problem, collecting and cleaning the data, building the model, implementing the result, and then monitoring for changes are interconnected in many ways that often make it hard to silo off just a single piece (without at least being aware of what the other pieces entail). As Jeremy Howard et al.&nbsp;wrote in <a href="https://www.oreilly.com/ideas/drivetrain-approach-data-products">Designing great data products</a>, <em>Great predictive modeling is an important part of the solution, but it no longer stands on its own; as products become more sophisticated, it disappears into the plumbing.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="complicated-gears.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Building Data Products is Complex Work (Source: Wikimedia Commons)</figcaption><p></p>
+</figure>
+</div>
+<p>A team from Google, D. Sculley et al., wrote the classic <a href="https://ai.google/research/pubs/pub43146">Machine Learning: The High-Interest Credit Card of Technical Debt</a> about the code complexity and technical debt often created when using machine learning in practice. The authors identify a number of system-level interactions, risks, and anti-patterns, including:</p>
+<ul>
+<li><em>glue code</em>: massive amount of supporting code written to get data into and out of general-purpose packages</li>
+<li><em>pipeline jungles</em>: the system for preparing data in an ML-friendly format may become a jungle of scrapes, joins, and sampling steps, often with intermediate files output</li>
+<li>re-use input signals in ways that create unintended tight coupling of otherwise disjoint systems</li>
+<li>risk that changes in the external world may make models or input signals change behavior in unintended ways, and these can be difficult to monitor</li>
+</ul>
+<p>The authors write, <i>A remarkable portion of real-world “machine learning” work is devoted to tackling issues of this form… It’s worth noting that glue code and pipeline jungles are symptomatic of integration issues that may have a <b>root cause in overly separated “research” and “engineering” roles</b>… It may be surprising to the academic community to know that <b>only a tiny fraction of the code in many machine learning systems is actually doing “machine learning”</b>.</i> (emphasis mine)</p>
+<h2 id="fail" class="anchored">
+When machine learning projects fail
+</h2>
+<p>In a <a href="https://www.fast.ai/posts/2016-12-08-org-structure.html">previous post</a>, I identified some failure modes in which machine learning projects are not effective in the workplace:</p>
+<ul>
+<li>The data science team builds really cool stuff that never gets used. There’s no buy-in from the rest of the organization for what they’re working on, and some of the data scientists don’t have a good sense of what can realistically be put into production.</li>
+<li>There is a backlog with data scientists producing models much faster than there is engineering support to put them in production.</li>
+<li>The data infrastructure engineers are separate from the data scientists. The pipelines don’t have the data the data scientists are asking for now, and the data scientists are under-utilizing the data sources the infrastructure engineers have collected.</li>
+<li>The company has definitely decided on feature/product X. They need a data scientist to gather some data that supports this decision. The data scientist feels like the PM is ignoring data that contradicts the decision; the PM feels that the data scientist is ignoring other business logic.</li>
+<li>The data science team interviews a candidate with impressive math modeling and engineering skills. Once hired, the candidate is embedded in a vertical product team that needs simple business analytics. The data scientist is bored and not utilizing their skills.</li>
+</ul>
+<p>I framed these as organizational failures in my original post, but they can also be described as various participants being overly focused on just one slice of the complex system that makes up a full data product. These are failures of communication and goal alignment between different parts of the data product pipeline.</p>
+<h2 id="steps" class="anchored">
+So, what do machine learning practitioners do?
+</h2>
+<p>As suggested above, building a machine learning product is a multi-faceted and complex task. Here are some of the things that machine learning practitioners may need to do during the process:</p>
+<p><strong>Understanding the context</strong>:</p>
+<ul>
+<li>identify areas of the business that could benefit from machine learning</li>
+<li>communicate with other stakeholders about what machine learning is and is not capable of (there are often many misconceptions)</li>
+<li>develop understanding of business strategy, risks, and goals to make sure everyone is on the same page</li>
+<li>identify what kind of data the organization has</li>
+<li>appropriately frame and scope the task</li>
+<li>understand operational constraints (e.g.&nbsp;what data is actually available at inference time)</li>
+<li>proactively identify ethical risks, including how your work could be mis-used by harassers, trolls, authoritarian governments, or for propaganda/disinformation campaigns (and plan how to reduce these risks)</li>
+<li>identify <a href="https://www.infoq.com/presentations/unconscious-bias-machine-learning">potential biases and potential negative feedback loops</a></li>
+</ul>
+<p><strong>Data</strong>: - make plans to collect more of different data (if needed and if possible) - stitch together data from many different sources: often this data has been collected in different formats or with inconsistent conventions - deal with missing or corrupted data - visualize the data - create appropriate <a href="https://www.fast.ai/posts/2017-11-13-validation-sets.html">training, validation, and test sets</a></p>
+<p><strong>Modeling</strong>: - choose which model to use - fit model resource needs into constraints (e.g.&nbsp;will the completed model need to run on an edge device, in a low memory or high latency environment, etc) - choose hyperparameters (e.g.&nbsp;in the case of deep learning, this includes choosing an architecture, loss function, and optimizer) - train the model (and debug why it’s not training). This can involve: - adjusting hyperparmeters (e.g.&nbsp;such as the learning rate) - outputing intermediate results to see how the loss, training error, and validation error are changing with time - inspecting the data the model is wrong on to look for patterns - identifying underlying errors or issues with the data - realizing you need to change how you clean and pre-process the data - realizing you need more or different data augmentation - realizing you need more or different data - trying out different models - identifying if you are under- or over-fitting</p>
+<p><strong>Productionize</strong>: - creating an API or web app with your model as an endpoint in order to productionize - exporting your model into the needed format - plan for how often your model will need to be retrained with updated data (e.g.&nbsp;perhaps you will retrain nightly or weekly)</p>
+<p><strong>Monitor</strong>: - track model performance over time - monitor the input data, to identify if it changes with time in a way that would invalidate your model - communicate your results to the rest of the organization - have a plan in place for how you will monitor and respond to mistakes or unexpected consequences</p>
+<p>Certainly, not every machine learning practitioner needs to do all of the above steps, but components of this process will be a part of many machine learning applications. Even if you are working on just a subset of these steps, a familiarity with the rest of the process will help ensure that you are not overlooking considerations that would keep your project from being successful!</p>
+<h2 id="hard" class="anchored">
+Two of the hardest parts of Machine Learning
+</h2>
+<p>For myself and many others I know, I would highlight two of the most time-consuming and frustrating aspects of machine learning (in particular, deep learning) as:</p>
+<ol type="1">
+<li>Dealing with <strong>data formatting, inconsistencies, and errors</strong> is often a messy and tedious process.</li>
+<li>Training deep learning models is a <strong>notoriously brittle process</strong> right now.</li>
+</ol>
+<h3 id="cleaning" class="anchored">
+Is cleaning data really part of ML? Yes.
+</h3>
+<p>Dealing with data formatting, inconsistencies, and errors is often a messy and tedious process. People will sometimes describe machine learning as separate from data science, as though for machine learning, you can just begin with your nicely cleaned, formatted data set. However, in my experience, the process of cleaning a data set and training a model are usually interwoven: I frequently find issues in the model training that cause me to go back and change the pre-processing for the input data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="floppy-disks.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Dealing with messy and inconsistent data is necessary</figcaption><p></p>
+</figure>
+</div>
+<h3 id="training" class="anchored">
+Training Deep Learning Models is Brittle and Finicky (for now)
+</h3>
+<p>The difficulty of getting models to train deters many beginners, who often wind up feeling discouraged. Even experts frequently complain of <strong>how frustrating and fickle</strong> the training process can be. One AI researcher at <a href="https://www.fast.ai/posts/2018-04-10-stanford-salon.html">Stanford told me</a>, <em>I taught a course on deep learning and had all the students do their own projects. It was so hard. The students couldn’t get their models to train, and we were like “well, that’s deep learning”.</em> Ali Rahimi, an AI researcher with over a decade of experience and winner of the NIPS 2017 Test of Time Award, complained about the brittleness of training in his <a href="https://www.youtube.com/watch?v=ORHFOnaEzPc">NeurIPS award speech</a>. <em>How many of you have designed a deep net from scratch, built it from the ground up, architecture and all, and when it didn’t work, you felt bad about yourself?</em> Rahimi asked the audience of AI researchers, and many raised their hands. Rahimi continued, <em>This happens to me about every 3 months.</em></p>
+<p>The fact that even AI experts sometimes have trouble training new models implies that the process has yet to be automated in a way where it could be incorporated into a general-purpose product. <strong>Some of the biggest advances in deep learning will come through discovering more robust training methods</strong>. We have already seen this some with advances like dropout, <a href="https://arxiv.org/abs/1708.07120">super convergence</a>, and transfer learning, all of which make training easier. Through the power of transfer learning (to be discussed in Part 3) training can be a robust process when defined for a narrow enough problem domain; however, we still have a ways to go in making training more robust in general.</p>
+<h2 id="academic" class="anchored">
+For Academic Researchers
+</h2>
+<p>Even if you are working on theoretical machine learning research, it is useful to understand the process that machine learning practitioners working on practical problems go through, as that might provide insights on what the most relevant or high-impact areas of research are.</p>
+<p>As Googler engineers <a href="https://ai.google/research/pubs/pub43146">D. Sculley et al.&nbsp;wrote</a>, <i>Technical debt is an issue that both engineers and researchers need to be aware of. <b>Research solutions that provide a tiny accuracy benefit at the cost of massive increases in system complexity are rarely wise practice</b>… Paying down technical debt is not always as exciting as proving a new theorem, but it is a critical part of consistently strong innovation. And developing holistic, elegant solutions for complex machine learning systems is deeply rewarding work.</i> (emphasis mine)</p>
+<h2 id="automl" class="anchored">
+AutoML
+</h2>
+<p>Now that we have an overview of some of the tasks that machine learning practitioners do as part of their work, we are ready to evaluate attempts to automate this work. As it’s name suggests, <em>AutoML</em> is one field in particular that has focused on automating machine learning, and a subfield of AutoML called <em>neural architecture search</em> is currently receiving a ton of attention. In part 2, I will explain what AutoML and neural architecture search are, and in part 3, look at Google’s AutoML in particular.</p>
+<p><strong>Be sure to check out Part 2: <a href="http://www.fast.ai/2018/07/16/auto-ml2/">An Opinionated Introduction to AutoML Neural Architecture Search</a>, and Part 3: <a href="https://www.fast.ai/2018/07/23/auto-ml-3/">Google’s AutoML: Cutting Through the Hype</a></strong></p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
