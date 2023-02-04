@@ -354,7 +354,12 @@
 <p><a href="https://www.youtube.com/watch?v=j3nqdZoQjy0&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=2"><strong>All machine learning systems need ways to identify &amp; address mistakes</strong></a>. It is crucial that all machine learning systems are implemented with ways to correctly surface and correct mistakes, and to provide recourse to those harmed.</p>
 <p><a href="https://www.youtube.com/watch?v=bqCEUQq0z4o&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=3"><strong>The Problem with Metrics, Feedback Loops, and Hypergrowth</strong></a>: Overreliance on metrics is a core problem both in the field of machine learning and in the tech industry more broadly. As Goodhart’s Law tells us, when a measure becomes the target, it ceases to be a good measure, yet the incentives of venture capital push companies in this direction. We see out-of-control feedback loops, widespread gaming of metrics, and people being harmed as a result.</p>
 <p><a href="https://www.youtube.com/watch?v=pbnqvS2yjNg&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=4"><strong>Not all types of bias are fixed by diversifying your dataset</strong></a>. The idea of bias is often too general to be useful. There are several different types of bias, and different types require different interventions to try to address them. Through a series of cases studies, we will go deeper into some of the various causes of bias.</p>
-<p>{% include image w=“450” url=“short-ethics-playlist.jpg” caption=“Part of the Ethics Videos Playlist” %}</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/short-ethics-playlist.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Part of the Ethics Videos Playlist</figcaption><p></p>
+</figure>
+</div>
 <p><a href="https://www.youtube.com/watch?v=igVrrfDznOo&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=5"><strong>Humans are biased too, so why does machine learning bias matter?</strong></a> A common objection to concerns about bias in machine learning models is to point out that humans are really biased too. This is correct, yet machine learning bias differs from human bias in several key ways that we need to understand and which can heighten the impact.</p>
 <p><a href="https://www.youtube.com/watch?v=zoAsnJAsLo8&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=6"><strong>7 Questions to Ask About Your Machine Learning Project</strong></a></p>
 <p><a href="https://www.youtube.com/watch?v=PaowVrW3TZg&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=7"><strong>What You Need to Know about Disinformation</strong></a>: With a particular focus on how machine learning advances can contribute to disinformation, this covers some of the fundamental things to understand.</p>
@@ -367,6 +372,8 @@
 
 
  ]]></description>
+  <category>ethics</category>
+  <category>machine learning</category>
   <guid>https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/index.html</guid>
   <pubDate>Sun, 15 Aug 2021 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/short-ethics-playlist.jpg" medium="image" type="image/jpeg"/>
@@ -384,7 +391,7 @@
 <p>This is not a post for ergonomic aficionados (the setups I share could all be further optimized). This is a post for folks who don’t know where to get started, have a limited budget, and are willing to try simple, scrappy approaches. Key takeway: for 34 dollars (21 for a good mouse, and 13 for a cheap keyboard), as well as some household items, you can create an ergonomic setup like the one below. I will show many other options throughout the post, for both sitting and standing, as well as approaches you can easily assemble/disassemble (if you are using the family dinner table and need to clear it off each evening).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic1.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic1.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
 <p></p><figcaption class="figure-caption">While visiting family, I created an ergonomic setup on a counter</figcaption><p></p>
 </figure>
 </div>
@@ -399,7 +406,7 @@ Key advice: Have a separate keyboard and mouse
 <p>If you can’t afford an external monitor, no worries, you can just elevate your laptop. Over the years, I have used cardboard boxes, drinking glasses, bottles of soda, board games, and stacks of books to elevate my laptop. I will recommend some keyboards and mice that I like below, but anything is better than using the ones built into your laptop (since that forces you to keep your screen at the wrong height). For example, the picture in the intro is of a set-up I created while visiting a family member’s apartment in 2014, using books and a cardboard box to elevate my keyboard, mouse, and laptop to the appropriate heights.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic5.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic5.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
 <p></p><figcaption class="figure-caption">For the deep learning study group, I routinely used a brown cardboard box. Bonus: I could store everything in the box when we had the clear out of that room each night.</figcaption><p></p>
 </figure>
 </div>
@@ -407,7 +414,7 @@ Key advice: Have a separate keyboard and mouse
 <p>I rarely worked in coffee shops pre-pandemic (and never do now), but when I had to I would still try to create an ergonomic setup (and go to a coffeeshop where there was enough space!). Here, I’ve stacked my laptop on top of my rolled-up backpack. Ideally, my screen would be higher, but this is still better than having it at table level. Don’t let the perfect be the enemy of the good. Every step you take towards a more ergonomic setup is helpful.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic2.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
 <p></p><figcaption class="figure-caption">When working at a coffee shop (pre-pandemic), I brought an external keyboard and mouse, and used my rolled-up backpack to raise the height of my laptop screen</figcaption><p></p>
 </figure>
 </div>
@@ -417,7 +424,7 @@ About standing desks
 <p>If you have a regular desk (or even just a table) at home and want a standing desk, one option is to convert it using the <a href="https://alphacolin.com/ikea-standing-desk-for-22-dollars/">$22 standing desk approach</a>, which involves an Ikea side table and shelf. I had a previous job in which this was quite popular. Here is a photo of my work desk from that time.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic3.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic3.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
 <p></p><figcaption class="figure-caption">In a previous job, many of us set up $22 standing desks using Ikea side tables</figcaption><p></p>
 </figure>
 </div>
@@ -430,7 +437,7 @@ Budget Recommendations
 <p>My “budget recommendation” would be to get an <a href="https://www.newegg.com/p/0TP-005H-00095">Anker vertical mouse</a> for $21 and literally any keyboard. If you have to choose, I’ve found that having a good mouse is way more important than a good keyboard. It is important that you get some keyboard though, so that you can elevate your laptop screen. In the setup below, I’m using a lightweight travel keyboard that isn’t particularly ergonomic, but it works fine.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic4.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic4.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
 <p></p><figcaption class="figure-caption">The barista at this coffee shop kindly let me use 2 plastic tubs to prop up my laptop (pre-pandemic).</figcaption><p></p>
 </figure>
 </div>
@@ -475,7 +482,7 @@ I couldn't be happier with my little standing desk setup. I have tried far to ma
 <p>This is important to understand, because any risks of optimizing metrics are heightened by AI. While metrics can be useful in their proper place, there are harms when they are unthinkingly applied. Some of the scariest instances of algorithms run amok (such as <a href="https://www.fast.ai/posts/2019-05-28-google-nyt-mohan.html">Google’s algorithm contributing to radicalizing people into white supremacy</a>, <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">teachers being fired by an algorithm</a>, or <a href="https://www.vice.com/en_us/article/pa7dj9/flawed-algorithms-are-grading-millions-of-students-essays">essay grading software</a> that rewards sophisticated garbage) all result from over-emphasizing metrics. We have to understand this dynamic in order to understand the urgent risks we are facing due to misuse of AI.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
 <p></p><figcaption class="figure-caption">Headlines from HBR, Washington Post, and Vice on some of the outcomes of over-optimizing metrics: rewarding gibberish essays, promoting propaganda, massive fraud at Wells Fargo, and firing good teachers</figcaption><p></p>
 </figure>
 </div>
@@ -509,7 +516,7 @@ Metrics can, and will, be gamed
 <p>It is almost inevitable that metrics will be gamed, particularly when they are given too much power. One week this spring, Chaslot collected 84,695 videos from YouTube and analyzed the number of views and the number of channels from which they were recommended. This is <a href="https://twitter.com/gchaslot/status/1121603851675553793?s=20">what he found</a> (also covered in <a href="https://www.washingtonpost.com/technology/2019/04/26/youtube-recommended-russian-media-site-above-all-others-analysis-mueller-report-watchdog-group-says/">the Washington Post</a>):</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/YTRT.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/YTRT.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
 <p></p><figcaption class="figure-caption">Chart showing Russia Today’s video on the Mueller Report as being an outlier in how many YouTube channels recommended it.</figcaption><p></p>
 </figure>
 </div>
@@ -528,7 +535,7 @@ Many metrics gather data of what we do in highly addictive environments
 <p>It matters which metrics we gather and in what environment we do so. Metrics such as what users click on, how much time they spend on sites, and “engagement” are heavily relied on by tech companies as proxies for user preference, and are used to drive important business decisions. Unfortunately, these metrics are gathered in environments engineered to be highly addictive, <a href="https://twitter.com/random_walker/status/1143601343279579137?s=20">laden with dark patterns</a>, and where financial and design decisions have already greatly circumscribed the range of options.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/junkfood.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/junkfood.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
 <p></p><figcaption class="figure-caption">Our online environment is a buffet of junk food</figcaption><p></p>
 </figure>
 </div>
@@ -1544,7 +1551,7 @@ AutoML
 <item>
   <title>Diversity Washing Makes Things Worse</title>
   <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2015-12-07-diversity-washing/2015-12-07-diversity-washing.html</link>
+  <link>https://rachel.fast.ai/posts/2015-12-07-diversity-washing/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1604,7 +1611,7 @@ AutoML
 
  ]]></description>
   <category>inclusion</category>
-  <guid>https://rachel.fast.ai/posts/2015-12-07-diversity-washing/2015-12-07-diversity-washing.html</guid>
+  <guid>https://rachel.fast.ai/posts/2015-12-07-diversity-washing/index.html</guid>
   <pubDate>Sun, 06 Dec 2015 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2015-12-07-diversity-washing/woc.jpg" medium="image" type="image/jpeg"/>
 </item>
