@@ -5,6 +5,7 @@ author: "Rachel Thomas"
 categories: [inclusion]
 image: "woc.jpg"
 description: "Shallow, showy diversity efforts aren't just ineffective, they are actively harmful."
+toc: true
 ---
 
 ## How Diversity Washing Hurts Diversity

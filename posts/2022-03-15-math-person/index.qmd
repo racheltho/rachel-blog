@@ -5,6 +5,7 @@ image: "teaching.jpg"
 description: "Many cultural factors, misconceptions, stereotypes, and obstacles turn people off to math."
 author: "Rachel Thomas"
 categories: [advice, education]
+toc: true
 ---
 
 On the surface, I may seem into math: I have a math PhD, taught a graduate [computational linear algebra](https://www.fast.ai/2017/07/17/num-lin-alg/) course, co-founded AI research lab [fast.ai](https://www.fast.ai/about/), and even go by the twitter handle [@math_rachel](https://twitter.com/math_rachel).

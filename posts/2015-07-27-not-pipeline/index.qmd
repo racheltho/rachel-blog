@@ -5,6 +5,7 @@ image: "pipeline.jpg"
 description: "It doesn't matter how many girls you teach to code if you keep driving adult women out of the tech industry."
 author: "Rachel Thomas"
 categories: [inclusion]
+toc: true
 ---
 
 *This article has been [translated into Spanish](http://mata.juegos/es/2016/07/mujeres-tecnologia/) at Matajuegos and [into Russian](https://habr.com/ru/post/511658/) by Dmitry Si.*

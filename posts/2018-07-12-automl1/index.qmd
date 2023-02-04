@@ -2,9 +2,10 @@
 title: "What do machine learning practitioners actually do?"
 date: "2018-07-12"
 author: "Rachel Thomas"
-categories: [machine learning, advice]
+categories: [machine learning, advice, work]
 image: "woc4.jpg"
 description: "Machine learning is an in-demand field, but there are misconceptions about what the work entails in practice."
+toc: true
 ---
 
 *This post is part 1 of a series. [Part 2](http://www.fast.ai/2018/07/16/auto-ml2/) is an opinionated introduction to AutoML and neural architecture search, and [Part 3](http://www.fast.ai/2018/07/23/auto-ml-3/) looks at Google's AutoML in particular.*
@@ -13,7 +14,7 @@ There are frequent media headlines about both the **scarcity of machine learning
 
 In thinking about how we can automate some of the work of machine learning, as well as how to make it more accessible to people with a wider variety of backgrounds, it's first necessary to ask, *what is it that machine learning practitioners do?* Any solution to the shortage of machine learning expertise requires answering this question: whether it's so we know what skills to teach, what tools to build, or what processes to automate.
 
-![What do machine learning practitioners do? (Image Source: #WOCinTech Chat)](woc4.jpg){width=70%}
+![What do machine learning practitioners do? (Image Source: #WOCinTech Chat)](woc4.jpg){width=60%}
 
 This post is the first in a 3-part series.  It will address what it is that machine learning practitioners do, with Part 2 explaining AutoML and neural architecture search (which several high profile figures have suggested will be key to decreasing the need for data scientists) and Part 3 will cover Google's heavily hyped AutoML product in particular.
 
@@ -21,7 +22,7 @@ This post is the first in a 3-part series.  It will address what it is that mach
 
 While many academic machine learning sources focus almost exclusively on predictive modeling, that is just one piece of what machine learning practitioners do in the wild.  The processes of appropriately framing a business problem, collecting and cleaning the data, building the model, implementing the result, and then monitoring for changes are interconnected in many ways that often make it hard to silo off just a single piece (without at least being aware of what the other pieces entail). As Jeremy Howard et al. wrote in [Designing great data products](https://www.oreilly.com/ideas/drivetrain-approach-data-products), *Great predictive modeling is an important part of the solution, but it no longer stands on its own; as products become more sophisticated, it disappears into the plumbing.*
 
-![Building Data Products is Complex Work (Source: Wikimedia Commons)](complicated-gears.gif)
+![Building Data Products is Complex Work (Source: Wikimedia Commons)](complicated-gears.gif){width=60%}
 
 A team from Google, D. Sculley et al., wrote the classic [Machine Learning: The High-Interest Credit Card of Technical Debt](https://ai.google/research/pubs/pub43146) about the code complexity and technical debt often created when using machine learning in practice. The authors identify a number of system-level interactions, risks, and anti-patterns, including:
 

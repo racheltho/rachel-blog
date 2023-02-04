@@ -4,7 +4,8 @@ date: "2019-01-29"
 image: "no-accountability.jpg"
 author: "Rachel Thomas"
 categories: [ethics, machine learning]
-description: "This AI-powered future is already here, and some of the consequences are scarier than you may realize."
+description: "An AI-powered future is already here, and some of the consequences are scarier than you may realize."
+toc: true
 ---
 
 AI is being increasingly used to make important decisions. Many AI experts (including [Jeff Dean](https://www.recode.net/2016/8/13/12467506/google-brain-jeff-dean-ama-reddit-artificial-intelligence-robot-takeover), head of AI at Google, and [Andrew Ng](https://www.theregister.co.uk/2015/03/19/andrew_ng_baidu_ai/), founder of Coursera and deeplearning.ai) say that warnings about sentient robots are overblown, but other harms are not getting enough attention. I agree. I am an AI researcher, and [I'm worried](https://www.youtube.com/watch?v=LqjP7O9SxOM) about some of the societal impacts that we're already seeing. In particular, these 5 things scare me about AI:

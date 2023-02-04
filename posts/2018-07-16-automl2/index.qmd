@@ -1,0 +1,105 @@
+---
+title: "An Opinionated Introduction to AutoML and Neural Architecture Search"
+date: "2018-07-16"
+author: "Rachel Thomas"
+image: "automl-headlines.png"
+description: "AutoML is being heavily hyped-- but would AugmentedML be a better approach?"
+categories: [technical, machine learning]
+toc: true
+---
+
+*This is part 2 in a series. Check out [part 1 here](https://rachel.fast.ai/posts/2018-07-12-automl1/) and [part 3 here](http://www.fast.ai/2018/07/23/auto-ml-3/).*
+
+Researchers from CMU and DeepMind recently released an interesting new paper, called [Differentiable Architecture Search (DARTS)](https://www.groundai.com/project/darts-differentiable-architecture-search/), offering an alternative approach to *neural architecture search*, a very hot area of machine learning right now. Neural architecture search has been heavily hyped in the last year, with Google's CEO [Sundar Pichai](https://blog.google/technology/ai/making-ai-work-for-everyone/) and Google's Head of AI [Jeff Dean](https://www.youtube.com/watch?v=kSa3UObNS6o) promoting the idea that *neural architecture search* and the *large amounts of computational power* it requires **are essential to making machine learning available to the masses**. Google's work on neural architecture search has been widely and adoringly covered by the tech media (see [here](https://nordic.businessinsider.com/google-has-started-using-ai-to-build-more-advanced-ai-2017-5/), [here](https://www.wired.com/story/googles-learning-software-learns-to-write-learning-software/), [here](https://www.zdnet.com/article/google-launches-cloud-automl-an-effort-to-simplify-and-automate-the-grunt-work-behind-ai-and-machine/), and [here](https://venturebeat.com/2018/05/09/googles-ai-chief-on-automl-autonomous-weapons-and-the-future/) for examples). 
+
+![Headlines from just a few of the many, many articles written about Google's AutoML and Neural Architecture Search](automl-headlines.png){width=60%}
+
+During his [keynote](https://www.youtube.com/watch?v=kSa3UObNS6o) (starts around 22:20) at the TensorFlow DevSummit in March 2018, Jeff Dean posited that perhaps in the future **Google could replace machine learning expertise with 100x computational power**. He gave computationally expensive *neural architecture search* as a primary example (the only example he gave) of why we need 100x computational power in order to make ML accessible to more people.   
+
+![Slide from Jeff Dean's Keynote at the TensorFlow Dev Summit](jeff_dean.png){width=70%}
+
+What is neural architecture search? Is it the key to making machine learning available to non-machine learning experts? I will dig into these questions in this post, and in my next post, I will look specifically at Google's AutoML. Neural architecture search is a part of a broader field called *AutoML*, which has also been receiving a lot of hype and which we will consider first. 
+
+Part 2 table of contents:
+
+<ul>
+<li><a href="#auto-ml">What is AutoML?</a></li>
+<li><a href="#useful-automl">How useful is AutoML?</a></li>
+<li><a href="#nas">What is neural architecture search?</a></li>
+<li><a href="#darts">What about DARTS?</a></li>
+<li><a href="#nas-useful">How useful is Neural Architecture Search?</a></li>
+<li><a href="#vs">How else could we make machine learning practitioners more effective?</a></li>
+</ul>
+
+<h2 id="auto-ml">What is AutoML?</h2>
+
+The term AutoML has traditionally been used to describe *automated methods for model selection and/or hyperparameter optimization*. These methods exist for many types of algorithms, such as random forests, gradient boosting machines, neural networks, and more. The field of AutoML includes [open-source AutoML libraries](https://www.automl.org/automl/), [workshops](https://www.automl.org/workshops/), [research](https://www.automl.org/automl/literature-on-neural-architecture-search/), and [competitions](http://automl.chalearn.org/). Beginners often feel like they are just guessing as they test out different hyperparameters for a model, and automating the process could make this piece of the machine learning pipeline easier, as well as speeding things up even for experienced machine learning practitioners.
+
+There are a number of AutoML libraries, the oldest of which is [AutoWEKA](http://www.cs.ubc.ca/labs/beta/Projects/autoweka/), which was first released in 2013 and automatically chooses a model and selects hyperparameters.  Other notable AutoML libraries include [auto-sklearn](http://automl.github.io/auto-sklearn/stable/) (which extends AutoWEKA to python), [H2O AutoML](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html), and [TPOT](http://automl.info/tpot/).  [AutoML.org](https://www.automl.org/) (formerly known as ML4AAD, Machine Learning for Automated Algorithm Design) has been organzing [AutoML workshops](https://www.automl.org/workshops/) at the academic machine learning conference [ICML](https://icml.cc/) yearly since 2014.
+
+<h2 id="#useful-automl"> How useful is AutoML? </h2>
+
+AutoML provides a way to select models and optimize hyper-parameters. It can also be useful in getting a baseline to know what level of performance is possible for a problem. So does this mean that data scientists can be replaced?  Not yet, as we need to keep the context of [*what else it is that machine learning practitioners do*](https://rachel.fast.ai/posts/2018-07-12-automl1/).
+
+For many machine learning projects, choosing a model is just one piece of the [complex process](http://www.fast.ai/2018/07/12/auto-ml-1/#complex) of building machine learning products. As I covered in my [previous post](https://rachel.fast.ai/posts/2018-07-12-automl1/), [projects can fail](http://www.fast.ai/2018/07/12/auto-ml-1/#fail) if participants don't see how interconnected the various parts of the pipeline are. I thought of [over 30 different steps](http://www.fast.ai/2018/07/12/auto-ml-1/#steps) that can be involved in the process.  I highlighted two of the most time-consuming aspects of machine learning (in particular, deep learning) as **cleaning data** (and [yes, this is an inseparable part of machine learning](http://www.fast.ai/2018/07/12/auto-ml-1/#steps)) and [**training models**](http://www.fast.ai/2018/07/12/auto-ml-1/#training). While AutoML can help with selecting a model and choosing hyperparameters, it is important to keep perspective on what other data expertise is still needed and on the difficult problems remain.
+
+I will suggest some alternate approaches to AutoML for making machine learning practitioners more effective in the <a href="#id">final section</a>.
+
+<h2 id="nas">What is neural architecture search?</h2>
+
+Now that we've covered some of what AutoML is, let's look at a particularly active subset of the field: **neural architecture search**.  Google CEO Sundar Pichai [wrote that](https://blog.google/technology/ai/making-ai-work-for-everyone/), <i>"designing neural nets is extremely time intensive, and requires an expertise that limits its use to a smaller community of scientists and engineers. That’s why we’ve created an approach called AutoML, showing that <b> it’s possible for neural nets to design neural nets</b>."</i>
+
+What Pichai refers to as using "neural nets to design neural nets" is known as **neural architecture search**; typically **reinforcement learning** or **evolutionary algorithms** are used to design the new neural net architectures. This is useful because it allows us to discover architectures far more complicated than what humans may think to try, and these architectures can be optimized for particular goals.  Neural architecture search is often very computationally expensive.
+
+To be precise, neural architecture search usually involves learning something like a layer (often called a "cell") that can be assembled as a stack of repeated cells to create a neural network:
+
+![Diagram from Zoph et. al. 2017. On the left is the full neural network of stacked cells, and on the right is the inside structure of a cell](evolvable-cell.png){width=60%}
+
+The literature of [academic papers on neural architecture search](http://www.ml4aad.org/automl/literature-on-neural-architecture-search/) is extensive, so I will highlight just a few recent papers here:
+
+- The term *AutoML* jumped to "mainstream" prominence with [work by Google AI researchers](https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html) ([paper here](https://arxiv.org/pdf/1611.01578.pdf)) Quoc Le and Barret Zoph, which was featured [at Google I/O in May 2017](https://www.technologyreview.com/s/607894/why-googles-ceo-is-excited-about-automating-artificial-intelligence/). This work used reinforcement learning to find new architectures for the computer vision problem Cifar10 and the NLP problem Penn Tree Bank, and achieved similar results to existing architectures.
+
+![Diagram from Le and Zoph's blog post: the simpler architecture on the left was designed by a human and the more complicated architecture on the right was designed by a neural net.](automl_diagram.png){width=60%}
+
+- **NASNet** from [Learning Transferable Architectures for Scalable Image Recognition](https://arxiv.org/abs/1707.07012) ([blog post here](https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html)).  This work searches for an architectural building block on a small data set (Cifar10) and then builds an architecture for a large data set (ImageNet).   This research was **very computationally intensive** with it taking 1800 GPU days (the equivalent of almost 5 years for 1 GPU) to learn the architecture (the team at Google used **500 GPUs for 4 days**!). 
+
+- **AmoebaNet** from [Regularized Evolution for Image Classifier Architecture Search](https://arxiv.org/abs/1802.01548)  This research was **even more computationally intensive** than NASNet, with it taking the equivalent of 3150 GPU days (the equivalent of almost 9 years for 1 GPU) to learn the architecture (the team at Google used 450 K40 GPUs for 7 days!). AmoebaNet consists of "cells" learned via an *evolutionary algorithm*, showing that artificially-evolved architectures can match or surpass human-crafted and reinforcement learning-designed image classifiers.  After incorporating [advances from fast.ai](https://www.fast.ai/posts/2018-04-30-dawnbench-fastai.html) such as an aggressive learning schedule and changing the image size as training progresses, AmoebaNet is now the **cheapest way to train ImageNet on a single machine**.
+
+- [**Efficient Neural Architecture Search (ENAS)**](https://arxiv.org/pdf/1802.03268.pdf): used much fewer GPU-hours than previously existing automatic model design approaches, and notably, was 1000x less expensive than standard Neural Architecture Search. This research was done using a single GPU for just 16 hours.
+
+<h3 id="darts">What about DARTS?</h3>
+
+[Differentiable architecture search (DARTS)](https://www.groundai.com/project/darts-differentiable-architecture-search/). This research was recently released from a team at Carnegie Mellon University and DeepMind, and I'm excited about the idea. DARTS assumes the space of candidate architectures is continuous, not discrete, and this allows it to use gradient-based aproaches, which are vastly more efficient than the inefficient black-box search used by most neural architecture search algorithms.
+
+![Diagram from DARTS, which treats the space of all possible architectures as continuous, not discrete](darts.png){width=70%}
+
+To learn a network for Cifar-10, **DARTS takes just 4 GPU days**, compared to **1800 GPU days for NASNet** and **3150 GPU days for AmoebaNet** (all learned to the same accuracy).  This is a huge gain in efficiency! Although more exploration is needed, this is a promising research direction. Given how Google frequently equates neural architecture search with huge computational expense, efficient ways to do architecture search have most likely been under-explored.
+
+<h2 id="nas-useful">How useful is Neural Architecture Search?</h2>
+
+In his [TensorFlow DevSummit keynote](https://www.youtube.com/watch?v=kSa3UObNS6o) (starts around 22:20), Jeff Dean suggested that a significant part of deep learning work is trying out different architectures. This was the only step of machine learning that Dean highlighted in his short talk, and I was surprised by his emphasis. Sundar Pichai's [blog post](https://blog.google/technology/ai/making-ai-work-for-everyone/) contained a similar assertion.
+
+![Jeff Dean's slide showing that neural architecture search can try 20 different models to find the most accurate](neural_arch_search.jpg){width=70%}
+
+However, choosing a model is just one piece of the [complex process](http://www.fast.ai/2018/07/12/auto-ml-1/#complex) of building machine learning products. In most cases, architecture selection is nowhere near the hardest, most time-consuming, or most significant part of the problem. **Currently, there is no evidence that each new problem would be best modeled with it’s own unique architecture,** and most practitioners consider it unlikely this will ever be the case.
+
+Organizations like Google working on architecture design and sharing the architectures they discover with the rest of us are providing an important and helpful service. However, the underlying architecture search method is only needed for that tiny fraction of researchers that are working on foundational neural architecture design. The rest of us can just use the architectures they find via [*transfer learning*](http://nlp.fast.ai/classification/2018/05/15/introducting-ulmfit.html#transfer).
+
+<h2 id="vs">How else could we make machine learning practitioners more effective? AutoML vs. Augmented ML</h2>
+
+The field of *AutoML*, including *neural architecture search*, has been largely focused on the question: <b>how can we automate model selection and hyperparameter optimization?</b> However, automation ignores the important role of human input. I'd like to propose an alternate question: **how can humans and computers work together to make machine learning more effective?**  The focus of *augmented ML* is on figuring out how a human and machine can best work together to take advantage of their different strengths. 
+
+An example of *augmented ML* is Leslie Smith's [*learning rate finder*](https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0) ([paper here](https://arxiv.org/abs/1506.01186)), which is implemented in the [fastai library](https://github.com/fastai/fastai) (a high level API that sits on top of PyTorch) and taught as a key technique in our [free deep learning course](http://course.fast.ai/). The *learning rate* is a hyperparameter that can determine how quickly your model trains, or even whether it successfully trains at all. The learning rate finder allows a human to find a good learning rate in a single step, by looking at a generated chart. It's faster than AutoML approaches to the same problem, improves the data scientist's understanding of the training process, and encourages more powerful multi-step approaches to training models.
+
+![Diagram from Surmenok's blog post on the learning rate finder, showing relationship between learning rate and loss](learning_rate_finder.png)
+
+There's another problem with the focus on automating hyperparameter selection: it overlooks the possibility that some types of model are more widely useful, have fewer hyperparameters to tune, and are less sensitive to choice of hyperparameters. For example, a key benefit of random forests over gradient boosting machines (GBMs) is that random forests are more robust, whereas GBMs tend to be fairly sensitive to minor changes in hyperparameters. As a result, random forests are widely used in industry. **Researching ways to effectively remove hyperparameters (through smarter defaults, or through new models) can have a huge impact.** When I [first became interested](https://vimeo.com/214233053) in deep learning in 2013, it was overwhelming to feel that there were such a huge number of hyperparameters, and I'm happy that newer research and tools has helped eliminate many of those (especially for beginners). For instance, in the fast.ai course, beginners start by only having to choose a single hyperparameter, the learning rate, and we even give you a tool to do that!
+
+<h2 id="end">Stay tuned...</h2>
+
+Now that we have an overview of what the fields of AutoML and neural architecture search are, we can take a closer look at Google's AutoML in the next post.
+
+**If you haven't already, check out Part 1: [What is it that machine learning practitioners do?](http://www.fast.ai/2018/07/12/auto-ml-1/) and Part 3: [Google's AutoML: Cutting Through the Hype](https://www.fast.ai/2018/07/23/auto-ml-3/) of this series.**
+
+**Please be sure to check out Part 3 of this post next week!**
+

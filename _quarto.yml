@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Rachel Thomas, PhD"
+  site-url: https://rachel.fast.ai/
   description: "a blog about science, data, ethics, & education"
   navbar:
     right:
@@ -17,7 +18,7 @@ website:
         href: index.xml
 format:
   html:
-    theme: flatly
+    theme: spacelab
     css: styles.css
 
 

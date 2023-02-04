@@ -3,8 +3,9 @@ title: "Qualitative humanities research is crucial to AI"
 author: "Louisa Bartolow and Rachel Thomas"
 date: "2022-06-01"
 image: "Abstract-art-britto-qb140.jpg"
-description: "Following the thread of any seemingly quantitative issue in AI ethics quickly leads to a host of qualitative questions. Unfortunately, there is often a large divide between computer scientists and social scientists, with over-simplified assumptions and fundamental misunderstandings."
+description: "Following the thread of any quantitative issue leads to qualitative questions."
 categories: [ethics, machine learning]
+toc: true
 ---
 
 *"All research is qualitative; some is also quantitative"*
@@ -12,7 +13,7 @@ Harvard Social Scientist and Statistician Gary King
 
 Suppose you wanted to find out whether a machine learning system being adopted - to [recruit candidates](https://hbr.org/2019/05/all-the-ways-hiring-algorithms-can-introduce-bias), [lend money](https://mitibmwatsonailab.mit.edu/research/blog/black-loans-matter-fighting-bias-for-ai-fairness-in-lending/), or [predict future criminality](https://www.propublica.org/podcast/how-we-decided-to-test-racial-bias-in-algorithms) - exhibited racial bias. You might calculate model performance across groups with different races.  But [how was race categorised](https://dl.acm.org/doi/10.1145/3351095.3372826)-- through a census record, a [police officer’s guess](https://www.youtube.com/watch?v=s24vksJRJeE&list=PLgdVmcMc8gy4sVLlgM0GUnnVZ1Fu0et05&index=6), or by an annotator? Each possible answer raises another set of questions. Following the thread of any seemingly quantitative issue around AI ethics quickly leads to a host of qualitative questions. Throughout AI, qualitative decisions are made about what metrics to optimise for, which categories to use, how to define their bounds, who applies the labels.  Similarly, qualitative research is necessary to understand AI systems operating in society: evaluating system performance beyond what can be captured in short term metrics, understanding what is missed by large-scale studies (which can elide details and overlook outliers), and shedding light on the circumstances in which data is produced (often by crowd-sourced or poorly paid workers).
 
-![Attempting to measure racial bias leads to qualitative questions](bias-headlines.jpg)
+![Attempting to measure racial bias leads to qualitative questions](biasheadlines.jpg){width=60%}
 
 Unfortunately, there is often a [large divide between](https://journals.sagepub.com/doi/full/10.1177/2053951719833404) computer scientists and social scientists, with over-simplified assumptions and fundamental misunderstandings of one another.  Even when cross-disciplinary partnerships occur, [they often fall](https://journals.sagepub.com/doi/full/10.1177/2053951719833404) into “normal disciplinary divisions of labour: social scientists observe, data scientists make; social scientists do ethics, data scientists do science; social scientists do the incalculable, data scientists do the calculable.” The solution is not for computer scientists to absorb a shallow understanding of the social sciences, but for deeper collaborations.  In a paper on [exclusionary practices in AI ethics](https://dl.acm.org/doi/10.1145/3442188.3445914), an interdisciplinary team wrote of the “indifference, devaluation, and lack of mutual support between CS and humanistic social science (HSS), [which elevates] the myth of technologists as ‘ethical unicorns’ that can do it all, though their disciplinary tools are ultimately limited.” 
 
@@ -30,7 +31,7 @@ Irrespective of how successful we consider the existing approaches of Google Sea
 
 The importance of thoughtful humanities research is heightened if we are serious about grappling with the potential broader social effects of machine learning systems (both good and bad), which are often [delayed, distributed and cumulative](https://policyreview.info/articles/analysis/beyond-individual-governing-ais-societal-harm).
 
-## Small-scale qualitative studies tell an important story even (and perhaps especially) when they seem to contradict large-scale ‘objective’ studies
+## Small-scale qualitative studies tell an important story
 
 Hypothetically, let’s say you wanted to find out whether the use of AI technologies by doctors during a medical appointment would make doctors less attentive to patients - what do you think the best way of doing it would be? You could find some criteria and method for measuring ‘attentiveness’, say tracking the amount of eye contact between the doctor and patient, and analyse this across a representative sample of medical appointments where AI technologies were being used, compared to a control group of medical appointments where AI technologies weren’t being used. Or would you interview doctors about their experiences using the technology during appointments? Or talk to patients about how they felt the technology did, or didn’t, impact their experience? 
 

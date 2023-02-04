@@ -4,6 +4,7 @@ date: "2017-11-13"
 author: "Rachel Thomas"
 categories: [machine learning, technical]
 description: Avoid failures from poorly chosen validation sets.
+toc: true
 ---
 
 An all-too-common scenario: a seemingly impressive machine learning model is a complete failure when implemented in production. The fallout includes leaders who are now skeptical of machine learning and reluctant to try it again.  How can this happen?

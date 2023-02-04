@@ -5,6 +5,7 @@ image: "overwork.jpg"
 description: "Why working longer doesn't work."
 author: "Rachel Thomas"
 categories: [inclusion, work]
+toc: true
 ---
 
 ## One-third of workers are ill or disabled — and this industry is shutting them out

@@ -2,9 +2,10 @@
 title: "AI Harms are Societal, Not Just Individual"
 date: "2022-05-17"
 image: "air-pollution.jpg"
-description: "In the west, our ideas of harm are largely anchored to an individual being harmed by a particular action at a discrete moment in time. Yet the harms caused by algorithmic systems are often collective and communal."
+description: "Much like pollution, the harms caused by algorithmic systems are often collective and communal."
 author: "Rachel Thomas and Louisa Bartolo"
 categories: [ethics, machine learning]
+toc: true
 ---
 
 ## Not just Individual, but Societal Harms

@@ -4,6 +4,7 @@ date: "2018-04-29"
 author: "Rachel Thomas"
 description: "Deep learning is not just for images and text."
 categories: [machine learning, technical]
+toc: true
 ---
 
 There is a powerful technique that is [winning Kaggle competitions](http://blog.kaggle.com/2015/07/27/taxi-trajectory-winners-interview-1st-place-team-%F0%9F%9A%95/) and is widely used at Google ([according to Jeff Dean](https://twimlai.com/twiml-talk-124-systems-software-machine-learning-scale-jeff-dean/)), [Pinterest](https://medium.com/the-graph/applying-deep-learning-to-related-pins-a6fee3c92f5e), and [Instacart](https://tech.instacart.com/deep-learning-with-emojis-not-math-660ba1ad6cdc), yet that many people don't even realize is possible: the **use of deep learning for tabular data**, and in particular, the creation of **embeddings for categorical variables**.

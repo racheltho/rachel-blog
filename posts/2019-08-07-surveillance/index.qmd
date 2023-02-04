@@ -5,6 +5,7 @@ date: "2019-08-07"
 author: "Rachel Thomas"
 categories: [ethics]
 description: How surveillance makes us less safe
+toc: true
 ---
 
 Over 225 police departments have partnered with Amazon to have access to Amazon’s video footage obtained as part of the “smart” doorbell product Ring, and in many cases these partnerships are [heavily subsidized with taxpayer money](https://www.vice.com/en_us/article/d3ag37/us-cities-are-helping-people-buy-amazon-surveillance-cameras-using-taxpayer-money). Police departments are allowing Amazon [to stream 911 call](https://gizmodo.com/cops-are-giving-amazons-ring-your-real-time-911-data-1836883867) information directly in real-time, and Amazon requires police departments to [read pre-approved scripts](https://gizmodo.com/everything-cops-say-about-amazons-ring-is-scripted-or-a-1836812538) when talking about the program. If a homeowner doesn’t want to share data from their video camera doorbell with police, an officer for the Fresno County Sheriff's Office said [they can just go directly to Amazon](https://gizmodo.com/amazons-ring-is-teaching-cops-how-to-persuade-customers-1837000515) to obtain it. This creation of an extensive surveillance network, the murky private-public partnership surrounding it, and a lack of any sort of regulations or oversight is frightening.  And this is just one of many examples related to surveillance technology that have recently come to light.
