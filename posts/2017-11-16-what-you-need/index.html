@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2017-11-16">
+<meta name="description" content="The hardware, software, background, and data you need to do deep learning (it may be less than you expect).">
+
+<title>Rachel Thomas, PhD - What you need to do deep learning</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">What you need to do deep learning</h1>
+                  <div>
+        <div class="description">
+          The hardware, software, background, and data you need to do deep learning (it may be less than you expect).
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">advice</div>
+                <div class="quarto-category">technical</div>
+                <div class="quarto-category">machine learning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 16, 2017</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-hardware-you-need" id="toc-the-hardware-you-need" class="nav-link active" data-scroll-target="#the-hardware-you-need">The hardware you need</a>
+  <ul class="collapse">
+  <li><a href="#we-are-indebted-to-the-gaming-industry" id="toc-we-are-indebted-to-the-gaming-industry" class="nav-link" data-scroll-target="#we-are-indebted-to-the-gaming-industry">We are indebted to the gaming industry</a></li>
+  <li><a href="#not-all-gpus-are-the-same" id="toc-not-all-gpus-are-the-same" class="nav-link" data-scroll-target="#not-all-gpus-are-the-same">Not all GPUs are the same</a></li>
+  <li><a href="#if-you-dont-have-a-gpu" id="toc-if-you-dont-have-a-gpu" class="nav-link" data-scroll-target="#if-you-dont-have-a-gpu">If you don’t have a GPU…</a></li>
+  </ul></li>
+  <li><a href="#the-software-you-need" id="toc-the-software-you-need" class="nav-link" data-scroll-target="#the-software-you-need">The software you need</a>
+  <ul class="collapse">
+  <li><a href="#dynamic-vs.-static-graph-computation" id="toc-dynamic-vs.-static-graph-computation" class="nav-link" data-scroll-target="#dynamic-vs.-static-graph-computation">Dynamic vs.&nbsp;Static Graph Computation</a></li>
+  </ul></li>
+  <li><a href="#what-you-need-for-production-not-a-gpu" id="toc-what-you-need-for-production-not-a-gpu" class="nav-link" data-scroll-target="#what-you-need-for-production-not-a-gpu">What you need for production: not a GPU</a></li>
+  <li><a href="#the-background-you-need-1-year-of-coding" id="toc-the-background-you-need-1-year-of-coding" class="nav-link" data-scroll-target="#the-background-you-need-1-year-of-coding">The background you need: 1 year of coding</a></li>
+  <li><a href="#the-data-you-need-far-less-than-you-think" id="toc-the-data-you-need-far-less-than-you-think" class="nav-link" data-scroll-target="#the-data-you-need-far-less-than-you-think">The data you need: far less than you think</a></li>
+  <li><a href="#a-note-about-access" id="toc-a-note-about-access" class="nav-link" data-scroll-target="#a-note-about-access">A note about access</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><em>This post has been translated into <a href="https://www.jiqizhixin.com/articles/2017-11-17-3">Chinese here</a>.</em></p>
+<p>I want to answer some questions that I’m commonly asked: <em>What kind of computer do I need to do deep learning? Why does fast.ai recommend Nvidia GPUs? What deep learning library do you recommend for beginners? How do you put deep learning into production?</em> I think these questions all fall under a general theme of <strong>What do you need (in terms of hardware, software, background, and data) to do deep learning?</strong> This post is geared towards those new to the field and curious about getting started.</p>
+<section id="the-hardware-you-need" class="level2">
+<h2 class="anchored" data-anchor-id="the-hardware-you-need">The hardware you need</h2>
+<section id="we-are-indebted-to-the-gaming-industry" class="level3">
+<h3 class="anchored" data-anchor-id="we-are-indebted-to-the-gaming-industry">We are indebted to the gaming industry</h3>
+<p>The video game industry is larger (in terms of revenue) <a href="http://www.huffingtonpost.co.uk/george-taylor/why-is-gaming-more-popular-than-music-and-film_b_10095376.html">than the film and music industries combined</a>. In the last 20 years, the video gaming industry drove forward huge advances in GPUs (graphical processing units), used to do the matrix math needed for rendering graphics. Fortunately, these are exactly the type of computations needed for deep learning. These advances in GPU technology are a key part of why neural networks are proving so much more powerful now than they did a few decades ago. Training a deep learning model without a GPU would be painfully slow in most cases.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gpu.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">A GPU</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="not-all-gpus-are-the-same" class="level3">
+<h3 class="anchored" data-anchor-id="not-all-gpus-are-the-same">Not all GPUs are the same</h3>
+<p>Most deep learning practitioners are not programming GPUs directly; we are using software libraries (such as PyTorch or TensorFlow) that handle this. However, to effectively use these libraries, you need access to the right type of GPU. In almost all cases, this means having access to a <a href="https://developer.nvidia.com/cuda-gpus">GPU from the company Nvidia</a>.</p>
+<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA</a> and <a href="https://www.khronos.org/opencl/">OpenCL</a> are the two main ways for programming GPUs. CUDA is by far the most developed, has the most extensive ecosystem, and is the most robustly supported by deep learning libraries. CUDA is a <strong>proprietary</strong> language created by Nvidia, so it can’t be used by GPUs from other companies. When fast.ai recommends Nvidia GPUs, it is not out of any special affinity or loyalty to Nvidia on our part, but that this is by far the best option for deep learning.</p>
+<p>Nvidia dominates the market for GPUs, with the next closest competitor being the <a href="http://www.amd.com/en">company AMD</a>. This summer, AMD announced the release of a <a href="https://rocm.github.io/index.html">platform called ROCm</a> to provide more support for deep learning. The <a href="https://rocm.github.io/dl.html">status of ROCm</a> for major deep learning libraries such as PyTorch, TensorFlow, MxNet, and CNTK is still under development. While I would love to see an open source alternative succeed, I have to admit that I find the documentation for ROCm hard to understand. I just read the <em>Overview</em>, <em>Getting Started</em>, and <em>Deep Learning</em> pages of the ROCm website and still can’t explain what ROCm is in my own words, although I want to include it here for completeness. (I admittedly don’t have a background in hardware, but I think that data scientists like me should be part of the intended audience for this project.)</p>
+</section>
+<section id="if-you-dont-have-a-gpu" class="level3">
+<h3 class="anchored" data-anchor-id="if-you-dont-have-a-gpu">If you don’t have a GPU…</h3>
+<p>If your computer doesn’t have a GPU or has a non-Nvidia GPU, you have several great options:</p>
+<ul>
+<li><p>Use <a href="https://www.crestle.com/">Crestle</a>, through your browser: Crestle is a service (developed by fast.ai student Anurag Goel) that gives you an already set up cloud service with all the popular scientific and deep learning frameworks already pre-installed and configured to run on a GPU in the cloud. It is easily accessed through your browser. New users get 10 hours and 1 GB of storage for free. After this, GPU usage is 59 cents per hour. I recommend this option to those who are new to AWS or new to using the console.</p></li>
+<li><p>Set up an AWS cloud instance through your console: You can create an AWS instance (which remotely provides you with Nvidia GPUs) by following the steps in <a href="http://course.fast.ai/lessons/aws.html">this fast.ai setup lesson</a>. AWS charges 90 cents per hour for this. Although our set-up materials are about AWS (and you’ll find the most <a href="http://www.amd.com/en">forum support</a> for AWS), one fast.ai student created a guide for <a href="https://medium.com/@abhikprince/setting-up-an-azure-vm-for-deep-learning-bb76b453272b">Setting up an Azure Virtual Machine for Deep learning</a>. And I’m happy to share and add a link if anyone writes a blog post about doing this with Google Cloud Engine.</p></li>
+<li><p>Build your own box. Here’s a <a href="http://forums.fast.ai/t/making-your-own-server/174">lengthy thread from our fast.ai forums</a> where people ask questions, share what components they are using, and post other useful links and tips. The cheapest new Nvidia GPUs are around $300, with some students finding even cheaper used ones on eBay or Craigslist, and others paying more for more powerful GPUs. A few of our students wrote blog posts documenting how they built their machines:</p>
+<ul>
+<li><a href="https://www.topbots.com/deep-confusion-misadventures-in-building-a-machine-learning-server/">Deep Confusion: Misadventures in Building a Deep Learning Machine</a> by Mariya Yao</li>
+<li><a href="https://medium.com/impactai/setting-up-a-deep-learning-machine-in-a-lazy-yet-quick-way-be2642318850">Setting up a Deep learning machine in a lazy yet quick way</a> by Sravya Tirukkovalur</li>
+<li><a href="https://towardsdatascience.com/building-your-own-deep-learning-box-47b918aea1eb">Building your own deep learning box</a> by Brendan Fortuner</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="the-software-you-need" class="level2">
+<h2 class="anchored" data-anchor-id="the-software-you-need">The software you need</h2>
+<p>Deep learning is a relatively young field, and the libraries and tools are changing quickly. For instance, Theano, which we chose to use for part 1 of <a href="http://course.fast.ai">our course</a> in 2016, <a href="https://groups.google.com/forum/#!msg/theano-users/7Poq8BZutbY/rNCIfvAEAwAJ">was just retired</a>. <a href="http://pytorch.org/">PyTorch</a>, which we are using currently, was only released earlier this year (2017). As <a href="https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html">Jeremy wrote previously</a>, <em>you should assume that whatever specific libraries and software you learn today will be obsolete in a year or two</em>. The most important thing is to understand the underlying concepts, and towards that end, we are creating our own library on top of Pytorch that we believe makes deep learning concepts clearer, as well as encoding best practices as defaults.</p>
+<p>Python is by far the most commonly used language for deep learning. There are a number of deep learning libraries available, with almost every major tech company backing a different library, although employees at those companies often use a mix of tools. Deep learning libraries include <a href="https://www.tensorflow.org/">TensorFlow</a> (Google), <a href="http://pytorch.org/">PyTorch</a> (Facebook), <a href="https://mxnet.incubator.apache.org/">MxNet</a> (University of Washington, adapted by Amazon), <a href="https://docs.microsoft.com/en-us/cognitive-toolkit/">CNTK</a> (Microsoft), <a href="https://deeplearning4j.org/">DeepLearning4j</a> (Skymind), <a href="https://caffe2.ai/">Caffe2</a> (also Facebook), <a href="https://nnabla.org/">Nnabla</a> (Sony), <a href="http://www.paddlepaddle.org/">PaddlePaddle</a> (Baidu), and <a href="https://keras.io/">Keras</a> (a high-level API that runs on top of several libraries in this list). All of these have Python options available.</p>
+<section id="dynamic-vs.-static-graph-computation" class="level3">
+<h3 class="anchored" data-anchor-id="dynamic-vs.-static-graph-computation">Dynamic vs.&nbsp;Static Graph Computation</h3>
+<p>At fast.ai, we <strong>prioritize the speed at which programmers can experiment and iterate</strong> (through easier debugging and more intutive design) as more important than theoretical performance speed-ups. This is the reason we use PyTorch, a flexible deep learning library with <em>dynamic computation</em>.</p>
+<p>One distinction amongst deep learning libraries is whether they use <strong>dynamic</strong> or <strong>static</strong> computations (some libraries, such as MxNet and now TensorFlow, allow for both). <em>Dynamic computation</em> mean that the program is executed in the order you wrote it. This typically makes debugging easier, and makes it more straightforward to translate ideas from your head into code. <em>Static computation</em> means that you build a structure for your neural network in advance, and then execute operations on it. Theoretically, this allows the compiler to do greater optimizations, although it also means there may be more of a disconnect between what you intended your program to be and what the compiler executes. It also means that bugs can seem more removed from the code that caused them (for instance, if there is an error in how you constructed your graph, you may not realize until you perform an operation on it later). Even though there are theoretical arguments that languages with static computation graphs are capable of better performance than languages with dynamic computation, we often find that is not the case for us in practice.</p>
+<p>Google’s TensorFlow mostly uses a static computation graph, whereas Facebook’s PyTorch uses dynamic computation. (Note: TensorFlow announced a dynamic computation option, <a href="https://research.googleblog.com/2017/10/eager-execution-imperative-define-by.html">Eager Execution</a>, just two weeks ago, although it is still quite early and most TensorFlow documentation and projects use the static option). In September, fast.ai <a href="https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html">announced that we had chosen PyTorch</a> over TensorFlow to use in our course this year and to use for the development of <a href="https://github.com/fastai/fastai/">our own library</a> (a higher-level wrapper for PyTorch that encodes best practices). Briefly, here are a few of our reasons for choosing PyTorch (explained in <a href="https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html">much greater detail here</a>):</p>
+<ul>
+<li>easier to debug</li>
+<li>dynamic computation is much better suited for natural language processing</li>
+<li>traditional Object Oriented Programming style (which feels more natural to us)</li>
+<li>TensorFlow’s use of unusual conventions like scope and sessions can be confusing and are more to learn</li>
+</ul>
+<p>Google has put far more resources into marketing TensorFlow than anyone else, and I think this is one of the reasons that TensorFlow is so well known (for many people outside deep learning, TensorFlow is the only DL framework that they’ve heard of). As mentioned above, TensorFlow released a dynamic computation option a few weeks ago, which addresses some of the above issues. Many people have asked fast.ai if we are going to switch back to TensorFlow. The dynamic option is still quite new and far less developed, so we will happily continue with PyTorch for now. However, the TensorFlow team has been very receptive to our ideas, and we would love to see <a href="https://github.com/fastai/fastai/">our fastai library</a> ported to TensorFlow.</p>
+<p><strong>Note</strong>: The <a href="https://www.usfca.edu/data-institute/certificates/deep-learning-part-one">in-person version</a> of our updated course, which uses PyTorch as well as our own fastai library, is happening currently. It will be released online for free after the course ends (estimated release: January).</p>
+</section>
+</section>
+<section id="what-you-need-for-production-not-a-gpu" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-need-for-production-not-a-gpu">What you need for production: not a GPU</h2>
+<p>Many people overcomplicate the idea of using deep learning in production and believe that they need much more complex systems than they actually do. You can use deep learning in production with a CPU and the webserver of your choice, and in fact, this is what we recommend for most use cases. Here are a few key points:</p>
+<ul>
+<li>It is incredibly rare to need to train in production. Even if you want to update your model weights daily, you don’t need to train in production. Good news! This means that you are just doing inference (a forward pass through your model) in production, which is much quicker and easier than training.</li>
+<li>You can use whatever webserver you like (e.g.&nbsp;Flask) and set up inference as a simple API call.</li>
+<li>GPUs only provide a speed-up if you are effectively able to batch your data. Even if you are getting 32 requests per second, using a GPU would most likely slow you down, because you’d have to wait a second from when the 1st arrived to collect all 32, then perform the computation, and then return the results. We recommend using a CPU in production, and you can always add more CPUs (easier than using multiple GPUs) as needed.</li>
+</ul>
+<p>For big companies, it may make sense to use GPUs in production for serving– however, it will be clear when your reach this size. Prematurely trying to scale before it’s needed will only add needless complexity and slow you down.</p>
+</section>
+<section id="the-background-you-need-1-year-of-coding" class="level2">
+<h2 class="anchored" data-anchor-id="the-background-you-need-1-year-of-coding">The background you need: 1 year of coding</h2>
+<p>One of the frustrations that inspired Jeremy and I to create <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> was (is) that most deep learning materials fall into one of two categories:</p>
+<ul>
+<li>so shallow and high-level as to not give you the information or skills needed to actually use deep learning in the workplace or create state-of-the-art models. This is fine if you just want a high-level overview, but disappointing if you want to become a working practitioner.</li>
+<li>highly theoretical and assume a graduate level math background. This is a prohibitive barrier for many folks, and even as someone who has a math PhD, I found that the theory wasn’t particularly useful in learning how to code practical solutions. It’s not surprising that many materials have this slant. Until quite recently, deep learning was almost entirely an academic discipline and largely driven by questions of what would publish in top academic journals.</li>
+</ul>
+<p>Our free course <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> is unique in that the only pre-requisite is 1 year of programming experience, yet it still teaches you how to create state-of-the-art models. Your background can be in any language, although you might want to learn some Python before starting the course, since that is what we use. We introduce math concepts as needed, and we <a href="https://www.fast.ai/posts/2016-12-19-favorite-posts.html">don’t recommend</a> that you try to front-load studying math theory in advance.</p>
+<p>If you don’t know how to code, I highly recommend learning, and Python is a great language to start with if you are interested in data science.</p>
+</section>
+<section id="the-data-you-need-far-less-than-you-think" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-you-need-far-less-than-you-think">The data you need: far less than you think</h2>
+<p>Although many have claimed that you need Google-size data sets to do deep learning, this is false. The power of <strong>transfer learning</strong> (combined with techniques like data augmentation) make it possible for people to apply pre-trained models to much smaller datasets. As we’ve <a href="https://www.fast.ai/posts/2017-08-21-ai-in-medicine.html">talked about elsewhere</a>, at medical start-up Enlitic, Jeremy Howard led a team that used just 1,000 examples of lung CT scans with cancer to build an algorithm that was <a href="http://money.cnn.com/2015/03/12/technology/enlitic-technology/">more accurate at diagnosing lung cancer</a> than a panel of 4 expert radiologists. The C++ library <a href="http://dlib.net/">Dlib</a> has an example in which a face detector is accurately trained using only <a href="http://blog.dlib.net/2016/10/easily-create-high-quality-object.html">4 images</a>, containing just 18 faces!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dlib-faces.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Face Recognition with Dlib</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="a-note-about-access" class="level2">
+<h2 class="anchored" data-anchor-id="a-note-about-access">A note about access</h2>
+<p>For the vast majority of people I talk with, the barriers to entry for deep learning are far lower than they expected and the costs are well within their budgets. However, I realize this is not the case universally. I’m periodically contacted by students that want to take our online course but can’t afford the costs of AWS. Unfortunately, I don’t have a solution. There are other barriers as well. Bruno Sánchez-A Nuño has <a href="https://towardsdatascience.com/in-defense-of-cheap-data-science-f630f248d400">written about the challenges</a> of doing data science in places that don’t have reliable internet access, and fast.ai international fellow Tahsin Mayeesha describes <a href="https://medium.com/learning-machine-learning/moocs-and-hidden-barriers-494f6759f217">hidden barriers to MOOC access</a> in countries such as Bangladesh. I care about these issues of access, and it is disatisifying to not have solutions.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

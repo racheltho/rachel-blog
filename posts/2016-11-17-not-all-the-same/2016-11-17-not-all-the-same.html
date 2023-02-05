@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2016-11-17">
+<meta name="description" content="On the differnece between big data, machine learning, and deep learning.">
+
+<title>Rachel Thomas, PhD - Please Don’t Say ‘It used to be called big data and now it’s called deep learning’</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Please Don’t Say ‘It used to be called big data and now it’s called deep learning’</h1>
+                  <div>
+        <div class="description">
+          On the differnece between big data, machine learning, and deep learning.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 17, 2016</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>At the Financial Times-Nikkei conference on <a href="https://www.eventbrite.com/e/nikkei-innovation-forum-the-future-of-ai-robots-and-us-tickets-27689144978#"><em>The Future of AI, Robots, and Us</em></a> a few weeks ago, Andreessen Horowitz partner Chris Dixon spoke just before Jeremy Howard and I were on stage. Dixon said many totally <em>reasonable</em> things in his talk–but it’s no fun to comment on them, so I’m going to focus on something rather <em>unreasonable</em> that he said, which was: “A few years ago it was called big data and then it was machine learning and now it’s called deep learning”. It was not entirely clear if he was saying that these are all terms for the same thing (they are most definitely not!) or if he was suggesting that the “in” data-driven approach changes from year to year. Either way, this obscures what a complete game-changer deep learning is. It is not just the 2016 version of “big data” (which has always been an empty buzzword). It is going to have an impact the size of the impact of the internet, or as Andrew Ng suggests, the <a href="https://www.fast.ai/posts/2016-10-11-fortune.html">impact of electricity</a>. It is going to affect every industry, and leaders of every type of organization are going to be wishing that they had looked into it sooner.</p>
+<p>First, to clear up some terms:</p>
+<p><strong>Big Data</strong>: This was an empty marketing term that falsely convinced many people that the size of your data is what matters. It also cost companies huge sums of money on Hadoop clusters they didn’t actually need. Vendors of these clusters did everything they could to maintain momentum on this nonsense because when CEOs believe it’s the size of your hardware that counts, it’s a very profitable situation if you make, sell, install, or service that hardware…</p>
+<p>Francois Chollet, creator of the popular deep learning library <a href="https://keras.io/">Keras</a> and now at Google Brain, has an excellent tutorial entitled <a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html"><em>Building powerful image classification models using very little data</em></a> in which he trains an image classifier on only 2,000 training examples. At Enlitic, Jeremy Howard led a team that used just 1,000 examples of lung CT scans with cancer to build an algorithm that was <a href="http://money.cnn.com/2015/03/12/technology/enlitic-technology/">more accurate at diagnosing lung cancer</a> than a panel of 4 expert radiologists. The C++ library <a href="http://dlib.net/">Dlib</a> has an example in which a face detector is accurately trained using only <a href="http://blog.dlib.net/2016/10/easily-create-high-quality-object.html">4 images</a>, containing just 18 faces! <img src="http://3.bp.blogspot.com/-usKXCJoqVfM/V_ubQafgNmI/AAAAAAAAAh8/KhtLEoi2uuUSoQ8U83C2VJHJIMpHF2evgCK4B/s1600/mmod_example_test_image.jpg" class="img-fluid" alt="Face Recognition with Dlib"></p>
+<p><strong>Machine Learning</strong>: Machine learning is the science of getting computers to act without being explicitly programmed. For instance, instead of coding rules and strategies of chess into a computer, the computer can watch a number of chess games and learn by example. Machine learning encompasses a wide variety of algorithms.</p>
+<p><strong>Deep Learning</strong>: Deep learning refers to many-layered neural networks, one specific class of machine learning algorithms. Deep learning is achieving unprecedented state of the art results, by an order of magnitude, in nearly all fields to which it’s been applied so far, including image recognition, voice recognition, and language translation. I personally think deep learning is an unfortunate name, but that’s no reason to dismiss it. If you studied neural networks in the 80s and are wondering what has changed since then, the answer is the development of: - Using multiple hidden layers instead of just one. (Even though the <a href="http://neuralnetworksanddeeplearning.com/chap4.html">Universal Approximation Theorem</a> shows that it’s theoretically possible to just have one hidden layer, it requires exponentially more hidden units, which means exponentially more parameters to learn.) - <a href="https://www.tacc.utexas.edu/documents/13601/88790/8Things.pdf">GPGPU</a>, programmable libraries for GPUs that allow them to be used for applications other than video games, resulting in orders of magnitude faster training and inference for deep learning - A number of algorithmic tweaks (especially the Adam optimizer, ReLU activation functions, batch normalization, and dropout) that have made training faster and more resilient - Larger datasets– although this has been a driver of progress, it’s value is often over-emphasized, as the “little data” examples above show.</p>
+<p>Another common misconception Chris Dixon stated was that deep learning talent is incredibly scarce, and it will take years for graduate programs at the top schools to catch up to the demand. Although in the past a graduate degree from one of just a handful of schools was necessary to become a deep learning expert, this is a completely artificial barrier and no longer the case. As Josh Schwartz, chief of engineering and data science at Chartbeat, writes in the Harvard Business Review, <a href="https://hbr.org/2016/10/machine-learning-is-no-longer-just-for-experts">“machine learning is not just for experts”</a>. There has been a proliferation of cutting-edge commercially usable machine learning frameworks, machine learning specific services being released from major cloud providers Amazon and Google, tutorials, publicly released code, and publicly released data sets.</p>
+<p>We are currently in the middle of teaching 100 students <a href="http://www.fast.ai/2016/10/08/curriculum/">deep learning from scratch</a>, with the only prerequisite being one year of programming experience. This will be turned into a MOOC shortly after the in-person class finishes. We’re in the 4th week of the course, and already the students are building world-class image recognition models in Python.</p>
+<p>It is <em>far better</em> to take a domain expert within your organization and teach them deep learning, than it is to take a deep learning expert and throw them into your organization. Deep learning PhD graduates are very unlikely to have the wide range of relevant experiences that you value in your most effective employees, and are much more likely to be interested in solving fun engineering problems, instead of keeping a razor-sharp focus on the most commercially important problems. In our experiences across many industries and many years of applying machine learning to a range of problems, we’ve consistently seen organizations under-appreciate and under invest in their existing in-house talent. In the days of the big data fad, this meant companies spent their money on external consultants. And in these days of the false “deep learning exclusivity” meme, it means searching for those unicorn deep learning experts, often including paying vastly inflated sums for failing deep learning startups.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

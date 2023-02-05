@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2016-10-08">
+<meta name="description" content="Machine learning education without the tedium and gatekeeping">
+
+<title>Rachel Thomas, PhD - Providing a Good Education in Deep Learning</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Providing a Good Education in Deep Learning</h1>
+                  <div>
+        <div class="description">
+          Machine learning education without the tedium and gatekeeping
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">education</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 8, 2016</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#good-education-starts-with-the-whole-game" id="toc-good-education-starts-with-the-whole-game" class="nav-link active" data-scroll-target="#good-education-starts-with-the-whole-game">Good education starts with “the whole game”</a></li>
+  <li><a href="#good-education-equips-you-to-work-on-the-questions-you-care-about" id="toc-good-education-equips-you-to-work-on-the-questions-you-care-about" class="nav-link" data-scroll-target="#good-education-equips-you-to-work-on-the-questions-you-care-about">Good education equips you to work on the questions you care about</a></li>
+  <li><a href="#good-education-is-not-overly-complicated." id="toc-good-education-is-not-overly-complicated." class="nav-link" data-scroll-target="#good-education-is-not-overly-complicated.">Good education is not overly complicated.</a></li>
+  <li><a href="#good-education-is-inclusive." id="toc-good-education-is-inclusive." class="nav-link" data-scroll-target="#good-education-is-inclusive.">Good education is inclusive.</a></li>
+  <li><a href="#good-education-motivates-the-study-of-underlying-technical-concepts." id="toc-good-education-motivates-the-study-of-underlying-technical-concepts." class="nav-link" data-scroll-target="#good-education-motivates-the-study-of-underlying-technical-concepts.">Good education motivates the study of underlying technical concepts.</a></li>
+  <li><a href="#good-education-encourages-you-to-make-mistakes." id="toc-good-education-encourages-you-to-make-mistakes." class="nav-link" data-scroll-target="#good-education-encourages-you-to-make-mistakes.">Good education encourages you to make mistakes.</a></li>
+  <li><a href="#good-education-leverages-existing-resources" id="toc-good-education-leverages-existing-resources" class="nav-link" data-scroll-target="#good-education-leverages-existing-resources">Good education leverages existing resources</a></li>
+  <li><a href="#good-education-encourages-creativity" id="toc-good-education-encourages-creativity" class="nav-link" data-scroll-target="#good-education-encourages-creativity">Good education encourages creativity</a></li>
+  <li><a href="#good-education-teaches-you-to-ask-questions-not-just-to-answer-them" id="toc-good-education-teaches-you-to-ask-questions-not-just-to-answer-them" class="nav-link" data-scroll-target="#good-education-teaches-you-to-ask-questions-not-just-to-answer-them">Good education teaches you to ask questions, not just to answer them</a></li>
+  <li><a href="#good-education-is-evidence-based" id="toc-good-education-is-evidence-based" class="nav-link" data-scroll-target="#good-education-is-evidence-based">Good education is evidence-based</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>Paul Lockhart, a Columbia math PhD, former Brown professor, and K-12 math teacher, writes in the influential essay <a href="https://www.maa.org/external_archive/devlin/LockhartsLament.pdf">A Mathematician’s Lament</a> of a nightmare world where children are not allowed to listen to or play music until they have spent over a decade mastering music notation and theory, spending classes transposing sheet music into a different key. In art class, students study colors and applicators, but aren’t allowed to actually paint until college. Sound absurd? This is how math is taught–we require students to spend years doing rote memorization, and learning dry, disconnected “fundamentals” that we claim will pay off later, long after most of them quit the subject.</p>
+<p>Unfortunately, this is where several of the few resources on deep learning begin–asking learners to follow along with the definition of the Hessian and theorems for the Taylor approximation of your loss function, without ever giving examples of actual working code. I’m not knocking calculus. I love calculus and have even taught it at the college level, but I don’t think it’s a good or helpful introduction to deep learning.</p>
+<p>So many students are turned off to math because of the dull way it’s taught, with tedious, repetitive exercises, and a curriculum that saves so many fun parts (such as graph theory, counting and permutations, group theory) to so late that everyone except math majors has abandoned the subject. And the gate-keepers of deep learning are doing something similar whenever they ask that you can derive the multivariate chain rule or give the theoretical underpinnings of KL divergence before they’ll teach you how to use a neural net to handle your own projects.</p>
+<p>We’ll be leveraging the best available research on teaching methods to try to fix these problems with technical teaching, including:</p>
+<ul>
+<li>Teaching <a href="https://www.amazon.com/Making-Learning-Whole-Principles-Transform/dp/0470633719/">“the whole game”</a>–starting off by showing how to use a complete, working, very usable, state of the art deep learning network to solve real world problems, by using simple, expressive tools. And then gradually digging deeper and deeper into understanding how those tools are made, and how the tools that make those tools are made, and so on…</li>
+<li>Always teaching through examples: ensuring that there is a context and a purpose that you can understand intuitively, rather than starting with algebraic symbol manipulation</li>
+<li>Simplifying as much as possible: <a href="https://www.fast.ai/posts/2016-10-08-overview.html">we’ve spent months</a> building tools and teaching methods that make previously complex topics very simple</li>
+<li>Removing barriers: deep learning has, until now, been a very exclusive game. We’re breaking it open, and ensuring that everyone can play</li>
+<li>…and many more. I’ve discussed some of our approaches to teaching in more detail below.</li>
+</ul>
+<p>In the end, what we’re talking about is <em>good education</em>. That’s what we most care about. Here are more of our thoughts on good education:</p>
+<section id="good-education-starts-with-the-whole-game" class="level2">
+<h2 class="anchored" data-anchor-id="good-education-starts-with-the-whole-game">Good education starts with <a href="https://www.amazon.com/Making-Learning-Whole-Principles-Transform/dp/0470633719/">“the whole game”</a></h2>
+<p>Just as kids have a sense of what baseball is before they start batting practice, we want you to have a sense of the big picture of deep learning well before you study calculus and the chain rule. We’ll move from the big picture down to the details (which is the opposite direction than most education, which tries to teach all the individual elements before putting them together). For a good example of how this works, watch <a href="https://www.youtube.com/watch?v=o2QuErsWp6k">Jeremy’s talk on recurrent neural networks</a>–he starts with 3 line RNN using a highly featured library, then removes the library builds his own architecture using a GPU framework, and then removes the framework and builds everything from scratch in gritty detail just using basic python.</p>
+<p>In a <a href="https://www.amazon.com/Making-Learning-Whole-Principles-Transform/dp/0470633719/">book that inspires us</a>, David Perkins, a Harvard education professor with a PhD from MIT in Artificial Intelligence, calls the approach of not doing anything complicated until you’ve taught all the individual elements first a disease: “elementitis”. It’s like batting practice without knowing what the game baseball is. The elements can seem boring or pointless when you don’t know how they fit in with the big picture. And it’s hard to stay motivated when you’re not able to work on problems you care about, or have a sense of how the technical details fit into the whole. Perhaps this is why studies have shown that the intrinsic motivation of school children steadily declines from 3rd grade to 8th grade (the only range of years studied).</p>
+</section>
+<section id="good-education-equips-you-to-work-on-the-questions-you-care-about" class="level2">
+<h2 class="anchored" data-anchor-id="good-education-equips-you-to-work-on-the-questions-you-care-about">Good education equips you to work on the questions you care about</h2>
+<p>Whether you’re excited to identify if plants are diseased from pictures of their leaves, auto-generate knitting patterns, diagnose TB from x-rays, or determine when a raccoon is using your cat door, we will get you using deep learning on your own problems (via pre-trained models from others) as quickly as possible, and then will progressively drill into more details. You’ll learn how to use deep learning to solve your own problems at state-of-the-art accuracy within the first 30 minutes of the first lesson! There is a pernicious myth out there that you need to have computing resources and datasets the size of those at Google to be able to do deep learning, and it’s not true.</p>
+</section>
+<section id="good-education-is-not-overly-complicated." class="level2">
+<h2 class="anchored" data-anchor-id="good-education-is-not-overly-complicated.">Good education is not overly complicated.</h2>
+<p>Have you watched Jeremy implement modern deep learning optimization methods in Excel? If not, <a href="https://www.youtube.com/watch?v=qnoLMkosHuE">go watch it</a> (starts at 4:50min in the video) and come back. This is often considered a complex topic, yet after weeks of work Jeremy figured out how to make it so easy it seems obvious. If you truly understand something, you can explain it in an accessible way, and maybe even implement it in Excel! Complicated jargon and obtuse technical definitions arise out of laziness, or when the speaker is unsure of the meat of what they’re saying and hides behind their peripheral knowledge.</p>
+</section>
+<section id="good-education-is-inclusive." class="level2">
+<h2 class="anchored" data-anchor-id="good-education-is-inclusive.">Good education is inclusive.</h2>
+<p>It doesn’t put up any unnecessary barriers. It doesn’t make you feel bad if you didn’t start coding at age 12, if you have a non-traditional background, if you can’t afford a mac, if you’re working on a non-traditional problem, or if you didn’t go to an elite college. We want our course to be as accessible as possible. I care deeply about inclusion, and spent months researching and writing each of my widely read articles with <a href="https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996">practical tips</a> on how we can <a href="https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd">increase diversity</a> in tech, as well as spending a year and a half teaching full-stack software development to <a href="https://hackbrightacademy.com/courses/fellowship/">women full-time</a>. Currently deep learning is <a href="https://www.bloomberg.com/news/articles/2016-06-23/artificial-intelligence-has-a-sea-of-dudes-problem">even more homogenous</a> than tech in general, which is scary for such a powerful and impactful field. <a href="https://www.fast.ai/posts/2016-10-09-diversity-in-ai.html">We are going to change this</a>.</p>
+</section>
+<section id="good-education-motivates-the-study-of-underlying-technical-concepts." class="level2">
+<h2 class="anchored" data-anchor-id="good-education-motivates-the-study-of-underlying-technical-concepts.">Good education motivates the study of underlying technical concepts.</h2>
+<p>Having a big picture understanding gives you more of a framework to place the fundamentals in. Seeing what deep learning is capable of and how you can use it is the best motivation for the more dry or tedious parts.</p>
+<p>“Playing baseball is more interesting than batting practice, playing pieces of music more interesting than practicing scales, and engaging in some junior version of historical or mathematical inquiry more interesting than memorizing dates or doing sums,” writes Perkins. Building a working model for a problem that interests you is more interesting than writing a proof (for most people!)</p>
+</section>
+<section id="good-education-encourages-you-to-make-mistakes." class="level2">
+<h2 class="anchored" data-anchor-id="good-education-encourages-you-to-make-mistakes.">Good education encourages you to make mistakes.</h2>
+<p>In the <a href="https://www.ted.com/talks/ken_robinson_says_schools_kill_creativity">most viewed TED talk</a> of all time, education expert Sir Ken Robinson argues that by stigmatizing mistakes, our school systems destroy the children’s innate creative capacity. “If you’re not prepared to be wrong, you’ll never end up with anything original,” says Robinson.</p>
+<p>Teaching deep learning with a code-heavy approach in <a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks#introductory-tutorials">interactive Jupyter notebooks</a> is a great setup for trying lots of things, making mistakes, and easily changing what you’re doing.</p>
+</section>
+<section id="good-education-leverages-existing-resources" class="level2">
+<h2 class="anchored" data-anchor-id="good-education-leverages-existing-resources">Good education leverages existing resources</h2>
+<p>There is no need to reinvent teaching materials where good ones already exist. If you need to brush up on matrix multiplication, we’ll refer you to Khan Academy. If you’re fascinated by X and want to go deeper, we’ll recommend you read Y. Our goal is to help you achieve your deep learning goals, not to be the sole resource in getting you there.</p>
+</section>
+<section id="good-education-encourages-creativity" class="level2">
+<h2 class="anchored" data-anchor-id="good-education-encourages-creativity">Good education encourages creativity</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lockhart-quote.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Lockhart quote</figcaption><p></p>
+</figure>
+</div>
+<p>Lockhart argues that it would be better to not teach math at all, then to teach such a mangled form of it that alienates most of the population from the beauty of math. He describes math as a “rich and fascinating adventure of the imagination” and defines it as “the art of explanation”, although it is rarely taught that way.</p>
+<p>The biggest wins for deep learning will come when you apply it to the outside domains you’re an expert in and the problems you’re passionate about. This will require you to be creative.</p>
+</section>
+<section id="good-education-teaches-you-to-ask-questions-not-just-to-answer-them" class="level2">
+<h2 class="anchored" data-anchor-id="good-education-teaches-you-to-ask-questions-not-just-to-answer-them">Good education teaches you to ask questions, not just to answer them</h2>
+<p>Even those who seem to thrive under traditional education methods are still poorly served by them. I received a mostly traditional approach to education (although I had a few exceptional teachers at all stages and particularly at Swarthmore). I excelled at school, aced exams, and generally enjoyed learning. I loved math, going on to earn a math PhD at Duke University. While I was great at problem sets and exams, this traditional approach did me a huge disservice when it came to preparing me for doctoral research and my professional career. I was no longer being given well-formulated, appropriately scoped problems by teachers. I could no longer learn every incremental building block before setting to work on a task. As Perkins writes about his struggles with finding a good dissertation topic, I too had learned how to solve problems I was given, but not how to find and scope interesting problems on my own. I now see my previous academic successes as a weakness I’ve had to overcome professionally. When I began studying deep learning, I enjoyed reading the math theorems and proofs, but this didn’t actually help me build deep learning models.</p>
+</section>
+<section id="good-education-is-evidence-based" class="level2">
+<h2 class="anchored" data-anchor-id="good-education-is-evidence-based">Good education is evidence-based</h2>
+<p>We love data and the scientific method, and we are interested in techniques that have been supported by research.</p>
+<p>Spaced repetition learning is one such evidence-backed technique, where learners revisit a topic periodically, just before they would forget it. Jeremy used this technique to obtain impressive results in <a href="http://quantifiedself.com/2012/05/jeremy-howard-on-language-acquisition-performance/">teaching himself Chinese</a>. The whole game method of learning dovetails nicely with spaced repetition learning in that we will revisit topics, going into more and more low level details each time, but always returning to the big picture.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
