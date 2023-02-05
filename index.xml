@@ -66,6 +66,7 @@
 </section>
 
  ]]></description>
+  <category>education</category>
   <guid>https://rachel.fast.ai/posts/2022-09-06-homeschooling/index.html</guid>
   <pubDate>Mon, 05 Sep 2022 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2022-09-06-homeschooling/homeschool-headlines.jpg" medium="image" type="image/jpeg"/>
@@ -903,6 +904,85 @@ Related Posts
   <media:content url="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/no-accountability.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>What Harvard Business Review Gets Wrong About Algorithms and Bias</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The Harvard Business Review recently published an article, <a href="https://hbr.org/2018/07/want-less-biased-decisions-use-algorithms">Want Less-Biased Decisions? Use Algorithms.</a> by Alex P. Miller. The article focuses on the fact that humans make very biased decisions (which is true), yet ignores many important related issues, including:</p>
+<ul>
+<li>algorithms are often implemented without any appeals method in place (due to the misconception that algorithms are objective, accurate, and won’t make mistakes)</li>
+<li>algorithms are often used at a much larger scale than human decision makers, in many cases, replicating an identical bias at scale (part of the appeal of algorithms is how cheap they are to use)</li>
+<li>users of algorithms may not understand probabilities or confidence intervals (even if these are provided), and may not feel comfortable overriding the algorithm in practice (even if this is technically an option)</li>
+<li>instead of just focusing on the least-terrible existing option, it is more valuable to ask how we can create <strong>better, less biased decision-making tools</strong> by leveraging the strengths of humans and machines working together</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/algorithm.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Photo Credit: Jonathan Lidbeck https://www.flickr.com/photos/jondissed/2278335691</figcaption><p></p>
+</figure>
+</div>
+<p>Miller acknowledges that critics of the “algorithmic revolution” are “concerned that algorithms are often <strong>opaque, biased, and unaccountable tools</strong> being wielded in the interests of institutional power”, although he then focuses exclusively on the <em>biased</em> part for the remainder of the article, without addressing the <em>opaque</em> or <em>unaccountable</em> charges (as well as how these interact with bias).</p>
+<h2 id="vs" class="anchored">
+Humans vs.&nbsp;machines is not a helpful framing
+</h2>
+<p>The media often frames advances in AI through a lens of humans vs.&nbsp;machines: who is the champion at X task. This framework is both inaccurate as to how most algorithms are used, as well as a very limited way to think about AI. In all cases, algorithms have a human component, in terms of who gathers the data (and what biases they have), which design decisions are made, how they are implemented, how results are used to make decisions, the understanding various stakeholders have of correct uses and limitations of the algorithm, and so on.</p>
+<p>Most people working on medical applications of AI are not trying to replace doctors; they are trying to create tools that will allow doctors to be more accurate and more efficient, improving quality of care. The best chess “players” are neither humans nor computers, but rather, teams of humans and computers working together.</p>
+<p>Miller’s HBR article points out (correctly) that humans are very biased, and then compares our current not-so-great approaches to see which is less terrible. The article does <strong>not</strong> ask the question, <strong>how can we develop less biased ways to make decisions (perhaps using some combination of humans and algorithms)?</strong> which is a far more interesting and important question.</p>
+<h2 id="different" class="anchored">
+Algorithms are often used differently than human decision makers
+</h2>
+<p>Algorithms are often used at a larger scale, mass-producing identical biases, and assumed to be error-proof or objective. The studies that Miller shares compares them in an apples-to-apples way, which doesn’t acknowledge how differently they are often used in practice.</p>
+<p>Cathy O’Neil writes in <a href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a> that the algorithms she is critiquing <i>tend to punish the poor. <b>They specialize in bulk, and they’re cheap. That’s part of their appeal.</b> The wealthy, by contrast, often benefit from personal input. A white-shoe law firm or an exclusive prep school will lean far more on recommendations and face-to-face interviews than will a fast-food chain or a cash-strapped urban school district. The privileged, we’ll see time and again, are processed more by people, the masses by machines.</i> (emphasis mine)</p>
+<p>One example from O’Neil’s book is that of a college student with bipolar disorder who wanted to get a summer job bagging groceries. Every store he applied to was using the same pyschometric evaluation software to screen candidates, and he was rejected from every store. This captures another danger of algorithms: even though humans often have similar biases, not all humans will make the exact same decisions (e.g.&nbsp;perhaps that college student would have been able to find one place to hire him, even if some of the people making decisions had biases about mental health).</p>
+<p>Many people will put more trust in algorithmic decisions than they might in human decisions. While the researchers designing the algorithms may have a good grasp on probability and confidence intervals, often the general public using them will not. Even if people are given the power to override algorithmic decisions, it is crucial to understand if they will feel comfortable doing so in practice.</p>
+<h2 id="appeals" class="anchored">
+The need for meaningful appeals and explanations
+</h2>
+<p><strong>Many of the most chilling stories of algorithmic bias don’t involve meaningful explanations or a meaningful appeals process</strong>. This seems to be a particular trend amongst algorithmic decision making systems, perhaps since people mistakenly assume algorithms are objective, they believe there is no need for appeals. Also, as explained above, algorithmic decision making systems are often used as a cost-cutting device, and allowing appeals would be more expensive.</p>
+<p><a href="https://weaponsofmathdestructionbook.com/">Cathy O’Neil writes</a> the account of a teacher who is beloved by her students, their parents, and the principal, yet is inexplicably fired by an algorithm. She is never able to get an answer as to why she was fired. Stories like this would be somewhat less disturbing if there had been a relatively quick and simple way for her to appeal the decision, or even to know for sure what factors it was related to.</p>
+<p>The Verge <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">investigated software</a> used in over half of U.S. states to determine how much healthcare people receive. After its implemention in Arkansas, people (many with severe disabilities) drastically had their healthcare cut. For instance, Tammy Dobbs, a woman with cerebral palsy who needs an aid to help her to get out of bed, to go to the bathroom, to get food, and more, had her hours of help suddenly reduced by 20 hours a week. <strong>She couldn’t get any explanation for why her healthcare was cut.</strong> Eventually, a court case revealed that there were mistakes in the software implementation of the algorithm, negatively impacting people with diabetes or cerebral palsy. However, Dobbs and many other people reliant on these health care benefits live in fear that their benefits could again be cut suddenly and inexplicably.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/justice.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">image source: wikimedia commons</figcaption><p></p>
+</figure>
+</div>
+<p>The creator of the algorithm, who is a professor and earning royalties off of this software, was asked whether there should be a way to communicate decisions, “It’s probably something we should do. I should also probably dust under my bed.” He later clarified that he thought it was someone else’s responsibility. <strong>We can not keep claiming the problems caused by our technology are someone else’s responsibility.</strong></p>
+<p>For a separate computer system used in Colorado to determine public benefits in the mid-2000s, it was discovered that more than 900 incorrect rules had been coded into the system, resulting in problems like pregnant women being denied Medicaid. It is often hard for lawyers to even discover these flaws, since the inner-workings of the algorithms are typically protected as trade secrets. Systems used to make decisions related to healthcare, hiring/firing, criminal justice, and other life-altering areas should include some sort of <strong>human appeals process</strong>, that is relatively fast and easy to navigate. Many of the most chilling stories of algorithmic decision making would not be nearly as concerning if there had been an easy way to appeal and correct faulty decisions. Mistakes are possible in anything we do, so <strong>it’s important to have a tight loop in which we make it easy to discover and correct mistakes</strong>.</p>
+<h2 id="real-world" class="anchored">
+Complicated, real-world systems
+</h2>
+<p><strong>When we think about AI, we need to think about complicated, real-world systems</strong>. The studies in the HBR article treat decision making as an isolated action, without taking into account that this decision-making happens within complicated real-world systems. A decision about whether someone is likely to commit another crime is not an isolated decision: it lives within the complicated system of our criminal justice system. We have a responsibility to understand the real-world systems with which our work will interact, and to not lose sight of the actual <strong>people</strong> who will be impacted.</p>
+<p>The COMPAS recidivism algorithm is used in some US courtrooms for decisions related to pre-trial bail, sentencing, and parole. It was the subject of a <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">ProPublica investigation</a> finding that the false positive rate (people that were labeled “high risk” but were not re-arrested) for white defendants was 24% and for Black defendants was 45%. Later research found that COMPAS (which uses 137 inputs in a black-box algorithm) was <a href="https://www.theverge.com/2018/1/17/16902016/compas-algorithm-sentencing-court-accuracy-problem">no more accurate</a> than a simple linear equation on two variables. COMPAS was also <a href="https://www.theverge.com/2018/1/17/16902016/compas-algorithm-sentencing-court-accuracy-problem">not more accurate</a> than untrained Mechanical Turk workers. (You can find out more about various definitions of fairness in Princeton CS Professor Arvind Narayanan’s excellent <a href="https://www.youtube.com/watch?v=wqamrPkF5kk">21 Definitions of Fairness</a> talk).</p>
+<p>Kristian Lum, statistics PhD and lead data scientist at the Human Rights Digital Analysis Group, <a href="https://www.youtube.com/watch?v=hEThGT-_5ho">organized a workshop</a> together with Elizabeth Bender, a staff attorney for the NY Legal Aid Society and former public defender, and Terrence Wilkerson, an innocent man who had been arrested and could not afford bail. Together, they shared first hand experience about the obstacles and inefficiencies that occur in the legal system, providing valuable context to the debate around COMPAS. Bender shared that for public defenders meet with defendants at Rikers Island, where many pre-trial detainees in NYC who can’t afford bail are held, involves a bus ride that is two hours each way and they then only get 30 minutes to see the defendant, assuming the guards are on time (which is not always the case). Wilkerson explained how frequently innocent defendents who can’t afford bail accept guilty plea bargains just so they can get out of jail faster. Again, all this is for people that have not even faced a trial yet! This panel was an excellent way to illuminate the real-world systems and educate about the first-hand impact. I hope more statisticians and computer scientists will follow this example.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/lum2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Dr.&nbsp;Kristian Lum’s Panel at the Fairness, Accountability, and Transparency in ML Conference</figcaption><p></p>
+</figure>
+</div>
+<p>As this example shows, <strong>algorithms can often exacerbate underlying societal problems</strong>. There are deep, structural problems with the US courts and prison systems, including <a href="https://www.vox.com/cards/police-brutality-shootings-us/us-police-racism">racial bias</a>, the <a href="https://www.aclu.org/blog/smart-justice/we-cant-end-mass-incarceration-without-ending-money-bail">use of cash bail</a> (nearly half a million people in the USA are languishing in jail before even facing a trial, because they are too poor to afford bail), predatory <a href="http://time.com/5013760/american-private-prisons-donald-trump/">for-profit prisons</a>, and extreme <a href="https://en.wikipedia.org/wiki/United_States_incarceration_rate">over-use of prisons</a> (the US is home to 4% of the world’s population and 22% of the world’s prisoners). We have a responsibility to understand the systems and underlying problems our algorithms may interact with.</p>
+<h2 id="critics" class="anchored">
+Most critics of unjust bias aren’t anti-algorithm
+</h2>
+<p><strong>Most critics of biased algorithms are opposed to unjust bias; they are not people who hate algorithms.</strong> Miller says that critics of biased algorithms “rarely ask how well the systems they analyze would operate without algorithms,” suggesting that those speaking out against biased algorithms are perhaps unaware of how biased humans are or perhaps just don’t like algorithms. I spent a great deal of time <a href="https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996">researching and writing</a> <a href="https://medium.com/tech-diversity-files/how-diversity-branding-hurts-diversity-fb29dd705481">about</a> <a href="https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd">studies</a> <a href="https://medium.com/@racheltho/how-to-make-tech-interviews-a-little-less-awful-c29f35431987">of human bias</a> (particularly as to how they pertain to the tech industry), long before I began writing about bias in machine learning.</p>
+<p>When I tweet or share about biased or unethical algorithms, I frequently encounter push-back that I must be <strong>anti-algorithms</strong> or <strong>opposed to tech</strong>. This couldn’t be further from the truth: I have a PhD in math; I’ve worked as a quant, data scientist, and software engineer; I created a free, online <a href="https://github.com/fastai/numerical-linear-algebra">Computational Linear Algebra course</a> and co-founded fast.ai, which runs <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> and won <a href="http://www.fast.ai/2018/04/30/dawnbench-fastai/">Stanford’s Computer Vision Speed Test</a> through clever use of algorithms.</p>
+<p>I’m in no way unique in this: most of the outspoken critics of biased algorithms that come to mind have PhDs in computer science, math, or statistics, and continue to be active in their fields. Just check out some of the speakers from the <a href="https://www.fatml.org/schedule/2018">Fairness Accountability and Transparency Conference</a> (and <a href="https://www.youtube.com/channel/UCs16j6ot-CYq-ZqYpO-vqMg/videos">watch their talks</a>!). One such example is <a href="http://randomwalker.info/">Arvind Narayanan</a>, a computer science professor at Princeton, winner of the <a href="https://arxiv.org/abs/1102.4374">Kaggle Social Network Challenge</a>, teacher of a <a href="https://www.coursera.org/learn/cryptocurrency">popular cryptocurrency course</a>, and also speaks out <a href="https://www.youtube.com/watch?v=wqamrPkF5kk">against algorithmic bias</a>.</p>
+<p>I hope that the popular discussion of biased algorithms can move beyond unnuanced rebuttals and more deeply engage with the issues involved.</p>
+
+
+
+ ]]></description>
+  <category>ethics</category>
+  <guid>https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/index.html</guid>
+  <pubDate>Mon, 06 Aug 2018 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/algorithm.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
   <title>Google’s AutoML: Cutting Through the Hype</title>
   <dc:creator>Rachel Thomas</dc:creator>
   <link>https://rachel.fast.ai/posts/2018-07-23-automl3/index.html</link>
@@ -1448,6 +1528,139 @@ AutoML
   <media:content url="https://rachel.fast.ai/posts/2018-04-29-categorical-embeddings/Pin2Vec.png" medium="image" type="image/png" height="103" width="144"/>
 </item>
 <item>
+  <title>Making Peace with Personal Branding</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2017-12-18-personal-brand/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>As a child, I was nerdy and shy. At my elementary and middle schools, we had to present our science projects to judges in the school science fair each year, and I noticed that students who were outgoing and good at presenting were more likely to win. I remember feeling indignant– <em>shouldn’t we just be judged on scientific merit? Why should things like being able to smile, make eye contact, and show enthusiasm (all things I didn’t do) with the judges have any impact?</em></p>
+<p>But it turns out that those other skills are actually useful! Personal branding is similar– we may want our professional work to stand on its own merit, but how we present and share it is important. And so, two weeks ago I found myself mentoring on the cringe-inducing topic of <em>personal branding</em> at the <a href="http://wimlworkshop.org/2017/">Women in Machine Learning Workshop</a>, co-located with the deep learning conference <a href="https://nips.cc/">NIPS</a>. Part of me felt embarrassed to be talking about something as seemingly shallow as <em>personal branding</em>, while just a few tables away deep learning star Yoshua Bengio mentored on the more serious topic of <em>deep learning</em>. However, I’ve worked hard to make peace with the concept and wanted to share what I’ve discovered.</p>
+<section id="what-is-personal-branding-and-why-is-it-useful" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-personal-branding-and-why-is-it-useful">What is “personal branding” and why is it useful?</h2>
+<p>Over the past two years, I’ve consistently put time in to twitter and blog posts. Here are a few ways this has been helpful to me:</p>
+<ul>
+<li>Being invited to attend the TensorFlow Dev Summit</li>
+<li>Being invited to <a href="https://www.youtube.com/watch?v=frc7FgheUj4&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=2">keynote JupyterCon</a></li>
+<li>Being interviewed and <a href="https://www.wired.com/story/ai-and-enormous-data-could-make-tech-giants-harder-to-topple/">quoted in Wired</a> (<a href="https://www.wired.com/2017/03/hey-tech-giants-action-diversity-not-just-reports/">twice</a>)</li>
+<li>Being able to raise money for 18 AI diversity scholarships and $250,000 of AWS credits to give to fast.ai students</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2017-12-18-personal-brand/jupyter.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">me ontstage at JupyterCon in 2017</figcaption><p></p>
+</figure>
+</div>
+<p>I talked to a grad student who was giving an oral presentation at NIPS, and she noted how a classmate of hers with a much larger twitter following got significantly more retweets and attendees for his talk. This struck her as unfair since a larger twitter following doesn’t equate with better research, but it also convinced her that building a personal brand would be useful.</p>
+<p>I think of personal branding as anything that helps people find out about you and your work. This includes blogging, using twitter, and public speaking. Personal branding is a bit like a web: your blog post may lead to a job interview; you may get a speaking engagement from someone who follows you on twitter; and your conference talk may lead some of the audience members to read your blog or follow you on twitter, continuing the cycle.</p>
+<p>Personal branding is no substitute for doing high-quality technical work; it’s just the means by which you can share this work with a broader audience.</p>
+</section>
+<section id="making-peace-with-personal-branding" class="level2">
+<h2 class="anchored" data-anchor-id="making-peace-with-personal-branding">Making peace with personal branding</h2>
+<p>Here are a few things that helped me get okay with the idea of personal branding:</p>
+<ul>
+<li><p>Personal branding sounds icky if you think of it as a shallow popularity contest, or of trying to trick people to click on links they don’t really want to click on. However, I now think about it as wanting people to know about high-quality work that I’m proud of and care about.</p></li>
+<li><p>Realizing that social skills and communication skills are things I could get better at with practice (I consider personal branding to be a subset of communication skills). I felt more resentful when as a kid I thought that people were either born outgoing or not, and that there wasn’t anything I could do, but as I started working on those skills and saw them improve, I was encouraged.</p></li>
+<li><p>People have a bias towards thinking the most valuable skills are the ones we are already good at and have already put a lot of time into (whether that’s a particular academic subject, programming language, or sport). I still catch myself feeling a particular affinity towards other mathematicians (I know firsthand that getting a math PhD was hard!) But a lot of other things are hard and valuable too.</p></li>
+</ul>
+</section>
+<section id="learn-by-observation" class="level2">
+<h2 class="anchored" data-anchor-id="learn-by-observation">Learn by observation</h2>
+<p>I recommend finding people who are doing personal branding well, and observing what they do and what works. What is it about that conference talk that made it so good? Why do you enjoy following X on twitter? What keeps you returning to Y’s blog?</p>
+</section>
+<section id="twitter" class="level2">
+<h2 class="anchored" data-anchor-id="twitter">Twitter</h2>
+<section id="in-defense-of-twitter" class="level3">
+<h3 class="anchored" data-anchor-id="in-defense-of-twitter">In defense of twitter</h3>
+<p>Twitter seems really weird at first (I was a twitter skeptic for years, not starting to actively use it until 2014), but it’s actually really useful. I’ve met new people through twitter. I know people who have gotten jobs through twitter. There are some really interesting conversations that I see on twitter that I don’t see elsewhere, such as <a href="https://twitter.com/jeremyphoward/status/938870990464999424">this discussion</a> about what it means to do “more rigorous” deep learning experiments, or here where several <a href="https://twitter.com/math_rachel/status/940450068796022784">genomics researchers responded to my question</a> about whether Google’s DeepVariant is overhyped.</p>
+<p>Apart from the “personal branding” aspects, twitter helps me practice being more concise. It’s been good for my writing skills. I also use it as a way of bookmarking blog posts I like and highlights from talks and conferences I attend, so sometimes I refer back to it a reference.</p>
+<center>
+<blockquote class="twitter-tweet blockquote" data-lang="en">
+<p lang="en" dir="ltr">
+Behaviors to avoid in code reviews:<br>- stating opinion as fact<br>- avalanche of comments<br>- asking devs to fix problems they didn’t cause<br>- judgemental questions<br>- sarcasm <a href="https://twitter.com/sandyaaaas?ref_src=twsrc%5Etfw"><span class="citation" data-cites="sandyaaaas">@sandyaaaas</span></a> <a href="https://twitter.com/hashtag/AlterConf?src=hash&amp;ref_src=twsrc%5Etfw">#AlterConf</a> <a href="https://t.co/LX1AeG4JOk">pic.twitter.com/LX1AeG4JOk</a>
+</p>
+— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/939968380202762240?ref_src=twsrc%5Etfw">December 10, 2017</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<i>A tweet about a talk by Sandya Sankarram that I really enjoyed.</i>
+</center>
+</section>
+<section id="twitter-for-beginners" class="level3">
+<h3 class="anchored" data-anchor-id="twitter-for-beginners">Twitter for beginners</h3>
+<p>Your enjoyment of twitter will vary greatly depending on who you follow. It will take some experimenting to get this right. Feel free to unfollow people if you realize you’re not getting anything out of their tweets. Whenever I read an article I like or hear a talk I like, I always look up the author/speaker on twitter and see if I find their tweets interesting. If so, I follow them. Also, there are people for whom you may love their writing/talks/other work, but don’t really enjoy their tweets. You don’t have to follow them. Twitter is it’s own distinct medium, and being good at something else doesn’t necessarily translate. If you are particularly looking for deep learning tweets, you can check out <a href="https://twitter.com/jeremyphoward/likes">Jeremy Howard’s likes</a>, and follow some of the accounts shared there.</p>
+<p>People use twitter in a variety of ways: as a social network, for political activism, for self-expression, and more. I use twitter primarily as a professional tool (I think of it as a more dynamic version of LinkedIn), so I try to keep most of my tweets related to data science. If your goal is personal branding or finding a job, I recommend keeping your tweets mostly focused on your field. Some people deal with this by having separate personal and professional twitter accounts (for instance, <a href="https://twitter.com/BecomingDataSci">Data Science Renee</a> does this).</p>
+<center>
+<blockquote class="twitter-tweet blockquote" data-lang="en">
+<p lang="en" dir="ltr">
+New post: Please Don't Say "It used to be called Big Data and now it's called Deep Learning" <a href="https://t.co/4mm47R2uXE">https://t.co/4mm47R2uXE</a>
+</p>
+— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/799408700343533568?ref_src=twsrc%5Etfw">November 18, 2016</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<i> Above: Sharing one of my own blog posts on Twitter. </i>
+</center>
+<p>Feel free to mute topics you don’t want to hear about (you can mute particular words), and mute people who bring you down. You are allowed to use twitter however you like, and you aren’t required to argue with anyone you don’t want to.</p>
+<p>Twitter can be a low time commitment. You don’t need to check it every day. It’s fine to just tweet once a week. When I started, I primarily used it as a way to bookmark blog posts or articles I liked. Building up followers can be a long, slow process. Be patient.</p>
+<p>Observe successful twitter accounts, of people who aren’t “famous” (famous people will have a ton of followers regardless of the quality of their tweets), to see what works. A few accounts you might want to check out for inspiration are: <a href="https://twitter.com/thinkmariya">Mariya Yao</a>, <a href="https://twitter.com/b0rk">Julia Evans</a>, <a href="https://twitter.com/BecomingDataSci">Data Science Renee</a>, and <a href="https://twitter.com/sehurlburt">Stephanie Hurlburt</a>. They each have built up over 20k followers, by providing thoughtful and interesting tweets, and generously promoting the work of others.</p>
+</section>
+</section>
+<section id="speaking-at-meetups-or-conferences" class="level2">
+<h2 class="anchored" data-anchor-id="speaking-at-meetups-or-conferences">Speaking at Meetups or Conferences</h2>
+<p>Most people (including experts with tons of experience) are terrified and intimidated by public speaking, yet it is such a great way to share your work that it’s worth it.</p>
+<p>Two years ago I decided I wanted to do more public speaking after not having done much for many years (my previous experience was primarily academic and from before I switched into the tech industry). I was nervous and also uncertain if I had anything of value to say. I started small, giving a <a href="https://www.youtube.com/watch?v=_6zFSK5Ys3M&amp;list=PLtmWHNX-gukJUPxzuBf_GnTfN67WJen6c&amp;index=1">5 minute lightning talk</a> at a PyLadies meetup to a particularly supportive audience, gradually working up through events with 50-100 people, to eventually presenting to 700 people at JupyterCon.</p>
+<p>I prepare a ton for talks, since it both helps me feel less anxious and results in stronger talks. I prepare for short talks and small audiences, as well as big talks, because I want to be respectful of the audience. I think it’s particularly important to go through your timing to make sure that you’ll be able to cover what you plan (I’ve seen some talks get cut off before the speaker even reached their main point).</p>
+<p>Nothing is more irritating to me as an audience member than having to sit through an infomercial. It’s important to offer useful information to your audience, and not just advertise your product or company. My goal with all my talks is to have some information that will be useful or thought-provoking, even if the listeners never take a fast.ai course.</p>
+<p>For every talk I give, I ask if the venue will be able to do a video-recording (here are professional recordings of me speaking at an <a href="https://vimeo.com/214233053">ML meetup at AWS</a> and at <a href="https://www.youtube.com/watch?v=7i6kBz1kZ-A&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6">PyBay</a>). If not, I will often do my own recording. I use the software <a href="https://www.techsmith.com/video-editor.html">Camtasia</a> to capture my screen and video, and have my own microphone that plugs into my computer via usb. For instance, this is how I created the below <a href="https://www.youtube.com/watch?v=25nC0n9ERq4">tutorial on Word Embeddings</a>. About 80 people attended the live workshop and now 2,400 have watched the recording online! Getting or making recordings allows you to reach a broader audience, and it will make it easier for you to get future speaking engagements as you build up a portfolio of your past talks.</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/25nC0n9ERq4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="">
+</iframe>
+</center>
+<p><br></p>
+<p>If my talk involves code, I try to create a demo on github (<a href="https://github.com/fastai/word-embeddings-workshop">like this</a> or <a href="https://github.com/fastai/fastai/blob/master/tutorials/linalg_pytorch.ipynb">this</a>) that has enough documentation to stand alone as a tutorial or guide. Even if I don’t plan to cover all the set-up or background in my talk, I want to give people a resource that they can use later. You don’t need to create a recording or a demo to give a talk (particularly if it will stress you out), but it’s worth considering.</p>
+<section id="public-speaking-resources" class="level3">
+<h3 class="anchored" data-anchor-id="public-speaking-resources">Public Speaking Resources</h3>
+<p><em>Technically Speaking</em> was an excellent newsletter sharing links to blog posts and videos with public speaking advice for those in tech, created by Cate Huston and Chiu-Ki Chan, senior developers with a ton of speaking experience. Although it is no longer active, you can still check out <a href="https://twitter.com/techspeakdigest?lang=en">the archives here</a>.</p>
+<p>If you are a woman or non-binary person living in Atlanta, NYC, SF, Chicago, or LA, I highly recommend <a href="http://www.writespeakcode.com/">Write Speak Code</a> meetups or workshops as a great place to practice technical talks and receive constructive feedback.</p>
+<p>I was scheduled to speak to an audience of 1,000 people at <a href="https://www.tedxsanfrancisco.com/">TEDx San Francisco</a> in October (unfortunately, I ended up in the ICU with a life-threatening illness at the last minute and <a href="https://twitter.com/math_rachel/status/918265140306354177">couldn’t attend</a>, but I’d already gone through months of preparation and was completely ready). I was terrified, so I started working with a public speaking coach in preparation, and it was super helpful. I searched for coaches on yelp, and met with a few to find one that I particularly liked. From asking around, a lot of excellent and famous speakers have worked with speech coaches. They can help with anything– from your voice and body language, to crafting engaging intros and conclusions. In hindsight, I probably should’ve met with a speech coach even earlier in my public speaking journey; you certainly don’t need to be preparing for an audience of 1,000 to hire one.</p>
+<p>Many years ago I participated in a chapter of Toastmasters, and I enjoyed that. When I asked about speech coaches on twitter, several people told me that training in improv, theater, or singing had been helpful to them in the realm of public speaking.</p>
+</section>
+</section>
+<section id="blogging" class="level2">
+<h2 class="anchored" data-anchor-id="blogging">Blogging</h2>
+<p>I’ve already written an <a href="https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045">entire post on blogging</a>. Here are a few highlights:</p>
+<ul>
+<li>It’s like a resume, only better. I know of a few people who have had blog posts lead to job offers!</li>
+<li>Helps you learn. Organizing knowledge always helps me synthesize my own ideas. One of the tests of whether you understand something is whether you can explain it to someone else. A blog post is a great way to do that.</li>
+<li>I’ve gotten invitations to conferences and invitations to speak from my blog posts. I was invited to the TensorFlow Dev Summit (which was awesome!) for writing a blog post about how <a href="https://www.fast.ai/posts/2017-01-03-keras.html">I don’t like TensorFlow</a>.</li>
+<li>Meet new people. I’ve met several people who have responded to blog posts I wrote.</li>
+<li>Saves time. Any time you answer a question multiple times through email, you should turn it into a blog post, which makes it easier for you to share the next time someone asks.</li>
+</ul>
+<p>It can be intimidating to start blogging, but remember that your target audience is you-6-months-ago, not Geoffrey Hinton. What would have been most helpful to your slightly younger self? You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate). The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.</p>
+<p>And as inspiration, here are links to a few blogs that I consistently enjoy:</p>
+<ul>
+<li><a href="https://jvns.ca/">Julia Evans</a></li>
+<li><a href="https://smerity.com/articles/articles.html">Stephen Merity</a></li>
+<li><a href="https://cate.blog/">Cate Huston</a></li>
+<li><a href="https://blog.slavv.com/">Slav Ivanov</a></li>
+<li><a href="https://blog.juliaferraioli.com/">Julia Ferraioli</a></li>
+</ul>
+</section>
+<section id="go-forth-and-personal-brand" class="level2">
+<h2 class="anchored" data-anchor-id="go-forth-and-personal-brand">Go Forth and Personal Brand</h2>
+<p>Sharing high quality work (both your own and that of others) will help you develop a platform to further your goals. Observe people who are doing this well: who are writing blog posts you enjoy, producing tweets you like to follow, or giving engaging talks. While we may want technical expertise to stand on its own, communication skills are vital in helping your work reach an audience. Starting to work on any new skillset is often intimidating, but with small steps and practice you will improve. As a meta-exercise, I did some personal branding in this post by linking to my own work. It felt uncomfortable, but I followed my own advice and did it anyway!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>advice</category>
+  <guid>https://rachel.fast.ai/posts/2017-12-18-personal-brand/index.html</guid>
+  <pubDate>Sun, 17 Dec 2017 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2017-12-18-personal-brand/jupyter.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>How (and why) to create a good validation set</title>
   <dc:creator>Rachel Thomas</dc:creator>
   <link>https://rachel.fast.ai/posts/2017-11-13-validation-sets/index.html</link>
@@ -1549,6 +1762,114 @@ AutoML
   <media:content url="https://rachel.fast.ai/posts/2017-11-13-validation-sets/overfitting2.png" medium="image" type="image/png" height="54" width="144"/>
 </item>
 <item>
+  <title>The Real Reason Women Quit Tech (and How to Address It)</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2016-10-04-real-reason/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>This article has been</em> <a href="http://link.estadao.com.br/blogs/faca-voce-mesma/por-que-mulheres-saem-da-area-de-tecnologia/"><em>translated into Portuguese</em></a> <em>by the Maria Lab and</em> <a href="https://www.ibidem-translations.com/blog/real-reason-women-quit-tech-spanish.php"><em>translated into Spanish</em></a> <em>by Anastassia Ivaškiva of Tallín University.</em></p>
+<p>Women are <a href="http://documents.library.nsf.gov/edocs/HD6060-.A84-2008-PDF-Athena-factor-Reversing-the-brain-drain-in-science,-engineering,-and-technology.pdf">more than twice</a> as likely to quit the tech industry as men (41% vs 17%). Why is this happening? A study of 4,000 women who had recently changed jobs found that the #1 reason women leave companies is because of “<a href="https://business.linkedin.com/talent-solutions/blog/trends-and-research/2015/why-women-are-leaving-their-jobs-your-first-guess-is-wrong">a concern for the lack of advancement opportunity</a>.” <a href="https://docs.google.com/document/d/1soIYek-YEIvqtu9brv3ecdPbuVzQKp_GhAozC06UrLo/edit">An extensive survey of hundreds of books, articles, and white papers concludes that</a> women leave the tech industry because “<strong>they’re treated unfairly; underpaid, less likely to be fast-tracked than their male colleagues, and unable to advance.</strong>” A study by the Center for Talent Innovation found that <a href="http://www.talentinnovation.org/assets/Athena-2-ExecSummFINAL-CTI.pdf">27% of women in tech feel stalled in their careers</a> and 32% are likely to quit within one year; <a href="https://www.ncwit.org/sites/default/files/resources/ncwit_women-in-it_2016-full-report_final-web06012016.pdf">48% of Black women</a> in tech feel stalled.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2016-10-04-real-reason/woc5.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Photo from #WOCinTech Chat</figcaption><p></p>
+</figure>
+</div>
+<p>It’s harder for women to get promoted for a number of reasons. Women frequently experience being <a href="https://www.ncwit.org/sites/default/files/resources/ncwit_women-in-it_2016-full-report_final-web06012016.pdf">excluded from more creative and innovative roles</a> and instead channeled into less fulfilling execution roles, <a href="http://www.catalyst.org/system/files/Women_in_Technology_Maximizing_Talent_Minimizing_Barriers.pdf">not receiving high visibility “stretch” assignments</a>, having to <a href="http://www.latimes.com/business/la-fi-women-tech-20150222-story.html">prove themselves again and again</a>, and having their ideas ignored until a man makes the same suggestion later (a study from Harvard, Wharton, and MIT found that men’s voices are perceived <a href="http://www.pnas.org/content/111/12/4427.full.pdf">as more persuasive, fact-based, and logical</a> than women’s voices, even when they are reading identical pitches). Researchers have found that women receive more <a href="https://hbr.org/2016/04/research-vague-feedback-is-holding-women-back">vague feedback</a> and <a href="http://fortune.com/2014/08/26/performance-review-gender-bias/">personality criticism</a> in performance evaluations, whereas men receive actionable advice tied to business outcomes. Women in tech are <a href="http://www.talentinnovation.org/assets/Athena-2-ExecSummFINAL-CTI.pdf">less likely to get their ideas green-lighted</a> for development than men (30% vs 37%). A <a href="https://hbr.org/2013/12/how-diversity-can-drive-innovation">study of 1,800 professionals</a> found that without diverse leadership, women are 20% less likely than straight white men to win endorsement for their ideas.</p>
+<section id="the-secret-key-to-diversity" class="level2">
+<h2 class="anchored" data-anchor-id="the-secret-key-to-diversity">The Secret Key to Diversity</h2>
+<p><strong>The first step, and the most important step, to improving diversity is to make sure that you are treating the women and people of color who already work at your company very well.</strong> This includes: appreciate their contributions, assign them to high impact projects, bring up their accomplishments in high level meetings, pay them equitably, provide chances to grow their skillset, listen to them, help them prepare for promotions, give them good managers, believe them about their experiences, and generally support them. <a href="https://hbr.org/2013/09/women-rising-the-unseen-barriers">Because of unconscious bias</a>, these are actions that we are more likely to do for white men.</p>
+<p>Without completing this first step of treating current employees well, even if you are able to hire more women and people of color, you won’t be able to retain them, and a bad reputation would make it harder for your company to attract talent in the future. People talk and find out which companies are known for being toxic or biased environments, and which companies are giving people from underrepresented backgrounds opportunities to grow and thrive.</p>
+</section>
+<section id="warning-mentorship-is-not-the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="warning-mentorship-is-not-the-solution">Warning: Mentorship is NOT the solution</h2>
+<p>On the surface, mentorship seems like it could be a good way to help people advance their careers, but the data shows this is only true for men, because mentors provide different things for men than for women. A <a href="https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women">study of 4,000 women and men who graduated from top MBA programs</a> (surveyed in 2008 and again in 2010) found that when women receive mentorship, it’s <em>advice on how they should change</em> and gain more self-knowledge. When men receive mentorship, it’s <em>public endorsement of their authority</em> and concrete steps to take charge and make career moves. Guess which one is more helpful? <strong>Men who received mentorship were statistically more likely to be promoted, but that was not true for women who were mentored</strong>.</p>
+<p>The study found that women were more likely than men to have mentors; however the <strong>women were also in lower-level positions, paid less, less satisfied, and less likely to be promoted</strong> than the men. <a href="https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women">Sponsorship</a> is when a mentor goes beyond giving advice to using their influence with senior executives to advocate for the mentee. With a sponsor, women in tech are <a href="http://www.talentinnovation.org/assets/Athena-2-ExecSummFINAL-CTI.pdf">70% more likely to have their ideas endorsed</a>, 119% more likely to see their ideas developed, and <strong>200% more likely to see their ideas implemented</strong>, compared to women without a sponsor.</p>
+</section>
+<section id="pipeline-to-senior-roles" class="level2">
+<h2 class="anchored" data-anchor-id="pipeline-to-senior-roles">Pipeline to Senior Roles</h2>
+<p>A few years ago, women comprised only 10% of the leadership and staff engineer roles at Intuit despite making up 24% of the engineering team, and women were <strong>3x less likely</strong> to be ready for promotion than their male counterparts. In response, Intuit <a href="https://www.linkedin.com/pulse/how-male-ally-women-technology-vinay-pai">created a talent pipeline for senior roles</a>: director, manager of managers, architects, and principal engineer.</p>
+<p>Vinay Pai, VP of Engineering at Intuit, asked directors, architects, and principal engineers to identify promising women managers and women staff engineers, and to provide mentorship with the explicit goal of helping prepare them for promotions to more senior roles. <strong>After 1 year, the promotion readiness gap between men and women had been eliminated</strong>, several women were promoted, retention increased, and employee engagement (of both men and women) was higher. Although Intuit’s program was only about promoting women, it should be expanded to other underrepresented groups to avoid “<a href="http://qz.com/523137/the-tech-industrys-diversity-focus-favors-one-group-over-pretty-much-any-other/">colorless diversity</a>” that primarily benefits White women.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2016-10-04-real-reason/woc3.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Photo from #WOCinTech Chat</figcaption><p></p>
+</figure>
+</div>
+<p><a href="https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women">Researchers at Deutsche Bank</a> hypothesized that women managing directors were leaving the firm to work for competitors because they were seeking greater work/life balance. However, they discovered instead that <strong>women were leaving because they were being offered higher ranking jobs</strong> by competitors that they weren’t being considered for internally. Deutsche bank responded by creating a sponsorship program to pair executive committee members with women, and one third of participants moved to larger roles at the bank within a year.</p>
+</section>
+<section id="the-wage-gap-is-real" class="level2">
+<h2 class="anchored" data-anchor-id="the-wage-gap-is-real">The Wage Gap is Real</h2>
+<p>There are gender and racial pay gaps in tech, and things are worst for women of color, who experience the compound effects of both. A study by the American Institute for Economic Research found that on average <a href="http://www.usatoday.com/story/tech/2014/10/09/high-tech-pay-gap-hispanics-asians-african-americans/16606121/">Latina women software developers earn 20% less annually than White men</a>. Latina, Asian, and Black women software developers all earn less than White, Black, and Asian men, and less than White women (Latino men are an exception, earning less than any other group except for Latina women). <a href="http://www.bloomberg.com/news/articles/2012-10-25/why-women-earn-less-than-men-a-year-out-of-school">Another study</a> found that just 1 year out of college, women make 88% of what men do in engineering and 77% of what men do in computer and information science (this gap will increase over time with the power of compounding).</p>
+<p>Some people dismiss the gender pay gap by arguing that women choose lower-paying fields; however, the causality is opposite: <a href="http://www.nytimes.com/2016/03/20/upshot/as-women-take-over-a-male-dominated-field-the-pay-drops.html?_r=0">pay drops as women move into a previously male-dominated field</a>. A study by Stanford and UPenn researchers analyzed <a href="http://sf.oxfordjournals.org/content/88/2/865.full.pdf+html">164 occupations using 50 years</a> of US Census data (1950–2000) and found consistent evidence that pay drops as women move into a previously male-dominated field in areas as varied as recreation, ticket agent, designers, housekeepers, and biologists. When a job attracts more men, such as computer programming, which used to be predominately female, wages rise.</p>
+<p>Another argument is that women earn less since they are less likely to negotiate; however a <a href="https://broadly.vice.com/en_us/article/women-do-ask-for-raisesthey-just-dont-receive-them-study-says">study of 4,600 employees</a> across 840 workplaces found that women ask for pay raises at the same rate as men, but men are 25% more likely to receive yes as an answer (the study uses data from Australia, which is the only country in the world to collect this data. Maybe data-driven American tech companies could collect this data too…) Furthermore, a <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=779506">Harvard and CMU study</a> found that when men and women negotiated a job offer by reading identical scripts, women who asked for a higher salary were rated as being more difficult to work with and less nice, but men were not perceived negatively for negotiating.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2016-10-04-real-reason/woc.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Photo from #WOCinTech Chat</figcaption><p></p>
+</figure>
+</div>
+<p><a href="http://www.businesswire.com/news/home/20110502006774/en/Fair-Foul-MIT-Sloan-Researcher-Finds-Efforts">MIT Professor Emilio Castilla studies the culture of meritocracy</a> and has found that organizations that promote meritocracy actually show greater bias in favor of men over equally performing women. When Professor Castilla studied a large private company, he found that women, ethnic minorities and employees not born in the U.S. received lower bonuses than White men with the same performance evaluations, working in the same job and in the same unit for the same manager. That is ridiculous enough that I need to repeat it: <strong>employees with the same performance evaluation scores, same job, same unit, and same manager were receiving different bonuses</strong>!</p>
+<p>After Microsoft publicized that it is paying men and women <em>at the same level</em> equally, engineer Leigh Honeywell <a href="https://hypatia.ca/2016/04/13/equalpayday-impostor-syndrome-and-flipping-tables/">pointed out that this is only part of the story</a> since it’s not accompanied by promotion velocities and retention numbers (data which Microsoft has, but has not released). If women are not getting promoted as quickly as men, they are effectively earning less for the same experience level. Some possible reasons women may be getting promoted more slowly are <a href="http://fortune.com/2014/08/26/performance-review-gender-bias/">biased performance reviews</a>, <a href="https://www.ncwit.org/sites/default/files/resources/ncwit_women-in-it_2016-full-report_final-web06012016.pdf">less access to innovative projects</a>, less visibility one level up, and pattern matching (leaders look for people who remind them of themselves). Equal pay is necessary but insufficient. Tech companies need to release the comparative rates at which people at their companies receive promotions, broken down by gender and race, as part of their diversity reports.</p>
+</section>
+<section id="womens-ideas-arent-heard-until-a-man-suggests-them" class="level2">
+<h2 class="anchored" data-anchor-id="womens-ideas-arent-heard-until-a-man-suggests-them">Women’s ideas aren’t heard until a man suggests them</h2>
+<p>A study from Harvard, Wharton, and MIT found that men’s voices are perceived <a href="http://www.pnas.org/content/111/12/4427.full.pdf">as more persuasive, fact-based, and logical</a> than women’s voices, even when they are saying the exact same sentences. Many women have had the experience of their idea being ignored, only for a man to suggest the same idea later and receive praise and credit for it.</p>
+<p>Women in tech are <a href="http://www.talentinnovation.org/assets/Athena-2-ExecSummFINAL-CTI.pdf">less likely to get their ideas green-lighted</a> for development than men (30% vs 37%) and a <a href="https://hbr.org/2013/12/how-diversity-can-drive-innovation">study of 1,800 professionals</a> found that without diverse leadership, women are 20% less likely than straight white men to win endorsement for their ideas, people of color are 24% less likely, and LGBT people are 21% less likely.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2016-10-04-real-reason/woc1.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Photo from #WOCinTech Chat</figcaption><p></p>
+</figure>
+</div>
+<p>A <a href="https://www.washingtonpost.com/news/powerpost/wp/2016/09/13/white-house-women-are-now-in-the-room-where-it-happens/">recent article</a> shared a strategy used by women in meetings at the White House: “When a woman made a key point, other women would repeat it, giving credit to its author. This forced the men in the room to recognize the contribution — and denied them the chance to claim the idea as their own.” If the large number of women who posted, shared, liked, and tweeted the article is any indication, this is a problem and a solution that resonates with many. While the article was specifically about women supporting each other, men can do this too. Listen closely at meetings, and repeat unacknowledged good ideas, giving the person who first had the idea credit.</p>
+</section>
+<section id="women-dont-receive-the-high-visibility-assignments-necessary-for-earning-promotions" class="level2">
+<h2 class="anchored" data-anchor-id="women-dont-receive-the-high-visibility-assignments-necessary-for-earning-promotions">Women don’t receive the high-visibility assignments necessary for earning promotions</h2>
+<p>Two Stanford Professors ran <a href="https://hbr.org/2016/09/to-succeed-in-tech-women-need-more-visibility">a study</a> in which they met with 240 senior leaders of a Silicon Valley tech company. These leaders identified <strong>visibility</strong> as the <strong>most critical factor for getting promoted to their high level</strong>: more important than technical competence, business results, or team leadership ability (these other attributes were all seen through a lens of visibility). The researchers observed dozens of hours of performance calibration reviews and concluded that women are at a distinct disadvantage.</p>
+<p>The researchers found that men with a highly visible leadership style were described positively as “crushing it” or “killing it,” whereas women with a highly visible leadership style were criticized for being “abrasive” or “running over people.” Women and men with more collaborative leadership styles weren’t recognized as leaders, so this is a lose-lose situation for women.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2016-10-04-real-reason/woc2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Photo from #WOCinTech Chat</figcaption><p></p>
+</figure>
+</div>
+<p>Women in the focus groups reported being turned down when they requested big opportunities. A typical comment was, “There are times where you are discouraged from taking on a stretch assignment. The manager says, ‘This will require extra hours, and you have to think about your family. This is not something for you.’ I have had that happen to me, and these were experiences needed for a promotion.”</p>
+<p>Even if you aren’t in a position of power, you can still praise the underrepresented minorities you work with to other coworkers, or suggest how you think X would be great at applying skill Y to high impact problem Z. If you are a leader, make sure that you are assigning underrepresented minorities to high-impact, high-visibility projects.</p>
+</section>
+<section id="the-cost-of-untrained-managers" class="level2">
+<h2 class="anchored" data-anchor-id="the-cost-of-untrained-managers">The Cost of Untrained Managers</h2>
+<p><a href="http://www.catalyst.org/system/files/Women_in_Technology_Maximizing_Talent_Minimizing_Barriers.pdf">In a survey of 21 high-tech companies</a>, technical women <strong>rated their supervisors lowest for communication skills, receptiveness to suggestions, availability, and feedback</strong>, compared to technical men and non-technical men and women. Technical women were <strong>less likely to agree that management decisions were fair, that management trusted their judgement, that performance evaluations were fair, or that it was safe to speak up</strong>, compared to every other subgroup. I once had a manager who was dismissive of or denied everything I said. Even in my exit interview, he denied that my reasons for quitting were actually issues at the company.</p>
+<p>In the tech industry, many managers receive little or no training, and people are frequently promoted to manager because of their technical skills, not their people or leadership skills. <strong>Don’t underestimate the damage that an unskilled manager can cause</strong>. Many managers are completely unaware of the <a href="https://www.brainpickings.org/2013/05/09/daniel-pink-drive-rsa-motivation/">research science on motivation</a> (autonomy, mastery, and purpose have been proven as the best motivators) or of unconscious bias and how it <a href="http://fortune.com/2014/08/26/performance-review-gender-bias/">impacts performance reviews</a>. You must provide training to managers.</p>
+<p><a href="https://hbr.org/2016/04/research-vague-feedback-is-holding-women-back">Stanford researchers ran a gendered comparison of written performance reviews</a> from 3 high-tech companies and 1 professional services firm. The researchers found that <strong>feedback to men contained more granular detail and actionable advice</strong>, whereas feedback to women was vague (e.g.&nbsp;“You had a great year” was a common one). When women did receive specific developmental feedback, it was overly focused on their communication style (e.g.&nbsp;“her speaking style is off-putting” or “too aggressive”). In contrast, men received actionable feedback linked to business outcomes, such as “You need to deepen your domain knowledge in the X space- once you have that understanding, you will be able to contribute to the design decisions that impact the customer.” Lack of relevant, actionable feedback holds women back from making the changes they need to advance their careers. Another <a href="http://fortune.com/2014/08/26/performance-review-gender-bias/">study of 248 tech performance reviews</a> found a strong gender bias; men received constructive criticism on skills they should develop, whereas women received personality criticism (“pay attention to your tone”).</p>
+</section>
+<section id="action-steps" class="level2">
+<h2 class="anchored" data-anchor-id="action-steps">Action Steps</h2>
+<p>Here are a few concrete steps that will improve diversity at your company. Please choose at least one of these and <strong>commit to take action on it this week</strong>:</p>
+<ul>
+<li>Think of 1 person from an underrepresented group at your workplace whose work you admire, and think of 1 way to champion their work: advocating for their ideas, praising them to leadership at your company, or recommending them for an interesting, high-impact work project.</li>
+<li>Set up a sponsorship program to help people from underrepresented groups prepare for promotions.</li>
+<li>Train managers to give women fair and actionable performance reviews.</li>
+<li>In meetings, listen to women and repeat unacknowledged good ideas, giving the originator credit.</li>
+<li>Analyze your company’s data on performance reviews, salaries, and promotions. Correct any salary inequalities. If there are differences between groups in performance reviews or promotion rates, investigate why.</li>
+</ul>
+<p>In general, be on the lookout for ways you can use whatever power or status you have to champion someone who doesn’t remind you of yourself.</p>
+<p><em>This post is part 2 in a series. Part 1 discusses</em> <a href="https://medium.com/tech-diversity-files/donations-and-women-in-tech-panels-are-not-a-diversity-strategy-do-better-c3c51022a916#.fryvrpoxv"><em>bullshit diversity strategies and offers some better ideas</em></a><em>. Part 3 covers</em> <a href="https://medium.com/@racheltho/how-to-make-tech-interviews-a-little-less-awful-c29f35431987#.q4qbf5cd6"><em>how to overhaul your interview process</em></a><em>.</em></p>
+<p><em>My post</em> <a href="https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996#.xvy0dd4wm"><em>debunking the pipeline myth shares my personal story of wanting to leave the tech industry</em></a><em>, as well as practical tips for change. My post on</em> <a href="https://medium.com/tech-diversity-files/how-diversity-branding-hurts-diversity-fb29dd705481#.1q0naqvrl"><em>“diversity washing” shows the research that the wrong diversity initiatives can actually make things worse</em></a> <em>for women and people of color.</em></p>
+
+
+</section>
+
+ ]]></description>
+  <category>inclusion</category>
+  <guid>https://rachel.fast.ai/posts/2016-10-04-real-reason/index.html</guid>
+  <pubDate>Mon, 03 Oct 2016 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2016-10-04-real-reason/woc5.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Diversity Washing Makes Things Worse</title>
   <dc:creator>Rachel Thomas</dc:creator>
   <link>https://rachel.fast.ai/posts/2015-12-07-diversity-washing/index.html</link>
@@ -1614,110 +1935,6 @@ AutoML
   <guid>https://rachel.fast.ai/posts/2015-12-07-diversity-washing/index.html</guid>
   <pubDate>Sun, 06 Dec 2015 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2015-12-07-diversity-washing/woc.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>If you think women in tech is just a pipeline problem, you haven’t been paying attention</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2015-07-27-not-pipeline/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>This article has been <a href="http://mata.juegos/es/2016/07/mujeres-tecnologia/">translated into Spanish</a> at Matajuegos and <a href="https://habr.com/ru/post/511658/">into Russian</a> by Dmitry Si.</em></p>
-<p>According to the <a href="http://documents.library.nsf.gov/edocs/HD6060-.A84-2008-PDF-Athena-factor-Reversing-the-brain-drain-in-science,-engineering,-and-technology.pdf">Harvard Business Review</a>, 41% of women working in tech eventually end up leaving the field (compared to just 17% of men), and I can understand why…</p>
-<p>I first learned to code at age 16, and am now in my 30s. I have a math PhD from Duke. I still remember my pride in a “knight’s tour” algorithm that I wrote in C++ in high school; the awesome mind warp of an interpreter that can interpret itself (a Scheme course my first semester of college); my fascination with numerous types of matrix factorizations in C in grad school; and my excitement about relational databases and web scrapers in my first real job.</p>
-<p>Over a decade after I first learned to program, I still loved algorithms, but felt alienated and depressed by tech culture. While at a company that was a particularly poor culture fit, I was so unhappy that I hired a career counselor to discuss alternative career paths. Leaving tech would have been devastating, but staying was tough.</p>
-<section id="work-hard-play-hard" class="level2">
-<h2 class="anchored" data-anchor-id="work-hard-play-hard">Work hard, play hard</h2>
-<p>I’m not the stereotypical male programmer in his early 20s looking to “work hard, play hard”. I do work hard, but I’d rather wake up early than stay up late, and I was already thinking ahead to when my husband and I would need to coordinate our schedules with daycare drop-offs and pick-ups. <a href="http://fusion.net/story/170952/twitter-frat-party/">Kegerators and ping pong tables</a> don’t appeal to me. I’m not aggressive enough to thrive in a combative work environment. Talking to other female friends working in tech, I know that I’m not alone in my frustrations.</p>
-<p>When researcher <a href="http://fortune.com/2014/10/02/women-leave-tech-culture/">Kieran Snyder interviewed 716 women</a> who left tech after an average tenure of 7 years, almost all of them said they liked the work itself, but most were unhappy with the work environment. In NSF-funded research, <a href="http://www.npr.org/sections/alltechconsidered/2014/08/12/339638726/many-women-leave-engineering-blame-the-work-culture">Nadya Fouad surveyed 5,300 women</a> who had earned engineering degrees (of all types) over the last 50 years, and 38% of them were no longer working as engineers. Fouad summarized her findings on why they leave with “It’s the climate, stupid!”</p>
-<p>This is a huge, unnecessary, and expensive loss of talent in a field facing a supposed talent shortage. Given that tech is currently one of the major drivers of the US economy, this impacts everyone. Any tech company struggling to hire and retain as many employees as they need should particularly care about addressing this problem.</p>
-</section>
-<section id="your-company-is-not-a-meritocracy-and-you-are-not-gender-blind" class="level2">
-<h2 class="anchored" data-anchor-id="your-company-is-not-a-meritocracy-and-you-are-not-gender-blind">Your company is NOT a meritocracy and you are NOT “gender-blind”</h2>
-<p>You don’t know if you’re color-blind without testing either</p>
-<p>Nobody wants to think of themselves as being sexist. However, a number of studies have shown that identical job applications or resumes are evaluated differently based on whether they are labeled with a male or female name. When men and women read identical scripts containing entrepreneurial pitches or salary negotiations, they are evaluated differently. Both men and women have been shown to have these biases. <a href="https://implicit.harvard.edu/implicit/takeatest.html">These biases occur unconsciously</a> and without intention or malice.</p>
-<p>Here is a sampling of just a few of the studies on unconscious gender bias:</p>
-<ul>
-<li><a href="http://www.pnas.org/content/111/12/4427.full.pdf+html">Investors preferred entrepreneurial ventures pitched by a man than an identical pitch from a woman</a> by a rate of 68% to 32% in a study conducted jointly by HBS, Wharton, and MIT Sloan. “Male-narrated pitches were rated as more persuasive, logical and fact-based than were the same pitches narrated by a female voice.”</li>
-<li>In a randomized, double-blind study by Yale researchers, science faculty at 6 major institutions evaluated applications for a lab manager position. <a href="http://www.pnas.org/content/109/41/16474.full.pdf+html">Applications randomly assigned a male name were rated as significantly more competent and hirable</a> and offered a higher starting salary and more career mentoring, compared to identical applications assigned female names.</li>
-<li>When men and women negotiated a job offer by reading identical scripts for a Harvard and CMU study, <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=779506">women who asked for a higher salary were rated as being more difficult to work with and less nice</a>, but men were not perceived negatively for negotiating.</li>
-<li>Psychology faculty were sent CVs for an applicant (randomly assigned male or female name), and both men and women were <a href="http://advance.cornell.edu/documents/ImpactofGender.pdf">significantly more likely to hire a male applicant</a> than a female applicant with an identical record.</li>
-<li><a href="http://fortune.com/2014/08/26/performance-review-gender-bias/">In 248 performance reviews of high-performers in tech</a>, negative personality criticism (such as abrasive, strident, or irrational) showed up in 85% of reviews for women and just 2% of reviews for men. It is ridiculous to assume that 85% of women have personality problems and that only 2% of men do.</li>
-</ul>
-<p>Most concerningly, a study from Yale researchers shows that <a href="http://www.socialjudgments.com/docs/Uhlmann%20and%20Cohen%202005.pdf">perceiving yourself as objective is actually correlated with showing even more bias</a>. The mere desire to not be biased is not enough to overcome decades of cultural conditioning and can even lend more credence to post-hoc justifications. Acknowledging that you have biases that conflict with your values does not make you a bad person. It’s a natural result of our culture. The important thing is to find ways to eliminate them. Blindly believing your company is a meritocracy not only does not make it so, but will actually make it even harder to address implicit bias.</p>
-<p>Bias is typically justified post-hoc. Our initial subconscious impression of the female applicant is negative, and then we find logical reasons to justify it. For instance, in the above <a href="http://www.socialjudgments.com/docs/Uhlmann%20and%20Cohen%202005.pdf">study by Yale researchers</a> if the male applicant for police chief had more street smarts and the female applicant had more formal education, evaluators decided that street smarts were the most important trait, and if the names were reversed, evaluators decided that formal education was the most important trait.</p>
-</section>
-<section id="good-news-and-bad-news" class="level2">
-<h2 class="anchored" data-anchor-id="good-news-and-bad-news">Good News and Bad News</h2>
-<section id="the-bad-news" class="level3">
-<h3 class="anchored" data-anchor-id="the-bad-news">The Bad News…</h3>
-<p>Because of the high attrition rate for women working in tech, teaching more girls and women to code is not enough to solve this problem. Because of the above well-documented differences in how men and women are perceived, training women to negotiate better and be more assertive is also not enough to solve this problem. Female voices are perceived as <a href="http://www.pnas.org/content/111/12/4427.full.pdf+html">less logical and less persuasive than male voices</a>. Women are perceived negatively for being too assertive. If tech culture is going to change, everyone needs to change, especially men and most especially leaders.</p>
-<p>The professional and emotional costs to women for speaking out about discrimination can be large (in terms of retaliation, being perceived as less employable or difficult to work with, or companies then seeking to portray them as poor performers). I know a number of female software engineers who will privately share stories of sexism with trusted friends that we are not willing to share publicly because of the risk. This is why it is important to proactively address this issue. There is more than enough published research and <a href="http://www.blog.juliaferraioli.com/2015/03/engineering-first-run-experience.html">personal</a> <a href="http://www.catehuston.com/blog/2015/02/25/honey-i-left-the-tech-industry/">stories</a> from <a href="https://medium.com/@kellyellis/this-is-not-the-last-thing-youll-ever-need-to-read-about-sexism-in-tech-in-fact-its-not-even-5b8400e913ec">those</a> who have chosen to publicly share to confirm that this is a widespread issue in the tech industry.</p>
-</section>
-<section id="and-the-good-news" class="level3">
-<h3 class="anchored" data-anchor-id="and-the-good-news">…and the Good News</h3>
-<p>Change is possible. Although these are schools and not tech companies, Harvey Mudd and Harvard Business School provide inspiring case studies. Strong leaders at both schools enacted sweeping changes to address previously male-centric cultures. <a href="http://www.npr.org/sections/alltechconsidered/2013/05/01/178810710/How-One-College-Is-Closing-The-Tech-Gender-Gap">Harvey Mudd has raised the percentage of computer science majors that are women to 40%</a> (the national average is 18%). The <a href="http://www.nytimes.com/2013/09/08/education/harvard-case-study-gender-equity.html?pagewanted=all&amp;_r=2">top 5% of Harvard Business School graduates rose from being approximately 20% women to closer to 40%</a> and the GPA gap between men and women closed, all within one year of making a number of comprehensive, structural changes.</p>
-</section>
-</section>
-<section id="so-what-can-we-do-about-it" class="level2">
-<h2 class="anchored" data-anchor-id="so-what-can-we-do-about-it">So What Can We Do About It?</h2>
-<p>These recommendations on what companies could do to improve their cultures are based on a mix of research and personal experience. My goal is to have a positive focus, and I would love it if you walked away with at least one concrete goal for making constructive change at your company.</p>
-<section id="train-managers" class="level3">
-<h3 class="anchored" data-anchor-id="train-managers">Train managers</h3>
-<p>It is very common at tech start-ups to promote talented engineers to management without providing them with any management training or oversight, particularly at rapidly growing companies where existing leadership is stretched thin. These new managers are often not aware of any of the research on motivation, human psychology, or bias. <a href="http://uk.timesofnews.com/the-glass-ceiling-is-made-of-bad-managers/">Untrained, unsupervised managers cause more harm to women than men</a>, although regardless, all employees would benefit from new managers receiving training, mentorship, and supervision.</p>
-</section>
-<section id="formalize-hiring-and-promotion-criteria" class="level3">
-<h3 class="anchored" data-anchor-id="formalize-hiring-and-promotion-criteria">Formalize hiring and promotion criteria</h3>
-<p>In the <a href="http://www.socialjudgments.com/docs/Uhlmann%20and%20Cohen%202005.pdf">Yale study mentioned above</a> regarding applicants for police chief, getting participants to formalize their hiring criteria before they looked at applications (i.e.&nbsp;deciding if formal education or street smarts was more important) reduced bias. I was once on a team where the hiring criteria were amorphous and where the manager frequently overrode majority votes by the team because of “gut feeling”. It seemed like unconscious bias played a large role in decisions, but because of our haphazard approach to hiring, there was no way of truly knowing.</p>
-</section>
-<section id="leaders-speak-up-and-act-in-concrete-ways" class="level3">
-<h3 class="anchored" data-anchor-id="leaders-speak-up-and-act-in-concrete-ways">Leaders, speak up and act in concrete ways</h3>
-<p>Leadership sets the values and culture for a company, so the onus is on them to make it clear that they value diversity. Younger engineers and managers will follow their perceptions of what executives value. In the cases of positive change at <a href="http://www.npr.org/sections/alltechconsidered/2013/05/01/178810710/How-One-College-Is-Closing-The-Tech-Gender-Gap">Harvey Mudd</a> and <a href="http://www.nytimes.com/2013/09/08/education/harvard-case-study-gender-equity.html?pagewanted=all&amp;_r=2">Harvard Business School</a>, leadership at the top was spearheading these initiatives. Intel is going to begin <a href="http://www.newyorker.com/business/currency/can-intel-help-silicon-valley-improve-diversity">tying executives’ compensation</a> to whether they achieve diversity goals on their teams. As Kelly Shuster, director for the Denver chapter of Women Who Code has pointed out, <a href="http://www.ibtimes.com/why-silicon-valley-failing-miserably-diversity-what-should-be-done-about-it-1998144">leaders have to get rid of employees who engage in sexist or racist behavior</a>. Otherwise, the company is at risk of losing talented employees, and is sending a message to all employees that discrimination is okay.</p>
-</section>
-<section id="dont-rely-on-self-nominations-or-self-evaluations" class="level3">
-<h3 class="anchored" data-anchor-id="dont-rely-on-self-nominations-or-self-evaluations">Don’t rely on self-nominations or self-evaluations</h3>
-<p>There is a well-documented <a href="http://www.theatlantic.com/features/archive/2014/04/the-confidence-gap/359815/">confidence gap</a> between men and women. Don’t rely on people nominating themselves for promotions or to get the most interesting projects, since women are less likely to put themselves forward. Google relies on employees nominating themselves for promotions and data revealed that women were much less likely to do so (and thus much less likely to receive promotions). When senior women began hosting workshops encouraging women to nominate themselves, <a href="http://www.nytimes.com/2012/08/23/technology/in-googles-inner-circle-a-falling-number-of-women.html?pagewanted=2&amp;_r=1&amp;smid=tw-nytimesbusiness&amp;partner=socialflow">the number of women at Google receiving promotions increased</a>. <a href="https://www0.gsb.columbia.edu/mygsb/faculty/research/pubfiles/4600/GenderLeaderOverconfidence.pdf">Groups are more likely to pick male leaders because of their over-confidence</a>, compared to more qualified women who are less confident. Don’t rely heavily on self-evaluations in performance scoring. Women perceive their abilities as being worse than they are, whereas <a href="https://labs.wsu.edu/joyceehrlinger/wp-content/uploads/sites/252/2014/10/DunJohnEhrKrug2003.pdf">men have an inflated sense of their abilities</a>.</p>
-</section>
-<section id="formally-audit-employee-data" class="level3">
-<h3 class="anchored" data-anchor-id="formally-audit-employee-data">Formally audit employee data</h3>
-<p>Confirm that men and women with the same qualifications are earning the same amount and that they are receiving promotions and raises at similar rates (and if not, explore why). Make sure that gendered criticism (<a href="http://fortune.com/2014/08/26/performance-review-gender-bias/">such as calling a woman strident or abrasive</a>) is not used in performance reviews. The trend of tech companies releasing their diversity statistics is a good one, but given the high industry attrition rate for women, they should also start releasing their retention rates broken down by gender. I would like to see companies release statistics on the rates at which women are given promotions or raises compared to men, and how performance evaluation scores compare between men and women. By publicly sharing data, companies can hold themselves accountable and can track changes over time.</p>
-</section>
-<section id="dont-emphasize-face-time" class="level3">
-<h3 class="anchored" data-anchor-id="dont-emphasize-face-time">Don’t emphasize face time</h3>
-<p>A culture that rewards facetime and encourages people to regularly stay late or eat dinner at the office puts employees with families at a disadvantage (particularly mothers), and research shows that <a href="http://www.alternet.org/story/154518/why_we_have_to_go_back_to_a_40-hour_work_week_to_keep_our_sanity">working excess hours does not actually improve productivity in the long-term</a> since workers begin to experience burn out after just a few weeks. Furthermore, when employees burn out and quit, <a href="https://www.americanprogress.org/issues/labor/report/2012/11/16/44464/there-are-significant-business-costs-to-replacing-employees/">the cost of recruiting and hiring a new employee is typically 20% of the annual salary for that position</a>.</p>
-</section>
-<section id="create-a-collaborative-environment" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-collaborative-environment">Create a collaborative environment</h3>
-<p>Stanford research studies document that <a href="http://web.stanford.edu/~niederle/Niederle.Vesterlund.QJE.2007.pdf">women are more likely to dislike competitive environments</a> compared to men and are more likely to select out of them, regardless of their ability. Given that women are perceived negatively for being too assertive, it is tougher for women to succeed in a highly aggressive environment as well. Men who speak up more than their peers are rewarded with 10% higher ratings, whereas <a href="http://www.nytimes.com/2015/01/11/opinion/sunday/speaking-while-female.html?_r=0">women who speak up more are punished with 14% lower ratings</a>. Creating a competitive culture where people must fight for their ideas makes it much tougher for women to succeed.</p>
-</section>
-<section id="offer-maternity-leave" class="level3">
-<h3 class="anchored" data-anchor-id="offer-maternity-leave">Offer maternity leave</h3>
-<p>Over 10% of the <a href="http://fortune.com/2014/10/02/women-leave-tech-culture/">716 women who left tech</a> in Kieran Snyder’s research left because of inadequate maternity leave. Several were pressured to return from leave early or to be on call while on leave. These women did not want to be stay-at-home-parents, they just wanted to recover after giving birth. Just as you would not pressure someone to return to work without recovery time after a major surgery, women need time to physically heal after delivering a baby. When Google increased paid maternity leave from 12 weeks to 18 weeks, <a href="http://www.wsj.com/articles/susan-wojcicki-paid-maternity-leave-is-good-for-business-1418773756">the number of new moms who quit Google dropped by 50%</a>.</p>
-</section>
-</section>
-<section id="some-final-thoughts" class="level2">
-<h2 class="anchored" data-anchor-id="some-final-thoughts">Some final thoughts…</h2>
-<section id="a-note-on-racial-bias" class="level3">
-<h3 class="anchored" data-anchor-id="a-note-on-racial-bias">A note on racial bias</h3>
-<p>There is a huge amount of <a href="http://www.nytimes.com/2015/01/04/upshot/the-measuring-sticks-of-racial-bias-.html?abt=0002&amp;abg=0&amp;_r=0">research on unconscious racial bias</a>, and tech companies need to address this issue. As Nichole Sanchez, VP of Social Impact at GitHub, describes, <a href="https://medium.com/@nmsanchez/which-women-in-tech-371e721e71c4">calls for diversity are often solely about adding more white women</a>, which is deeply problematic. Racial bias adds another intersectional dimension to the discrimination that women of color experience. In <a href="https://pdfs.semanticscholar.org/9493/95505a6e00c0a8d414f33bf785ad9fb8fcf3.pdf">interviews with 60 women of color who work in STEM research</a>, 100% of them had experienced discrimination, and the particular negative stereotypes they faced differed depending on their race. <a href="http://www.chicagobooth.edu/capideas/spring03/racialbias.html">A resume with a traditionally African-American sounding name is less likely to be called for an interview</a> than the same resume with a traditionally white sounding name. I do not have the personal experience to speak about this topic and instead encourage you to read these blog posts and articles by and about tech workers of color on the challenges they’ve faced: <a href="https://medium.com/thelist/the-other-side-of-diversity-1bb3de2f053e">Erica</a> <a href="https://medium.com/@ericajoy/seeking-happy-58a2a375340a">Joy</a> (Slack engineer, former Google engineer), <a href="https://medium.com/@jedmund/growing-up-d2bb5ff3f229">Justin Edmund</a> (designer, Pinterest’s 7th employee), <a href="http://www.fastcompany.com/3038448/innovation-agents/dropboxs-first-employee-if-your-network-isnt-diverse-in-and-of-itself-then">Aston Motes</a> (Engineer, Dropbox’s 1st employee), and <a href="http://www.ibtimes.com/why-silicon-valley-failing-miserably-diversity-what-should-be-done-about-it-1998144">Angelica Coleman</a> (developer advocate at Zendesk, formerly at Dropbox).</p>
-</section>
-</section>
-<section id="now" class="level2">
-<h2 class="anchored" data-anchor-id="now">Now</h2>
-<p>I’m currently teaching software development at <a href="https://hackbrightacademy.com/">all-women Hackbright Academy</a>, a job that I love and that suits me perfectly. I want all women to have the opportunity (and I mean truly have the opportunity, without implicit or explicit discrimination) to learn how to program — knowing software development provides so many career and financial possibilities; it’s intellectually rewarding and fun; and being a creator is deeply satisfying. Although I know many women with frustrating experiences of sexism, I also know women who have found companies where they’re happily thriving. I’m glad for the attention tech’s diversity problem has been receiving and I am hopeful about continued change.</p>
-<p>Thanks for review, edits, and discussion to: Jeremy Howard and Angie Chang.</p>
-<p><em>I do more research and further develop the ideas in this post in my later posts: on how <a href="https://medium.com/tech-diversity-files/how-diversity-branding-hurts-diversity-fb29dd705481">showy, shallow diversity strategies make things worse</a>; on <a href="https://medium.com/tech-diversity-files/donations-and-women-in-tech-panels-are-not-a-diversity-strategy-do-better-c3c51022a916">bullshit diversity initiatives and some better ideas</a>; and the research on how <a href="https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd">women are leaving tech because they can’t advance in their careers</a>.</em></p>
-
-
-</section>
-
- ]]></description>
-  <category>inclusion</category>
-  <guid>https://rachel.fast.ai/posts/2015-07-27-not-pipeline/index.html</guid>
-  <pubDate>Sun, 26 Jul 2015 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2015-07-27-not-pipeline/pipeline.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

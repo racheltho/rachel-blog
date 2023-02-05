@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2018-08-07">
+<meta name="description" content="Comparing human and computer-based decision-making is not an apples-to-apples comparison.">
+
+<title>Rachel Thomas, PhD - What Harvard Business Review Gets Wrong About Algorithms and Bias</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">What Harvard Business Review Gets Wrong About Algorithms and Bias</h1>
+                  <div>
+        <div class="description">
+          Comparing human and computer-based decision-making is not an apples-to-apples comparison.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">ethics</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 7, 2018</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>The Harvard Business Review recently published an article, <a href="https://hbr.org/2018/07/want-less-biased-decisions-use-algorithms">Want Less-Biased Decisions? Use Algorithms.</a> by Alex P. Miller. The article focuses on the fact that humans make very biased decisions (which is true), yet ignores many important related issues, including:</p>
+<ul>
+<li>algorithms are often implemented without any appeals method in place (due to the misconception that algorithms are objective, accurate, and won’t make mistakes)</li>
+<li>algorithms are often used at a much larger scale than human decision makers, in many cases, replicating an identical bias at scale (part of the appeal of algorithms is how cheap they are to use)</li>
+<li>users of algorithms may not understand probabilities or confidence intervals (even if these are provided), and may not feel comfortable overriding the algorithm in practice (even if this is technically an option)</li>
+<li>instead of just focusing on the least-terrible existing option, it is more valuable to ask how we can create <strong>better, less biased decision-making tools</strong> by leveraging the strengths of humans and machines working together</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="algorithm.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">Photo Credit: Jonathan Lidbeck https://www.flickr.com/photos/jondissed/2278335691</figcaption><p></p>
+</figure>
+</div>
+<p>Miller acknowledges that critics of the “algorithmic revolution” are “concerned that algorithms are often <strong>opaque, biased, and unaccountable tools</strong> being wielded in the interests of institutional power”, although he then focuses exclusively on the <em>biased</em> part for the remainder of the article, without addressing the <em>opaque</em> or <em>unaccountable</em> charges (as well as how these interact with bias).</p>
+<h2 id="vs" class="anchored">
+Humans vs.&nbsp;machines is not a helpful framing
+</h2>
+<p>The media often frames advances in AI through a lens of humans vs.&nbsp;machines: who is the champion at X task. This framework is both inaccurate as to how most algorithms are used, as well as a very limited way to think about AI. In all cases, algorithms have a human component, in terms of who gathers the data (and what biases they have), which design decisions are made, how they are implemented, how results are used to make decisions, the understanding various stakeholders have of correct uses and limitations of the algorithm, and so on.</p>
+<p>Most people working on medical applications of AI are not trying to replace doctors; they are trying to create tools that will allow doctors to be more accurate and more efficient, improving quality of care. The best chess “players” are neither humans nor computers, but rather, teams of humans and computers working together.</p>
+<p>Miller’s HBR article points out (correctly) that humans are very biased, and then compares our current not-so-great approaches to see which is less terrible. The article does <strong>not</strong> ask the question, <strong>how can we develop less biased ways to make decisions (perhaps using some combination of humans and algorithms)?</strong> which is a far more interesting and important question.</p>
+<h2 id="different" class="anchored">
+Algorithms are often used differently than human decision makers
+</h2>
+<p>Algorithms are often used at a larger scale, mass-producing identical biases, and assumed to be error-proof or objective. The studies that Miller shares compares them in an apples-to-apples way, which doesn’t acknowledge how differently they are often used in practice.</p>
+<p>Cathy O’Neil writes in <a href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a> that the algorithms she is critiquing <i>tend to punish the poor. <b>They specialize in bulk, and they’re cheap. That’s part of their appeal.</b> The wealthy, by contrast, often benefit from personal input. A white-shoe law firm or an exclusive prep school will lean far more on recommendations and face-to-face interviews than will a fast-food chain or a cash-strapped urban school district. The privileged, we’ll see time and again, are processed more by people, the masses by machines.</i> (emphasis mine)</p>
+<p>One example from O’Neil’s book is that of a college student with bipolar disorder who wanted to get a summer job bagging groceries. Every store he applied to was using the same pyschometric evaluation software to screen candidates, and he was rejected from every store. This captures another danger of algorithms: even though humans often have similar biases, not all humans will make the exact same decisions (e.g.&nbsp;perhaps that college student would have been able to find one place to hire him, even if some of the people making decisions had biases about mental health).</p>
+<p>Many people will put more trust in algorithmic decisions than they might in human decisions. While the researchers designing the algorithms may have a good grasp on probability and confidence intervals, often the general public using them will not. Even if people are given the power to override algorithmic decisions, it is crucial to understand if they will feel comfortable doing so in practice.</p>
+<h2 id="appeals" class="anchored">
+The need for meaningful appeals and explanations
+</h2>
+<p><strong>Many of the most chilling stories of algorithmic bias don’t involve meaningful explanations or a meaningful appeals process</strong>. This seems to be a particular trend amongst algorithmic decision making systems, perhaps since people mistakenly assume algorithms are objective, they believe there is no need for appeals. Also, as explained above, algorithmic decision making systems are often used as a cost-cutting device, and allowing appeals would be more expensive.</p>
+<p><a href="https://weaponsofmathdestructionbook.com/">Cathy O’Neil writes</a> the account of a teacher who is beloved by her students, their parents, and the principal, yet is inexplicably fired by an algorithm. She is never able to get an answer as to why she was fired. Stories like this would be somewhat less disturbing if there had been a relatively quick and simple way for her to appeal the decision, or even to know for sure what factors it was related to.</p>
+<p>The Verge <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">investigated software</a> used in over half of U.S. states to determine how much healthcare people receive. After its implemention in Arkansas, people (many with severe disabilities) drastically had their healthcare cut. For instance, Tammy Dobbs, a woman with cerebral palsy who needs an aid to help her to get out of bed, to go to the bathroom, to get food, and more, had her hours of help suddenly reduced by 20 hours a week. <strong>She couldn’t get any explanation for why her healthcare was cut.</strong> Eventually, a court case revealed that there were mistakes in the software implementation of the algorithm, negatively impacting people with diabetes or cerebral palsy. However, Dobbs and many other people reliant on these health care benefits live in fear that their benefits could again be cut suddenly and inexplicably.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="justice.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p></p><figcaption class="figure-caption">image source: wikimedia commons</figcaption><p></p>
+</figure>
+</div>
+<p>The creator of the algorithm, who is a professor and earning royalties off of this software, was asked whether there should be a way to communicate decisions, “It’s probably something we should do. I should also probably dust under my bed.” He later clarified that he thought it was someone else’s responsibility. <strong>We can not keep claiming the problems caused by our technology are someone else’s responsibility.</strong></p>
+<p>For a separate computer system used in Colorado to determine public benefits in the mid-2000s, it was discovered that more than 900 incorrect rules had been coded into the system, resulting in problems like pregnant women being denied Medicaid. It is often hard for lawyers to even discover these flaws, since the inner-workings of the algorithms are typically protected as trade secrets. Systems used to make decisions related to healthcare, hiring/firing, criminal justice, and other life-altering areas should include some sort of <strong>human appeals process</strong>, that is relatively fast and easy to navigate. Many of the most chilling stories of algorithmic decision making would not be nearly as concerning if there had been an easy way to appeal and correct faulty decisions. Mistakes are possible in anything we do, so <strong>it’s important to have a tight loop in which we make it easy to discover and correct mistakes</strong>.</p>
+<h2 id="real-world" class="anchored">
+Complicated, real-world systems
+</h2>
+<p><strong>When we think about AI, we need to think about complicated, real-world systems</strong>. The studies in the HBR article treat decision making as an isolated action, without taking into account that this decision-making happens within complicated real-world systems. A decision about whether someone is likely to commit another crime is not an isolated decision: it lives within the complicated system of our criminal justice system. We have a responsibility to understand the real-world systems with which our work will interact, and to not lose sight of the actual <strong>people</strong> who will be impacted.</p>
+<p>The COMPAS recidivism algorithm is used in some US courtrooms for decisions related to pre-trial bail, sentencing, and parole. It was the subject of a <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">ProPublica investigation</a> finding that the false positive rate (people that were labeled “high risk” but were not re-arrested) for white defendants was 24% and for Black defendants was 45%. Later research found that COMPAS (which uses 137 inputs in a black-box algorithm) was <a href="https://www.theverge.com/2018/1/17/16902016/compas-algorithm-sentencing-court-accuracy-problem">no more accurate</a> than a simple linear equation on two variables. COMPAS was also <a href="https://www.theverge.com/2018/1/17/16902016/compas-algorithm-sentencing-court-accuracy-problem">not more accurate</a> than untrained Mechanical Turk workers. (You can find out more about various definitions of fairness in Princeton CS Professor Arvind Narayanan’s excellent <a href="https://www.youtube.com/watch?v=wqamrPkF5kk">21 Definitions of Fairness</a> talk).</p>
+<p>Kristian Lum, statistics PhD and lead data scientist at the Human Rights Digital Analysis Group, <a href="https://www.youtube.com/watch?v=hEThGT-_5ho">organized a workshop</a> together with Elizabeth Bender, a staff attorney for the NY Legal Aid Society and former public defender, and Terrence Wilkerson, an innocent man who had been arrested and could not afford bail. Together, they shared first hand experience about the obstacles and inefficiencies that occur in the legal system, providing valuable context to the debate around COMPAS. Bender shared that for public defenders meet with defendants at Rikers Island, where many pre-trial detainees in NYC who can’t afford bail are held, involves a bus ride that is two hours each way and they then only get 30 minutes to see the defendant, assuming the guards are on time (which is not always the case). Wilkerson explained how frequently innocent defendents who can’t afford bail accept guilty plea bargains just so they can get out of jail faster. Again, all this is for people that have not even faced a trial yet! This panel was an excellent way to illuminate the real-world systems and educate about the first-hand impact. I hope more statisticians and computer scientists will follow this example.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lum2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Dr.&nbsp;Kristian Lum’s Panel at the Fairness, Accountability, and Transparency in ML Conference</figcaption><p></p>
+</figure>
+</div>
+<p>As this example shows, <strong>algorithms can often exacerbate underlying societal problems</strong>. There are deep, structural problems with the US courts and prison systems, including <a href="https://www.vox.com/cards/police-brutality-shootings-us/us-police-racism">racial bias</a>, the <a href="https://www.aclu.org/blog/smart-justice/we-cant-end-mass-incarceration-without-ending-money-bail">use of cash bail</a> (nearly half a million people in the USA are languishing in jail before even facing a trial, because they are too poor to afford bail), predatory <a href="http://time.com/5013760/american-private-prisons-donald-trump/">for-profit prisons</a>, and extreme <a href="https://en.wikipedia.org/wiki/United_States_incarceration_rate">over-use of prisons</a> (the US is home to 4% of the world’s population and 22% of the world’s prisoners). We have a responsibility to understand the systems and underlying problems our algorithms may interact with.</p>
+<h2 id="critics" class="anchored">
+Most critics of unjust bias aren’t anti-algorithm
+</h2>
+<p><strong>Most critics of biased algorithms are opposed to unjust bias; they are not people who hate algorithms.</strong> Miller says that critics of biased algorithms “rarely ask how well the systems they analyze would operate without algorithms,” suggesting that those speaking out against biased algorithms are perhaps unaware of how biased humans are or perhaps just don’t like algorithms. I spent a great deal of time <a href="https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996">researching and writing</a> <a href="https://medium.com/tech-diversity-files/how-diversity-branding-hurts-diversity-fb29dd705481">about</a> <a href="https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd">studies</a> <a href="https://medium.com/@racheltho/how-to-make-tech-interviews-a-little-less-awful-c29f35431987">of human bias</a> (particularly as to how they pertain to the tech industry), long before I began writing about bias in machine learning.</p>
+<p>When I tweet or share about biased or unethical algorithms, I frequently encounter push-back that I must be <strong>anti-algorithms</strong> or <strong>opposed to tech</strong>. This couldn’t be further from the truth: I have a PhD in math; I’ve worked as a quant, data scientist, and software engineer; I created a free, online <a href="https://github.com/fastai/numerical-linear-algebra">Computational Linear Algebra course</a> and co-founded fast.ai, which runs <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> and won <a href="http://www.fast.ai/2018/04/30/dawnbench-fastai/">Stanford’s Computer Vision Speed Test</a> through clever use of algorithms.</p>
+<p>I’m in no way unique in this: most of the outspoken critics of biased algorithms that come to mind have PhDs in computer science, math, or statistics, and continue to be active in their fields. Just check out some of the speakers from the <a href="https://www.fatml.org/schedule/2018">Fairness Accountability and Transparency Conference</a> (and <a href="https://www.youtube.com/channel/UCs16j6ot-CYq-ZqYpO-vqMg/videos">watch their talks</a>!). One such example is <a href="http://randomwalker.info/">Arvind Narayanan</a>, a computer science professor at Princeton, winner of the <a href="https://arxiv.org/abs/1102.4374">Kaggle Social Network Challenge</a>, teacher of a <a href="https://www.coursera.org/learn/cryptocurrency">popular cryptocurrency course</a>, and also speaks out <a href="https://www.youtube.com/watch?v=wqamrPkF5kk">against algorithmic bias</a>.</p>
+<p>I hope that the popular discussion of biased algorithms can move beyond unnuanced rebuttals and more deeply engage with the issues involved.</p>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
