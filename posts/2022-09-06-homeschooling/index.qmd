@@ -5,6 +5,7 @@ image: "homeschool-headlines.jpg"
 author: "Rachel Thomas"
 toc: true
 description: "Prior to 2020, we never expected to homeschool, and now we have committed to it long-term."
+categories: [education]
 ---
 
 My husband Jeremy and I never intended to homeschool, and yet we have now, unexpectedly, committed to homeschooling long-term. Prior to the pandemic, we both worked full-time in careers that we loved and found meaningful, and we sent our daughter to a full-day Montessori school. Although I struggled with significant health issues, I felt unbelievably lucky and fulfilled in both my family life and my professional life. The pandemic upended my careful balance. Every family is different, with different needs, circumstances, and constraints, and what works for one may not work for others. My intention here is primarily to share the journey of my own (very privileged) family.

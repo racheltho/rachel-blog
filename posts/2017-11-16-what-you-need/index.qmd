@@ -1,0 +1,96 @@
+---
+title: "What you need to do deep learning"
+date: "2017-11-16"
+author: "Rachel Thomas"
+categories: [advice, technical, machine learning]
+toc: true
+description: "The hardware, software, background, and data you need to do deep learning (it may be less than you expect)."
+image: "gpu.jpg"
+---
+
+*This post has been translated into [Chinese here](https://www.jiqizhixin.com/articles/2017-11-17-3).*
+
+I want to answer some questions that I'm commonly asked: *What kind of computer do I need to do deep learning? Why does fast.ai recommend Nvidia GPUs?  What deep learning library do you recommend for beginners?  How do you put deep learning into production?*  I think these questions all fall under a general theme of **What do you need (in terms of hardware, software, background, and data) to do deep learning?**  This post is geared towards those new to the field and curious about getting started.
+
+## The hardware you need
+
+### We are indebted to the gaming industry
+
+The video game industry is larger (in terms of revenue) [than the film and music industries combined](http://www.huffingtonpost.co.uk/george-taylor/why-is-gaming-more-popular-than-music-and-film_b_10095376.html).  In the last 20 years, the video gaming industry drove forward huge advances in GPUs (graphical processing units), used to do the matrix math needed for rendering graphics.  Fortunately, these are exactly the type of computations needed for deep learning.  These advances in GPU technology are a key part of why neural networks are proving so much more powerful now than they did a few decades ago.  Training a deep learning model without a GPU would be painfully slow in most cases.
+
+![A GPU](gpu.jpg){width=50%}
+
+### Not all GPUs are the same
+
+Most deep learning practitioners are not programming GPUs directly; we are using software libraries (such as PyTorch or TensorFlow) that handle this. However, to effectively use these libraries, you need access to the right type of GPU. In almost all cases, this means having access to a [GPU from the company Nvidia](https://developer.nvidia.com/cuda-gpus).
+
+[CUDA](https://developer.nvidia.com/cuda-downloads) and [OpenCL](https://www.khronos.org/opencl/) are the two main ways for programming GPUs.  CUDA is by far the most developed, has the most extensive ecosystem, and is the most robustly supported by deep learning libraries.  CUDA is a **proprietary** language created by Nvidia, so it can't be used by GPUs from other companies.  When fast.ai recommends Nvidia GPUs, it is not out of any special affinity or loyalty to Nvidia on our part, but that this is by far the best option for deep learning.
+
+Nvidia dominates the market for GPUs, with the next closest competitor being the [company AMD](http://www.amd.com/en).  This summer, AMD announced the release of a [platform called ROCm](https://rocm.github.io/index.html) to provide more support for deep learning. The [status of ROCm](https://rocm.github.io/dl.html) for major deep learning libraries such as PyTorch, TensorFlow, MxNet, and CNTK is still under development.  While I would love to see an open source alternative succeed, I have to admit that I find the documentation for ROCm hard to understand. I just read the *Overview*, *Getting Started*, and *Deep Learning* pages of the ROCm website and still can't explain what ROCm is in my own words, although I want to include it here for completeness. (I admittedly don't have a background in hardware, but I think that data scientists like me should be part of the intended audience for this project.)
+
+### If you don't have a GPU...
+
+If your computer doesn't have a GPU or has a non-Nvidia GPU, you have several great options:
+
+- Use [Crestle](https://www.crestle.com/), through your browser: Crestle is a service (developed by fast.ai student Anurag Goel) that gives you an already set up cloud service with all the popular scientific and deep learning frameworks already pre-installed and configured to run on a GPU in the cloud. It is easily accessed through your browser. New users get 10 hours and 1 GB of storage for free. After this, GPU usage is 59 cents per hour. I recommend this option to those who are new to AWS or new to using the console.
+
+- Set up an AWS cloud instance through your console: You can create an AWS instance (which remotely provides you with Nvidia GPUs) by following the steps in [this fast.ai setup lesson](http://course.fast.ai/lessons/aws.html). AWS charges 90 cents per hour for this. Although our set-up materials are about AWS (and you'll find the most [forum support](http://www.amd.com/en) for AWS), one fast.ai student created a guide for [Setting up an Azure Virtual Machine for Deep learning](https://medium.com/@abhikprince/setting-up-an-azure-vm-for-deep-learning-bb76b453272b). And I'm happy to share and add a link if anyone writes a blog post about doing this with Google Cloud Engine.
+
+- Build your own box. Here's a [lengthy thread from our fast.ai forums](http://forums.fast.ai/t/making-your-own-server/174) where people ask questions, share what components they are using, and post other useful links and tips.  The cheapest new Nvidia GPUs are around $300, with some students finding even cheaper used ones on eBay or Craigslist, and others paying more for more powerful GPUs. A few of our students wrote blog posts documenting how they built their machines:
+    - [Deep Confusion: Misadventures in Building a Deep Learning Machine](https://www.topbots.com/deep-confusion-misadventures-in-building-a-machine-learning-server/) by Mariya Yao
+    - [Setting up a Deep learning machine in a lazy yet quick way](https://medium.com/impactai/setting-up-a-deep-learning-machine-in-a-lazy-yet-quick-way-be2642318850) by Sravya Tirukkovalur
+    - [Building your own deep learning box](https://towardsdatascience.com/building-your-own-deep-learning-box-47b918aea1eb) by Brendan Fortuner
+
+## The software you need
+
+Deep learning is a relatively young field, and the libraries and tools are changing quickly.  For instance, Theano, which we chose to use for part 1 of [our course](http://course.fast.ai) in 2016, [was just retired](https://groups.google.com/forum/#!msg/theano-users/7Poq8BZutbY/rNCIfvAEAwAJ). [PyTorch](http://pytorch.org/), which we are using currently, was only released earlier this year (2017). As [Jeremy wrote previously](https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html), *you should assume that whatever specific libraries and software you learn today will be obsolete in a year or two*. The most important thing is to understand the underlying concepts, and towards that end, we are creating our own library on top of Pytorch that we believe makes deep learning concepts clearer, as well as encoding best practices as defaults.
+
+Python is by far the most commonly used language for deep learning. There are a number of deep learning libraries available, with almost every major tech company backing a different library, although employees at those companies often use a mix of tools. Deep learning libraries include [TensorFlow](https://www.tensorflow.org/) (Google), [PyTorch](http://pytorch.org/) (Facebook), [MxNet](https://mxnet.incubator.apache.org/) (University of Washington, adapted by Amazon), [CNTK](https://docs.microsoft.com/en-us/cognitive-toolkit/) (Microsoft), [DeepLearning4j](https://deeplearning4j.org/) (Skymind), [Caffe2](https://caffe2.ai/) (also Facebook), [Nnabla](https://nnabla.org/) (Sony), [PaddlePaddle](http://www.paddlepaddle.org/) (Baidu), and [Keras](https://keras.io/) (a high-level API that runs on top of several libraries in this list). All of these have Python options available.
+
+### Dynamic vs. Static Graph Computation
+
+At fast.ai, we **prioritize the speed at which programmers can experiment and iterate** (through easier debugging and more intutive design) as more important than theoretical performance speed-ups. This is the reason we use PyTorch, a flexible deep learning library with *dynamic computation*.
+
+One distinction amongst deep learning libraries is whether they use **dynamic** or **static** computations (some libraries, such as MxNet and now TensorFlow, allow for both). *Dynamic computation* mean that the program is executed in the order you wrote it. This typically makes debugging easier, and makes it more straightforward to translate ideas from your head into code. *Static computation* means that you build a structure for your neural network in advance, and then execute operations on it.  Theoretically, this allows the compiler to do greater optimizations, although it also means there may be more of a disconnect between what you intended your program to be and what the compiler executes.  It also means that bugs can seem more removed from the code that caused them (for instance, if there is an error in how you constructed your graph, you may not realize until you perform an operation on it later).  Even though there are theoretical arguments that languages with static computation graphs are capable of better performance than languages with dynamic computation, we often find that is not the case for us in practice.
+
+Google's TensorFlow mostly uses a static computation graph, whereas Facebook's PyTorch uses dynamic computation. (Note: TensorFlow announced a dynamic computation option, [Eager Execution](https://research.googleblog.com/2017/10/eager-execution-imperative-define-by.html), just two weeks ago, although it is still quite early and most TensorFlow documentation and projects use the static option). In September, fast.ai [announced that we had chosen PyTorch](https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html) over TensorFlow to use in our course this year and to use for the development of [our own library](https://github.com/fastai/fastai/) (a higher-level wrapper for PyTorch that encodes best practices). Briefly, here are a few of our reasons for choosing PyTorch (explained in [much greater detail here](https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html)):
+
+- easier to debug
+- dynamic computation is much better suited for natural language processing
+- traditional Object Oriented Programming style (which feels more natural to us)
+- TensorFlow's use of unusual conventions like scope and sessions can be confusing and are more to learn
+
+Google has put far more resources into marketing TensorFlow than anyone else, and I think this is one of the reasons that TensorFlow is so well known (for many people outside deep learning, TensorFlow is the only DL framework that they've heard of).  As mentioned above, TensorFlow released a dynamic computation option a few weeks ago, which addresses some of the above issues.  Many people have asked fast.ai if we are going to switch back to TensorFlow.  The dynamic option is still quite new and far less developed, so we will happily continue with PyTorch for now. However, the TensorFlow team has been very receptive to our ideas, and we would love to see [our fastai library](https://github.com/fastai/fastai/) ported to TensorFlow.
+
+**Note**: The [in-person version](https://www.usfca.edu/data-institute/certificates/deep-learning-part-one) of our updated course, which uses PyTorch as well as our own fastai library, is happening currently.  It will be released online for free after the course ends (estimated release: January).
+
+## What you need for production: not a GPU
+
+Many people overcomplicate the idea of using deep learning in production and believe that they need much more complex systems than they actually do.  You can use deep learning in production with a CPU and the webserver of your choice, and in fact, this is what we recommend for most use cases.  Here are a few key points:
+
+- It is incredibly rare to need to train in production.  Even if you want to update your model weights daily, you don't need to train in production.  Good news! This means that you are just doing inference (a forward pass through your model) in production, which is much quicker and easier than training.
+- You can use whatever webserver you like (e.g. Flask) and set up inference as a simple API call.
+- GPUs only provide a speed-up if you are effectively able to batch your data. Even if you are getting 32 requests per second, using a GPU would most likely slow you down, because you'd have to wait a second from when the 1st arrived to collect all 32, then perform the computation, and then return the results. We recommend using a CPU in production, and you can always add more CPUs (easier than using multiple GPUs) as needed.
+
+For big companies, it may make sense to use GPUs in production for serving-- however, it will be clear when your reach this size. Prematurely trying to scale before it's needed will only add needless complexity and slow you down. 
+
+## The background you need: 1 year of coding
+
+One of the frustrations that inspired Jeremy and I to create [Practical Deep Learning for Coders](http://course.fast.ai/) was (is) that most deep learning materials fall into one of two categories:
+
+- so shallow and high-level as to not give you the information or skills needed to actually use deep learning in the workplace or create state-of-the-art models.  This is fine if you just want a high-level overview, but disappointing if you want to become a working practitioner.
+- highly theoretical and assume a graduate level math background.  This is a prohibitive barrier for many folks, and even as someone who has a math PhD, I found that the theory wasn't particularly useful in learning how to code practical solutions.  It's not surprising that many materials have this slant.  Until quite recently, deep learning was almost entirely an academic discipline and largely driven by questions of what would publish in top academic journals.  
+
+Our free course [Practical Deep Learning for Coders](http://course.fast.ai/) is unique in that the only pre-requisite is 1 year of programming experience, yet it still teaches you how to create state-of-the-art models. Your background can be in any language, although you might want to learn some Python before starting the course, since that is what we use.  We introduce math concepts as needed, and we [don't recommend](https://www.fast.ai/posts/2016-12-19-favorite-posts.html) that you try to front-load studying math theory in advance.
+
+If you don't know how to code, I highly recommend learning, and Python is a great language to start with if you are interested in data science.
+
+## The data you need: far less than you think
+
+Although many have claimed that you need Google-size data sets to do deep learning, this is false. The power of **transfer learning** (combined with techniques like data augmentation) make it possible for people to apply pre-trained models to much smaller datasets. As we've [talked about elsewhere](https://www.fast.ai/posts/2017-08-21-ai-in-medicine.html), at medical start-up Enlitic, Jeremy Howard led a team that used just 1,000 examples of lung CT scans with cancer to build an algorithm that was [more accurate at diagnosing lung cancer](http://money.cnn.com/2015/03/12/technology/enlitic-technology/) than a panel of 4 expert radiologists. The C++ library [Dlib](http://dlib.net/) has an example in which a face detector is accurately trained using only [4 images](http://blog.dlib.net/2016/10/easily-create-high-quality-object.html), containing just 18 faces! 
+
+![Face Recognition with Dlib](dlib-faces.jpg){width=50%}
+
+## A note about access
+
+For the vast majority of people I talk with, the barriers to entry for deep learning are far lower than they expected and the costs are well within their budgets. However, I realize this is not the case universally.  I'm periodically contacted by students that want to take our online course but can't afford the costs of AWS.  Unfortunately, I don't have a solution. There are other barriers as well. Bruno Sánchez-A Nuño has [written about the challenges](https://towardsdatascience.com/in-defense-of-cheap-data-science-f630f248d400) of doing data science in places that don't have reliable internet access, and fast.ai international fellow Tahsin Mayeesha describes [hidden barriers to MOOC access](https://medium.com/learning-machine-learning/moocs-and-hidden-barriers-494f6759f217) in countries such as Bangladesh. I care about these issues of access, and it is disatisifying to not have solutions.

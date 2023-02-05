@@ -1,0 +1,131 @@
+---
+title: "Making Peace with Personal Branding"
+date: "2017-12-18"
+author: "Rachel Thomas"
+categories: [advice]
+description: "Even though the term 'personal branding' makes me cringe, it is a useful concept"
+image: "jupyter.jpg"
+toc: true
+---
+
+As a child, I was nerdy and shy. At my elementary and middle schools, we had to present our science projects to judges in the school science fair each year, and I noticed that students who were outgoing and good at presenting were more likely to win. I remember feeling indignant-- *shouldn't we just be judged on scientific merit?  Why should things like being able to smile, make eye contact, and show enthusiasm (all things I didn't do) with the judges have any impact?*
+
+But it turns out that those other skills are actually useful!  Personal branding is similar-- we may want our professional work to stand on its own merit, but how we present and share it is important.  And so, two weeks ago I found myself mentoring on the cringe-inducing topic of *personal branding* at the [Women in Machine Learning Workshop](http://wimlworkshop.org/2017/), co-located with the deep learning conference [NIPS](https://nips.cc/). Part of me felt embarrassed to be talking about something as seemingly shallow as *personal branding*, while just a few tables away deep learning star Yoshua Bengio mentored on the more serious topic of *deep learning*. However, I've worked hard to make peace with the concept and wanted to share what I've discovered.
+
+## What is "personal branding" and why is it useful?
+
+Over the past two years, I've consistently put time in to twitter and blog posts. Here are a few ways this has been helpful to me:
+
+- Being invited to attend the TensorFlow Dev Summit
+- Being invited to [keynote JupyterCon](https://www.youtube.com/watch?v=frc7FgheUj4&list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&index=2)
+- Being interviewed and [quoted in Wired](https://www.wired.com/story/ai-and-enormous-data-could-make-tech-giants-harder-to-topple/) ([twice](https://www.wired.com/2017/03/hey-tech-giants-action-diversity-not-just-reports/))
+- Being able to raise money for 18 AI diversity scholarships and $250,000 of AWS credits to give to fast.ai students
+
+![me ontstage at JupyterCon in 2017](jupyter.jpg){width=70%}
+
+I talked to a grad student who was giving an oral presentation at NIPS, and she noted how a classmate of hers with a much larger twitter following got significantly more retweets and attendees for his talk. This struck her as unfair since a larger twitter following doesn't equate with better research, but it also convinced her that building a personal brand would be useful.
+
+I think of personal branding as anything that helps people find out about you and your work. This includes blogging, using twitter, and public speaking.  Personal branding is a bit like a web: your blog post may lead to a job interview; you may get a speaking engagement from someone who follows you on twitter; and your conference talk may lead some of the audience members to read your blog or follow you on twitter, continuing the cycle. 
+
+Personal branding is no substitute for doing high-quality technical work; it's just the means by which you can share this work with a broader audience.
+
+## Making peace with personal branding
+
+Here are a few things that helped me get okay with the idea of personal branding:
+
+- Personal branding sounds icky if you think of it as a shallow popularity contest, or of trying to trick people to click on links they don't really want to click on.  However, I now think about it as wanting people to know about high-quality work that I'm proud of and care about. 
+
+- Realizing that social skills and communication skills are things I could get better at with practice (I consider personal branding to be a subset of communication skills).  I felt more resentful when as a kid I thought that people were either born outgoing or not, and that there wasn't anything I could do, but as I started working on those skills and saw them improve, I was encouraged.
+
+- People have a bias towards thinking the most valuable skills are the ones we are already good at and have already put a lot of time into (whether that's a particular academic subject, programming language, or sport). I still catch myself feeling a particular affinity towards other mathematicians (I know firsthand that getting a math PhD was hard!) But a lot of other things are hard and valuable too.
+
+## Learn by observation
+
+I recommend finding people who are doing personal branding well, and observing what they do and what works.  What is it about that conference talk that made it so good?  Why do you enjoy following X on twitter?  What keeps you returning to Y's blog?
+
+
+## Twitter
+
+### In defense of twitter
+
+Twitter seems really weird at first (I was a twitter skeptic for years, not starting to actively use it until 2014), but it's actually really useful. I've met new people through twitter.  I know people who have gotten jobs through twitter.  There are some really interesting conversations that I see on twitter that I don't see elsewhere, such as [this discussion](https://twitter.com/jeremyphoward/status/938870990464999424) about what it means to do "more rigorous" deep learning experiments, or here where several [genomics researchers responded to my question](https://twitter.com/math_rachel/status/940450068796022784) about whether Google's DeepVariant is overhyped. 
+
+Apart from the "personal branding" aspects, twitter helps me practice being more concise.  It's been good for my writing skills. I also use it as a way of bookmarking blog posts I like and highlights from talks and conferences I attend, so sometimes I refer back to it a reference.
+
+<center>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Behaviors to avoid in code reviews:<br>- stating opinion as fact<br>- avalanche of comments<br>- asking devs to fix problems they didn’t cause<br>- judgemental questions<br>- sarcasm <a href="https://twitter.com/sandyaaaas?ref_src=twsrc%5Etfw">@sandyaaaas</a> <a href="https://twitter.com/hashtag/AlterConf?src=hash&amp;ref_src=twsrc%5Etfw">#AlterConf</a> <a href="https://t.co/LX1AeG4JOk">pic.twitter.com/LX1AeG4JOk</a></p>&mdash; Rachel Thomas (@math_rachel) <a href="https://twitter.com/math_rachel/status/939968380202762240?ref_src=twsrc%5Etfw">December 10, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<i>A tweet about a talk by Sandya Sankarram that I really enjoyed.</i>
+</center>
+
+### Twitter for beginners
+
+Your enjoyment of twitter will vary greatly depending on who you follow.  It will take some experimenting to get this right.  Feel free to unfollow people if you realize you're not getting anything out of their tweets. Whenever I read an article I like or hear a talk I like, I always look up the author/speaker on twitter and see if I find their tweets interesting. If so, I follow them.  Also, there are people for whom you may love their writing/talks/other work, but don't really enjoy their tweets.  You don't have to follow them.  Twitter is it's own distinct medium, and being good at something else doesn't necessarily translate. If you are particularly looking for deep learning tweets, you can check out [Jeremy Howard's likes](https://twitter.com/jeremyphoward/likes), and follow some of the accounts shared there.
+
+People use twitter in a variety of ways: as a social network, for political activism, for self-expression, and more.  I use twitter primarily as a professional tool (I think of it as a more dynamic version of LinkedIn), so I try to keep most of my tweets related to data science. If your goal is personal branding or finding a job, I recommend keeping your tweets mostly focused on your field. Some people deal with this by having separate personal and professional twitter accounts (for instance, [Data Science Renee](https://twitter.com/BecomingDataSci) does this).
+
+<center>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New post: Please Don&#39;t Say &quot;It used to be called Big Data and now it&#39;s called Deep Learning&quot; <a href="https://t.co/4mm47R2uXE">https://t.co/4mm47R2uXE</a></p>&mdash; Rachel Thomas (@math_rachel) <a href="https://twitter.com/math_rachel/status/799408700343533568?ref_src=twsrc%5Etfw">November 18, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<i> Above: Sharing one of my own blog posts on Twitter. </i>
+</center>
+
+Feel free to mute topics you don't want to hear about (you can mute particular words), and mute people who bring you down.  You are allowed to use twitter however you like, and you aren't required to argue with anyone you don't want to.
+
+Twitter can be a low time commitment. You don't need to check it every day. It's fine to just tweet once a week. When I started, I primarily used it as a way to bookmark blog posts or articles I liked.  Building up followers can be a long, slow process. Be patient.
+
+Observe successful twitter accounts, of people who aren’t “famous” (famous people will have a ton of followers regardless of the quality of their tweets), to see what works. A few accounts you might want to check out for inspiration are: [Mariya Yao](https://twitter.com/thinkmariya), [Julia Evans](https://twitter.com/b0rk), [Data Science Renee](https://twitter.com/BecomingDataSci), and [Stephanie Hurlburt](https://twitter.com/sehurlburt). They each have built up over 20k followers, by providing thoughtful and interesting tweets, and generously promoting the work of others.
+
+## Speaking at Meetups or Conferences
+
+Most people (including experts with tons of experience) are terrified and intimidated by public speaking, yet it is such a great way to share your work that it's worth it.
+
+Two years ago I decided I wanted to do more public speaking after not having done much for many years (my previous experience was primarily academic and from before I switched into the tech industry). I was nervous and also uncertain if I had anything of value to say. I started small, giving a [5 minute lightning talk](https://www.youtube.com/watch?v=_6zFSK5Ys3M&list=PLtmWHNX-gukJUPxzuBf_GnTfN67WJen6c&index=1) at a PyLadies meetup to a particularly supportive audience, gradually working up through events with 50-100 people, to eventually presenting to 700 people at JupyterCon.
+
+I prepare a ton for talks, since it both helps me feel less anxious and results in stronger talks.  I prepare for short talks and small audiences, as well as big talks, because I want to be respectful of the audience.  I think it's particularly important to go through your timing to make sure that you'll be able to cover what you plan (I've seen some talks get cut off before the speaker even reached their main point).
+
+Nothing is more irritating to me as an audience member than having to sit through an infomercial. It's important to offer useful information to your audience, and not just advertise your product or company. My goal with all my talks is to have some information that will be useful or thought-provoking, even if the listeners never take a fast.ai course.
+
+For every talk I give, I ask if the venue will be able to do a video-recording (here are professional recordings of me speaking at an [ML meetup at AWS](https://vimeo.com/214233053) and at [PyBay](https://www.youtube.com/watch?v=7i6kBz1kZ-A&list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6)).  If not, I will often do my own recording. I use the software [Camtasia](https://www.techsmith.com/video-editor.html) to capture my screen and video, and have my own microphone that plugs into my computer via usb.  For instance, this is how I created the below [tutorial on Word Embeddings](https://www.youtube.com/watch?v=25nC0n9ERq4). About 80 people attended the live workshop and now 2,400 have watched the recording online!  Getting or making recordings allows you to reach a broader audience, and it will make it easier for you to get future speaking engagements as you build up a portfolio of your past talks.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/25nC0n9ERq4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</center>
+<br>
+
+If my talk involves code, I try to create a demo on github ([like this](https://github.com/fastai/word-embeddings-workshop) or [this](https://github.com/fastai/fastai/blob/master/tutorials/linalg_pytorch.ipynb)) that has enough documentation to stand alone as a tutorial or guide. Even if I don't plan to cover all the set-up or background in my talk, I want to give people a resource that they can use later.  You don't need to create a recording or a demo to give a talk (particularly if it will stress you out), but it's worth considering.
+
+### Public Speaking Resources
+
+*Technically Speaking* was an excellent newsletter sharing links to blog posts and videos with public speaking advice for those in tech, created by Cate Huston and Chiu-Ki Chan, senior developers with a ton of speaking experience.  Although it is no longer active, you can still check out [the archives here](https://twitter.com/techspeakdigest?lang=en).
+
+If you are a woman or non-binary person living in Atlanta, NYC, SF, Chicago, or LA, I highly recommend [Write Speak Code](http://www.writespeakcode.com/) meetups or workshops as a great place to practice technical talks and receive constructive feedback.
+
+I was scheduled to speak to an audience of 1,000 people at [TEDx San Francisco](https://www.tedxsanfrancisco.com/) in October (unfortunately, I ended up in the ICU with a life-threatening illness at the last minute and [couldn't attend](https://twitter.com/math_rachel/status/918265140306354177), but I'd already gone through months of preparation and was completely ready). I was terrified, so I started working with a public speaking coach in preparation, and it was super helpful. I searched for coaches on yelp, and met with a few to find one that I particularly liked. From asking around, a lot of excellent and famous speakers have worked with speech coaches.  They can help with anything-- from your voice and body language, to crafting engaging intros and conclusions.  In hindsight, I probably should've met with a speech coach even earlier in my public speaking journey; you certainly don't need to be preparing for an audience of 1,000 to hire one.
+
+Many years ago I participated in a chapter of Toastmasters, and I enjoyed that. When I asked about speech coaches on twitter, several people told me that training in improv, theater, or singing had been helpful to them in the realm of public speaking.
+
+## Blogging
+
+I've already written an [entire post on blogging](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045).  Here are a few highlights:
+
+- It’s like a resume, only better. I know of a few people who have had blog posts lead to job offers!
+- Helps you learn. Organizing knowledge always helps me synthesize my own ideas. One of the tests of whether you understand something is whether you can explain it to someone else. A blog post is a great way to do that.
+- I’ve gotten invitations to conferences and invitations to speak from my blog posts. I was invited to the TensorFlow Dev Summit (which was awesome!) for writing a blog post about how [I don’t like TensorFlow](https://www.fast.ai/posts/2017-01-03-keras.html).
+- Meet new people. I’ve met several people who have responded to blog posts I wrote.
+- Saves time. Any time you answer a question multiple times through email, you should turn it into a blog post, which makes it easier for you to share the next time someone asks.
+
+It can be intimidating to start blogging, but remember that your target audience is you-6-months-ago, not Geoffrey Hinton.  What would have been most helpful to your slightly younger self?  You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate). The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.
+
+And as inspiration, here are links to a few blogs that I consistently enjoy:
+
+- [Julia Evans](https://jvns.ca/)
+- [Stephen Merity](https://smerity.com/articles/articles.html) 
+- [Cate Huston](https://cate.blog/)
+- [Slav Ivanov](https://blog.slavv.com/)
+- [Julia Ferraioli](https://blog.juliaferraioli.com/)
+
+## Go Forth and Personal Brand
+
+Sharing high quality work (both your own and that of others) will help you develop a platform to further your goals. Observe people who are doing this well: who are writing blog posts you enjoy, producing tweets you like to follow, or giving engaging talks. While we may want technical expertise to stand on its own, communication skills are vital in helping your work reach an audience. Starting to work on any new skillset is often intimidating, but with small steps and practice you will improve.  As a meta-exercise, I did some personal branding in this post by linking to my own work. It felt uncomfortable, but I followed my own advice and did it anyway!
+
