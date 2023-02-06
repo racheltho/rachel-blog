@@ -289,6 +289,95 @@
   <media:content url="https://rachel.fast.ai/posts/2022-03-15-math-person/teaching.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
+  <title>Avoiding Data Disasters</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2021-11-04-data-disasters/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Things can go disastrously wrong in data science and machine learning projects when we undervalue data work, use data in contexts that it wasn’t gathered for, or ignore the crucial role that humans play in the data science pipeline. A new multi-university <a href="https://cires.org.au/">centre focused on Information Resilience</a>, funded by the Australian government’s top scientific funding body (ARC), has recently launched. <strong>Information Resilience</strong> is the capacity to detect and respond to failures and risks across the information chain in which data is sourced, shared, transformed, analysed, and consumed. I’m honored to be a member of the strategy board, and I have been thinking about what information resilience means with respect to data practices. Through a series of case studies and relevant research papers, I will highlight these risks and point towards more resilient practices.</p>
+<section id="case-study-uk-covid-tracking-app" class="level2">
+<h2 class="anchored" data-anchor-id="case-study-uk-covid-tracking-app">Case study: UK covid tracking app</h2>
+<p>Data from a covid-symptom tracking app was used in a research paper to draw <a href="https://twitter.com/ahandvanish/status/1313973286364229638?s=20">wildly inaccurate conclusions</a> about the prevalence of Long Covid, the often debilitating neurological, vascular, and immune disease that can last for months or longer (some patients have been sick for 20 months and counting). The app suggested that only 1.5% of patients still experience symptoms after 3 months, an order of magnitude smaller than estimates of 10-35% being found by other studies.</p>
+<p>How could this research project have gone so wrong? Well, the app had been designed for a completely different purpose (tracking 1-2 week long respiratory infections), didn’t include the most common Long Covid symptoms (such as neurological dysfunction), had a frustrating user-interface that led many patients to quit using it, and made the erroneous assumption that those who stopped logging must be fully recovered. The results from this faulty research paper were widely shared, including in a BBC article, offering false reassurance than Long Covid prevalence is much rarer than it is. Patients had been voicing their frustrations with the app all along, and if researchers had listened sooner, they could have collected a much higher quality and more accurate data set.</p>
+<p>This research failure illustrates a few common issues in data projects:</p>
+<ul>
+<li>The <strong>context of the data</strong> was not taken into account. The user-interface, the categories listed, the included features– these were all designed to record data about a short-term mild respiratory infection. However, when it was used for a different purpose (long covid patients suffering for months with vascular and neurological symptoms), it did a poor job, and led to missing and incomplete data. This happens all too often, in which data gathered for one context is used for another</li>
+<li>The <strong>people most impacted</strong> (long covid patients) were ignored. They had the most accurate expertise on what long covid actually entailed, yet were not listened to. Ignoring this expertise led to lower quality data and erroneous research conclusions. Patients have <a href="https://bostonreview.net/science-nature/rachel-thomas-medicines-machine-learning-problem">crucial domain expertise</a>, which is distinct from that of doctors, and must be included in medical data science projects. From the start of the pandemic, patients who had suffered from other debilitating post-viral illnesses warned that we should be on the lookout for long-term illness, even in initially “mild” cases.</li>
+</ul>
+</section>
+<section id="data-is-crucial" class="level2">
+<h2 class="anchored" data-anchor-id="data-is-crucial">Data is Crucial</h2>
+<p>Collecting data about covid and its long-term effects directly from patients was a good idea, but poorly executed in this case. Due to <a href="https://www.fast.ai/2019/08/07/surveillance/">privacy and surveillance risks</a>, I frequently remind people not to record data that they don’t need. However, the pandemic has been a good reminder of how much data we really do need, and how tough it is when it’s missing.</p>
+<p>At the start of the pandemic in the United States, we had very little data about what was happening– the government was not tabulating information on cases, testing, or hospitalization. How could we know how to react when we didn’t understand how many cases there were, what death rates were, how transmissible the disease was, and other crucial information? How could we make policy decisions in the absence of a basic understanding of the facts.</p>
+<p>In early March 2020, two journalists and a data scientist from a medication-discovery platform began <a href="https://www.cjr.org/the_profile/covid-tracking-project.php">pulling covid data together</a> into a spreadsheet to understand the situation in the USA. This launched into a <a href="https://covidtracking.com/analysis-updates/why-we-didnt-automate-our-data-collection">15-month long project in which 500 volunteers</a> compiled and published data on COVID-19 testing, cases, hospitalizations, and deaths in the USA. During those 15 months, the Covid Tracking Project was the most comprehensive source of covid data in the USA, even more comprehensive than what the CDC had, and it was used by the CDC, numerous government agencies, and both the Trump and Biden Administrations. It was cited in academic studies and in thousands of news articles.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/covid-track.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">A reflection on the covid tracking project from a core data infrastructure engineer</figcaption><p></p>
+</figure>
+</div>
+<p>A data infrastructure engineer and contributor for the project <a href="https://covidtracking.com/analysis-updates/why-we-didnt-automate-our-data-collection">later recounted</a>, “It quickly became apparent that daily, close contact with the data was necessary to understand what states were reporting. States frequently changed how, what, and where they reported data. Had we set up a fully automated data capture system in March 2020, it would have failed within days.” The project used automation as a way to support and supplement manual work, not to replace it. At numerous points, errors in state reporting mechanisms were caught by eagle-eyed data scientists notifying discrepancies.</p>
+<p>This vision of using automation to support human work resonates with our interest at fast.ai in “augmentedML”, not “autoML”. I have <a href="https://www.fast.ai/2018/07/16/auto-ml2/">written previously</a> and <a href="https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml">gave an AutoML workshop keynote</a> on how too often automation ignores the important role of human input. Rather than try to automate everything (which often fails), we should focus on how humans and machines can best work together to take advantage of their different strengths.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/augmentedML.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Speaking about AugmentedML vs.&nbsp;AutoML at ICML 2019</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="data-work-is-undervalued" class="level2">
+<h2 class="anchored" data-anchor-id="data-work-is-undervalued">Data Work is Undervalued</h2>
+<p>Interviews of 53 AI practitioners across 6 countries on 3 continents found a pattern that is very familiar to many of us (including me) who work in machine learning: <a href="https://research.google/pubs/pub49953/">“Everyone wants to do the model work, not the data work.”</a> Missing meta-data leads to faulty assumptions. Data collection practices often conflict with the workflows of on-the-ground partners, such as nurses or farmers, who are usually not compensated for this extraneous effort. Too often data work is arduous, invisible, and taken for granted. Undervaluing of data work leads to poor practices and often results in negative, downstream events, including dangerously inaccurate models and months of lost work.</p>
+<p>Throughout the pandemic, data about covid (both initial cases and long covid) has often been lacking. Many countries have experienced testing shortages, leading to undercounts of how many people have covid. The <a href="https://www.propublica.org/article/the-cdc-only-tracks-a-fraction-of-breakthrough-covid-19-infections-even-as-cases-surge">CDC decision not to track breakthrough cases</a> unless they resulted in hospitalization made it harder to understand prevalence of break-throughs (a particularly concerning decision since break-throughs can still lead to long covid). In September, it was revealed that British Columbia, Canada was <a href="https://bc.ctvnews.ca/secrecy-over-b-c-s-true-number-of-hospitalized-covid-19-patients-1.5595394">not including covid patients in their ICU counts</a> once the patients were no longer infectious, a secretive decision that obscured how full ICUs were. Some studies of Long Covid have failed to include common symptoms, such as neurological ones, making it harder to understand the prevalence or nature.</p>
+</section>
+<section id="data-has-context" class="level2">
+<h2 class="anchored" data-anchor-id="data-has-context">Data has Context</h2>
+<p>Covid is giving us a first-hand view of how data, which we may sometimes want to think of as “objective”, are shaped by countless human decisions and factors. In the example of the symptom tracking app, decisions about which symptoms were included had a significant impact on the prevalence rate calculated. Design decisions that influenced the ease of use impacted how much data was gathered. Lack of understanding of how the app was being used (and why people quit using it) led to erroneous decisions about which cases should be considered “recovered”. These are all examples of the context for data. Here, the data gathered was reasonably appropriate for understanding initial covid infections (a week or two of respiratory symptoms), but not for patients experiencing months of neurological and vascular symptoms. Numbers can not stand alone, we need to understand how they were measured, who was included and excluded, relevant design decisions, under what situations a dataset is appropriate to use vs.&nbsp;not.</p>
+<p>As another example, consider covid testing counts: Who has access to testing (this involves health inequities, due to race or urban vs.&nbsp;rural), who is encouraged to get tested (at various times, people without symptoms, children, or other groups have been discouraged from doing so), varying accuracies (e.g.&nbsp;PCR tests are less accurate on children, missing almost half of cases that later go on to seroconvert), and making decisions about what counts as a “case” (I know multiple people who had alternating test results: positive, negative, positive, or the reverse– what counts as a positive case?)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/datasheet.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Datasheet for an electrical component. Image from ‘Datasheets for Datasets’</figcaption><p></p>
+</figure>
+</div>
+<p>One proposal for capturing this context is <a href="https://arxiv.org/abs/1803.09010">Datasheets for Datasets</a>. Prior to doing her PhD at Stanford in computer vision and then co-leading Google’s AI ethics team, <a href="https://thegradient.pub/the-far-reaching-impacts-of-timnit-gebru/">Dr.&nbsp;Timnit Gebru</a> worked at Apple in circuit design and electrical engineering. In electronics, each component (such as a circuit or transistor) comes with a datasheet that lists when and where it was manufactured, under what conditions it is safe to use, and other specifications. Dr.&nbsp;Gebru drew on this background to propose a similar idea for datasets: listing the context of when and how it was created, what data was included/excluded, recommended uses, potential biases and ethical risks, work needed to maintain it, and so on. This is a valuable proposal towards making the context of data more explicit.</p>
+</section>
+<section id="the-people-most-impacted" class="level2">
+<h2 class="anchored" data-anchor-id="the-people-most-impacted">The People Most Impacted</h2>
+<p>The inaccurate research and incomplete data from the covid tracking app could have been avoided by drawing on the expertise of patients. Higher quality data could have been collected sooner and more thoroughly, if patients were consulted in the app design and in the related research studies. Participatory approaches to machine learning is an exciting and growing area of research. In any domain, the people who would be most impacted by errors or mistakes need to be included as partners in the design of the project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/diverse-voices.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">The Diverse Voices project from University of Washington Tech Policy Lab involves academic papers and practical how-to guides.</figcaption><p></p>
+</figure>
+</div>
+<p>Often, our approaches to addressing fairness or other ethics issues, further centralize the power of system designers and operators. The organizers of an ICML workshop on the topic called <a href="https://participatoryml.github.io/">for more cooperative, democratic, and participatory</a> approaches instead. We need to think not just about <strong>explainability</strong>, but about giving people <strong>actionable recourse</strong>. As <a href="https://slideslive.com/38930604/actionable-recourse-in-machine-learning">Professor Berk Ustun highlights</a>, when someone asks why their loan was denied, usually what they want is not just an explanation but to know what they could change in order to get a loan. We need to design systems with <a href="http://contestability.org/"><strong>contestability</strong></a> in mind, to include from the start the idea that people should be able to challenge system outputs. We need to include <a href="https://techpolicylab.uw.edu/project/diverse-voices/">expert panels of perspectives</a> that are often overlooked, depending on the application, this could mean formerly or currently incarcerated people, people who don’t drive, people with very low incomes, disabled people, and many others. <a href="https://techpolicylab.uw.edu/project/diverse-voices/">The Diverse Voices project</a> from University of Washington Tech Lab provides guidance on how to do this. And it is crucial that this not just be tokenistic <a href="https://www.technologyreview.com/2020/08/25/1007589/participation-washing-ai-trends-opinion-machine-learning/">participation-washing</a>, but a meaningful, appropriately compensated, and ongoing role in their design and operation.</p>
+</section>
+<section id="towards-greater-data-resilience" class="level2">
+<h2 class="anchored" data-anchor-id="towards-greater-data-resilience">Towards Greater Data Resilience</h2>
+<p>I hope that we can improve data resilience through: - Valuing data work - Documenting context of data - Close contact with the data - Meaningful, ongoing, and compensated involvement of the people impacted</p>
+<p>And I hope that when our data represents people we can remember the human side. As <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7296309/">AI researcher Inioluwa Deborah Raji wrote</a>, “Data are not bricks to be stacked, oil to be drilled, gold to be mined, opportunities to be harvested. Data are humans to be seen, maybe loved, hopefully taken care of.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/data-not-oil.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Quote from AI researcher Inioluwa Deborah Raji</figcaption><p></p>
+</figure>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>ethics</category>
+  <category>machine learning</category>
+  <guid>https://rachel.fast.ai/posts/2021-11-04-data-disasters/index.html</guid>
+  <pubDate>Wed, 03 Nov 2021 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2021-11-04-data-disasters/covid-track.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Medicine is Political</title>
   <dc:creator>Rachel Thomas</dc:creator>
   <link>https://rachel.fast.ai/posts/2021-10-12-medicine-political/index.html</link>
@@ -335,7 +424,7 @@
   <category>ethics</category>
   <guid>https://rachel.fast.ai/posts/2021-10-12-medicine-political/index.html</guid>
   <pubDate>Mon, 11 Oct 2021 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2021-10-12-medicine-political/actup.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://rachel.fast.ai/posts/2021-10-12-medicine-political/actup-square.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>11 Short Videos About AI Ethics</title>
@@ -743,6 +832,96 @@ The last 24 hours:<br>- NYC police using facial recognition on 11 year old kids<
   <guid>https://rachel.fast.ai/posts/2019-08-07-surveillance/index.html</guid>
   <pubDate>Tue, 06 Aug 2019 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2019-08-07-surveillance/ibm-hitler.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Advice for Better Blog Posts</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2019-05-13-blogging-advice/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>A blog is like a resume, only better. I’ve been invited to give keynote talks based on my posts, and I know of people for whom blog posts have led to job offers. I’ve encouraged people to start blogging in <a href="http://www.fast.ai/2017/04/06/alternatives/">several of</a> <a href="https://rachel.fast.ai/posts/2017-12-18-personal-brand/">my previous</a> <a href="https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045">posts</a>, and I even required students in my <a href="https://github.com/fastai/numerical-linear-algebra">computational linear algebra course</a> to write a blog post (although they weren’t required to publish it), since good technical writing skills are useful in the workplace and in interviews. Also, explaining something you’ve learned to someone else is a way to cement your knowledge. I gave a list of tips for <a href="https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045">getting started with your first blog post</a> previously, and I wanted to offer some more advanced advice here.</p>
+<section id="who-is-your-audience" class="level2">
+<h2 class="anchored" data-anchor-id="who-is-your-audience">Who is your audience?</h2>
+<p>Advice that my speech coach gave me about <a href="https://rachel.fast.ai/posts/2017-12-18-personal-brand/">preparing talks</a>, which I think also applies to writing, is to choose one particular person that you can think of as your target audience. <strong>Be as specific as possible.</strong> It’s great if this is a real person (and it is totally fine if they are not actually going to read your post or attend your talk), although it doesn’t have to be (you just need to be extra-thorough in making up details about them if it’s not). Either way, what is their background? What sort of questions or misconceptions might they have about the topic? At various points, the person I’m thinking of has been a friend or colleague, one of my students, or my younger self.</p>
+<p>Being unclear about your audience can lead to a muddled post: for instance, I’ve seen blog posts that contain both beginner material (e.g.&nbsp;defining what training and test sets are) as well as very advanced material (e.g.&nbsp;describing complex new architectures). Experts would be bored and beginners would get lost.</p>
+</section>
+<section id="dos-and-donts" class="level2">
+<h2 class="anchored" data-anchor-id="dos-and-donts">Dos and Don’ts</h2>
+<p>When you read other people’s blog posts, think about what works well. What did you like about it? And when you read blog posts that you don’t enjoy as much, think about why not? What would make the post more engaging for you? Note that not every post will appeal to every person. Part of having a target audience means that there are people who are not in your target audience, which is fine. And sometimes I’m not somebody else’s target audience. As with all advice, this is based on my personal experience and I’m sure that there are exceptions.</p>
+<section id="things-that-often-work-well" class="level3">
+<h3 class="anchored" data-anchor-id="things-that-often-work-well">Things that often work well:</h3>
+<ul>
+<li>Bring together many useful resources (but don’t include everything! the value is in <strong>your curation</strong>)</li>
+<li>Do provide motivation and context. If you are going to explain how an algorithm works, first give some examples of real-world applications where it is used, or how it is different from other options.</li>
+<li>People are convinced by several different things: stories, statistics, research, and visuals. Try using a blend of these.</li>
+<li>If you’re using a lot of code, try writing in a Jupyter notebook (which can be <a href="https://cduvallet.github.io/posts/2018/03/ipython-notebooks-jekyll">converted into a blog post</a>) or a <a href="https://www.kaggle.com/kernels">Kaggle Kernel</a>.</li>
+</ul>
+</section>
+<section id="donts" class="level3">
+<h3 class="anchored" data-anchor-id="donts">Don’ts</h3>
+<ul>
+<li><strong>Don’t reinvent the wheel.</strong> If you know of a great explanation of something elsewhere, link to it! Include a quote or one sentence summary about the resource you’re linking to.</li>
+<li><strong>Don’t try to build everything up from first principles.</strong> For example, if you want to explain the transformer architecture, don’t begin by defining machine learning. Who is your target audience? People already familiar with machine learning will lose interest, and those who are brand new to machine learning are probably not seeking out posts on the transformer architecture. You can assume that your reader already has a certain background (sometimes it is helpful to make this explicit).</li>
+<li><strong>Don’t be afraid to have an opinion.</strong> For example, TensorFlow (circa 2016, before eager execution) <a href="https://twitter.com/math_rachel/status/821044526571614208">made me feel unintelligent</a>, even though everyone else seemed to be saying how awesome it was. I was pretty nervous <a href="https://www.fast.ai/2017/01/03/keras/">writing a blog post</a> that said this, but a lot of people responded positively.</li>
+<li><strong>Don’t be too dull or dry.</strong> If people lose interest, they will stop reading, so you want to hook them (and keep them hooked!)</li>
+<li><strong>Don’t plagiarize.</strong> Always cite sources, and use quote marks around direct quotes. Do this even as you are first gathering sources and taking notes, so you don’t make a mistake later and forget which material is someone else’s. It is wrong to plagiarize the work of others and ultimately will hurt your reputation. Cite and link to people who have given you ideas.</li>
+<li><strong>Don’t be too general.</strong> You don’t have to cover everything on a topic– focus on the part that interests (or frustrates) you most.</li>
+</ul>
+</section>
+</section>
+<section id="put-the-time-in-to-do-it-well" class="level2">
+<h2 class="anchored" data-anchor-id="put-the-time-in-to-do-it-well">Put the time in to do it well</h2>
+<p>As DeepMind researcher and University of Oxford PhD student <a href="https://hackernoon.com/interview-with-deep-learning-researcher-and-leader-of-openmined-andrew-trask-77cd33570a8c">Andrew Trask advised</a>, “<em>The secret to getting into the deep learning community is high quality blogging… Don’t just write something ok, either—take 3 or 4 full days on a post and try to make it as short and simple (yet complete) as possible.</em>” Honestly, I’ve spent far more than 3 or 4 days on <a href="https://rachel.fast.ai/posts/2018-04-29-categorical-embeddings/">many of</a> <a href="https://www.fast.ai/posts/2017-03-01-changing-careers.html">my most</a> <a href="https://rachel.fast.ai/posts/2018-07-23-automl3/">popular</a> <a href="https://rachel.fast.ai/posts/2018-07-12-automl1/">posts</a>.</p>
+<p>However, this doesn’t mean that you need to be a “naturally gifted” writer. I attended a poor, public high school in a small city in Texas, where I had few writing assignments and didn’t really learn to write a proper essay. An introductory English class my first semester of college highlighted how much I struggled with writing, and after that, I tried to avoid classes that would require much writing (part of the reason I studied math and computer science is that those were the only fields I knew of that involved minimal writing AND didn’t have lab sessions). It wasn’t until I was in my 30s and <a href="https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996">wanted to start blogging</a> that I began to practice writing. I typically go through many, many drafts, and do lots of revisions. As with most things, <a href="https://hbr.org/2007/07/the-making-of-an-expert">skill is not innate</a>; it is something you build through deliberate practice.</p>
+<p>Note: I realize many people may not have time to blog– perhaps you are a parent, dealing with chronic illness, suffering burnout from a toxic job, or prefer to do other things in your free time– that’s alright! You can still have a successful career without blogging, this post is only for those who are interested.</p>
+</section>
+<section id="write-a-blog-version-of-your-academic-paper" class="level2">
+<h2 class="anchored" data-anchor-id="write-a-blog-version-of-your-academic-paper">Write a blog version of your academic paper</h2>
+<p>The top item on my wish list for AI researchers is that more of them would write blog posts to accompany their papers:</p>
+<center>
+<blockquote class="twitter-tweet blockquote" data-lang="en">
+<p lang="en" dir="ltr">
+my wish list for AI researchers <a href="https://t.co/Cel5x32K9O">https://t.co/Cel5x32K9O</a> <a href="https://t.co/AyYBqwYDFX">pic.twitter.com/AyYBqwYDFX</a>
+</p>
+— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/983874014392152064?ref_src=twsrc%5Etfw">April 11, 2018</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+<p>Far more people may read your blog post than will read an academic paper. This is a chance to get your message to a broader audience, in a more conversational and accessible format. You can and should link to your academic paper from your blog post, so there’s no need to worry about including all the technical details. People will read your paper if they want more detail!</p>
+<p>Check out these excellent pairs of academic papers and blog posts for inspiration: - <a href="http://gendershades.org/overview.html">Gender Shades</a> (blog post &amp; visualization) and <a href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification</a> (paper), by Joy Buolamwini &amp; Timnit Gebru - <a href="https://medium.com/@harinisuresh/the-problem-with-biased-data-5700005e514c">The Problem with “Biased Data”</a> (blog post) and <a href="https://arxiv.org/abs/1901.10002">A Framework for Understanding Unintended Consequences of Machine Learning</a> (paper), by Harini Suresh &amp; John Guttag - <a href="http://nlp.fast.ai/">Introducing state of the art text classification with universal language models</a> (blog post) and <a href="https://arxiv.org/abs/1801.06146">Universal Language Model Fine-tuning for Text Classification</a> (paper), by Jeremy Howard &amp; Sebastian Ruder</p>
+<p>I usually advise new bloggers that your target audience could be you-6-months-ago. For grad students, you may need to change this to you-2-years-ago. Assume that unlike your paper reviewers, the reader of your blog post has not read the related research papers. Assume your audience is intelligent, but not in your subfield. What does it take to explain your research to a friend in a different field?</p>
+</section>
+<section id="getting-started-with-your-first-post" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-your-first-post">Getting Started with your first post</h2>
+<p>Here are some tips I’ve <a href="https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045">shared previously</a> to help you start your first post:</p>
+<ul>
+<li>Make a list of links to other blog posts, articles, or studies that you like, and write brief summaries or highlight what you particularly like about them. Part of my first blog post came from my making just such a list, because I couldn’t believe more people hadn’t read the posts and articles that I thought were awesome.</li>
+<li>Summarize what you learned at a conference you attended, or in a class you are taking.</li>
+<li>Any email you’ve written twice should be a blog post. Now, if I’m asked a question that I think someone else would also be interested in, I try to write it up.</li>
+<li>You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it.</li>
+<li>What would have helped you a year ago? What would have helped you a week ago?</li>
+<li>If you’re wondering about the actual logistics, <a href="https://medium.com/new-story">Medium</a> makes it super simple to get started. Another option is to use <a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">Jekyll and Github pages</a>. I can personally recommend both, as I have 2 blogs and use one for each (my <a href="https://medium.com/@racheltho">other blog is here</a>).</li>
+</ul>
+</section>
+<section id="related-posts" class="level2">
+<h2 class="anchored" data-anchor-id="related-posts">Related Posts</h2>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2017-12-18-personal-brand/">Making Peace with Personal Branding</a></li>
+<li><a href="https://www.fast.ai/posts/2017-04-06-alternatives.html">Alternatives to a Degree to Prove Yourself in Deep Learning</a></li>
+<li><a href="https://www.fast.ai/posts/2018-04-10-stanford-salon.html">A Discussion about Accessibility in AI at Stanford</a></li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>advice</category>
+  <guid>https://rachel.fast.ai/posts/2019-05-13-blogging-advice/index.html</guid>
+  <pubDate>Sun, 12 May 2019 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2019-05-13-blogging-advice/blog.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Tech’s Long Hours Are Discriminatory and Counterproductive</title>
@@ -1720,215 +1899,6 @@ New post: Please Don't Say "It used to be called Big Data and now it's called De
   <guid>https://rachel.fast.ai/posts/2017-12-18-personal-brand/index.html</guid>
   <pubDate>Sun, 17 Dec 2017 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2017-12-18-personal-brand/jupyter.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>What you need to do deep learning</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2017-11-16-what-you-need/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>This post has been translated into <a href="https://www.jiqizhixin.com/articles/2017-11-17-3">Chinese here</a>.</em></p>
-<p>I want to answer some questions that I’m commonly asked: <em>What kind of computer do I need to do deep learning? Why does fast.ai recommend Nvidia GPUs? What deep learning library do you recommend for beginners? How do you put deep learning into production?</em> I think these questions all fall under a general theme of <strong>What do you need (in terms of hardware, software, background, and data) to do deep learning?</strong> This post is geared towards those new to the field and curious about getting started.</p>
-<section id="the-hardware-you-need" class="level2">
-<h2 class="anchored" data-anchor-id="the-hardware-you-need">The hardware you need</h2>
-<section id="we-are-indebted-to-the-gaming-industry" class="level3">
-<h3 class="anchored" data-anchor-id="we-are-indebted-to-the-gaming-industry">We are indebted to the gaming industry</h3>
-<p>The video game industry is larger (in terms of revenue) <a href="http://www.huffingtonpost.co.uk/george-taylor/why-is-gaming-more-popular-than-music-and-film_b_10095376.html">than the film and music industries combined</a>. In the last 20 years, the video gaming industry drove forward huge advances in GPUs (graphical processing units), used to do the matrix math needed for rendering graphics. Fortunately, these are exactly the type of computations needed for deep learning. These advances in GPU technology are a key part of why neural networks are proving so much more powerful now than they did a few decades ago. Training a deep learning model without a GPU would be painfully slow in most cases.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2017-11-16-what-you-need/gpu.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">A GPU</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="not-all-gpus-are-the-same" class="level3">
-<h3 class="anchored" data-anchor-id="not-all-gpus-are-the-same">Not all GPUs are the same</h3>
-<p>Most deep learning practitioners are not programming GPUs directly; we are using software libraries (such as PyTorch or TensorFlow) that handle this. However, to effectively use these libraries, you need access to the right type of GPU. In almost all cases, this means having access to a <a href="https://developer.nvidia.com/cuda-gpus">GPU from the company Nvidia</a>.</p>
-<p><a href="https://developer.nvidia.com/cuda-downloads">CUDA</a> and <a href="https://www.khronos.org/opencl/">OpenCL</a> are the two main ways for programming GPUs. CUDA is by far the most developed, has the most extensive ecosystem, and is the most robustly supported by deep learning libraries. CUDA is a <strong>proprietary</strong> language created by Nvidia, so it can’t be used by GPUs from other companies. When fast.ai recommends Nvidia GPUs, it is not out of any special affinity or loyalty to Nvidia on our part, but that this is by far the best option for deep learning.</p>
-<p>Nvidia dominates the market for GPUs, with the next closest competitor being the <a href="http://www.amd.com/en">company AMD</a>. This summer, AMD announced the release of a <a href="https://rocm.github.io/index.html">platform called ROCm</a> to provide more support for deep learning. The <a href="https://rocm.github.io/dl.html">status of ROCm</a> for major deep learning libraries such as PyTorch, TensorFlow, MxNet, and CNTK is still under development. While I would love to see an open source alternative succeed, I have to admit that I find the documentation for ROCm hard to understand. I just read the <em>Overview</em>, <em>Getting Started</em>, and <em>Deep Learning</em> pages of the ROCm website and still can’t explain what ROCm is in my own words, although I want to include it here for completeness. (I admittedly don’t have a background in hardware, but I think that data scientists like me should be part of the intended audience for this project.)</p>
-</section>
-<section id="if-you-dont-have-a-gpu" class="level3">
-<h3 class="anchored" data-anchor-id="if-you-dont-have-a-gpu">If you don’t have a GPU…</h3>
-<p>If your computer doesn’t have a GPU or has a non-Nvidia GPU, you have several great options:</p>
-<ul>
-<li><p>Use <a href="https://www.crestle.com/">Crestle</a>, through your browser: Crestle is a service (developed by fast.ai student Anurag Goel) that gives you an already set up cloud service with all the popular scientific and deep learning frameworks already pre-installed and configured to run on a GPU in the cloud. It is easily accessed through your browser. New users get 10 hours and 1 GB of storage for free. After this, GPU usage is 59 cents per hour. I recommend this option to those who are new to AWS or new to using the console.</p></li>
-<li><p>Set up an AWS cloud instance through your console: You can create an AWS instance (which remotely provides you with Nvidia GPUs) by following the steps in <a href="http://course.fast.ai/lessons/aws.html">this fast.ai setup lesson</a>. AWS charges 90 cents per hour for this. Although our set-up materials are about AWS (and you’ll find the most <a href="http://www.amd.com/en">forum support</a> for AWS), one fast.ai student created a guide for <a href="https://medium.com/@abhikprince/setting-up-an-azure-vm-for-deep-learning-bb76b453272b">Setting up an Azure Virtual Machine for Deep learning</a>. And I’m happy to share and add a link if anyone writes a blog post about doing this with Google Cloud Engine.</p></li>
-<li><p>Build your own box. Here’s a <a href="http://forums.fast.ai/t/making-your-own-server/174">lengthy thread from our fast.ai forums</a> where people ask questions, share what components they are using, and post other useful links and tips. The cheapest new Nvidia GPUs are around $300, with some students finding even cheaper used ones on eBay or Craigslist, and others paying more for more powerful GPUs. A few of our students wrote blog posts documenting how they built their machines:</p>
-<ul>
-<li><a href="https://www.topbots.com/deep-confusion-misadventures-in-building-a-machine-learning-server/">Deep Confusion: Misadventures in Building a Deep Learning Machine</a> by Mariya Yao</li>
-<li><a href="https://medium.com/impactai/setting-up-a-deep-learning-machine-in-a-lazy-yet-quick-way-be2642318850">Setting up a Deep learning machine in a lazy yet quick way</a> by Sravya Tirukkovalur</li>
-<li><a href="https://towardsdatascience.com/building-your-own-deep-learning-box-47b918aea1eb">Building your own deep learning box</a> by Brendan Fortuner</li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="the-software-you-need" class="level2">
-<h2 class="anchored" data-anchor-id="the-software-you-need">The software you need</h2>
-<p>Deep learning is a relatively young field, and the libraries and tools are changing quickly. For instance, Theano, which we chose to use for part 1 of <a href="http://course.fast.ai">our course</a> in 2016, <a href="https://groups.google.com/forum/#!msg/theano-users/7Poq8BZutbY/rNCIfvAEAwAJ">was just retired</a>. <a href="http://pytorch.org/">PyTorch</a>, which we are using currently, was only released earlier this year (2017). As <a href="https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html">Jeremy wrote previously</a>, <em>you should assume that whatever specific libraries and software you learn today will be obsolete in a year or two</em>. The most important thing is to understand the underlying concepts, and towards that end, we are creating our own library on top of Pytorch that we believe makes deep learning concepts clearer, as well as encoding best practices as defaults.</p>
-<p>Python is by far the most commonly used language for deep learning. There are a number of deep learning libraries available, with almost every major tech company backing a different library, although employees at those companies often use a mix of tools. Deep learning libraries include <a href="https://www.tensorflow.org/">TensorFlow</a> (Google), <a href="http://pytorch.org/">PyTorch</a> (Facebook), <a href="https://mxnet.incubator.apache.org/">MxNet</a> (University of Washington, adapted by Amazon), <a href="https://docs.microsoft.com/en-us/cognitive-toolkit/">CNTK</a> (Microsoft), <a href="https://deeplearning4j.org/">DeepLearning4j</a> (Skymind), <a href="https://caffe2.ai/">Caffe2</a> (also Facebook), <a href="https://nnabla.org/">Nnabla</a> (Sony), <a href="http://www.paddlepaddle.org/">PaddlePaddle</a> (Baidu), and <a href="https://keras.io/">Keras</a> (a high-level API that runs on top of several libraries in this list). All of these have Python options available.</p>
-<section id="dynamic-vs.-static-graph-computation" class="level3">
-<h3 class="anchored" data-anchor-id="dynamic-vs.-static-graph-computation">Dynamic vs.&nbsp;Static Graph Computation</h3>
-<p>At fast.ai, we <strong>prioritize the speed at which programmers can experiment and iterate</strong> (through easier debugging and more intutive design) as more important than theoretical performance speed-ups. This is the reason we use PyTorch, a flexible deep learning library with <em>dynamic computation</em>.</p>
-<p>One distinction amongst deep learning libraries is whether they use <strong>dynamic</strong> or <strong>static</strong> computations (some libraries, such as MxNet and now TensorFlow, allow for both). <em>Dynamic computation</em> mean that the program is executed in the order you wrote it. This typically makes debugging easier, and makes it more straightforward to translate ideas from your head into code. <em>Static computation</em> means that you build a structure for your neural network in advance, and then execute operations on it. Theoretically, this allows the compiler to do greater optimizations, although it also means there may be more of a disconnect between what you intended your program to be and what the compiler executes. It also means that bugs can seem more removed from the code that caused them (for instance, if there is an error in how you constructed your graph, you may not realize until you perform an operation on it later). Even though there are theoretical arguments that languages with static computation graphs are capable of better performance than languages with dynamic computation, we often find that is not the case for us in practice.</p>
-<p>Google’s TensorFlow mostly uses a static computation graph, whereas Facebook’s PyTorch uses dynamic computation. (Note: TensorFlow announced a dynamic computation option, <a href="https://research.googleblog.com/2017/10/eager-execution-imperative-define-by.html">Eager Execution</a>, just two weeks ago, although it is still quite early and most TensorFlow documentation and projects use the static option). In September, fast.ai <a href="https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html">announced that we had chosen PyTorch</a> over TensorFlow to use in our course this year and to use for the development of <a href="https://github.com/fastai/fastai/">our own library</a> (a higher-level wrapper for PyTorch that encodes best practices). Briefly, here are a few of our reasons for choosing PyTorch (explained in <a href="https://www.fast.ai/posts/2017-09-08-introducing-pytorch-for-fastai.html">much greater detail here</a>):</p>
-<ul>
-<li>easier to debug</li>
-<li>dynamic computation is much better suited for natural language processing</li>
-<li>traditional Object Oriented Programming style (which feels more natural to us)</li>
-<li>TensorFlow’s use of unusual conventions like scope and sessions can be confusing and are more to learn</li>
-</ul>
-<p>Google has put far more resources into marketing TensorFlow than anyone else, and I think this is one of the reasons that TensorFlow is so well known (for many people outside deep learning, TensorFlow is the only DL framework that they’ve heard of). As mentioned above, TensorFlow released a dynamic computation option a few weeks ago, which addresses some of the above issues. Many people have asked fast.ai if we are going to switch back to TensorFlow. The dynamic option is still quite new and far less developed, so we will happily continue with PyTorch for now. However, the TensorFlow team has been very receptive to our ideas, and we would love to see <a href="https://github.com/fastai/fastai/">our fastai library</a> ported to TensorFlow.</p>
-<p><strong>Note</strong>: The <a href="https://www.usfca.edu/data-institute/certificates/deep-learning-part-one">in-person version</a> of our updated course, which uses PyTorch as well as our own fastai library, is happening currently. It will be released online for free after the course ends (estimated release: January).</p>
-</section>
-</section>
-<section id="what-you-need-for-production-not-a-gpu" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-need-for-production-not-a-gpu">What you need for production: not a GPU</h2>
-<p>Many people overcomplicate the idea of using deep learning in production and believe that they need much more complex systems than they actually do. You can use deep learning in production with a CPU and the webserver of your choice, and in fact, this is what we recommend for most use cases. Here are a few key points:</p>
-<ul>
-<li>It is incredibly rare to need to train in production. Even if you want to update your model weights daily, you don’t need to train in production. Good news! This means that you are just doing inference (a forward pass through your model) in production, which is much quicker and easier than training.</li>
-<li>You can use whatever webserver you like (e.g.&nbsp;Flask) and set up inference as a simple API call.</li>
-<li>GPUs only provide a speed-up if you are effectively able to batch your data. Even if you are getting 32 requests per second, using a GPU would most likely slow you down, because you’d have to wait a second from when the 1st arrived to collect all 32, then perform the computation, and then return the results. We recommend using a CPU in production, and you can always add more CPUs (easier than using multiple GPUs) as needed.</li>
-</ul>
-<p>For big companies, it may make sense to use GPUs in production for serving– however, it will be clear when your reach this size. Prematurely trying to scale before it’s needed will only add needless complexity and slow you down.</p>
-</section>
-<section id="the-background-you-need-1-year-of-coding" class="level2">
-<h2 class="anchored" data-anchor-id="the-background-you-need-1-year-of-coding">The background you need: 1 year of coding</h2>
-<p>One of the frustrations that inspired Jeremy and I to create <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> was (is) that most deep learning materials fall into one of two categories:</p>
-<ul>
-<li>so shallow and high-level as to not give you the information or skills needed to actually use deep learning in the workplace or create state-of-the-art models. This is fine if you just want a high-level overview, but disappointing if you want to become a working practitioner.</li>
-<li>highly theoretical and assume a graduate level math background. This is a prohibitive barrier for many folks, and even as someone who has a math PhD, I found that the theory wasn’t particularly useful in learning how to code practical solutions. It’s not surprising that many materials have this slant. Until quite recently, deep learning was almost entirely an academic discipline and largely driven by questions of what would publish in top academic journals.</li>
-</ul>
-<p>Our free course <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> is unique in that the only pre-requisite is 1 year of programming experience, yet it still teaches you how to create state-of-the-art models. Your background can be in any language, although you might want to learn some Python before starting the course, since that is what we use. We introduce math concepts as needed, and we <a href="https://www.fast.ai/posts/2016-12-19-favorite-posts.html">don’t recommend</a> that you try to front-load studying math theory in advance.</p>
-<p>If you don’t know how to code, I highly recommend learning, and Python is a great language to start with if you are interested in data science.</p>
-</section>
-<section id="the-data-you-need-far-less-than-you-think" class="level2">
-<h2 class="anchored" data-anchor-id="the-data-you-need-far-less-than-you-think">The data you need: far less than you think</h2>
-<p>Although many have claimed that you need Google-size data sets to do deep learning, this is false. The power of <strong>transfer learning</strong> (combined with techniques like data augmentation) make it possible for people to apply pre-trained models to much smaller datasets. As we’ve <a href="https://www.fast.ai/posts/2017-08-21-ai-in-medicine.html">talked about elsewhere</a>, at medical start-up Enlitic, Jeremy Howard led a team that used just 1,000 examples of lung CT scans with cancer to build an algorithm that was <a href="http://money.cnn.com/2015/03/12/technology/enlitic-technology/">more accurate at diagnosing lung cancer</a> than a panel of 4 expert radiologists. The C++ library <a href="http://dlib.net/">Dlib</a> has an example in which a face detector is accurately trained using only <a href="http://blog.dlib.net/2016/10/easily-create-high-quality-object.html">4 images</a>, containing just 18 faces!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2017-11-16-what-you-need/dlib-faces.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Face Recognition with Dlib</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="a-note-about-access" class="level2">
-<h2 class="anchored" data-anchor-id="a-note-about-access">A note about access</h2>
-<p>For the vast majority of people I talk with, the barriers to entry for deep learning are far lower than they expected and the costs are well within their budgets. However, I realize this is not the case universally. I’m periodically contacted by students that want to take our online course but can’t afford the costs of AWS. Unfortunately, I don’t have a solution. There are other barriers as well. Bruno Sánchez-A Nuño has <a href="https://towardsdatascience.com/in-defense-of-cheap-data-science-f630f248d400">written about the challenges</a> of doing data science in places that don’t have reliable internet access, and fast.ai international fellow Tahsin Mayeesha describes <a href="https://medium.com/learning-machine-learning/moocs-and-hidden-barriers-494f6759f217">hidden barriers to MOOC access</a> in countries such as Bangladesh. I care about these issues of access, and it is disatisifying to not have solutions.</p>
-
-
-</section>
-
- ]]></description>
-  <category>advice</category>
-  <category>technical</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2017-11-16-what-you-need/index.html</guid>
-  <pubDate>Wed, 15 Nov 2017 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2017-11-16-what-you-need/gpu.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>How (and why) to create a good validation set</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2017-11-13-validation-sets/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>An all-too-common scenario: a seemingly impressive machine learning model is a complete failure when implemented in production. The fallout includes leaders who are now skeptical of machine learning and reluctant to try it again. How can this happen?</p>
-<p>One of the most likely culprits for this disconnect between results in development vs results in production is a poorly chosen validation set (or even worse, no validation set at all). Depending on the nature of your data, choosing a validation set can be the most important step. Although sklearn offers a <a href="http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"><code>train_test_split</code> method</a>, this method takes a random subset of the data, which is a poor choice for many real-world problems.</p>
-<p>The definitions of <em>training</em>, <em>validation</em>, and <em>test</em> sets can be fairly nuanced, and the terms are sometimes inconsistently used. In the deep learning community, “test-time inference” is often used to refer to evaluating on data in production, which is not the technical definition of a test set. As mentioned above, sklearn has a <code>train_test_split</code> method, but no <code>train_validation_test_split</code>. Kaggle only provides training and test sets, yet to do well, you will need to split their training set into your own validation and training sets. Also, it turns out that Kaggle’s test set is actually sub-divided into two sets. It’s no suprise that many beginners may be confused! I will address these subtleties below.</p>
-<section id="first-what-is-a-validation-set" class="level2">
-<h2 class="anchored" data-anchor-id="first-what-is-a-validation-set">First, what is a “validation set”?</h2>
-<p>When creating a machine learning model, the ultimate goal is for it to be accurate on new data, not just the data you are using to build it. Consider the below example of 3 different models for a set of data:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2017-11-13-validation-sets/overfitting2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">under-fitting and over-fitting (Source: Andrew Ng’s Machine Learning Coursera class)</figcaption><p></p>
-</figure>
-</div>
-<p>The error for the pictured data points is lowest for the model on the far right (the blue curve passes through the red points almost perfectly), yet it’s not the best choice. Why is that? If you were to gather some new data points, they most likely would not be on that curve in the graph on the right, but would be closer to the curve in the middle graph.</p>
-<p>The underlying idea is that:</p>
-<ul>
-<li>the training set is used to train a given model</li>
-<li>the validation set is used to choose between models (for instance, does a random forest or a neural net work better for your problem? do you want a random forest with 40 trees or 50 trees?)</li>
-<li>the test set tells you how you’ve done. If you’ve tried out a lot of different models, you may get one that does well on your validation set just by chance, and having a test set helps make sure that is not the case.</li>
-</ul>
-<p>A key property of the validation and test sets is that they must be representative of the <strong>new data you will see in the future</strong>. This may sound like an impossible order! By definition, you haven’t seen this data yet. But there are still a few things you know about it.</p>
-</section>
-<section id="when-is-a-random-subset-not-good-enough" class="level2">
-<h2 class="anchored" data-anchor-id="when-is-a-random-subset-not-good-enough">When is a random subset not good enough?</h2>
-<p>It’s instructive to look at a few examples. Although many of these examples come from Kaggle competitions, they are representative of problems you would see in the workplace.</p>
-<section id="time-series" class="level3">
-<h3 class="anchored" data-anchor-id="time-series">Time series</h3>
-<p>If your data is a time series, choosing a random subset of the data will be both too easy (you can look at the data both before and after the dates your are trying to predict) and not representative of most business use cases (where you are using historical data to build a model for use in the future). If your data includes the date and you are building a model to use in the future, you will want to choose a continuous section with the latest dates as your validation set (for instance, the last two weeks or last month of the available data).</p>
-<p>Suppose you want to split the time series data below into training and validation sets:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2017-11-13-validation-sets/timeseries1.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Time series data</figcaption><p></p>
-</figure>
-</div>
-<p>A random subset is a poor choice (too easy to fill in the gaps, and not indicative of what you’ll need in production):</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2017-11-13-validation-sets/timeseries2.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">a poor choice for your training set</figcaption><p></p>
-</figure>
-</div>
-<p>Use the earlier data as your training set (and the later data for the validation set):</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2017-11-13-validation-sets/timeseries3.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">a better choice for your training set</figcaption><p></p>
-</figure>
-</div>
-<p>Kaggle currently has a competition to <a href="https://www.kaggle.com/c/favorita-grocery-sales-forecasting">predict the sales in a chain of Ecuadorian grocery stores</a>. Kaggle’s “training data” runs from Jan 1 2013 to Aug 15 2017 and the test data spans Aug 16 2017 to Aug 31 2017. A good approach would be to use Aug 1 to Aug 15 2017 as your validation set, and all the earlier data as your training set.</p>
-</section>
-<section id="new-people-new-boats-new" class="level3">
-<h3 class="anchored" data-anchor-id="new-people-new-boats-new">New people, new boats, new…</h3>
-<p>You also need to think about what ways the data you will be making predictions for in production may be <em>qualitatively different</em> from the data you have to train your model with.</p>
-<p>In the Kaggle <a href="https://www.kaggle.com/c/state-farm-distracted-driver-detection">distracted driver competition</a>, the independent data are pictures of drivers at the wheel of a car, and the dependent variable is a category such as texting, eating, or safely looking ahead. If you were the insurance company building a model from this data, note that you would be most interested in how the model performs on drivers you haven’t seen before (since you would likely have training data only for a small group of people). This is true of the Kaggle competition as well: the test data consists of people that weren’t used in the training set.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2017-11-13-validation-sets/driver_drink.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Two images of the same person drinking a soda while driving</figcaption><p></p>
-</figure>
-</div>
-<p>If you put one of the above images in your training set and one in the validation set, your model will seem to be performing better than it would on new people. Another perspective is that if you used all the people in training your model, your model may be overfitting to particularities of those specific people, and not just learning the states (texting, eating, etc).</p>
-<p>A similar dynamic was at work in the <a href="https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring">Kaggle fisheries competition</a> to identify the species of fish caught by fishing boats in order to reduce illegal fishing of endangered populations. The test set consisted of boats that didn’t appear in the training data. This means that you’d want your validation set to include boats that are not in the training set.</p>
-<p>Sometimes it may not be clear how your test data will differ. For instance, for a problem using satellite imagery, you’d need to gather more information on whether the training set just contained certain geographic locations, or if it came from geographically scattered data.</p>
-</section>
-</section>
-<section id="the-dangers-of-cross-validation" class="level2">
-<h2 class="anchored" data-anchor-id="the-dangers-of-cross-validation">The dangers of cross-validation</h2>
-<p>The reason that sklearn doesn’t have a <code>train_validation_test</code> split is that it is assumed you will often be using <strong>cross-validation</strong>, in which different subsets of the training set serve as the validation set. For example, for a 3-fold cross validation, the data is divided into 3 sets: A, B, and C. A model is first trained on A and B combined as the training set, and evaluated on the validation set C. Next, a model is trained on A and C combined as the training set, and evaluated on validation set B. And so on, with the model performance from the 3 folds being averaged in the end.</p>
-<p>However, the problem with cross-validation is that it is rarely applicable to real world problems, for all the reasons describedin the above sections. Cross-validation only works in the same cases where you can randomly shuffle your data to choose a validation set.</p>
-</section>
-<section id="kaggles-training-set-your-training-validation-sets" class="level2">
-<h2 class="anchored" data-anchor-id="kaggles-training-set-your-training-validation-sets">Kaggle’s “training set” = your training + validation sets</h2>
-<p>One great thing about Kaggle competitions is that they force you to think about validation sets more rigorously (in order to do well). For those who are new to Kaggle, it is a platform that hosts machine learning competitions. Kaggle typically breaks the data into two sets you can download:</p>
-<ol type="1">
-<li><p>a <strong>training set</strong>, which includes the <em>independent variables</em>, as well as the <em>dependent variable</em> (what you are trying to predict). For the example of an Ecuadorian grocery store trying to predict sales, the independent variables include the store id, item id, and date; the dependent variable is the number sold. For the example of trying to determine whether a driver is engaging in dangerous behaviors behind the wheel, the independent variable could be a picture of the driver, and the dependent variable is a category (such as texting, eating, or safely looking forward).</p></li>
-<li><p>a <strong>test set</strong>, which just has the independent variables. You will make predictions for the test set, which you can submit to Kaggle and get back a score of how well you did.</p></li>
-</ol>
-<p>This is the basic idea needed to get started with machine learning, but to do well, there is a bit more complexity to understand. You will want to create your own training and validation sets (by splitting the Kaggle “training” data). You will just use your smaller training set (a subset of Kaggle’s training data) for building your model, and you can evaluate it on your validation set (also a subset of Kaggle’s training data) before you submit to Kaggle.</p>
-<p>The most important reason for this is that Kaggle has split the test data into two sets: for the public and private leaderboards. The score you see on the public leaderboard is just for a subset of your predictions (and you don’t know which subset!). How your predictions fare on the private leaderboard won’t be revealed until the end of the competition. The reason this is important is that you could end up overfitting to the public leaderboard and you wouldn’t realize it until the very end when you did poorly on the private leaderboard. Using a good validation set can prevent this. You can check if your validation set is any good by seeing if your model has similar scores on it to compared with on the Kaggle test set.</p>
-<p>Another reason it’s important to create your own validation set is that Kaggle limits you to two submissions per day, and you will likely want to experiment more than that. Thirdly, it can be instructive to see exactly what you’re getting wrong on the validation set, and Kaggle doesn’t tell you the right answers for the test set or even which data points you’re getting wrong, just your overall score.</p>
-<p>Understanding these distinctions is not just useful for Kaggle. In any predictive machine learning project, you want your model to be able to perform well on new data.</p>
-
-
-</section>
-
- ]]></description>
-  <category>machine learning</category>
-  <category>technical</category>
-  <guid>https://rachel.fast.ai/posts/2017-11-13-validation-sets/index.html</guid>
-  <pubDate>Sun, 12 Nov 2017 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2017-11-13-validation-sets/overfitting2.png" medium="image" type="image/png" height="54" width="144"/>
 </item>
 </channel>
 </rss>

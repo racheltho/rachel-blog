@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2021-11-04">
+<meta name="description" content="Why you can’t ignore the crucial role of humans in the data science pipeline">
+
+<title>Rachel Thomas, PhD - Avoiding Data Disasters</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/racheltho"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Avoiding Data Disasters</h1>
+                  <div>
+        <div class="description">
+          Why you can’t ignore the crucial role of humans in the data science pipeline
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">ethics</div>
+                <div class="quarto-category">machine learning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 4, 2021</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#case-study-uk-covid-tracking-app" id="toc-case-study-uk-covid-tracking-app" class="nav-link active" data-scroll-target="#case-study-uk-covid-tracking-app">Case study: UK covid tracking app</a></li>
+  <li><a href="#data-is-crucial" id="toc-data-is-crucial" class="nav-link" data-scroll-target="#data-is-crucial">Data is Crucial</a></li>
+  <li><a href="#data-work-is-undervalued" id="toc-data-work-is-undervalued" class="nav-link" data-scroll-target="#data-work-is-undervalued">Data Work is Undervalued</a></li>
+  <li><a href="#data-has-context" id="toc-data-has-context" class="nav-link" data-scroll-target="#data-has-context">Data has Context</a></li>
+  <li><a href="#the-people-most-impacted" id="toc-the-people-most-impacted" class="nav-link" data-scroll-target="#the-people-most-impacted">The People Most Impacted</a></li>
+  <li><a href="#towards-greater-data-resilience" id="toc-towards-greater-data-resilience" class="nav-link" data-scroll-target="#towards-greater-data-resilience">Towards Greater Data Resilience</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>Things can go disastrously wrong in data science and machine learning projects when we undervalue data work, use data in contexts that it wasn’t gathered for, or ignore the crucial role that humans play in the data science pipeline. A new multi-university <a href="https://cires.org.au/">centre focused on Information Resilience</a>, funded by the Australian government’s top scientific funding body (ARC), has recently launched. <strong>Information Resilience</strong> is the capacity to detect and respond to failures and risks across the information chain in which data is sourced, shared, transformed, analysed, and consumed. I’m honored to be a member of the strategy board, and I have been thinking about what information resilience means with respect to data practices. Through a series of case studies and relevant research papers, I will highlight these risks and point towards more resilient practices.</p>
+<section id="case-study-uk-covid-tracking-app" class="level2">
+<h2 class="anchored" data-anchor-id="case-study-uk-covid-tracking-app">Case study: UK covid tracking app</h2>
+<p>Data from a covid-symptom tracking app was used in a research paper to draw <a href="https://twitter.com/ahandvanish/status/1313973286364229638?s=20">wildly inaccurate conclusions</a> about the prevalence of Long Covid, the often debilitating neurological, vascular, and immune disease that can last for months or longer (some patients have been sick for 20 months and counting). The app suggested that only 1.5% of patients still experience symptoms after 3 months, an order of magnitude smaller than estimates of 10-35% being found by other studies.</p>
+<p>How could this research project have gone so wrong? Well, the app had been designed for a completely different purpose (tracking 1-2 week long respiratory infections), didn’t include the most common Long Covid symptoms (such as neurological dysfunction), had a frustrating user-interface that led many patients to quit using it, and made the erroneous assumption that those who stopped logging must be fully recovered. The results from this faulty research paper were widely shared, including in a BBC article, offering false reassurance than Long Covid prevalence is much rarer than it is. Patients had been voicing their frustrations with the app all along, and if researchers had listened sooner, they could have collected a much higher quality and more accurate data set.</p>
+<p>This research failure illustrates a few common issues in data projects:</p>
+<ul>
+<li>The <strong>context of the data</strong> was not taken into account. The user-interface, the categories listed, the included features– these were all designed to record data about a short-term mild respiratory infection. However, when it was used for a different purpose (long covid patients suffering for months with vascular and neurological symptoms), it did a poor job, and led to missing and incomplete data. This happens all too often, in which data gathered for one context is used for another</li>
+<li>The <strong>people most impacted</strong> (long covid patients) were ignored. They had the most accurate expertise on what long covid actually entailed, yet were not listened to. Ignoring this expertise led to lower quality data and erroneous research conclusions. Patients have <a href="https://bostonreview.net/science-nature/rachel-thomas-medicines-machine-learning-problem">crucial domain expertise</a>, which is distinct from that of doctors, and must be included in medical data science projects. From the start of the pandemic, patients who had suffered from other debilitating post-viral illnesses warned that we should be on the lookout for long-term illness, even in initially “mild” cases.</li>
+</ul>
+</section>
+<section id="data-is-crucial" class="level2">
+<h2 class="anchored" data-anchor-id="data-is-crucial">Data is Crucial</h2>
+<p>Collecting data about covid and its long-term effects directly from patients was a good idea, but poorly executed in this case. Due to <a href="https://www.fast.ai/2019/08/07/surveillance/">privacy and surveillance risks</a>, I frequently remind people not to record data that they don’t need. However, the pandemic has been a good reminder of how much data we really do need, and how tough it is when it’s missing.</p>
+<p>At the start of the pandemic in the United States, we had very little data about what was happening– the government was not tabulating information on cases, testing, or hospitalization. How could we know how to react when we didn’t understand how many cases there were, what death rates were, how transmissible the disease was, and other crucial information? How could we make policy decisions in the absence of a basic understanding of the facts.</p>
+<p>In early March 2020, two journalists and a data scientist from a medication-discovery platform began <a href="https://www.cjr.org/the_profile/covid-tracking-project.php">pulling covid data together</a> into a spreadsheet to understand the situation in the USA. This launched into a <a href="https://covidtracking.com/analysis-updates/why-we-didnt-automate-our-data-collection">15-month long project in which 500 volunteers</a> compiled and published data on COVID-19 testing, cases, hospitalizations, and deaths in the USA. During those 15 months, the Covid Tracking Project was the most comprehensive source of covid data in the USA, even more comprehensive than what the CDC had, and it was used by the CDC, numerous government agencies, and both the Trump and Biden Administrations. It was cited in academic studies and in thousands of news articles.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="covid-track.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">A reflection on the covid tracking project from a core data infrastructure engineer</figcaption><p></p>
+</figure>
+</div>
+<p>A data infrastructure engineer and contributor for the project <a href="https://covidtracking.com/analysis-updates/why-we-didnt-automate-our-data-collection">later recounted</a>, “It quickly became apparent that daily, close contact with the data was necessary to understand what states were reporting. States frequently changed how, what, and where they reported data. Had we set up a fully automated data capture system in March 2020, it would have failed within days.” The project used automation as a way to support and supplement manual work, not to replace it. At numerous points, errors in state reporting mechanisms were caught by eagle-eyed data scientists notifying discrepancies.</p>
+<p>This vision of using automation to support human work resonates with our interest at fast.ai in “augmentedML”, not “autoML”. I have <a href="https://www.fast.ai/2018/07/16/auto-ml2/">written previously</a> and <a href="https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml">gave an AutoML workshop keynote</a> on how too often automation ignores the important role of human input. Rather than try to automate everything (which often fails), we should focus on how humans and machines can best work together to take advantage of their different strengths.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="augmentedML.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Speaking about AugmentedML vs.&nbsp;AutoML at ICML 2019</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="data-work-is-undervalued" class="level2">
+<h2 class="anchored" data-anchor-id="data-work-is-undervalued">Data Work is Undervalued</h2>
+<p>Interviews of 53 AI practitioners across 6 countries on 3 continents found a pattern that is very familiar to many of us (including me) who work in machine learning: <a href="https://research.google/pubs/pub49953/">“Everyone wants to do the model work, not the data work.”</a> Missing meta-data leads to faulty assumptions. Data collection practices often conflict with the workflows of on-the-ground partners, such as nurses or farmers, who are usually not compensated for this extraneous effort. Too often data work is arduous, invisible, and taken for granted. Undervaluing of data work leads to poor practices and often results in negative, downstream events, including dangerously inaccurate models and months of lost work.</p>
+<p>Throughout the pandemic, data about covid (both initial cases and long covid) has often been lacking. Many countries have experienced testing shortages, leading to undercounts of how many people have covid. The <a href="https://www.propublica.org/article/the-cdc-only-tracks-a-fraction-of-breakthrough-covid-19-infections-even-as-cases-surge">CDC decision not to track breakthrough cases</a> unless they resulted in hospitalization made it harder to understand prevalence of break-throughs (a particularly concerning decision since break-throughs can still lead to long covid). In September, it was revealed that British Columbia, Canada was <a href="https://bc.ctvnews.ca/secrecy-over-b-c-s-true-number-of-hospitalized-covid-19-patients-1.5595394">not including covid patients in their ICU counts</a> once the patients were no longer infectious, a secretive decision that obscured how full ICUs were. Some studies of Long Covid have failed to include common symptoms, such as neurological ones, making it harder to understand the prevalence or nature.</p>
+</section>
+<section id="data-has-context" class="level2">
+<h2 class="anchored" data-anchor-id="data-has-context">Data has Context</h2>
+<p>Covid is giving us a first-hand view of how data, which we may sometimes want to think of as “objective”, are shaped by countless human decisions and factors. In the example of the symptom tracking app, decisions about which symptoms were included had a significant impact on the prevalence rate calculated. Design decisions that influenced the ease of use impacted how much data was gathered. Lack of understanding of how the app was being used (and why people quit using it) led to erroneous decisions about which cases should be considered “recovered”. These are all examples of the context for data. Here, the data gathered was reasonably appropriate for understanding initial covid infections (a week or two of respiratory symptoms), but not for patients experiencing months of neurological and vascular symptoms. Numbers can not stand alone, we need to understand how they were measured, who was included and excluded, relevant design decisions, under what situations a dataset is appropriate to use vs.&nbsp;not.</p>
+<p>As another example, consider covid testing counts: Who has access to testing (this involves health inequities, due to race or urban vs.&nbsp;rural), who is encouraged to get tested (at various times, people without symptoms, children, or other groups have been discouraged from doing so), varying accuracies (e.g.&nbsp;PCR tests are less accurate on children, missing almost half of cases that later go on to seroconvert), and making decisions about what counts as a “case” (I know multiple people who had alternating test results: positive, negative, positive, or the reverse– what counts as a positive case?)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="datasheet.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Datasheet for an electrical component. Image from ‘Datasheets for Datasets’</figcaption><p></p>
+</figure>
+</div>
+<p>One proposal for capturing this context is <a href="https://arxiv.org/abs/1803.09010">Datasheets for Datasets</a>. Prior to doing her PhD at Stanford in computer vision and then co-leading Google’s AI ethics team, <a href="https://thegradient.pub/the-far-reaching-impacts-of-timnit-gebru/">Dr.&nbsp;Timnit Gebru</a> worked at Apple in circuit design and electrical engineering. In electronics, each component (such as a circuit or transistor) comes with a datasheet that lists when and where it was manufactured, under what conditions it is safe to use, and other specifications. Dr.&nbsp;Gebru drew on this background to propose a similar idea for datasets: listing the context of when and how it was created, what data was included/excluded, recommended uses, potential biases and ethical risks, work needed to maintain it, and so on. This is a valuable proposal towards making the context of data more explicit.</p>
+</section>
+<section id="the-people-most-impacted" class="level2">
+<h2 class="anchored" data-anchor-id="the-people-most-impacted">The People Most Impacted</h2>
+<p>The inaccurate research and incomplete data from the covid tracking app could have been avoided by drawing on the expertise of patients. Higher quality data could have been collected sooner and more thoroughly, if patients were consulted in the app design and in the related research studies. Participatory approaches to machine learning is an exciting and growing area of research. In any domain, the people who would be most impacted by errors or mistakes need to be included as partners in the design of the project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="diverse-voices.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">The Diverse Voices project from University of Washington Tech Policy Lab involves academic papers and practical how-to guides.</figcaption><p></p>
+</figure>
+</div>
+<p>Often, our approaches to addressing fairness or other ethics issues, further centralize the power of system designers and operators. The organizers of an ICML workshop on the topic called <a href="https://participatoryml.github.io/">for more cooperative, democratic, and participatory</a> approaches instead. We need to think not just about <strong>explainability</strong>, but about giving people <strong>actionable recourse</strong>. As <a href="https://slideslive.com/38930604/actionable-recourse-in-machine-learning">Professor Berk Ustun highlights</a>, when someone asks why their loan was denied, usually what they want is not just an explanation but to know what they could change in order to get a loan. We need to design systems with <a href="http://contestability.org/"><strong>contestability</strong></a> in mind, to include from the start the idea that people should be able to challenge system outputs. We need to include <a href="https://techpolicylab.uw.edu/project/diverse-voices/">expert panels of perspectives</a> that are often overlooked, depending on the application, this could mean formerly or currently incarcerated people, people who don’t drive, people with very low incomes, disabled people, and many others. <a href="https://techpolicylab.uw.edu/project/diverse-voices/">The Diverse Voices project</a> from University of Washington Tech Lab provides guidance on how to do this. And it is crucial that this not just be tokenistic <a href="https://www.technologyreview.com/2020/08/25/1007589/participation-washing-ai-trends-opinion-machine-learning/">participation-washing</a>, but a meaningful, appropriately compensated, and ongoing role in their design and operation.</p>
+</section>
+<section id="towards-greater-data-resilience" class="level2">
+<h2 class="anchored" data-anchor-id="towards-greater-data-resilience">Towards Greater Data Resilience</h2>
+<p>I hope that we can improve data resilience through: - Valuing data work - Documenting context of data - Close contact with the data - Meaningful, ongoing, and compensated involvement of the people impacted</p>
+<p>And I hope that when our data represents people we can remember the human side. As <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7296309/">AI researcher Inioluwa Deborah Raji wrote</a>, “Data are not bricks to be stacked, oil to be drilled, gold to be mined, opportunities to be harvested. Data are humans to be seen, maybe loved, hopefully taken care of.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="data-not-oil.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Quote from AI researcher Inioluwa Deborah Raji</figcaption><p></p>
+</figure>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
