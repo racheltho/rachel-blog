@@ -1,0 +1,42 @@
+---
+title: "How should you structure your Data Science and Engineering teams?"
+date: "2016-12-08"
+author: "Rachel Thomas"
+categories: [advice, work]
+description: "There are a lot of potential pitfalls related to data science and org structure (no matter what you choose)"
+image: "League_of_Nations_Organization2.png"
+---
+
+*I sometimes receive emails asking for guidance related to data science, and I'm going to start sharing my answers here as a data science advice column.  Note that questions may be edited for clarity or brevity.*
+
+**Q:** Hello Rachel, I'm VP of Engineering at a start-up that is increasingly seeing our data & ML algorithms as our core asset. In thinking about the next few technical hires we want to make, we want to target engineers that will be able to accelerate the efforts of our Data Science team, so I'm trying to do some pre-recruiting research to understand how engineering teams focused on support of production ML pipelines are structured. Some of what I'm wondering about:
+
+* How are the Data Science & Engineering teams structured? e.g. Is there a notion of a "Data Engineering" team that is paired with the Data Science team? Or are Data Scientists & Engineers just integrated together in "vertical" product teams?
+
+* How do the Data Science & Engineering teams interact? How is the roadmap for Data Science coordinated with the roadmap for Data Engineering?
+
+* How are responsibilities split between Data Scientists vs. Engineers? Is there a notion of a hybrid role, and what does it look like if so?
+
+**A:** This answer is based on my experience as a data scientist, my experience interviewing for data science roles, and talking with a number of data scientists. I've watched employers go through multiple data science re-orgs.
+
+There are a lot of potential pitfalls related to data science and org structure (no matter what you choose).  I'm going to take the liberty of expanding your question to cover the relationship between data science and other teams, as well as data engineering.  Consider these scenarios:
+
+* The data science team interviews a candidate with impressive math modeling and engineering skills.  Once hired, the candidate is embedded in a vertical product team that needs simple business analytics. The data scientist is bored and not utilizing their skills.
+* The data science team is separate (not embedded within other teams).  They build really cool stuff that never gets used.  There's no buy-in from the rest of the org for what they're working on, and some of the data scientists don't have a good sense of what can realistically be put into production.
+* There is a backlog with data scientists producing models much faster than there is engineering support to put them in production.
+* The data infrastructure engineers are separate from the data scientists.  The pipelines don't have the data the data scientists are asking for now, and the data scientists are under-utilizing the data sources the infrastructure engineers have collected.
+* The company has definitely decided on feature/product X.  They need a data scientist to gather some data that supports this decision.  The data scientist feels like the PM is ignoring data that contradicts the decision; the PM feels that the data scientist is ignoring other business logic.
+
+## Recommendations
+
+Having data scientists all on a separate team makes it nearly impossible for their work to be appropriately integrated with the rest of the company. Have your data scientists distributed throughout the company, but also have a team doing data science evangelism within the company.  Vertical product teams need to know what is possible and how to best utilize data science. It's too hard for a lone data scientist to advocate for the role of data-driven decisions within the team they're embedded in.
+
+Data scientists should report to both a data science manager and a manager within the product team.  You need a lot of communication: to make sure that the team is getting the most value and that the data scientist is finding fulfilling work.  One approach that can work really well is to have half the data scientists switch to a different group each year (or even more often).
+
+While it's common to have machine learning, engineering, and data/pipeline/infrastructure engineering all as separate roles, try to avoid this as much as possible. This leads to a lot of duplicate or unused work, particularly when these roles are on separate teams.  You want people who have some of all these skills: can build the pipelines for the data they need, create models with that data, and put those models in production.  You're not going to be able to hire many people who can do all of this.  So you'll need to provide them with training.  In general, the most underused resource of most companies is their own employees, and the situation is even worse with data scientists (since "data science" encompasses such a wide variety of possible skills). Tech companies waste their employees' potential by not offering enough opportunities for on-the-job learning, training, and mentoring. Your people are smart and eager to learn. Be prepared to offer training, pair-programming, or seminars to help your data scientists fill in skills gaps.  I always tell students who are interested in both data science and engineering, that the more you know about software development, the better a data scientist you will be.
+
+Even when you have people who are both data scientists and engineers (that is, they can create machine learning models and put those models into production), you still need to have them embedded in other teams and not cordoned off together.  Otherwise, there won't be enough institutional understanding and buy-in of what they're doing, and their work won't be as integrated as it needs to be with other systems.
+
+The term data scientist refers to at least 5 distinct jobs, so communication and clarity is key.  Companies need to be clear on what their needs are and what they're hiring for.  I can tell you from firsthand experience as a job applicant that lots of companies want to hire a data scientist but aren't sure why, or how they will use data science.  You want to hire someone who is interested in the role they'd be working in. You probably won't find a candidate that's both interested in writing machine learning implementations in C and extensively using Google Analytics, although that is a real job description I've encountered. Note I say "interested in" and not "already has the skills".  Assume that any applicant will be learning lots of new skills on the job (if not, they will soon grow bored).
+
+Further reading: After drafting this post, I came across an excellent article called [The Data Science Delusion](https://medium.com/@anandr42/the-data-science-delusion-7759f4eaac8e#.sdo8zl3cd) which details several additional problems companies may encounter when incorporating data science into their org. 

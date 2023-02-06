@@ -1,7 +1,7 @@
 ---
 title: "Medicine is Political"
 date: "2021-10-12"
-image: "actup.jpg"
+image: "actup-square.jpg"
 author: "Rachel Thomas"
 toc: true
 description: "From covid-19 to HIV research to the long history of wrongly assuming women’s illnesses are psychosomatic, we have seen again and again that medicine, like all science, is political."

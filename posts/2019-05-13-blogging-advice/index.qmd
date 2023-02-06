@@ -1,0 +1,79 @@
+---
+title: "Advice for Better Blog Posts"
+date: "2019-05-13"
+author: "Rachel Thomas"
+categories: [advice]
+toc: true
+description: "A blog is like a resume, only better."
+image: "blog.jpeg"
+---
+
+A blog is like a resume, only better. I've been invited to give keynote talks based on my posts, and I know of people for whom blog posts have led to job offers. I've encouraged people to start blogging in [several of](http://www.fast.ai/2017/04/06/alternatives/) [my previous](https://rachel.fast.ai/posts/2017-12-18-personal-brand/) [posts](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045), and I even required students in my [computational linear algebra course](https://github.com/fastai/numerical-linear-algebra) to write a blog post (although they weren't required to publish it), since good technical writing skills are useful in the workplace and in interviews. Also, explaining something you've learned to someone else is a way to cement your knowledge. I gave a list of tips for [getting started with your first blog post](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045) previously, and I wanted to offer some more advanced advice here.
+
+## Who is your audience?
+
+Advice that my speech coach gave me about [preparing talks](https://rachel.fast.ai/posts/2017-12-18-personal-brand/), which I think also applies to writing, is to choose one particular person that you can think of as your target audience. **Be as specific as possible.** It's great if this is a real person (and it is totally fine if they are not actually going to read your post or attend your talk), although it doesn't have to be (you just need to be extra-thorough in making up details about them if it's not). Either way, what is their background?  What sort of questions or misconceptions might they have about the topic?  At various points, the person I'm thinking of has been a friend or colleague, one of my students, or my younger self.
+
+Being unclear about your audience can lead to a muddled post: for instance, I've seen blog posts that contain both beginner material (e.g. defining what training and test sets are) as well as very advanced material (e.g. describing complex new architectures). Experts would be bored and beginners would get lost.
+
+## Dos and Don'ts
+
+When you read other people's blog posts, think about what works well.  What did you like about it?  And when you read blog posts that you don't enjoy as much, think about why not?  What would make the post more engaging for you?  Note that not every post will appeal to every person. Part of having a target audience means that there are people who are not in your target audience, which is fine. And sometimes I'm not somebody else's target audience.  As with all advice, this is based on my personal experience and I'm sure that there are exceptions.
+
+### Things that often work well:
+
+- Bring together many useful resources (but don't include everything! the value is in **your curation**)
+- Do provide motivation and context. If you are going to explain how an algorithm works, first give some examples of real-world applications where it is used, or how it is different from other options.
+- People are convinced by several different things: stories, statistics, research, and visuals.  Try using a blend of these.
+- If you're using a lot of code, try writing in a Jupyter notebook (which can be [converted into a blog post](https://cduvallet.github.io/posts/2018/03/ipython-notebooks-jekyll)) or a [Kaggle Kernel](https://www.kaggle.com/kernels).
+
+### Don'ts
+
+- **Don't reinvent the wheel.** If you know of a great explanation of something elsewhere, link to it!  Include a quote or one sentence summary about the resource you're linking to.
+- **Don't try to build everything up from first principles.**  For example, if you want to explain the transformer architecture, don't begin by defining machine learning. Who is your target audience?  People already familiar with machine learning will lose interest, and those who are brand new to machine learning are probably not seeking out posts on the transformer architecture. You can assume that your reader already has a certain background (sometimes it is helpful to make this explicit).
+- **Don't be afraid to have an opinion.** For example, TensorFlow (circa 2016, before eager execution) [made me feel unintelligent](https://twitter.com/math_rachel/status/821044526571614208), even though everyone else seemed to be saying how awesome it was. I was pretty nervous [writing a blog post](https://www.fast.ai/2017/01/03/keras/) that said this, but a lot of people responded positively.
+- **Don't be too dull or dry.** If people lose interest, they will stop reading, so you want to hook them (and keep them hooked!)
+- **Don't plagiarize.** Always cite sources, and use quote marks around direct quotes. Do this even as you are first gathering sources and taking notes, so you don't make a mistake later and forget which material is someone else's. It is wrong to plagiarize the work of others and ultimately will hurt your reputation. Cite and link to people who have given you ideas.
+- **Don't be too general.** You don't have to cover everything on a topic-- focus on the part that interests (or frustrates) you most.
+
+## Put the time in to do it well
+
+As DeepMind researcher and University of Oxford PhD student [Andrew Trask advised](https://hackernoon.com/interview-with-deep-learning-researcher-and-leader-of-openmined-andrew-trask-77cd33570a8c), "*The secret to getting into the deep learning community is high quality blogging... Don’t just write something ok, either—take 3 or 4 full days on a post and try to make it as short and simple (yet complete) as possible.*"  Honestly, I've spent far more than 3 or 4 days on [many of](https://rachel.fast.ai/posts/2018-04-29-categorical-embeddings/) [my most](https://www.fast.ai/posts/2017-03-01-changing-careers.html) [popular](https://rachel.fast.ai/posts/2018-07-23-automl3/) [posts](https://rachel.fast.ai/posts/2018-07-12-automl1/).
+
+However, this doesn't mean that you need to be a "naturally gifted" writer. I attended a poor, public high school in a small city in Texas, where I had few writing assignments and didn't really learn to write a proper essay. An introductory English class my first semester of college highlighted how much I struggled with writing, and after that, I tried to avoid classes that would require much writing (part of the reason I studied math and computer science is that those were the only fields I knew of that involved minimal writing AND didn't have lab sessions). It wasn't until I was in my 30s and [wanted to start blogging](https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996) that I began to practice writing. I typically go through many, many drafts, and do lots of revisions. As with most things, [skill is not innate](https://hbr.org/2007/07/the-making-of-an-expert); it is something you build through deliberate practice.
+
+Note: I realize many people may not have time to blog-- perhaps you are a parent, dealing with chronic illness, suffering burnout from a toxic job, or prefer to do other things in your free time-- that's alright!  You can still have a successful career without blogging, this post is only for those who are interested.
+
+## Write a blog version of your academic paper
+
+The top item on my wish list for AI researchers is that more of them would write blog posts to accompany their papers:
+
+<center>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">my wish list for AI researchers <a href="https://t.co/Cel5x32K9O">https://t.co/Cel5x32K9O</a> <a href="https://t.co/AyYBqwYDFX">pic.twitter.com/AyYBqwYDFX</a></p>&mdash; Rachel Thomas (@math_rachel) <a href="https://twitter.com/math_rachel/status/983874014392152064?ref_src=twsrc%5Etfw">April 11, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+
+Far more people may read your blog post than will read an academic paper. This is a chance to get your message to a broader audience, in a more conversational and accessible format. You can and should link to your academic paper from your blog post, so there's no need to worry about including all the technical details.  People will read your paper if they want more detail!
+
+Check out these excellent pairs of academic papers and blog posts for inspiration:
+- [Gender Shades](http://gendershades.org/overview.html) (blog post & visualization) and [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) (paper), by Joy Buolamwini & Timnit Gebru
+-  [The Problem with “Biased Data”](https://medium.com/@harinisuresh/the-problem-with-biased-data-5700005e514c) (blog post) and [A Framework for Understanding Unintended Consequences of Machine Learning](https://arxiv.org/abs/1901.10002) (paper), by Harini Suresh & John Guttag
+- [Introducing state of the art text classification with universal language models](http://nlp.fast.ai/) (blog post) and [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) (paper), by Jeremy Howard & Sebastian Ruder
+
+I usually advise new bloggers that your target audience could be you-6-months-ago.  For grad students, you may need to change this to you-2-years-ago.  Assume that unlike your paper reviewers, the reader of your blog post has not read the related research papers. Assume your audience is intelligent, but not in your subfield.  What does it take to explain your research to a friend in a different field?
+
+## Getting Started with your first post
+
+Here are some tips I've [shared previously](https://medium.com/@racheltho/why-you-yes-you-should-blog-7d2544ac1045) to help you start your first post:
+
+- Make a list of links to other blog posts, articles, or studies that you like, and write brief summaries or highlight what you particularly like about them. Part of my first blog post came from my making just such a list, because I couldn’t believe more people hadn’t read the posts and articles that I thought were awesome.
+- Summarize what you learned at a conference you attended, or in a class you are taking.
+- Any email you’ve written twice should be a blog post. Now, if I’m asked a question that I think someone else would also be interested in, I try to write it up.
+- You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it.
+- What would have helped you a year ago? What would have helped you a week ago?
+- If you’re wondering about the actual logistics, [Medium](https://medium.com/new-story) makes it super simple to get started. Another option is to use [Jekyll and Github pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/). I can personally recommend both, as I have 2 blogs and use one for each (my [other blog is here](https://medium.com/@racheltho)).
+
+## Related Posts
+ - [Making Peace with Personal Branding](https://rachel.fast.ai/posts/2017-12-18-personal-brand/)
+ - [Alternatives to a Degree to Prove Yourself in Deep Learning](https://www.fast.ai/posts/2017-04-06-alternatives.html)
+ - [A Discussion about Accessibility in AI at Stanford](https://www.fast.ai/posts/2018-04-10-stanford-salon.html)
