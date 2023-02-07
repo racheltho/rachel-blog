@@ -70,6 +70,6 @@ Most people with chronic illnesses or disabilities have spent hundreds of hours 
 
 Even if you don’t realize it, you are interacting with chronically ill and disabled people regularly. I hope the experiences, advice, and quotes shared in this post will be helpful in increasing empathy and understanding, so that we can make the tech industry more inclusive. I don’t and can’t speak for everyone with chronic illnesses or disabilities, so I hope that you will seek out and listen to the experiences of other people with chronic illnesses or disabilities (and the links in this post are one way to get started!)
 
-_This is part 2 of a 3-part series. Check out_ [_part 1 here_](https://rachel.fast.ai/posts/2019-01-21-failing/) and [_part 3 here_](https://rachel.fast.ai/posts/2019-02-12-long-hours/)_, which covers one aspect of the tech industry that excludes many people with disabilities (and is contrary to productivity research): the glorification of long hours._
+_This is part of a series._ [_The next post_](https://rachel.fast.ai/posts/2019-02-12-long-hours/) _covers one aspect of the tech industry that excludes many people with disabilities (and is contrary to productivity research): the glorification of long hours._
 
 _A huge thank you to Julia Ferraioli, Jeremy Howard, and Negar Rostamzadeh for giving me valuable feedback on earlier drafts of this post._

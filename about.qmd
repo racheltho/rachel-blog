@@ -16,9 +16,13 @@ about:
 
 ---
 
-I am cofounder of fast.ai, creator of one of the most popular deep learning courses in the world. I have a PhD in mathematics and was previously the founding director of the Center for Applied Data Ethics at the University of San Francisco.  
+MSc Immunology student and cofounder of fast.ai
 
-I live in Queensland, Australia with my husband and daughter.  My interests include <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a>.  You can find my old blog posts at [fast.ai](https://www.fast.ai/) and [medium](https://medium.com/@racheltho). 
+Past: professor & director USF Center Applied Data Ethics, data scientist, PhD in mathematics
+
+Interests: <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a> 
+
+Location: Queensland, Australia
 
 <h3 id="mathbio">Mathematical Biology and AI in Medicine</h3>
 
