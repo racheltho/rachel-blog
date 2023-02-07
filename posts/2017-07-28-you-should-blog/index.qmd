@@ -1,0 +1,46 @@
+---
+title: "Why you (yes, you) should blog"
+date: "2017-07-28"
+image: "blog2.jpg"
+author: "Rachel Thomas"
+toc: true
+description: "The top advice I would give my younger self would be to start blogging sooner."
+categories: [advice]
+---
+
+The top advice I would give my younger self would be to start blogging sooner. Here are some reasons to blog:
+
+*   It’s like a resume, only better. I know of a few people who have had blog posts lead to job offers!
+*   Helps you learn. Organizing knowledge always helps me synthesize my own ideas. One of the tests of whether you understand something is whether you can explain it to someone else. A blog post is a great way to do that.
+*   I’ve gotten invitations to conferences and invitations to speak from my blog posts. I was invited to the TensorFlow Dev Summit (which was awesome!) for writing a blog post about how [I don’t like TensorFlow](http://www.fast.ai/2017/01/03/keras/).
+*   Meet new people. I’ve met several people who have responded to blog posts I wrote.
+*   Saves time. Any time you answer a question multiple times through email, you should turn it into a blog post, which makes it easier for you to share the next time someone asks.
+
+To inspire you, here are some sample blog posts from students in our [fast.ai deep learning course](http://course.fast.ai/):
+
+*   [Linear Algebra Cheat Sheet for Deep Learning](https://medium.com/towards-data-science/linear-algebra-cheat-sheet-for-deep-learning-cd67aba4526c)
+*   [CNNs from Different Viewpoints](https://medium.com/@matthewkleinsmith/cnns-from-different-viewpoints-fab7f52d159c)
+*   [Setting up a Deep Learning Machine in a Lazy yet Quick Way](https://medium.com/@sravsatuluri/setting-up-a-deep-learning-machine-in-a-lazy-yet-quick-way-be2642318850)
+*   [Non-artistic Style Transfer (or How to Draw Kanye using Captain Picard’s Face)](https://hackernoon.com/non-artistic-style-transfer-or-how-to-draw-kanye-using-captain-picards-face-c4a50256b814)
+
+I enjoyed all of the above blog posts and also, I don’t think any of them are too intimidating. They’re meant to be accessible.
+
+## Tips for getting started blogging
+
+My partner, Jeremy, had been suggesting for years that I should start blogging, and I’d respond “I don’t have anything to say.” This wasn’t true. What I meant was that I didn’t feel confident, and I felt like the things I could write had already been written about by people with more expertise or better writing skills than me.
+
+It turns out that is fine! Your posts don’t have to be earth-shattering or even novel to be read and shared. My writing skills were rather weak when I started (part of the reason I chose to study math and CS in college was because those courses requried the least amount of writing and also no labs), but my skills are improving with time.
+
+Here are some more tips to help you start your first post:
+
+*   Make a list of links to other blog posts, articles, or studies that you like, and write brief summaries or highlight what you particularly like about them. Part of my first blog post came from my making just such a list, because I couldn’t believe more people hadn’t read the posts and articles that I thought were awesome.
+*   Summarize what you learned at a conference you attended, or in a class you are taking.
+*   Any email you’ve written twice should be a blog post. Now, if I’m asked a question that I think someone else would also be interested in, I try to write it up.
+*   Don’t be a perfectionist. I spent 9 months on my [first blog post](https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996), it went viral, and I have repeatedly hit new lows in readership ever since then. One of my personal goals for 2017 is to post my writing quicker and not to obsess so much before I post, because it just builds up pressure and I end up writing less.
+*   You are best positioned to help people one step behind you. The material is still fresh in your mind. Many experts have forgotten what it was like to be a beginner (or an intermediate) and have forgotten why the topic is hard to understand when you first hear it. The context of your particular background, your particular style, and your knowledge level will give a different twist to what you’re writing about.
+*   [What would have helped you a year ago? What would have helped you a week ago?](https://jvns.ca/blog/2016/05/22/how-do-you-write-blog-posts/)
+*   If you are a woman in NYC, Chicago, or San Francisco, I recommend joining your local chapter of [Write/Speak/Code](http://www.writespeakcode.com/chapters/), a group that encourages women software developers to write blog posts, speak at conferences, and contribute to open source.
+*   Get angry. The catalyst that finally got me to start writing was when someone famous said something that made me angry. So angry that I had to explain all the ways his thinking was wrong.
+*   If you’re wondering about the actual logistics, [Medium](https://medium.com/new-story) makes it super simple to get started. Another option is to use [Jekyll and Github pages](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/). I can personally recommend both, as I have 2 blogs and use one for each (my [other blog is here](http://fast.ai)).
+
+_This was originally part of a longer post_ [_Alternatives to a Degree to Prove Yourself in Deep Learning_](http://www.fast.ai/2017/04/06/alternatives/) _on fast.ai_
