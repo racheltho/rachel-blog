@@ -1,9 +1,24 @@
 /* css styles */
 
 a {
-    color: var(#118671);
-    text-decoration: underline;
-  }
-  a:hover {
-    color: var(#0c5f50);
-  }
+  color: var(#118671);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(#0c5f50);
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.fai-imager {
+  float:right;
+  margin:1rem;
+}
+
