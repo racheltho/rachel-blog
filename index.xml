@@ -9,11 +9,6 @@
 <link>https://rachel.fast.ai/index.html</link>
 <atom:link href="https://rachel.fast.ai/index.xml" rel="self" type="application/rss+xml"/>
 <description>a blog about science, data, ethics, &amp; education</description>
-<image>
-<url>https://rachel.fast.ai/images/thomas-landscape.jpg</url>
-<title>Rachel Thomas, PhD</title>
-<link>https://rachel.fast.ai/index.html</link>
-</image>
 <generator>quarto-1.2.335</generator>
 <lastBuildDate>Mon, 06 Feb 2023 14:00:00 GMT</lastBuildDate>
 <item>
