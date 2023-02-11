@@ -1,7 +1,7 @@
 ---
 title: "11 Short Videos About AI Ethics"
 date: "2021-08-16"
-image: "short-ethics-playlist.jpg"
+image: "/posts/2021-08-17-eleven-ethics-videos/short-ethics-playlist.jpg"
 author: "Rachel Thomas"
 categories: [ethics, machine learning]
 description: Short videos about machine learning ethics to watch and share.

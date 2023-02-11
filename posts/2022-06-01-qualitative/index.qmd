@@ -2,7 +2,7 @@
 title: "Qualitative humanities research is crucial to AI"
 author: "Louisa Bartolo and Rachel Thomas"
 date: "2022-06-01"
-image: "Abstract-art-britto-qb140.jpg"
+image: "/posts/2022-06-01-qualitative/Abstract-art-britto-qb140.jpg"
 description: "Following the thread of any quantitative issue leads to qualitative questions."
 categories: [ethics, machine learning]
 toc: true

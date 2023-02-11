@@ -1,7 +1,7 @@
 ---
 title: "My family's unlikely homeschooling journey"
 date: "2022-09-06"
-image: "homeschool-headlines.jpg"
+image: "/posts/2022-09-06-homeschooling/homeschool-headlines.jpg"
 author: "Rachel Thomas"
 toc: true
 description: "Prior to 2020, we never expected to homeschool, and now we have committed to it long-term."

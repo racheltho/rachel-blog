@@ -6,11 +6,15 @@ project:
 
 website:
   title: "Rachel Thomas, PhD"
-  site-url: https://rachel.fast.ai/
+  site-url: https://rachel.fast.ai
   description: "a blog about science, data, ethics, & education"
+  image: "/images/thomas-card.jpg"
+  open-graph:
+    description: "a blog about science, data, ethics, & education"
   twitter-card:
     creator: "@math_rachel"
     site: "@math_rachel"
+    description: "a blog about science, data, ethics, & education"
   navbar:
     right:
       - about.qmd

@@ -1,7 +1,7 @@
 ---
 title: "AI Harms are Societal, Not Just Individual"
 date: "2022-05-17"
-image: "air-pollution.jpg"
+image: "/posts/2022-05-17-societal-harms/air-pollution.jpg"
 description: "Much like pollution, the harms caused by algorithmic systems are often collective and communal."
 author: "Rachel Thomas and Louisa Bartolo"
 categories: [ethics, machine learning]

@@ -1,7 +1,7 @@
 ---
 title: "I was an AI researcher. Now, I am an immunology student."
 date: "2023-02-07"
-image: "textbooks.jpg"
+image: "/posts/2023-02-07-school-immunology/textbooks.jpg"
 description: "Last year, I became captivated by a new topic in a way that I hadn’t felt since I first discovered machine learning"
 author: "Rachel Thomas"
 categories: [education, science]
