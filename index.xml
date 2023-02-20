@@ -15,11 +15,11 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Fri, 17 Feb 2023 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 20 Feb 2023 14:00:00 GMT</lastBuildDate>
 <item>
   <title>How to Remember Anything</title>
   <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2023-02-18-anki/index.html</link>
+  <link>https://rachel.fast.ai/posts/2023-02-21-anki/index.html</link>
   <description><![CDATA[ 
 
 
@@ -30,7 +30,7 @@
 <p>I have been using Anki flashcards to help me study. Anki is a free, open-source system based on the research of spaced repetition learning. I have been using this technique to study immunology, but it can be used for any subject. You make your own cards and they can include anything you like. Anki is an app available on Android, iPhone, and desktop, and it is easy to sync between your phone and computer (it is free on Android and desktop, although costs money for the iPhone). I want to explain the basics of the approach. This post is intended for people new to Anki– I will not cover power user features.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-18-anki/flashcard2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/flashcard2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <p></p><figcaption class="figure-caption">The front and back of one of my flashcards (the graphs are screenshots I took from one of my professor’s lectures)</figcaption><p></p>
 </figure>
 </div>
@@ -41,7 +41,7 @@
 <p>In order to retain information, research shows that the best time to be quizzed about something you are learning is right before you otherwise would have forgotten it. For new information, this will be relatively soon. However, as you study a piece of information more times, you can go longer and longer before you need to be prompted about it. The other key factor in when you need to see a card again is how difficult a question is for you. If you find it easy, you can wait longer before you need to see it again, but if it’s hard, you should review it sooner. And if you got it wrong or didn’t know the answer, you should study it again in the same session. Anki handles the spacing of cards for you, keeping track of when you need to see each card again.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-18-anki/anki-streak2.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-streak2.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">My practice using Anki for the last 28 weeks (darker blue means more cards studied)</figcaption><p></p>
 </figure>
 </div>
@@ -52,14 +52,14 @@
 <p>On the back of each card, at the bottom, Anki offers you 4 choices to rate whether you need to see the card again (choose this if you got it wrong) or whether you found it hard, good, or easy. For a new card, all the choices will lead to reviewing again soon, with “easy” corresponding to 4 days. However, over time, the choices for all options get longer as you answer the card correctly more times (except for “again”, which indicates you forgot and need to restart that card). This shows the options Anki gives on 3 different cards: a brand new one, one I’ve seen a few times, and one I’ve gotten correct many times (and likely won’t need to see again for many months).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-18-anki/anki-bottom.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-bottom.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <p></p><figcaption class="figure-caption">The lengths of time vary based on your history with the card</figcaption><p></p>
 </figure>
 </div>
 <p>If you get a card wrong/need to see it again, Anki will reset to showing you the card with higher frequency again. Here is an old card that I missed. After I select “Again” (because I forgot an answer), these were the options the next time I see that card:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-18-anki/reset.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/reset.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
 <p></p><figcaption class="figure-caption">Resetting</figcaption><p></p>
 </figure>
 </div>
@@ -70,7 +70,7 @@
 <p>For instance, I can look at my stats on Anki and see that today I did 114 cards, but for each day going forward I will have less and less (this graph doesn’t take into account that I plan to continue adding new cards each day).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-18-anki/anki-stats.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-stats.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">How many cards I will have each day going forward if I stop adding new cards</figcaption><p></p>
 </figure>
 </div>
@@ -85,7 +85,7 @@
 <p>Anki can (and should) be combined with other memory techniques, such as creating short stories that are funny, surprising, sexy, violent, unexpected, or related to family, friends, and celebrities (all these are attributes proven to make things more memorable).</p>
 </section>
 <section id="other-resources-on-effective-learning-and-memory" class="level2">
-<h2 class="anchored" data-anchor-id="other-resources-on-effective-learning-and-memory">Other Resources on Effective Learning and Memory:</h2>
+<h2 class="anchored" data-anchor-id="other-resources-on-effective-learning-and-memory">Other Resources on Effective Learning and Memory</h2>
 <p>Many people incorrectly believe that memory is purely a fixed talent that you either have or you don’t, but there are a number of techniques proven to help make both memory and learning more effective. For more on how to learn effectively, here are several books, videos, and courses:</p>
 <ul>
 <li><a href="https://www.booktopia.com.au/moonwalking-with-einstein-joshua-foer/book/9780143120537.html">Moonwalking with Einstein: The Art and Science of Remembering Everything</a>, by Joshua Foer</li>
@@ -102,9 +102,9 @@
  ]]></description>
   <category>education</category>
   <category>advice</category>
-  <guid>https://rachel.fast.ai/posts/2023-02-18-anki/index.html</guid>
-  <pubDate>Fri, 17 Feb 2023 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2023-02-18-anki/stats.jpg" medium="image" type="image/jpeg"/>
+  <guid>https://rachel.fast.ai/posts/2023-02-21-anki/index.html</guid>
+  <pubDate>Mon, 20 Feb 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2023-02-21-anki/stats.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>I was an AI researcher. Now, I am an immunology student.</title>
