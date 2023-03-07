@@ -2,7 +2,7 @@
 title: "How to Make Tech Interviews a Little Less Awful"
 date: "2017-03-05"
 author: "Rachel Thomas"
-categories: [advice, work]
+categories: [advice, work, inclusion]
 toc: true
 description: "The tech interview process is very, very broken."
 image: "woc3.jpg"
