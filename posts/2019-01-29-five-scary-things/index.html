@@ -206,7 +206,13 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption">Headlines from the Verge and the Washington Post</figcaption><p></p>
 </figure>
 </div>
-<p>As I covered in a <a href="https://www.fast.ai/posts/2018-08-07-hbr-bias-algorithms.html">previous post</a>, people use outputs from algorithms differently than they use decisions made by humans: - Algorithms are more likely to be implemented with <strong>no appeals process</strong> in place. - Algorithms are often used <strong>at scale</strong>. - Algorithmic systems are <strong>cheap</strong>. - People are more likely to assume algorithms are <strong>objective or error-free</strong>. As <a href="https://www.youtube.com/watch?v=TRzBk_KuIaM">Peter Haas said</a>, “<em>In AI, we have Milgram’s ultimate authority figure,</em>” referring to Stanley Milgram’s <a href="https://en.wikipedia.org/wiki/Milgram_experiment">famous experiments</a> showing that most people will obey orders from authority figures, even to the point of harming or killing other humans. How much more likely will people be to trust algorithms perceived as objective and correct?</p>
+<p>As I covered in a <a href="https://www.fast.ai/posts/2018-08-07-hbr-bias-algorithms.html">previous post</a>, people use outputs from algorithms differently than they use decisions made by humans:</p>
+<ul>
+<li>Algorithms are more likely to be implemented with <strong>no appeals process</strong> in place.</li>
+<li>Algorithms are often used <strong>at scale</strong>.</li>
+<li>Algorithmic systems are <strong>cheap</strong>.</li>
+<li>People are more likely to assume algorithms are <strong>objective or error-free</strong>. As <a href="https://www.youtube.com/watch?v=TRzBk_KuIaM">Peter Haas said</a>, “<em>In AI, we have Milgram’s ultimate authority figure,</em>” referring to Stanley Milgram’s <a href="https://en.wikipedia.org/wiki/Milgram_experiment">famous experiments</a> showing that most people will obey orders from authority figures, even to the point of harming or killing other humans. How much more likely will people be to trust algorithms perceived as objective and correct?</li>
+</ul>
 <p>There is a lot of overlap between these factors. If the main motivation for implementing an algorithm is cost-cutting, adding an appeals process (or even diligently checking for errors) may be considered an “unnecessary” expense. Cathy O’Neill, who earned her math PhD at Harvard, wrote a book <a href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a>, in which she covers how algorithms are disproportionately impacting poor people, whereas the privileged are more likely to still have access to human attention (in hiring, education, and more).</p>
 <h2 id="responsible" class="anchored">
 <ol start="2" type="1">
@@ -224,8 +230,17 @@ ul.task-list li input[type="checkbox"] {
 </li></ol></h2>
 
 <p><em>But isn’t algorithmic bias just a reflection of how the world is?</em> I get asked a variation of this question <a href="https://www.youtube.com/watch?v=WC1kPtG8Iz8&amp;index=5&amp;t=0s&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6">every time</a> <a href="https://www.youtube.com/watch?v=LqjP7O9SxOM">I give a</a> <a href="https://www.infoq.com/presentations/unconscious-bias-machine-learning">talk about bias</a>. To which my answer is: No, <strong>our algorithms and products impact the world and are part of feedback loops</strong>. Consider an algorithm to predict crime and determine where to send police officers: sending more police to a particular neighhorhood is <strong>not just an effect, but also a cause</strong>. More police officers can lead to more arrests in a given neighborhood, which could cause the algorithm to send even more police to that neighborhood (a mechanism described in <a href="https://arxiv.org/abs/1706.09847">this paper</a> on runaway feedback loops).</p>
-<p>Bias is being encoded and <a href="https://www.wired.com/story/machines-taught-by-photos-learn-a-sexist-view-of-women/">even magnified</a> in a variety of applications: - software used to <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">decide prison sentences</a> that has twice as high a false positive rate for Black defendents as for white defendents - computer vision software from <a href="https://www.nytimes.com/2019/01/24/technology/amazon-facial-technology-study.html">Amazon</a>, <a href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">Microsoft, and IBM</a> performs significantly worse on people of color</p>
-<p>[Research by Joy Buolamwini and Timnit Gebru found that commercial computer vision software performed significantly worse on women with dark skin. Gendershades.org]{gendershades3.png){width=60%}</p>
+<p>Bias is being encoded and <a href="https://www.wired.com/story/machines-taught-by-photos-learn-a-sexist-view-of-women/">even magnified</a> in a variety of applications:</p>
+<ul>
+<li>software used to <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">decide prison sentences</a> that has twice as high a false positive rate for Black defendents as for white defendents</li>
+<li>computer vision software from <a href="https://www.nytimes.com/2019/01/24/technology/amazon-facial-technology-study.html">Amazon</a>, <a href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">Microsoft, and IBM</a> performs significantly worse on people of color</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gendershades3.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Research by Joy Buolamwini and Timnit Gebru found that commercial computer vision software performed significantly worse on women with dark skin. Gendershades.org</figcaption><p></p>
+</figure>
+</div>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=25nC0n9ERq4">Word embeddings</a>, which are a building block for language tools like Gmail’s SmartReply and Google Translate, generate useful analogies such as Rome:Italy :: Madrid:Spain, as well as <a href="https://www.technologyreview.com/s/602025/how-vector-space-mathematics-reveals-the-hidden-sexism-in-language/">biased analogies</a> such as man:computer programmer :: woman: homemaker.</li>
 <li>Machine learning used in recruiting software developed at Amazon <a href="https://www.theverge.com/2018/10/10/17958784/ai-recruiting-tool-bias-amazon-report">penalized applicants</a> who attended all-women’s colleges, as well as any resumes that contained the word “women’s.”</li>
