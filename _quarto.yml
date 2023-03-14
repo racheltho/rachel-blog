@@ -14,7 +14,7 @@ website:
   twitter-card:
     creator: "@math_rachel"
     site: "@math_rachel"
-    description: "a blog about science, data, ethics, & education"
+    description: "a blog about data, ethics, & immunology"
   navbar:
     right:
       - about.qmd

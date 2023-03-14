@@ -33,6 +33,7 @@ Observations of 5th grade teacher Sarah Wysocki's classroom yielded positive rev
 ![Headlines from the Verge and the Washington Post](no-accountability.jpg){width=60%}
 
 As I covered in a [previous post](https://www.fast.ai/posts/2018-08-07-hbr-bias-algorithms.html), people use outputs from algorithms differently than they use decisions made by humans:
+
 - Algorithms are more likely to be implemented with **no appeals process** in place.
 - Algorithms are often used **at scale**.
 - Algorithmic systems are **cheap**.
@@ -57,10 +58,11 @@ I don't bring this up for the primary purpose of pointing fingers or casting bla
 *But isn't algorithmic bias just a reflection of how the world is?* I get asked a variation of this question [every time](https://www.youtube.com/watch?v=WC1kPtG8Iz8&index=5&t=0s&list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6) [I give a](https://www.youtube.com/watch?v=LqjP7O9SxOM) [talk about bias](https://www.infoq.com/presentations/unconscious-bias-machine-learning).  To which my answer is: No, **our algorithms and products impact the world and are part of feedback loops**.  Consider an algorithm to predict crime and determine where to send police officers: sending more police to a particular neighhorhood is **not just an effect, but also a cause**.  More police officers can lead to more arrests in a given neighborhood, which could cause the algorithm to send even more police to that neighborhood (a mechanism described in [this paper](https://arxiv.org/abs/1706.09847) on runaway feedback loops).
 
 Bias is being encoded and [even magnified](https://www.wired.com/story/machines-taught-by-photos-learn-a-sexist-view-of-women/) in a variety of applications: 
+
 - software used to [decide prison sentences](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) that has twice as high a false positive rate for Black defendents as for white defendents
 - computer vision software from [Amazon](https://www.nytimes.com/2019/01/24/technology/amazon-facial-technology-study.html), [Microsoft, and IBM](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf) performs significantly worse on people of color
 
-![Research by Joy Buolamwini and Timnit Gebru found that commercial computer vision software performed significantly worse on women with dark skin. Gendershades.org]{gendershades3.png){width=60%}
+![Research by Joy Buolamwini and Timnit Gebru found that commercial computer vision software performed significantly worse on women with dark skin. Gendershades.org](gendershades3.png){width=60%}
 
 - [Word embeddings](https://www.youtube.com/watch?v=25nC0n9ERq4), which are a building block for language tools like Gmail's SmartReply and Google Translate, generate useful analogies such as Rome:Italy :: Madrid:Spain, as well as [biased analogies](https://www.technologyreview.com/s/602025/how-vector-space-mathematics-reveals-the-hidden-sexism-in-language/) such as man:computer programmer :: woman: homemaker.
 - Machine learning used in recruiting software developed at Amazon [penalized applicants](https://www.theverge.com/2018/10/10/17958784/ai-recruiting-tool-bias-amazon-report) who attended all-women’s colleges, as well as any resumes that contained the word "women's."

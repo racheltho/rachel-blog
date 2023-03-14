@@ -1,7 +1,7 @@
 ---
 title: "Viruses are weirder, worse, & more preventable than you realise"
 date: "2023-03-07"
-image: "/posts/2023-03-07-viruses1/chickenpox-rachel.jpg"
+image: "/posts/2023-03-07-viruses1/exosomes.png"
 description: "The suprising, devastating, long-term consequences of viruses"
 author: "Rachel Thomas"
 categories: [science]
