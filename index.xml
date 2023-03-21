@@ -15,7 +15,98 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Mon, 06 Mar 2023 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 20 Mar 2023 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Viruses: The Silent Triggers of Autoimmune and Neurodegenerative Diseases</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2023-03-22-viruses2/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>This is Part 2 in a series. Read <a href="https://rachel.fast.ai/posts/2023-03-07-viruses1/">Part 1 here</a>.</em></p>
+<p>Your previously healthy 1-year old develops Type 1 diabetes, a condition they will have for the rest of their life and that will require constant monitoring. Your partner has a stroke. Your parent shows early symptoms of Alzheimer’s disease. What do these seemingly disparate health events have in common? All can be triggered by viruses where the immediate infection seems mild.</p>
+<section id="a-life-changing-diagnosis" class="level2">
+<h2 class="anchored" data-anchor-id="a-life-changing-diagnosis">A Life-Changing Diagnosis</h2>
+<p><a href="https://raisingachildwithdiabetes.com/our-story/">When Maria’s 1-year old daughter</a> came down with a cold, it initially seemed like no big deal. However, her cough lingered, and in the coming months she was diagnosed with type 1 diabetes, a condition which can not be cured and which her daughter will have for the rest of her life. Maria was thrust into a stressful world of needing to constantly monitor her baby’s blood sugar, where either too much or too little insulin could kill her baby.</p>
+<p>In the wake of her cold, the baby’s immune system had mistakenly turned on her pancreas, permanently destroying the cells needed to generate insulin. Type 1 diabetes is not related to diet or lifestyle, and is far less predictable than the more famous type 2 diabetes. As <a href="https://raisingachildwithdiabetes.com/our-story/">Maria writes</a>, “<em>We can do the same thing every day… and all our efforts simply do not work. It’s a never-ending battle. Diabetes never takes a break and needs to be managed 24/7/365 days a year… If we give too much insulin, she can go into a coma, and if we do not give her sufficient insulin, she can go into DKA [a life-threatening condition].</em>”</p>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/T1-diabetes.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<p></p><figcaption class="figure-caption">In Type 1 Diabetes, the pancreas is incapable of producing sufficient insulin. Image: Scientific Animations, Creative Commons License</figcaption><p></p>
+</figure>
+</div>
+<p>Type 1 diabetes is often triggered by a viral infection. <a href="https://www.nature.com/articles/s41591-019-0667-0">One study</a> tracked viruses in stool samples from young children, month after month, and discovered that when kids have certain common childhood viruses for consecutive months, they are at much higher risk of having their immune systems develop autoimmunity against their own pancreas (a precursor to Type 1 diabetes).</p>
+</section>
+<section id="what-are-autoimmune-diseases-and-how-do-they-relate-to-viruses" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-autoimmune-diseases-and-how-do-they-relate-to-viruses">What are autoimmune diseases, and how do they relate to viruses?</h2>
+<p>Type 1 diabetes is just one of many, many diseases caused by our own immune systems gone awry. These are known as <em>autoimmune diseases</em>. The Greek prefix <em>auto</em> means <em>self</em>. A key role of the immune system is to be able to distinguish between what is foreign and what is self, and it is harmful when the immune system erroneously learns to attack self. At its best, the immune system is a beautiful and complex orchestra working together for our good. However, the immune system is a double-edged sword that can cause great harm when it goes awry.</p>
+<p>Despite impacting a wide range of body systems, all of the following examples are united in being autoimmune diseases:</p>
+<ul>
+<li>Crohn’s disease occurs when the immune system attacks the colon</li>
+<li>Rheumatoid arthritis occurs when the immune system attacks its own antibodies</li>
+<li>Multiple sclerosis occurs when the immune system attacks the protective coverings of neurons</li>
+<li>Lupus occurs when the immune system attacks our own DNA</li>
+<li>Hashimoto’s disease occurs when the immune system attacks the thyroid</li>
+<li>Psoriasis occurs when the immune system attacks skin cells</li>
+</ul>
+<p><br></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/autoimmune.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Autoimmune disease can impact the whole body. Image: Glover, Mishra and Singh; Creative Commons License</figcaption><p></p>
+</figure>
+</div>
+<p>There is still much that is unknown about the onset of autoimmune diseases, although in many cases, a viral infection can be the trigger (there are likely other factors involved too, including genetic predisposition). During an infection, our adaptive immune systems learn to recognize small patterns of molecules that indicate a pathogen or infected cell. Unfortunately, if these small patterns appear similar to elements of our own bodies, the body may continue attacking itself even once the acute infection is over.</p>
+</section>
+<section id="obstacles-in-research-and-treatment" class="level2">
+<h2 class="anchored" data-anchor-id="obstacles-in-research-and-treatment">Obstacles in research and treatment</h2>
+<p>Women are more likely to <a href="https://www.sciencedirect.com/science/article/pii/S0091302214000466">develop autoimmune diseases</a>, and there are numerous <a href="https://www.nature.com/articles/nri.2016.90">differences in women’s immune systems</a> compared to men. Like most diseases disproportionately impacting women or people of colour, autoimmune diseases have too often been neglected when it comes to funding and research, leaving a rudimentary understanding, inadequate treatments, and lots of open questions.</p>
+<p>Moreover, autoimmune diseases have often been treated in different silos, based on which body system they impact. Crohn’s disease is studied by gastroenterologists, psoriasis by dermatologists, and Hashimoto’s by endocrinologists. While there are reasons for this approach, it can also hinder research on deeper patterns amongst autoimmune disorders. Once someone develops one autoimmune disease, they are <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3150011/">significantly more likely</a> to develop additional ones, which is another reason why studying common underlying causes and mechanisms would be helpful.</p>
+<p>Autoimmune disorders are often treated with medications that suppress the immune system to keep it from attacking the patient’s own body. While these medications can be crucial in addressing symptoms, they come with the significant downside of inhibiting how the immune system responds to foreign invaders, making the patient vulnerable to infection.</p>
+</section>
+<section id="viruses-can-cause-neurodegenerative-diseases-too" class="level2">
+<h2 class="anchored" data-anchor-id="viruses-can-cause-neurodegenerative-diseases-too">Viruses can cause neurodegenerative diseases too</h2>
+<p>Diseases that cause cells in the brain or nervous system to lose function and eventually die are referred to as neurodegenerative diseases. Many are also autoimmune diseases. Multiple sclerosis is perhaps the best known disease that is firmly established as both neurodegenerative and autoimmune. In this disease, the immune system attacks the protective sheaths coating nervous cells in the spinal cord and brain. Evidence is growing that <a href="https://pubmed.ncbi.nlm.nih.gov/31507117/">ALS</a> (also known as Lou Gerig’s disease), <a href="https://pubmed.ncbi.nlm.nih.gov/33131704/">Parkinson’s disease</a> have autoimmune causes, and some researchers are asking if <a href="https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.12789">Alzheimer’s</a> is an autoimmune disease too.</p>
+<p>Common viruses increase the risk of developing a neurodegenerative disease, for up to 15 years after the viral infection. A <a href="https://pubmed.ncbi.nlm.nih.gov/36669485/">study drawing on datasets of 800,000 people</a> across Finland and the UK looked at how various viruses could increase likelihood of neurodegenerative diseases such as multiple sclerosis, ALS, Parkinson’s, Alzheimer’s and dementia, and found many significant links. For instance, six different groups of viruses (including flu and viral pneumonia) were linked to an increased risk of developing dementia. Viral encephalitis (a virus which in many cases causes only mild, flu-like symptoms) raised the risk of developing Alzheimer’s disease. These were just a few of the associations found.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/mri-alzheimers-dementia.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">MRIs of a brain with Alzheimer’s, with dementia, and a normal control, from Wikimedia</figcaption><p></p>
+</figure>
+</div>
+<p>For decades, research on Alzheimer’s Disease was dominated by a hypothesis that mostly turned out to be a dead-end. Funding and support was funnelled toward projects that failed (and in some cases, were based on fraudulent data), while other researchers (whose ideas are now being proven correct) <a href="https://theconversation.com/my-work-investigating-the-links-between-viruses-and-alzheimers-disease-was-dismissed-for-years-but-now-the-evidence-is-building-184201">faced hostility and extreme difficulty</a> obtaining grants. For decades, the idea of viruses being a cause of Alzheimer’s was considered absurd, with only a few lone researchers pursuing it in the face of pushback and ostracism, yet now <a href="https://www.theguardian.com/society/2023/feb/19/could-alzheimers-be-caused-by-an-infection">ever more research</a> is accumulating to <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8234998/">support this idea</a>.</p>
+<p>A core idea in Alzheimer’s research has <a href="https://pubmed.ncbi.nlm.nih.gov/30314800/">turned out to be backwards</a>: what was considered to be an intrinsically abnormal and useless protein (amyloid-beta) causing Alzheimer’s has turned out to be a part of our innate immune response, intended to protect the brain against infection. Amyloid-beta may be inadvertently causing harm, but it likely builds up as a protective reaction against a more fundamental root cause. <a href="https://pubmed.ncbi.nlm.nih.gov/29504537/">Amyloid-beta has positive, anti-microbial properties</a> for fighting off invaders. A <a href="https://pubmed.ncbi.nlm.nih.gov/29488144/">large study from Taiwan</a> found that HSV-1 infections increased the risk of developing dementia, but that treating these infections with antiviral medication lowered that risk.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/itzhaki.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">An article by Dr.&nbsp;Ruth Itzhaki, Oxford University’s Institute of Population Ageing</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="science-is-political" class="level2">
+<h2 class="anchored" data-anchor-id="science-is-political">Science is political</h2>
+<p>There have been many hurdles to pursuing the role of infection in contributing to Alzheimer’s: the siloed nature of science (virology and Alzheimer’s were seen as two very disparate areas); the failure of many to understand asymptomatic infection; and the political nature of medicine.</p>
+<p>Science does not just progress inevitably. Instead, <a href="https://rachel.fast.ai/posts/2021-10-12-medicine-political/">politics, biases, and even trends</a> all impact which ideas receive the opportunities, funding, and support for progress to be made. A reluctance over decades to adequately fund post-viral research, to explore links between viruses and neurodegenerative diseases, or to take autoimmune diseases (which disproportionately impact women) seriously, has left us knowing far less than we could. Treating autoimmune diseases all in separate silos has limited progress, as has treating neurodegenerative diseases siloed away from virology.</p>
+<p>In a <a href="https://rachel.fast.ai/posts/2021-10-12-medicine-political/">previous essay</a>, I wrote of the political nature of medicine, including several key case studies:</p>
+<ul>
+<li>Serious political battles and protests were needed to get AIDS taken seriously.</li>
+<li>An ongoing lack of funding for ME/CFS research, spanning decades, even though ME/CFS patients have the lowest quality of life of pretty much any illness. Commensurate to disease burden, NIH funding for ME/CFS is at only 7%, depression and asthma are at 100%, and diseases like cancer and HIV are closer to 1000%.</li>
+</ul>
+<p>Our understanding of the wide-ranging, surprising, and sometimes devastating impacts of viruses is growing everyday, with new scientific discoveries and connections being made. If we can accelerate support for such research, as well as work to reduce transmission of viruses, we could significantly improve human well-being.</p>
+<p><em>This is Part 2 in a 3-part series. Read <a href="https://rachel.fast.ai/posts/2023-03-07-viruses1/">Part 1 here</a> and stay tuned for Part 3.</em></p>
+
+
+</section>
+
+ ]]></description>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2023-03-22-viruses2/index.html</guid>
+  <pubDate>Mon, 20 Mar 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2023-03-21-viruses2/autoimmune.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Viruses are weirder, worse, &amp; more preventable than you realise</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -619,7 +710,12 @@
 <p>However, there is not some sort of clean break where bias was eliminated and all unknowns were solved. Black patients, <a href="https://pubmed.ncbi.nlm.nih.gov/26366984/">including children</a>, still receive <a href="https://www.scientificamerican.com/article/how-doctors-can-confront-racial-bias-in-medicine/">less pain medication</a> than white patients for the same symptoms. Women are still more likely to have their physical symptoms dismissed as psychogenic. Nearly half of women with autoimmune disorders report being <a href="https://psmag.com/social-justice/is-medicines-gender-bias-killing-young-women">labeled as “chronic complainers”</a> by their doctors in the 5 years (on average) they spend seeking a diagnosis. All this impacts what data is recorded in their charts, what symptoms are counted.</p>
 <p>Medical data are not objective truths. Like all data, the context is critical. <a href="https://bostonreview.net/science-nature/rachel-thomas-medicines-machine-learning-problem">It can be missing, biased, and incorrect</a>. It is filtered through the opinions of doctors. Even blood tests and imaging scans are filtered through the decisions of what tests to order, what types of scans to take, what accepted guidelines recommend, what technology currently exists. And the technology that exists depends on research and funding decisions stretching back decades, influenced by politics and cultural context.</p>
 <p>One may hope that in 10 years we will have clearer diagnostic tests for some illnesses which remain contested now, just as the ability to identify multiple sclerosis improved with better imaging. In the meantime, we should listen to patients and trust in their ability to explain their own experiences, even if science can’t fully understand them yet.</p>
-<p>Science does not just progress inevitably, independent of funding and politics and framing and biases. A self-fulfilling prophecy often occurs in which doctors: 1. label a new, poorly understood, multi-system disease as psychogenic, 2. use this as justification to not invest much funding into researching physiological origins, 3. and then point to the lack of evidence as a reason why the illness must be psychogenic.</p>
+<p>Science does not just progress inevitably, independent of funding and politics and framing and biases. A self-fulfilling prophecy often occurs in which doctors:</p>
+<ol type="1">
+<li>label a new, poorly understood, multi-system disease as psychogenic,</li>
+<li>use this as justification to not invest much funding into researching physiological origins,</li>
+<li>and then point to the lack of evidence as a reason why the illness must be psychogenic.</li>
+</ol>
 <p>This is largely the experience of ME/CFS patients over the last several decades. Myalgic encephalomyelitis (ME/CFS), involves dysfunction of the immune system, autonomic systems, and energy metabolism (including <a href="https://pubmed.ncbi.nlm.nih.gov/32041178/">mitochondrial dysfunction</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31277442/">hypoacetylation</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/30557887/">reduced oxygen uptake</a>, and <a href="https://portlandpress.com/clinsci/article-abstract/97/5/603/77282/Impaired-oxygen-delivery-to-muscle-in-chronic?redirectedFrom=fulltext">impaired oxygen delivery</a>). ME/CFS is <a href="https://content.iospress.com/articles/work/wor203173#ref019">more debilitating</a> than many chronic diseases, including chronic renal failure, lung cancer, stroke, and type-2 diabetes. It is estimated 25–29% of patients are homebound or bedbound. ME/CFS is often triggered by viral infections, so it is not surprising that we are seeing some <a href="https://www.frontiersin.org/articles/10.3389/fmicb.2021.698169/full">overlap between ME/CFS and long covid</a>. ME/CFS disproportionately impacts women, and a <a href="https://www.mdpi.com/1648-9144/57/10/1012/htm">now discredited 1970 paper</a> identified a major outbreak in 1958 amongst nurses at a British hospital as “epidemic hysteria”. This early narrative of ME/CFS as psychogenic has been difficult to shake. Even as evidence continues to accumulate of immune, metabolic, and autonomous system dysfunction, some doctors persist in believing that ME/CFS must be psychogenic. It has remained <a href="https://content.iospress.com/articles/work/wor203173#ref019">woefully underfunded</a>: from 2013-2017, NIH funding was only at 7.3% relative commensurate to its disease burden. Note that the <a href="https://content.iospress.com/articles/work/wor203173#ref019">below graph</a> is on a log scale: ME/CFS is at 7%, Depression and asthma are at 100% and diseases like cancer and HIV are closer to 1000%.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -1552,158 +1648,6 @@ Most critics of unjust bias aren’t anti-algorithm
   <guid>https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/index.html</guid>
   <pubDate>Mon, 06 Aug 2018 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/algorithm.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Google’s AutoML: Cutting Through the Hype</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2018-07-23-automl3/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>This is part 3 in a series. <a href="http://www.fast.ai/2018/07/12/auto-ml-1/">Part 1 is here</a> and <a href="http://www.fast.ai/2018/07/16/auto-ml2/">Part 2 is here</a>.</em></p>
-<p>To announce Google’s AutoML, Google CEO Sundar Pichai <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">wrote</a>, “Today, designing neural nets is extremely time intensive, and requires an expertise that limits its use to a smaller community of scientists and engineers. That’s why we’ve created an approach called AutoML, showing that it’s possible for neural nets to design neural nets. We hope AutoML will take an ability that a few PhDs have today and <strong>will make it possible in three to five years for hundreds of thousands of developers to design new neural nets for their particular needs</strong>.” (emphasis mine)</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2018-07-23-automl3/sundar_pichai.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Google CEO Sundar Pichai says that we all need to design our own neural nets</figcaption><p></p>
-</figure>
-</div>
-<p>When Google’s Head of AI, Jeff Dean, suggested that <strong>100x computational power could replace the need for machine learning expertise</strong>, computationally expensive neural architecture search was the only example he gave to illustrate this point. (<a href="https://www.youtube.com/watch?v=kSa3UObNS6o">around 23:50 in his TensorFlow DevSummit keynote</a>)</p>
-<p>This raises a number of questions: do hundreds of thousands of developers <strong>need</strong> to “design new neural nets for their particular needs” (to quote <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">Pichai’s vision</a>), or <strong>is there an effective way for neural nets to generalize to similar problems</strong>? Can large amounts of computational power really replace machine learning expertise?</p>
-<p>In evaluating Google’s claims, it’s valuable to keep in mind <strong>Google has a vested financial interest in convincing us that the key to effective use of deep learning is more computational power</strong>, because this is an area where they clearly beat the rest of us. If true, we may all need to purchase Google products. On its own, this doesn’t mean that Google’s claims are false, but it’s good be aware of what financial motivations could underlie their statements.</p>
-<p>In my previous posts, I shared an introduction to the <a href="http://www.fast.ai/2018/07/16/auto-ml2/#auto-ml">history of AutoML</a>, defined <a href="http://www.fast.ai/2018/07/16/auto-ml2/#nas">what neural architecture search is</a>, and <a href="http://www.fast.ai/2018/07/12/auto-ml-1/#complex">pointed out</a> that for <strong>many machine learning projects, designing/choosing an architecture is nowhere near the hardest, most time-consuming, or most painful part of the problem</strong>. In today’s post, I want to look specifically at Google’s AutoML, a product which has received a lot of media attention, and address the following:</p>
-<ul>
-<li>
-What is Google’s AutoML?
-</li>
-<li>
-What is transfer learning?
-</li>
-<li>
-Neural architecture search vs.&nbsp;transfer learning: two opposite approaches
-</li>
-<li>
-In need of more evidence
-</li>
-<li>
-Why all the hype about Google’s AutoML?
-</li>
-<li>
-How can we address the shortage of machine learning expertise?
-</li>
-</ul>
-<h2 id="goog" class="anchored">
-What is Google’s AutoML?
-</h2>
-<p>Although the field of <a href="https://www.automl.org/">AutoML</a> has been around for years (including <a href="http://www.ml4aad.org/automl/">open-source AutoML libraries</a>, <a href="https://www.ml4aad.org/workshops/">workshops</a>, <a href="https://www.ml4aad.org/automl/literature-on-neural-architecture-search/">research</a>, and <a href="http://automl.chalearn.org/">competitions</a>), in May 2017 Google co-opted the term <em>AutoML</em> for its <a href="http://www.fast.ai/2018/07/16/auto-ml2/#nas">neural architecture search</a>. In blog posts accompanying announcements made at the conference Google I/O, Google CEO <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">Sundar Pichai wrote</a>, <i>“That’s <b>why we’ve created an approach called AutoML</b>, showing that it’s possible for neural nets to design neural nets”</i> and Google AI researchers <a href="https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html">Barret Zoph and Quoc Le wrote</a> <i>“In our approach (<b>which we call”AutoML”</b>), a controller neural net can propose a “child” model architecture…“</i></p>
-<p>Google’s Cloud AutoML was <a href="https://techcrunch.com/2018/01/17/googles-automl-lets-you-train-custom-machine-learning-models-without-having-to-code/">announced in January 2018</a> as a suite of machine learning products. So far it consists of one publicly available product, <strong>AutoML Vision</strong>, an API that identifies or classifies objects in pictures. According to the <a href="https://cloud.google.com/automl/">product page</a>, Cloud AutoML Vision relies on two core techniques: <strong>transfer learning</strong> and <strong>neural architecture search</strong>. Since we’ve already explained <a href="http://www.fast.ai/2018/07/16/auto-ml2/#nas">neural architecture search</a>, let’s now take a look at transfer learning, and see how it relates to neural architecture search.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2018-07-23-automl3/automl-headlines.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Headlines from just a few of the many, many articles written about Google’s AutoML and Neural Architecture Search</figcaption><p></p>
-</figure>
-</div>
-<p><em>Note: Google Cloud AutoML also has a <a href="https://twitter.com/math_rachel/status/1014301136902283264">drag-and-drop ML product</a> that is still in alpha. I applied for access to it over 2 months ago, but I have not heard back from Google yet. I plan to write a post once it’s released.</em></p>
-<h2 id="transfer" class="anchored">
-What is transfer learning?
-</h2>
-<p><a href="http://nlp.fast.ai/#transfer"><strong>Transfer learning</strong></a> is a powerful technique that lets people with smaller datasets or less computational power achieve state-of-the-art results, by taking advantage of pre-trained models that have been trained on similar, larger data sets. Because the model learned via transfer learning doesn’t have to learn from scratch, it can generally reach higher accuracy with much less data and computation time than models that don’t use transfer learning.</p>
-<p>Transfer learning is a core technique that we use throughout our free <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> course– and that our students have been applying in production in everything from their own startups to Fortune 500 companies. Although transfer learning seems to be considered “less sexy” than neural architecture search, it is being used to achieve ground-breaking academic results, such as in Jeremy Howard and Sebastian Ruder’s <a href="http://nlp.fast.ai/">application of transfer learning to NLP</a>, which achieved state-of-the-art classification on 6 datasets and is serving as a basis for <a href="https://blog.openai.com/language-unsupervised/">further research in this area</a> at OpenAI.</p>
-<h2 id="vs" class="anchored">
-Neural architecture search vs.&nbsp;transfer learning: two opposing approaches
-</h2>
-<p>The underlying idea of transfer learning is that neural net architectures will generalize for similar types of problems: for example, that many images have underlying features (such as corners, circles, dog faces, or wheels) that show up in a variety of different types of images. In contrast, <strong>the underlying idea of promoting neural architecture search for every problem is the opposite</strong>: that each dataset has a unique, highly specialized architecture it will perform best with.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2018-07-23-automl3/features.png" class="img-fluid figure-img" style="width:90.0%"></p>
-<p></p><figcaption class="figure-caption">Examples from Matthew Zeiler and Rob Fergus of 4 features learned by image classifiers: corners, circles, dog faces, and wheels</figcaption><p></p>
-</figure>
-</div>
-<p>When neural architecture search discovers a new architecture, you must learn weights for that architecture from scratch, while with transfer learning, you begin with existing weights from a pre-trained model. In this sense, you <strong>you can’t use</strong> neural architecture search and transfer learning on the same problem: if you’re learning a new architecture, you would need to train new weights for it; whereas if you are using transfer learning on a pretrained model, you can’t make substantial changes to the architecture.</p>
-<p>Of course, you can apply transfer learning to an architecture learned through neural architecture search (which I think is a good idea!). This requires only that a few researchers use neural architecture search and open-source the models that they find. <strong>It is not necessary for all machine learning practitioners to be using neural architecture search themselves on all problems</strong> when they can instead use transfer learning. However, <a href="https://www.youtube.com/watch?v=kSa3UObNS6o">Jeff Dean’s keynote</a>, <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">Sundar Pichai’s blog post</a>, Google Cloud’s promotional materials, and the media coverage all suggest the opposite: that everybody needs to be able to use neural architecture search directly.</p>
-<h2 id="good" class="anchored">
-What Neural Architecture Search is good for
-</h2>
-<p>Neural architecture search is good for finding new architectures! Google’s <a href="https://arxiv.org/pdf/1802.01548.pdf">AmoebaNet</a> was learned via neural architecture search, and (with the inclusion of <a href="https://www.fast.ai/posts/2018-04-30-dawnbench-fastai.html">fast.ai advances</a> such as an aggressive learning schedule and changing the image size as training progresses) is now the <strong>cheapest way to train ImageNet on a single machine</strong>!</p>
-<p>AmoebaNet was not designed with a reward function that involved the ability to scale, and so it didn’t scale as well as ResNet to multiple machines, but a neural net that scales well could potentially be learned in the future, optimized for different qualities.</p>
-<h2 id="evidence" class="anchored">
-In need of more evidence
-</h2>
-<p>We haven’t seen evidence that every dataset would be best modeled with its own custom model, as opposed to instead fine-tuning an existing model. Since neural architecture search requires a larger training set, this would particularly be an issue for smaller data sets. Even some of Google’s own research uses transferable techniques instead of finding a new architecture for each data set, such as <a href="https://arxiv.org/abs/1707.07012">NASNet</a> (<a href="https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html">blog post here</a>), which learned an architectural building block on Cifar10 and then used that building block to create an architecture for ImageNet. I don’t know of any widely-entered machine learning competitions that have been won using neural architectures search yet.</p>
-<p>Furthermore, we don’t know that the mega-computationally expensive approach to neural architecture search that Google touts is the superior approach. For instance, more recent papers such as <a href="https://arxiv.org/pdf/1802.03268.pdf">Efficient Neural Architecture Search (ENAS)</a> and<br>
-<a href="https://www.groundai.com/project/darts-differentiable-architecture-search/">Differentiable architecture search (DARTS)</a> propose significantly more efficient algorithms. <strong>DARTS takes just 4 GPU days</strong>, compared to <strong>1800 GPU days for NASNet</strong> and <strong>3150 GPU days for AmoebaNet</strong> (all learned to the same accuracy on Cifar-10). Jeff Dean is an author on the ENAS paper, which proposed a technique that is 1000x <strong>less</strong> computationally expensive, which seems inconsistent with his emphasis at the TF DevSummit one month later on using approaches that are 100x <strong>more</strong> computationally expensive.</p>
-<h2 id="hype" class="anchored">
-Then why all the hype about Google’s AutoML?
-</h2>
-<p>Given the above limitations, why has Google AutoML’s hype been so disproportionate to its proven usefulness (at least so far)? I think there are a few explanations:</p>
-<ol type="1">
-<li><p>Google’s AutoML highlights some of the <strong>dangers of having an academic research lab embedded in a for-profit corporation</strong>. There is a temptation to try to build products around interesting academic research, without assessing if they fulfill an actual need. This is also the story of many AI start-ups, such as MetaMind or Geometric Intelligence, that end up as acquihires without ever having produced a product. My <a href="https://www.fast.ai/posts/2018-01-08-startups.html">advice for startup founders</a> is to avoid productionizing your PhD thesis and to avoid hiring only academic researchers.</p></li>
-<li><p><strong>Google excels at marketing</strong>. Artificial intelligence is seen as an inaccessible and intimidating field by many outsiders, who don’t feel that they have a way to evaluate claims, particularly from lionized companies like Google. Many journalists fall prey to this as well, and uncritically channel Google’s hype into glowing articles. I periodically talk to people that do not work in machine learning, yet are excited about various Google ML products that they’ve never used and can’t explain anything about.</p>
-<p>One example of Google’s misleading coverage of its own achievements occurred when <a href="https://ai.googleblog.com/2017/12/deepvariant-highly-accurate-genomes.html">Google AI researchers released</a> “a deep learning technology to reconstruct the true human genome”, compared their own work to Nobel prize-winning discoveries (the hubris!), and the story was picked up <a href="https://www.wired.com/story/google-is-giving-away-ai-that-can-build-your-genome-sequence/">by Wired</a>. However, Steven Salzberg, a distinguished professor of Biomedical Engineering, Computer Science, and Biostatistics at Johns Hopkins University <a href="https://www.forbes.com/sites/stevensalzberg/2017/12/11/no-googles-new-ai-cant-build-your-genome-sequence/#6d91bdd57747">debunked Google’s post</a>. Salzberg <a href="https://www.forbes.com/sites/stevensalzberg/2017/12/11/no-googles-new-ai-cant-build-your-genome-sequence/#6d91bdd57747">pointed out</a> that the research <b>didn’t actually reconstruct the human genome</b> and was “little more than an incremental improvement over existing software, and it might be even less than that.” A number of other <a href="https://twitter.com/math_rachel/status/940450068796022784">genomics researchers chimed in to agree</a> with Salzberg.</p>
-<p>There is some great work happening at Google, but it would be easier to appreciate if we didn’t have to sift through so much misleading hype to figure out what is legitimate.</p>
-<center>
-<blockquote class="twitter-tweet blockquote" data-lang="en">
-<p lang="en" dir="ltr">
-</p><p>Google’s DeepVariant “is little more than an incremental improvement over existing software, and it might be even less than that.” <a href="https://twitter.com/StevenSalzberg1?ref_src=twsrc%5Etfw"><span class="citation" data-cites="StevenSalzberg1">@StevenSalzberg1</span></a> <br><br>What do others genomics researchers think?<a href="https://t.co/vaAECQhvSi">https://t.co/vaAECQhvSi</a></p>
-<p></p>
-<p>— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/940450068796022784?ref_src=twsrc%5Etfw">December 12, 2017</a></p>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center></li>
-<li><p><strong>Google has a vested interest in convincing us that the key to effective use of deep learning is more computational power</strong>, because this is an area where they clearly beat the rest of us. AutoML is often very computationally expensive, such as in the examples of Google using 450 K40 GPUs for 7 days (the equivalent of 3150 GPU days) to learn AmoebaNet.</p>
-<p>While <b>engineers and the media often drool over bare-metal power and anything bigger</b>, history has shown that innovation is often birthed instead by constraint and creativity. Google works on the biggest data possible using the most expensive computers possible; how well can this really <b>generalize to the problems that the rest of us face</b> living in a constrained world of limited resources?</p>
-<p>Innovation comes from doing things differently, not from doing things bigger. The recent <a href="https://www.fast.ai/posts/2018-04-30-dawnbench-fastai.html">success of fast.ai</a> in the Stanford DAWNBench competition is one example of this.</p></li>
-</ol>
-<center>
-<blockquote class="twitter-tweet blockquote" data-lang="en">
-<p lang="en" dir="ltr">
-Innovation come from doings things differently, not doing things bigger. <a href="https://twitter.com/jeremyphoward?ref_src=twsrc%5Etfw"><span class="citation" data-cites="jeremyphoward">@jeremyphoward</span></a> <a href="https://t.co/3TJYs8OCbr">https://t.co/3TJYs8OCbr</a> <a href="https://t.co/I55a6gT1OF">pic.twitter.com/I55a6gT1OF</a>
-</p>
-— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/991726810000850944?ref_src=twsrc%5Etfw">May 2, 2018</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center>
-<h2 id="shortage" class="anchored">
-How can we address the shortage of machine learning expertise?
-</h2>
-<p>To return to the issue that Jeff Dean raised in his <a href="https://www.youtube.com/watch?v=kSa3UObNS6o">TensorFlow DevSummit keynote</a> about the global shortage of machine learning practitioners, a different approach is possible. We can remove the biggest obstacles to using deep learning in several ways by:</p>
-<ol type="1">
-<li>making deep learning easier to use</li>
-<li>debunking myths about what it takes <a href="https://www.fast.ai/posts/2017-11-16-what-you-need.html">to do deep learning</a></li>
-<li>increasing access for people that lack the money or credit cards needed to use a cloud GPU</li>
-</ol>
-<h3 id="easier" class="anchored">
-Making Deep Learning Easier to Use
-</h3>
-<p>Research to make deep learning easier to use has a huge impact, making it faster and simpler to train better networks. Examples of exciting discoveries that have now become standard practice are:</p>
-<ul>
-<li><strong>Dropout</strong> allows training on smaller datasets without over-fitting.</li>
-<li><strong>Batch normalization</strong> allows for faster training.</li>
-<li><strong>Rectified linear units</strong> help avoid gradient explosions.</li>
-</ul>
-<p>Newer research to improve ease of use includes: - The <a href="https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0">learning rate finder</a> makes the training process more robust. - <a href="http://www.fast.ai/2018/07/02/adam-weight-decay/">Super convergence</a> speeds up training, requiring fewer computational resources. - <a href="http://course.fast.ai/lessons/lesson8.html">“Custom heads”</a> for existing architectures (e.g.&nbsp;modifying ResNet, which was initially designed for classification, so that it can be used to find bounding boxes or perform style transfer) allow for easier architecture reuse across a range of problems.</p>
-<p>None of the above discoveries involve bare-metal power; instead, all of them were creative ideas of ways to do things differently.</p>
-<h3 id="myths" class="anchored">
-Address Myths About What it Takes to Do Deep Learning
-</h3>
-<p>Another obstacle is the many myths that cause people to believe that deep learning isn’t for them: falsely believing that their data is too small, that they don’t have the right education or background, or that their computers aren’t big enough. One such myth says that only machine learning PhDs are capable of using deep learning, and many companies that can’t afford to hire expensive experts don’t even bother trying. However, it’s not only possible for companies to <a href="https://www.fast.ai/posts/2016-11-17-not-all-the-same.html">train the employees</a> they already have to become machine learning experts, it’s even preferable, because your current employees already have domain expertise for the area you work in!</p>
-<p>For the vast majority of people I talk with, the <a href="https://www.fast.ai/posts/2017-11-16-what-you-need.html">barriers to entry</a> for deep learning are far <a href="https://www.technologyreview.com/video/610690/accessible-ai-expanding-the-reach-of-intelligent-solutions/">lower than they expected</a>: one year of coding experience and access to a GPU.</p>
-<h3 id="colab" class="anchored">
-Increasing Access: Google Colab Notebooks
-</h3>
-<p>Although the cost of cloud GPUs (around 50 cents per hour) are within the budgets of many of us, I’m periodically contacted by students from around the world that can’t afford <strong>any GPU use</strong> at all. In some countries, rules about banking and credit cards can make it difficult for students to use services like AWS, even when they have the money. <a href="https://colab.research.google.com/notebooks/welcome.ipynb">Google Colab notebooks</a> are a solution! Colab notebooks provide a Jupyter notebook environment that requires no setup to use, runs entirely in the cloud, and gives users access to a free GPU (although long-running GPU use is not allowed). They can also be used to create documentation that contains working code samples running in an interactive environment. Google colab notebooks will do much more to democratize deep learning than Google’s AutoML will; perhaps this would be a better target for Google’s marketing machine in the future.</p>
-<p><strong>If you haven’t already, check out Part 1: <a href="http://www.fast.ai/2018/07/12/auto-ml-1/">What is it that machine learning practitioners do?</a> and Part 2: <a href="http://www.fast.ai/2018/07/16/auto-ml2/">An Opinionated Introduction to AutoML Neural Architecture Search</a> of this series.</strong></p>
-
-
-
- ]]></description>
-  <category>technical</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2018-07-23-automl3/index.html</guid>
-  <pubDate>Sun, 22 Jul 2018 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2018-07-23-automl3/sundar_pichai.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
