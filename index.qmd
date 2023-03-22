@@ -1,5 +1,5 @@
 ---
-title: "science, data ethics, education"
+title: " a blog about data, ethics, & immunology"
 listing:
   contents: posts
   sort: "date desc"

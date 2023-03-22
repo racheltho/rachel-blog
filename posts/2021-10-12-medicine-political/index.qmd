@@ -1,7 +1,7 @@
 ---
 title: "Medicine is Political"
 date: "2021-10-12"
-image: "actup-square.jpg"
+image: "/posts/2021-10-12-medicine-political/actup-square.jpg"
 author: "Rachel Thomas"
 toc: true
 description: "From covid-19 to HIV research to the long history of wrongly assuming women’s illnesses are psychosomatic, we have seen again and again that medicine, like all science, is political."
@@ -29,6 +29,7 @@ Medical data are not objective truths. Like all data, the context is critical. [
 One may hope that in 10 years we will have clearer diagnostic tests for some illnesses which remain contested now, just as the ability to identify multiple sclerosis improved with better imaging. In the meantime, we should listen to patients and trust in their ability to explain their own experiences, even if science can’t fully understand them yet.
 
 Science does not just progress inevitably, independent of funding and politics and framing and biases. A self-fulfilling prophecy often occurs in which doctors:
+
 1. label a new, poorly understood, multi-system disease as psychogenic,
 2. use this as justification to not invest much funding into researching physiological origins, 
 3. and then point to the lack of evidence as a reason why the illness must be psychogenic. 
