@@ -7,14 +7,14 @@ project:
 website:
   title: "Rachel Thomas, PhD"
   site-url: https://rachel.fast.ai
-  description: "a blog about data, ethics, & immunology"
+  description: "an AI researcher going back to school for immunology"
   image: "/images/thomas-card.jpg"
   open-graph:
-    description: "a blog about data, ethics, & immunology"
+    description: "an AI researcher going back to school for immunology"
   twitter-card:
     creator: "@math_rachel"
     site: "@math_rachel"
-    description: "a blog about data, ethics, & immunology"
+    description: "an AI researcher going back to school for immunology"
   navbar:
     right:
       - about.qmd

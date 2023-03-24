@@ -1,5 +1,5 @@
 ---
-title: " a blog about data, ethics, & immunology"
+title: " an AI researcher going back to school for immunology"
 listing:
   contents: posts
   sort: "date desc"
