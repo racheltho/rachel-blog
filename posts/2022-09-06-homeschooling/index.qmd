@@ -15,6 +15,7 @@ My husband Jeremy and I never intended to homeschool, and yet we have now, unexp
 ## Our unplanned introduction to homeschooling
 
 For the first year of the pandemic, most schools in California, where we lived at the time, were closed. Like countless other families, we were unexpectedly thrust into the world of virtual-school and home-school. We ended up participating in an [innovative online program](https://www.modulo.app/) that did NOT try to replicate in-person school. A few key differences:
+
 - Each child could **work at their own pace**, largely through playing educational games and apps that adapted to where they were. There was no particular endpoint that the kids needed to get to at the end of the semester.
 - Group video calls were **limited in size** to no more than 6 kids (and often smaller), so kids got lots of personal interaction with their tutors and each other.  Even as an adult, I find video calls larger than 6 people overwhelming.
 - **Regular movement breaks**, where the kids had jumping jack competitions, did [Cosmic Kids yoga videos](https://www.youtube.com/c/CosmicKidsYoga), held dance parties, and ran around the house for scavenger hunts.
@@ -38,6 +39,7 @@ Over the summer holidays (Dec 2021-Jan 2022), our state pivoted from zero covid 
 Homeschooled kids typically score [15 to 30 percentile points](https://www.nheri.org/research-facts-on-homeschooling/) above public-school students on standardised academic achievement tests, and [87% of studies on social development](https://www.nheri.org/research-facts-on-homeschooling/) “showed clearly positive outcomes for the homeschooled compared to those in conventional schools”. However, it is understandable that many children had negative experiences with virtual learning in the past 2 years, given that programs were often hastily thrown together with inadequate resources and inappropriately structured to try to mimic in-person school, against the stressful backdrop of a global pandemic. Many parents faced the impossible task of simultaneously needing to work full-time and help their children full-time (and many other parents did not even have the option to stay home). Every family is different, and virtual learning or homeschooling will not suit everyone. There are children who need in-person services only offered within schools; parents whose work constraints don’t allow for it; and kids who thrive being with tons of other kids.
 
 Despite the difficulty of the pandemic, there are a variety of families who found that virtual or homeschooling was better for their particular kids. Some parents have shared about children with [ADHD who found in-person school too distracting; children who were facing bullying or violence at school; kids who couldn’t get enough sleep on a traditional school schedule](https://www.nytimes.com/2020/08/10/opinion/coronavirus-school-closures.html); [Black and Latino families whose cultural heritages were not being reflected in curriculums](https://www.wired.com/story/pandemic-homeschoolers-who-are-not-going-back/). I enjoyed these article featuring a few such families:
+
 - [What if Some Kids Are Better Off at Home? | The New York Times](https://www.nytimes.com/2020/08/10/opinion/coronavirus-school-closures.html)
 *For parents like me, the pandemic has come with a revelation: For our children, school was torture.*
 - [They Rage-Quit the School System—and They're Not Going Back | WIRED](https://www.wired.com/story/pandemic-homeschoolers-who-are-not-going-back/)
@@ -56,6 +58,7 @@ I believe that high-quality, equitable, and safe public education is important f
 ## Related Posts
 
 A few other posts that you may be interested in, related to my views on education and teaching:
+
 - [There's No Such Thing as Not A Math Person](https://www.fast.ai/2022/03/15/math-person/): based on a webinar I gave to parents addressing cultural myths about math and how to support your kids in their math education, even if you don't see yourself as a "math person"
 - [The Qualities of a Good Education](https://www.fast.ai/2016/10/08/teaching-philosophy/): common pitfalls in traditional technical education and ideas towards doing better
 - [What You Need to Know Before Considering a PhD](https://www.fast.ai/2018/08/27/grad-school/): includes a reflection on how my own success in traditional academic environments was actually a weakness, because I'd learned how to solve problems I was given, but not how to how to find and scope interesting problems on my own
