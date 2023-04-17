@@ -18,11 +18,11 @@ about:
 
 MSc Immunology student and cofounder of fast.ai
 
-Past: professor & director of USF Center Applied Data Ethics, data scientist, wrote several book chapters on data ethics, one of Forbes 20 Incredible Women in AI, PhD in mathematics
+Past: professor & director of University of San Francisco Center for Applied Data Ethics, data scientist, one of Forbes 20 Incredible Women in AI, early engineer at Uber, PhD in mathematics from Duke University
 
 Interests: <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a> 
 
-Location: Queensland, Australia
+Current Location: Queensland, Australia
 
 <h3 id="mathbio">Mathematical Biology and AI in Medicine</h3>
 
