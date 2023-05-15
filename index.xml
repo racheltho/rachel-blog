@@ -15,7 +15,160 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Tue, 21 Mar 2023 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 May 2023 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>AI and Power: The Ethical Challenges of Automation, Centralization, and Scale</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Friends with no previous interest in AI ethics have begun asking me questions in the wake of the release of ChatGPT4, Bard, and Bing Chat. This new generation of large language models <a href="https://www.nytimes.com/2022/12/10/technology/ai-chat-bot-chatgpt.html">has made headlines</a> and sparked widespread debate. To consider the risks posed by new AI applications, it is useful to first understand several underlying concepts. <a href="https://rachel.fast.ai/about.html">I spent years</a> researching the mechanisms by which algorithmic systems can cause harm, and in late 2021, I gave a 20-minute talk on what I consider key ideas at the heart of AI ethics. With the advent of the newest generation of language models, these concepts are more relevant than ever.</p>
+<p>Over the past decade, topics such as <em>explainability</em> (having computers generate an explanation of why they compute the outputs they do) and <em>fairness/bias</em> (addressing when algorithms have worse accuracy on some groups of people than others) have gained more attention within the field of AI and in the media. Some computer scientists and journalists have stopped there: assuming that a computer program that can explain the logic behind its decision making, or a program that has the same accuracy on light-skinned men as on dark-skinned women, must now be ethical. While these principles are important, on their own they are not enough to address nor prevent harms of AI systems.</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/spHB7IEFXbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+</iframe>
+</center>
+<p>Below is an edited transcript of this talk.</p>
+<section id="actionable-recourse" class="level2">
+<h2 class="anchored" data-anchor-id="actionable-recourse">Actionable Recourse</h2>
+<p><em>Explainability</em> on its own is insufficient. Consider an algorithmic system that is making decisions about whether or not someone should get a loan. Often a question will be “why was my loan denied?”, but really the underlying question is “what can I change about my situation to get a loan in the future?”</p>
+<p>An explanation should be <em>actionable</em>. For example, it’s not okay to deny a loan because of ethnicity. That’s discrimination and it would not make for a satisfying explanation. For decisions impacting people’s lives, there also needs to be a mechanism for <em>recourse</em>, so that decisions can be changed. This is <em>actionable recourse</em>, as <a href="https://arxiv.org/abs/1809.06514">described by Berk Ustun</a>.</p>
+<p>This underlying idea of actionable recourse shows up in many applications. There is an example I return to often, since it’s a pattern that we see across many countries. In the USA there is an algorithm to determine poor people’s health care benefits. When it was implemented in one state there was a <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">bug in the code that incorrectly cut care</a> for people with cerebral palsy. Tammy Dobbs was one of the many people that lost care due to a software bug. She needed this care for very basic life functions: to help her get out of bed in the morning, to get her breakfast, and so on. She asked for an explanation and they didn’t give her one; they just said this is what the algorithm determined. At the root, what she needed was not just an explanation, but a mechanism for recourse to get the decision changed. Eventually the error was revealed through a lengthy court case, but that is a terrible setup.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/cuts-healthcare2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">When an algorithm cuts your health care</figcaption><p></p>
+</figure>
+</div>
+<p>This illustrates a common issue that shows up again and again: <strong>automated systems are often implemented with no way to identify and address mistakes</strong>.</p>
+<p>There are a few reasons why there is no mechanism for catching mistakes. Often automation is being used as a cost cutting measure and having robust error checking in place and ways to surface mistakes would cost more. There can also be biases of people mistakenly believing that computers are perfectly accurate.</p>
+<p><a href="https://www.hrw.org/news/2021/11/10/how-eus-flawed-artificial-intelligence-regulation-endangers-social-safety-net">Human Rights Watch put out a report</a> on automated system use in the EU for social benefits. Country after country had alarming examples where there were errors, yet no clear way to identify, much less address, them. There was a case in France where an algorithm to determine food benefits made errors in at least 60,000 cases. One woman said her case manager even agreed this was a bug and that she deserved to receive benefits, but the case manager didn’t have the power to reinstate them!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/hrw-eu.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Human Rights Watch report</figcaption><p></p>
+</figure>
+</div>
+<p>Another domain to consider is content moderation. The <a href="https://santaclaraprinciples.org/">Santa Clara Principles for content moderation</a> were developed by a group of ethicists, although these principles are not observed by the major platforms. I want to share Principle 3, because I love the wording, which is that companies should provide a <em>meaningful opportunity for timely appeal</em>. I really like this idea of appeal being <em>meaningful</em> and <em>timely</em>. I think this is relevant far, far beyond content moderation. Too often, even when there is a way to try to report a mistake, you just get an automated response that clearly hasn’t been read or you have to wait months for an answer. It is important that appeals are not just available, but also that they are meaningful and timely.</p>
+</section>
+<section id="contestability" class="level2">
+<h2 class="anchored" data-anchor-id="contestability">Contestability</h2>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3311957.3359435"><em>Contestability</em></a> is the idea of building an algorithmic system to include mechanisms for questioning and disagreeing with results as part of the system, rather than as an external add-on. Too often we build computational systems assuming okay this is going to work great, and then when there are errors, we tack on something extra at the end. I found this provocative to think about how we <strong>include disagreement into the core of the system</strong>.</p>
+<p>I had considered this from a slightly different angle in my work with fast.ai, where we have a concept of what we call <em>augmented machine learning</em>. This is in contrast to auto machine learning, which is often about automating a process end to end. With <a href="https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml">augmented machine learning</a> we really wanted to think about what are the things that humans are really good at and how can we take advantage of human strengths as opposed to simply trying to automate everything and then being left with weird gaps of stuff that computers are not doing well. How can humans and computers best work together? This is important to keep in mind with system design.</p>
+</section>
+<section id="fairness-and-bias" class="level2">
+<h2 class="anchored" data-anchor-id="fairness-and-bias">Fairness and Bias</h2>
+<p>It is important to consider fairness and bias, but that alone is insufficient. I imagine many of you are familiar with the <a href="http://gendershades.org/overview.html">Gender Shades research</a> on facial recognition by Joy Boulamwini, Timnit Gebru, and Deborah Raji. They evaluated commercial computer vision products that had been released from a number of big name companies including Microsoft, IBM, and <a href="https://www.nytimes.com/2019/01/24/technology/amazon-facial-technology-study.html">Amazon</a>. They found that the products performed worse on women than on men and worse on people with dark skin than on people with light skin, leading to terrible results for dark-skinned women. For instance, IBM’s product had 99.7% accuracy on light skinned men, but just 65% accuracy on dark-skinned women. That is a huge discrepancy in a product that had been commercially released. This research was ground-breaking in bringing attention to a pernicious issue.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/gendershades.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<p></p><figcaption class="figure-caption">Results from one of the GenderShades studies</figcaption><p></p>
+</figure>
+</div>
+<p>Some people have reacted with a superficial response, which is not consistent what the researchers wrote, concluding that the solution is solely to get more pictures of dark-skinned women and then call it a day. While issues of representation in underlying training datasets need to be addressed, this is only one part of the problem. We have to look at how these systems are used, which poses many other significant harms.</p>
+</section>
+<section id="harmful-if-it-doesnt-work-harmful-if-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="harmful-if-it-doesnt-work-harmful-if-it-works">Harmful if it doesn’t work; Harmful if it works</h2>
+<p>In several USA cities, <a href="https://www.nbcmiami.com/investigations/miami-police-used-facial-recognition-technology-in-protesters-arrest/2278848/">police have</a> used <a href="https://www.theverge.com/2020/8/18/21373316/nypd-facial-recognition-black-lives-matter-activist-derrick-ingram">facial recognition</a> to <a href="https://www.theverge.com/2016/10/11/13243890/facebook-twitter-instagram-police-surveillance-geofeedia-api">identify Black people</a> protesting police racism and police murders of unarmed civilians. There’s a huge power issue when you look at this type of use of technology. I believe this is unethical whether or not it works. It is certainly terrible to misidentify people and arrest the wrong person, but it’s a threat to civil rights to identify protesters.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/police-facial-rec.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Headlines about police use of facial recognition to identify protesters in Miami, NYC, and Baltimore</figcaption><p></p>
+</figure>
+</div>
+<p><a href="https://www.nytimes.com/2019/11/19/technology/artificial-intelligence-bias.html">Dr.&nbsp;Timnit Gebru wrote</a>, <em>“A lot of times, people are talking about bias in the sense of equalizing performance across groups. They’re not thinking about the underlying foundation, whether a task should exist in the first place, who creates it, who will deploy it on which population, who owns the data, and how is it used?”</em> These are all crucial questions to ask. They are questions of power. Yes, you should check the error rates on different subgroups, but that alone is insufficient, and doesn’t address questions of power.</p>
+<p>While the policing examples are from the USA, this is a pattern throughout history and throughout the world. <a href="https://digitalrepository.unm.edu/nmlr/vol50/iss3/2/">Professor Alvaro Bedoya wrote</a>, <em>“It is a pattern throughout history that surveillance is used against those considered ‘less than’, against the poor man, the person of color, the immigrant, the heretic. It is used to try to stop marginalized people from achieving power.”</em> The history of surveillance as a weapon used against the marginalised stretches back centuries and predates computers, but <strong>AI has now turbocharged this dynamic</strong>.</p>
+</section>
+<section id="operating-at-scale" class="level2">
+<h2 class="anchored" data-anchor-id="operating-at-scale">Operating at scale</h2>
+<p>Robodebt was a program where the Australian government created unlawful debts for hundreds of thousands of people through an automated system. People would be notified that they had been overpaid on welfare (often, this was false, but contesting it required documentation most people didn’t have) and that they now owed the government significant amounts of money. This destroyed many lives, even driving some <a href="https://www.theguardian.com/australia-news/2023/feb/20/platitudes-and-false-words-mother-of-robodebt-victim-who-took-own-life-tells-inquiry-of-government-stonewalling">victims to suicide</a>. A <a href="https://www.theguardian.com/australia-news/2020/may/29/robodebt-government-to-repay-470000-unlawful-centrelink-debts-worth-721m">detail that struck me</a> is that the number of debts issued went from 20,000 <em>per year</em>, back when it was a more manual process, to 20,000 <em>per week</em> with automation. That is a 50x scale up! <strong>Automation was used to drastically scale putting poor people into debt</strong>. This is another disturbing pattern in machine learning.</p>
+</section>
+<section id="centralizing-power" class="level2">
+<h2 class="anchored" data-anchor-id="centralizing-power">Centralizing Power</h2>
+<p>Machine learning often has the effect of centralizing power. It can be implemented with no system for recourse and no way to identify mistakes, as we saw earlier with people whose <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">healthcare was wrongly cut due to a bug</a>. It can be used cheaply at massive scale, as shown with Robodebt. It can also replicate identical biases or errors at scale.</p>
+<p>Often when I teach about how automated systems can cause harm, <a href="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/">people will point out</a> how humans make mistakes and are biased too. However, there are key differences in automated systems. It is not just plug-and-play interchangeable when you switch from a human decision maker to an automated decision maker.</p>
+<p>Automated systems can also be used to evade responsibility. This is true of bureaucracy in general. While in non-automated bureaucracies you also get a passing of the buck (“I was just following orders” or ”it’s this other person’s fault”); however, as dana boyd has pointed out, <a href="https://www.youtube.com/watch?v=NTl0yyPqf3E">automated systems are often being used to extend bureaucracy</a> (as explained by danah boyd), adding additional places to deflect responsibility.</p>
+<p>In the example health care software bug example that I shared, a journalist interviewed the creator of that algorithm. He is earning royalties through a private company, and he said it’s not the company’s responsibility to offer an explanation. He blamed policymakers for the errors. The policymakers could blame the particular people that implemented this software. Everyone can point to somebody else or even to the software itself. Systems where nobody takes responsibility do not lead to good outcomes.</p>
+</section>
+<section id="feedback-loops" class="level2">
+<h2 class="anchored" data-anchor-id="feedback-loops">Feedback loops</h2>
+<p>Feedback loops occur when you create the outcome that you were trying to predict. Data can become tainted from the output of the model. Furthermore, machine learning models can amplify bias, not just encode it. There have been <a href="https://arxiv.org/abs/1901.09451">multiple papers</a> showing that if <a href="https://www.wired.com/story/machines-taught-by-photos-learn-a-sexist-view-of-women/">you start</a> with <a href="https://arxiv.org/abs/1706.09847">a biased dataset</a> you can actually train a model that is even <strong>more</strong> biased than the training dataset.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/talk-power.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Screenshot from my talk at QUT, on ways that AI can centralize power</figcaption><p></p>
+</figure>
+</div>
+<p>In summary, these are several reasons why machine learning can end up centralising power and why automated systems are different from human decision makers. AI researcher Pratyusha Kalluri advises us that rather than ask whether an AI application is fair to instead <a href="https://www.nature.com/articles/d41586-020-02003-2">ask how it shifts power</a>.</p>
+</section>
+<section id="the-people-impacted" class="level2">
+<h2 class="anchored" data-anchor-id="the-people-impacted">The People Impacted</h2>
+<p>Another thing I want to highlight about the healthcare example is that the people whose healthcare was incorrectly cut saw the problem right away, but there was no way to get that mistake acknowledged or addressed.</p>
+<p>Another tragic example of people recognizing an issue but not being able to get it addressed is Facebook’s role in the genocide in Myanmar. In 2018, the UN found that Facebook had <a href="https://www.reuters.com/article/us-myanmar-rohingya-facebook-idUSKCN1GO2PN">played a “determining role”</a> in the genocide; however that was not not a surprise to anyone who had been following the events. A tech entepreneur <a href="https://www.wired.com/story/how-facebooks-rise-fueled-chaos-and-confusion-in-myanmar/">based in Myanmar said</a>, “That’s not 20/20 hindsight. The scale of this problem was significant. It was already apparent [going back to 2013].”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/myanmar.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Articles about the role of Facebook in the Myanmar genocide</figcaption><p></p>
+</figure>
+</div>
+<p>It’s important to understand that genocide does not come out of nowhere. It gradually escalates. From 2013, people warned executives about how Facebook was being used in Myanmar to incite violence and to dehumanize an ethnic minority. In 2013, 2014, and 2015, people raised warnings and they were not listened to.</p>
+<p>An indication of how little Facebook did to address the issues is that the start of 2015 they only had two contractors who spoke Burmese, and they only hired 2 more that year. Compared to the number of Burmese-speaking users in Myanmar, it was a tiny number. Facebook invested very few resources in this (contrast the situation with when <a href="https://www.fast.ai/posts/2018-04-19-facebook.html#myanmar">Facebook rapidly hired over a thousand content moderators</a> in Germany to avoid a fine).</p>
+<p>This is a pattern that we see over and over, that often the people most impacted by a system recognize the issues earliest, but they are not listened to and don’t have effective ways to raise an alarm. They also best understand the needed interventions for addressing the ethical risk. It is crucial that the people most impacted have avenues for participation and power.</p>
+</section>
+<section id="practical-resources" class="level2">
+<h2 class="anchored" data-anchor-id="practical-resources">Practical Resources</h2>
+<p>The <a href="https://icml.cc/virtual/2020/workshop/5720">participatory approaches to machine learning</a> workshop at ICML 2020 was fantastic. The organizers of the workshop highlighted that the designers of a machine learning system have far more power over the system than the individuals impacted. Even within algorithmic fairness or human-centered ML, <strong>ethics work is often focused on centralized solutions, which can further increase the power of system creators</strong>. The workshop organizers called for more democratic, cooperative, and participatory approaches.</p>
+<p>I want to share some practical resources with you. The Markkula Center for Applied Ethics at Santa Clara University has a packet of resources online for ethics and technology practice and in particular I love their <a href="https://www.scu.edu/ethics-in-technology-practice/ethical-toolkit/">Tech Ethics Toolkit</a>. This is a set of practices that you could implement within your organization. As an example, tool 3 is “expanding the ethical circle”, which involves setting a regular time aside to make sure you are going through who all the stakeholders are that will be directly affected by a system, as well as who will be indirectly affected in significant ways. It involves asking whose skills, experiences, and values have we simply assumed rather than actually consulted. The toolkit goes into more detail about this on questions to ask and things to look for.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/diverse-voices.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Diverse Voices Guide</figcaption><p></p>
+</figure>
+</div>
+<p>Another useful resource on this is the <a href="https://techpolicylab.uw.edu/news/diverse-voices-guide/">Diverse Voices guide</a> from the University of Washington Tech Policy Lab. In addition to an academic paper, they have a practical how-to guide on assembling panels of groups who are not be well-represented and whose input you need. They include examples, such as panels of people who are formerly incarcerated, people who don’t drive cars, and extremely low income people.</p>
+</section>
+<section id="data-are-not-bricks-to-be-stacked-oil-to-be-drilled" class="level2">
+<h2 class="anchored" data-anchor-id="data-are-not-bricks-to-be-stacked-oil-to-be-drilled">Data are not bricks to be stacked, oil to be drilled</h2>
+<p>In conclusion, explainability on its own is insufficient; we need actionable recourse and contestability. Fairness is insufficient; we need justice. The people most impacted by a system need avenues for participation and power.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/talk-end.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">Screenshot from my talk at QUT</figcaption><p></p>
+</figure>
+</div>
+<p>These are very difficult problems but some steps towards solutions are:</p>
+<ul>
+<li>making sure you have ways to identify, report, and address errors quickly</li>
+<li>offering timely meaningful appeals</li>
+<li>include consultation with voices that are often overlooked (and not just in a tokenistic way</li>
+<li>designing products processes processes and technology with contestability in mind</li>
+<li>diversity in hiring retention and promotions (diversity including nationality and language)</li>
+</ul>
+<p>I’ll close with a quote that I love from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7296309/">AI researcher Inioluwa Deborah Raji</a>, <em>“But data are not bricks to be stacked, oil to be drilled, gold to be mined, opportunities to be harvested. Data are humans to be seen, maybe loved, hopefully taken care of.”</em></p>
+<p>The video version of my talk is <a href="https://www.youtube.com/watch?v=spHB7IEFXbg&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">available here</a>.</p>
+</section>
+<section id="further-reading-watching" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading-watching">Further reading / watching</h2>
+<p>You may also be intersted in:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=KChtdexd5Jo&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">The New Era in NLP | SciPy 2019 | Rachel Thomas</a>: keynote talk I gave at SciPy 2019, just after the release of GPT-2, about the technical advances and ethical risks of language models</li>
+<li><a href="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/">11 Short Videos About AI Ethics</a>: short videos about machine learning ethics, which I created for the fast.ai deep learning course</li>
+<li><a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Reliance on metrics is a fundamental challenge for AI</a>: academic paper David Uminsky and I wrote about how AI is perhaps too good at optimizing metrics, and the problems this can create</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>machine learning</category>
+  <category>ethics</category>
+  <guid>https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/index.html</guid>
+  <pubDate>Mon, 15 May 2023 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/cuts-healthcare.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Viruses: The Silent Triggers of Autoimmune and Neurodegenerative Diseases</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1589,85 +1742,6 @@ reasons it can be hard to disclose an invisible disability <a href="https://t.co
   <guid>https://rachel.fast.ai/posts/2019-01-21-should-know/index.html</guid>
   <pubDate>Sun, 20 Jan 2019 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2019-01-21-should-know/icu.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>What Harvard Business Review Gets Wrong About Algorithms and Bias</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>The Harvard Business Review recently published an article, <a href="https://hbr.org/2018/07/want-less-biased-decisions-use-algorithms">Want Less-Biased Decisions? Use Algorithms.</a> by Alex P. Miller. The article focuses on the fact that humans make very biased decisions (which is true), yet ignores many important related issues, including:</p>
-<ul>
-<li>algorithms are often implemented without any appeals method in place (due to the misconception that algorithms are objective, accurate, and won’t make mistakes)</li>
-<li>algorithms are often used at a much larger scale than human decision makers, in many cases, replicating an identical bias at scale (part of the appeal of algorithms is how cheap they are to use)</li>
-<li>users of algorithms may not understand probabilities or confidence intervals (even if these are provided), and may not feel comfortable overriding the algorithm in practice (even if this is technically an option)</li>
-<li>instead of just focusing on the least-terrible existing option, it is more valuable to ask how we can create <strong>better, less biased decision-making tools</strong> by leveraging the strengths of humans and machines working together</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/algorithm.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Photo Credit: Jonathan Lidbeck https://www.flickr.com/photos/jondissed/2278335691</figcaption><p></p>
-</figure>
-</div>
-<p>Miller acknowledges that critics of the “algorithmic revolution” are “concerned that algorithms are often <strong>opaque, biased, and unaccountable tools</strong> being wielded in the interests of institutional power”, although he then focuses exclusively on the <em>biased</em> part for the remainder of the article, without addressing the <em>opaque</em> or <em>unaccountable</em> charges (as well as how these interact with bias).</p>
-<h2 id="vs" class="anchored">
-Humans vs.&nbsp;machines is not a helpful framing
-</h2>
-<p>The media often frames advances in AI through a lens of humans vs.&nbsp;machines: who is the champion at X task. This framework is both inaccurate as to how most algorithms are used, as well as a very limited way to think about AI. In all cases, algorithms have a human component, in terms of who gathers the data (and what biases they have), which design decisions are made, how they are implemented, how results are used to make decisions, the understanding various stakeholders have of correct uses and limitations of the algorithm, and so on.</p>
-<p>Most people working on medical applications of AI are not trying to replace doctors; they are trying to create tools that will allow doctors to be more accurate and more efficient, improving quality of care. The best chess “players” are neither humans nor computers, but rather, teams of humans and computers working together.</p>
-<p>Miller’s HBR article points out (correctly) that humans are very biased, and then compares our current not-so-great approaches to see which is less terrible. The article does <strong>not</strong> ask the question, <strong>how can we develop less biased ways to make decisions (perhaps using some combination of humans and algorithms)?</strong> which is a far more interesting and important question.</p>
-<h2 id="different" class="anchored">
-Algorithms are often used differently than human decision makers
-</h2>
-<p>Algorithms are often used at a larger scale, mass-producing identical biases, and assumed to be error-proof or objective. The studies that Miller shares compares them in an apples-to-apples way, which doesn’t acknowledge how differently they are often used in practice.</p>
-<p>Cathy O’Neil writes in <a href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a> that the algorithms she is critiquing <i>tend to punish the poor. <b>They specialize in bulk, and they’re cheap. That’s part of their appeal.</b> The wealthy, by contrast, often benefit from personal input. A white-shoe law firm or an exclusive prep school will lean far more on recommendations and face-to-face interviews than will a fast-food chain or a cash-strapped urban school district. The privileged, we’ll see time and again, are processed more by people, the masses by machines.</i> (emphasis mine)</p>
-<p>One example from O’Neil’s book is that of a college student with bipolar disorder who wanted to get a summer job bagging groceries. Every store he applied to was using the same pyschometric evaluation software to screen candidates, and he was rejected from every store. This captures another danger of algorithms: even though humans often have similar biases, not all humans will make the exact same decisions (e.g.&nbsp;perhaps that college student would have been able to find one place to hire him, even if some of the people making decisions had biases about mental health).</p>
-<p>Many people will put more trust in algorithmic decisions than they might in human decisions. While the researchers designing the algorithms may have a good grasp on probability and confidence intervals, often the general public using them will not. Even if people are given the power to override algorithmic decisions, it is crucial to understand if they will feel comfortable doing so in practice.</p>
-<h2 id="appeals" class="anchored">
-The need for meaningful appeals and explanations
-</h2>
-<p><strong>Many of the most chilling stories of algorithmic bias don’t involve meaningful explanations or a meaningful appeals process</strong>. This seems to be a particular trend amongst algorithmic decision making systems, perhaps since people mistakenly assume algorithms are objective, they believe there is no need for appeals. Also, as explained above, algorithmic decision making systems are often used as a cost-cutting device, and allowing appeals would be more expensive.</p>
-<p><a href="https://weaponsofmathdestructionbook.com/">Cathy O’Neil writes</a> the account of a teacher who is beloved by her students, their parents, and the principal, yet is inexplicably fired by an algorithm. She is never able to get an answer as to why she was fired. Stories like this would be somewhat less disturbing if there had been a relatively quick and simple way for her to appeal the decision, or even to know for sure what factors it was related to.</p>
-<p>The Verge <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">investigated software</a> used in over half of U.S. states to determine how much healthcare people receive. After its implemention in Arkansas, people (many with severe disabilities) drastically had their healthcare cut. For instance, Tammy Dobbs, a woman with cerebral palsy who needs an aid to help her to get out of bed, to go to the bathroom, to get food, and more, had her hours of help suddenly reduced by 20 hours a week. <strong>She couldn’t get any explanation for why her healthcare was cut.</strong> Eventually, a court case revealed that there were mistakes in the software implementation of the algorithm, negatively impacting people with diabetes or cerebral palsy. However, Dobbs and many other people reliant on these health care benefits live in fear that their benefits could again be cut suddenly and inexplicably.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/justice.svg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">image source: wikimedia commons</figcaption><p></p>
-</figure>
-</div>
-<p>The creator of the algorithm, who is a professor and earning royalties off of this software, was asked whether there should be a way to communicate decisions, “It’s probably something we should do. I should also probably dust under my bed.” He later clarified that he thought it was someone else’s responsibility. <strong>We can not keep claiming the problems caused by our technology are someone else’s responsibility.</strong></p>
-<p>For a separate computer system used in Colorado to determine public benefits in the mid-2000s, it was discovered that more than 900 incorrect rules had been coded into the system, resulting in problems like pregnant women being denied Medicaid. It is often hard for lawyers to even discover these flaws, since the inner-workings of the algorithms are typically protected as trade secrets. Systems used to make decisions related to healthcare, hiring/firing, criminal justice, and other life-altering areas should include some sort of <strong>human appeals process</strong>, that is relatively fast and easy to navigate. Many of the most chilling stories of algorithmic decision making would not be nearly as concerning if there had been an easy way to appeal and correct faulty decisions. Mistakes are possible in anything we do, so <strong>it’s important to have a tight loop in which we make it easy to discover and correct mistakes</strong>.</p>
-<h2 id="real-world" class="anchored">
-Complicated, real-world systems
-</h2>
-<p><strong>When we think about AI, we need to think about complicated, real-world systems</strong>. The studies in the HBR article treat decision making as an isolated action, without taking into account that this decision-making happens within complicated real-world systems. A decision about whether someone is likely to commit another crime is not an isolated decision: it lives within the complicated system of our criminal justice system. We have a responsibility to understand the real-world systems with which our work will interact, and to not lose sight of the actual <strong>people</strong> who will be impacted.</p>
-<p>The COMPAS recidivism algorithm is used in some US courtrooms for decisions related to pre-trial bail, sentencing, and parole. It was the subject of a <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">ProPublica investigation</a> finding that the false positive rate (people that were labeled “high risk” but were not re-arrested) for white defendants was 24% and for Black defendants was 45%. Later research found that COMPAS (which uses 137 inputs in a black-box algorithm) was <a href="https://www.theverge.com/2018/1/17/16902016/compas-algorithm-sentencing-court-accuracy-problem">no more accurate</a> than a simple linear equation on two variables. COMPAS was also <a href="https://www.theverge.com/2018/1/17/16902016/compas-algorithm-sentencing-court-accuracy-problem">not more accurate</a> than untrained Mechanical Turk workers. (You can find out more about various definitions of fairness in Princeton CS Professor Arvind Narayanan’s excellent <a href="https://www.youtube.com/watch?v=wqamrPkF5kk">21 Definitions of Fairness</a> talk).</p>
-<p>Kristian Lum, statistics PhD and lead data scientist at the Human Rights Digital Analysis Group, <a href="https://www.youtube.com/watch?v=hEThGT-_5ho">organized a workshop</a> together with Elizabeth Bender, a staff attorney for the NY Legal Aid Society and former public defender, and Terrence Wilkerson, an innocent man who had been arrested and could not afford bail. Together, they shared first hand experience about the obstacles and inefficiencies that occur in the legal system, providing valuable context to the debate around COMPAS. Bender shared that for public defenders meet with defendants at Rikers Island, where many pre-trial detainees in NYC who can’t afford bail are held, involves a bus ride that is two hours each way and they then only get 30 minutes to see the defendant, assuming the guards are on time (which is not always the case). Wilkerson explained how frequently innocent defendents who can’t afford bail accept guilty plea bargains just so they can get out of jail faster. Again, all this is for people that have not even faced a trial yet! This panel was an excellent way to illuminate the real-world systems and educate about the first-hand impact. I hope more statisticians and computer scientists will follow this example.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/lum2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Dr.&nbsp;Kristian Lum’s Panel at the Fairness, Accountability, and Transparency in ML Conference</figcaption><p></p>
-</figure>
-</div>
-<p>As this example shows, <strong>algorithms can often exacerbate underlying societal problems</strong>. There are deep, structural problems with the US courts and prison systems, including <a href="https://www.vox.com/cards/police-brutality-shootings-us/us-police-racism">racial bias</a>, the <a href="https://www.aclu.org/blog/smart-justice/we-cant-end-mass-incarceration-without-ending-money-bail">use of cash bail</a> (nearly half a million people in the USA are languishing in jail before even facing a trial, because they are too poor to afford bail), predatory <a href="http://time.com/5013760/american-private-prisons-donald-trump/">for-profit prisons</a>, and extreme <a href="https://en.wikipedia.org/wiki/United_States_incarceration_rate">over-use of prisons</a> (the US is home to 4% of the world’s population and 22% of the world’s prisoners). We have a responsibility to understand the systems and underlying problems our algorithms may interact with.</p>
-<h2 id="critics" class="anchored">
-Most critics of unjust bias aren’t anti-algorithm
-</h2>
-<p><strong>Most critics of biased algorithms are opposed to unjust bias; they are not people who hate algorithms.</strong> Miller says that critics of biased algorithms “rarely ask how well the systems they analyze would operate without algorithms,” suggesting that those speaking out against biased algorithms are perhaps unaware of how biased humans are or perhaps just don’t like algorithms. I spent a great deal of time <a href="https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996">researching and writing</a> <a href="https://medium.com/tech-diversity-files/how-diversity-branding-hurts-diversity-fb29dd705481">about</a> <a href="https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd">studies</a> <a href="https://medium.com/@racheltho/how-to-make-tech-interviews-a-little-less-awful-c29f35431987">of human bias</a> (particularly as to how they pertain to the tech industry), long before I began writing about bias in machine learning.</p>
-<p>When I tweet or share about biased or unethical algorithms, I frequently encounter push-back that I must be <strong>anti-algorithms</strong> or <strong>opposed to tech</strong>. This couldn’t be further from the truth: I have a PhD in math; I’ve worked as a quant, data scientist, and software engineer; I created a free, online <a href="https://github.com/fastai/numerical-linear-algebra">Computational Linear Algebra course</a> and co-founded fast.ai, which runs <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> and won <a href="http://www.fast.ai/2018/04/30/dawnbench-fastai/">Stanford’s Computer Vision Speed Test</a> through clever use of algorithms.</p>
-<p>I’m in no way unique in this: most of the outspoken critics of biased algorithms that come to mind have PhDs in computer science, math, or statistics, and continue to be active in their fields. Just check out some of the speakers from the <a href="https://www.fatml.org/schedule/2018">Fairness Accountability and Transparency Conference</a> (and <a href="https://www.youtube.com/channel/UCs16j6ot-CYq-ZqYpO-vqMg/videos">watch their talks</a>!). One such example is <a href="http://randomwalker.info/">Arvind Narayanan</a>, a computer science professor at Princeton, winner of the <a href="https://arxiv.org/abs/1102.4374">Kaggle Social Network Challenge</a>, teacher of a <a href="https://www.coursera.org/learn/cryptocurrency">popular cryptocurrency course</a>, and also speaks out <a href="https://www.youtube.com/watch?v=wqamrPkF5kk">against algorithmic bias</a>.</p>
-<p>I hope that the popular discussion of biased algorithms can move beyond unnuanced rebuttals and more deeply engage with the issues involved.</p>
-
-
-
- ]]></description>
-  <category>ethics</category>
-  <guid>https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/index.html</guid>
-  <pubDate>Mon, 06 Aug 2018 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/algorithm.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>
