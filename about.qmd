@@ -39,7 +39,6 @@ Current Location: Queensland, Australia
 at University of San Francisco
 - [Reliance on Metrics is a Fundamental Challenge for AI](https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3), Patterns. Optimizing metrics is a central aspect of most current AI approaches, yet overemphasizing metrics leads to manipulation, gaming, and a myopic short-term focus.
 - Created and taught [data ethics course](https://ethics.fast.ai/)
-- Wrote ethics chapter of best-selling book, 
 - Wrote book chapters for:
     - [97 Things About Ethics Everyone in Data Science Should Know](https://www.oreilly.com/library/view/97-things-about/9781492072652/)
     - [Deep Learning for Coders with Fastai and PyTorch: AI Applications Without a PhD](https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527)
