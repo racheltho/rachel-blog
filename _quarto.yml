@@ -15,6 +15,7 @@ website:
     creator: "@math_rachel"
     site: "@math_rachel"
     description: "an AI researcher going back to school for immunology"
+  margin-header: subscribe.html
   navbar:
     right:
       - about.qmd
