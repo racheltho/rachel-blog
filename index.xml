@@ -14,7 +14,7 @@
 <title>Rachel Thomas, PhD</title>
 <link>https://rachel.fast.ai/index.html</link>
 </image>
-<generator>quarto-1.2.335</generator>
+<generator>quarto-1.3.450</generator>
 <lastBuildDate>Mon, 15 May 2023 14:00:00 GMT</lastBuildDate>
 <item>
   <title>AI and Power: The Ethical Challenges of Automation, Centralization, and Scale</title>
@@ -40,7 +40,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/cuts-healthcare2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">When an algorithm cuts your health care</figcaption><p></p>
+<figcaption class="figure-caption">When an algorithm cuts your health care</figcaption>
 </figure>
 </div>
 <p>This illustrates a common issue that shows up again and again: <strong>automated systems are often implemented with no way to identify and address mistakes</strong>.</p>
@@ -49,7 +49,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/hrw-eu.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<p></p><figcaption class="figure-caption">Human Rights Watch report</figcaption><p></p>
+<figcaption class="figure-caption">Human Rights Watch report</figcaption>
 </figure>
 </div>
 <p>Another domain to consider is content moderation. The <a href="https://santaclaraprinciples.org/">Santa Clara Principles for content moderation</a> were developed by a group of ethicists, although these principles are not observed by the major platforms. I want to share Principle 3, because I love the wording, which is that companies should provide a <em>meaningful opportunity for timely appeal</em>. I really like this idea of appeal being <em>meaningful</em> and <em>timely</em>. I think this is relevant far, far beyond content moderation. Too often, even when there is a way to try to report a mistake, you just get an automated response that clearly hasn’t been read or you have to wait months for an answer. It is important that appeals are not just available, but also that they are meaningful and timely.</p>
@@ -65,7 +65,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/gendershades.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
-<p></p><figcaption class="figure-caption">Results from one of the GenderShades studies</figcaption><p></p>
+<figcaption class="figure-caption">Results from one of the GenderShades studies</figcaption>
 </figure>
 </div>
 <p>Some people have reacted with a superficial response, which is not consistent what the researchers wrote, concluding that the solution is solely to get more pictures of dark-skinned women and then call it a day. While issues of representation in underlying training datasets need to be addressed, this is only one part of the problem. We have to look at how these systems are used, which poses many other significant harms.</p>
@@ -76,7 +76,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/police-facial-rec.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<p></p><figcaption class="figure-caption">Headlines about police use of facial recognition to identify protesters in Miami, NYC, and Baltimore</figcaption><p></p>
+<figcaption class="figure-caption">Headlines about police use of facial recognition to identify protesters in Miami, NYC, and Baltimore</figcaption>
 </figure>
 </div>
 <p><a href="https://www.nytimes.com/2019/11/19/technology/artificial-intelligence-bias.html">Dr.&nbsp;Timnit Gebru wrote</a>, <em>“A lot of times, people are talking about bias in the sense of equalizing performance across groups. They’re not thinking about the underlying foundation, whether a task should exist in the first place, who creates it, who will deploy it on which population, who owns the data, and how is it used?”</em> These are all crucial questions to ask. They are questions of power. Yes, you should check the error rates on different subgroups, but that alone is insufficient, and doesn’t address questions of power.</p>
@@ -99,7 +99,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/talk-power.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<p></p><figcaption class="figure-caption">Screenshot from my talk at QUT, on ways that AI can centralize power</figcaption><p></p>
+<figcaption class="figure-caption">Screenshot from my talk at QUT, on ways that AI can centralize power</figcaption>
 </figure>
 </div>
 <p>In summary, these are several reasons why machine learning can end up centralising power and why automated systems are different from human decision makers. AI researcher Pratyusha Kalluri advises us that rather than ask whether an AI application is fair to instead <a href="https://www.nature.com/articles/d41586-020-02003-2">ask how it shifts power</a>.</p>
@@ -111,7 +111,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/myanmar.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<p></p><figcaption class="figure-caption">Articles about the role of Facebook in the Myanmar genocide</figcaption><p></p>
+<figcaption class="figure-caption">Articles about the role of Facebook in the Myanmar genocide</figcaption>
 </figure>
 </div>
 <p>It’s important to understand that genocide does not come out of nowhere. It gradually escalates. From 2013, people warned executives about how Facebook was being used in Myanmar to incite violence and to dehumanize an ethnic minority. In 2013, 2014, and 2015, people raised warnings and they were not listened to.</p>
@@ -125,7 +125,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/diverse-voices.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<p></p><figcaption class="figure-caption">Diverse Voices Guide</figcaption><p></p>
+<figcaption class="figure-caption">Diverse Voices Guide</figcaption>
 </figure>
 </div>
 <p>Another useful resource on this is the <a href="https://techpolicylab.uw.edu/news/diverse-voices-guide/">Diverse Voices guide</a> from the University of Washington Tech Policy Lab. In addition to an academic paper, they have a practical how-to guide on assembling panels of groups who are not be well-represented and whose input you need. They include examples, such as panels of people who are formerly incarcerated, people who don’t drive cars, and extremely low income people.</p>
@@ -136,7 +136,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/talk-end.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<p></p><figcaption class="figure-caption">Screenshot from my talk at QUT</figcaption><p></p>
+<figcaption class="figure-caption">Screenshot from my talk at QUT</figcaption>
 </figure>
 </div>
 <p>These are very difficult problems but some steps towards solutions are:</p>
@@ -188,7 +188,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/T1-diabetes.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
-<p></p><figcaption class="figure-caption">In Type 1 Diabetes, the pancreas is incapable of producing sufficient insulin. Image: Scientific Animations, Creative Commons License</figcaption><p></p>
+<figcaption class="figure-caption">In Type 1 Diabetes, the pancreas is incapable of producing sufficient insulin. Image: Scientific Animations, Creative Commons License</figcaption>
 </figure>
 </div>
 <p>Type 1 diabetes is often triggered by a viral infection. <a href="https://www.nature.com/articles/s41591-019-0667-0">One study</a> tracked viruses in stool samples from young children, month after month, and discovered that when kids have certain common childhood viruses for consecutive months, they are at much higher risk of having their immune systems develop autoimmunity against their own pancreas (a precursor to Type 1 diabetes).</p>
@@ -209,7 +209,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/autoimmune.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Autoimmune disease can impact the whole body. Image: Glover, Mishra and Singh; Creative Commons License</figcaption><p></p>
+<figcaption class="figure-caption">Autoimmune disease can impact the whole body. Image: Glover, Mishra and Singh; Creative Commons License</figcaption>
 </figure>
 </div>
 <p>There is still much that is unknown about the onset of autoimmune diseases, although in many cases, a viral infection can be the trigger (there are likely other factors involved too, including genetic predisposition). During an infection, our adaptive immune systems learn to recognize small patterns of molecules that indicate a pathogen or infected cell. Unfortunately, if these small patterns appear similar to elements of our own bodies, the body may continue attacking itself even once the acute infection is over.</p>
@@ -227,7 +227,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/mri-alzheimers-dementia.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">MRIs of a brain with Alzheimer’s, with dementia, and a normal control, from Wikimedia</figcaption><p></p>
+<figcaption class="figure-caption">MRIs of a brain with Alzheimer’s, with dementia, and a normal control, from Wikimedia</figcaption>
 </figure>
 </div>
 <p>For decades, research on Alzheimer’s Disease was dominated by a hypothesis that mostly turned out to be a dead-end. Funding and support was funnelled toward projects that failed (and in some cases, were based on fraudulent data), while other researchers (whose ideas are now being proven correct) <a href="https://theconversation.com/my-work-investigating-the-links-between-viruses-and-alzheimers-disease-was-dismissed-for-years-but-now-the-evidence-is-building-184201">faced hostility and extreme difficulty</a> obtaining grants. For decades, the idea of viruses being a cause of Alzheimer’s was considered absurd, with only a few lone researchers pursuing it in the face of pushback and ostracism, yet now <a href="https://www.theguardian.com/society/2023/feb/19/could-alzheimers-be-caused-by-an-infection">ever more research</a> is accumulating to <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8234998/">support this idea</a>.</p>
@@ -235,7 +235,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-22-viruses2/itzhaki.png" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">An article by Dr.&nbsp;Ruth Itzhaki, Oxford University’s Institute of Population Ageing</figcaption><p></p>
+<figcaption class="figure-caption">An article by Dr.&nbsp;Ruth Itzhaki, Oxford University’s Institute of Population Ageing</figcaption>
 </figure>
 </div>
 </section>
@@ -273,7 +273,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-07-viruses1/chickenpox-rachel.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
-<p></p><figcaption class="figure-caption">6-year old me really wanted to show how many blisters I had</figcaption><p></p>
+<figcaption class="figure-caption">6-year old me really wanted to show how many blisters I had</figcaption>
 </figure>
 </div>
 <section id="long-term-impacts-of-the-virus-behind-chickenpox" class="level2">
@@ -283,7 +283,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-07-viruses1/exosomes.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">From an article covering the research on Varicella Zoster Virus, strokes, and exosomes</figcaption><p></p>
+<figcaption class="figure-caption">From an article covering the research on Varicella Zoster Virus, strokes, and exosomes</figcaption>
 </figure>
 </div>
 <p>VZV is not just linked to strokes, but also linked to developing multiple sclerosis or vascular dementia, as was found in a <a href="https://www.cell.com/neuron/fulltext/S0896-6273(22)01147-3">recent study analysing</a> hundreds of thousands of medical records for associations between common viruses and diseases impacting the brain and nervous system. In the case of VZV, it is possible that the links to dementia and MS may occur through the reactivation of other viruses. That is another disturbing fact about viruses: they can quietly lie latent for years and then be reactivated by other viruses.</p>
@@ -295,7 +295,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-07-viruses1/edx-airborne2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">From a course on viruses taught by Dr.&nbsp;Jonathan Gershoni</figcaption><p></p>
+<figcaption class="figure-caption">From a course on viruses taught by Dr.&nbsp;Jonathan Gershoni</figcaption>
 </figure>
 </div>
 <p>Fortunately, there are ways we can clean the air with improved ventilation (drawing in more outdoor air), filtration (removing harmful particles), and well-fitting masks in crowded public indoor spaces. For years, excellent ventilation and filtration systems have been used in pig farms, to avoid the spread of airborne porcine diseases, with some farms even <a href="https://twitter.com/LongDesertTrain/status/1494126639608909826?s=20">employing a worker whose sole duty</a> is the daily inspection and maintenance of the ventilation/filtration systems. Numerous studies document the effectiveness of hog farm filtration systems at reducing illness (see <a href="https://twitter.com/LongDesertTrain/status/1494126572625924098?s=20">this fascinating thread</a> for links), as well as the harms of poor ventilation for humans. Methods to clean the air have been implemented by wealthy elites at places including the <a href="https://slate.com/technology/2023/01/davos-covid-precaution-uv-lights-air-filters.html">World Economic Forum’s Davos Summit</a> (attended by politicians and billionaires), the <a href="https://www.purifiedair.com/case-studies/hm-government/">UK Parliament</a>, <a href="https://www.purifiedair.com/case-studies/palace-of-westminster/">Westminster Palace</a>, and an <a href="https://www.parliament.nsw.gov.au/tp/files/81592/Document%20-%20COVIDSafe%20plan%20-%20Sittings%2014%20%E2%80%93%2025%20February%202022%20%E2%80%93%20dated%2011%20February%202022.PDF">Australian state parliament</a>. However, unlike politicians and pigs, very few children or working class people have access to clean air in their schools or workplaces.</p>
@@ -303,7 +303,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-03-07-viruses1/sanitation.png" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Headline from The Guardian and a lecture slide from Rice University Prof Alma Novotny</figcaption><p></p>
+<figcaption class="figure-caption">Headline from The Guardian and a lecture slide from Rice University Prof Alma Novotny</figcaption>
 </figure>
 </div>
 <p>Experts have been highlighting the extensive infrastructure overhaul London used to tackle cholera in the 19th century, similar to how cleaning indoor air could be part of a <a href="https://www.theatlantic.com/health/archive/2021/09/coronavirus-pandemic-ventilation-rethinking-air/620000/">“plan to stop every respiratory virus at once”</a>. Clean air could be the next clean water, revolutionising global health.</p>
@@ -344,7 +344,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/flashcard2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">The front and back of one of my flashcards (the graphs are screenshots I took from one of my professor’s lectures)</figcaption><p></p>
+<figcaption class="figure-caption">The front and back of one of my flashcards (the graphs are screenshots I took from one of my professor’s lectures)</figcaption>
 </figure>
 </div>
 <p>Over 6 months ago, <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">I began studying immunology</a> every day. Every immunology professor I’ve watched lectures from has said that learning immunology is like learning a foreign language and that the amount of specialised jargon is intense. At first, I pulled out a notebook to write down what I wanted to remember. However, I soon decided to try out Anki flashcards instead.</p>
@@ -355,7 +355,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-streak2.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">My practice using Anki for the last 28 weeks (darker blue means more cards studied)</figcaption><p></p>
+<figcaption class="figure-caption">My practice using Anki for the last 28 weeks (darker blue means more cards studied)</figcaption>
 </figure>
 </div>
 <p>You create the cards. You can write with text, include images, and/or use a fill-in-the-blank format (called cloze). I usually make flashcards as I watch video lectures, pausing the video to screenshot images I want to use or to transcribe key points I want to remember. I make cards on my laptop as I watch videos and then study on my phone.</p>
@@ -366,14 +366,14 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-bottom.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">The lengths of time vary based on your history with the card</figcaption><p></p>
+<figcaption class="figure-caption">The lengths of time vary based on your history with the card</figcaption>
 </figure>
 </div>
 <p>If you get a card wrong/need to see it again, Anki will reset to showing you the card with higher frequency again. Here is an old card that I missed. After I select “Again” (because I forgot an answer), these were the options the next time I see that card:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/reset.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Resetting</figcaption><p></p>
+<figcaption class="figure-caption">Resetting</figcaption>
 </figure>
 </div>
 </section>
@@ -384,7 +384,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-stats.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">How many cards I will have each day going forward if I stop adding new cards</figcaption><p></p>
+<figcaption class="figure-caption">How many cards I will have each day going forward if I stop adding new cards</figcaption>
 </figure>
 </div>
 </section>
@@ -433,7 +433,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-07-school-immunology/anki-streak.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">My daily study practice using Anki flashcards for the last 27 weeks (darker blue means more cards studied)</figcaption><p></p>
+<figcaption class="figure-caption">My daily study practice using Anki flashcards for the last 27 weeks (darker blue means more cards studied)</figcaption>
 </figure>
 </div>
 <section id="back-to-school" class="level2">
@@ -447,7 +447,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-07-school-immunology/pandemicene.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Ed Yong’s article in The Atlantic</figcaption><p></p>
+<figcaption class="figure-caption">Ed Yong’s article in The Atlantic</figcaption>
 </figure>
 </div>
 </section>
@@ -461,7 +461,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2023-02-07-school-immunology/textbooks.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Excited to be back in school</figcaption><p></p>
+<figcaption class="figure-caption">Excited to be back in school</figcaption>
 </figure>
 </div>
 <p>After having been in a more “established” place in my career for a while, it is intimidating to publicly start off on a new branch like this. However, it’s also exciting, and I hope to share some of my journey as an immunology student along the way through blog posts and essays, just as <a href="https://rachel.fast.ai/posts/2019-05-13-blogging-advice/">I’ve always encouraged fast.ai students</a> to do.</p>
@@ -489,7 +489,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-09-06-homeschooling/homeschool-headlines.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">We were not alone in discovering that homeschooling worked better for our child</figcaption><p></p>
+<figcaption class="figure-caption">We were not alone in discovering that homeschooling worked better for our child</figcaption>
 </figure>
 </div>
 <section id="our-unplanned-introduction-to-homeschooling" class="level2">
@@ -510,7 +510,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-09-06-homeschooling/venndiagram.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">A Venn Diagram showing how I think about screentime. We avoid the outside (white) region and mostly stick to the intersections.</figcaption><p></p>
+<figcaption class="figure-caption">A Venn Diagram showing how I think about screentime. We avoid the outside (white) region and mostly stick to the intersections.</figcaption>
 </figure>
 </div>
 </section>
@@ -572,14 +572,14 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-06-01-qualitative/biasheadlines.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Attempting to measure racial bias leads to qualitative questions</figcaption><p></p>
+<figcaption class="figure-caption">Attempting to measure racial bias leads to qualitative questions</figcaption>
 </figure>
 </div>
 <p>Unfortunately, there is often a <a href="https://journals.sagepub.com/doi/full/10.1177/2053951719833404">large divide between</a> computer scientists and social scientists, with over-simplified assumptions and fundamental misunderstandings of one another. Even when cross-disciplinary partnerships occur, <a href="https://journals.sagepub.com/doi/full/10.1177/2053951719833404">they often fall</a> into “normal disciplinary divisions of labour: social scientists observe, data scientists make; social scientists do ethics, data scientists do science; social scientists do the incalculable, data scientists do the calculable.” The solution is not for computer scientists to absorb a shallow understanding of the social sciences, but for deeper collaborations. In a paper on <a href="https://dl.acm.org/doi/10.1145/3442188.3445914">exclusionary practices in AI ethics</a>, an interdisciplinary team wrote of the “indifference, devaluation, and lack of mutual support between CS and humanistic social science (HSS), [which elevates] the myth of technologists as ‘ethical unicorns’ that can do it all, though their disciplinary tools are ultimately limited.”</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-06-01-qualitative/Abstract-art-britto-qb140.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">There are challenges when mixing computer scientsits with social scientists. (Gallery Britto image under Creative Commons Attribution-Share Alike 4.0 International)</figcaption><p></p>
+<figcaption class="figure-caption">There are challenges when mixing computer scientsits with social scientists. (Gallery Britto image under Creative Commons Attribution-Share Alike 4.0 International)</figcaption>
 </figure>
 </div>
 <p>This is further reflected in an increasing number of <a href="https://twitter.com/cfiesler/status/1427341587613376514?s=20&amp;t=_5Ud6jmEELMulK5LSha9gA">job ads</a> for AI ethicists that list a <a href="https://www.businessinsider.com/ai-ethics-jobs-catherine-hicks-algorithms">computer science degree as a requirement</a>, “prioritising technical computer science infrastructure over the social science skills that can evaluate AI’s social impact. In doing so, we are building the field of AI Ethics to replicate the very flaws this field is trying to fix.” <a href="https://arxiv.org/abs/2006.12358">Interviews with 26 responsible AI practitioners</a> working in industry highlighted a number of challenges, including that qualitative work was not prioritised. Not only is it impossible to fully understand ethics issues solely through quantitative metrics, inappropriate and misleading quantitative metrics are used to evaluate the responsible AI practitioners themselves. Interviewees reported that their fairness work was evaluated on metrics related to generating revenue, in a stark misalignment of goals.</p>
@@ -635,7 +635,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-05-17-societal-harms/cpr-news-bill-blaine.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Journalist Andrew Kenney of Colorado Public Radio has covered the issues with ID.me</figcaption><p></p>
+<figcaption class="figure-caption">Journalist Andrew Kenney of Colorado Public Radio has covered the issues with ID.me</figcaption>
 </figure>
 </div>
 <p>Baine was not alone. The number of people receiving unemployment benefits plummeted by 40% in the 3 weeks after ID.me was introduced. Some of these were presumed to be fraudsters, but it is unclear how many genuine people in need of benefits were wrongly harmed by this. These are individual harms, but there are broader, societal harms as well: the cumulative costs of the public having to spend ever more time on hold, trying to navigate user-hostile automated bureaucracies where they can’t get the answers they need. There is the societal cost of greater inequality and greater desperation, as more people are plunged into poverty through erroneous denial of benefits. And there is the undermining of trust in public services, which can be difficult to restore.</p>
@@ -654,7 +654,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-05-17-societal-harms/disinfo-headlines.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Reports and Events on Regulatory Approaches to Disinformation</figcaption><p></p>
+<figcaption class="figure-caption">Reports and Events on Regulatory Approaches to Disinformation</figcaption>
 </figure>
 </div>
 <p>Efforts by national governments to deal with the problem through regulation have not gone down well with everyone. ‘Disinformation’ has repeatedly been highlighted as one of the tech-enabled ‘societal harms’ that the UK’s Online Safety Bill or the EU’s Digital Services Act should address, and a range of governments are taking aim at the problem by proposing or passing a slew of (in certain cases ill-advised) <a href="https://www.poynter.org/ifcn/anti-misinformation-actions/">‘anti-misinformation’ laws</a>. But there’s widespread unease around handing power to governments to set standards for what counts as ‘disinformation’. Does reifying ‘disinformation’ as a societal harm become a legitimizing tool for governments looking to silence political dissent or undermine their weaker opponents? It’s a fair and important concern - and yet simply leaving that power in the hands of mostly US-based, unaccountable tech companies is hardly a solution. What are the <a href="https://www.adalovelaceinstitute.org/event/national-approaches-online-harms-regulation/">legitimacy implications if a US company like Twitter were to ban</a> democratically elected Brazilian President Jair Bolsonaro for spreading disinformation, for example? How do we ensure that tech companies are investing sufficiently in <a href="https://law.yale.edu/isp/initiatives/wikimedia-initiative-intermediaries-and-information/wiii-blog/moderate-globally-impact-locally-series-content-moderation-global-south">governance efforts across the globe</a>, rather than responding in an ad hoc manner to proximal (i.e.&nbsp;mostly US-based) concerns about disinformation? Taking a hands off approach to platform regulation doesn’t make platforms’ efforts to deal with disinformation any less politically fraught.</p>
@@ -669,7 +669,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-05-17-societal-harms/air-pollution.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">There are parallels between air polllution and algorithmic harms</figcaption><p></p>
+<figcaption class="figure-caption">There are parallels between air polllution and algorithmic harms</figcaption>
 </figure>
 </div>
 <p>There are many parallels between environmental issues and AI ethics. Environmental harms include individual harms for people who develop discrete health issues from drinking contaminated water or breathing polluted air. Yet, environmental harms are also societal: the societal costs of contaminated water and polluted air can reverberate in subtle, surprising, and far-reaching ways. As law professor Nathalie Smuha writes, <a href="https://policyreview.info/articles/analysis/beyond-individual-governing-ais-societal-harm">environmental harms are often accumulative and build over time</a>. Perhaps each individual release of waste chemicals from a refinery has little impact on its own, but adds up to be significant. In the EU, environmental law allows for mechanisms to show societal harm, as it would be difficult to challenge many environmental harms on the basis of individual rights. Smuha argues that there are many similarities with AI ethics: for opaque AI systems, spanning over time, it can be difficult to prove a direct causal relationship to societal harm.</p>
@@ -714,7 +714,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/teaching.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">me, teaching sorting algorithms, at an all-women coding academy in 2015</figcaption><p></p>
+<figcaption class="figure-caption">me, teaching sorting algorithms, at an all-women coding academy in 2015</figcaption>
 </figure>
 </div>
 <section id="myth-of-innate-ability-myth-of-the-lone-genius" class="level2">
@@ -724,7 +724,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/miller-oneil.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Dr.&nbsp;Miller debunking the myth of innate ability, and Dr.&nbsp;O’Neil debunking the myth of the lone genius mathematician</figcaption><p></p>
+<figcaption class="figure-caption">Dr.&nbsp;Miller debunking the myth of innate ability, and Dr.&nbsp;O’Neil debunking the myth of the lone genius mathematician</figcaption>
 </figure>
 </div>
 </section>
@@ -735,7 +735,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/musicbaseball.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">What if math was taught more like how music or sports are taught?</figcaption><p></p>
+<figcaption class="figure-caption">What if math was taught more like how music or sports are taught?</figcaption>
 </figure>
 </div>
 <p>Math curriculums are usually arranged in a vertical manner, with each year building tightly on the previous, such that one bad year can ruin everything that comes after. Many people I talk to can pinpoint the year that math went bad for them: <em>“I used to like math until 6th grade, when I had a bad teacher/was dealing with peer pressure/my undiagnosed ADHD was out of control. After that, I was never able to succeed in future years.”</em> This is less true in other subjects, where one bad history teacher/one bad year doesn’t mean that you can’t succeed at history the following year.</p>
@@ -751,7 +751,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/piperharron.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<p></p><figcaption class="figure-caption">Dr.&nbsp;Harron’s website, and some of the coverage of her number theory thesis, including on the Scientific American blog</figcaption><p></p>
+<figcaption class="figure-caption">Dr.&nbsp;Harron’s website, and some of the coverage of her number theory thesis, including on the Scientific American blog</figcaption>
 </figure>
 </div>
 <p>Dr.&nbsp;Piper Harron made waves with her <a href="http://www.theliberatedmathematician.com/thesis/">Princeton PhD thesis</a>, utilizing humor, analogies, sarcasm, and genuine efforts to be accessible as she described advanced concepts in a ground-breaking way, very atypical for a mathematics PhD thesis. Dr.&nbsp;Harron wrote openly in the prologue of her thesis on how alienating the culture of mathematics is, <em>“As any good grad student would do, I tried to fit in, mathematically. I absorbed the atmosphere and took attitudes to heart. I was miserable, and on the verge of failure. The problem was not individuals, but a system of self-preservation that, from the outside, feels like a long string of betrayals, some big, some small, perpetrated by your only support system.”</em> At her blog, the Liberated Mathematician, <a href="http://www.theliberatedmathematician.com/">she writes</a>, <em>“My view of mathematics is that it is an absolute mess which actively pushes out the sort of people who might make it better.”</em></p>
@@ -803,7 +803,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/covid-track.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">A reflection on the covid tracking project from a core data infrastructure engineer</figcaption><p></p>
+<figcaption class="figure-caption">A reflection on the covid tracking project from a core data infrastructure engineer</figcaption>
 </figure>
 </div>
 <p>A data infrastructure engineer and contributor for the project <a href="https://covidtracking.com/analysis-updates/why-we-didnt-automate-our-data-collection">later recounted</a>, “It quickly became apparent that daily, close contact with the data was necessary to understand what states were reporting. States frequently changed how, what, and where they reported data. Had we set up a fully automated data capture system in March 2020, it would have failed within days.” The project used automation as a way to support and supplement manual work, not to replace it. At numerous points, errors in state reporting mechanisms were caught by eagle-eyed data scientists notifying discrepancies.</p>
@@ -811,7 +811,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/augmentedML.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Speaking about AugmentedML vs.&nbsp;AutoML at ICML 2019</figcaption><p></p>
+<figcaption class="figure-caption">Speaking about AugmentedML vs.&nbsp;AutoML at ICML 2019</figcaption>
 </figure>
 </div>
 </section>
@@ -827,7 +827,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/datasheet.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Datasheet for an electrical component. Image from ‘Datasheets for Datasets’</figcaption><p></p>
+<figcaption class="figure-caption">Datasheet for an electrical component. Image from ‘Datasheets for Datasets’</figcaption>
 </figure>
 </div>
 <p>One proposal for capturing this context is <a href="https://arxiv.org/abs/1803.09010">Datasheets for Datasets</a>. Prior to doing her PhD at Stanford in computer vision and then co-leading Google’s AI ethics team, <a href="https://thegradient.pub/the-far-reaching-impacts-of-timnit-gebru/">Dr.&nbsp;Timnit Gebru</a> worked at Apple in circuit design and electrical engineering. In electronics, each component (such as a circuit or transistor) comes with a datasheet that lists when and where it was manufactured, under what conditions it is safe to use, and other specifications. Dr.&nbsp;Gebru drew on this background to propose a similar idea for datasets: listing the context of when and how it was created, what data was included/excluded, recommended uses, potential biases and ethical risks, work needed to maintain it, and so on. This is a valuable proposal towards making the context of data more explicit.</p>
@@ -838,7 +838,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/diverse-voices.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">The Diverse Voices project from University of Washington Tech Policy Lab involves academic papers and practical how-to guides.</figcaption><p></p>
+<figcaption class="figure-caption">The Diverse Voices project from University of Washington Tech Policy Lab involves academic papers and practical how-to guides.</figcaption>
 </figure>
 </div>
 <p>Often, our approaches to addressing fairness or other ethics issues, further centralize the power of system designers and operators. The organizers of an ICML workshop on the topic called <a href="https://participatoryml.github.io/">for more cooperative, democratic, and participatory</a> approaches instead. We need to think not just about <strong>explainability</strong>, but about giving people <strong>actionable recourse</strong>. As <a href="https://slideslive.com/38930604/actionable-recourse-in-machine-learning">Professor Berk Ustun highlights</a>, when someone asks why their loan was denied, usually what they want is not just an explanation but to know what they could change in order to get a loan. We need to design systems with <a href="http://contestability.org/"><strong>contestability</strong></a> in mind, to include from the start the idea that people should be able to challenge system outputs. We need to include <a href="https://techpolicylab.uw.edu/project/diverse-voices/">expert panels of perspectives</a> that are often overlooked, depending on the application, this could mean formerly or currently incarcerated people, people who don’t drive, people with very low incomes, disabled people, and many others. <a href="https://techpolicylab.uw.edu/project/diverse-voices/">The Diverse Voices project</a> from University of Washington Tech Lab provides guidance on how to do this. And it is crucial that this not just be tokenistic <a href="https://www.technologyreview.com/2020/08/25/1007589/participation-washing-ai-trends-opinion-machine-learning/">participation-washing</a>, but a meaningful, appropriately compensated, and ongoing role in their design and operation.</p>
@@ -850,7 +850,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/data-not-oil.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<p></p><figcaption class="figure-caption">Quote from AI researcher Inioluwa Deborah Raji</figcaption><p></p>
+<figcaption class="figure-caption">Quote from AI researcher Inioluwa Deborah Raji</figcaption>
 </figure>
 </div>
 
@@ -893,7 +893,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-10-12-medicine-political/mecfsfunding.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Graph of NIH funding on log scale, from above paper by Mirin, Dimmock, Leonard</figcaption><p></p>
+<figcaption class="figure-caption">Graph of NIH funding on log scale, from above paper by Mirin, Dimmock, Leonard</figcaption>
 </figure>
 </div>
 <p>Portraying patients as unscientific and irrational is the other side of the same coin for the myth that medicine is perfectly rational. Patients that disagree with having symptoms they know are physiological dismissed as psychogenic, that reject treatments from flawed studies, or who distrust medical institutions based on their experiences of racism, sexism, and mis-diagnosis, are labeled as “militant” or “irrational”, and placed in the same category with conspiracy theorists and those peddling disinformation.</p>
@@ -903,7 +903,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-10-12-medicine-political/actup.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">AP Photo/J. Scott Applewhit</figcaption><p></p>
+<figcaption class="figure-caption">AP Photo/J. Scott Applewhit</figcaption>
 </figure>
 </div>
 <p>In 1987, <a href="https://www.npr.org/sections/health-shots/2019/02/09/689924838/how-to-demand-a-medical-breakthrough-lessons-from-the-aids-fight">40,000 Americans had already died of AIDS</a>, yet the government and pharmaceutical companies were doing little to address this health crisis. AIDS was heavily stigmatized, federal spending was minimal, and pharmaceutical companies lacked urgency. The activists of ACT UP used a two pronged approach: creative and confrontational acts of protest, and informed scientific proposals. When the FDA refused to even discuss giving AIDS patients access to experimental drugs, ACT UP protested at their headquarters, blocking entrances and lying down in front of the building with tombstones saying “Killed by the FDA”. This opened up discussions, and <a href="https://www.npr.org/sections/health-shots/2019/02/09/689924838/how-to-demand-a-medical-breakthrough-lessons-from-the-aids-fight">ACT UP offered viable scientific proposals</a>, such as switching from the current approach of conducting drug trials on a small group of people over a long time, and instead testing a large group of people over a short time, radically speeding up the pace at which progress occurred. ACT UP used similar tactics to protest the NIH and pharmaceutical companies, demanding research on how to treat the opportunistic infections that killed AIDS patients, not solely research for a cure. The huge progress that has happened in HIV/AIDS research and treatment would not have happened without the efforts of ACT UP.</p>
@@ -939,7 +939,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/short-ethics-playlist.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Part of the Ethics Videos Playlist</figcaption><p></p>
+<figcaption class="figure-caption">Part of the Ethics Videos Playlist</figcaption>
 </figure>
 </div>
 <p><a href="https://www.youtube.com/watch?v=igVrrfDznOo&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=5"><strong>Humans are biased too, so why does machine learning bias matter?</strong></a> A common objection to concerns about bias in machine learning models is to point out that humans are really biased too. This is correct, yet machine learning bias differs from human bias in several key ways that we need to understand and which can heighten the impact.</p>
@@ -974,7 +974,7 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic1.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<p></p><figcaption class="figure-caption">While visiting family, I created an ergonomic setup on a counter</figcaption><p></p>
+<figcaption class="figure-caption">While visiting family, I created an ergonomic setup on a counter</figcaption>
 </figure>
 </div>
 <h2 id="damage" class="anchored">
@@ -989,7 +989,7 @@ Key advice: Have a separate keyboard and mouse
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic5.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<p></p><figcaption class="figure-caption">For the deep learning study group, I routinely used a brown cardboard box. Bonus: I could store everything in the box when we had the clear out of that room each night.</figcaption><p></p>
+<figcaption class="figure-caption">For the deep learning study group, I routinely used a brown cardboard box. Bonus: I could store everything in the box when we had the clear out of that room each night.</figcaption>
 </figure>
 </div>
 <p>Above is a picture from the deep learning study group, which meets 5 days a week, for 7 weeks, every time we run the deep learning course. I use a brown cardboard box to elevate my keyboard. We have to clear out of that conference room each evening, and it is simple for me to put my items in the box. This sort of solution could work if you don’t have a dedicated office space in your home, and need to be able to set up/take down your workstation regularly.</p>
@@ -997,7 +997,7 @@ Key advice: Have a separate keyboard and mouse
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic2.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<p></p><figcaption class="figure-caption">When working at a coffee shop (pre-pandemic), I brought an external keyboard and mouse, and used my rolled-up backpack to raise the height of my laptop screen</figcaption><p></p>
+<figcaption class="figure-caption">When working at a coffee shop (pre-pandemic), I brought an external keyboard and mouse, and used my rolled-up backpack to raise the height of my laptop screen</figcaption>
 </figure>
 </div>
 <h2 id="standing-desks" class="anchored">
@@ -1007,7 +1007,7 @@ About standing desks
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic3.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<p></p><figcaption class="figure-caption">In a previous job, many of us set up $22 standing desks using Ikea side tables</figcaption><p></p>
+<figcaption class="figure-caption">In a previous job, many of us set up $22 standing desks using Ikea side tables</figcaption>
 </figure>
 </div>
 <p>Standing on a hard floor can be difficult for your back. I have a GelPro mat, which I love. If you can’t afford a GelPro mat, standing on a folded-up yoga mat works great too.</p>
@@ -1020,7 +1020,7 @@ Budget Recommendations
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic4.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<p></p><figcaption class="figure-caption">The barista at this coffee shop kindly let me use 2 plastic tubs to prop up my laptop (pre-pandemic).</figcaption><p></p>
+<figcaption class="figure-caption">The barista at this coffee shop kindly let me use 2 plastic tubs to prop up my laptop (pre-pandemic).</figcaption>
 </figure>
 </div>
 <p>I realize that at a time when many Americans do not have enough to eat, that you may not have 34 dollars to spare (21 dollars for a mouse and 13 dollars for a cheap keyboard). However, if this is an option for you, it is well worth the cost. If you permanently damage your back, neck, or arms, no amount of money may be enough to heal them later.</p>
@@ -1064,7 +1064,7 @@ I couldn't be happier with my little standing desk setup. I have tried far to ma
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/govt-headlines.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Headlines of articles related to government use of technology</figcaption><p></p>
+<figcaption class="figure-caption">Headlines of articles related to government use of technology</figcaption>
 </figure>
 </div>
 <section id="listen-to-local-communities" class="level2">
@@ -1083,7 +1083,7 @@ I couldn't be happier with my little standing desk setup. I have tried far to ma
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/project-greenlight.jpeg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Graphic about Detroit’s Project Greenlight, originally from data.detroitmi.gov and shared in <a href="https://detroitcommunitytech.org/?q=content/riverwise-magazine-detroiters-want-be-seen-not-watched">Detroit Riverwise Magazine</a>”</figcaption><p></p>
+<figcaption class="figure-caption">Graphic about Detroit’s Project Greenlight, originally from data.detroitmi.gov and shared in <a href="https://detroitcommunitytech.org/?q=content/riverwise-magazine-detroiters-want-be-seen-not-watched">Detroit Riverwise Magazine</a>”</figcaption>
 </figure>
 </div>
 <p><a href="https://www.honeycombthepoet.org/music.html">Tawana Petty</a> is a poet and social justice organizer who was born and raised in Detroit. She serves as Director of Data Justice Programming for the <a href="https://detroitcommunitytech.org/">Detroit Community Technology Project</a> and co-leads the <a href="https://www.odbproject.org/">Our Data Bodies Project</a>. At the CADE Tech Policy Workshop she shared how Project Green Light makes her feel <em>less</em> safe, and gave a more hopeful example of how to increase safety: give people chairs to sit on their front porches and encourage them to spend more time outside talking with their neighbors. <a href="https://detroitcommunitytech.org/?q=content/riverwise-magazine-detroiters-want-be-seen-not-watched"><u>Myrtle Thompson-Curtis wrote</u></a> about the origins of the idea: in 1980 in Milwaukee “<em>a group of young African Americans remembered how elders would sit on the front porch and keep an eye on them when they were small. These watchful eyes gave them a sense of safety, of being cared for and looked out for by the community. When these youth grew into adulthood, they noticed that no one sat on their porches anymore. Instead people were putting bars on their doors and windows, fearing one another.</em>” Young people went door to door and offered free chairs to neighbors if they would agree to sit on their front porches while children walked to and from school. This program has since been replicated in St.&nbsp;Clair Shores, Michigan, to help defuse racial tensions, and now in Detroit, to illustrate an alternative to the city’s invasive Green Light Surveillance program. “<em>Security is not safety</em>,” Tawana stated, contrasting surveillance with true safety.</p>
@@ -1096,7 +1096,7 @@ I couldn't be happier with my little standing desk setup. I have tried far to ma
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/tech-policy-horizontal.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Some of the many great speakers from our Tech Policy Workshop, who spoke on a variety of topics</figcaption><p></p>
+<figcaption class="figure-caption">Some of the many great speakers from our Tech Policy Workshop, who spoke on a variety of topics</figcaption>
 </figure>
 </div>
 <p>These principles can guide us towards a more responsible use of technology by local governments. Technology can be used for good when it is developed and deployed responsibly, with input from a diverse group of relevant stakeholders, and embedded with the appropriate transparency and accountability.</p>
@@ -1126,7 +1126,7 @@ I couldn't be happier with my little standing desk setup. I have tried far to ma
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Headlines from HBR, Washington Post, and Vice on some of the outcomes of over-optimizing metrics: rewarding gibberish essays, promoting propaganda, massive fraud at Wells Fargo, and firing good teachers</figcaption><p></p>
+<figcaption class="figure-caption">Headlines from HBR, Washington Post, and Vice on some of the outcomes of over-optimizing metrics: rewarding gibberish essays, promoting propaganda, massive fraud at Wells Fargo, and firing good teachers</figcaption>
 </figure>
 </div>
 The following principles will be illustrated through a series of case studies:
@@ -1160,7 +1160,7 @@ Metrics can, and will, be gamed
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/YTRT.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Chart showing Russia Today’s video on the Mueller Report as being an outlier in how many YouTube channels recommended it.</figcaption><p></p>
+<figcaption class="figure-caption">Chart showing Russia Today’s video on the Mueller Report as being an outlier in how many YouTube channels recommended it.</figcaption>
 </figure>
 </div>
 <p>The state-owned media outlet Russia Today was an extreme outlier in how much YouTube’s algorithm had selected it to be recommended by a wide-variety of other YouTube channels. Such algorithmic selections, which begin autoplaying as soon as your current video is done, account for 70% of the time that users spend on YouTube. This chart strongly suggests that Russia Today has in some way gamed YouTube’s algorithm. Platforms are rife with attempts to game their algorithms, to show up higher in search results or recommended content, through fake clicks, fake reviews, fake followers, and more.</p>
@@ -1179,7 +1179,7 @@ Many metrics gather data of what we do in highly addictive environments
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/junkfood.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Our online environment is a buffet of junk food</figcaption><p></p>
+<figcaption class="figure-caption">Our online environment is a buffet of junk food</figcaption>
 </figure>
 </div>
 <p>Zeynep Tufekci, a professor at UNC and regular contributor to the New York Times, compares recommendation algorithms (such as YouTube choosing which videos to auto-play for you and Facebook deciding what to put at the top of your newsfeed) to a <a href="https://www.theguardian.com/technology/2018/feb/02/how-youtubes-algorithm-distorts-truth">cafeteria shoving junk food</a> into children’s faces. <em>“This is a bit like an autopilot cafeteria in a school that has figured out children have sweet teeth, and also like fatty and salty foods. So you make a line offering such food, automatically loading the next plate as soon as the bag of chips or candy in front of the young person has been consumed.”</em> As those selections get normalized, the output becomes ever more extreme: <em>“So the food gets higher and higher in sugar, fat and salt – natural human cravings – while the videos recommended and auto-played by YouTube get more and more bizarre or hateful.”</em> Too many of our online environments are like this, with metrics capturing that we love sugar, fat, and salt, not taking into account that we are in the digital equivalent of a <a href="https://en.wikipedia.org/wiki/Food_desert">food desert</a> and that companies haven’t been required to put nutrition labels on what they are offering. Such metrics are not indicative of what we would prefer in a healthier or more empowering environment.</p>
@@ -1256,7 +1256,7 @@ The last 24 hours:<br>- NYC police using facial recognition on 11 year old kids<
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-08-07-surveillance/ibm-hitler.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Adolf Hitler meeting with IBM CEO Tom Watson Sr.&nbsp;in 1937. Source: https://www.computerhistory.org/revolution/punched-cards/2/15/109</figcaption><p></p>
+<figcaption class="figure-caption">Adolf Hitler meeting with IBM CEO Tom Watson Sr.&nbsp;in 1937. Source: https://www.computerhistory.org/revolution/punched-cards/2/15/109</figcaption>
 </figure>
 </div>
 <p>Pictured above is Adolf Hitler (far left) meeting with IBM CEO Tom Watson Sr.&nbsp;(2nd from left), shortly before Hitler awarded Watson a special “Service to the Reich” medal in 1937 (<a href="https://www.jewishgen.org/ForgottenCamps/General/TimeEng.html">for a timeline of the Holocaust, see here</a>). Watson returned the medal in 1940, although IBM continued to do business with the Nazis. IBM technology helped the Nazis conduct detailed censuses in countries they occupied, to thoroughly identify anyone of Jewish descent. <a href="https://www.huffpost.com/entry/ibm-holocaust_b_1301691">Nazi concentration camps used IBM’s punchcard machines</a> to tabulate prisoners, recording whether they were Jewish, gay, or Gypsies, and whether they died of “natural causes,” execution, suicide, or via “special treatment” in gas chambers. It is not the case that IBM sold the machines and then was done with it. Rather, IBM and its subsidiaries provided regular training and maintenance on-site at the concentration camps: printing off cards, configuring machines, and repairing them as they broke frequently.</p>
@@ -1292,7 +1292,7 @@ The last 24 hours:<br>- NYC police using facial recognition on 11 year old kids<
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-08-07-surveillance/geofeedia.png" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Flyer from the company Geofeedia. Source: https://www.aclunc.org/docs/20161011_geofeedia_baltimore_case_study.pdf</figcaption><p></p>
+<figcaption class="figure-caption">Flyer from the company Geofeedia. Source: https://www.aclunc.org/docs/20161011_geofeedia_baltimore_case_study.pdf</figcaption>
 </figure>
 </div>
 <h2 id="uneven" class="anchored">
@@ -1432,7 +1432,7 @@ my wish list for AI researchers <a href="https://t.co/Cel5x32K9O">https://t.co/C
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-02-12-long-hours/8hoursday_banner_1856.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A banner from 1856 reads, “8 hours labour, 8 hours recreation, 8 hours rest.” Source: Wikimedia</figcaption><p></p>
+<figcaption class="figure-caption">A banner from 1856 reads, “8 hours labour, 8 hours recreation, 8 hours rest.” Source: Wikimedia</figcaption>
 </figure>
 </div>
 </section>
@@ -1468,7 +1468,7 @@ my wish list for AI researchers <a href="https://t.co/Cel5x32K9O">https://t.co/C
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-02-12-long-hours/timekeeping.jpg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Roman timekeeping: Four clocks show the amount of night and day at times of the year. Image from Wikimedia</figcaption><p></p>
+<figcaption class="figure-caption">Roman timekeeping: Four clocks show the amount of night and day at times of the year. Image from Wikimedia</figcaption>
 </figure>
 </div>
 </section>
@@ -1547,7 +1547,7 @@ There is no accountability for big tech companies.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/no-accountability.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Headlines from the Verge and the Washington Post</figcaption><p></p>
+<figcaption class="figure-caption">Headlines from the Verge and the Washington Post</figcaption>
 </figure>
 </div>
 <p>As I covered in a <a href="https://www.fast.ai/posts/2018-08-07-hbr-bias-algorithms.html">previous post</a>, people use outputs from algorithms differently than they use decisions made by humans:</p>
@@ -1582,7 +1582,7 @@ There is no accountability for big tech companies.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/gendershades3.png" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Research by Joy Buolamwini and Timnit Gebru found that commercial computer vision software performed significantly worse on women with dark skin. Gendershades.org</figcaption><p></p>
+<figcaption class="figure-caption">Research by Joy Buolamwini and Timnit Gebru found that commercial computer vision software performed significantly worse on women with dark skin. Gendershades.org</figcaption>
 </figure>
 </div>
 <ul>
@@ -1593,7 +1593,7 @@ There is no accountability for big tech companies.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/imagenet_geodiv.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<p></p><figcaption class="figure-caption">Chart from ‘No Classification without Representation’ by Shankar, et. al, shows the origin of ImageNet photos: 45% US, 8% UK, 6% Italy, 3% Canada, 3% Australia, 3% Spain,…</figcaption><p></p>
+<figcaption class="figure-caption">Chart from ‘No Classification without Representation’ by Shankar, et. al, shows the origin of ImageNet photos: 45% US, 8% UK, 6% Italy, 3% Canada, 3% Australia, 3% Spain,…</figcaption>
 </figure>
 </div>
 <p>Since a Cambrian explosion of machine learning products is occuring, the biases that are calcified now and in the next few years may have a disproportionately huge impact for ages to come (and will be much harder to undo decades from now).</p>
@@ -1667,7 +1667,7 @@ Related Posts
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/wheelchair.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<p></p><figcaption class="figure-caption">Image of wheelchair. Source: https://www.publicdomainpictures.net/en/view-image.php?image=167689</figcaption><p></p>
+<figcaption class="figure-caption">Image of wheelchair. Source: https://www.publicdomainpictures.net/en/view-image.php?image=167689</figcaption>
 </figure>
 </div>
 <p>Gabe Moses, who often uses a wheelchair and sometimes uses crutches, <a href="https://thebodyisnotanapology.com/magazine/who-really-needs-a-wheelchair-lets-stop-accusing-disabled-folk-of-being-lazy/">wrote a post</a> addressing how wheelchair users are often wrongly accused of faking their disability. Gabe has unstable joints, unpredictable muscle spasms, and sudden numbness, which makes getting around without a wheelchair exhausting, painful, and dangerous (although possible, at least sometimes). <a href="https://thebodyisnotanapology.com/magazine/who-really-needs-a-wheelchair-lets-stop-accusing-disabled-folk-of-being-lazy/">He writes</a>, “<strong><em>The black-and-white narrative of disability we’ve been sold makes people who haven’t experienced disability themselves see wheelchair users this way: wheelchair users are people who can’t walk, at all. Anyone else who dares to use one is either lazy or faking.</em></strong> <em>The truth is, wheelchair users are a highly varied group of people. Some people do need their wheelchairs because of paralysis or other conditions that make walking impossible. Others use them because of fatigue, chronic pain, balance problems, or other conditions that make it impossible to walk long distances, even if they are capable of standing and walking to some degree.</em>”</p>
@@ -1679,7 +1679,7 @@ Related Posts
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/neurips.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Image of tweet saying, “The top two recommended accounts for the #NIPS2017 hashtag are women! math_rachel and hannawallach”</figcaption><p></p>
+<figcaption class="figure-caption">Image of tweet saying, “The top two recommended accounts for the #NIPS2017 hashtag are women! math_rachel and hannawallach”</figcaption>
 </figure>
 </div>
 <p>To give one small personal example, at NeurIPS 2017, I attended <a href="https://twitter.com/search?src=typd&amp;q=%40math_rachel%20%23NIPS2017">interesting talks</a>, mentored at two round table discussions for the <a href="https://wimlworkshop.org/">Women in ML workshop</a> (which inspired me to later write blog posts on <a href="https://www.fast.ai/2017/12/18/personal-brand/">personal branding</a> and <a href="https://www.fast.ai/2018/01/08/startups/">founding startups</a>), and met many new people. At one point, I was one of the two top people recommended to follow for the <a href="https://twitter.com/search?src=typd&amp;q=%40math_rachel%20%23NIPS2017">#NIPS2017</a> hashtag. Unless I spoke about it, most people I talked to at the conference probably wouldn’t have guessed how unwell I was (I was recovering from a life-threatening brain infection, and had an infected brain cyst which would require an additional surgery), or that I only attended a few hours of talks or events each day, took breaks to lie down on the floor of the conference center, had daily headaches, and went to bed early each evening. This paints two different pictures of my time at the same event.</p>
@@ -1692,7 +1692,7 @@ Related Posts
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/icu.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Image of an ICU from Wikimedia Commons</figcaption><p></p>
+<figcaption class="figure-caption">Image of an ICU from Wikimedia Commons</figcaption>
 </figure>
 </div>
 <p>A few years ago, I went to the ER in the worst pain of my life, and was given no tests, but just sent home with aspirin (it turned out I actually needed brain surgery). Another time, I had not slept in days because of heart problems, and an ER doctor told me to “relax and take melatonin” when in reality my PICC line had been inserted 5cm too deep and was mistakenly inside my heart. I was once not believed about having dislocated my shoulder, which later resulted in my needing a surgery which my surgeon said could have been avoided if I had gotten treatment at that earlier time.</p>
@@ -1719,7 +1719,7 @@ reasons it can be hard to disclose an invisible disability <a href="https://t.co
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/dictionary.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<p></p><figcaption class="figure-caption">Image from Wikimedia Commons of a Latin Dictionary</figcaption><p></p>
+<figcaption class="figure-caption">Image from Wikimedia Commons of a Latin Dictionary</figcaption>
 </figure>
 </div>
 <p><strong>Don’t compare everyday experiences to someone else’s chronic condition</strong>. Feeling tired is not the same as chronic fatigue. Being sad is not the same as clinical depression. Doing <a href="https://twitter.com/juliaferraioli/status/1071857988938465280">Vipassana meditation for an hour</a> is not the same as living with chronic pain for years. <strong>Part of this is a failure of language: words like “pain” and “fatigue” are used to describe a wide range of experiences.</strong> A friend with multiple sclerosis told me how regular fatigue (after a hike or long day) is very different from multiple sclerosis fatigue (which can involve nerve pain, muscle pain, and double vision), yet they are described with the same word, which leads to poor understanding. Brianne Benness, who has a chronic illness and started a <a href="https://noendinsight.co/share-your-story/">podcast about chronic illness</a>, also spoke about this limit of language, <a href="https://noendinsight.co/2018/11/29/episode-9-clare/">in response to an interviewee</a> with epilepsy, Ehlers-Danlos syndrome, and cochlear implants, “<em>I think I end up talking with people a lot right now about how</em> <strong><em>we don’t have good words for what that feels like</em></strong>.” People who have never experienced severe pain may not be able to imagine what it feels like, yet it is still possible and necessary to practice empathy.</p>
