@@ -16,6 +16,17 @@ website:
     site: "@math_rachel"
     description: "an AI researcher going back to school for immunology"
   margin-header: subscribe.html
+  comments:
+    giscus:
+        repo: racheltho/rachel-blog
+        repo-id: "R_kgDOIxf7pQ"
+        category: "Announcements"
+        category-id: "DIC_kwDOIxf7pc4CcEZ1"
+        mapping: "pathname"
+        reactions-enabled: true
+        input-position: "bottom"
+        theme: "light"
+       
   navbar:
     right:
       - about.qmd
