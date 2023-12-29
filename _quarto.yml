@@ -16,6 +16,7 @@ website:
     site: "@math_rachel"
     description: "an AI researcher going back to school for immunology"
   margin-header: subscribe.html
+  body-footer: "<br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i>"
   comments:
     giscus:
         repo: racheltho/rachel-blog
@@ -29,15 +30,18 @@ website:
        
   navbar:
     right:
-      - about.qmd
-      - icon: github
-        href: https://github.com/racheltho
+      - text: About
+        href: about.qmd
       - icon: twitter
         href: https://twitter.com/math_rachel
       - icon: linkedin
         href: https://www.linkedin.com/in/rachel-thomas-942a7923/
+      - icon: youtube
+        href: https://www.youtube.com/playlist?list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6
       - icon: rss
         href: index.xml
+      - text: Archive
+        href: archive.qmd  
 format:
   html:
     theme: flatly
