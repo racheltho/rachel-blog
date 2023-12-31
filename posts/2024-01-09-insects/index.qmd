@@ -1,8 +1,8 @@
 ---
-title: "4 Cool Things I Learned About Bugs"
-date: "2024-01-07"
-image: "/posts/2023-12-20-insects/psyllid.jpg"
-description: ""
+title: "4 Things I Learned About Bugs"
+date: "2024-01-09"
+image: "/posts/2024-01-09-insects/psyllid.jpg"
+description: "I learned several fascinating and surprising facts about insects in my microbiology courses."
 author: "Rachel Thomas"
 categories: [science]
 toc: true
