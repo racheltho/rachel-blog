@@ -15,7 +15,65 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 15 May 2023 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 08 Jan 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>4 Things I Learned About Bugs</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-01-09-insects/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I am currently halfway through my Masters of Microbiology &amp; Immunology. My goal is to apply my previous decade of experience as a data scientist and AI researcher to immunology. Even though my primary interest is on long-term impacts of viruses on humans, I wanted a broader and deeper understanding of microbiology in general. This past semester, I was pleasantly surprised to learn several fascinating facts about insects!</p>
+<section id="insects-are-useful-for-making-medications-and-vaccines" class="level2">
+<h2 class="anchored" data-anchor-id="insects-are-useful-for-making-medications-and-vaccines">Insects are useful for making medications and vaccines</h2>
+<p>Proteins are a key component of many vaccines and medications. To create these proteins, scientists have come up with a range of <strong>protein expression systems</strong>. Bacteria, yeast, mammalian cells, and genetically modified animals can all be used to produce proteins for medications. And so can insects! For instance, <a href="https://www.nature.com/articles/nbt1095">baculovirus is a virus</a> that mostly infects insects, and its genome can be modified to produce various cytokines (chemical messengers), antivirals (such as type 1 interferons), and vaccine components.</p>
+<p>There are trade-offs with any choice of protein expression system. For example, <em>bacteria</em> are fast and cheap to use, but because they are quite dissimilar to humans, they are much worse for key steps such as protein folding or adding sugars to proteins (a process called glycosylation). And while <em>mammalian</em> cells or genetically modified animals will produce much more accurately folded proteins and glycosylation, they are expensive and slow for production. Baculoviruses from insects aren’t the worst in any of these categories, which makes them a widely useful workhorse for protein expression.</p>
+<p>Insect cells are more similar to human cells than yeast or bacteria are, which means that the proteins they produce (when infected with <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159335/">modified baculoviruses</a>) are more likely to be folded correctly, and they make for cheaper and faster expression systems than mammalian cells do. A baculovirus expression system is used, for example, to produce Novavax, a popular protein-based covid vaccine (which may have fewer side-effects than mRNA-based covid vaccines such as Pfizer and Moderna).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-01-09-insects/expression-systems.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Comparing Different Expression Systems, image from brainkart.com</figcaption>
+</figure>
+</div>
+</section>
+<section id="insects-have-the-same-problems-humans-do-viral-bacterial-fungal-and-protozoan-infections" class="level2">
+<h2 class="anchored" data-anchor-id="insects-have-the-same-problems-humans-do-viral-bacterial-fungal-and-protozoan-infections">Insects have the same problems humans do: viral, bacterial, fungal, and protozoan infections</h2>
+<p>Insects can be infected with harmful viruses, bacteria, fungi, and protozoa. <strong>Entomopathogens</strong> is a fun vocabulary word for pathogens that infect arthropods (arthropods include insects, mites, ticks, spiders, and more). These are sometimes used as natural pesticides, in order to try to control insect pests that may be feeding on crops or spreading disease. <a href="https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=24119">Entomopathogens may kill, limit reproduction, or shorten the life of arthropod pests</a>. They are generally less toxic to humans and other animals than other pesticides, although it is a risk that they could spread to related species.</p>
+</section>
+<section id="insects-really-need-the-bacteria-in-their-guts" class="level2">
+<h2 class="anchored" data-anchor-id="insects-really-need-the-bacteria-in-their-guts">Insects really need the bacteria in their guts</h2>
+<p>While some bacteria are harmful to insects, other bacteria are not only beneficial, but even essential. A diet consisting only of sap is not nutritionally complete. Neither is a diet just of blood. Some arthropods can’t produce all the vitamins they need, and instead rely on bacteria in their guts to help synthesize essential vitamins. These bacteria (known as obligate symbionts) rely on their hosts as well, in a mutually beneficial relationship. Bioinformatics and modern gene sequencing has revolutionized the study of these obligate symbionts by allowing for their genomes to be sequenced and studied. One paper calls them the <a href="https://pubmed.ncbi.nlm.nih.gov/24995872/">“The Tiniest Tiny Genomes”</a>, and describes how through a long process of coevolution the bacteria lost the genes to manufacture cell membrane components. They are completely reliant on their hosts, while also producing B vitamins and essential amino acids.</p>
+<p>While many types of bacteria help bugs synthesize nutrients, other types can help synthesize protective toxins to be used against predators. Diaphorina is an insect pest of citrus plants. Profftella, one of the bacterial obligate symbionts in its gut, is noteworthy for helping to <a href="https://pubmed.ncbi.nlm.nih.gov/32797185/">synthesize both vitamins and protective toxins</a> for its host, whereas many symbionts provide either vitamins or toxins, but not both.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-01-09-insects/psyllid.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">A Diaphorina on a leaf– gut bacteria not pictured. Photo by David Hall, USDA ID d595-1.</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-common-bacteria-in-insects-reduces-risk-of-dengue-virus-to-humans" class="level2">
+<h2 class="anchored" data-anchor-id="a-common-bacteria-in-insects-reduces-risk-of-dengue-virus-to-humans">A common bacteria in insects reduces risk of Dengue Virus to humans</h2>
+<p>An astonishing <a href="https://www.cdc.gov/mosquitoes/mosquito-control/community/emerging-methods/wolbachia.html">60% of insects</a> (including butterflies, bees, and beetles) around the world have the bacteria Wolbachia. This fascinating bacteria can have some surprising impacts, including reducing the ability of mosquitoes to carry or transmit dengue virus.</p>
+<p><em>A. aegypti</em> mosquitoes are carriers of dengue virus. They do not naturally carry Wolbachia, but when mosquitoes with Wolbachia were <a href="https://www.nature.com/articles/s41598-023-42336-2">released in North Queensland, Australia</a>, predicted transmission of dengue infections dropped by 95% over the following 2 years. <a href="https://www.nejm.org/doi/full/10.1056/nejmoa2030243">A randomized study in Indonesia</a> released Wolbachia-infected mosquitoes in some regions but not others, and found the regions with the Wolbachia-infected mosquitoes had 77% fewer dengue cases.</p>
+<p>Another surprising effect of the bacteria is that a male mosquito with Wolbachia mates with a female mosquito that doesn’t have it, the fertilized eggs will not be viable. And two mosquitoes with different strains of Wolbachia can not produce viable eggs. Isn’t this weird??? This has been used in some efforts to reduce mosquito populations.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-01-09-insects/cytoplasmic-incompatibility.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Cytoplasmic incompatibility, figure from https://almob.biomedcentral.com/articles/10.1186/s13015-020-00174-1</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-01-09-insects/index.html</guid>
+  <pubDate>Mon, 08 Jan 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-01-09-insects/psyllid.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>AI and Power: The Ethical Challenges of Automation, Centralization, and Scale</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1649,99 +1707,6 @@ Related Posts
   <guid>https://rachel.fast.ai/posts/2019-01-29-five-scary-things/index.html</guid>
   <pubDate>Mon, 28 Jan 2019 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/no-accountability.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Things everyone should know about chronic illness &amp; disability</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2019-01-21-should-know/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>This was originally published on <a href="https://medium.com/@racheltho/the-tech-industry-is-failing-people-with-disabilities-and-chronic-illnesses-8e8aa17937f3">Medium</a> as part of a longer post, which I have now split in two.</em></p>
-<section id="health-is-not-binary" class="level2">
-<h2 class="anchored" data-anchor-id="health-is-not-binary">Health is not binary</h2>
-<p>Illness &amp; disability can fluctuate. Perhaps some days a person needs a wheelchair or cane and other days they don’t. Some days they are capable of tasks that other days they can’t do. Google developer advocate, Julia Ferraioli, who has had a vision impairment off-and-on for the last two years, shared in her <a href="https://www.juliaferraioli.com/presos/writing-accessible-go/">GopherCon keynote</a>, that “<em>Disability is not binary.</em> <em>There are some days when I can churn out code, and some when I can’t read anything at all</em>.”</p>
-<p>I have some dramatic stories of my most acute health crises, but what is harder for me to explain is the long stretches of time where my health was in-between — when I was not fully well, but could give high-profile talks (although it would take days to recover), attend conferences (even if just for a few hours each day), or teach (even if I felt awful and spent all my time outside of class resting). I hear similar accounts from many people whose symptoms fluctuate over time, or who experience flares alternating with periods of reduced symptoms. Even the recovery from a particular illness or surgery is rarely linear, and a better week may be followed by a worse week. Many people worry that if they share about their disability, people may accuse them of “faking it” if they are not perfectly consistent in their behavior.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/wheelchair.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">Image of wheelchair. Source: https://www.publicdomainpictures.net/en/view-image.php?image=167689</figcaption>
-</figure>
-</div>
-<p>Gabe Moses, who often uses a wheelchair and sometimes uses crutches, <a href="https://thebodyisnotanapology.com/magazine/who-really-needs-a-wheelchair-lets-stop-accusing-disabled-folk-of-being-lazy/">wrote a post</a> addressing how wheelchair users are often wrongly accused of faking their disability. Gabe has unstable joints, unpredictable muscle spasms, and sudden numbness, which makes getting around without a wheelchair exhausting, painful, and dangerous (although possible, at least sometimes). <a href="https://thebodyisnotanapology.com/magazine/who-really-needs-a-wheelchair-lets-stop-accusing-disabled-folk-of-being-lazy/">He writes</a>, “<strong><em>The black-and-white narrative of disability we’ve been sold makes people who haven’t experienced disability themselves see wheelchair users this way: wheelchair users are people who can’t walk, at all. Anyone else who dares to use one is either lazy or faking.</em></strong> <em>The truth is, wheelchair users are a highly varied group of people. Some people do need their wheelchairs because of paralysis or other conditions that make walking impossible. Others use them because of fatigue, chronic pain, balance problems, or other conditions that make it impossible to walk long distances, even if they are capable of standing and walking to some degree.</em>”</p>
-</section>
-<section id="illness-disability-can-be-invisible" class="level2">
-<h2 class="anchored" data-anchor-id="illness-disability-can-be-invisible">Illness &amp; disability can be invisible</h2>
-<p><strong>“You seem like you are doing great!”</strong> people tell me when I bring up my health challenges. Sometimes people who see me seeming upbeat during a social event or watch one of my talks assume that I must be fully recovered. Whereas in reality, it is common to feel ok at some times but ill at others (and this can vary from week to week, or even throughout a given day), to appear healthier than I feel inside (particularly if I’m trying to show my best side at a professional event), or to need an unusually long amount of time to recover from events where I seemed “normal”. People are complex and multi-faceted, and you can’t assess their health based on appearance or mood.</p>
-<p>Product designer <a href="https://twitter.com/amelielamont/status/1074707475503505408">Amélie Lamont shared</a> that while on disability leave from work, she spoke at the conference (after clearing it with her doctor and after having had to cancel her talk the previous year due to her health). It took her days to recover, yet her employer assumed since she seemed fine during the 30-minute talk, that she must be well enough to return to work full-time. In doing so, her employer was failing to understand that illness can be invisible, and that Amélie and her doctor are the only ones who can determine when she is actually ready to return to work.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/neurips.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Image of tweet saying, “The top two recommended accounts for the #NIPS2017 hashtag are women! math_rachel and hannawallach”</figcaption>
-</figure>
-</div>
-<p>To give one small personal example, at NeurIPS 2017, I attended <a href="https://twitter.com/search?src=typd&amp;q=%40math_rachel%20%23NIPS2017">interesting talks</a>, mentored at two round table discussions for the <a href="https://wimlworkshop.org/">Women in ML workshop</a> (which inspired me to later write blog posts on <a href="https://www.fast.ai/2017/12/18/personal-brand/">personal branding</a> and <a href="https://www.fast.ai/2018/01/08/startups/">founding startups</a>), and met many new people. At one point, I was one of the two top people recommended to follow for the <a href="https://twitter.com/search?src=typd&amp;q=%40math_rachel%20%23NIPS2017">#NIPS2017</a> hashtag. Unless I spoke about it, most people I talked to at the conference probably wouldn’t have guessed how unwell I was (I was recovering from a life-threatening brain infection, and had an infected brain cyst which would require an additional surgery), or that I only attended a few hours of talks or events each day, took breaks to lie down on the floor of the conference center, had daily headaches, and went to bed early each evening. This paints two different pictures of my time at the same event.</p>
-<p>A friend, who has a disease which impacts her mobility, told me that at <a href="https://neurips.cc/">NeurIPS 2018</a> there were seats that were supposed to be reserved for people with disabilities, yet they were always full. Since my friend “looks healthy”, she felt too uncomfortable to ask someone else who “looks healthy” if she could have one of these seats; perhaps they have an invisible illness as well. She also felt unsure whether she even wanted other people in the AI community to know about her disability, as this would change how they view her.</p>
-</section>
-<section id="trust-people-to-understand-their-own-bodies-experiences" class="level2">
-<h2 class="anchored" data-anchor-id="trust-people-to-understand-their-own-bodies-experiences">Trust people to understand their own bodies &amp; experiences</h2>
-<p>Many people with illness and disabilities have spent years trying to get diagnosed, to get their symptoms taken seriously, to get treatments they needed approved or covered by insurance, or to get accommodations they need at work. For instance, <a href="http://www.bbc.com/future/story/20180523-how-gender-bias-affects-your-healthcare">a study in the UK</a> found that almost a third of patients with a brain tumor had to visit a doctor more than 5 times before receiving their diagnosis (these times are longer for women and low-income patients). <a href="http://www.bbc.com/future/story/20180523-how-gender-bias-affects-your-healthcare">One woman</a> with a brain tumor recalled: “<em>One of the GPs I saw actually made fun of me, saying ‘what did I think my headaches were, a brain tumor?’ I had to request a referral to neurology. I went back repeated times to be given antidepressants, sleep charts, analgesia, etc. No one took me seriously.</em>” On average, patients with autoimmune diseases have to visit 5 doctors over a 5-year period before receiving a proper diagnosis.</p>
-<p>Research shows that doctors take the <a href="https://www.thecut.com/2018/03/doctors-dont-know-how-to-deal-with-womens-pain-books.html">pain of women</a> less seriously than the pain of men, and the <a href="https://www.scientificamerican.com/article/how-doctors-can-confront-racial-bias-in-medicine/">pain of people of color</a> less seriously than the pain of white people (resulting in <strong>longer time delays to receive treatment, lower quality of care, and worse outcomes</strong>). Since so many doctors were dismissive of her symptoms, it took author Aubrey Hirsch 6 years and a dozen doctors to get her Grave’s disease diagnosed. By that point, the disease had done permanent damage to her bones, heart, and eyes, which could have been prevented by earlier treatment. <a href="https://twitter.com/aubreyhirsch/status/890959115656208384">Hundreds of people</a> responded to <a href="https://thenib.com/medicine-s-women-problem">the powerful comic she created</a> with their own experiences of having severe symptoms dismissed.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/icu.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Image of an ICU from Wikimedia Commons</figcaption>
-</figure>
-</div>
-<p>A few years ago, I went to the ER in the worst pain of my life, and was given no tests, but just sent home with aspirin (it turned out I actually needed brain surgery). Another time, I had not slept in days because of heart problems, and an ER doctor told me to “relax and take melatonin” when in reality my PICC line had been inserted 5cm too deep and was mistakenly inside my heart. I was once not believed about having dislocated my shoulder, which later resulted in my needing a surgery which my surgeon said could have been avoided if I had gotten treatment at that earlier time.</p>
-</section>
-<section id="the-trauma-of-the-medical-system" class="level2">
-<h2 class="anchored" data-anchor-id="the-trauma-of-the-medical-system">The trauma of the medical system</h2>
-<p>If you don’t have first-hand experience with chronic illness or disability, it can be difficult to understand how encompassing it can be. If you do not have first-hand experience trying to navigate the byzantine and traumatizing medical system, it can be surprising just how <strong>complicated, error-prone, and often hostile to patients</strong> it is. A <a href="https://www.ncbi.nlm.nih.gov/pubmed/10741582">growing body of research</a> is linking medical trauma to PTSD.</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-reasons it can be hard to disclose an invisible disability <a href="https://t.co/RK15Bc8IQG">https://t.co/RK15Bc8IQG</a> <a href="https://t.co/CdxsoATLLa">pic.twitter.com/CdxsoATLLa</a>
-</p>
-— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/1072299466852655104?ref_src=twsrc%5Etfw">December 11, 2018</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Tweet showing a paragraph from <a href="https://medium.com/tech-disability-project/asking-for-accommodations-invisible-disability-3e8242f9ec79">this blog post</a>, listing reasons it is hard to disclose an invisible disability.</p>
-<p>Liz Allen, who works in tech and has a complex range of immune issues, gives <a href="https://medium.com/tech-disability-project/asking-for-accommodations-invisible-disability-3e8242f9ec79">many reasons why she was hesitant to ask HR</a> for the accommodations she needed, including that her story is long and traumatic to retell, educating others can be emotionally exhausting, she is often doubted or disbelieved, and her fear of being viewed as incompetent. <strong>Remember that it takes bravery for someone to share about their health with you; honor that and respond in a supportive and accommodating way.</strong></p>
-</section>
-<section id="avoid-giving-unsolicited-health-advice." class="level2">
-<h2 class="anchored" data-anchor-id="avoid-giving-unsolicited-health-advice.">Avoid giving unsolicited health advice.</h2>
-<p>Most people with chronic illnesses or disabilities have spent hundreds of hours researching their conditions, met with dozens of specialists, and tried a variety of treatments (both medical and lifestyle). Even when it’s well-intentioned, offering unsolicited health advice can come across as patronizing or dismissive. There is a huge amount of variety in different conditions and what works for different people, so avoid statements like “{yoga, x diet, physical therapy} is good for everyone.” Know that if a simple solution existed, the person would have already figured it out. <strong>Trust people to know their own bodies and to be experts on their own lives.</strong></p>
-</section>
-<section id="the-limits-of-language" class="level2">
-<h2 class="anchored" data-anchor-id="the-limits-of-language">The limits of language</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-01-21-should-know/dictionary.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Image from Wikimedia Commons of a Latin Dictionary</figcaption>
-</figure>
-</div>
-<p><strong>Don’t compare everyday experiences to someone else’s chronic condition</strong>. Feeling tired is not the same as chronic fatigue. Being sad is not the same as clinical depression. Doing <a href="https://twitter.com/juliaferraioli/status/1071857988938465280">Vipassana meditation for an hour</a> is not the same as living with chronic pain for years. <strong>Part of this is a failure of language: words like “pain” and “fatigue” are used to describe a wide range of experiences.</strong> A friend with multiple sclerosis told me how regular fatigue (after a hike or long day) is very different from multiple sclerosis fatigue (which can involve nerve pain, muscle pain, and double vision), yet they are described with the same word, which leads to poor understanding. Brianne Benness, who has a chronic illness and started a <a href="https://noendinsight.co/share-your-story/">podcast about chronic illness</a>, also spoke about this limit of language, <a href="https://noendinsight.co/2018/11/29/episode-9-clare/">in response to an interviewee</a> with epilepsy, Ehlers-Danlos syndrome, and cochlear implants, “<em>I think I end up talking with people a lot right now about how</em> <strong><em>we don’t have good words for what that feels like</em></strong>.” People who have never experienced severe pain may not be able to imagine what it feels like, yet it is still possible and necessary to practice empathy.</p>
-</section>
-<section id="medical-leave-is-not-a-vacation" class="level2">
-<h2 class="anchored" data-anchor-id="medical-leave-is-not-a-vacation">Medical Leave is not a “vacation”</h2>
-<p><strong>Don’t tell someone that you wish you could spend the day in bed or take a month off from work like them</strong> — nobody wants to be in pain or suffering. Comparing medical leave to a “vacation” is dismissive of the pain, limitations, and actual work that go into medical leave. I also want to address the concern that an employee going on disability leave or requiring special accomodations results in extra work for their coworkers. If this does occur, it is not the fault of the ill or disabled person; it is the fault of the employer for not adjusting workloads, dropping lower priority tasks, or hiring additional temporary help (ditto for when child-free people are given extra work to cover for parents — this is the employer’s fault for not ensuring humane and fair work conditions for everyone). While the moral and legal cases for inclusion should be more than enough, note that <a href="https://www.nytimes.com/2018/12/27/opinion/disability-rights-employment.html">companies that champion people with disabilities</a> outperform other companies financially, with 28% higher revenues, 200% higher net income, and 30% higher profit margins.</p>
-</section>
-<section id="listen-to-other-peoples-experiences" class="level2">
-<h2 class="anchored" data-anchor-id="listen-to-other-peoples-experiences">Listen to other people’s experiences</h2>
-<p>Even if you don’t realize it, you are interacting with chronically ill and disabled people regularly. I hope the experiences, advice, and quotes shared in this post will be helpful in increasing empathy and understanding, so that we can make the tech industry more inclusive. I don’t and can’t speak for everyone with chronic illnesses or disabilities, so I hope that you will seek out and listen to the experiences of other people with chronic illnesses or disabilities (and the links in this post are one way to get started!)</p>
-<p><em>This is part of a series.</em> <a href="https://rachel.fast.ai/posts/2019-02-12-long-hours/"><em>The next post</em></a> <em>covers one aspect of the tech industry that excludes many people with disabilities (and is contrary to productivity research): the glorification of long hours.</em></p>
-<p><em>A huge thank you to Julia Ferraioli, Jeremy Howard, and Negar Rostamzadeh for giving me valuable feedback on earlier drafts of this post.</em></p>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>inclusion</category>
-  <guid>https://rachel.fast.ai/posts/2019-01-21-should-know/index.html</guid>
-  <pubDate>Sun, 20 Jan 2019 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2019-01-21-should-know/icu.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
