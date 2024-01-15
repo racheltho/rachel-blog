@@ -15,7 +15,82 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 08 Jan 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 22 Jan 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Applying AI to Immune Cell Networks</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-01-23-cytokines1/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="the-value-of-domain-expertise" class="level2">
+<h2 class="anchored" data-anchor-id="the-value-of-domain-expertise">The value of domain expertise</h2>
+<p>Back in 2016, Jeremy Howard and I founded the research lab <a href="https://www.fast.ai/posts/2016-10-07-fastai-launch.html">fast.ai</a>. At the time, deep learning (the technique behind recent advances in AI) was the purview of a small and homogeneous handful of practitioners. The standard approach was to have computer science PhDs tackle problems in domains they had little familiarity with.</p>
+<p>Jeremy and I proposed an ambitious idea–we wanted to teach people from all domains and backgrounds to be able to use deep learning. We weren’t even sure if our goal was possible. However, <a href="https://course.fast.ai/">our online course</a> became one of the most popular deep learning courses in the world, and members of the fast.ai community went on to join top research labs and major tech companies, <a href="https://www.theverge.com/2018/5/7/17316010/fast-ai-speed-test-stanford-dawnbench-google-intel">win competitions against Google</a>, and launch their own startups.</p>
+<p>A core part of our mission was the belief that the people closest to a topic best understand the problems in that area and are best equipped to address them. I’m now one of those people in another domain, as I have <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">immersed myself in the field of immunology</a>. I am particularly interested in studying the intersection of immunology and AI. In this 2-part series, I will share some exciting research at this intersection.</p>
+</section>
+<section id="a-most-complicated-system" class="level2">
+<h2 class="anchored" data-anchor-id="a-most-complicated-system">A Most Complicated System</h2>
+<p>The immune system is even “more complicated than the human genome,” <a href="https://www.freethink.com/health/human-immunome">says John Tsang</a>, a professor at Yale School of Medicine. One component of this complexity is the complicated network by which immune cells communicate with one another via protein messengers known as <em>cytokines</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-01-23-cytokines1/biolegend.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Poster of immune cell interactions from <a href="https://www.biolegend.com/en-ie/immunologic-networks-2011">https://www.biolegend.com/en-ie/immunologic-networks-2011</a></figcaption>
+</figure>
+</div>
+<p>Immune cell communication through cytokines is a key area for us to better understand medicine and disease. Various immune cell types must communicate to coordinate their response to threats. However, the immune system may end up over-reacting, under-reacting, or having a misplaced reaction, all of which can cause disease. Sepsis occurs when the immune system responds too vigorously, damaging our own organs. In cancer, the immune system may under-respond, failing to attack cancerous cells that it should. Several types of cancer therapies involve trying to activate or reactivate our own immune cells. In other cases, the immune system mistakenly attacks our own tissue, causing autoimmune diseases including Type 1 diabetes, rheumatoid arthritis, multiple sclerosis, and psoriasis.</p>
+<p>Recent research, drawing on a blend of immunology, mathematics, and natural language processing (NLP) AI, is helping us better understand immune cell-cytokine networks. I have a PhD in math, taught a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">masters course in NLP</a>, and <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">now study immunology</a>, so I have a particular interest in this work. Understanding how the immune system is communicating and coordinating is necessary for knowing why and how the immune response can go awry.</p>
+</section>
+<section id="how-immune-cells-communicate" class="level2">
+<h2 class="anchored" data-anchor-id="how-immune-cells-communicate">How Immune Cells Communicate</h2>
+<p>There are dozens of types of immune cells. The main way that immune cells communicate and coordinate with each other is by sending small protein messengers known as cytokines. There are hundreds of types of cytokines. A single cytokine can have different effects on different cell types. The impact of a cytokine depends on the type of cell sending it, the type of cell receiving it, and the state of the cell. This makes interpreting immune responses challenging!</p>
+<p>Cytokine-based therapies are used to treat some diseases, including cancer and autoimmune disorders. The interactions between cells and cytokines form complex networks, which are not fully mapped.</p>
+<p><em>Note: You may have heard the term “cytokine storm” in <a href="https://www.nytimes.com/2020/04/01/health/coronavirus-cytokine-storm-immune-system.html">the news</a> during early coverage of covid (other diseases and some medical treatments can lead to cytokine storms as well). A cytokine storm occurs when the immune system reacts too vigorously, sending tons of messages and ramping up its inflammatory response to a level that is dangerous to the patient. The double-edged nature of the immune system is part of what piqued my interest about the topic.</em></p>
+</section>
+<section id="nlp-for-cell-cytokine-interactions" class="level2">
+<h2 class="anchored" data-anchor-id="nlp-for-cell-cytokine-interactions">NLP for Cell-Cytokine Interactions</h2>
+<p>Language models such as ChatGPT are part of the active field Natural Language Processing (NLP). NLP applies data science and machine learning to collections of text documents. At fast.ai, Jeremy Howard, Sylvain Gugger, and I developed a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">course on NLP in 2019</a>, teaching cutting edge techniques like transformers, which are now used in ChatGPT and other popular models.</p>
+<p>One paper in immunology is published every 30 minutes! That is a lot of immunology papers, and NLP techniques can be used to help synthesize this huge quantity of information. While models like ChatGPT are trained using a huge variety of texts scraped from the internet, immune-focused work may focus on a more specific group of documents, such as PubMed abstracts. <a href="https://www.nature.com/articles/nbt.4152">A computer program called ImmuneXpresso</a> was developed to text-mine the 16 million abstracts available on PubMed and create triples containing a cell type, cytokine, and whether the relationship was in-coming or out-going (i.e.&nbsp;if the cell was sending or receiving the cytokine).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-01-23-cytokines1/immunexpresso.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Information flow of families of cytokines between families of cells (Figure 2A from ImmuneXpresso)</figcaption>
+</figure>
+</div>
+<p>The above figure from the <a href="https://www.nature.com/articles/nbt.4152">ImmuneXpresso paper</a> shows some of the information flow. Each family of cytokines shown contains multiple cytokines, and each family of cells contains multiple sub-types. The researchers relied on sentence syntax to parse these relationships, and captured associations with 188 diseases. A machine learning classifier was used to predict whether the data captured were related to cell-cytokine relationships. Over 4,000 directional cell–cytokine interactions were documented via this process. The authors experimentally tested two interactions that were predicted, but are not well-established in the literature, and validated that they hold true.</p>
+</section>
+<section id="a-famous-data-scientist-turns-to-immunology" class="level2">
+<h2 class="anchored" data-anchor-id="a-famous-data-scientist-turns-to-immunology">A famous data scientist turns to immunology</h2>
+<p>Jeff Hammerbacher created and led the data team at Facebook in 2006-2008 and was a founder of the successful cloud computing company Cloudera. A decade ago he made a similar pivot to the one I am currently attempting, starting <a href="https://www.hammerlab.org/">his own immunology lab</a> at Mt. Sinai and later the Medical University of South Carolina. He has applied machine learning to a variety of immunology problems, including <a href="https://pubmed.ncbi.nlm.nih.gov/26856372/">predicting surgery outcomes</a>, <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2017.01807/full">designing cancer vaccines</a>, and starting a <a href="https://www.related.vc/">data science focused drug-discovery firm</a>.</p>
+<p>Hammerbacher, together with Ed Czech, tackled the problem of <a href="https://www.biorxiv.org/content/10.1101/643767v2">using NLP to extract cell type-cytokine relationships</a>. To give an example of the type of problems that must be addressed in NLP, “<em>Th1 (CD4+IL-17-IFN-γhi) cells</em>” is referring to the same cell type as “<em>helper CD4+IL-17-IFN-γhi type 1 cells</em>.” Expert knowledge must be encoded in how to properly parse and categorize cells, knowing when two different strings refer to the same cell type and when they are different.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-01-23-cytokines1/t-cells.jpg" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">A few different T-cells communicating. Source: biolegend.com</figcaption>
+</figure>
+</div>
+<p>They compared two different deep learning models. In one case, they used a generative model with weak supervision, which allowed for them to begin with a smaller labeled dataset to generate labels for previously unlabeled data. In the other case, they used a language model (SciBERT) which had been pre-trained on scientific texts, and then they fine-tuned it for the specific PubMed immunology articles they were using. This is an example of <strong>transfer learning</strong>, a technique in which a machine learning model trained on a large dataset can be customized for use on a much smaller dataset. Transfer learning has been a central part of the fast.ai approach from the start, and was a key technique I featured in my <a href="https://www.youtube.com/watch?v=frc7FgheUj4&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=11">keynotes at JupyterCon 2017</a> and <a href="https://www.youtube.com/watch?v=KChtdexd5Jo&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">SciPy 2019</a>.</p>
+<p>As part of Czech and Hammerbacher’s research, they created a database of T-cell specific cytokines and transcription factors, including relationships between 75 cell types, 262 cytokines, and 382 transcription factors. Their work was distinctive for having a tiny team (just 2 people, compared to 16 authors and 11 annotators for ImmuneXpresso), using 53k full-text documents (rather than solely abstracts), and focusing more narrowly on T-cells (as opposed to all immune cells). Techniques such as transfer learning are powerful in that they allow small teams of researchers to leverage previous models via fine-tuning. In addition to <a href="https://www.biorxiv.org/content/10.1101/643767v2">the paper</a>, Hammerbacher shared about this work in a <a href="https://www.youtube.com/watch?v=pvj9tIdvOXQ">talk he gave at the Allen Institute for AI</a>.</p>
+</section>
+<section id="stay-tuned" class="level2">
+<h2 class="anchored" data-anchor-id="stay-tuned">Stay Tuned</h2>
+<p>Stay tuned for part 2 of this series, which will cover more fascinating research about how immune cells communicate. You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-01-23-cytokines1/index.html</guid>
+  <pubDate>Mon, 22 Jan 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-01-23-cytokines1/biolegend-zoom.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>4 Things I Learned About Bugs</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -221,8 +296,8 @@
 </section>
 
 <p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>machine learning</category>
   <category>ethics</category>
+  <category>machine learning</category>
   <guid>https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/index.html</guid>
   <pubDate>Mon, 15 May 2023 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/cuts-healthcare.jpg" medium="image" type="image/jpeg"/>
@@ -385,7 +460,7 @@
   <category>science</category>
   <guid>https://rachel.fast.ai/posts/2023-03-07-viruses1/index.html</guid>
   <pubDate>Mon, 06 Mar 2023 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2023-03-07-viruses1/exosomes.png" medium="image" type="image/png" height="112" width="144"/>
+  <media:content url="https://rachel.fast.ai/posts/2023-03-07-viruses1/exosomes.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>How to Remember Anything</title>
@@ -471,8 +546,8 @@
 </section>
 
 <p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>education</category>
   <category>advice</category>
+  <category>education</category>
   <guid>https://rachel.fast.ai/posts/2023-02-21-anki/index.html</guid>
   <pubDate>Mon, 20 Feb 2023 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2023-02-21-anki/stats.jpg" medium="image" type="image/jpeg"/>
@@ -970,8 +1045,8 @@
 
 
 <p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>science</category>
   <category>ethics</category>
+  <category>science</category>
   <guid>https://rachel.fast.ai/posts/2021-10-12-medicine-political/index.html</guid>
   <pubDate>Mon, 11 Oct 2021 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2021-10-12-medicine-political/actup-square.jpg" medium="image" type="image/jpeg"/>
@@ -1252,8 +1327,8 @@ When Metrics are Useful
 
 
 <p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>machine learning</category>
   <category>ethics</category>
+  <category>machine learning</category>
   <guid>https://rachel.fast.ai/posts/2019-09-24-metrics/index.html</guid>
   <pubDate>Mon, 23 Sep 2019 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg" medium="image" type="image/jpeg"/>
@@ -1564,149 +1639,6 @@ my wish list for AI researchers <a href="https://t.co/Cel5x32K9O">https://t.co/C
   <guid>https://rachel.fast.ai/posts/2019-02-12-long-hours/index.html</guid>
   <pubDate>Mon, 18 Feb 2019 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2019-02-12-long-hours/overwork.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Five Things That Scare Me About AI</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2019-01-29-five-scary-things/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>AI is being increasingly used to make important decisions. Many AI experts (including <a href="https://www.recode.net/2016/8/13/12467506/google-brain-jeff-dean-ama-reddit-artificial-intelligence-robot-takeover">Jeff Dean</a>, head of AI at Google, and <a href="https://www.theregister.co.uk/2015/03/19/andrew_ng_baidu_ai/">Andrew Ng</a>, founder of Coursera and deeplearning.ai) say that warnings about sentient robots are overblown, but other harms are not getting enough attention. I agree. I am an AI researcher, and <a href="https://www.youtube.com/watch?v=LqjP7O9SxOM">I’m worried</a> about some of the societal impacts that we’re already seeing. In particular, these 5 things scare me about AI:</p>
-<ol>
-<li>
-Algorithms are often implemented without ways to address mistakes.
-</li>
-<li>
-AI makes it easier to not feel responsible.
-</li>
-<li>
-AI encodes &amp; magnifies bias.
-</li>
-<li>
-Optimizing metrics above all else leads to negative outcomes.
-</li>
-<li>
-There is no accountability for big tech companies.
-</li>
-</ol>
-<p>At the end, I’ll briefly share some positive ways that we can try to address these.</p>
-<p>Before we dive in, I need to clarify one point that is important to understand: <strong>algorithms (and the complex systems they are a part of) can make mistakes</strong>. These mistakes come from a variety of sources: bugs in the code, inaccurate or biased data, approximations we have to make (e.g.&nbsp;you want to measure health and you use hospital readmissions as a proxy, or you are interested in crime and use arrests as a proxy. These things are related, but not the same), misunderstandings between different stakeholders (policy makers, those collecting the data, those coding the algorithm, those deploying it), how computer systems interact with human systems, and more.</p>
-<p>This article discusses a variety of algorithmic systems. I don’t find debates about definitions particularly interesting, including what counts as “AI” or if a particular algorithm qualifies as “intelligent” or not. Please note that the dynamics described in this post hold true both for simpler algorithms, as well as more complex ones.</p>
-<h2 id="appeals" class="anchored">
-<ol type="1">
-<li>Algorithms are often implemented without ways to address mistakes.
-</li></ol></h2>
-
-<p>After the state of <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">Arkansas implemented software</a> to determine people’s healthcare benefits, many people saw a drastic reduction in the amount of care they received, but were given <strong>no explanation and no way to appeal</strong>. Tammy Dobbs, a woman with cerebral palsy who needs an aid to help her to get out of bed, to go to the bathroom, to get food, and more, had her hours of help suddenly reduced by 20 hours a week, transforming her life for the worse. Eventually, <strong>a lengthy court case uncovered errors</strong> in the software implementation, and Tammy’s hours were restored (along with those of many others who were impacted by the errors).</p>
-<p>Observations of 5th grade teacher Sarah Wysocki’s classroom yielded positive reviews. Her <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">assistant principal wrote</a>, “<em>It is a pleasure to visit a classroom in which the elements of sound teaching, motivated students and a positive learning environment are so effectively combined</em>.” Two months later, <strong>she was fired by an opaque algorithm, along with over 200 other teachers</strong>. The head of the PTA and a parent of one of Wyscoki’s students described her as “<em>One of the best teachers I’ve ever come in contact with. Every time I saw her, she was attentive to the children, went over their schoolwork, she took time with them and made sure.</em>” That people are losing needed healthcare without an explanation or being fired without explanation is truly dystopian!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/no-accountability.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Headlines from the Verge and the Washington Post</figcaption>
-</figure>
-</div>
-<p>As I covered in a <a href="https://www.fast.ai/posts/2018-08-07-hbr-bias-algorithms.html">previous post</a>, people use outputs from algorithms differently than they use decisions made by humans:</p>
-<ul>
-<li>Algorithms are more likely to be implemented with <strong>no appeals process</strong> in place.</li>
-<li>Algorithms are often used <strong>at scale</strong>.</li>
-<li>Algorithmic systems are <strong>cheap</strong>.</li>
-<li>People are more likely to assume algorithms are <strong>objective or error-free</strong>. As <a href="https://www.youtube.com/watch?v=TRzBk_KuIaM">Peter Haas said</a>, “<em>In AI, we have Milgram’s ultimate authority figure,</em>” referring to Stanley Milgram’s <a href="https://en.wikipedia.org/wiki/Milgram_experiment">famous experiments</a> showing that most people will obey orders from authority figures, even to the point of harming or killing other humans. How much more likely will people be to trust algorithms perceived as objective and correct?</li>
-</ul>
-<p>There is a lot of overlap between these factors. If the main motivation for implementing an algorithm is cost-cutting, adding an appeals process (or even diligently checking for errors) may be considered an “unnecessary” expense. Cathy O’Neill, who earned her math PhD at Harvard, wrote a book <a href="https://weaponsofmathdestructionbook.com/">Weapons of Math Destruction</a>, in which she covers how algorithms are disproportionately impacting poor people, whereas the privileged are more likely to still have access to human attention (in hiring, education, and more).</p>
-<h2 id="responsible" class="anchored">
-<ol start="2" type="1">
-<li>AI makes it easier to not feel responsible.
-</li></ol></h2>
-
-<p>Let’s return to the case of the <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">buggy software used to determine health benefits</a> in Arkansas. How could this have been prevented? In order to prevent severely disabled people from mistakenly losing access to needed healthcare, we need to talk about responsibility. Unfortunately, <strong>complex systems lend themselves to a dynamic in which nobody feels responsible for the outcome</strong>.</p>
-<p>The creator of the algorithm for healthcare benefits, Brant Fries (who has been earning royalties off this algorithm, which is in use in over half the 50 states), blamed state policy makers. I’m sure the state policy makers could blame the implementers of the software. When asked if there should be a way to communicate how the algorithm works to the disabled people losing their healthcare, Fries callously said, “<em>It’s probably something we should do. Yeah, I also should probably dust under my bed</em>,” and then later clarified that he thought it was someone else’s responsibility.</p>
-<p>This passing of the buck and failure to take responsibility is common in many bureaucracies. As <a href="https://www.youtube.com/watch?v=NTl0yyPqf3E">danah boyd observed</a>, <em>“Bureaucracy has often been used to shift or evade responsibility. Who do you hold responsible in a complex system?”</em> Boyd gives the examples of high-ranking bureaucrats in Nazi Germany, who did not see themselves as responsible for the Holocaust. boyd continues, <em>“Today’s algorithmic systems are extending bureaucracy.”</em></p>
-<p>Another example of nobody feeling responsible comes from the case of <a href="http://www.sciencemag.org/news/2018/02/artificial-intelligence-could-identify-gang-crimes-and-ignite-ethical-firestorm">research to classify gang crime</a>. A database of gang members assembled by the Los Angeles Police Department (and 3 other California law enforcement agencies) was <a href="https://www.latimes.com/local/lanow/la-me-ln-calgangs-audit-20160811-snap-story.html">found to have 42 babies</a> who were under the age of 1 when added to the gang database (28 were said to have admitted to being gang members). Keep in mind these are just some of the most obvious errors- we don’t know how many other people were falsely included.</p>
-<p>I don’t bring this up for the primary purpose of pointing fingers or casting blame. However, a world of complex systems in which nobody feels responsible for the outcomes (which can include severely disabled people losing access to the healthcare they need, or innocent people being labeled as gang members) is not a pleasant place. <strong>Our work is almost always a small piece of a larger whole, yet a sense of responsibility is necessary to try to address and prevent negative outcomes.</strong></p>
-<h2 id="bias" class="anchored">
-<ol start="3" type="1">
-<li>AI encodes &amp; magnifies bias.
-</li></ol></h2>
-
-<p><em>But isn’t algorithmic bias just a reflection of how the world is?</em> I get asked a variation of this question <a href="https://www.youtube.com/watch?v=WC1kPtG8Iz8&amp;index=5&amp;t=0s&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6">every time</a> <a href="https://www.youtube.com/watch?v=LqjP7O9SxOM">I give a</a> <a href="https://www.infoq.com/presentations/unconscious-bias-machine-learning">talk about bias</a>. To which my answer is: No, <strong>our algorithms and products impact the world and are part of feedback loops</strong>. Consider an algorithm to predict crime and determine where to send police officers: sending more police to a particular neighhorhood is <strong>not just an effect, but also a cause</strong>. More police officers can lead to more arrests in a given neighborhood, which could cause the algorithm to send even more police to that neighborhood (a mechanism described in <a href="https://arxiv.org/abs/1706.09847">this paper</a> on runaway feedback loops).</p>
-<p>Bias is being encoded and <a href="https://www.wired.com/story/machines-taught-by-photos-learn-a-sexist-view-of-women/">even magnified</a> in a variety of applications:</p>
-<ul>
-<li>software used to <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">decide prison sentences</a> that has twice as high a false positive rate for Black defendents as for white defendents</li>
-<li>computer vision software from <a href="https://www.nytimes.com/2019/01/24/technology/amazon-facial-technology-study.html">Amazon</a>, <a href="http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf">Microsoft, and IBM</a> performs significantly worse on people of color</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/gendershades3.png" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Research by Joy Buolamwini and Timnit Gebru found that commercial computer vision software performed significantly worse on women with dark skin. Gendershades.org</figcaption>
-</figure>
-</div>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=25nC0n9ERq4">Word embeddings</a>, which are a building block for language tools like Gmail’s SmartReply and Google Translate, generate useful analogies such as Rome:Italy :: Madrid:Spain, as well as <a href="https://www.technologyreview.com/s/602025/how-vector-space-mathematics-reveals-the-hidden-sexism-in-language/">biased analogies</a> such as man:computer programmer :: woman: homemaker.</li>
-<li>Machine learning used in recruiting software developed at Amazon <a href="https://www.theverge.com/2018/10/10/17958784/ai-recruiting-tool-bias-amazon-report">penalized applicants</a> who attended all-women’s colleges, as well as any resumes that contained the word “women’s.”</li>
-<li>Over <a href="https://arxiv.org/abs/1711.08536">2/3 of the images in ImageNet</a>, the most studied image data set in the world, are from the Western world (USA, England, Spain, Italy, Australia).</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/imagenet_geodiv.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Chart from ‘No Classification without Representation’ by Shankar, et. al, shows the origin of ImageNet photos: 45% US, 8% UK, 6% Italy, 3% Canada, 3% Australia, 3% Spain,…</figcaption>
-</figure>
-</div>
-<p>Since a Cambrian explosion of machine learning products is occuring, the biases that are calcified now and in the next few years may have a disproportionately huge impact for ages to come (and will be much harder to undo decades from now).</p>
-<h2 id="metrics" class="anchored">
-<ol start="4" type="1">
-<li>Optimizing metrics above all else leads to negative outcomes.
-</li></ol></h2>
-
-<p>Worldwide, people watch <a href="https://youtube.googleblog.com/2017/02/you-know-whats-cool-billion-hours.html">1 billion hours of YouTube per day</a> (yes, that says PER DAY). A large part of YouTube’s successs has been due to its recommendation system, in which a video selected by an algorithm automatically begin playing once the previous video is over. Unfortunately, <a href="https://www.buzzfeednews.com/article/carolineodonovan/down-youtubes-recommendation-rabbithole">these recommendations</a> are disproportionately for conspiracy theories promoting <a href="https://twitter.com/zeynep/status/973271727798083584">white supremacy</a>, climate change denial, and <a href="https://twitter.com/gchaslot/status/967585220001058816">denial of the mass shootings</a> that plague the USA. What is going on? YouTube’s algorithm is trying to <a href="https://medium.com/@guillaumechaslot/how-algorithms-can-learn-to-discredit-the-media-d1360157c4fa">maximize how much time</a> people spend watching YouTube, and <strong>conspiracy theorists watch significantly more YouTube than people who trust a variety of media sources</strong>. Unfortunately, a recommendation system trying only to maximize time spent on its own platform will incentivize content that tells you <strong>the rest of the media is lying</strong>.</p>
-<p>“<em>YouTube may be one of the most powerful radicalizing instruments of the 21st century</em>,” Professor <a href="https://www.nytimes.com/2018/03/10/opinion/sunday/youtube-politics-radical.html">Zeynep Tufekci wrote in the New York Times</a>. <a href="https://medium.com/@guillaumechaslot/how-algorithms-can-learn-to-discredit-the-media-d1360157c4fa">Guillaume Chaslot</a> is a former YouTube engineer turned whistleblower. He has been outspoken about the harms caused by YouTube, and he <a href="https://www.theguardian.com/technology/2018/feb/02/youtube-algorithm-election-clinton-trump-guillaume-chaslot">partnered with the Guardian</a> and the Wall Street Journal to study the extremism and bias in YouTube’s recommendations.</p>
-<p>[Photo of Guillaume Chaslot from the Guardian article]{chaslot.png){width=60%}</p>
-<p>YouTube is owned by Google, which is earning billions of dollars by aggressively introducing vulnerable people to conspiracy theories, while the rest of society bears the <a href="https://en.wikipedia.org/wiki/Externality">externalized costs</a> of rising authoritarian governments, a resurgence in white supremacist movements, failure to act on climate change (even as extreme weather is creating increasing numbers of refugees), growing distrust of mainstream news sources, and a failure to pass sensible gun laws.</p>
-<p>This problem is an example of <a href="https://press.princeton.edu/titles/11218.html">the tyranny of metrics</a>: metrics are just a proxy for what you really care about, and unthinkingly optimizing a metric can lead to unexpected, negative results. One analog example is that when the UK began publishing the success rates of surgeons, <a href="https://www.telegraph.co.uk/science/2016/06/03/one-in-three-heart-surgeons-refuse-difficult-operations-to-avoid/">heart surgeons began turning down</a> risky (but necessary) surgeries to try to keep their scores as high as possible.</p>
-<p>Returning to the account of the popular <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">5th grade teacher who was fired by an algorithm</a>, she suspects that the underlying reason she was fired was that her incoming students had unusually high test scores the previous year (making it seem like their scores had dropped to a more average level after her teaching), and that their former teachers may have cheated. As USA education policy began over-emphasizing student test scores as the primary way to evaluate teachers, there have been <a href="https://www.nytimes.com/2010/06/11/education/11cheat.html">widespread scandals</a> of teachers and principals cheating by altering students scores, in Georgia, Indiana, Massachusetts, Nevada, Virginia, Texas, and elsewhere. When metrics are given undue importance, attempts to game those metrics become common.</p>
-<h2 id="accountability" class="anchored">
-<ol start="5" type="1">
-<li>There is no accountability for big tech companies.
-</li></ol></h2>
-
-<p>Major tech companies are the primary ones driving AI advances, and their algorithms impact billions of people. Unfortunately, these companies have zero accountability. YouTube (owned by Google) is helping to <a href="https://www.nytimes.com/2018/03/10/opinion/sunday/youtube-politics-radical.html">radicalize</a> people into white supremacy. <a href="https://www.buzzfeednews.com/article/alexkantrowitz/google-allowed-advertisers-to-target-jewish-parasite-black">Google allowed advertisers</a> to target people who search racist phrases like “black people ruin neighborhoods” and <a href="https://www.propublica.org/article/facebook-enabled-advertisers-to-reach-jew-haters">Facebook allowed advertisers</a> to target groups like “jew haters”. Amazon’s facial recognition technology <a href="https://www.theverge.com/2018/7/26/17615634/amazon-rekognition-aclu-mug-shot-congress-facial-recognition">misidentified 28 members of congress</a> as criminals, yet it is <a href="https://www.washingtonpost.com/news/the-switch/wp/2018/05/22/amazon-is-selling-facial-recognition-to-law-enforcement-for-a-fistful-of-dollars">already in use</a> by police departments. <a href="https://www.theverge.com/2018/2/27/17054740/palantir-predictive-policing-tool-new-orleans-nopd">Palantir’s predictive policing technology</a> was used for 6 years in New Orleans, with city council members not even knowing about the program, much less having any oversight. The newsfeed/timeline/recommendation algorithms of all the major platforms tend to reward incendiary content, prioritizing it for users.</p>
-<p>In early 2018, <a href="https://www.reuters.com/article/us-myanmar-rohingya-facebook/u-n-investigators-cite-facebook-role-in-myanmar-crisis-idUSKCN1GO2PN">the UN ruled</a> that Facebook had played a “determining role” in the ongoing genocide in Myanmar. “<em>I’m afraid that Facebook has now turned into a beast</em>,” said the UN investigator. This result was not a surprise to anyone who had been following the situation in Myanmar. <a href="https://www.wired.com/story/how-facebooks-rise-fueled-chaos-and-confusion-in-myanmar/">People warned Facebook executives</a> about how the platform was being used to spread dehumanizing hate speech and incite violence against an ethnic minority as early as 2013, and again in 2014 and 2015. As early as 2014, news outlets such as <a href="https://www.aljazeera.com/indepth/features/2014/06/facebook-myanmar-rohingya-amplifying-hate-speech-2014612112834290144.html">Al Jazeera</a> were covering Facebook’s role in inciting ethnic violence in Myanmar.</p>
-<p>One person <a href="https://www.wired.com/story/how-facebooks-rise-fueled-chaos-and-confusion-in-myanmar/">close to the case</a> said, “<em>That’s not 20/20 hindsight. The scale of this problem was significant and it was already apparent.</em>” <strong>Facebook execs were warned in 2015 that Facebook could play the same role in Myanmar that <a href="http://news.bbc.co.uk/2/hi/africa/3257748.stm">radio broadcasts had played during the 1994 Rwandan genocide</a></strong>. As of 2015, Facebook only <a href="https://www.reuters.com/investigates/special-report/myanmar-facebook-hate/">employed 4 contractors</a> who spoke Burmese (the primary language in Myanmar).</p>
-<p>Contrast Facebook’s inaction in Myanmar with their swift action in Germany after the passage of a new law, which could have resulted in penalties of up to 50 million euros. <a href="http://thehill.com/policy/technology/361722-facebook-opens-second-german-office-to-comply-with-hate-speech-law">Facebook hired 1,200 German contractors</a> in under a year. In 2018, five years after Facebook was first warned about how they were being used to incite violence in Myanmar, they hired “dozens” of Burmese contractors, a fraction of their response in Germany. The <strong>credible threat of a large financial penalty</strong> may be the only thing Facebook responds to.</p>
-<p>While it can be easy to focus on regulations that are misguided or ineffective, we often take for granted <a href="https://arxiv.org/abs/1803.09010">safety standards and regulations</a> that have largely worked well. One major success story comes from <a href="https://99percentinvisible.org/episode/nut-behind-wheel/">automobile safety</a>. Early cars had sharp metal knobs on dashboard that lodged in people’s skulls during crashes, plate glass windows that shattered dangerously, and non-collapsible steering columns that would frequently impale drivers. Beyond that, there was a widespread belief that the only issue with cars was the people driving them, and car manufactures did not want data on car safety to be collected. It took consumer safety advocates decades to push the conversation to how cars could be designed with greater safety, and to pass laws regarding seat belts, driver licenses, crash tests, and the collection of car crash data. For more on this topic, <a href="https://arxiv.org/abs/1803.09010">Datasheets for Datasets</a> covers cases studies of how standardization came to the electronics, pharmaceutical, and automobile industries, and 99% Invisible has a <a href="https://99percentinvisible.org/episode/nut-behind-wheel/">deep dive on the history of car safety</a> (with parallels and contrasts to the gun industry).</p>
-<h2 id="better" class="anchored">
-How We Can Do Better
-</h2>
-<p>The good news: none of the problems listed here are inherent to algorithms! There are ways we can do better:</p>
-<ul>
-<li>Make sure there is a meaningful, human appeals process. Plan for how to catch and address mistakes in advance.</li>
-<li>Take responsibility, even when our work is just one part of the system.</li>
-<li>Be on the lookout for bias. Create datasheets for data sets.</li>
-<li>Choose not to just optimize metrics.</li>
-<li>Push for thoughtful regulations and standards for the tech industry.</li>
-</ul>
-<p>The problems we are facing can feel scary and complex. However, it is still very early on in this age of AI and increasing algorithmic automation. Now is a great time to take action: we can change our culture, cultivate a greater sense of responsibility for our work, seek out thoughtful accountability to counterbalance the inordinate power that major tech companies have, and choose to create more humane products and systems. Technology is just a tool, and it can be used for good or bad. Let’s work to use it for good, to improve the lives of many, rather than just generate wealth for a small number of people.</p>
-<h2 class="anchored">
-Related Posts
-</h2>
-<p>You may be interested in these related posts on tech and ethics:</p>
-<ul>
-<li><a href="https://www.fast.ai/posts/2018-09-24-ai-ethics-resources.html">AI Ethics Resources</a></li>
-<li><a href="https://www.fast.ai/posts/2018-08-07-hbr-bias-algorithms.html">What HBR Gets Wrong About Algorithms and Bias</a></li>
-<li><a href="https://medium.com/s/story/techs-long-hours-are-discriminatory-counter-productive-17dc61071ed5">Tech’s long hours are discriminatory &amp; counter-productive</a></li>
-<li><a href="https://www.youtube.com/watch?v=LqjP7O9SxOM&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6">Artificial Intelligence Needs All of Us</a> (TEDx talk)</li>
-</ul>
-
-
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>ethics</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2019-01-29-five-scary-things/index.html</guid>
-  <pubDate>Mon, 28 Jan 2019 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/no-accountability.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

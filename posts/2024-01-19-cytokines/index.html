@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rachel Thomas">
-<meta name="dcterms.date" content="2019-09-24">
-<meta name="description" content="Unthinkingly optimizing metrics can lead to a variety of grave harms, and what most current AI approaches do is to optimize metrics.">
+<meta name="dcterms.date" content="2024-01-23">
+<meta name="description" content="Immune cells talk to each other through complex networks.">
 
-<title>Rachel Thomas, PhD - The problem with metrics is a big problem for AI</title>
+<title>Rachel Thomas, PhD - Applying AI to Immune Cell Networks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,13 +65,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Rachel Thomas, PhD - The problem with metrics is a big problem for AI">
+<meta property="og:title" content="Rachel Thomas, PhD - Applying AI to Immune Cell Networks">
 <meta property="og:description" content="an AI researcher going back to school for immunology">
-<meta property="og:image" content="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2024-01-23-cytokines/biolegend-zoom.jpg">
 <meta property="og:site-name" content="Rachel Thomas, PhD">
-<meta name="twitter:title" content="Rachel Thomas, PhD - The problem with metrics is a big problem for AI">
+<meta name="twitter:title" content="Rachel Thomas, PhD - Applying AI to Immune Cell Networks">
 <meta name="twitter:description" content="an AI researcher going back to school for immunology">
-<meta name="twitter:image" content="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2024-01-23-cytokines/biolegend-zoom.jpg">
 <meta name="twitter:creator" content="@math_rachel">
 <meta name="twitter:site" content="@math_rachel">
 <meta name="twitter:card" content="summary_large_image">
@@ -133,15 +133,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">The problem with metrics is a big problem for AI</h1>
+      <h1 class="title">Applying AI to Immune Cell Networks</h1>
                   <div>
         <div class="description">
-          Unthinkingly optimizing metrics can lead to a variety of grave harms, and what most current AI approaches do is to optimize metrics.
+          Immune cells talk to each other through complex networks.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">ethics</div>
                 <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">science</div>
               </div>
                   </div>
   </div>
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 24, 2019</p>
+        <p class="date">January 23, 2024</p>
       </div>
     </div>
     
@@ -263,7 +263,18 @@ ul.task-list li input[type="checkbox"] {
 
 <!--Zoho Campaigns Web-Optin Form Ends Here-->
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-value-of-domain-expertise" id="toc-the-value-of-domain-expertise" class="nav-link active" data-scroll-target="#the-value-of-domain-expertise">The value of domain expertise</a></li>
+  <li><a href="#a-most-complicated-system" id="toc-a-most-complicated-system" class="nav-link" data-scroll-target="#a-most-complicated-system">A Most Complicated System</a></li>
+  <li><a href="#how-immune-cells-communicate" id="toc-how-immune-cells-communicate" class="nav-link" data-scroll-target="#how-immune-cells-communicate">How Immune Cells Communicate</a></li>
+  <li><a href="#nlp-for-cell-cytokine-interactions" id="toc-nlp-for-cell-cytokine-interactions" class="nav-link" data-scroll-target="#nlp-for-cell-cytokine-interactions">NLP for Cell-Cytokine Interactions</a></li>
+  <li><a href="#a-famous-data-scientist-turns-to-immunology" id="toc-a-famous-data-scientist-turns-to-immunology" class="nav-link" data-scroll-target="#a-famous-data-scientist-turns-to-immunology">A famous data scientist turns to immunology</a></li>
+  <li><a href="#stay-tuned" id="toc-stay-tuned" class="nav-link" data-scroll-target="#stay-tuned">Stay Tuned</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -271,78 +282,64 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><em>Update: This post was expanded into a paper, <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Reliance on metrics is a fundamental challenge for AI</a>, by Rachel Thomas and David Uminsky, which was accepted to the <a href="https://www.sydney.edu.au/data-science/news-and-events/ethics-of-data-science-conference.html">Ethics of Data Science Conference 2020</a> and to <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Cell Patterns</a>. The paper version includes more grounding in previous academic work and a framework towards mitigating these harms.</em></p>
-<p>Goodhart’s Law states that <em>“When a measure becomes a target, it ceases to be a good measure.”</em> At their heart, what most current AI approaches do is to optimize metrics. The practice of optimizing metrics is not new nor unique to AI, yet AI can be particularly efficient (even <em>too</em> efficient!) at doing so.</p>
-<p>This is important to understand, because any risks of optimizing metrics are heightened by AI. While metrics can be useful in their proper place, there are harms when they are unthinkingly applied. Some of the scariest instances of algorithms run amok (such as <a href="https://www.fast.ai/posts/2019-05-28-google-nyt-mohan.html">Google’s algorithm contributing to radicalizing people into white supremacy</a>, <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">teachers being fired by an algorithm</a>, or <a href="https://www.vice.com/en_us/article/pa7dj9/flawed-algorithms-are-grading-millions-of-students-essays">essay grading software</a> that rewards sophisticated garbage) all result from over-emphasizing metrics. We have to understand this dynamic in order to understand the urgent risks we are facing due to misuse of AI.</p>
+<section id="the-value-of-domain-expertise" class="level2">
+<h2 class="anchored" data-anchor-id="the-value-of-domain-expertise">The value of domain expertise</h2>
+<p>Back in 2016, Jeremy Howard and I founded the research lab <a href="https://www.fast.ai/posts/2016-10-07-fastai-launch.html">fast.ai</a>. At the time, deep learning (the technique behind recent advances in AI) was the purview of a small and homogeneous handful of practitioners. The standard approach was to have computer science PhDs tackle problems in domains they had little familiarity with.</p>
+<p>Jeremy and I proposed an ambitious idea–we wanted to teach people from all domains and backgrounds to be able to use deep learning. We weren’t even sure if our goal was possible. However, <a href="https://course.fast.ai/">our online course</a> became one of the most popular deep learning courses in the world, and members of the fast.ai community went on to join top research labs and major tech companies, <a href="https://www.theverge.com/2018/5/7/17316010/fast-ai-speed-test-stanford-dawnbench-google-intel">win competitions against Google</a>, and launch their own startups.</p>
+<p>A core part of our mission was the belief that the people closest to a topic best understand the problems in that area and are best equipped to address them. I’m now one of those people in another domain, as I have <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">immersed myself in the field of immunology</a>. I am particularly interested in studying the intersection of immunology and AI. In this 2-part series, I will share some exciting research at this intersection.</p>
+</section>
+<section id="a-most-complicated-system" class="level2">
+<h2 class="anchored" data-anchor-id="a-most-complicated-system">A Most Complicated System</h2>
+<p>The immune system is even “more complicated than the human genome,” <a href="https://www.freethink.com/health/human-immunome">says John Tsang</a>, a professor at Yale School of Medicine. One component of this complexity is the complicated network by which immune cells communicate with one another via protein messengers known as <em>cytokines</em>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="metrics.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Headlines from HBR, Washington Post, and Vice on some of the outcomes of over-optimizing metrics: rewarding gibberish essays, promoting propaganda, massive fraud at Wells Fargo, and firing good teachers</figcaption>
+<p><img src="biolegend.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Poster of immune cell interactions from <a href="https://www.biolegend.com/en-ie/immunologic-networks-2011">https://www.biolegend.com/en-ie/immunologic-networks-2011</a></figcaption>
 </figure>
 </div>
-The following principles will be illustrated through a series of case studies:
-<ul>
-<li>
-<a href="#proxy">Any metric is just a proxy for what you really care about</a>
-</li>
-<li>
-<a href="#gamed">Metrics can, and will, be gamed</a>
-</li>
-<li>
-<a href="#short-term">Metrics tend to overemphasize short-term concerns</a>
-</li>
-<li>
-<a href="#addictive">Many online metrics are gathered in highly addictive environments</a>
-</li>
-<li>
-<a href="#better">Metrics are most likely to be useful when they are treated as one piece of a bigger picture</a>
-</li>
-</ul>
-<h2 id="proxy" class="anchored">
-We can’t measure the things that matter most
-</h2>
-<p>Metrics are typically just a proxy for what we really care about. The paper <a href="https://scholar.harvard.edu/files/sendhil/files/aer.p20171084.pdf">Does Machine Learning Automate Moral Hazard and Error?</a> covers an interesting example: the researchers investigate which factors in someone’s electronic medical record are most predictive of a future stroke. However, the researchers found that several of the most predictive factors (such as accidental injury, a benign breast lump, or colonoscopy) don’t make sense as risk factors for stroke. So, just what is going on? It turned out that the model was just identifying people who <em>utilize</em> health care a lot. They didn’t actually have data of who had a stroke (a physiological event in which regions of the brain are denied new oxygen); they had data about who had access to medical care, chose to go to a doctor, were given the needed tests, and had this billing code added to their chart. But a number of factors influence this process: who has health insurance or can afford their co-pay, who can take time off of work or find childcare, gender and racial biases that impact who gets accurate diagnoses, cultural factors, and more. As a result, the model was largely picking out people who utilized healthcare versus who did not.</p>
-<p>This an example of the common phenomenon of having to use proxies: You want to know what content users like, so you measure what they click on. You want to know which teachers are most effective, so you measure their students test scores. You want to know about crime, so you measure arrests. These things are not the same. Many things we <em>do</em> care about can not be measured. Metrics can be helpful, but we can’t forget that they are just proxies.</p>
-<p>As another example, Google used hours spent watching YouTube as a proxy for how happy users were with the content, <a href="https://youtube-creators.googleblog.com/2012/08/youtube-now-why-we-focus-on-watch-time.html">writing on the Google blog</a> that <em>“If viewers are watching more YouTube, it signals to us that they’re happier with the content they’ve found.”</em> Guillaume Chaslot, an AI engineer who formerly worked at Google/YouTube, shares how this had the <a href="https://medium.com/@guillaumechaslot/how-algorithms-can-learn-to-discredit-the-media-d1360157c4fa">side effect of incentivizing conspiracy theories</a>, since convincing users that the rest of the media is lying kept them watching more YouTube.</p>
-<h2 id="gamed" class="anchored">
-Metrics can, and will, be gamed
-</h2>
-<p>It is almost inevitable that metrics will be gamed, particularly when they are given too much power. One week this spring, Chaslot collected 84,695 videos from YouTube and analyzed the number of views and the number of channels from which they were recommended. This is <a href="https://twitter.com/gchaslot/status/1121603851675553793?s=20">what he found</a> (also covered in <a href="https://www.washingtonpost.com/technology/2019/04/26/youtube-recommended-russian-media-site-above-all-others-analysis-mueller-report-watchdog-group-says/">the Washington Post</a>):</p>
+<p>Immune cell communication through cytokines is a key area for us to better understand medicine and disease. Various immune cell types must communicate to coordinate their response to threats. However, the immune system may end up over-reacting, under-reacting, or having a misplaced reaction, all of which can cause disease. Sepsis occurs when the immune system responds too vigorously, damaging our own organs. In cancer, the immune system may under-respond, failing to attack cancerous cells that it should. Several types of cancer therapies involve trying to activate or reactivate our own immune cells. In other cases, the immune system mistakenly attacks our own tissue, causing autoimmune diseases including Type 1 diabetes, rheumatoid arthritis, multiple sclerosis, and psoriasis.</p>
+<p>Recent research, drawing on a blend of immunology, mathematics, and natural language processing (NLP) AI, is helping us better understand immune cell-cytokine networks. I have a PhD in math, taught a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">masters course in NLP</a>, and <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">now study immunology</a>, so I have a particular interest in this work. Understanding how the immune system is communicating and coordinating is necessary for knowing why and how the immune response can go awry.</p>
+</section>
+<section id="how-immune-cells-communicate" class="level2">
+<h2 class="anchored" data-anchor-id="how-immune-cells-communicate">How Immune Cells Communicate</h2>
+<p>There are dozens of types of immune cells. The main way that immune cells communicate and coordinate with each other is by sending small protein messengers known as cytokines. There are hundreds of types of cytokines. A single cytokine can have different effects on different cell types. The impact of a cytokine depends on the type of cell sending it, the type of cell receiving it, and the state of the cell. This makes interpreting immune responses challenging!</p>
+<p>Cytokine-based therapies are used to treat some diseases, including cancer and autoimmune disorders. The interactions between cells and cytokines form complex networks, which are not fully mapped.</p>
+<p><em>Note: You may have heard the term “cytokine storm” in <a href="https://www.nytimes.com/2020/04/01/health/coronavirus-cytokine-storm-immune-system.html">the news</a> during early coverage of covid (other diseases and some medical treatments can lead to cytokine storms as well). A cytokine storm occurs when the immune system reacts too vigorously, sending tons of messages and ramping up its inflammatory response to a level that is dangerous to the patient. The double-edged nature of the immune system is part of what piqued my interest about the topic.</em></p>
+</section>
+<section id="nlp-for-cell-cytokine-interactions" class="level2">
+<h2 class="anchored" data-anchor-id="nlp-for-cell-cytokine-interactions">NLP for Cell-Cytokine Interactions</h2>
+<p>Language models such as ChatGPT are part of the active field Natural Language Processing (NLP). NLP applies data science and machine learning to collections of text documents. At fast.ai, Jeremy Howard, Sylvain Gugger, and I developed a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">course on NLP in 2019</a>, teaching cutting edge techniques like transformers, which are now used in ChatGPT and other popular models.</p>
+<p>One paper in immunology is published every 30 minutes! That is a lot of immunology papers, and NLP techniques can be used to help synthesize this huge quantity of information. While models like ChatGPT are trained using a huge variety of texts scraped from the internet, immune-focused work may focus on a more specific group of documents, such as PubMed abstracts. <a href="https://www.nature.com/articles/nbt.4152">A computer program called ImmuneXpresso</a> was developed to text-mine the 16 million abstracts available on PubMed and create triples containing a cell type, cytokine, and whether the relationship was in-coming or out-going (i.e.&nbsp;if the cell was sending or receiving the cytokine).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="YTRT.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Chart showing Russia Today’s video on the Mueller Report as being an outlier in how many YouTube channels recommended it.</figcaption>
+<p><img src="immunexpresso.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Information flow of families of cytokines between families of cells (Figure 2A from ImmuneXpresso)</figcaption>
 </figure>
 </div>
-<p>The state-owned media outlet Russia Today was an extreme outlier in how much YouTube’s algorithm had selected it to be recommended by a wide-variety of other YouTube channels. Such algorithmic selections, which begin autoplaying as soon as your current video is done, account for 70% of the time that users spend on YouTube. This chart strongly suggests that Russia Today has in some way gamed YouTube’s algorithm. Platforms are rife with attempts to game their algorithms, to show up higher in search results or recommended content, through fake clicks, fake reviews, fake followers, and more.</p>
-<p><a href="https://www.vice.com/en_us/article/pa7dj9/flawed-algorithms-are-grading-millions-of-students-essays">Automatic essay grading software</a> focuses primarily on metrics like sentence length, vocabulary, spelling, and subject-verb agreement, but is unable to evaluate aspects of writing that are hard to quantify, such as creativity. As a result, gibberish essays randomly generated by computer programs to contain lots of sophisticated words score well. Essays from students in mainland China, which do well on essay length and sophisticated word choice, received higher scores from the algorithms than from expert human graders, suggesting that these students may be using chunks of pre-memorized text.</p>
-<p>As USA education policy began over-emphasizing student test scores as the primary way to evaluate teachers, there have been <a href="https://www.nytimes.com/2010/06/11/education/11cheat.html">widespread scandals</a> of teachers and principals cheating by altering students scores, in Georgia, Indiana, Massachusetts, Nevada, Virginia, Texas, and elsewhere. One consequence of this is that <strong>teachers who don’t cheat may be penalized or <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">even fired</a></strong> (when it appears student test scores have dropped to more average levels under their instruction). When metrics are given undue importance, attempts to game those metrics become common.</p>
-<h2 id="short-term" class="anchored">
-Metrics tend to overemphasize short-term concerns
-</h2>
-<p>It is much easier to measure short-term quantities: click through rates, month-over-month churn, quarterly earnings. Many long-term trends have a complex mix of factors and are tougher to quantify. What is the long-term impact on user trust of having your brand associated with <a href="https://www.nytimes.com/2019/06/03/world/americas/youtube-pedophiles.html">promoting pedophilia</a>, <a href="https://www.theverge.com/2018/9/19/17876892/youtube-extremism-report-rebecca-lewis-data-society">white supremacy</a>, and <a href="https://www.bbc.com/news/technology-47279253">flat-earth theories</a>? What is the long-term impact on hiring to be the subject of years worth of <a href="https://www.wired.com/story/why-zuckerberg-15-year-apology-tour-hasnt-fixed-facebook/">privacy scandals</a>, <a href="https://www.vox.com/policy-and-politics/2019/1/22/18177076/social-media-facebook-far-right-authoritarian-populism">political manipulation</a>, and <a href="https://www.fast.ai/posts/2017-11-02-ethics.html">facilitating genocide</a>?</p>
-<p>Simply measuring what users click on is a short-term concern, and does not take into account factors like the potential long-term impact of a long-form investigative article which may have taken months to research and which could help shape a reader’s understanding of a complex issue and even lead to significant societal changes.</p>
-<p>A recent <a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business">Harvard Business Review article</a> looked at Wells Fargo as a case study of how letting metrics replace strategy can harm a business. After identifying cross-selling as a measure of long-term customer relationships, Wells Fargo went overboard emphasizing the cross-selling metric: intense pressure on employees combined with an unethical sales culture led to 3.5 million fraudulent deposit and credit card accounts being opened without customers’ consent. The metric of cross-selling is a much more short-term concern compared to the loftier goal of nurturing long-term customer relationships. Overemphasizing metrics removes our focus from long-term concerns such as our values, trust and reputation, and our impact on society and the environment, and myopically focuses on the short-term.</p>
-<h2 id="addictive" class="anchored">
-Many metrics gather data of what we do in highly addictive environments
-</h2>
-<p>It matters which metrics we gather and in what environment we do so. Metrics such as what users click on, how much time they spend on sites, and “engagement” are heavily relied on by tech companies as proxies for user preference, and are used to drive important business decisions. Unfortunately, these metrics are gathered in environments engineered to be highly addictive, <a href="https://twitter.com/random_walker/status/1143601343279579137?s=20">laden with dark patterns</a>, and where financial and design decisions have already greatly circumscribed the range of options.</p>
+<p>The above figure from the <a href="https://www.nature.com/articles/nbt.4152">ImmuneXpresso paper</a> shows some of the information flow. Each family of cytokines shown contains multiple cytokines, and each family of cells contains multiple sub-types. The researchers relied on sentence syntax to parse these relationships, and captured associations with 188 diseases. A machine learning classifier was used to predict whether the data captured were related to cell-cytokine relationships. Over 4,000 directional cell–cytokine interactions were documented via this process. The authors experimentally tested two interactions that were predicted, but are not well-established in the literature, and validated that they hold true.</p>
+</section>
+<section id="a-famous-data-scientist-turns-to-immunology" class="level2">
+<h2 class="anchored" data-anchor-id="a-famous-data-scientist-turns-to-immunology">A famous data scientist turns to immunology</h2>
+<p>Jeff Hammerbacher created and led the data team at Facebook in 2006-2008 and was a founder of the successful cloud computing company Cloudera. A decade ago he made a similar pivot to the one I am currently attempting, starting <a href="https://www.hammerlab.org/">his own immunology lab</a> at Mt. Sinai and later the Medical University of South Carolina. He has applied machine learning to a variety of immunology problems, including <a href="https://pubmed.ncbi.nlm.nih.gov/26856372/">predicting surgery outcomes</a>, <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2017.01807/full">designing cancer vaccines</a>, and starting a <a href="https://www.related.vc/">data science focused drug-discovery firm</a>.</p>
+<p>Hammerbacher, together with Ed Czech, tackled the problem of <a href="https://www.biorxiv.org/content/10.1101/643767v2">using NLP to extract cell type-cytokine relationships</a>. To give an example of the type of problems that must be addressed in NLP, “<em>Th1 (CD4+IL-17-IFN-γhi) cells</em>” is referring to the same cell type as “<em>helper CD4+IL-17-IFN-γhi type 1 cells</em>.” Expert knowledge must be encoded in how to properly parse and categorize cells, knowing when two different strings refer to the same cell type and when they are different.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="junkfood.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Our online environment is a buffet of junk food</figcaption>
+<p><img src="t-cells.jpg" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">A few different T-cells communicating. Source: biolegend.com</figcaption>
 </figure>
 </div>
-<p>Zeynep Tufekci, a professor at UNC and regular contributor to the New York Times, compares recommendation algorithms (such as YouTube choosing which videos to auto-play for you and Facebook deciding what to put at the top of your newsfeed) to a <a href="https://www.theguardian.com/technology/2018/feb/02/how-youtubes-algorithm-distorts-truth">cafeteria shoving junk food</a> into children’s faces. <em>“This is a bit like an autopilot cafeteria in a school that has figured out children have sweet teeth, and also like fatty and salty foods. So you make a line offering such food, automatically loading the next plate as soon as the bag of chips or candy in front of the young person has been consumed.”</em> As those selections get normalized, the output becomes ever more extreme: <em>“So the food gets higher and higher in sugar, fat and salt – natural human cravings – while the videos recommended and auto-played by YouTube get more and more bizarre or hateful.”</em> Too many of our online environments are like this, with metrics capturing that we love sugar, fat, and salt, not taking into account that we are in the digital equivalent of a <a href="https://en.wikipedia.org/wiki/Food_desert">food desert</a> and that companies haven’t been required to put nutrition labels on what they are offering. Such metrics are not indicative of what we would prefer in a healthier or more empowering environment.</p>
-<h2 id="better" class="anchored">
-When Metrics are Useful
-</h2>
-<p>All this is not to say that we should throw metrics out altogether. Data can be valuable in helping us understand the world, test hypotheses, and move beyond gut instincts or hunches. Metrics can be useful when they are in their proper context and place. One way to keep metrics in their place is to consider a slate of many metrics for a fuller picture (and resist the temptation to try to boil these down to a single score). For instance, knowing the rates at which tech companies hire people from under-indexed groups is a very limited data point. For evaluating diversity and inclusion at tech companies, we need to know comparative promotion rates, cap table ownership, retention rates (many tech companies are revolving doors driving people from under-indexed groups away with their toxic cultures), number of harassment victims silenced by NDAs, rates of under-leveling, and more. Even then, all this data should still be combined with <strong>listening to first-person experiences</strong> of those working at these companies.</p>
-<p>Columbia professor and New York Times Chief Data Scientist <a href="https://datascience.columbia.edu/ethical-principles-okrs-and-kpis-what-youtube-and-facebook-could-learn-tukey">Chris Wiggins wrote</a> that quantitative measures should always be combined with qualitative information, <em>“Since we can not know in advance every phenomenon users will experience, we can not know in advance what metrics will quantify these phenomena. To that end, data scientists and machine learning engineers must partner with or learn the skills of user experience research, giving users a voice.”</em></p>
-<p>Another key to keeping metrics in their proper place is to keep domain experts and those who will be most impacted closely involved in their development and use. Surely most teachers could have foreseen that evaluating teachers primarily on the standardized test scores of their students would lead to a host of negative consequences.</p>
-<p>I am not opposed to metrics; I am alarmed about the harms caused when metrics are overemphasized, a phenomenon that we see frequently with AI, and which is having a negative, real-world impact. AI running unchecked to optimize metrics has led to Google/YouTube’s heavy promotion of white supremacist material, essay grading software that rewards garbage, and more. By keeping the risks of metrics in mind, we can try to prevent these harms.</p>
+<p>They compared two different deep learning models. In one case, they used a generative model with weak supervision, which allowed for them to begin with a smaller labeled dataset to generate labels for previously unlabeled data. In the other case, they used a language model (SciBERT) which had been pre-trained on scientific texts, and then they fine-tuned it for the specific PubMed immunology articles they were using. This is an example of <strong>transfer learning</strong>, a technique in which a machine learning model trained on a large dataset can be customized for use on a much smaller dataset. Transfer learning has been a central part of the fast.ai approach from the start, and was a key technique I featured in my <a href="https://www.youtube.com/watch?v=frc7FgheUj4&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=11">keynotes at JupyterCon 2017</a> and <a href="https://www.youtube.com/watch?v=KChtdexd5Jo&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">SciPy 2019</a>.</p>
+<p>As part of Czech and Hammerbacher’s research, they created a database of T-cell specific cytokines and transcription factors, including relationships between 75 cell types, 262 cytokines, and 382 transcription factors. Their work was distinctive for having a tiny team (just 2 people, compared to 16 authors and 11 annotators for ImmuneXpresso), using 53k full-text documents (rather than solely abstracts), and focusing more narrowly on T-cells (as opposed to all immune cells). Techniques such as transfer learning are powerful in that they allow small teams of researchers to leverage previous models via fine-tuning. In addition to <a href="https://www.biorxiv.org/content/10.1101/643767v2">the paper</a>, Hammerbacher shared about this work in a <a href="https://www.youtube.com/watch?v=pvj9tIdvOXQ">talk he gave at the Allen Institute for AI</a>.</p>
+</section>
+<section id="stay-tuned" class="level2">
+<h2 class="anchored" data-anchor-id="stay-tuned">Stay Tuned</h2>
+<p>Stay tuned for part 2 of this series, which will cover more fascinating research about how immune cells communicate. You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
 
 
+</section>
 
 <p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
