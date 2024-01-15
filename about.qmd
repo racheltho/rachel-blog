@@ -20,7 +20,7 @@ about:
 
 :::{#using-template}
 
-MSc Immunology student and cofounder of fast.ai
+MS Microbiology-Immunology student and cofounder of fast.ai
 
 Past: professor & director of University of San Francisco Center for Applied Data Ethics, data scientist, one of Forbes 20 Incredible Women in AI, early engineer at Uber, PhD in mathematics from Duke University
 

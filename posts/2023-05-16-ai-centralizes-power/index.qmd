@@ -4,7 +4,7 @@ date: "2023-05-16"
 image: "/posts/2023-05-16-ai-centralizes-power/cuts-healthcare.jpg"
 description: "Moving AI ethics beyond explainability and fairness to empowerment and justice"
 author: "Rachel Thomas"
-categories: [machine learning, ethics]
+categories: [ethics, machine learning]
 toc: true
 ---
 

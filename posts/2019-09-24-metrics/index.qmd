@@ -4,7 +4,7 @@ description: "Unthinkingly optimizing metrics can lead to a variety of grave har
 image: "metrics.jpg"
 date: "2019-09-24"
 author: "Rachel Thomas"
-categories: [machine learning, ethics]
+categories: [ethics, machine learning]
 toc: true
 ---
 

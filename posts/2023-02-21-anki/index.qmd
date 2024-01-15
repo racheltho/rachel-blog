@@ -4,7 +4,7 @@ date: "2023-02-21"
 image: "/posts/2023-02-21-anki/stats.jpg"
 description: "A study technique for all ages and all subjects"
 author: "Rachel Thomas"
-categories: [education, advice]
+categories: [advice, education]
 toc: true
 ---
 

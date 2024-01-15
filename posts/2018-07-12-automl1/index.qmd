@@ -2,7 +2,7 @@
 title: "What do machine learning practitioners actually do?"
 date: "2018-07-12"
 author: "Rachel Thomas"
-categories: [machine learning, advice, work]
+categories: [advice, machine learning, work]
 image: "woc4.jpg"
 description: "Machine learning is an in-demand field, but there are misconceptions about what the work entails in practice."
 toc: true
