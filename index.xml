@@ -15,7 +15,70 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 22 Jan 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 05 Feb 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>How Immune Cells Communicate</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-02-06-cytokines2/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>This post is part 2 in a series. Be sure to <a href="https://rachel.fast.ai/posts/2024-01-23-cytokines1/">read part 1 here</a>.</em></p>
+<p>A key obstacle hindering medical research for a range of diseases is our lack of understanding of the immune system. <a href="https://www.freethink.com/health/human-immunome">Harvard Professor Wayne Koff described</a> his decades of HIV research, “<em>slowly, over time, we began to see that we understood a lot about HIV at the molecular level, but we didn’t know anything about ourselves. And the reason is that the immune system is incredibly complex</em>.”</p>
+<p>Many diseases involve the immune system overreacting, underreacting, or having a mistargeted reaction. Deepening our understanding of the immune system is crucial for better understanding and treating a range of diseases. In <a href="https://rachel.fast.ai/posts/2024-01-23-cytokines1/">part 1 of this series</a>, I shared about the networks by which immune cells communicate and coordinate via the use of protein messengers called <em>cytokines</em>. These networks are complex and not fully mapped. Studying these networks is part of determining how and why the immune system reacts as it does. Here, I will share some more research on immune cell-cytokine networks.</p>
+<section id="immune-cells-coordinate-like-a-social-network" class="level2">
+<h2 class="anchored" data-anchor-id="immune-cells-coordinate-like-a-social-network">Immune Cells Coordinate Like a Social Network</h2>
+<p>Immune cells and the cytokines they use to communicate can be analyzed using the same techniques as are used for social networks. Networks can be represented as matrices, in which each column/row represents a node, and the matrix values represent the presence or strength of connections between them. This type of representation underlies how the network of the internet is represented for search engines such as Google. Matrix math is everywhere! I covered many applications of it in the computational linear algebra course that Jeremy Howard and I designed and taught at University of San Francisco and fast.ai.</p>
+<p>The <a href="https://www.nature.com/articles/ni.3693">paper ImmProt</a> sampled immune cells from the bloodstream of humans and used proteomics (the large-scale analysis of proteins) to study immune communication networks. The researchers considered 28 cell types in both steady and activated states, and over 10,000 proteins. ImmProt used several classic math techniques to analyze the network, including principal component analysis, supervised clustering, and Lasso regression analysis.</p>
+<p>Cytokines bind to receptors on the surface of the cell that is receiving them. Receptors for some cytokines are found on many different types of immune cells (these receptors are said to be “broadly expressed”), while receptors for other cytokines may be expressed on a very limited number of cell types. The researchers found that there were two types of cytokine communication patterns: there were either many types of cells sending and few types receiving for a given cytokine, or there were few types of cells sending and many receiving. This is a directed, asymmetric information exchange.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-02-06-cytokines2/rieckmann-6h.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">A single type of message (in this case, CCL5/3) can be sent to many different cells (figure 6h from ImmProt)</figcaption>
+</figure>
+</div>
+<p>The authors looked at the number of in-going and out-going communication between various cell types, and determined how much cross-talk there is between different clusters of cell types. In the above diagram, the outer circle lists cell types and the middle circle lists receptor and cytokine gene names. This picture shows that eosinophils and basophils (two cell types that evolved primarily to address parasites) send the cytokine CCL5/3 to a variety of other cells that receive the message using the receptor CCR3. The color of the lines indicates the type of cell sending the cytokine.</p>
+<p>While many of the relationships found were well established in existing scientific papers, they also discovered new relationships, and validated two of these new relationships experimentally: one in-going and one out-going. <a href="https://www.nature.com/articles/ni.3693">The authors wrote</a>, “<em>The immune system displays an almost infinite diversity in cell types and activation states, and achieving completeness in both dimensions is particularly challenging for human cells</em>.”</p>
+</section>
+<section id="ai-does-not-replace-other-ways-of-knowing-about-the-world-benchtop-research-is-still-crucial" class="level2">
+<h2 class="anchored" data-anchor-id="ai-does-not-replace-other-ways-of-knowing-about-the-world-benchtop-research-is-still-crucial">AI does not replace other ways of knowing about the world: benchtop research is still crucial</h2>
+<p>AI is a powerful tool, but it does not replace other ways of knowing about the world, including <a href="https://rachel.fast.ai/posts/2022-06-01-qualitative/">qualitative research</a> (as I wrote about together with Louisa Bartolo) and benchtop quantitative experiments. Machine learning and AI techniques are great at learning patterns in existing data. However, they are limited by what types of data have been collected so far, and it is still crucial to continue running new laboratory-based experiments. For this reason, the recent <a href="https://www.nature.com/articles/s41586-023-06816-9">Immune Dictionary paper</a> was a valuable contribution to the field. The researchers gathered direct measurements of over &gt;1,400 cytokine-cell type pairings in an in vivo experiment.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-02-06-cytokines2/immune-dictionary-1.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Steps for creating a dictionary of immune gene expression signatures (Figure 1A from Immune Dictionary)</figcaption>
+</figure>
+</div>
+<p>This study was significant because it consdiered all major immune cell types and all major cytokines (studies typically look at only 5 immune cell types) and was conducted in vivo (not in a culture). The researchers injected 86 different cytokines into individual mice and measured the responses of 17 types of immune cells in the mouse lymph nodes. They used single-cell RNA sequencing, which is more direct than considering ligand and receptor expression association data. They released their findings as an “Immune Dictionary” and developed <a href="https://www.immune-dictionary.org/app/home">accompanying computer software</a>. This software was then used to identify cytokine networks in tumors after checkpoint blockade therapy (a cancer therapy that helps to reactivate exhausted immune cells).</p>
+<p><a href="https://www.nature.com/articles/s41586-023-06816-9">One key finding</a> was that the responses induced by cytokines are highly cell-specific. Rarer types of immune cells expressed a greater number of cytokine types than more common cell types. One rare cell type, typically not even covered in immunology courses, was found to express the highest number of distinct cytokines, influencing nearly every other cell type. This result suggests that rare immune cell types are crucial for cell-to-cell communication.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-02-06-cytokines2/immune-dictionary-software.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Software for the dictionary of 17+ immune cell types responding to 86 cytokines in vivo</figcaption>
+</figure>
+</div>
+<p>Another important finding was that every immune cell type could be polarized into multiple states depending on the combination of cytokines that it received. The <a href="https://www.broadinstitute.org/news/new-dictionary-immune-responses-reveals-far-more-complexity-immune-system-previously-thought">two key researchers were surprised</a> at this level of plasticity and complexity in immune cell types, with even the most well-studied cytokines inducing more complex responses than previously expected.</p>
+</section>
+<section id="an-ongoing-area-of-research" class="level2">
+<h2 class="anchored" data-anchor-id="an-ongoing-area-of-research">An Ongoing Area of Research</h2>
+<p>This is an exciting area of research to follow. There is still much work to be done in more thoroughly understanding the intricate and complex ways immune cells coordinate with one another to respond to threats. Immune cell-cytokine networks are a great illustration of the power of interdisciplinary work, since NLP, mathematics, and bench top immunology research all provide important insights into the problem. And this is just one of several important problems in immunology where AI is being applied!</p>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-02-06-cytokines2/index.html</guid>
+  <pubDate>Mon, 05 Feb 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-02-06-cytokines2/rieckmann-network.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Applying AI to Immune Cell Networks</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1547,98 +1610,6 @@ my wish list for AI researchers <a href="https://t.co/Cel5x32K9O">https://t.co/C
   <guid>https://rachel.fast.ai/posts/2019-05-13-blogging-advice/index.html</guid>
   <pubDate>Sun, 12 May 2019 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2019-05-13-blogging-advice/blog.jpeg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Tech’s Long Hours Are Discriminatory and Counterproductive</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2019-02-12-long-hours/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="one-third-of-workers-are-ill-or-disabled-and-this-industry-is-shutting-them-out" class="level2">
-<h2 class="anchored" data-anchor-id="one-third-of-workers-are-ill-or-disabled-and-this-industry-is-shutting-them-out">One-third of workers are ill or disabled — and this industry is shutting them out</h2>
-<p>Whether you realize it or not, you are likely interacting with ill or disabled people regularly. According to <a href="https://www.talentinnovation.org/_private/assets/DisabilitiesInclusion_KeyFindings-CTI.pdf">recent survey data</a>, a high portion of the U.S. workforce reports having a disability (30 percent), even though a much smaller percentage says they’ve self-identified as disabled to their employer (only 3.2 percent). Often, these illnesses and disabilities are impossible for others to observe, so many people choose to keep their conditions a secret from managers and co-workers to avoid discrimination.</p>
-<p><a href="https://medium.com/@racheltho/the-tech-industry-is-failing-people-with-disabilities-and-chronic-illnesses-8e8aa17937f3">Health is not binary</a>; it can fluctuate and is subjective. I have experienced a number of health challenges, including having brain surgery twice (once while pregnant) and one life-threatening brain infection (which can take years to recover from). Trust me when I say that you can’t assess someone’s health based on their appearance or mood. And yet, <a href="https://hbr.org/2017/12/the-case-for-improving-work-for-people-with-disabilities-goes-way-beyond-compliance">over one-third</a> of people with disabilities say they have experienced negative bias in their current job.</p>
-<p>I work in the <a href="https://medium.com/@racheltho/the-tech-industry-is-failing-people-with-disabilities-and-chronic-illnesses-8e8aa17937f3">tech industry</a>, where there is an overt glorification — and in many cases, a requirement — of working unhealthily long hours. This is in spite of <a href="https://hbr.org/2015/08/the-research-is-clear-long-hours-backfire-for-people-and-for-companies">research</a> showing that putting in longer hours doesn’t lead to greater productivity and instead is harmful. And when you’re ill or disabled and working in this field, the long hours can be not just counterproductive but discriminatory.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-02-12-long-hours/8hoursday_banner_1856.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">A banner from 1856 reads, “8 hours labour, 8 hours recreation, 8 hours rest.” Source: Wikimedia</figcaption>
-</figure>
-</div>
-</section>
-<section id="fewer-hours-in-the-day" class="level2">
-<h2 class="anchored" data-anchor-id="fewer-hours-in-the-day">Fewer hours in the day</h2>
-<p>Many people with chronic illnesses or disabilities simply have fewer hours in the day. We may need more sleep than comparatively healthy people — and yet still wake up feeling awful — as well as have to carefully budget limited energy. Conditions often require frequent doctor visits, blood tests, MRIs, physical therapy, and other appointments, plus there’s dealing with the administrative burden of managing scheduling, billing, and insurance claims, all of which frequently involve errors.</p>
-<p>In <a href="https://noendinsight.co/2018/12/13/episode-11-john/">an episode</a> of the podcast <em>No End in Sight</em>, which is focused on chronic illness, a front-end software engineer named John pinpointed his experience feeling time-crunched. John has bipolar disorder and Fabry disease, a rare genetic disorder that causes reduced kidney function and chronic pain and requires him to get regular IV infusion treatments. He described being told during a job interview at Microsoft that he needed to spend more of his free time coding:</p>
-<blockquote class="blockquote">
-<p>I really felt looked down on as being lazy. And really, I’m not lazy. I have chronic illness, and I’m trying to do the best — like, I’m not trying to push myself too hard because I don’t want to throw myself into a bipolar tailspin. And I also don’t want to hurt my hands and have it be even worse to type… I was told by this abled person how to go about living assuming that I was abled, and it was just really frustrating. I’ve contributed at least a thousand hours to open source, and I’m supposed to just keep doing more. When does it end?</p>
-</blockquote>
-<p>Natasha Walton, who founded the <a href="https://medium.com/tech-disability-project/my-flexible-work-schedule-was-accidentally-accommodating-7d42528eedc2">Tech Disability Project</a>, has fibromyalgia and post-traumatic stress disorder. She <a href="https://twitter.com/nlmooney/status/999730372781879296">noted on Twitter</a> that certain aspects of the day, like sleep and fitness routines, are not optional for her. “They account for the time I spend meeting my body’s basic needs each and every day so that I can participate in the wider world,” she explained.</p>
-<p>The tech work environment is hostile even to healthy people. The “ideal worker” in tech is in perfect health, child-free, and has no other commitments. I’ve had several jobs in tech that I could do for a time, and even do quite well, but that I knew would be unsustainable for me long-term. The question was not if I would burn out, but when. Numerous co-workers have also seemed on the brink of burnout regardless of whether they had a chronic illness. I even have tech-industry friends who developed permanent chronic illnesses while in toxic work environments.</p>
-<p>There are companies where people like me would not be welcome based on unreasonable employee demands. Last year, Andrew Ng’s deeplearning.ai posted a controversial job ad that not only specified that employees typically spend 70–90 hours per week working and studying (later changed to <a href="https://www.reddit.com/r/MachineLearning/comments/70vuj5/d_twitter_thread_on_andrew_ngs_transparent/">70+ hours</a>), but that doing so is the natural consequence of believing you can change the world. Many companies operate on this assumption, even if most are not quite so frank about it.</p>
-<p>Elon Musk posted a <a href="https://twitter.com/elonmusk/status/1067175527180513280">declaration</a> that to change the world, people need to work 80 hours per week, peaking above 100 at times. Uber formerly had an explicit <a href="https://www.buzzfeednews.com/article/carolineodonovan/how-ubers-hard-charging-corporate-culture-left-employees">company value</a> to “work harder, longer, and smarter” and served dinner at 8:15 p.m. “Working seven days a week, sometimes until 1 or 2 a.m., was considered normal,” <a href="https://www.buzzfeednews.com/article/carolineodonovan/how-ubers-hard-charging-corporate-culture-left-employees">said</a> one former employee. A <em>New York Times</em> <a href="https://www.nytimes.com/2015/08/16/technology/inside-amazon-wrestling-big-ideas-in-a-bruising-workplace.html">article</a> about Amazon described “marathon conference calls on Easter Sunday and Thanksgiving, criticism from bosses for spotty Internet access on vacation, and hours spent working at home most nights or weekends,” as well as employees being given low-performance ratings directly after cancer treatment, major surgeries, or giving birth to a stillborn child.</p>
-</section>
-<section id="the-research-on-productivity" class="level2">
-<h2 class="anchored" data-anchor-id="the-research-on-productivity">The research on productivity</h2>
-<p>As much as possible, we need to get away from the shallow idea that the quantity of time worked is what matters. The tech industry’s obsession with ridiculously long hours is not only inaccessible to many disabled people and harmful to everyone’s health and relationships, but as Olivia Goldhill <a href="https://qz.com/work/1486863/boasting-about-how-many-hours-you-work-is-a-sign-of-failure/">pointed out</a> for <em>Quartz at Work</em>, research on productivity suggests it’s just inefficient:</p>
-<blockquote class="blockquote">
-<p>As countless studies have shown, this simply isn’t true. Productivity dramatically decreases with longer work hours, and completely drops off once people reach 55 hours of work a week, to the point that, on average, someone working 70 hours in a week achieves no more than a colleague working 15 fewer hours.</p>
-</blockquote>
-<p>Alex Soojung-Kim Pang’s book <a href="https://www.indiebound.org/book/9780465074877"><em>Rest</em></a> covers the crucial role that leisure time and downtime play in our creativity, health, and productivity. Prolific, talented figures including Charles Darwin, Henri Poincaré, G.H. Hardy, mathematician Paul Halmos, Charles Dickens, and many others were known to engage in only four or five hours of highly concentrated work per day. Pang also highlights an overlooked aspect of the “rule” popularized by Malcolm Gladwell that to become an expert takes 10,000 hours of practice. Gladwell based it on psychologist K. Anders Ericsson’s <a href="http://projects.ict.usc.edu/itw/gel/EricssonDeliberatePracticePR93.pdf">study</a> of top musical performers, but Pang observes that the top performers also slept more and took afternoon naps:</p>
-<blockquote class="blockquote">
-<p>We’ve come to believe that world-class performance comes after 10,000 hours of practice. But that’s wrong. It comes after 10,000 hours of deliberate practice, 12,500 hours of deliberate rest, and 30,000 hours of sleep.</p>
-</blockquote>
-<p>More support for rest-boosted productivity is detailed in a <em>Harvard Business Review</em> <a href="https://hbr.org/2015/08/the-research-is-clear-long-hours-backfire-for-people-and-for-companies">roundup</a> titled “The Research Is Clear: Long Hours Backfire for People and for Companies.” It highlights a variety of other study results:</p>
-<ul>
-<li>Managers could not tell the difference between employees who worked 80-hour weeks and those who pretended to — though they still penalized employees who were open about working less.</li>
-<li>Overwork is linked to impaired sleep, and <a href="https://hbr.org/2006/10/sleep-deficit-the-performance-killer">sleep deprivation</a> has long been known to lengthen reaction time, interfere with problem-solving, and even induce an impairment equivalent to being drunk.</li>
-<li>Depression, heavy drinking, diabetes, memory problems, heart disease, and poorer judgment calls are all repercussions tied to being overworked.</li>
-<li>Predictable, required time off (like nights and weekends) make teams more productive.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-02-12-long-hours/timekeeping.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Roman timekeeping: Four clocks show the amount of night and day at times of the year. Image from Wikimedia</figcaption>
-</figure>
-</div>
-</section>
-<section id="the-importance-of-flexible-work-environments" class="level2">
-<h2 class="anchored" data-anchor-id="the-importance-of-flexible-work-environments">The importance of flexible work environments</h2>
-<p>Accommodations, even simple ones, can mean a world of difference to employees with illnesses or disabilities. Brianne Benness, founder of the <em>No End in Sight</em> podcast mentioned above, <a href="https://medium.com/tech-disability-project/my-flexible-work-schedule-was-accidentally-accommodating-7d42528eedc2">has written</a> about how a flexible job with remote work helped her stay employed during her at-the-time undiagnosed illness: “When I woke up in a lot of pain, I could tell my boss I was working from home… When the pain in my neck made it too distracting to sit at my desk, I could move to a couch and lie down with my head supported.”</p>
-<p>But when Brianne switched to a job with a more rigid in-office schedule, both her health and work level plummeted. With nowhere to lie down with her laptop, she would not only get distracted by the pain but put her focus on trying to seem productive. Meanwhile, she lost energy fast during the day, struggled with brain fog, and would go to bed as soon as she got home. She nailed the conundrum in explaining, “I know that when my brain is firing on all cylinders, I can get more done in five hours than I can get done in a full week when my brain is plodding. But I don’t know how to share that value with an employer.”</p>
-<blockquote class="blockquote">
-<p>The tech industry problems of exclusion, discrimination, and unhealthy work habits run deep, but there is also a widespread appetite for change.</p>
-</blockquote>
-<p>Some business leaders and employers are recognizing the value on their own. A <em>Harvard Business Review</em> <a href="https://hbr.org/2014/01/to-raise-productivity-let-more-employees-work-from-home">article</a> details an experiment by Stanford professor Nicholas Bloom and Ctrip travel website cofounder James Liang in which they let half of Ctrip’s employees work from home for nine months. They found that the group working from home was both more productive and only half as likely to quit as other employees. Bloom said he was blown away by the results, and the benefits of flexible work were much greater than he expected.</p>
-<p>Massive employers like PricewaterhouseCoopers are experimenting, too. PwC is the second largest professional services firm in the world, and last year, it <a href="https://www.employeebenefits.co.uk/issues/august-2018/pwc-flexible-working-recruitment-programme/">announced</a> a new flexible work program in which potential employees can choose how many hours per week or how many months per year they are available to work. It seems to have created a valuable appeal in recruiting. When one of the company’s leaders, Anne Donovan, <a href="https://hbr.org/2019/01/what-pwc-learned-from-its-policy-of-flexible-work-for-everyone">shared her advice</a> on switching to a more flexible culture, she asserted that everyone deserves the same degree of flexibility and that culture comes from the top.</p>
-</section>
-<section id="we-have-a-long-way-to-go" class="level2">
-<h2 class="anchored" data-anchor-id="we-have-a-long-way-to-go">We have a long way to go</h2>
-<p>In <a href="https://www.juliaferraioli.com/presos/writing-accessible-go/">her keynote</a> at GopherCon, Google developer advocate Julia Ferraioli pointed out that, in tech, we often make products accessible but not the processes or the teams we use to build them. True inclusion means having disabled people on your team; the people creating the technology need to be representative of the people using technology, which, increasingly, is everyone.</p>
-<p>In previous posts, I have shared extensive research on how gender and racial bias manifest in the tech industry, including in <a href="https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996">retention</a><strong>,</strong> <a href="https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd">promotions</a><strong>,</strong> <a href="https://medium.com/tech-diversity-files/donations-and-women-in-tech-panels-are-not-a-diversity-strategy-do-better-c3c51022a916">onboarding</a>, and <a href="https://medium.com/@racheltho/how-to-make-tech-interviews-a-little-less-awful-c29f35431987">hiring</a>. But in researching bias around disability in the field, I found far less, and this is in part because tech companies aren’t tracking it. When a <em>TechCrunch</em> reporter, who has a severe disability, asked Intel, Apple, Twitter, Facebook, Slack, Google, and Salesforce why none of them <a href="https://techcrunch.com/2016/11/07/parallel-pr-universe/">included disability</a> in their diversity reports, the companies gave evasive, off-the-record responses. Since the zeroth step to increasing inclusion is to understand the scope and details of the problem, this is an indicator we have a long way to go.</p>
-<p>The ideas are out there, though. Ted Kennedy Jr., an attorney and state senator who lost his leg as a child due to cancer, recently <a href="https://www.nytimes.com/2018/12/27/opinion/disability-rights-employment.html">wrote about</a> common, straightforward themes among companies that are inclusive of people with disabilities:</p>
-<ul>
-<li>They hire people with disabilities.</li>
-<li>They encourage and advance those employees.</li>
-<li>They provide accessible tools and technology and have a formal accommodations program.</li>
-<li>They empower those employees with mentoring and coaching initiatives (Note: Not all mentorship is the same. <a href="https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women">Research</a> has shown that public endorsement of a mentee’s authority and championing their ideas is far more effective than advice on how the mentee should change and gain self-knowledge.)</li>
-</ul>
-<p>I certainly can’t and don’t speak for everyone with chronic illnesses or disabilities, and I encourage you to listen and read the accounts of others. The tech industry problems of exclusion, discrimination, and unhealthy work habits run deep, but there is also a widespread appetite for change. Reconsider the culture at your workplace by hiring and promoting people with disabilities, de-emphasizing hours spent working in favor of quality of work, and allowing a more flexible setup.</p>
-<p><em>This post was originally published Feb 12, 2019 on Medium. This is a follow-up to an_ <a href="https://medium.com/@racheltho/the-tech-industry-is-failing-people-with-disabilities-and-chronic-illnesses-8e8aa17937f3">earlier post</a> I wrote on how the tech industry is failing people with disabilities and chronic illnesses.</em></p>
-<p><em>Thank you to Julia Ferraioli, Jeremy Howard, and Negar Rostamzadeh for giving me valuable feedback on earlier drafts of this post.</em></p>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>inclusion</category>
-  <category>work</category>
-  <guid>https://rachel.fast.ai/posts/2019-02-12-long-hours/index.html</guid>
-  <pubDate>Mon, 18 Feb 2019 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2019-02-12-long-hours/overwork.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

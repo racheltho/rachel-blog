@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rachel Thomas">
-<meta name="dcterms.date" content="2024-01-23">
-<meta name="description" content="Immune cells talk to each other through complex networks. NLP, math, and immunology are useful in studying these networks.">
+<meta name="dcterms.date" content="2024-02-06">
+<meta name="description" content="Immune cells are like a social network. Both math and benchtop experiments are useful in studying them.">
 
-<title>Rachel Thomas, PhD - Applying AI to Immune Cell Networks</title>
+<title>Rachel Thomas, PhD - How Immune Cells Communicate</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,13 +65,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Rachel Thomas, PhD - Applying AI to Immune Cell Networks">
+<meta property="og:title" content="Rachel Thomas, PhD - How Immune Cells Communicate">
 <meta property="og:description" content="an AI researcher going back to school for immunology">
-<meta property="og:image" content="https://rachel.fast.ai/posts/2024-01-23-cytokines1/biolegend-zoom.jpg">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2024-02-06-cytokines2/rieckmann-network.jpg">
 <meta property="og:site-name" content="Rachel Thomas, PhD">
-<meta name="twitter:title" content="Rachel Thomas, PhD - Applying AI to Immune Cell Networks">
+<meta name="twitter:title" content="Rachel Thomas, PhD - How Immune Cells Communicate">
 <meta name="twitter:description" content="an AI researcher going back to school for immunology">
-<meta name="twitter:image" content="https://rachel.fast.ai/posts/2024-01-23-cytokines1/biolegend-zoom.jpg">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2024-02-06-cytokines2/rieckmann-network.jpg">
 <meta name="twitter:creator" content="@math_rachel">
 <meta name="twitter:site" content="@math_rachel">
 <meta name="twitter:card" content="summary_large_image">
@@ -133,10 +133,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Applying AI to Immune Cell Networks</h1>
+      <h1 class="title">How Immune Cells Communicate</h1>
                   <div>
         <div class="description">
-          Immune cells talk to each other through complex networks. NLP, math, and immunology are useful in studying these networks.
+          Immune cells are like a social network. Both math and benchtop experiments are useful in studying them.
         </div>
       </div>
                           <div class="quarto-categories">
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 23, 2024</p>
+        <p class="date">February 6, 2024</p>
       </div>
     </div>
     
@@ -267,12 +267,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-value-of-domain-expertise" id="toc-the-value-of-domain-expertise" class="nav-link active" data-scroll-target="#the-value-of-domain-expertise">The value of domain expertise</a></li>
-  <li><a href="#a-most-complicated-system" id="toc-a-most-complicated-system" class="nav-link" data-scroll-target="#a-most-complicated-system">A Most Complicated System</a></li>
-  <li><a href="#how-immune-cells-communicate" id="toc-how-immune-cells-communicate" class="nav-link" data-scroll-target="#how-immune-cells-communicate">How Immune Cells Communicate</a></li>
-  <li><a href="#nlp-for-cell-cytokine-interactions" id="toc-nlp-for-cell-cytokine-interactions" class="nav-link" data-scroll-target="#nlp-for-cell-cytokine-interactions">NLP for Cell-Cytokine Interactions</a></li>
-  <li><a href="#a-famous-data-scientist-turns-to-immunology" id="toc-a-famous-data-scientist-turns-to-immunology" class="nav-link" data-scroll-target="#a-famous-data-scientist-turns-to-immunology">A famous data scientist turns to immunology</a></li>
-  <li><a href="#stay-tuned" id="toc-stay-tuned" class="nav-link" data-scroll-target="#stay-tuned">Stay Tuned</a></li>
+  <li><a href="#immune-cells-coordinate-like-a-social-network" id="toc-immune-cells-coordinate-like-a-social-network" class="nav-link active" data-scroll-target="#immune-cells-coordinate-like-a-social-network">Immune Cells Coordinate Like a Social Network</a></li>
+  <li><a href="#ai-does-not-replace-other-ways-of-knowing-about-the-world-benchtop-research-is-still-crucial" id="toc-ai-does-not-replace-other-ways-of-knowing-about-the-world-benchtop-research-is-still-crucial" class="nav-link" data-scroll-target="#ai-does-not-replace-other-ways-of-knowing-about-the-world-benchtop-research-is-still-crucial">AI does not replace other ways of knowing about the world: benchtop research is still crucial</a></li>
+  <li><a href="#an-ongoing-area-of-research" id="toc-an-ongoing-area-of-research" class="nav-link" data-scroll-target="#an-ongoing-area-of-research">An Ongoing Area of Research</a></li>
   </ul>
 </nav>
     </div>
@@ -282,58 +279,46 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="the-value-of-domain-expertise" class="level2">
-<h2 class="anchored" data-anchor-id="the-value-of-domain-expertise">The value of domain expertise</h2>
-<p>Back in 2016, Jeremy Howard and I founded the research lab <a href="https://www.fast.ai/posts/2016-10-07-fastai-launch.html">fast.ai</a>. At the time, deep learning (the technique behind recent advances in AI) was the purview of a small and homogeneous handful of practitioners. The standard approach was to have computer science PhDs tackle problems in domains they had little familiarity with.</p>
-<p>Jeremy and I proposed an ambitious idea–we wanted to teach people from all domains and backgrounds to be able to use deep learning. We weren’t even sure if our goal was possible. However, <a href="https://course.fast.ai/">our online course</a> became one of the most popular deep learning courses in the world, and members of the fast.ai community went on to join top research labs and major tech companies, <a href="https://www.theverge.com/2018/5/7/17316010/fast-ai-speed-test-stanford-dawnbench-google-intel">win competitions against Google</a>, and launch their own startups.</p>
-<p>A core part of our mission was the belief that the people closest to a topic best understand the problems in that area and are best equipped to address them. I’m now one of those people in another domain, as I have <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">immersed myself in the field of immunology</a>. I am particularly interested in studying the intersection of immunology and AI. In this 2-part series, I will share some exciting research at this intersection.</p>
-</section>
-<section id="a-most-complicated-system" class="level2">
-<h2 class="anchored" data-anchor-id="a-most-complicated-system">A Most Complicated System</h2>
-<p>The immune system is even “more complicated than the human genome,” <a href="https://www.freethink.com/health/human-immunome">says John Tsang</a>, a professor at Yale School of Medicine. One component of this complexity is the complicated network by which immune cells communicate with one another via protein messengers known as <em>cytokines</em>.</p>
+<p><em>This post is part 2 in a series. Be sure to <a href="https://rachel.fast.ai/posts/2024-01-23-cytokines1/">read part 1 here</a>.</em></p>
+<p>A key obstacle hindering medical research for a range of diseases is our lack of understanding of the immune system. <a href="https://www.freethink.com/health/human-immunome">Harvard Professor Wayne Koff described</a> his decades of HIV research, “<em>slowly, over time, we began to see that we understood a lot about HIV at the molecular level, but we didn’t know anything about ourselves. And the reason is that the immune system is incredibly complex</em>.”</p>
+<p>Many diseases involve the immune system overreacting, underreacting, or having a mistargeted reaction. Deepening our understanding of the immune system is crucial for better understanding and treating a range of diseases. In <a href="https://rachel.fast.ai/posts/2024-01-23-cytokines1/">part 1 of this series</a>, I shared about the networks by which immune cells communicate and coordinate via the use of protein messengers called <em>cytokines</em>. These networks are complex and not fully mapped. Studying these networks is part of determining how and why the immune system reacts as it does. Here, I will share some more research on immune cell-cytokine networks.</p>
+<section id="immune-cells-coordinate-like-a-social-network" class="level2">
+<h2 class="anchored" data-anchor-id="immune-cells-coordinate-like-a-social-network">Immune Cells Coordinate Like a Social Network</h2>
+<p>Immune cells and the cytokines they use to communicate can be analyzed using the same techniques as are used for social networks. Networks can be represented as matrices, in which each column/row represents a node, and the matrix values represent the presence or strength of connections between them. This type of representation underlies how the network of the internet is represented for search engines such as Google. Matrix math is everywhere! I covered many applications of it in the computational linear algebra course that Jeremy Howard and I designed and taught at University of San Francisco and fast.ai.</p>
+<p>The <a href="https://www.nature.com/articles/ni.3693">paper ImmProt</a> sampled immune cells from the bloodstream of humans and used proteomics (the large-scale analysis of proteins) to study immune communication networks. The researchers considered 28 cell types in both steady and activated states, and over 10,000 proteins. ImmProt used several classic math techniques to analyze the network, including principal component analysis, supervised clustering, and Lasso regression analysis.</p>
+<p>Cytokines bind to receptors on the surface of the cell that is receiving them. Receptors for some cytokines are found on many different types of immune cells (these receptors are said to be “broadly expressed”), while receptors for other cytokines may be expressed on a very limited number of cell types. The researchers found that there were two types of cytokine communication patterns: there were either many types of cells sending and few types receiving for a given cytokine, or there were few types of cells sending and many receiving. This is a directed, asymmetric information exchange.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="biolegend.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Poster of immune cell interactions from <a href="https://www.biolegend.com/en-ie/immunologic-networks-2011">https://www.biolegend.com/en-ie/immunologic-networks-2011</a></figcaption>
+<p><img src="rieckmann-6h.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">A single type of message (in this case, CCL5/3) can be sent to many different cells (figure 6h from ImmProt)</figcaption>
 </figure>
 </div>
-<p>Immune cell communication through cytokines is a key area for us to better understand medicine and disease. Various immune cell types must communicate to coordinate their response to threats. However, the immune system may end up over-reacting, under-reacting, or having a misplaced reaction, all of which can cause disease. Sepsis occurs when the immune system responds too vigorously, damaging our own organs. In cancer, the immune system may under-respond, failing to attack cancerous cells that it should. Several types of cancer therapies involve trying to activate or reactivate our own immune cells. In other cases, the immune system mistakenly attacks our own tissue, causing autoimmune diseases including Type 1 diabetes, rheumatoid arthritis, multiple sclerosis, and psoriasis.</p>
-<p>Recent research, drawing on a blend of immunology, mathematics, and natural language processing (NLP) AI, is helping us better understand immune cell-cytokine networks. I have a PhD in math, taught a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">masters course in NLP</a>, and <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">now study immunology</a>, so I have a particular interest in this work. Understanding how the immune system is communicating and coordinating is necessary for knowing why and how the immune response can go awry.</p>
+<p>The authors looked at the number of in-going and out-going communication between various cell types, and determined how much cross-talk there is between different clusters of cell types. In the above diagram, the outer circle lists cell types and the middle circle lists receptor and cytokine gene names. This picture shows that eosinophils and basophils (two cell types that evolved primarily to address parasites) send the cytokine CCL5/3 to a variety of other cells that receive the message using the receptor CCR3. The color of the lines indicates the type of cell sending the cytokine.</p>
+<p>While many of the relationships found were well established in existing scientific papers, they also discovered new relationships, and validated two of these new relationships experimentally: one in-going and one out-going. <a href="https://www.nature.com/articles/ni.3693">The authors wrote</a>, “<em>The immune system displays an almost infinite diversity in cell types and activation states, and achieving completeness in both dimensions is particularly challenging for human cells</em>.”</p>
 </section>
-<section id="how-immune-cells-communicate" class="level2">
-<h2 class="anchored" data-anchor-id="how-immune-cells-communicate">How Immune Cells Communicate</h2>
-<p>There are dozens of types of immune cells. The main way that immune cells communicate and coordinate with each other is by sending small protein messengers known as cytokines. There are hundreds of types of cytokines. A single cytokine can have different effects on different cell types. The impact of a cytokine depends on the type of cell sending it, the type of cell receiving it, and the state of the cell. This makes interpreting immune responses challenging!</p>
-<p>Cytokine-based therapies are used to treat some diseases, including cancer and autoimmune disorders. The interactions between cells and cytokines form complex networks, which are not fully mapped.</p>
-<p><em>Note: You may have heard the term “cytokine storm” in <a href="https://www.nytimes.com/2020/04/01/health/coronavirus-cytokine-storm-immune-system.html">the news</a> during early coverage of covid (other diseases and some medical treatments can lead to cytokine storms as well). A cytokine storm occurs when the immune system reacts too vigorously, sending tons of messages and ramping up its inflammatory response to a level that is dangerous to the patient. The double-edged nature of the immune system is part of what piqued my interest about the topic.</em></p>
-</section>
-<section id="nlp-for-cell-cytokine-interactions" class="level2">
-<h2 class="anchored" data-anchor-id="nlp-for-cell-cytokine-interactions">NLP for Cell-Cytokine Interactions</h2>
-<p>Language models such as ChatGPT are part of the active field Natural Language Processing (NLP). NLP applies data science and machine learning to collections of text documents. At fast.ai, Jeremy Howard, Sylvain Gugger, and I developed a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">course on NLP in 2019</a>, teaching cutting edge techniques like transformers, which are now used in ChatGPT and other popular models.</p>
-<p>One paper in immunology is published every 30 minutes! That is a lot of immunology papers, and NLP techniques can be used to help synthesize this huge quantity of information. While models like ChatGPT are trained using a huge variety of texts scraped from the internet, immune-focused work may focus on a more specific group of documents, such as PubMed abstracts. <a href="https://www.nature.com/articles/nbt.4152">A computer program called ImmuneXpresso</a> was developed to text-mine the 16 million abstracts available on PubMed and create triples containing a cell type, cytokine, and whether the relationship was in-coming or out-going (i.e.&nbsp;if the cell was sending or receiving the cytokine).</p>
+<section id="ai-does-not-replace-other-ways-of-knowing-about-the-world-benchtop-research-is-still-crucial" class="level2">
+<h2 class="anchored" data-anchor-id="ai-does-not-replace-other-ways-of-knowing-about-the-world-benchtop-research-is-still-crucial">AI does not replace other ways of knowing about the world: benchtop research is still crucial</h2>
+<p>AI is a powerful tool, but it does not replace other ways of knowing about the world, including <a href="https://rachel.fast.ai/posts/2022-06-01-qualitative/">qualitative research</a> (as I wrote about together with Louisa Bartolo) and benchtop quantitative experiments. Machine learning and AI techniques are great at learning patterns in existing data. However, they are limited by what types of data have been collected so far, and it is still crucial to continue running new laboratory-based experiments. For this reason, the recent <a href="https://www.nature.com/articles/s41586-023-06816-9">Immune Dictionary paper</a> was a valuable contribution to the field. The researchers gathered direct measurements of over &gt;1,400 cytokine-cell type pairings in an in vivo experiment.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="immunexpresso.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption class="figure-caption">Information flow of families of cytokines between families of cells (Figure 2A from ImmuneXpresso)</figcaption>
+<p><img src="immune-dictionary-1.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Steps for creating a dictionary of immune gene expression signatures (Figure 1A from Immune Dictionary)</figcaption>
 </figure>
 </div>
-<p>The above figure from the <a href="https://www.nature.com/articles/nbt.4152">ImmuneXpresso paper</a> shows some of the information flow. Each family of cytokines shown contains multiple cytokines, and each family of cells contains multiple sub-types. The researchers relied on sentence syntax to parse these relationships, and captured associations with 188 diseases. A machine learning classifier was used to predict whether the data captured were related to cell-cytokine relationships. Over 4,000 directional cell–cytokine interactions were documented via this process. The authors experimentally tested two interactions that were predicted, but are not well-established in the literature, and validated that they hold true.</p>
-</section>
-<section id="a-famous-data-scientist-turns-to-immunology" class="level2">
-<h2 class="anchored" data-anchor-id="a-famous-data-scientist-turns-to-immunology">A famous data scientist turns to immunology</h2>
-<p>Jeff Hammerbacher created and led the data team at Facebook in 2006-2008 and was a founder of the successful cloud computing company Cloudera. A decade ago he made a similar pivot to the one I am currently attempting, starting <a href="https://www.hammerlab.org/">his own immunology lab</a> at Mt. Sinai and later the Medical University of South Carolina. He has applied machine learning to a variety of immunology problems, including <a href="https://pubmed.ncbi.nlm.nih.gov/26856372/">predicting surgery outcomes</a>, <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2017.01807/full">designing cancer vaccines</a>, and starting a <a href="https://www.related.vc/">data science focused drug-discovery firm</a>.</p>
-<p>Hammerbacher, together with Ed Czech, tackled the problem of <a href="https://www.biorxiv.org/content/10.1101/643767v2">using NLP to extract cell type-cytokine relationships</a>. To give an example of the type of problems that must be addressed in NLP, “<em>Th1 (CD4+IL-17-IFN-γhi) cells</em>” is referring to the same cell type as “<em>helper CD4+IL-17-IFN-γhi type 1 cells</em>.” Expert knowledge must be encoded in how to properly parse and categorize cells, knowing when two different strings refer to the same cell type and when they are different.</p>
+<p>This study was significant because it consdiered all major immune cell types and all major cytokines (studies typically look at only 5 immune cell types) and was conducted in vivo (not in a culture). The researchers injected 86 different cytokines into individual mice and measured the responses of 17 types of immune cells in the mouse lymph nodes. They used single-cell RNA sequencing, which is more direct than considering ligand and receptor expression association data. They released their findings as an “Immune Dictionary” and developed <a href="https://www.immune-dictionary.org/app/home">accompanying computer software</a>. This software was then used to identify cytokine networks in tumors after checkpoint blockade therapy (a cancer therapy that helps to reactivate exhausted immune cells).</p>
+<p><a href="https://www.nature.com/articles/s41586-023-06816-9">One key finding</a> was that the responses induced by cytokines are highly cell-specific. Rarer types of immune cells expressed a greater number of cytokine types than more common cell types. One rare cell type, typically not even covered in immunology courses, was found to express the highest number of distinct cytokines, influencing nearly every other cell type. This result suggests that rare immune cell types are crucial for cell-to-cell communication.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="t-cells.jpg" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption">A few different T-cells communicating. Source: biolegend.com</figcaption>
+<p><img src="immune-dictionary-software.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Software for the dictionary of 17+ immune cell types responding to 86 cytokines in vivo</figcaption>
 </figure>
 </div>
-<p>They compared two different deep learning models. In one case, they used a generative model with weak supervision, which allowed for them to begin with a smaller labeled dataset to generate labels for previously unlabeled data. In the other case, they used a language model (SciBERT) which had been pre-trained on scientific texts, and then they fine-tuned it for the specific PubMed immunology articles they were using. This is an example of <strong>transfer learning</strong>, a technique in which a machine learning model trained on a large dataset can be customized for use on a much smaller dataset. Transfer learning has been a central part of the fast.ai approach from the start, and was a key technique I featured in my <a href="https://www.youtube.com/watch?v=frc7FgheUj4&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=11">keynotes at JupyterCon 2017</a> and <a href="https://www.youtube.com/watch?v=KChtdexd5Jo&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">SciPy 2019</a>.</p>
-<p>As part of Czech and Hammerbacher’s research, they created a database of T-cell specific cytokines and transcription factors, including relationships between 75 cell types, 262 cytokines, and 382 transcription factors. Their work was distinctive for having a tiny team (just 2 people, compared to 16 authors and 11 annotators for ImmuneXpresso), using 53k full-text documents (rather than solely abstracts), and focusing more narrowly on T-cells (as opposed to all immune cells). Techniques such as transfer learning are powerful in that they allow small teams of researchers to leverage previous models via fine-tuning. In addition to <a href="https://www.biorxiv.org/content/10.1101/643767v2">the paper</a>, Hammerbacher shared about this work in a <a href="https://www.youtube.com/watch?v=pvj9tIdvOXQ">talk he gave at the Allen Institute for AI</a>.</p>
+<p>Another important finding was that every immune cell type could be polarized into multiple states depending on the combination of cytokines that it received. The <a href="https://www.broadinstitute.org/news/new-dictionary-immune-responses-reveals-far-more-complexity-immune-system-previously-thought">two key researchers were surprised</a> at this level of plasticity and complexity in immune cell types, with even the most well-studied cytokines inducing more complex responses than previously expected.</p>
 </section>
-<section id="stay-tuned" class="level2">
-<h2 class="anchored" data-anchor-id="stay-tuned">Stay Tuned</h2>
-<p>Stay tuned for part 2 of this series, which will cover more fascinating research about how immune cells communicate. You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<section id="an-ongoing-area-of-research" class="level2">
+<h2 class="anchored" data-anchor-id="an-ongoing-area-of-research">An Ongoing Area of Research</h2>
+<p>This is an exciting area of research to follow. There is still much work to be done in more thoroughly understanding the intricate and complex ways immune cells coordinate with one another to respond to threats. Immune cell-cytokine networks are a great illustration of the power of interdisciplinary work, since NLP, mathematics, and bench top immunology research all provide important insights into the problem. And this is just one of several important problems in immunology where AI is being applied!</p>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
 <script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
 <iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
 </iframe>
