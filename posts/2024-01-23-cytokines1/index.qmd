@@ -2,7 +2,7 @@
 title: "Applying AI to Immune Cell Networks"
 date: "2024-01-23"
 image: "/posts/2024-01-23-cytokines1/biolegend-zoom.jpg"
-description: "Immune cells talk to each other through complex networks."
+description: "Immune cells talk to each other through complex networks.  NLP, math, and immunology are useful in studying these networks."
 author: "Rachel Thomas"
 categories: [machine learning, science]
 toc: true

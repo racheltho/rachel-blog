@@ -1,0 +1,53 @@
+---
+title: "How Immune Cells Communicate"
+date: "2024-02-06"
+image: "/posts/2024-02-06-cytokines2/rieckmann-network.jpg"
+description: "Immune cells are like a social network. Both math and benchtop experiments are useful in studying them."
+author: "Rachel Thomas"
+categories: [machine learning, science]
+toc: true
+---
+
+*This post is part 2 in a series.  Be sure to [read part 1 here](https://rachel.fast.ai/posts/2024-01-23-cytokines1/).*
+
+A key obstacle hindering medical research for a range of diseases is our lack of understanding of the immune system. [Harvard Professor Wayne Koff described](https://www.freethink.com/health/human-immunome) his decades of HIV research, “*slowly, over time, we began to see that we understood a lot about HIV at the molecular level, but we didn’t know anything about ourselves. And the reason is that the immune system is incredibly complex*.”
+
+Many diseases involve the immune system overreacting, underreacting, or having a mistargeted reaction. Deepening our understanding of the immune system is crucial for better understanding and treating a range of diseases. In [part 1 of this series](https://rachel.fast.ai/posts/2024-01-23-cytokines1/), I shared about the networks by which immune cells communicate and coordinate via the use of protein messengers called *cytokines*. These networks are complex and not fully mapped.  Studying these networks is part of determining how and why the immune system reacts as it does. Here, I will share some more research on immune cell-cytokine networks.
+
+## Immune Cells Coordinate Like a Social Network
+
+Immune cells and the cytokines they use to communicate can be analyzed using the same techniques as are used for social networks. Networks can be represented as matrices, in which each column/row represents a node, and the matrix values represent the presence or strength of connections between them.  This type of representation underlies how the network of the internet is represented for search engines such as Google. Matrix math is everywhere! I covered many applications of it in the computational linear algebra course that Jeremy Howard and I designed and taught at University of San Francisco and fast.ai.
+
+The [paper ImmProt](https://www.nature.com/articles/ni.3693) sampled immune cells from the bloodstream of humans and used proteomics (the large-scale analysis of proteins) to study immune communication networks.  The researchers considered 28 cell types in both steady and activated states, and over 10,000 proteins. ImmProt used several classic math techniques to analyze the network, including principal component analysis, supervised clustering, and Lasso regression analysis.
+
+Cytokines bind to receptors on the surface of the cell that is receiving them.  Receptors for some cytokines are found on many different types of immune cells (these receptors are said to be “broadly expressed”), while receptors for other cytokines may be expressed on a very limited number of cell types.  The researchers found that there were two types of cytokine communication patterns: there were either many types of cells sending and few types receiving for a given cytokine, or there were few types of cells sending and many receiving. This is a directed, asymmetric information exchange.
+
+![A single type of message (in this case, CCL5/3) can be sent to many different cells (figure 6h from ImmProt)](rieckmann-6h.jpg){width=65%}
+
+The authors looked at the number of in-going and out-going communication between various cell types, and determined how much cross-talk there is between different clusters of cell types.  In the above diagram, the outer circle lists cell types and the middle circle lists receptor and cytokine gene names.  This picture shows that eosinophils and basophils (two cell types that evolved primarily to address parasites) send the cytokine CCL5/3 to a variety of other cells that receive the message using the receptor CCR3.  The color of the lines indicates the type of cell sending the cytokine.
+
+While many of the relationships found were well established in existing scientific papers, they also discovered new relationships, and validated two of these new relationships experimentally: one in-going and one out-going. [The authors wrote](https://www.nature.com/articles/ni.3693), “*The immune system displays an almost infinite diversity in cell types and activation states, and achieving completeness in both dimensions is particularly challenging for human cells*.”
+
+## AI does not replace other ways of knowing about the world: benchtop research is still crucial
+
+AI is a powerful tool, but it does not replace other ways of knowing about the world, including [qualitative research](https://rachel.fast.ai/posts/2022-06-01-qualitative/) (as I wrote about together with Louisa Bartolo) and benchtop quantitative experiments. Machine learning and AI techniques are great at learning patterns in existing data. However, they are limited by what types of data have been collected so far, and it is still crucial to continue running new laboratory-based experiments. For this reason, the recent [Immune Dictionary paper](https://www.nature.com/articles/s41586-023-06816-9) was a valuable contribution to the field.  The researchers gathered direct measurements of over >1,400 cytokine-cell type pairings in an in vivo experiment.
+
+![Steps for creating a dictionary of immune gene expression signatures (Figure 1A from Immune Dictionary)](immune-dictionary-1.jpg){width=60%}
+
+This study was significant because it consdiered all major immune cell types and all major cytokines (studies typically look at only 5 immune cell types) and was conducted in vivo (not in a culture). The researchers injected 86 different cytokines into individual mice and measured the responses of 17 types of immune cells in the mouse lymph nodes. They used single-cell RNA sequencing, which is more direct than considering ligand and receptor expression association data. They released their findings as an “Immune Dictionary” and developed [accompanying computer software](https://www.immune-dictionary.org/app/home).  This software was then used to identify cytokine networks in tumors after checkpoint blockade therapy (a cancer therapy that helps to reactivate exhausted immune cells).
+
+[One key finding](https://www.nature.com/articles/s41586-023-06816-9) was that the responses induced by cytokines are highly cell-specific. Rarer types of immune cells expressed a greater number of cytokine types than more common cell types. One rare cell type, typically not even covered in immunology courses, was found to express the highest number of distinct cytokines, influencing nearly every other cell type. This result suggests that rare immune cell types are crucial for cell-to-cell communication.
+
+![Software for the dictionary of 17+ immune cell types responding to 86 cytokines in vivo](immune-dictionary-software.jpg){width=75%}
+
+Another important finding was that every immune cell type could be polarized into multiple states depending on the combination of cytokines that it received. The [two key researchers were surprised](https://www.broadinstitute.org/news/new-dictionary-immune-responses-reveals-far-more-complexity-immune-system-previously-thought) at this level of plasticity and complexity in immune cell types, with even the most well-studied cytokines inducing more complex responses than previously expected.
+
+## An Ongoing Area of Research
+
+This is an exciting area of research to follow.  There is still much work to be done in more thoroughly understanding the intricate and complex ways immune cells coordinate with one another to respond to threats.  Immune cell-cytokine networks are a great illustration of the power of interdisciplinary work, since NLP, mathematics, and bench top immunology research all provide important insights into the problem.  And this is just one of several important problems in immunology where AI is being applied!
+
+You can subscribe to be notified of new blog posts by submitting your email below:
+
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&zx=11a17553b1&tD=156971d471c7b09&sD=156971d471c7cb3"></iframe>
+
