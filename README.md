@@ -1,2 +1,3 @@
 # rachel-blog
-Rachel's personal blog
+
+immunology, data ethics, and machine learning
