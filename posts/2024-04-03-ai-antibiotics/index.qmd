@@ -1,7 +1,7 @@
 ---
 title: "Using AI to Discover New Antibiotics"
-date: "2024-03-26"
-image: "/posts/2024-03-26-ai-antibiotics/thumbnail.jpg"
+date: "2024-04-03"
+image: "/posts/2024-04-03-ai-antibiotics/thumbnail.jpg"
 description: "Bacterial resistance to existing antibiotics is an urgent threat.  AI is being used to search for new antibiotics."
 author: "Rachel Thomas"
 categories: [machine learning, science]
