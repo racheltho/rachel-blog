@@ -2,182 +2,186 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rachel.fast.ai/archive.html</loc>
-    <lastmod>2024-04-02T22:12:56.310Z</lastmod>
+    <lastmod>2024-04-24T22:58:22.545Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2023-03-22-viruses2/index.html</loc>
-    <lastmod>2024-04-02T22:12:54.650Z</lastmod>
+    <lastmod>2024-04-24T22:58:20.805Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2015-12-07-diversity-washing/index.html</loc>
-    <lastmod>2024-04-02T22:12:53.510Z</lastmod>
+    <lastmod>2024-04-24T22:58:19.765Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2016-10-04-real-reason/index.html</loc>
-    <lastmod>2024-04-02T22:12:52.360Z</lastmod>
+    <lastmod>2024-04-24T22:58:18.605Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2022-03-15-math-person/index.html</loc>
-    <lastmod>2024-04-02T22:12:51.220Z</lastmod>
+    <lastmod>2024-04-24T22:58:17.485Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2015-07-27-not-pipeline/index.html</loc>
-    <lastmod>2024-04-02T22:12:50.380Z</lastmod>
+    <lastmod>2024-04-24T22:58:16.615Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2019-05-13-blogging-advice/index.html</loc>
-    <lastmod>2024-04-02T22:12:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/index.html</loc>
-    <lastmod>2024-04-02T22:12:48.030Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2024-01-09-insects/index.html</loc>
-    <lastmod>2024-04-02T22:12:47.120Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2018-07-12-automl1/index.html</loc>
-    <lastmod>2024-04-02T22:12:45.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2018-04-29-categorical-embeddings/index.html</loc>
-    <lastmod>2024-04-02T22:12:44.530Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2024-02-20-ai-medicine/index.html</loc>
-    <lastmod>2024-04-02T22:12:43.350Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2020-08-06-ergonomics/index.html</loc>
-    <lastmod>2024-04-02T22:12:42.270Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2018-07-23-automl3/index.html</loc>
-    <lastmod>2024-04-02T22:12:41.230Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2024-02-06-cytokines2/index.html</loc>
-    <lastmod>2024-04-02T22:12:39.960Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2017-11-16-what-you-need/index.html</loc>
-    <lastmod>2024-04-02T22:12:39.050Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2023-03-07-viruses1/index.html</loc>
-    <lastmod>2024-04-02T22:12:37.860Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/index.html</loc>
-    <lastmod>2024-04-02T22:12:36.820Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2023-02-07-school-immunology/index.html</loc>
-    <lastmod>2024-04-02T22:12:35.360Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2019-08-07-surveillance/index.html</loc>
-    <lastmod>2024-04-02T22:12:34.510Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2017-07-28-you-should-blog/index.html</loc>
-    <lastmod>2024-04-02T22:12:33.400Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2019-01-29-five-scary-things/index.html</loc>
-    <lastmod>2024-04-02T22:12:32.490Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/index.html</loc>
-    <lastmod>2024-04-02T22:12:31.100Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2019-02-12-long-hours/index.html</loc>
-    <lastmod>2024-04-02T22:12:31.700Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2016-12-08-org-structure/index.html</loc>
-    <lastmod>2024-04-02T22:12:32.940Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2020-01-21-responsible-govt/index.html</loc>
-    <lastmod>2024-04-02T22:12:33.920Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/index.html</loc>
-    <lastmod>2024-04-02T22:12:34.980Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/index.html</loc>
-    <lastmod>2024-04-02T22:12:36.170Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2019-01-21-should-know/index.html</loc>
-    <lastmod>2024-04-02T22:12:37.410Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2017-11-13-validation-sets/index.html</loc>
-    <lastmod>2024-04-02T22:12:38.420Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2019-02-21-dl-projects/index.html</loc>
-    <lastmod>2024-04-02T22:12:39.540Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2022-05-17-societal-harms/index.html</loc>
-    <lastmod>2024-04-02T22:12:40.530Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2021-10-12-medicine-political/index.html</loc>
-    <lastmod>2024-04-02T22:12:41.800Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2016-10-08-teaching-philosophy/index.html</loc>
-    <lastmod>2024-04-02T22:12:42.780Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2018-07-16-automl2/index.html</loc>
-    <lastmod>2024-04-02T22:12:43.980Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2022-06-01-qualitative/index.html</loc>
-    <lastmod>2024-04-02T22:12:45.180Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2017-03-05-interviews/index.html</loc>
-    <lastmod>2024-04-02T22:12:46.710Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rachel.fast.ai/posts/2022-09-06-homeschooling/index.html</loc>
-    <lastmod>2024-04-02T22:12:47.680Z</lastmod>
+    <lastmod>2024-04-24T22:58:15.505Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2017-12-18-personal-brand/index.html</loc>
-    <lastmod>2024-04-02T22:12:48.740Z</lastmod>
+    <lastmod>2024-04-24T22:58:14.495Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2022-09-06-homeschooling/index.html</loc>
+    <lastmod>2024-04-24T22:58:13.435Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2017-03-05-interviews/index.html</loc>
+    <lastmod>2024-04-24T22:58:12.475Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2022-06-01-qualitative/index.html</loc>
+    <lastmod>2024-04-24T22:58:11.035Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2018-07-16-automl2/index.html</loc>
+    <lastmod>2024-04-24T22:58:09.905Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2016-10-08-teaching-philosophy/index.html</loc>
+    <lastmod>2024-04-24T22:58:08.685Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2021-10-12-medicine-political/index.html</loc>
+    <lastmod>2024-04-24T22:58:07.685Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2022-05-17-societal-harms/index.html</loc>
+    <lastmod>2024-04-24T22:58:06.395Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2019-02-21-dl-projects/index.html</loc>
+    <lastmod>2024-04-24T22:58:05.375Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2017-11-13-validation-sets/index.html</loc>
+    <lastmod>2024-04-24T22:58:04.195Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2019-01-21-should-know/index.html</loc>
+    <lastmod>2024-04-24T22:58:03.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/index.html</loc>
+    <lastmod>2024-04-24T22:58:01.975Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/index.html</loc>
+    <lastmod>2024-04-24T22:58:00.805Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2020-01-21-responsible-govt/index.html</loc>
+    <lastmod>2024-04-24T22:57:59.685Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2016-12-08-org-structure/index.html</loc>
+    <lastmod>2024-04-24T22:57:58.675Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2019-02-12-long-hours/index.html</loc>
+    <lastmod>2024-04-24T22:57:57.425Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/index.html</loc>
+    <lastmod>2024-04-24T22:57:56.795Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2019-01-29-five-scary-things/index.html</loc>
+    <lastmod>2024-04-24T22:57:58.205Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2017-07-28-you-should-blog/index.html</loc>
+    <lastmod>2024-04-24T22:57:59.125Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2019-08-07-surveillance/index.html</loc>
+    <lastmod>2024-04-24T22:58:00.335Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2023-02-07-school-immunology/index.html</loc>
+    <lastmod>2024-04-24T22:58:01.245Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/index.html</loc>
+    <lastmod>2024-04-24T22:58:02.565Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2023-03-07-viruses1/index.html</loc>
+    <lastmod>2024-04-24T22:58:03.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2017-11-16-what-you-need/index.html</loc>
+    <lastmod>2024-04-24T22:58:04.855Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2024-02-06-cytokines2/index.html</loc>
+    <lastmod>2024-04-24T22:58:05.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2018-07-23-automl3/index.html</loc>
+    <lastmod>2024-04-24T22:58:07.105Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2020-08-06-ergonomics/index.html</loc>
+    <lastmod>2024-04-24T22:58:08.165Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2024-02-20-ai-medicine/index.html</loc>
+    <lastmod>2024-04-24T22:58:09.245Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2018-04-29-categorical-embeddings/index.html</loc>
+    <lastmod>2024-04-24T22:58:10.435Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2018-07-12-automl1/index.html</loc>
+    <lastmod>2024-04-24T22:58:11.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2024-01-09-insects/index.html</loc>
+    <lastmod>2024-04-24T22:58:12.865Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/index.html</loc>
+    <lastmod>2024-04-24T22:58:13.805Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rachel.fast.ai/posts/2024-04-25-microbiome-1/index.html</loc>
+    <lastmod>2024-04-24T22:58:14.955Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2024-01-23-cytokines1/index.html</loc>
-    <lastmod>2024-04-02T22:12:49.750Z</lastmod>
+    <lastmod>2024-04-24T22:58:15.955Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2016-11-17-not-all-the-same/index.html</loc>
-    <lastmod>2024-04-02T22:12:50.780Z</lastmod>
+    <lastmod>2024-04-24T22:58:17.025Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2023-02-21-anki/index.html</loc>
-    <lastmod>2024-04-02T22:12:51.630Z</lastmod>
+    <lastmod>2024-04-24T22:58:17.935Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2021-11-04-data-disasters/index.html</loc>
-    <lastmod>2024-04-02T22:12:52.930Z</lastmod>
+    <lastmod>2024-04-24T22:58:19.185Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/posts/2019-09-24-metrics/index.html</loc>
-    <lastmod>2024-04-02T22:12:54.100Z</lastmod>
+    <lastmod>2024-04-24T22:58:20.325Z</lastmod>
   </url>
   <url>
     <loc>https://rachel.fast.ai/about.html</loc>
-    <lastmod>2024-04-02T22:12:54.990Z</lastmod>
+    <lastmod>2024-04-24T22:58:21.155Z</lastmod>
   </url>
 </urlset>

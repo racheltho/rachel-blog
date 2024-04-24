@@ -15,7 +15,87 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 02 Apr 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 24 Apr 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Surprises of the Microbiome</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-04-25-microbiome-1/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Humans <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00875-0">co-evolved together</a> with our microbiomes, the bacteria and fungi that colonize our intestines, coat our skin, and inhabit our mouths, throats, and numerous other body locations. Microbiomes are significant because they influence how we process nutrients, fight pathogens, and what diseases we are susceptible to. This is not just true of humans, but plants and insects also have microbiomes that influence their metabolism and immune systems.</p>
+<p>A microbiome is the community of microorganisms found living together in a given habitat– this does not just include living on a host. Scientists study the microbiomes of nanoplastics floating in the ocean, covered in bacteria and fungi, and of the tiny microbes throughout the atmosphere that catalyze precipitation. Even wildfire smoke has a microbiome. These environmental microbiomes influence food chains, weather patterns, and the spread of disease. We can’t fully understand the impacts of pollution and climate change without studying them.</p>
+<p>Studying the microbiome is crucial for better understanding the health and disease of humans, other animals, plants, and our environment. In this 2-part series, I will cover a grab bag of surprising and fascinating facts about the microbiome.</p>
+<section id="when-the-immune-system-attacks-friendly-bacteria" class="level2">
+<h2 class="anchored" data-anchor-id="when-the-immune-system-attacks-friendly-bacteria">When the immune system attacks friendly bacteria…</h2>
+<p>Commensal bacteria, often referred to as “friendly”, are bacteria that live on human skin or in the gut and help us. The human gut microbiome (and many other animal’s gut microbiomes, including insects) can help synthesize vitamins we need, and is involved in regulating dopamine. However, so-called friendly bacteria can cause grave problems when they cross out of the gut into the bloodstream. Microbes can’t necessarily be classified as “good” or “bad”, and this impact of what happens when microbes cross from the gut to the blood is an example of this.</p>
+<p>I created a short 5 minute video to explain these ideas, geared for a general audience:</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6BYocBxOfsU?si=aSkr2Zmp5HRGwg0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</center>
+<p>If “friendly” microbes stray into the bloodstream, our immune system may mount an attack against them by producing antibodies and activating T cells (the two primary approaches of our adaptive immune systems). The small regions on a bacteria recognized by T cells or antibodies are known as <strong>epitopes</strong>. All bacteria have many epitopes, and genetics helps determine which particular epitopes your immune system is able to recognize. Two different people will likely produce T cells recognizing different epitopes for the same bacteria.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/delcherico.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Bacteria can leak between the cells lining the intestines into the bloodstream, where they may trigger an immune reaction</figcaption>
+</figure>
+</div>
+<p>If the epitopes our immune system attacks are too similar to regions on our own cells, autoimmune disease can develop. This means that the friendly bacteria that has leaked into the bloodstream (where it does not belong) “looks” too similar to some of your own cells. For instance, if the bacteria “looks” like your pancreatic cells (which produce insulin), your T cells may begin mistakenly attacking these insulin-producing cells, leading to Type 1 Diabetes.</p>
+<p>The microbiome can also play a role in how likely microbes are to leak out of a person’s gut in the first place! Low levels of certain commensal bacteria increases gut permeability. This heightened permeability allowing the microbes to leave the intestines. This process has been linked to progression of Type 1 Diabetes to more advanced stages. Note that commensal bacteria are just one potential trigger for the development of autoimmune diseases. As I discussed in a <a href="https://rachel.fast.ai/posts/2023-03-22-viruses2/">previous post</a>, viral infections can also trigger Type 1 Diabetes and other autoimmune diseases.</p>
+</section>
+<section id="bacteria-travel-on-fungal-highways-in-the-plant-microbiome" class="level2">
+<h2 class="anchored" data-anchor-id="bacteria-travel-on-fungal-highways-in-the-plant-microbiome">Bacteria travel on fungal highways in the plant microbiome</h2>
+<p>Plants also have microbiomes. One component of the plant microbiome are fungi that surround the plant roots and the bacteria that travel along these “fungal highways.” The fungi exude sugars that the bacteria use as an energy source along their journeys. The bacteria are able to mineralize organic phosphate, which is beneficial to the fungus and to the plant. Together, the fungus, plant, and bacteria are in symbiotic relationships.</p>
+<p>Watch <a href="https://www.youtube.com/watch?v=AnsYh6511Ic">this short 90 second video</a> to see bacteria traveling along a fungal highway in real-time. You won’t believe how fast they are!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/fungal-highway-3.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">From the Science Friday video on fungal highways</figcaption>
+</figure>
+</div>
+<p>For more on fungal highways, <a href="https://www.youtube.com/watch?v=WpgAA1mh7Io">here is a 3 minute Science Fridays video</a> which discusess how fungal networks optimize traffic to avoid traffic jams. It’s created by Christian Baker, who does a great job of explaining science in a succinct and engaging way. In this video, he interviews math professor Dr.&nbsp;Marcus Roper of UCLA who studies the fluid dynamics of bacterial travel.</p>
+<p>Other researchers are looking at the use of fungal highways to allow <a href="https://pubmed.ncbi.nlm.nih.gov/16047804/">pollutant-degrading bacteria to travel</a>, which could help remove pollutants in a broader area as part of bioremediation efforts.</p>
+<p>Plant microbiomes have a strong influence on their immune function. They help prevent the colonization and growth of pathogens. Unfortunately, <a href="https://www.nature.com/articles/s41579-023-00900-7">climate change is altering the microbiomes of plants</a>, which can make them more susceptible to disease. There are several mechanisms by which this can happen. Climate change alters the composition of microbes found in soil, which is the first line of defense for plants against pathogens. Plants release chemicals and metabolites into the soil, which are useful for attracting beneficial microbiomes, and climate change can harm plants’ capacity to do this (at least in the same quantities as before). Both plants and microbes may migrate into new areas due to changes in climate, further disrupting previous equilibriums.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/climate-change-3ab.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Some of the ways that climate change can impact plant microbiomes, Fig 3 from Singh, et al, 2023</figcaption>
+</figure>
+</div>
+</section>
+<section id="study-of-the-microbiome-is-both-old-and-very-new" class="level2">
+<h2 class="anchored" data-anchor-id="study-of-the-microbiome-is-both-old-and-very-new">Study of the microbiome is both old and very new</h2>
+<p>My microbiome course began with an in-depth unit covering different methods for sequencing genomes. There have been <a href="">multiple revolutions</a> in gene sequencing technology in recent decades, and new machines for gene sequencing are released regularly. Our growing understanding of the microbiome would not be possible without this technology to sequence numerous bacterial species in a sample, and in many ways the field is very young, with lots of open questions remaining.</p>
+<p>Even though microbiome research has only taken off in the last 20 years with the advent of new sequencing technologies, ideas about the microbiome and its role in health have been around for a long time. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3426293/">Antonie van Leewenhoek used a microscope</a> to compare the microbes in his oral and fecal microbiota in the 1680s.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/metchkinoff-pacbio.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Left: Élie Metchnikoff, Right: a modern PacBio sequencing machine, which costs half a million dollars</figcaption>
+</figure>
+</div>
+<p>Élie Metchnikoff, who won the Nobel Prize in Medicine 1908, is best known as the father of cellular immunity. He discovered that there are immune cells that can ingest pathogens. He named them “eating cells” (phagocytes), and we now refer to these immune cells as “big eaters” (macrophages). In addition to discovering cellular immunity, <a href="https://www.frontiersin.org/articles/10.3389/fpubh.2013.00052/full">Metchnikoff is considered</a> one of the founders of probiotics. He believed consuming sour milk (yogurt) would be beneficial for the microbiome and he laid the conceptual framework for fecal transplantation to modify the microbiome, over 100 years ago. Questions about whether and how we can alter our microbiomes are still being <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5374383/">studied and debated</a> today, as are the roles of genetics, lifestyle, and environment in influencing the microbiome.</p>
+</section>
+<section id="stay-tuned" class="level2">
+<h2 class="anchored" data-anchor-id="stay-tuned">Stay tuned…</h2>
+<p>Please subscribe to my blog to be notified of Part 2, which will describe the microbiomes of nanoplastics and wildfire smoke, as well as some puzzling examples of microbes that are both good and bad.</p>
+<p>In the meantime, you may be interested in a previous post of mine that discussed the microbiomes of insects, which can help produce both essential nutrients and defensive toxins to use against predators. Read more in <a href="https://rachel.fast.ai/posts/2024-01-09-insects/">4 Things I Learned About Bugs</a>.</p>
+<p>Submit your email below to be notified of new posts:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-04-25-microbiome-1/index.html</guid>
+  <pubDate>Wed, 24 Apr 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/fungal-highway-fingernail.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Using AI to Discover New Antibiotics</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1477,95 +1557,6 @@ I couldn't be happier with my little standing desk setup. I have tried far to ma
   <guid>https://rachel.fast.ai/posts/2020-01-21-responsible-govt/index.html</guid>
   <pubDate>Mon, 20 Jan 2020 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/project-greenlight.jpeg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>The problem with metrics is a big problem for AI</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2019-09-24-metrics/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><em>Update: This post was expanded into a paper, <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Reliance on metrics is a fundamental challenge for AI</a>, by Rachel Thomas and David Uminsky, which was accepted to the <a href="https://www.sydney.edu.au/data-science/news-and-events/ethics-of-data-science-conference.html">Ethics of Data Science Conference 2020</a> and to <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Cell Patterns</a>. The paper version includes more grounding in previous academic work and a framework towards mitigating these harms.</em></p>
-<p>Goodhart’s Law states that <em>“When a measure becomes a target, it ceases to be a good measure.”</em> At their heart, what most current AI approaches do is to optimize metrics. The practice of optimizing metrics is not new nor unique to AI, yet AI can be particularly efficient (even <em>too</em> efficient!) at doing so.</p>
-<p>This is important to understand, because any risks of optimizing metrics are heightened by AI. While metrics can be useful in their proper place, there are harms when they are unthinkingly applied. Some of the scariest instances of algorithms run amok (such as <a href="https://www.fast.ai/posts/2019-05-28-google-nyt-mohan.html">Google’s algorithm contributing to radicalizing people into white supremacy</a>, <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">teachers being fired by an algorithm</a>, or <a href="https://www.vice.com/en_us/article/pa7dj9/flawed-algorithms-are-grading-millions-of-students-essays">essay grading software</a> that rewards sophisticated garbage) all result from over-emphasizing metrics. We have to understand this dynamic in order to understand the urgent risks we are facing due to misuse of AI.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Headlines from HBR, Washington Post, and Vice on some of the outcomes of over-optimizing metrics: rewarding gibberish essays, promoting propaganda, massive fraud at Wells Fargo, and firing good teachers</figcaption>
-</figure>
-</div>
-The following principles will be illustrated through a series of case studies:
-<ul>
-<li>
-Any metric is just a proxy for what you really care about
-</li>
-<li>
-Metrics can, and will, be gamed
-</li>
-<li>
-Metrics tend to overemphasize short-term concerns
-</li>
-<li>
-Many online metrics are gathered in highly addictive environments
-</li>
-<li>
-Metrics are most likely to be useful when they are treated as one piece of a bigger picture
-</li>
-</ul>
-<h2 id="proxy" class="anchored">
-We can’t measure the things that matter most
-</h2>
-<p>Metrics are typically just a proxy for what we really care about. The paper <a href="https://scholar.harvard.edu/files/sendhil/files/aer.p20171084.pdf">Does Machine Learning Automate Moral Hazard and Error?</a> covers an interesting example: the researchers investigate which factors in someone’s electronic medical record are most predictive of a future stroke. However, the researchers found that several of the most predictive factors (such as accidental injury, a benign breast lump, or colonoscopy) don’t make sense as risk factors for stroke. So, just what is going on? It turned out that the model was just identifying people who <em>utilize</em> health care a lot. They didn’t actually have data of who had a stroke (a physiological event in which regions of the brain are denied new oxygen); they had data about who had access to medical care, chose to go to a doctor, were given the needed tests, and had this billing code added to their chart. But a number of factors influence this process: who has health insurance or can afford their co-pay, who can take time off of work or find childcare, gender and racial biases that impact who gets accurate diagnoses, cultural factors, and more. As a result, the model was largely picking out people who utilized healthcare versus who did not.</p>
-<p>This an example of the common phenomenon of having to use proxies: You want to know what content users like, so you measure what they click on. You want to know which teachers are most effective, so you measure their students test scores. You want to know about crime, so you measure arrests. These things are not the same. Many things we <em>do</em> care about can not be measured. Metrics can be helpful, but we can’t forget that they are just proxies.</p>
-<p>As another example, Google used hours spent watching YouTube as a proxy for how happy users were with the content, <a href="https://youtube-creators.googleblog.com/2012/08/youtube-now-why-we-focus-on-watch-time.html">writing on the Google blog</a> that <em>“If viewers are watching more YouTube, it signals to us that they’re happier with the content they’ve found.”</em> Guillaume Chaslot, an AI engineer who formerly worked at Google/YouTube, shares how this had the <a href="https://medium.com/@guillaumechaslot/how-algorithms-can-learn-to-discredit-the-media-d1360157c4fa">side effect of incentivizing conspiracy theories</a>, since convincing users that the rest of the media is lying kept them watching more YouTube.</p>
-<h2 id="gamed" class="anchored">
-Metrics can, and will, be gamed
-</h2>
-<p>It is almost inevitable that metrics will be gamed, particularly when they are given too much power. One week this spring, Chaslot collected 84,695 videos from YouTube and analyzed the number of views and the number of channels from which they were recommended. This is <a href="https://twitter.com/gchaslot/status/1121603851675553793?s=20">what he found</a> (also covered in <a href="https://www.washingtonpost.com/technology/2019/04/26/youtube-recommended-russian-media-site-above-all-others-analysis-mueller-report-watchdog-group-says/">the Washington Post</a>):</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/YTRT.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Chart showing Russia Today’s video on the Mueller Report as being an outlier in how many YouTube channels recommended it.</figcaption>
-</figure>
-</div>
-<p>The state-owned media outlet Russia Today was an extreme outlier in how much YouTube’s algorithm had selected it to be recommended by a wide-variety of other YouTube channels. Such algorithmic selections, which begin autoplaying as soon as your current video is done, account for 70% of the time that users spend on YouTube. This chart strongly suggests that Russia Today has in some way gamed YouTube’s algorithm. Platforms are rife with attempts to game their algorithms, to show up higher in search results or recommended content, through fake clicks, fake reviews, fake followers, and more.</p>
-<p><a href="https://www.vice.com/en_us/article/pa7dj9/flawed-algorithms-are-grading-millions-of-students-essays">Automatic essay grading software</a> focuses primarily on metrics like sentence length, vocabulary, spelling, and subject-verb agreement, but is unable to evaluate aspects of writing that are hard to quantify, such as creativity. As a result, gibberish essays randomly generated by computer programs to contain lots of sophisticated words score well. Essays from students in mainland China, which do well on essay length and sophisticated word choice, received higher scores from the algorithms than from expert human graders, suggesting that these students may be using chunks of pre-memorized text.</p>
-<p>As USA education policy began over-emphasizing student test scores as the primary way to evaluate teachers, there have been <a href="https://www.nytimes.com/2010/06/11/education/11cheat.html">widespread scandals</a> of teachers and principals cheating by altering students scores, in Georgia, Indiana, Massachusetts, Nevada, Virginia, Texas, and elsewhere. One consequence of this is that <strong>teachers who don’t cheat may be penalized or <a href="https://www.washingtonpost.com/local/education/creative--motivating-and-fired/2012/02/04/gIQAwzZpvR_story.html">even fired</a></strong> (when it appears student test scores have dropped to more average levels under their instruction). When metrics are given undue importance, attempts to game those metrics become common.</p>
-<h2 id="short-term" class="anchored">
-Metrics tend to overemphasize short-term concerns
-</h2>
-<p>It is much easier to measure short-term quantities: click through rates, month-over-month churn, quarterly earnings. Many long-term trends have a complex mix of factors and are tougher to quantify. What is the long-term impact on user trust of having your brand associated with <a href="https://www.nytimes.com/2019/06/03/world/americas/youtube-pedophiles.html">promoting pedophilia</a>, <a href="https://www.theverge.com/2018/9/19/17876892/youtube-extremism-report-rebecca-lewis-data-society">white supremacy</a>, and <a href="https://www.bbc.com/news/technology-47279253">flat-earth theories</a>? What is the long-term impact on hiring to be the subject of years worth of <a href="https://www.wired.com/story/why-zuckerberg-15-year-apology-tour-hasnt-fixed-facebook/">privacy scandals</a>, <a href="https://www.vox.com/policy-and-politics/2019/1/22/18177076/social-media-facebook-far-right-authoritarian-populism">political manipulation</a>, and <a href="https://www.fast.ai/posts/2017-11-02-ethics.html">facilitating genocide</a>?</p>
-<p>Simply measuring what users click on is a short-term concern, and does not take into account factors like the potential long-term impact of a long-form investigative article which may have taken months to research and which could help shape a reader’s understanding of a complex issue and even lead to significant societal changes.</p>
-<p>A recent <a href="https://hbr.org/2019/09/dont-let-metrics-undermine-your-business">Harvard Business Review article</a> looked at Wells Fargo as a case study of how letting metrics replace strategy can harm a business. After identifying cross-selling as a measure of long-term customer relationships, Wells Fargo went overboard emphasizing the cross-selling metric: intense pressure on employees combined with an unethical sales culture led to 3.5 million fraudulent deposit and credit card accounts being opened without customers’ consent. The metric of cross-selling is a much more short-term concern compared to the loftier goal of nurturing long-term customer relationships. Overemphasizing metrics removes our focus from long-term concerns such as our values, trust and reputation, and our impact on society and the environment, and myopically focuses on the short-term.</p>
-<h2 id="addictive" class="anchored">
-Many metrics gather data of what we do in highly addictive environments
-</h2>
-<p>It matters which metrics we gather and in what environment we do so. Metrics such as what users click on, how much time they spend on sites, and “engagement” are heavily relied on by tech companies as proxies for user preference, and are used to drive important business decisions. Unfortunately, these metrics are gathered in environments engineered to be highly addictive, <a href="https://twitter.com/random_walker/status/1143601343279579137?s=20">laden with dark patterns</a>, and where financial and design decisions have already greatly circumscribed the range of options.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2019-09-24-metrics/junkfood.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Our online environment is a buffet of junk food</figcaption>
-</figure>
-</div>
-<p>Zeynep Tufekci, a professor at UNC and regular contributor to the New York Times, compares recommendation algorithms (such as YouTube choosing which videos to auto-play for you and Facebook deciding what to put at the top of your newsfeed) to a <a href="https://www.theguardian.com/technology/2018/feb/02/how-youtubes-algorithm-distorts-truth">cafeteria shoving junk food</a> into children’s faces. <em>“This is a bit like an autopilot cafeteria in a school that has figured out children have sweet teeth, and also like fatty and salty foods. So you make a line offering such food, automatically loading the next plate as soon as the bag of chips or candy in front of the young person has been consumed.”</em> As those selections get normalized, the output becomes ever more extreme: <em>“So the food gets higher and higher in sugar, fat and salt – natural human cravings – while the videos recommended and auto-played by YouTube get more and more bizarre or hateful.”</em> Too many of our online environments are like this, with metrics capturing that we love sugar, fat, and salt, not taking into account that we are in the digital equivalent of a <a href="https://en.wikipedia.org/wiki/Food_desert">food desert</a> and that companies haven’t been required to put nutrition labels on what they are offering. Such metrics are not indicative of what we would prefer in a healthier or more empowering environment.</p>
-<h2 id="better" class="anchored">
-When Metrics are Useful
-</h2>
-<p>All this is not to say that we should throw metrics out altogether. Data can be valuable in helping us understand the world, test hypotheses, and move beyond gut instincts or hunches. Metrics can be useful when they are in their proper context and place. One way to keep metrics in their place is to consider a slate of many metrics for a fuller picture (and resist the temptation to try to boil these down to a single score). For instance, knowing the rates at which tech companies hire people from under-indexed groups is a very limited data point. For evaluating diversity and inclusion at tech companies, we need to know comparative promotion rates, cap table ownership, retention rates (many tech companies are revolving doors driving people from under-indexed groups away with their toxic cultures), number of harassment victims silenced by NDAs, rates of under-leveling, and more. Even then, all this data should still be combined with <strong>listening to first-person experiences</strong> of those working at these companies.</p>
-<p>Columbia professor and New York Times Chief Data Scientist <a href="https://datascience.columbia.edu/ethical-principles-okrs-and-kpis-what-youtube-and-facebook-could-learn-tukey">Chris Wiggins wrote</a> that quantitative measures should always be combined with qualitative information, <em>“Since we can not know in advance every phenomenon users will experience, we can not know in advance what metrics will quantify these phenomena. To that end, data scientists and machine learning engineers must partner with or learn the skills of user experience research, giving users a voice.”</em></p>
-<p>Another key to keeping metrics in their proper place is to keep domain experts and those who will be most impacted closely involved in their development and use. Surely most teachers could have foreseen that evaluating teachers primarily on the standardized test scores of their students would lead to a host of negative consequences.</p>
-<p>I am not opposed to metrics; I am alarmed about the harms caused when metrics are overemphasized, a phenomenon that we see frequently with AI, and which is having a negative, real-world impact. AI running unchecked to optimize metrics has led to Google/YouTube’s heavy promotion of white supremacist material, essay grading software that rewards garbage, and more. By keeping the risks of metrics in mind, we can try to prevent these harms.</p>
-
-
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>ethics</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2019-09-24-metrics/index.html</guid>
-  <pubDate>Mon, 23 Sep 2019 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2019-09-24-metrics/metrics.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

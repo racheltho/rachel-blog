@@ -2,6 +2,7 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/2024-04-25-microbiome-1/index.html",
       "/posts/2024-04-03-ai-antibiotics/index.html",
       "/posts/2024-02-20-ai-medicine/index.html",
       "/posts/2024-02-06-cytokines2/index.html",
@@ -49,6 +50,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2024-04-25-microbiome-1/index.html",
       "/posts/2024-04-03-ai-antibiotics/index.html",
       "/posts/2024-02-20-ai-medicine/index.html",
       "/posts/2024-02-06-cytokines2/index.html",
