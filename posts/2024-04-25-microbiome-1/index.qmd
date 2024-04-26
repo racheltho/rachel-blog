@@ -16,7 +16,7 @@ Studying the microbiome is crucial for better understanding the health and disea
 
 ## When the immune system attacks friendly bacteria...
 
-Commensal bacteria, often referred to as “friendly”, are bacteria that live on human skin or in the gut and help us. The human gut microbiome (and many other animal’s gut microbiomes, including insects) can help synthesize vitamins we need, and is involved in regulating dopamine. However, so-called friendly bacteria can cause grave problems when they cross out of the gut into the bloodstream. Microbes can’t necessarily be classified as “good” or “bad”, and this impact of what happens when microbes cross from the gut to the blood is an example of this.
+Commensal bacteria, often referred to as “friendly”, are bacteria that live on human skin or in the gut and help us. The human gut microbiome can help synthesize vitamins we need, regulate dopamine, and protect us from infection. However, so-called friendly bacteria can cause grave problems when they cross out of the gut into the bloodstream. Microbes can’t necessarily be classified as “good” or “bad”, and this impact of what happens when microbes cross from the gut to the blood is an example of this.
 
 I created a short 5 minute video to explain these ideas, geared for a general audience:
 
@@ -26,11 +26,11 @@ I created a short 5 minute video to explain these ideas, geared for a general au
 
 If “friendly” microbes stray into the bloodstream, our immune system may mount an attack against them by producing antibodies and activating T cells (the two primary approaches of our adaptive immune systems).  The small regions on a bacteria recognized by T cells or antibodies are known as **epitopes**. All bacteria have many epitopes, and genetics helps determine which particular epitopes your immune system is able to recognize. Two different people will likely produce T cells recognizing different epitopes for the same bacteria.
 
-![Bacteria can leak between the cells lining the intestines into the bloodstream, where they may trigger an immune reaction](delcherico.jpg){width=60%}
+![Bacteria can leak between the cells lining the intestines into the bloodstream, where they may trigger an immune reaction (Fig 1, Del Cherico, et al, 2022](delcherico.jpg){width=60%}
 
-If the epitopes our immune system attacks are too similar to regions on our own cells, autoimmune disease can develop. This means that the friendly bacteria that has leaked into the bloodstream (where it does not belong) “looks” too similar to some of your own cells.  For instance, if the bacteria “looks” like your pancreatic cells (which produce insulin), your T cells may begin mistakenly attacking these insulin-producing cells, leading to Type 1 Diabetes.
+If the epitopes our immune system attacks are too similar to regions on our own cells, autoimmune disease can develop. This means that the [friendly bacteria that has leaked into the bloodstream](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9737253/) (where it does not belong) “looks” too similar to some of your own cells.  For instance, if the bacteria “looks” like your pancreatic cells (which produce insulin), your T cells may begin mistakenly attacking these insulin-producing cells, leading to Type 1 Diabetes.
 
-The microbiome can also play a role in how likely microbes are to leak out of a person's gut in the first place! Low levels of certain commensal bacteria increases gut permeability. This heightened permeability allowing the microbes to leave the intestines. This process has been linked to progression of Type 1 Diabetes to more advanced stages.  Note that commensal bacteria are just one potential trigger for the development of autoimmune diseases.  As I discussed in a [previous post](https://rachel.fast.ai/posts/2023-03-22-viruses2/), viral infections can also trigger Type 1 Diabetes and other autoimmune diseases.
+The microbiome can also play a role in how likely microbes are to leak out of a person's gut in the first place! Low levels of certain commensal bacteria increases gut permeability. This heightened permeability allowing the microbes to leave the intestines. This process has been [linked to progression of Type 1 Diabetes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9737253/) to more advanced stages.  Note that commensal bacteria are just one potential trigger for the development of autoimmune diseases.  As I discussed in a [previous post](https://rachel.fast.ai/posts/2023-03-22-viruses2/), viral infections can also trigger Type 1 Diabetes and other autoimmune diseases.
 
 ## Bacteria travel on fungal highways in the plant microbiome
 
