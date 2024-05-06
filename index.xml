@@ -15,7 +15,94 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 24 Apr 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 06 May 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>What do wildfires, nanoplastics, and roller derby have to do with the microbiome?</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-05-07-microbiome-2/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is part 2 in a series covering surprising facts about the microbiome. Be sure to check out <a href="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/">part 1 here</a>. A microbiome is the community of microorganisms found living together in a given habitat. The microbiome of the human gut can contribute to <a href="https://www.youtube.com/watch?v=6BYocBxOfsU&amp;list=PLtmWHNX-gukLirebdPH8lla41SS78kjLD">development of autoimmune disease</a>. The microbiome of plant roots can include bacteria traveling on <a href="https://www.youtube.com/watch?v=WpgAA1mh7Io">fungal super-highways</a>. Scientists also study the microbiome of nanoplastics floating in the ocean and the tiny microbes throughout our atmosphere that catalyze precipitation. Microbiomes influence food chains, weather patterns, and the human immune system.</p>
+<section id="microbes-are-everywhere" class="level2">
+<h2 class="anchored" data-anchor-id="microbes-are-everywhere">Microbes are everywhere</h2>
+<p>When I lived in California there were several years in which we had widespread wildfire smoke that was harmful to breathe, polluted the air, and created an eerie yellow hue. I knew that smoke contains toxins, and I incorrectly assumed that it wouldn’t be a suitable habitat for anything living. Counter-intuitively, <a href="https://sci-hub.se/https://www.science.org/doi/10.1126/science.abe8116">smoke is a good habitat for some microbes</a>, as the particulate matter helps block UV rays that might otherwise kill them. Water vapor produced by the combustion of biomass can help prevent microbes from drying out. And convective columns and updraft winds can draw in microbes from long distances.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/wildfire-microbiome.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Microbes in wildfire smoke</figcaption>
+</figure>
+</div>
+<p><a href="https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(23)00046-3/fulltext">One study on the California wildfires</a> found that hospitalizations for coccidioidomycosis, a dangerous fungal infection, increased by 20% in the month following smoke exposure. This is a worrying threat given that the climate crisis has led to increasing frequency and intensity of wildfires. There is even a nascent field of <strong>pyroaerobiology</strong>, studying the aerosolization and transport of <a href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.2507">microbes by wildfires</a>.</p>
+<p>An estimated 5-13 million tons of plastic enter the oceans each year, including run-off from polluted rivers. Floating “islands” of plastic debris, including microplastics less than 5 mm in size, are found in the oceans. These plastics impact <a href="https://journals.asm.org/doi/10.1128/msystems.01112-20">over 700 different species of aquatic life</a>, ranging from microscopic phytoplankton to large whales. There are microbes that thrive on microplastics, <a href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1890/150017">forming the Plastisphere</a>. Unfortunately, this thin film of bacteria and fungi living on microplastics may make them more appealing to some sea animals, such as loggerhead turtles, to eat. Researchers have found that the Atlantic and Pacific oceans have distinct Plastisphere communities, and that these differences may necessitate different remediation approaches.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/microplastics-chesapeake.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Microplastics from the Patapsco River, pictured at the laboratory of Dr.&nbsp;Lance Yonk, Photo by Will Parson/Chesapeake Bay Program</figcaption>
+</figure>
+</div>
+<p>Researchers are also investigating how microbes can be used to break down these dangerous plastics. One interesting research study collated data on <a href="https://journals.asm.org/doi/10.1128/msystems.01112-20">over 16,000 genes involved in plastic degradation</a>. These genes came from 6,000 microbial species, showing that there are numerous possibilities of potential microbes that may be used for bioremediation. Researchers have even found some microbes can be used <a href="https://www.nature.com/articles/d41586-023-01697-4">to help break down PFAS</a>, often called “forever chemicals”, which are polluting aquatic environments. While it is very difficult to break down the fluorine-carbon bonds found in PFAS, microbes can instead first break chlorine-carbon bonds in the chemicals, which then makes it easier to remove the fluorine atoms.</p>
+</section>
+<section id="there-is-no-clear-good-vs.-bad-for-microbes" class="level2">
+<h2 class="anchored" data-anchor-id="there-is-no-clear-good-vs.-bad-for-microbes">There is no clear “good” vs.&nbsp;“bad” for microbes</h2>
+<p><em>Pseudomonas syringae</em> is a plant pathogen that is a scourge of agricultural crops. It infects almost all economically valuable species of crops and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5972017/">threatens global agriculture production</a>.</p>
+<p>But actually it’s not all bad – this same species of bacteria is important to weather precipitation cycles. For temperatures above -40 degrees C, ice formation requires a catalyst, called an ice nucleator. Researchers have discovered that <a href="https://www.pnas.org/doi/full/10.1073/pnas.0809816105">most ice nucleators are biological</a>: tiny microbes that are widely dispersed throughout the atmosphere all over the world, even in Antarctica! And it turns out that <a href="https://www.activeremedy.org/wp-content/uploads/2014/10/brent-christner_2012_cloudy-with-a-chance-of-microbes.pdf"><em>Pseudomonas syringae</em> is a common nucleator for catalyzing precipitation</a>. This example highlights the complexity of microbial ecosystems. Efforts to protect plants from this pathogen must take into account the interrelated impact on precipitation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/p-syringae.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Left and center: Infected tomato plants and an infected leaf (images from Wikimedia). On the right: the life cycle of P. syringae, from the paper “Cloudy with a Chance of Microbes”</figcaption>
+</figure>
+</div>
+<p>Another example of a microbe that can’t be clearly classified as “good” or “bad” is <em>Prevotella Copri</em>, found in the human gut microbiome. An aptly titled paper, “The curious case of Prevotella copri” describes “puzzling discrepancies” in how various research studies have associated this species with a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10478744/">range of positive and negative impacts on disease</a>.</p>
+<p>The authors share that high abundance of P. copri is associated with non-Western diets, rheumatoid arthritis, Ankylosing spondylitis (a type of inflammatory arthritis), Graves’ orbitopathy (autoimmune condition that can damage vision vision), diabetes mellitus, and cancer. This is particularly surprising, because several of the inflammatory and autoimmune conditions listed are more strongly associated with Western diets. Low abundance of P. copri is associated with Western diets, glucose intolerance, chronic hives, Parkinson’s disease, and food allergies.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/p-copri.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">From the paper “The curious case of Prevotella copri”</figcaption>
+</figure>
+</div>
+<p>It is unclear whether abundant <em>Prevotella copri</em> in the gut is good or bad. The paper notes that <em>P. copri</em> has a diverse set of strains, which differ from the reference strain, and may partly explain the discrepancies. The ways that gut microbes interact with each other, our immune systems, and our genetics can be quite complex, and these factors may mediate how P. copri influences a person’s health.</p>
+</section>
+<section id="the-social-microbiome" class="level2">
+<h2 class="anchored" data-anchor-id="the-social-microbiome">The Social Microbiome</h2>
+<p>We often talk about microbiomes at an individual level: the microbes inside the guts of a person (or insect) or the microbes on their skin or in their mouth. However, researchers also study the <a href="https://www.nature.com/articles/s41559-020-1220-8"><strong>social microbiome</strong></a>: the metacommunity of all the microbiomes of animals in a social community. Members of a community can influence each other’s microbiomes through their social bonds.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/roller-derby-fingernail.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Roller derby can change your skin’s microbiome, Image: Oklarsson, CC BY-SA 3.0, Wikimedia</figcaption>
+</figure>
+</div>
+<p>One study sampled the <a href="https://peerj.com/articles/53/">skin microbiome of roller derby players</a> before and after games. The three teams in the study each came from a different city and state. They found that prior to a game, the microbiomes were more similar within a team, and different across teams. However, after competing in a game, which involves a fair amount of physical contact, all of the players’ skin microbiomes were more similar to one another.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/roller-derby-fig1.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Red, blue, and green represent the microbiomes of teams from San Jose, CA, Eugene, OR, and DC, respectively. There is much more overlap after games. Figure 1 from Meadow, et al, 2013</figcaption>
+</figure>
+</div>
+<p>Much of the research on the social microbiome has been done on nonhuman primates, where grooming, mating, feeding, and other close contact have been shown to impact the microbiome. Social networks and group membership were found to <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4379495/">determine the microbiomes of baboons</a>, and were more predictive than age or gender.</p>
+<p>For some animals, microbiomes inside of scent glands are used to communicate group membership. Hyenas typically live in social clans of 40-80 individuals, and these clans are often overlapping in their territories. They secrete fermentative bacteria from their scent glands. This allows for group-specific odors, making it easier for the hyenas to communicate if they are in the same group as one another. <a href="">One study found</a> that the relative abundance of different types of bacteria was distinctive for different hyena clans.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/spotted-hyenas.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">A group of hyenas may have a distinctive composition of microbes, giving them an identifying scent. Photo by Charles Peterson, CC BY-NC-ND 2.0</figcaption>
+</figure>
+</div>
+</section>
+<section id="more-to-learn" class="level2">
+<h2 class="anchored" data-anchor-id="more-to-learn">More to learn</h2>
+<p>Understanding the microbiome is a crucial piece of better understanding the health of plants, humans, and other animals, as well as our environment. Microbes synthesize vitamins, catalyze precipitation, spread disease or protect from it, can remediate or exacerbate the impacts of pollution, and influence food chains. Only with relatively recent advances in genomic sequencing have we been able to better study and compare the balance of species composing different microbiomes. This is a fascinating and growing area of research.</p>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-05-07-microbiome-2/index.html</guid>
+  <pubDate>Mon, 06 May 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/roller-derby-fingernail.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Surprises of the Microbiome</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1496,67 +1583,6 @@ I couldn't be happier with my little standing desk setup. I have tried far to ma
   <guid>https://rachel.fast.ai/posts/2020-08-06-ergonomics/index.html</guid>
   <pubDate>Wed, 05 Aug 2020 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic1-short.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>4 Principles for Responsible Government Use of Technology</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2020-01-21-responsible-govt/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>As governments consider new uses of technology, whether that be <a href="https://www.citylab.com/transportation/2019/11/firefly-digital-advertising-driver-pay-uber-lyft-cars-data/602077/"><u>sensors on taxi cabs</u></a>, <a href="https://slate.com/technology/2016/11/how-not-to-respond-to-the-next-police-surveillance-technology.html"><u>police body cameras</u></a>, or <a href="https://features.propublica.org/aggression-detector/the-unproven-invasive-surveillance-technology-schools-are-using-to-monitor-students/"><u>gunshot detectors</u></a> in public places, this raises issues around surveillance of vulnerable populations, unintended consequences, and potential misuse. There are several principles to keep in mind in how these decisions can be made in a healthier and more responsible manner. It can be tempting to reduce debates about government adoption of technology into binary for/against narratives, but that fails to capture many crucial and nuanced aspects of these decisions.</p>
-<p>We recently hosted the <a href="https://www.sfdatainstitute.org/"><u>Tech Policy Workshop</u></a> at the USF Center for Applied Data Ethics. One of the themes was how governments can promote the responsible use of technology. Here I will share some key recommendations that came out of these discussions.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/govt-headlines.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Headlines of articles related to government use of technology</figcaption>
-</figure>
-</div>
-<section id="listen-to-local-communities" class="level2">
-<h2 class="anchored" data-anchor-id="listen-to-local-communities">Listen to local communities</h2>
-<p>There aren’t universal ethical answers that will make sense in every country and culture. Therefore, decisions on technology use should be made in close consultation with local communities. In 2013, Oakland announced plans for a new Domain Awareness Center (DAC), which would implement over 700 cameras throughout schools and public housing, facial recognition software, automated license plate readers (ALPRs), storage capacity for 300 terabytes of data, and a centralized facility with live monitroy. <a href="https://www.nytimes.com/2019/05/15/technology/facial-recognition-san-francisco-ban.html"><u>Brian Hofer</u></a> was an Oakland resident who had never set foot in City Hall prior to this, but he was alarmed by the plans, particularly in light of Edward Snowden’s revelations, which had been released the same month. Together with other citizens and privacy advocates, Hofer was concerned about the intrusiveness of the plans and began attending city council meetings. There were a number of reasons for their concerns, including <a href="https://www.eastbayexpress.com/oakland/the-real-purpose-of-oaklands-surveillance-center/Content?oid=3789230"><u>the discovery</u></a> that city staff had been discussing using DAC to surveil protests and demonstrations. Through the advocacy of local citizens, the plans <a href="https://www.eastbayexpress.com/SevenDays/archives/2014/03/05/oakland-city-council-rolls-back-the-dac"><u>were dramatically scaled back</u></a> and the Oakland Privacy Commission was formed, which continues to provide valuable insight into potential government decisions and purchases.</p>
-<p>Sadly, the concerns of local communities are often overridden, in part due to corporate interests and racist stereotypes. For instance, in Detroit, a city that is 79% Black, <a href="https://www.freep.com/story/news/local/michigan/detroit/2019/06/27/detroiters-concerned-over-facial-recognition-technology/1567113001/"><u>citizens protested</u></a> against police use of facial recognition. Yet the city council ended up voting to okay its use, in violation of the police department’s own policy. In contrast, the demographics of cities that have been successful at banning facial recognition are quite different: San Francisco is only 5% Black and Oakland is 25% Black (credit to <a href="https://twitter.com/Combsthepoet/status/1206544760049217537?s=20">Tawana Petty for highlighting these statistics</a>). The racial composition of cities is a significant factor in where and how technology is deployed and used. In another sobering example of the significance of race, <a href="https://www.theverge.com/2016/10/11/13243890/facebook-twitter-instagram-police-surveillance-geofeedia-api"><u>Baltimore Police Department used facial recognition</u></a> to identify people protesting the death of Freddie Gray, a Black man killed in police custody.</p>
-</section>
-<section id="beware-how-ndas-obscure-public-sector-process-and-law" class="level2">
-<h2 class="anchored" data-anchor-id="beware-how-ndas-obscure-public-sector-process-and-law">Beware how NDAs obscure public sector process and law</h2>
-<p>In order for citizens to have a voice in the use of technology by their local governments, the first step is that they need to know what technology is being used. Unfortunately, many local governments are shrouded in secrecy on this topic, and they often sign overly strict non-disclosure agreements (NDAs), hiding even the existence of the technology they use. In 2017 New York City passed a measure appointing <a href="https://www.citylab.com/equity/2019/12/ai-technology-computer-algorithm-cities-automated-systems/603349/"><u>a task force on Automated Decision Systems</u></a> to investigate the fairness of software being used by the city and make policy recommendations. However, members of the task force were repeatedly denied their requests for even a basic list of automated systems already in use, with the city claiming that this is proprietary information. When the city released the final report from the commission, many members dissented with it and released their own shadow report in tandem. Meredith Whittaker, a member of the task force and founder of AI Now Institute, <a href="https://www.theverge.com/2019/11/20/20974379/nyc-algorithm-task-force-report-de-blasio"><u>described the city’s failure</u></a> to share relevant information in what could have been a groundbreaking project, “<em>It’s a waste, really. This is a sad precedent.</em>”</p>
-<p>The law typically develops through lots of cases over time, explained Elizabeth Joh. However, NDAs often prevent citizens from finding out that a particular technology even exists, much less how it is being used in their city. For instance, cell-site simulators (often referred to as sting-rays), which help police locate a person’s cell phone, were protected by particularly strong NDAs, in which police had to agree that it was better to drop a case than to reveal that a cell-site simulator had been used in apprehending the suspect. How can our law develop when such important details remain hidden? The traditional process of developing and refining our legal system breaks down. “<em>Typically we think we have oversight into what police can do</em>,” <a href="https://theintercept.com/2017/04/30/taser-will-use-police-body-camera-videos-to-anticipate-criminal-activity/"><u>Joh has said</u></a> previously. “<em>Now we have third-party intermediary, they have a kind of privacy shield, they’re not subject to state public record laws, and they have departments sign contracts that they are going to keep this secret</em>.”</p>
-</section>
-<section id="security-is-not-the-same-as-safety" class="level2">
-<h2 class="anchored" data-anchor-id="security-is-not-the-same-as-safety">Security is not the same as safety</h2>
-<p><a href="https://www.freep.com/story/news/local/michigan/detroit/2019/06/27/detroiters-concerned-over-facial-recognition-technology/1567113001/"><u>Project Green Light</u></a> is a public-private partnership in Detroit in which high-definition surveillance cameras outside business stream live data to police and are prioritized by police over non-participants. Over 500 businesses are a part of it. This is the largest experiment of facial recognition on a concentrated group of Black people (700,000) to date. <a href="https://www.theguardian.com/us-news/2020/jan/02/california-police-black-stops-force"><u>Black people are disproportionately likely</u></a> to be stopped by police (even though when police search Black, Latino and Native American people, they are less likely to find drugs, weapons or other contraband compared to when they search white people), <a href="https://www.washingtonpost.com/local/public-safety/study-finds-disproportionate-number-of-black-people-arrested-in-dc/2019/05/14/92cf2d26-735a-11e9-8be0-ca575670e91c_story.html"><u>disproportionately likely to be written up on minor infractions</u></a>, and thus <a href="https://www.perpetuallineup.org/"><u>disproportionately likely to have their faces appear</u></a> in police face databases (which are unregulated and not audited for mistakes). This is particularly concerning when combined with knowledge of <a href="https://www.eff.org/deeplinks/2019/02/watching-black-body"><u>America’s long history</u></a> of surveilling and abusing Black communities. While the aims of the program are ostensibly to make Detroit safer, we have to ask, “Safer FOR who? And safer FROM whom?”</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/project-greenlight.jpeg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Graphic about Detroit’s Project Greenlight, originally from data.detroitmi.gov and shared in <a href="https://detroitcommunitytech.org/?q=content/riverwise-magazine-detroiters-want-be-seen-not-watched">Detroit Riverwise Magazine</a>”</figcaption>
-</figure>
-</div>
-<p><a href="https://www.honeycombthepoet.org/music.html">Tawana Petty</a> is a poet and social justice organizer who was born and raised in Detroit. She serves as Director of Data Justice Programming for the <a href="https://detroitcommunitytech.org/">Detroit Community Technology Project</a> and co-leads the <a href="https://www.odbproject.org/">Our Data Bodies Project</a>. At the CADE Tech Policy Workshop she shared how Project Green Light makes her feel <em>less</em> safe, and gave a more hopeful example of how to increase safety: give people chairs to sit on their front porches and encourage them to spend more time outside talking with their neighbors. <a href="https://detroitcommunitytech.org/?q=content/riverwise-magazine-detroiters-want-be-seen-not-watched"><u>Myrtle Thompson-Curtis wrote</u></a> about the origins of the idea: in 1980 in Milwaukee “<em>a group of young African Americans remembered how elders would sit on the front porch and keep an eye on them when they were small. These watchful eyes gave them a sense of safety, of being cared for and looked out for by the community. When these youth grew into adulthood, they noticed that no one sat on their porches anymore. Instead people were putting bars on their doors and windows, fearing one another.</em>” Young people went door to door and offered free chairs to neighbors if they would agree to sit on their front porches while children walked to and from school. This program has since been replicated in St.&nbsp;Clair Shores, Michigan, to help defuse racial tensions, and now in Detroit, to illustrate an alternative to the city’s invasive Green Light Surveillance program. “<em>Security is not safety</em>,” Tawana stated, contrasting surveillance with true safety.</p>
-<p>Rumman Chowdhury, the leader of the Responsible AI group at Accenture, pointed out that surveillance is often part of a stealth increase in militarization. While on the surface, militarization is sold as improving security, it can often have the opposite effect. Low-trust societies tend to be very militarized, and militarized societies tend to be low-trust. As <a href="https://www.wired.com/story/internet-made-dupes-cynics-of-us-all/"><u>Zeynep Tufekci wrote in Wired</u></a>, sociologists distinguish between high-trust societies (in which people can expect most interactions to work and to have access to due process) and low-trust societies (in which people expect to be cheated and that there is no recourse when you are wronged). In low trust societies, it is harder to make business deals, to find or receive credit, or to forge professional relationships. People in low-trust societies may also be more vulnerable to authoritarian rulers, who promise to impose order. We are already seeing a shift of the internet having gone from a high-trust environment to a low-trust environment, and the use of surveillance may be accelerating this shift in the physical world.</p>
-</section>
-<section id="policy-decisions-should-not-be-outsourced-as-design-decisions" class="level2">
-<h2 class="anchored" data-anchor-id="policy-decisions-should-not-be-outsourced-as-design-decisions">Policy decisions should not be outsourced as design decisions</h2>
-<p>When considering <a href="https://www.wbur.org/hereandnow/2017/04/12/axon-free-body-cameras-police"><u>police body cameras</u></a>, there are a number of significant decisions: should the officer be able to turn them on and off at any time? Should the camera have a blinking red light to let people know it is recording? Where should the videos be stored and who should have access to them? Even though these decisions will have a profound impact on the public, they are currently decided by private tech companies. This is just one of the examples Elizabeth Joh shared in illustrating how <strong>what should be policy decisions often end up being determined by corporations as design decisions</strong>. In the case of police body cameras, this lack of choice/control is worsened by the fact that Axon (previously known as Taser) has a monopoly on police-body cameras: since they have a relationship with 17,000 of the 18,000 police departments in the USA, cities may not even have much choice. Vendor-customer relationships influence how police do their jobs and how we can hold them accountable.</p>
-<p>Heather Patterson, a privacy researcher at Intel and a member of Oakland’s Privacy Commission, spoke about how tech companies often neglect cities, failing to build products that fit with their needs and requirements, and treating them as an afterthought. In many cases, cities may want to have fewer options or collect less data, which goes against the prevailing tech approach which Mozilla Head of Policy Chris Riley described as “collect now, monetize later, store forever just in case”.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/tech-policy-horizontal.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Some of the many great speakers from our Tech Policy Workshop, who spoke on a variety of topics</figcaption>
-</figure>
-</div>
-<p>These principles can guide us towards a more responsible use of technology by local governments. Technology can be used for good when it is developed and deployed responsibly, with input from a diverse group of relevant stakeholders, and embedded with the appropriate transparency and accountability.</p>
-<p>More responsible government use of technology was just one of the themes discussed at the Tech Policy Workshop. Stay tuned for more resources and insights from the workshop!</p>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>ethics</category>
-  <guid>https://rachel.fast.ai/posts/2020-01-21-responsible-govt/index.html</guid>
-  <pubDate>Mon, 20 Jan 2020 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2020-01-21-responsible-govt/project-greenlight.jpeg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
