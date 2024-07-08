@@ -15,9 +15,100 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 06 May 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 08 Jul 2024 14:00:00 GMT</lastBuildDate>
 <item>
-  <title>What do wildfires, nanoplastics, and roller derby have to do with the microbiome?</title>
+  <title>Decoding T cells with AI</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-07-09-t-cells/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>I’m studying the intersection of AI and immunology, two notoriously jargon-heavy fields – but it’s important that scientists share their work with a broader audience. This 3-part series is an experiment: an accessible introduction to AI immunology concepts.</em></p>
+<p>T cells are one of the most important cell types of our immune systems, assassinating cells that have been infected by viruses or turned cancerous, and sending commands to other immune cells to organize responses against invaders. T cells can help mobilize against a wide range of threats due to their incredible diversity. They are able to rearrange their genes to recognize billions of different types of infected or rogue cells.</p>
+<p>Figuring out how to predict what a T cell will bind to (meaning what cells it can recognize as bad and coordinate attacks against) would be a vital medical breakthrough. Some cancer therapies are based on teaching T cells to better recognize tumor cells. Knowing the answer could help us design new drugs. And not knowing can have disastrous consequences. A <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3743463/">therapy was trialed</a> in which patients were injected with T cells that would kill cells displaying a protein that is commonly found in cancer, but is not displayed by healthy cells. Tragically, it turns out that these T cells can also bind to a different and unrelated protein found in heart muscles, and two patients died of cardiac arrest.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-09-t-cells/tcell-niaid.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">The surface of a T cell, image from a scanning electron micrograph, credit: NIAID, creative commons license</figcaption>
+</figure>
+</div>
+<p>In this 3-part series, I will explore efforts to use AI to predict what T cells will bind to, and why it matters.</p>
+<section id="t-cells-our-multi-purpose-immune-heroes" class="level2">
+<h2 class="anchored" data-anchor-id="t-cells-our-multi-purpose-immune-heroes">T cells, our multi-purpose immune heroes</h2>
+<p>At their best, T cells destroy viral-infected cells and stop cancer before we ever develop symptoms. When things go awry, T cells can accidentally attack our own cells – for instance Type 1 Diabetes occurs when T cells mistakenly destroy insulin-producing cells in the pancreas and psoriasis is caused by T cells attacking the skin (<a href="https://www.youtube.com/watch?v=6BYocBxOfsU">check out this 5 minute video I made for more information about confused T cells</a>). Or “exhausted” T cells can sit idly by as tumors rapidly grow.</p>
+<p>T cell receptors (TCRs) are protein complexes on the outside of a T cell. The way a T cell recognizes a problematic cell is by binding to a small piece of protein, called a peptide. T cells can bind only to peptides that are presented to them on fancy platters– err, I mean on special molecules called MHC molecules, found on the outside of cells. The binding of TCR-peptide-MHC is like a secret handshake. The TCR is very specific about which peptides it can bind to. Most combinations will not work.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-09-t-cells/t-cell-markers.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Does this pair know the same secret handshake? Sketch I made with my daughter’s markers</figcaption>
+</figure>
+</div>
+<p>Since TCRs are made of protein, and they bind to small pieces of protein, it is helpful to consider some related questions about proteins before we tackle TCR binding in more detail.</p>
+</section>
+<section id="proteins-workhorses-of-the-cell" class="level2">
+<h2 class="anchored" data-anchor-id="proteins-workhorses-of-the-cell">Proteins: workhorses of the cell</h2>
+<p>Proteins make life as we know it possible; they are <a href="https://www.newscientist.com/article/mg21128251-300-first-life-the-search-for-the-first-replicator/">responsible for the hard work</a> that goes on within our cells. <a href="https://www.nature.com/scitable/topicpage/protein-function-14123348/">Proteins give our cells</a> shape and structure, and help them stay organized. Most biochemical reactions occur thanks to enzymes, which are entirely made of proteins. And hormones are proteins that send messages around the body.</p>
+<p>The 3D shape of a protein is crucial to understanding how it functions within the body and what roles it plays. However, the information we often receive about proteins is not 3D. It is a list of letters – a sequence of amino acids, the building blocks of proteins. These lists can twist and fold, creating spirals, sheets, and other interesting sculptures.</p>
+<p>For example, insulin is an important protein messenger that lets our cells know when they should absorb more sugar. Insulin consists of this sequence of 110 amino acids (there are 20 distinct amino acids, and each has a letter representing it):</p>
+<p><code>MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN</code></p>
+<p>However, to really understand insulin, we need to know what it <a href="https://alphafold.ebi.ac.uk/entry/P01308">looks like as a 3D molecule</a>. Its shape and structure helps determine which other molecules will interact with it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-09-t-cells/insulin-3.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Insulin lets our cells know to take in sugar from the blood. Animation from the AlphaFold Protein Structure Database.</figcaption>
+</figure>
+</div>
+<p>The insulin receptor (which is on the surface of cells and can bind to insulin, receiving the message and sending off an internal signal within the cell) is also a protein. It is a sequence of over 1,000 amino acids and has a <a href="https://alphafold.ebi.ac.uk/entry/P06213">far more complicated structure</a>.</p>
+</section>
+<section id="a-new-champion-alphafold" class="level2">
+<h2 class="anchored" data-anchor-id="a-new-champion-alphafold">A new champion: AlphaFold</h2>
+<p>This question of converting amino acid sequences (on the left) to 3D structures (on the right) has wide-reaching implications within biology and medicine.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-09-t-cells/insulin-2ways.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Two different ways of representing the protein insulin: a string of letters, or its 3D structure</figcaption>
+</figure>
+</div>
+<p>In 1994, a competition was established for researchers to go head-to-head in trying to best answer this question. Leading up to the competition, as scientists discovered new protein structures, using laboratory techniques such as X-ray crystallography or NMR spectroscopy, they kept some of the results secret. Later, these structures would be freely shared with other scientists, but for now, they must be held apart for the challenge. The somewhat dry name, <a href="https://predictioncenter.org/">Critical Assessment of Structure Prediction (CASP)</a>, belies the importance of this task.</p>
+<p>In the competition, each team submits their guesses, generated by computer programs they created. The distance between the guesses and the actual structures is measured in Angstroms, with 1 Angstrom being one just ten-billionth of a meter.</p>
+<p>CASP did not make international headlines until 2020. This is when an entry, titled <a href="https://www.nature.com/articles/s41586-021-03819-2">AlphaFold</a> smashed all existing records, and all competitors, by a wide margin. AlphaFold was created by DeepMind, an AI company owned by Google.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-09-t-cells/headlines-2021.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">AlphaFold was named the innovation of the year by both Science and Nature Methods magazines for 2021</figcaption>
+</figure>
+</div>
+</section>
+<section id="challenges-with-t-cell-data" class="level2">
+<h2 class="anchored" data-anchor-id="challenges-with-t-cell-data">Challenges with T cell data</h2>
+<p>At first glance, it may seem like AlphaFold would give us a solution to our T cell problem. After all, T cell receptors are made of proteins, and they bind to other proteins. Aren’t protein structures a solved problem? Not so fast. The T cell receptor problem poses many different and additional challenges.</p>
+<p>There are a few factors that make the question of what a T cell will bind to– known as <a href="https://www.nature.com/articles/s41577-023-00835-3">T cell receptor specificity</a>– distinctive and more complicated than the problem AlphaFold solves. First of all, AlphaFold was created to predict protein structures from a single chain of amino acids. However, TCRs have 2 key chains of amino acids: alpha and beta. Both are important. These alpha and beta chains can be <a href="https://elifesciences.org/articles/82813">mixed and matched</a> willy-nilly.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-09-t-cells/hudson-1bc.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Here, MHC is represented in black &amp; grey and the TCR is represented in light &amp; dark turquoise. The peptide is in purple. Like a puzzle, we are interested in knowing which pieces fit together. Figure 1bc from Hudson, et al, 2023</figcaption>
+</figure>
+</div>
+<p>Another issue is that we have far less data on TCRs than we do on general proteins. The genes that code for the TCR vary greatly across the population. They are some of the most diverse genes in the entire human genome! This means that the (relatively small) dataset we do have is only a fraction of what exists. AlphaFold is based on machine learning, and machine learning models are highly dependent on the quality, quantity, and nature of the data used to train them. For more about AI and how it relates to protein structures and T cell binding, stay tuned for parts 2 and 3 of this series.</p>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-07-09-t-cells/index.html</guid>
+  <pubDate>Mon, 08 Jul 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-07-09-t-cells/tcell-niaid-fingernail.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>The microbiomes of wildfires, nanoplastics, and roller derby</title>
   <dc:creator>Rachel Thomas</dc:creator>
   <link>https://rachel.fast.ai/posts/2024-05-07-microbiome-2/index.html</link>
   <description><![CDATA[ 
@@ -112,6 +203,7 @@
 
 
 
+<p><em>This is part 1 in a series. You can <a href="https://rachel.fast.ai/posts/2024-05-07-microbiome-2/">read part 2 here</a>.</em></p>
 <p>Humans <a href="https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00875-0">co-evolved together</a> with our microbiomes, the bacteria and fungi that colonize our intestines, coat our skin, and inhabit our mouths, throats, and numerous other body locations. Microbiomes are significant because they influence how we process nutrients, fight pathogens, and what diseases we are susceptible to. This is not just true of humans, but plants and insects also have microbiomes that influence their metabolism and immune systems.</p>
 <p>A microbiome is the community of microorganisms found living together in a given habitat– this does not just include living on a host. Scientists study the microbiomes of nanoplastics floating in the ocean, covered in bacteria and fungi, and of the tiny microbes throughout the atmosphere that catalyze precipitation. Even wildfire smoke has a microbiome. These environmental microbiomes influence food chains, weather patterns, and the spread of disease. We can’t fully understand the impacts of pollution and climate change without studying them.</p>
 <p>Studying the microbiome is crucial for better understanding the health and disease of humans, other animals, plants, and our environment. In this 2-part series, I will cover a grab bag of surprising and fascinating facts about the microbiome.</p>
@@ -1493,96 +1585,6 @@
   <guid>https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/index.html</guid>
   <pubDate>Sun, 15 Aug 2021 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/short-ethics-playlist.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Essential Work-From-Home Advice: Cheap and Easy Ergonomic Setups</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2020-08-06-ergonomics/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>You weren’t expecting to spend 2020 working from home. You can’t afford a fancy standing desk. You don’t have a home office, or even much spare space, in your apartment. Your neck is getting a permanent crick from hunching over your laptop on the couch. While those of us who are able to work from home are privileged to have this option, we still don’t want to permanently damage our backs, necks, or arms from a bad ergonomic setup.</p>
-<p>This is not a post for ergonomic aficionados (the setups I share could all be further optimized). This is a post for folks who don’t know where to get started, have a limited budget, and are willing to try simple, scrappy approaches. Key takeway: for 34 dollars (21 for a good mouse, and 13 for a cheap keyboard), as well as some household items, you can create an ergonomic setup like the one below. I will show many other options throughout the post, for both sitting and standing, as well as approaches you can easily assemble/disassemble (if you are using the family dinner table and need to clear it off each evening).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic1.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">While visiting family, I created an ergonomic setup on a counter</figcaption>
-</figure>
-</div>
-<h2 id="damage" class="anchored">
-You can permanently damage your body with bad ergonomics
-</h2>
-<p>You can permanently damage your back, neck, and wrists from working without an ergonomic setup. Almost two decades ago, my partner Jeremy suffered from repetitive stress injury due to working without an ergonomic setup. At the time, his arms were paralyzed and he had to take months off from work. Even now and after years filled with good ergonomics and yoga, this still impacts his life, severely limiting how much time he can spend in cars or on planes, and creating painful flare-ups. Please take this issue seriously.</p>
-<h2 id="separate" class="anchored">
-Key advice: Have a separate keyboard and mouse
-</h2>
-<p>The most important thing to know is that you want your screen approximately at eye height, and your elbows at approximately right angles to your torso as they type and use the mouse. This is the case whether you are sitting or standing. If you are using a laptop, this will be impossible with the built-in keyboard and trackpad (no matter how nice they are). It is essential to have a separate keyboard and mouse. If you only do one thing to address ergonomics, obtain a separate keyboard and mouse.</p>
-<p>If you can’t afford an external monitor, no worries, you can just elevate your laptop. Over the years, I have used cardboard boxes, drinking glasses, bottles of soda, board games, and stacks of books to elevate my laptop. I will recommend some keyboards and mice that I like below, but anything is better than using the ones built into your laptop (since that forces you to keep your screen at the wrong height). For example, the picture in the intro is of a set-up I created while visiting a family member’s apartment in 2014, using books and a cardboard box to elevate my keyboard, mouse, and laptop to the appropriate heights.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic5.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">For the deep learning study group, I routinely used a brown cardboard box. Bonus: I could store everything in the box when we had the clear out of that room each night.</figcaption>
-</figure>
-</div>
-<p>Above is a picture from the deep learning study group, which meets 5 days a week, for 7 weeks, every time we run the deep learning course. I use a brown cardboard box to elevate my keyboard. We have to clear out of that conference room each evening, and it is simple for me to put my items in the box. This sort of solution could work if you don’t have a dedicated office space in your home, and need to be able to set up/take down your workstation regularly.</p>
-<p>I rarely worked in coffee shops pre-pandemic (and never do now), but when I had to I would still try to create an ergonomic setup (and go to a coffeeshop where there was enough space!). Here, I’ve stacked my laptop on top of my rolled-up backpack. Ideally, my screen would be higher, but this is still better than having it at table level. Don’t let the perfect be the enemy of the good. Every step you take towards a more ergonomic setup is helpful.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic2.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">When working at a coffee shop (pre-pandemic), I brought an external keyboard and mouse, and used my rolled-up backpack to raise the height of my laptop screen</figcaption>
-</figure>
-</div>
-<h2 id="standing-desks" class="anchored">
-About standing desks
-</h2>
-<p>If you have a regular desk (or even just a table) at home and want a standing desk, one option is to convert it using the <a href="https://alphacolin.com/ikea-standing-desk-for-22-dollars/">$22 standing desk approach</a>, which involves an Ikea side table and shelf. I had a previous job in which this was quite popular. Here is a photo of my work desk from that time.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic3.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">In a previous job, many of us set up $22 standing desks using Ikea side tables</figcaption>
-</figure>
-</div>
-<p>Standing on a hard floor can be difficult for your back. I have a GelPro mat, which I love. If you can’t afford a GelPro mat, standing on a folded-up yoga mat works great too.</p>
-<p>Note that standing desks are not a cure-all. I’ve often seen people with expensive standing-desk converters (also known as desktop risers) that still have their monitor way too low. Even if you have an external monitor and desktop riser, makes sure your monitor is at an appropriate height. It is likely you will still need to stack it on top of something. If you don’t like the aesthetics of using books or other household items, you can buy a monitor stand, <a href="https://www.kensington.com/p/products/ergonomic-desk-accessorries/laptop-risers-monitor-stands/kensington-smartfit-monitor-stand-plus-for-up-to-21-screens/">such as this one</a>.</p>
-<p>Using a standing desk with poor posture is not very ergonomic, so be cognizant of when you start feeling fatigued. I prefer to switch between standing and sitting throughout the day, as my energy fluctuates.</p>
-<h2 id="budget-recs" class="anchored">
-Budget Recommendations
-</h2>
-<p>My “budget recommendation” would be to get an <a href="https://www.newegg.com/p/0TP-005H-00095">Anker vertical mouse</a> for $21 and literally any keyboard. If you have to choose, I’ve found that having a good mouse is way more important than a good keyboard. It is important that you get some keyboard though, so that you can elevate your laptop screen. In the setup below, I’m using a lightweight travel keyboard that isn’t particularly ergonomic, but it works fine.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic4.jpg" class="img-fluid figure-img" style="width:40.0%"></p>
-<figcaption class="figure-caption">The barista at this coffee shop kindly let me use 2 plastic tubs to prop up my laptop (pre-pandemic).</figcaption>
-</figure>
-</div>
-<p>I realize that at a time when many Americans do not have enough to eat, that you may not have 34 dollars to spare (21 dollars for a mouse and 13 dollars for a cheap keyboard). However, if this is an option for you, it is well worth the cost. If you permanently damage your back, neck, or arms, no amount of money may be enough to heal them later.</p>
-<h2 id="products" class="anchored">
-Other products I like
-</h2>
-<p>My favorite mouse is the <a href="https://www.newegg.com/Logitech-910-001799/p/24W-001B-00008">Logitech wireless trackball mouse</a>. I have also used and liked the <a href="https://www.newegg.com/p/0TP-005H-00095">Anker vertical mouse</a>. For keyboards, I like <a href="https://www.newegg.com/p/12K-00XE-00002">Goldtouch</a> (I use an older version of this one) or the <a href="https://www.newegg.com/microsoft-natural-4000-b2m-00012-usb-wired/p/N82E16823109148">Microsoft Ergonomic Keyboard</a>. And if you are looking for a compact, lightweight travel keyboard, I like the <a href="https://www.iclever.com/products/BK03-Bluetooth-Portable-Keyboard">iClever foldup keyboard</a>.</p>
-<p>As mentioned above, <a href="https://www.gelpro.com/">GelPro mats</a> are great if you are going to be standing, and a folded-up yoga mat is a cheaper alternative.</p>
-<p>I have a <a href="https://www.therooststand.com/">Roost portable, lightweight laptop stand</a>, which is great, although I can’t use it since I switched from a Macbook Air to a Microsoft Surface Pro. None of the links in this post are affiliate links; I’m just recommending what I’ve personally used and like.</p>
-<p>For more about home office set-ups, Jeremy recently posted a twitter thread about his preferred computer set-up (which includes some pricier options). It’s also worth noting that his desk has a small footprint, and fits in the corner of our living room.</p>
-<center>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-I couldn't be happier with my little standing desk setup. I have tried far to many products over the years, and here's what I highly recommend:<br>1/ <a href="https://t.co/lMagQPLys1">pic.twitter.com/lMagQPLys1</a>
-</p>
-— Jeremy Howard (<span class="citation" data-cites="jeremyphoward">@jeremyphoward</span>) <a href="https://twitter.com/jeremyphoward/status/1285747820482318336?ref_src=twsrc%5Etfw">July 22, 2020</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center>
-
-
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>advice</category>
-  <category>work</category>
-  <guid>https://rachel.fast.ai/posts/2020-08-06-ergonomics/index.html</guid>
-  <pubDate>Wed, 05 Aug 2020 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2020-08-06-ergonomics/ergonomic1-short.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
