@@ -8,6 +8,8 @@ categories: [science]
 toc: true
 ---
 
+*This is part 1 in a series.  You can [read part 2 here](https://rachel.fast.ai/posts/2024-05-07-microbiome-2/).*
+
 Humans [co-evolved together](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00875-0) with our microbiomes, the bacteria and fungi that colonize our intestines, coat our skin, and inhabit our mouths, throats, and numerous other body locations. Microbiomes are significant because they influence how we process nutrients, fight pathogens, and what diseases we are susceptible to. This is not just true of humans, but plants and insects also have microbiomes that influence their metabolism and immune systems.
 
 A microbiome is the community of microorganisms found living together in a given habitat-- this does not just include living on a host.  Scientists study the microbiomes of nanoplastics floating in the ocean, covered in bacteria and fungi, and of the tiny microbes throughout the atmosphere that catalyze precipitation. Even wildfire smoke has a microbiome. These environmental microbiomes influence food chains, weather patterns, and the spread of disease. We can’t fully understand the impacts of pollution and climate change without studying them.

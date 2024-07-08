@@ -26,7 +26,7 @@ Past: professor & director of University of San Francisco Center for Applied Dat
 
 Interests: <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a> 
 
-Current Location: Queensland, Australia
+Current Location: Brisbane, Australia
 
 :::
 
@@ -36,7 +36,7 @@ Current Location: Queensland, Australia
 - [Medicine's Machine Learning Problem](https://bostonreview.net/science-nature/rachel-thomas-medicines-machine-learning-problem), Boston Review
 - Earned a PhD in mathematics from Duke University
 - Howard Hughes Medical Institute Fellowship
-- keynote speaker at [Stanford’s Artificial Intelligence in Medicine symposium](https://youtu.be/vVRWeGlMkGk)
+- keynote speaker at [Stanford’s Artificial Intelligence in Medicine Symposium](https://youtu.be/vVRWeGlMkGk)
 
 <h3 id="ethics">Data Ethics</h3>
 
@@ -52,7 +52,7 @@ at University of San Francisco
 
 <h3 id="ml">Machine Learning and Data Science</h3>
 
-- Co-founder of [course.fast.ai](https://course.fast.ai/)
+- Co-founder of [course.fast.ai](https://course.fast.ai/), which created the longest running deep learning course in the world
 - Designed and taught graduate level courses on [Natural Language Processing](https://www.fast.ai/2019/07/08/fastai-nlp/) and 
 [Computational Linear Algebra](https://www.fast.ai/2017/07/17/num-lin-alg/) in the USF Masters of Data Science program
 - [The New Era in NLP](https://www.youtube.com/watch?v=KChtdexd5Jo&list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&index=4), Keynote at SciPy (Scientific Python) Conference 2019

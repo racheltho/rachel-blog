@@ -1,0 +1,40 @@
+---
+title: "I am graduating. What's next?"
+date: "2024-06-17"
+image: "/posts/2024-06-17-opportunities/books.jpg"
+description: "I am open to new opportunities after I complete my MS in Microbiology-Immunology"
+author: "Rachel Thomas"
+categories: [science]
+toc: true
+---
+
+This December, I will graduate with an MS in Microbiology-Immunology. I am currently writing a literature review of how deep learning is being applied to immunology.  Applications include predicting T cell receptor binding, discovering new drugs, and mapping immune cell-cytokine relationships.
+
+I am starting to look for what to do next. I am particularly interested in opportunities that involve a mix of research and science communication, and which can be done remotely. I love research, collating information, and explaining technical concepts to a more general audience.
+
+What I have to offer:
+
+* Knowledge of microbiology, immunology, deep learning, and AI ethics
+* Great at collating and synthesizing knowledge from several academic fields
+* Conscientious, detail-oriented, diligent
+* Strong communicator, both through public speaking and scientific essays
+* Fascinated by questions of how the immune system works and what goes wrong in autoimmune or chronic inflammatory disease. I am particularly interested in the role of viral infections in triggering other diseases.
+* Straight As in graduate courses, including: Applied Immunology, Medical Microbiology, Biosecurity and Emerging Threats, The Microbiome, Bioinformatics, Applied Microbiology \& Virology
+* Past track record:
+	* Math PhD, completed in 2010, Duke University
+	* Cofounder of fast.ai, which created the longest running deep learning course in the world
+	* Designed and taught courses on Computational Linear Algebra, Natural Language Processing, and Data Ethics for the University of San Francisco MS in Data Science Program
+	* Published 3 book chapters on data ethics
+
+I enjoy being at the edge of new knowledge (whether that is in academia or industry) AND I also love communicating with a general audience.  I am fascinated by the immune system and wanting to understand how it works AND I enjoy data and code.
+
+What I’m looking for:
+
+* Curious and engaged teammates
+* A mix of research and general science communication
+* Workplace that values diversity
+* Remote
+
+If you have an opportunity that you think could be a good fit, please email me at racheltho ampersand fastmail period fm
+
+![part of my book shelf](books.jpg){width=70%}

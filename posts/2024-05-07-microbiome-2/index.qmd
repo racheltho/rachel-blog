@@ -1,5 +1,5 @@
 ---
-title: "What do wildfires, nanoplastics, and roller derby have to do with the microbiome?"
+title: "The microbiomes of wildfires, nanoplastics, and roller derby"
 date: "2024-05-07"
 image: "/posts/2024-05-07-microbiome-2/roller-derby-fingernail.jpg"
 description: "How microbes create snow, travel through smoke, and change with your social contact."
