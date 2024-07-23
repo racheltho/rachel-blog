@@ -15,7 +15,106 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 08 Jul 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 22 Jul 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Most Common and Useful Neural Nets</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-07-23-neural-nets/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>This is part 2 in my series on using <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">AI to figure out what T cells</a> can bind to. It can also stand alone as a friendly introduction to neural nets, no background required.</em></p>
+<section id="what-are-neural-networks" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-neural-networks">What are Neural Networks?</h2>
+<p>Neural networks are a type of machine learning algorithm that are currently in the limelight, powering chatbots like ChatGPT and image generators like Midjourney. Neural networks are just math equations, written in computer code. When people hear the terms “neural networks” or “artificial intelligence,” they may picture humanoid robots, but it is more accurate to imagine a scaled-up version of 10th grade math class.</p>
+<p>When considering an AI system, two major categories of tasks are:</p>
+<ul>
+<li><strong>Classifying things</strong>: These are not predictions in the sense of predicting the future, but rather, guessing the answer to a question. Is this a picture of a chihuahua or a blueberry muffin? Which of these potential drugs would be most likely to target antibiotic resistant bacteria?</li>
+<li><strong>Generating things</strong>: Create a picture of <a href="https://medium.com/hackernoon/non-artistic-style-transfer-or-how-to-draw-kanye-using-captain-picards-face-c4a50256b814">Kanye West made out of tiny Captain Picard faces</a>. Generate a new molecule that may work as an antibiotic.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-23-neural-nets/chihuahua-kanye.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Classification: muffin or chihuahua? (pic from Karen Zack, <span class="citation" data-cites="teenybiscuit">@teenybiscuit</span>, 2016) // Generation: Kanye out of Picard faces (pic from fast.ai intern Brad Kenstler, 2017)</figcaption>
+</figure>
+</div>
+<p>Some problems in medicine and immunology can be framed either as a classification problem OR as a generative problem. For instance, suppose your goal is to produce a <a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">new antibiotic to address antimicrobial resistance</a>. Some scientists are trying to classify which compounds, out of hundreds of millions of existing ones, may have the desired properties, whereas others are trying to generate new compounds. Both approaches are useful.</p>
+</section>
+<section id="language-models" class="level2">
+<h2 class="anchored" data-anchor-id="language-models">Language Models</h2>
+<p>You may have heard the term “language model” describing chatbots (such as Chat-GPT or Claude) and automated language translation (such as Google Translate and Skype Translator). One approach to developing sophisticated language capabilities is to write a computer program that predicts the next word in a sentence. Predict the next word and then the next, and you can generate strings of text. This is a language model. Both prediction and generation are used to build language models.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-23-neural-nets/google-translate.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Google Translate relies on language models. The gender bias shown here has since been corrected, although bias remains an issue.</figcaption>
+</figure>
+</div>
+<p>Along the way, the model has learned a number of patterns regarding context, vocabulary, and relationships. Fine tuning lets us use these capabilities for specific problems. For instance, a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10338337/">language model trained on medical chart notes</a> was used to make predictions about which patients were most likely to be readmitted to the hospital. While the model was trained on a prediction task (predicting the next word in a sentence), it can now be used for generation as well when combined with some additional techniques when it is given additional instructions and training from humans.</p>
+<p>When language models are trained, they are not always just tasked with predicting the next word. In a sentence, sometimes random words are covered up, and the computer must predict what goes in that spot. It is a fill-in-the-blank assignment.</p>
+<p>Through predicting words, the model can learn which other words to focus on. Suppose I told you, “I am so tired that I can barely keep my XXXX open”. You could likely guess that the missing word is “eyes”. To do so, you may have focused on “tired” and “open”. Some of the word positions add little, if anything, to your efforts of deduction. In a similar way, attention-based neural networks learn what to pay attention to, where to focus.</p>
+<p>Like the sequence of words in a novel, a sequence of amino acids is its own language, telling the story of a protein. The same techniques and approaches that were developed for natural languages (such as translating between English and French) can also be applied to the biological language of protein creation.</p>
+</section>
+<section id="popular-architectures" class="level2">
+<h2 class="anchored" data-anchor-id="popular-architectures">Popular architectures</h2>
+<p>Neural networks are often created from a few popular architectures, which are particular combinations of mathematical operations. Something that can be confusing is that different architectures can often be combined with one another. Also, most of these architectures can be used for both predictive and generative problems. Here are a few particularly popular ones:</p>
+<ul>
+<li><strong>Multi-Layer Perceptrons (MLPs)</strong>: the oldest example of a neural network was developed in the 1960s! It is the basis of many systems used today (<a href="https://hdl.handle.net/2027/mdp.39015039846566?urlappend=%3Bseq=13">Rosenblatt 1962</a>).</li>
+<li><strong>Convolutional Neural Networks (CNNs)</strong>: are like a filter that you scan across a picture, inch by inch, to recognize what is in it. This is useful for programs such as those bird-watcher apps that will tell you what type of bird you spotted, based on the photo you upload (<a href="https://ieeexplore.ieee.org/document/726791">Lecun et al.&nbsp;1998</a>; <a href="https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html">Krizhevsky et al.&nbsp;2012</a>).</li>
+<li><strong>Recursive Neural Networks (RNNs)</strong>: can take variable-length input (that is, sequences) and store state. Google began using these for translating between languages in 2016 (<a href="https://ieeexplore.ieee.org/abstract/document/6795963">Hochreiter and Schmidhuber 1997</a>; <a href="https://arxiv.org/abs/1609.08144">Wu et al.&nbsp;2016</a>).</li>
+<li><strong>Transformers</strong>: offer a more efficient approach for sequences, which can be any length. These are based on <strong>attention</strong>, as explained above. These have now replaced RNNs in many applications, including Google Translate, which lets a user enter a word or phrase, or even entire paragraphs, and get back the response in another language (<a href="https://arxiv.org/abs/1706.03762">Vaswani et al.&nbsp;2017</a>).</li>
+<li><strong>Graph Neural Network (GNNs)</strong>: Allow for geometric relationships in the input to be captured. For example, GNNs can help represent the spatial relationships between different amino acids in a sequence. Principles of GNNs are typically combined with other options in the list above (<a href="https://ieeexplore.ieee.org/document/4700287">Scarselli et al.&nbsp;2009</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/19193509/">Micheli 2009</a>).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-23-neural-nets/convolution2.gif" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">How a convolution works, from deeplearning.net, 2018</figcaption>
+</figure>
+</div>
+<p>How do you choose a neural network for your problem? One key consideration is how much the size of your input varies. Suppose you have a collection of photos and are trying to determine which are of cats and which are of dogs. Your photos are likely of similar sizes, and you can make them the same by adding a frame around the smaller ones. Whole families of neural networks have been developed for such problems with fixed-size input.</p>
+<p>Now suppose you are developing a neural network that can read books and predict which word will come next. The difference in length between The Hungry Hungry Caterpillar and Les Miserables is huge. For this problem, we need a network that allows variable-size input. RNNs and Transformers allow variable-length input, whereas CNNs take fixed-size input.</p>
+</section>
+<section id="the-innovation-of-alphafold" class="level2">
+<h2 class="anchored" data-anchor-id="the-innovation-of-alphafold">The Innovation of AlphaFold</h2>
+<p>Recall from <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">Part 1 of this series</a> that the computer program AlphaFold revolutionized the task of taking a 1D sequence of amino acids (shown on the left), and transforming it into a 3D molecule (shown on the right).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-23-neural-nets/insulin-2ways.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Two different ways of representing the protein insulin: a string of letters, or its 3D structure</figcaption>
+</figure>
+</div>
+<p>The text of a book is 1-dimensional. It could be written on a single long ribbon, stretched out, and read as such. However, best making sense of amino acid sequences requires an additional dimension. We want to know not just the long ribbon of a single sequence, but the evolutionary relationships of related sequences it is similar to.</p>
+<p>A crucial innovation of <a href="https://www.nature.com/articles/s41586-021-03819-2">AlphaFold</a> is that it expanded attention to 2 dimensions. The 2 dimensions are the sequence of the amino acids, as well as a block of sequences of similar sequences. These similar sequences provide important evolutionary clues of what our protein of interest may be like. Like distant cousins in a family tree, they can give us insights of what may be some common features. This set of related sequences is known as a Multiple Sequence Alignment (MSA) and is a key component in bioinformatics. AlphaFold applies attention to the MSA, learning which parts of related sequences to focus on in trying to decode a protein structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-07-23-neural-nets/alphafold-2reps.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">AlphaFold represents sequences 2 ways. The MSA representation requires 2D attention. Image from Jumper, et al, 2021</figcaption>
+</figure>
+</div>
+<p>Returning to our list of popular architectures, <a href="https://www.youtube.com/watch?v=pB0RxG1NdtA&amp;t=2s">AlphaFold</a> combines aspects of Transformers (in a new form, named the Evoformer, which has 2D attention) and Graph Neural Networks (to represent the spatial relationships between amino acids). Now that we have covered some of the types of neural networks and the structure of AlphaFold, we are ready to combine this with the information about T cells from part 1. <strong>Stay tuned for part 3 to see how AI is being used to predict T cell binding.</strong></p>
+<p>And for understanding the ethical risks of AI systems, you may be interested in reading my previous posts:</p>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-02-20-ai-medicine/">“AI will cure cancer” misunderstands both AI and medicine</a></li>
+<li><a href="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/">AI and Power: The Ethical Challenges of Automation, Centralization, and Scale</a></li>
+<li><a href="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/">11 Short Videos About AI Ethics</a></li>
+</ul>
+<p><em>Thank you to Jeremy Howard for feedback on earlier drafts of this post.</em></p>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-07-23-neural-nets/index.html</guid>
+  <pubDate>Mon, 22 Jul 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-07-23-neural-nets/chihuahua-kanye.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Decoding T cells with AI</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -92,6 +191,7 @@
 </figure>
 </div>
 <p>Another issue is that we have far less data on TCRs than we do on general proteins. The genes that code for the TCR vary greatly across the population. They are some of the most diverse genes in the entire human genome! This means that the (relatively small) dataset we do have is only a fraction of what exists. AlphaFold is based on machine learning, and machine learning models are highly dependent on the quality, quantity, and nature of the data used to train them. For more about AI and how it relates to protein structures and T cell binding, stay tuned for parts 2 and 3 of this series.</p>
+<p><em>Thank you to Jeremy Howard for feedback on earlier drafts of this post.</em></p>
 <p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
 <script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
 <iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
@@ -1543,48 +1643,6 @@
   <guid>https://rachel.fast.ai/posts/2021-10-12-medicine-political/index.html</guid>
   <pubDate>Mon, 11 Oct 2021 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2021-10-12-medicine-political/actup-square.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>11 Short Videos About AI Ethics</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I made a playlist of 11 short videos (most are 6-13 mins long) on Ethics in Machine Learning. This is from my <a href="https://course.fast.ai/videos/?lesson=5">ethics lecture</a> in <a href="https://course.fast.ai/">Practical Deep Learning for Coders v4</a>. I thought these short videos would be easier to watch, share, or skip around.</p>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F0cxzESR7ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</center>
-<p><a href="https://www.youtube.com/watch?v=F0cxzESR7ec&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR"><strong>What are Ethics and Why do they Matter? Machine Learning Edition</strong></a>: Through 3 key case studies, I cover how people can be harmed by machine learning gone wrong, why we as machine learning practitioners should care, and what tech ethics are.</p>
-<p><a href="https://www.youtube.com/watch?v=j3nqdZoQjy0&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=2"><strong>All machine learning systems need ways to identify &amp; address mistakes</strong></a>. It is crucial that all machine learning systems are implemented with ways to correctly surface and correct mistakes, and to provide recourse to those harmed.</p>
-<p><a href="https://www.youtube.com/watch?v=bqCEUQq0z4o&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=3"><strong>The Problem with Metrics, Feedback Loops, and Hypergrowth</strong></a>: Overreliance on metrics is a core problem both in the field of machine learning and in the tech industry more broadly. As Goodhart’s Law tells us, when a measure becomes the target, it ceases to be a good measure, yet the incentives of venture capital push companies in this direction. We see out-of-control feedback loops, widespread gaming of metrics, and people being harmed as a result.</p>
-<p><a href="https://www.youtube.com/watch?v=pbnqvS2yjNg&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=4"><strong>Not all types of bias are fixed by diversifying your dataset</strong></a>. The idea of bias is often too general to be useful. There are several different types of bias, and different types require different interventions to try to address them. Through a series of cases studies, we will go deeper into some of the various causes of bias.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/short-ethics-playlist.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Part of the Ethics Videos Playlist</figcaption>
-</figure>
-</div>
-<p><a href="https://www.youtube.com/watch?v=igVrrfDznOo&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=5"><strong>Humans are biased too, so why does machine learning bias matter?</strong></a> A common objection to concerns about bias in machine learning models is to point out that humans are really biased too. This is correct, yet machine learning bias differs from human bias in several key ways that we need to understand and which can heighten the impact.</p>
-<p><a href="https://www.youtube.com/watch?v=zoAsnJAsLo8&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=6"><strong>7 Questions to Ask About Your Machine Learning Project</strong></a></p>
-<p><a href="https://www.youtube.com/watch?v=PaowVrW3TZg&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=7"><strong>What You Need to Know about Disinformation</strong></a>: With a particular focus on how machine learning advances can contribute to disinformation, this covers some of the fundamental things to understand.</p>
-<p><a href="https://www.youtube.com/watch?v=2A6js_EJ6MA&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=8"><strong>Foundations of Ethics</strong></a>: We consider different lenses through which to evaluate ethics, and what sort of questions to ask.</p>
-<p><a href="https://www.youtube.com/watch?v=av7utkFXbU4&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=9"><strong>Tech Ethics Practices to Implement at your Workplace</strong></a>: Practical tech ethics practices you can implement at your workplace.</p>
-<p><a href="https://www.youtube.com/watch?v=LbNO51E7NUs&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=10"><strong>How to Address the Machine Learning Diversity Crisis</strong></a>: Only 12% of machine learning researchers are women. Based on research studies, I outline some evidence-based steps to take towards addressing this diversity crisis.</p>
-<p><a href="https://www.youtube.com/watch?v=IlrP4jqxYR8&amp;list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR&amp;index=11"><strong>Advanced Technology is not a Substitute for Good Policy</strong></a>: We will look at some examples of what incentives cause companies to change their behavior or not (e.g.&nbsp;being warned for years of your role in an escalating genocide vs.&nbsp;threat of a hefty fine), how many AI ethics concerns are actually about human rights, and case studies of what happened when regulation &amp; safety standards came to other industries.</p>
-<p>You can find the <a href="https://www.youtube.com/playlist?list=PLtmWHNX-gukIU6V33Bc8eP8OD41I4GywR">playlist of 11 short videos here</a>. And here is a longer, <a href="https://ethics.fast.ai/">full-length free fast.ai course on practical data ethics</a>.</p>
-
-
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>ethics</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/index.html</guid>
-  <pubDate>Sun, 15 Aug 2021 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/short-ethics-playlist.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
