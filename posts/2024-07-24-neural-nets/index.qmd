@@ -1,0 +1,82 @@
+---
+title: "The Most Common and Useful Neural Nets"
+date: "2024-07-24"
+image: "/posts/2024-07-24-neural-nets/chihuahua-kanye.jpg"
+description: "Explainer: what are AI architectures and which are the most important ones?"
+author: "Rachel Thomas"
+categories: [machine learning, science]
+toc: true
+---
+
+*This is part 2 in my series on using [AI to figure out what T cells](https://rachel.fast.ai/posts/2024-07-09-t-cells/) can bind to. It can also stand alone as a friendly introduction to neural nets, no background required.*
+
+## What are Neural Networks?
+
+Neural networks are a type of machine learning algorithm that are currently in the limelight, powering chatbots like ChatGPT and image generators like Midjourney.  Neural networks are just math equations, written in computer code.  When people hear the terms “neural networks” or “artificial intelligence,” they may picture humanoid robots, but it is more accurate to imagine a scaled-up version of 10th grade math class. 
+
+When considering an AI system, two major categories of tasks are:
+
+- **Classifying things**: These are not predictions in the sense of predicting the future, but rather, guessing the answer to a question.  Is this a picture of a chihuahua or a blueberry muffin? Which of these potential drugs would be most likely to target antibiotic resistant bacteria?
+- **Generating things**: Create a picture of [Kanye West made out of tiny Captain Picard faces](https://medium.com/hackernoon/non-artistic-style-transfer-or-how-to-draw-kanye-using-captain-picards-face-c4a50256b814). Generate a new molecule that may work as an antibiotic.
+
+![Classification: muffin or chihuahua? (pic from Karen Zack, @teenybiscuit, 2016) // Generation: Kanye out of Picard faces (pic from fast.ai intern Brad Kenstler, 2017)](chihuahua-kanye.jpg){width=65%}
+
+Some problems in medicine and immunology can be framed either as a classification problem OR as a generative problem. For instance, suppose your goal is to produce a [new antibiotic to address antimicrobial resistance](https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/). Some scientists are trying to classify which compounds, out of hundreds of millions of existing ones, may have the desired properties, whereas others are trying to generate new compounds.  Both approaches are useful.
+
+## Language Models
+
+You may have heard the term “language model” describing chatbots (such as Chat-GPT or Claude) and automated language translation (such as Google Translate and Skype Translator). One approach to developing sophisticated language capabilities is to write a computer program that predicts the next word in a sentence.   Predict the next word and then the next, and you can generate strings of text. This is a language model. Both prediction and generation are used to build language models.
+
+![Google Translate relies on language models.  The gender bias shown here has since been corrected, although bias remains an issue.](google-translate.jpg){width=65%}
+
+Along the way, the model has learned a number of patterns regarding context, vocabulary, and relationships. Fine tuning lets us use these capabilities for specific problems.  For instance, a [language model trained on medical chart notes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10338337/) was used to make predictions about which patients were most likely to be readmitted to the hospital.  While the model was trained on a prediction task (predicting the next word in a sentence), it can now be used for generation as well when combined with some additional techniques when it is given additional instructions and training from humans.
+
+When language models are trained, they are not always just tasked with predicting the next word.  In a sentence, sometimes random words are covered up, and the computer must predict what goes in that spot.  It is a fill-in-the-blank assignment.
+
+Through predicting words, the model can learn which other words to focus on.  Suppose I told you, “I am so tired that I can barely keep my XXXX open”.  You could likely guess that the missing word is “eyes”.  To do so, you may have focused on “tired” and “open”.  Some of the word positions add little, if anything, to your efforts of deduction.  In a similar way, attention-based neural networks learn what to pay attention to, where to focus.
+
+Like the sequence of words in a novel, a sequence of amino acids is its own language, telling the story of a protein.  The same techniques and approaches that were developed for natural languages (such as translating between English and French) can also be applied to the biological language of protein creation.
+
+## Popular architectures
+
+Neural networks are often created from a few popular architectures, which are particular combinations of mathematical operations.  Something that can be confusing is that different architectures can often be combined with one another.  Also, most of these architectures can be used for both predictive and generative problems.  Here are a few particularly popular ones:
+
+- **Multi-Layer Perceptrons (MLPs)**: the oldest example of a neural network was developed in the 1960s!  It is the basis of many systems used today ([Rosenblatt 1962](https://hdl.handle.net/2027/mdp.39015039846566?urlappend=%3Bseq=13)).
+- **Convolutional Neural Networks (CNNs)**: are like a filter that you scan across a picture, inch by inch, to recognize what is in it. This is useful for programs such as those bird-watcher apps that will tell you what type of bird you spotted, based on the photo you upload ([Lecun et al. 1998](https://ieeexplore.ieee.org/document/726791); [Krizhevsky et al. 2012](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html)).
+- **Recursive Neural Networks (RNNs)**: can take variable-length input (that is, sequences) and store state.  Google began using these for translating between languages in 2016 ([Hochreiter and Schmidhuber 1997](https://ieeexplore.ieee.org/abstract/document/6795963); [Wu et al. 2016](https://arxiv.org/abs/1609.08144)).
+- **Transformers**: offer a more efficient approach for sequences, which can be any length. These are based on **attention**, as explained above. These have now replaced RNNs in many applications, including Google Translate, which lets a user enter a word or phrase, or even entire paragraphs, and get back the response in another language ([Vaswani et al. 2017](https://arxiv.org/abs/1706.03762)).
+- **Graph Neural Network (GNNs)**: Allow for geometric relationships in the input to be captured.  For example, GNNs can help represent the spatial relationships between different amino acids in a sequence.  Principles of GNNs are typically combined with other options in the list above ([Scarselli et al. 2009](https://ieeexplore.ieee.org/document/4700287); [Micheli 2009](https://pubmed.ncbi.nlm.nih.gov/19193509/)).
+
+![How a convolution works, from deeplearning.net, 2018](convolution2.gif){width=65%}
+
+How do you choose a neural network for your problem? One key consideration is how much the size of your input varies.  Suppose you have a collection of photos and are trying to determine which are of cats and which are of dogs.  Your photos are likely of similar sizes, and you can make them the same by adding a frame around the smaller ones.  Whole families of neural networks have been developed for such problems with fixed-size input.
+
+Now suppose you are developing a neural network that can read books and predict which word will come next.  The difference in length between The Hungry Hungry Caterpillar and Les Miserables is huge.  For this problem, we need a network that allows variable-size input.  RNNs and Transformers allow variable-length input, whereas CNNs take fixed-size input.
+
+## The Innovation of AlphaFold
+
+Recall from [Part 1 of this series](https://rachel.fast.ai/posts/2024-07-09-t-cells/) that the computer program AlphaFold revolutionized the task of taking a 1D sequence of amino acids (shown on the left), and transforming it into a 3D molecule (shown on the right).
+
+![Two different ways of representing the protein insulin: a string of letters, or its 3D structure](insulin-2ways.jpg){width=80%}
+
+The text of a book is 1-dimensional.  It could be written on a single long ribbon, stretched out, and read as such. However, best making sense of amino acid sequences requires an additional dimension.  We want to know not just the long ribbon of a single sequence, but the evolutionary relationships of related sequences it is similar to. 
+
+A crucial innovation of [AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) is that it expanded attention to 2 dimensions.  The 2 dimensions are the sequence of the amino acids, as well as a block of sequences of similar sequences.  These similar sequences provide important evolutionary clues of what our protein of interest may be like.  Like distant cousins in a family tree, they can give us insights of what may be some common features.  This set of related sequences is known as a Multiple Sequence Alignment (MSA) and is a key component in bioinformatics.  AlphaFold applies attention to the MSA, learning which parts of related sequences to focus on in trying to decode a protein structure.
+
+![AlphaFold represents sequences 2 ways.  The MSA representation requires 2D attention.  Image from Jumper, et al, 2021](alphafold-2reps.jpg){width=65%}
+
+Returning to our list of popular architectures, [AlphaFold](https://www.youtube.com/watch?v=pB0RxG1NdtA&t=2s) combines aspects of Transformers (in a new form, named the Evoformer, which has 2D attention) and Graph Neural Networks (to represent the spatial relationships between amino acids).  Now that we have covered some of the types of neural networks and the structure of AlphaFold, we are ready to combine this with the information about T cells from part 1. **Stay tuned for part 3 to see how AI is being used to predict T cell binding.**
+
+And for understanding the ethical risks of AI systems, you may be interested in reading my previous posts:
+
+- [“AI will cure cancer” misunderstands both AI and medicine](https://rachel.fast.ai/posts/2024-02-20-ai-medicine/)
+- [AI and Power: The Ethical Challenges of Automation, Centralization, and Scale](https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/)
+- [11 Short Videos About AI Ethics](https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/)
+
+*Thank you to Jeremy Howard for feedback on earlier drafts of this post.*
+
+You can subscribe to be notified of new blog posts by submitting your email below:
+
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&zx=11a17553b1&tD=156971d471c7b09&sD=156971d471c7cb3"></iframe>
+

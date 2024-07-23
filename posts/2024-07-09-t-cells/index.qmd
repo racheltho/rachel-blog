@@ -68,6 +68,8 @@ There are a few factors that make the question of what a T cell will bind to-- k
  
 Another issue is that we have far less data on TCRs than we do on general proteins. The genes that code for the TCR vary greatly across the population.  They are some of the most diverse genes in the entire human genome!  This means that the (relatively small) dataset we do have is only a fraction of what exists.  AlphaFold is based on machine learning, and machine learning models are highly dependent on the quality, quantity, and nature of the data used to train them.  For more about AI and how it relates to protein structures and T cell binding, stay tuned for parts 2 and 3 of this series.
 
+*Thank you to Jeremy Howard for feedback on earlier drafts of this post.*
+
 You can subscribe to be notified of new blog posts by submitting your email below:
 
 <script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
