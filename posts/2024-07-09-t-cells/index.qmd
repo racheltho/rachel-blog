@@ -8,7 +8,7 @@ categories: [machine learning, science]
 toc: true
 ---
 
-*I'm studying the intersection of AI and immunology, two notoriously jargon-heavy fields -- but it's important that scientists share their work with a broader audience. This 3-part series is an experiment: an accessible introduction to AI immunology concepts.*
+*I'm studying the intersection of AI and immunology, two notoriously jargon-heavy fields -- but it's important that scientists share their work with a broader audience. This 3-part series is an experiment: an accessible introduction to AI immunology concepts. This post is part 1 in a series on using AI to predict T cell binding.  Here are [part 2](https://rachel.fast.ai/posts/2024-07-24-neural-nets/) and [part 3](https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/).*
 
 T cells are one of the most important cell types of our immune systems, assassinating cells that have been infected by viruses or turned cancerous, and sending commands to other immune cells to organize responses against invaders. T cells can help mobilize against a wide range of threats due to their incredible diversity.  They are able to rearrange their genes to recognize billions of different types of infected or rogue cells.
 
@@ -66,7 +66,9 @@ There are a few factors that make the question of what a T cell will bind to-- k
 
 ![Here, MHC is represented in black & grey and the TCR is represented in light & dark turquoise.  The peptide is in purple.  Like a puzzle, we are interested in knowing which pieces fit together. Figure 1bc from Hudson, et al, 2023](hudson-1bc.jpg){width=70%}
  
-Another issue is that we have far less data on TCRs than we do on general proteins. The genes that code for the TCR vary greatly across the population.  They are some of the most diverse genes in the entire human genome!  This means that the (relatively small) dataset we do have is only a fraction of what exists.  AlphaFold is based on machine learning, and machine learning models are highly dependent on the quality, quantity, and nature of the data used to train them.  For more about AI and how it relates to protein structures and T cell binding, stay tuned for parts 2 and 3 of this series.
+Another issue is that we have far less data on TCRs than we do on general proteins. The genes that code for the TCR vary greatly across the population.  They are some of the most diverse genes in the entire human genome!  This means that the (relatively small) dataset we do have is only a fraction of what exists.  AlphaFold is based on machine learning, and machine learning models are highly dependent on the quality, quantity, and nature of the data used to train them.
+
+*This post is part 1 in a series on using AI to predict T cell binding.  Here are [part 2](https://rachel.fast.ai/posts/2024-07-24-neural-nets/) and [part 3](https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/).*
 
 *Thank you to Jeremy Howard for feedback on earlier drafts of this post.*
 

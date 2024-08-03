@@ -8,7 +8,8 @@ categories: [machine learning, science]
 toc: true
 ---
 
-*This is part 2 in my series on using [AI to figure out what T cells](https://rachel.fast.ai/posts/2024-07-09-t-cells/) can bind to. It can also stand alone as a friendly introduction to neural nets, no background required.*
+*This post can stand alone as a friendly introduction to neural nets, no background required. It is part 2 in my 
+series on using AI to figure out what T cells can bind to. Here are [part 1](https://rachel.fast.ai/posts/2024-07-09-t-cells/) and [part 3](https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/).*
 
 ## What are Neural Networks?
 
@@ -65,7 +66,7 @@ A crucial innovation of [AlphaFold](https://www.nature.com/articles/s41586-021-0
 
 ![AlphaFold represents sequences 2 ways.  The MSA representation requires 2D attention.  Image from Jumper, et al, 2021](alphafold-2reps.jpg){width=65%}
 
-Returning to our list of popular architectures, [AlphaFold](https://www.youtube.com/watch?v=pB0RxG1NdtA&t=2s) combines aspects of Transformers (in a new form, named the Evoformer, which has 2D attention) and Graph Neural Networks (to represent the spatial relationships between amino acids).  Now that we have covered some of the types of neural networks and the structure of AlphaFold, we are ready to combine this with the information about T cells from part 1. **Stay tuned for part 3 to see how AI is being used to predict T cell binding.**
+Returning to our list of popular architectures, [AlphaFold](https://www.youtube.com/watch?v=pB0RxG1NdtA&t=2s) combines aspects of Transformers (in a new form, named the Evoformer, which has 2D attention) and Graph Neural Networks (to represent the spatial relationships between amino acids).  Now that we have covered some of the types of neural networks and the structure of AlphaFold, we are ready to combine this with the information about T cells from [part 1](https://rachel.fast.ai/posts/2024-07-09-t-cells/). **Check out [part 3](https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/) to see how AI is being used to predict T cell binding.**
 
 And for understanding the ethical risks of AI systems, you may be interested in reading my previous posts:
 

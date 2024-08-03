@@ -56,6 +56,8 @@ You also need everyone to agree on what numerical metrics to use in evaluating s
 
 Some researchers have called for a [“grand challenge”](https://www.nature.com/articles/s41577-023-00835-3) of inferring T cell receptor binding, similar to the grand challenge in prediction protein folding which led to AlphaFold.  Standardizing datasets and setting clear metrics for comparisons could motivate innovation.  This is a high-impact area within immunology and medicine and I hope that it is a continued focus of research!
 
+*This post is part 3 in a series on using AI to predict T cell binding.  Here are [part 1](https://rachel.fast.ai/posts/2024-07-09-t-cells/) and [part 2](https://rachel.fast.ai/posts/2024-07-24-neural-nets/).*
+
 *Thank you to Jeremy Howard for feedback on an earlier draft of this post.*
 
 You can subscribe to be notified of new blog posts by submitting your email below:
