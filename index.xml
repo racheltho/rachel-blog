@@ -71,6 +71,7 @@
 <p>Data work is particularly challenging in the area of T cell receptors (TCRs). Current datasets cover just a <a href="https://elifesciences.org/articles/82813">tiny fraction</a> of all possible TCRs. It is difficult to scale experimental methods, so less than 1 million unique TCR-peptide pairs have been found experimentally. Of the data that exists, the vast majority just contains one of the two amino acid sequences which make up a TCR, even though both sequences are significant.</p>
 <p>You also need everyone to agree on what numerical metrics to use in evaluating success, and for those metrics to closely correspond to the value you care about. Great harm can result <a href="https://rachel.fast.ai/posts/2019-09-24-metrics/">when those metrics are a poor proxy</a> for the underlying goal. Providing a meaningful numeric score and declaring a winner require the right setup and a lot of effort behind the scenes.</p>
 <p>Some researchers have called for a <a href="https://www.nature.com/articles/s41577-023-00835-3">“grand challenge”</a> of inferring T cell receptor binding, similar to the grand challenge in prediction protein folding which led to AlphaFold. Standardizing datasets and setting clear metrics for comparisons could motivate innovation. This is a high-impact area within immunology and medicine and I hope that it is a continued focus of research!</p>
+<p><em>This post is part 3 in a series on using AI to predict T cell binding. Here are <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">part 1</a> and <a href="https://rachel.fast.ai/posts/2024-07-24-neural-nets/">part 2</a>.</em></p>
 <p><em>Thank you to Jeremy Howard for feedback on an earlier draft of this post.</em></p>
 <p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
 <script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
@@ -96,7 +97,7 @@
 
 
 
-<p><em>This is part 2 in my series on using <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">AI to figure out what T cells</a> can bind to. It can also stand alone as a friendly introduction to neural nets, no background required.</em></p>
+<p><em>This post can stand alone as a friendly introduction to neural nets, no background required. It is part 2 in my series on using AI to figure out what T cells can bind to. Here are <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">part 1</a> and <a href="https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/">part 3</a>.</em></p>
 <section id="what-are-neural-networks" class="level2">
 <h2 class="anchored" data-anchor-id="what-are-neural-networks">What are Neural Networks?</h2>
 <p>Neural networks are a type of machine learning algorithm that are currently in the limelight, powering chatbots like ChatGPT and image generators like Midjourney. Neural networks are just math equations, written in computer code. When people hear the terms “neural networks” or “artificial intelligence,” they may picture humanoid robots, but it is more accurate to imagine a scaled-up version of 10th grade math class.</p>
@@ -163,7 +164,7 @@
 <figcaption class="figure-caption">AlphaFold represents sequences 2 ways. The MSA representation requires 2D attention. Image from Jumper, et al, 2021</figcaption>
 </figure>
 </div>
-<p>Returning to our list of popular architectures, <a href="https://www.youtube.com/watch?v=pB0RxG1NdtA&amp;t=2s">AlphaFold</a> combines aspects of Transformers (in a new form, named the Evoformer, which has 2D attention) and Graph Neural Networks (to represent the spatial relationships between amino acids). Now that we have covered some of the types of neural networks and the structure of AlphaFold, we are ready to combine this with the information about T cells from part 1. <strong>Stay tuned for part 3 to see how AI is being used to predict T cell binding.</strong></p>
+<p>Returning to our list of popular architectures, <a href="https://www.youtube.com/watch?v=pB0RxG1NdtA&amp;t=2s">AlphaFold</a> combines aspects of Transformers (in a new form, named the Evoformer, which has 2D attention) and Graph Neural Networks (to represent the spatial relationships between amino acids). Now that we have covered some of the types of neural networks and the structure of AlphaFold, we are ready to combine this with the information about T cells from <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">part 1</a>. <strong>Check out <a href="https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/">part 3</a> to see how AI is being used to predict T cell binding.</strong></p>
 <p>And for understanding the ethical risks of AI systems, you may be interested in reading my previous posts:</p>
 <ul>
 <li><a href="https://rachel.fast.ai/posts/2024-02-20-ai-medicine/">“AI will cure cancer” misunderstands both AI and medicine</a></li>
@@ -195,7 +196,7 @@
 
 
 
-<p><em>I’m studying the intersection of AI and immunology, two notoriously jargon-heavy fields – but it’s important that scientists share their work with a broader audience. This 3-part series is an experiment: an accessible introduction to AI immunology concepts.</em></p>
+<p><em>I’m studying the intersection of AI and immunology, two notoriously jargon-heavy fields – but it’s important that scientists share their work with a broader audience. This 3-part series is an experiment: an accessible introduction to AI immunology concepts. This post is part 1 in a series on using AI to predict T cell binding. Here are <a href="https://rachel.fast.ai/posts/2024-07-24-neural-nets/">part 2</a> and <a href="https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/">part 3</a>.</em></p>
 <p>T cells are one of the most important cell types of our immune systems, assassinating cells that have been infected by viruses or turned cancerous, and sending commands to other immune cells to organize responses against invaders. T cells can help mobilize against a wide range of threats due to their incredible diversity. They are able to rearrange their genes to recognize billions of different types of infected or rogue cells.</p>
 <p>Figuring out how to predict what a T cell will bind to (meaning what cells it can recognize as bad and coordinate attacks against) would be a vital medical breakthrough. Some cancer therapies are based on teaching T cells to better recognize tumor cells. Knowing the answer could help us design new drugs. And not knowing can have disastrous consequences. A <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3743463/">therapy was trialed</a> in which patients were injected with T cells that would kill cells displaying a protein that is commonly found in cancer, but is not displayed by healthy cells. Tragically, it turns out that these T cells can also bind to a different and unrelated protein found in heart muscles, and two patients died of cardiac arrest.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -261,7 +262,8 @@
 <figcaption class="figure-caption">Here, MHC is represented in black &amp; grey and the TCR is represented in light &amp; dark turquoise. The peptide is in purple. Like a puzzle, we are interested in knowing which pieces fit together. Figure 1bc from Hudson, et al, 2023</figcaption>
 </figure>
 </div>
-<p>Another issue is that we have far less data on TCRs than we do on general proteins. The genes that code for the TCR vary greatly across the population. They are some of the most diverse genes in the entire human genome! This means that the (relatively small) dataset we do have is only a fraction of what exists. AlphaFold is based on machine learning, and machine learning models are highly dependent on the quality, quantity, and nature of the data used to train them. For more about AI and how it relates to protein structures and T cell binding, stay tuned for parts 2 and 3 of this series.</p>
+<p>Another issue is that we have far less data on TCRs than we do on general proteins. The genes that code for the TCR vary greatly across the population. They are some of the most diverse genes in the entire human genome! This means that the (relatively small) dataset we do have is only a fraction of what exists. AlphaFold is based on machine learning, and machine learning models are highly dependent on the quality, quantity, and nature of the data used to train them.</p>
+<p><em>This post is part 1 in a series on using AI to predict T cell binding. Here are <a href="https://rachel.fast.ai/posts/2024-07-24-neural-nets/">part 2</a> and <a href="https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/">part 3</a>.</em></p>
 <p><em>Thank you to Jeremy Howard for feedback on earlier drafts of this post.</em></p>
 <p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
 <script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
