@@ -15,7 +15,96 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 31 Jul 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 12 Aug 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Your Immune System is Not a Muscle</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="that-which-doesnt-kill-you" class="level2">
+<h2 class="anchored" data-anchor-id="that-which-doesnt-kill-you">That which doesn’t kill you…</h2>
+<p>Some people compare the immune system to a muscle, suggesting that the more you use it, the stronger it gets. Who doesn’t love an analogy? But is this one accurate?</p>
+<p>We can see that not all obstacles make you stronger. Destroy the cartilage in your knee, and it may never fully recover, since cartilage doesn’t grow back. Some bacterial infections can permanently scar the lining of the brain and leave <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5570486/">survivors with lower IQs</a>. More and more evidence is linking viruses to a range of diseases including <a href="https://theconversation.com/link-between-epstein-barr-virus-and-multiple-sclerosis-is-a-crucial-discovery-for-people-living-with-ms-175908">multiple sclerosis</a>, <a href="https://theconversation.com/my-work-investigating-the-links-between-viruses-and-alzheimers-disease-was-dismissed-for-years-but-now-the-evidence-is-building-184201">Alzheimer’s disease</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/36669485/">dementia</a>, <a href="https://www.nature.com/articles/s41591-019-0667-0">type 1 diabetes</a>, and certain types of <a href="https://www.mdanderson.org/publications/focused-on-health/7-viruses-that-cause-cancer.h17-1592202.html">cancer</a>. When does illness make you stronger, and when does it cause permanent harm or leave you with chronic health conditions?</p>
+<p>Our immune systems are amazing, and amazingly complex. Certain cells, called memory B cells and memory T cells, are able to “remember” invaders that they have seen before. They can rearrange their genes to create billions of possible memories and to respond more quickly to a future infection with the same pathogen. Is this an example of infection making you stronger? It depends. You can only catch the measles virus once, because you will form memory cells for it. But <a href="https://asm.org/articles/2019/may/measles-and-immune-amnesia">measles also destroys your pre-existing memory cells</a>, meaning that you can now re-catch a bunch of other illnesses that you had already built immunity to. Also, a very small percentage of people (unvaccinated babies may have more risk) will seem to fully recover from measles, and then 6 to 15 years later develop <a href="https://www.ncbi.nlm.nih.gov/books/NBK560673/">brain inflammation that often leads to death</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/virus-headlines.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Viruses have been linked to multiple sclerosis, Alzheimer’s, strokes, and other diseases</figcaption>
+</figure>
+</div>
+<p>Chickenpox is another disease that people typically only have once. However, the virus does not fully go away, but rather lies latent in the nervous system and can reactivate as shingles decades later. When the virus reactivates as shingles, it also leads to the <a href="https://theconversation.com/chickenpox-and-shingles-virus-lying-dormant-in-your-neurons-can-reactivate-and-increase-your-risk-of-stroke-new-research-identified-a-potential-culprit-194627">formation of blood clots</a> that raise the risk of stroke for months afterwards. So while you have “immunity” against getting chickenpox again, it has come with <a href="https://rachel.fast.ai/posts/2023-03-07-viruses1/">long-term risk</a>. While chickenpox and measles are examples of viruses, bacteria can also lie latent for a long time after an infection. For instance, the bacteria types that cause epidemic typhus, brucellosis, and tuberculosis can all activate/reactivate long after initial infection.</p>
+<p>Another informative example is Dengue virus, a <a href="https://theconversation.com/dengue-why-is-this-sometimes-fatal-disease-increasing-around-the-world-215008">potentially fatal mosquito-borne disease</a> that affects millions of people annually. It has 4 different, but related types. This is a problem, because the memory your immune system forms to a given type will actually harm you if you get <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10062565/">infected with a different type later</a>. As a result, a person’s second dengue infection is more severe than their first. Having no memory of dengue is better than remembering the wrong version!</p>
+<p>There is a lot of confusion on germs and illness. It is good to play in the dirt and to be exposed to microbes, but you should also wash your hands after using the toilet and avoid raw sewage. When is hygiene good and when is it bad? Recently, a recurring question in newspaper articles and parents groups is whether it was harmful to children’s immune systems that they stayed home in 2020 and caught fewer illnesses. Is there a correct amount or type of “training” that the immune system needs? To explore these questions, we first need to inspect a widely misunderstood idea, often referred to as the <em>Hygiene Hypothesis</em>.</p>
+</section>
+<section id="the-hygiene-hypothesis" class="level2">
+<h2 class="anchored" data-anchor-id="the-hygiene-hypothesis">The Hygiene Hypothesis</h2>
+<p><em>Allergies</em> are a misfiring of the immune system– when it attacks what should be harmless environmental substances, such as pollen or dust. <em>Autoimmunity</em> is a different type of misfiring of the immune system– when it attacks our own cells, whether those are your neurons (multiple sclerosis), your joints (arthritis), your thyroid (Hashimoto’s disease), or your insulin-producing cells (type 1 diabetes). Both allergies and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9918670/">autoimmune diseases</a> have risen dramatically in recent decades.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/miller-autoimmune.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">A drastic rise in autoimmune disease: All the diseases listed on this graph are autoimmune diseases (Miller, 2022).</figcaption>
+</figure>
+</div>
+<p>First proposed in 1989, the Hygiene Hypothesis offers an explanation for this dramatic rise. Certain types of microbes can help <em>modulate</em> our immune systems. By creating a low level of immune activity, they prevent our immune systems from getting bored and confused, which could lead them to attack the wrong target. <strong>Four main categories of pathogens that humans deal with are viruses, bacteria, fungi, and parasites.</strong> The evidence for pathogens that may be beneficial to the immune system is almost entirely for <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396177/">parasitic worms and friendly (commensal) bacteria</a>. In contrast, many viruses can even trigger the onset of autoimmune diseases or allergies.</p>
+<p>The reason for this makes sense: humans co-evolved with parasites and commensal bacteria, going back to when people lived in small hunter-gatherer tribes. For <a href="https://www.google.com.au/books/edition/The_Cambridge_Encyclopedia_of_Hunters_an/5eEASHGLg3MC?hl=en&amp;gbpv=1&amp;dq=The+Cambridge+Encyclopedia+of+Hunters+%26+Gatherers&amp;printsec=frontcover">over 90% of human history</a>, we lived as hunter-gatherers, and were exposed to very different types of microbes than we are now in crowded cities or poorly ventilated office buildings. Researchers have pointed out that the moniker Hygiene Hypothesis is misleading, and have proposed a more accurate alternative. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4089149/">The “Old Friends” mechanism</a> describes which microbes we co-evolved with for 300,000 years.</p>
+</section>
+<section id="our-old-friends" class="level2">
+<h2 class="anchored" data-anchor-id="our-old-friends">Our old friends</h2>
+<p>Our bodies are full of <a href="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/">peaceful (commensal) bacteria</a>, which can help synthesize vitamins we need, regulate dopamine, and even protect us from infection. Most famously our guts, but also the skin, throat, and bladder, all have distinct microbiomes. Disruption due to antibiotic use, Western diets, and cesarean births has changed our microbiomes, contributing to the rise of autoimmunity and allergies. Not all bacteria are the same– the positive microbes transmitted in a vaginal birth are quite different from harmful bacteria like anthrax or tuberculosis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/parasites-square.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">Our “old friends” parasitic worms may seem gross, but crowd infections can be even grosser</figcaption>
+</figure>
+</div>
+<p>Surprisingly, there are a number of studies showing that <a href="https://elifesciences.org/articles/65180">infections with helminths (parasitic worms)</a> can be <strong>beneficial</strong> allergies and autoimmune disease, including for <a href="https://sci-hub.se/https://link.springer.com/chapter/10.1007/7854_2014_361">multiple sclerosis</a>. A proposed mechanism is that parasites provide a low-level of background activation for the immune system, which prevents excess activation. This in term can prevent inflammatory and autoimmune disorders. However, helminth infections can also be harmful and are not something you should try at home! Researchers are developing therapies based on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4374592/">proteins derived from helminths</a>.</p>
+</section>
+<section id="crowd-infections-are-new-in-human-history" class="level2">
+<h2 class="anchored" data-anchor-id="crowd-infections-are-new-in-human-history">“Crowd infections” are new in human history</h2>
+<p>Our “old friends” are organisms we co-evolved with for &gt; 50,000 years. By evolving together, our bodies learned to take advantage of these organisms. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4089149/">Old friends can be contrasted with “crowd infections”</a> which only developed much more recently, since 10,000 BCE, after people began to live in more densely populated townships.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/busiest-flights-2.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Our immune systems did not evolve for this!</figcaption>
+</figure>
+</div>
+<p>A crowd infection is one that would not last in sparsely distributed, small hunter-gatherer groups, because it either kills people, or offers enough immunity until the small tribe has been infected and there is nowhere else to spread. For instance, if a small tribe of hunter-gatherers caught a strain of influenza, the virus would die out once they had all caught it in short order, with no more hosts to spread to. The ability to circulate through megacities or crisscross the globe through international travel in our current world offers influenza far more opportunities to infect and time to mutate. It is able to continue infecting and reinfecting, decade after decade. Even viruses that don’t mutate much, such as measles, are able to continue infecting, due to dense populations and an ongoing supply of new people being born.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/old-friends.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Not all infections are the same! Figure from Rook, et al, 2014</figcaption>
+</figure>
+</div>
+<p>Homo Sapiens first evolved some 300,000 years ago, yet crowd infections are believed to have only developed in the last 12,000 years, a small blip in human history. Humans living in dense cities is a relatively recent development. An even more recent development is that of sealed indoor spaces and frequent international air travel. Many crowd infections, such as measles, mumps, chickenpox, colds, and flu, are airborne, spreading when humans talk and breathe in close contact, with poor ventilation. These infections could not widely spread until the last few hundred years of human history.</p>
+<p>When I began studying immunology, something that surprised me is how much of the immune system is focused on fighting parasites. There is an entire branch, including several cell types, devoted to this. It seems like such a mismatch to the modern, industrialized world. <em>“Can I have a few more immune cell types focused on viruses or intracellular bacteria?”</em> I thought, <em>“in exchange for some of these parasite-focused cells that I’m not using??”</em> Our “old friends” are quite different from the crowd infections that plague us now– it would be bizarre to assume that research based on one of these categories will apply to the other!</p>
+</section>
+<section id="old-friends-hypothesis-is-more-descriptive-than-the-hygiene-hypothesis" class="level2">
+<h2 class="anchored" data-anchor-id="old-friends-hypothesis-is-more-descriptive-than-the-hygiene-hypothesis">Old Friends Hypothesis is more descriptive than the Hygiene Hypothesis</h2>
+<p>Our “old friends” parasitic worms and beneficial microbes are associated with a reduced risk of allergies and autoimmune diseases. No such relationship exists for crowd diseases. In fact, the opposite is true. Crowd diseases contribute to <a href="https://erj.ersjournals.com/content/19/2/341">allergies</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10051805/">autoimmune diseases</a>. Comparing the immune system to a muscle that gets stronger with use is overly simplistic and, in many cases, inaccurate. There is huge variety in how various pathogens impact us. Being precise in considering different types of microbes and infections will allow us to better understand human health.</p>
+</section>
+<section id="related-reading" class="level2">
+<h2 class="anchored" data-anchor-id="related-reading">Related reading:</h2>
+<ul>
+<li><a href="https://elifesciences.org/articles/65180">Gross ways to live long: Parasitic worms as an anti-inflammaging therapy?</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4089149/">Microbial ‘old friends’, immunoregulation and socioeconomic status</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396177/">Unraveling the Hygiene Hypothesis of helminthes and autoimmunity</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-04-25-microbiome-1/">Surprises of the Microbiome</a></li>
+<li><a href="https://rachel.fast.ai/posts/2023-03-22-viruses2/">Viruses: The Silent Triggers of Autoimmune and Neurodegenerative Diseases</a></li>
+</ul>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/index.html</guid>
+  <pubDate>Mon, 12 Aug 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/flights.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>AI’s Quest to Predict T Cell Binding– The Holy Grail of Immunology</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1573,95 +1662,6 @@
   <guid>https://rachel.fast.ai/posts/2022-03-15-math-person/index.html</guid>
   <pubDate>Mon, 14 Mar 2022 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2022-03-15-math-person/teaching.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Avoiding Data Disasters</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2021-11-04-data-disasters/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Things can go disastrously wrong in data science and machine learning projects when we undervalue data work, use data in contexts that it wasn’t gathered for, or ignore the crucial role that humans play in the data science pipeline. A new multi-university <a href="https://cires.org.au/">centre focused on Information Resilience</a>, funded by the Australian government’s top scientific funding body (ARC), has recently launched. <strong>Information Resilience</strong> is the capacity to detect and respond to failures and risks across the information chain in which data is sourced, shared, transformed, analysed, and consumed. I’m honored to be a member of the strategy board, and I have been thinking about what information resilience means with respect to data practices. Through a series of case studies and relevant research papers, I will highlight these risks and point towards more resilient practices.</p>
-<section id="case-study-uk-covid-tracking-app" class="level2">
-<h2 class="anchored" data-anchor-id="case-study-uk-covid-tracking-app">Case study: UK covid tracking app</h2>
-<p>Data from a covid-symptom tracking app was used in a research paper to draw <a href="https://twitter.com/ahandvanish/status/1313973286364229638?s=20">wildly inaccurate conclusions</a> about the prevalence of Long Covid, the often debilitating neurological, vascular, and immune disease that can last for months or longer (some patients have been sick for 20 months and counting). The app suggested that only 1.5% of patients still experience symptoms after 3 months, an order of magnitude smaller than estimates of 10-35% being found by other studies.</p>
-<p>How could this research project have gone so wrong? Well, the app had been designed for a completely different purpose (tracking 1-2 week long respiratory infections), didn’t include the most common Long Covid symptoms (such as neurological dysfunction), had a frustrating user-interface that led many patients to quit using it, and made the erroneous assumption that those who stopped logging must be fully recovered. The results from this faulty research paper were widely shared, including in a BBC article, offering false reassurance than Long Covid prevalence is much rarer than it is. Patients had been voicing their frustrations with the app all along, and if researchers had listened sooner, they could have collected a much higher quality and more accurate data set.</p>
-<p>This research failure illustrates a few common issues in data projects:</p>
-<ul>
-<li>The <strong>context of the data</strong> was not taken into account. The user-interface, the categories listed, the included features– these were all designed to record data about a short-term mild respiratory infection. However, when it was used for a different purpose (long covid patients suffering for months with vascular and neurological symptoms), it did a poor job, and led to missing and incomplete data. This happens all too often, in which data gathered for one context is used for another</li>
-<li>The <strong>people most impacted</strong> (long covid patients) were ignored. They had the most accurate expertise on what long covid actually entailed, yet were not listened to. Ignoring this expertise led to lower quality data and erroneous research conclusions. Patients have <a href="https://bostonreview.net/science-nature/rachel-thomas-medicines-machine-learning-problem">crucial domain expertise</a>, which is distinct from that of doctors, and must be included in medical data science projects. From the start of the pandemic, patients who had suffered from other debilitating post-viral illnesses warned that we should be on the lookout for long-term illness, even in initially “mild” cases.</li>
-</ul>
-</section>
-<section id="data-is-crucial" class="level2">
-<h2 class="anchored" data-anchor-id="data-is-crucial">Data is Crucial</h2>
-<p>Collecting data about covid and its long-term effects directly from patients was a good idea, but poorly executed in this case. Due to <a href="https://www.fast.ai/2019/08/07/surveillance/">privacy and surveillance risks</a>, I frequently remind people not to record data that they don’t need. However, the pandemic has been a good reminder of how much data we really do need, and how tough it is when it’s missing.</p>
-<p>At the start of the pandemic in the United States, we had very little data about what was happening– the government was not tabulating information on cases, testing, or hospitalization. How could we know how to react when we didn’t understand how many cases there were, what death rates were, how transmissible the disease was, and other crucial information? How could we make policy decisions in the absence of a basic understanding of the facts.</p>
-<p>In early March 2020, two journalists and a data scientist from a medication-discovery platform began <a href="https://www.cjr.org/the_profile/covid-tracking-project.php">pulling covid data together</a> into a spreadsheet to understand the situation in the USA. This launched into a <a href="https://covidtracking.com/analysis-updates/why-we-didnt-automate-our-data-collection">15-month long project in which 500 volunteers</a> compiled and published data on COVID-19 testing, cases, hospitalizations, and deaths in the USA. During those 15 months, the Covid Tracking Project was the most comprehensive source of covid data in the USA, even more comprehensive than what the CDC had, and it was used by the CDC, numerous government agencies, and both the Trump and Biden Administrations. It was cited in academic studies and in thousands of news articles.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/covid-track.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">A reflection on the covid tracking project from a core data infrastructure engineer</figcaption>
-</figure>
-</div>
-<p>A data infrastructure engineer and contributor for the project <a href="https://covidtracking.com/analysis-updates/why-we-didnt-automate-our-data-collection">later recounted</a>, “It quickly became apparent that daily, close contact with the data was necessary to understand what states were reporting. States frequently changed how, what, and where they reported data. Had we set up a fully automated data capture system in March 2020, it would have failed within days.” The project used automation as a way to support and supplement manual work, not to replace it. At numerous points, errors in state reporting mechanisms were caught by eagle-eyed data scientists notifying discrepancies.</p>
-<p>This vision of using automation to support human work resonates with our interest at fast.ai in “augmentedML”, not “autoML”. I have <a href="https://www.fast.ai/2018/07/16/auto-ml2/">written previously</a> and <a href="https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml">gave an AutoML workshop keynote</a> on how too often automation ignores the important role of human input. Rather than try to automate everything (which often fails), we should focus on how humans and machines can best work together to take advantage of their different strengths.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/augmentedML.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Speaking about AugmentedML vs.&nbsp;AutoML at ICML 2019</figcaption>
-</figure>
-</div>
-</section>
-<section id="data-work-is-undervalued" class="level2">
-<h2 class="anchored" data-anchor-id="data-work-is-undervalued">Data Work is Undervalued</h2>
-<p>Interviews of 53 AI practitioners across 6 countries on 3 continents found a pattern that is very familiar to many of us (including me) who work in machine learning: <a href="https://research.google/pubs/pub49953/">“Everyone wants to do the model work, not the data work.”</a> Missing meta-data leads to faulty assumptions. Data collection practices often conflict with the workflows of on-the-ground partners, such as nurses or farmers, who are usually not compensated for this extraneous effort. Too often data work is arduous, invisible, and taken for granted. Undervaluing of data work leads to poor practices and often results in negative, downstream events, including dangerously inaccurate models and months of lost work.</p>
-<p>Throughout the pandemic, data about covid (both initial cases and long covid) has often been lacking. Many countries have experienced testing shortages, leading to undercounts of how many people have covid. The <a href="https://www.propublica.org/article/the-cdc-only-tracks-a-fraction-of-breakthrough-covid-19-infections-even-as-cases-surge">CDC decision not to track breakthrough cases</a> unless they resulted in hospitalization made it harder to understand prevalence of break-throughs (a particularly concerning decision since break-throughs can still lead to long covid). In September, it was revealed that British Columbia, Canada was <a href="https://bc.ctvnews.ca/secrecy-over-b-c-s-true-number-of-hospitalized-covid-19-patients-1.5595394">not including covid patients in their ICU counts</a> once the patients were no longer infectious, a secretive decision that obscured how full ICUs were. Some studies of Long Covid have failed to include common symptoms, such as neurological ones, making it harder to understand the prevalence or nature.</p>
-</section>
-<section id="data-has-context" class="level2">
-<h2 class="anchored" data-anchor-id="data-has-context">Data has Context</h2>
-<p>Covid is giving us a first-hand view of how data, which we may sometimes want to think of as “objective”, are shaped by countless human decisions and factors. In the example of the symptom tracking app, decisions about which symptoms were included had a significant impact on the prevalence rate calculated. Design decisions that influenced the ease of use impacted how much data was gathered. Lack of understanding of how the app was being used (and why people quit using it) led to erroneous decisions about which cases should be considered “recovered”. These are all examples of the context for data. Here, the data gathered was reasonably appropriate for understanding initial covid infections (a week or two of respiratory symptoms), but not for patients experiencing months of neurological and vascular symptoms. Numbers can not stand alone, we need to understand how they were measured, who was included and excluded, relevant design decisions, under what situations a dataset is appropriate to use vs.&nbsp;not.</p>
-<p>As another example, consider covid testing counts: Who has access to testing (this involves health inequities, due to race or urban vs.&nbsp;rural), who is encouraged to get tested (at various times, people without symptoms, children, or other groups have been discouraged from doing so), varying accuracies (e.g.&nbsp;PCR tests are less accurate on children, missing almost half of cases that later go on to seroconvert), and making decisions about what counts as a “case” (I know multiple people who had alternating test results: positive, negative, positive, or the reverse– what counts as a positive case?)</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/datasheet.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Datasheet for an electrical component. Image from ‘Datasheets for Datasets’</figcaption>
-</figure>
-</div>
-<p>One proposal for capturing this context is <a href="https://arxiv.org/abs/1803.09010">Datasheets for Datasets</a>. Prior to doing her PhD at Stanford in computer vision and then co-leading Google’s AI ethics team, <a href="https://thegradient.pub/the-far-reaching-impacts-of-timnit-gebru/">Dr.&nbsp;Timnit Gebru</a> worked at Apple in circuit design and electrical engineering. In electronics, each component (such as a circuit or transistor) comes with a datasheet that lists when and where it was manufactured, under what conditions it is safe to use, and other specifications. Dr.&nbsp;Gebru drew on this background to propose a similar idea for datasets: listing the context of when and how it was created, what data was included/excluded, recommended uses, potential biases and ethical risks, work needed to maintain it, and so on. This is a valuable proposal towards making the context of data more explicit.</p>
-</section>
-<section id="the-people-most-impacted" class="level2">
-<h2 class="anchored" data-anchor-id="the-people-most-impacted">The People Most Impacted</h2>
-<p>The inaccurate research and incomplete data from the covid tracking app could have been avoided by drawing on the expertise of patients. Higher quality data could have been collected sooner and more thoroughly, if patients were consulted in the app design and in the related research studies. Participatory approaches to machine learning is an exciting and growing area of research. In any domain, the people who would be most impacted by errors or mistakes need to be included as partners in the design of the project.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/diverse-voices.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">The Diverse Voices project from University of Washington Tech Policy Lab involves academic papers and practical how-to guides.</figcaption>
-</figure>
-</div>
-<p>Often, our approaches to addressing fairness or other ethics issues, further centralize the power of system designers and operators. The organizers of an ICML workshop on the topic called <a href="https://participatoryml.github.io/">for more cooperative, democratic, and participatory</a> approaches instead. We need to think not just about <strong>explainability</strong>, but about giving people <strong>actionable recourse</strong>. As <a href="https://slideslive.com/38930604/actionable-recourse-in-machine-learning">Professor Berk Ustun highlights</a>, when someone asks why their loan was denied, usually what they want is not just an explanation but to know what they could change in order to get a loan. We need to design systems with <a href="http://contestability.org/"><strong>contestability</strong></a> in mind, to include from the start the idea that people should be able to challenge system outputs. We need to include <a href="https://techpolicylab.uw.edu/project/diverse-voices/">expert panels of perspectives</a> that are often overlooked, depending on the application, this could mean formerly or currently incarcerated people, people who don’t drive, people with very low incomes, disabled people, and many others. <a href="https://techpolicylab.uw.edu/project/diverse-voices/">The Diverse Voices project</a> from University of Washington Tech Lab provides guidance on how to do this. And it is crucial that this not just be tokenistic <a href="https://www.technologyreview.com/2020/08/25/1007589/participation-washing-ai-trends-opinion-machine-learning/">participation-washing</a>, but a meaningful, appropriately compensated, and ongoing role in their design and operation.</p>
-</section>
-<section id="towards-greater-data-resilience" class="level2">
-<h2 class="anchored" data-anchor-id="towards-greater-data-resilience">Towards Greater Data Resilience</h2>
-<p>I hope that we can improve data resilience through: - Valuing data work - Documenting context of data - Close contact with the data - Meaningful, ongoing, and compensated involvement of the people impacted</p>
-<p>And I hope that when our data represents people we can remember the human side. As <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7296309/">AI researcher Inioluwa Deborah Raji wrote</a>, “Data are not bricks to be stacked, oil to be drilled, gold to be mined, opportunities to be harvested. Data are humans to be seen, maybe loved, hopefully taken care of.”</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2021-11-04-data-disasters/data-not-oil.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Quote from AI researcher Inioluwa Deborah Raji</figcaption>
-</figure>
-</div>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>ethics</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2021-11-04-data-disasters/index.html</guid>
-  <pubDate>Wed, 03 Nov 2021 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2021-11-04-data-disasters/covid-track.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
