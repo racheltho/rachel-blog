@@ -40,7 +40,7 @@ Our bodies are full of [peaceful (commensal) bacteria](https://rachel.fast.ai/po
 
 ![Our "old friends" parasitic worms may seem gross, but crowd infections can be even grosser](parasites-square.jpg){width=50%}
 
-Surprisingly, there are a number of studies showing that [infections with helminths (parasitic worms)](https://elifesciences.org/articles/65180) can be **beneficial** allergies and autoimmune disease, including for [multiple sclerosis](https://sci-hub.se/https://link.springer.com/chapter/10.1007/7854_2014_361). A proposed mechanism is that parasites provide a low-level of background activation for the immune system, which prevents excess activation. This in term can prevent inflammatory and autoimmune disorders.
+Surprisingly, there are a number of studies showing that [infections with helminths (parasitic worms)](https://elifesciences.org/articles/65180) can be **beneficial** in treating allergies and autoimmune disease, including for [multiple sclerosis](https://sci-hub.se/https://link.springer.com/chapter/10.1007/7854_2014_361). A proposed mechanism is that parasites provide a low-level of background activation for the immune system, which prevents excess activation. This in turn can prevent inflammatory and autoimmune disorders.
  However, helminth infections can also be harmful and are not something you should try at home!  Researchers are developing therapies based on [proteins derived from helminths](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4374592/).
 
 ## "Crowd infections" are new in human history
