@@ -15,7 +15,94 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 12 Aug 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 09 Sep 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Gaps and Risks of AI in the Life Sciences</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>AI is being used to tackle high-impact scientific problems, including <a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">searching for new antibiotics</a> to combat antibiotic-resistance and predicting <a href="https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/">what foreign substances the immune system can recognize</a> as invaders. Amidst the excitement, it is important to keep in mind the gaps and risks of how AI is applied in science. Recognizing these risks opens up new opportunities and can prevent us from being caught off guard by shortcomings.</p>
+<section id="missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="missing-data">Missing Data</h2>
+<p>A recurring problem within data science is that often the data we would be most interested in does not exist or is too difficult to gather. In response, data scientists often instead use imperfect proxies (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9122957/">Thomas and Uminsky 2022</a>), or alter their research questions to make use of the data they have (<a href="https://arxiv.org/abs/1901.02547">Passi and Barocas 2019)</a>). While it is understandable for teams to work with what data is available, this can unduly influence the field to neglect areas where data is unavailable or more difficult to collect.</p>
+<p>A research project titled “The library of missing data” (<a href="https://github.com/MimiOnuoha/missing-datasets">Mimi Onouha 2016</a>) inspected examples of datasets that are not collected and of information that we don’t have. What is not measured or recorded can be very revealing, yet it is harder to see an absence. It would be a valuable project to begin with the most important and high-impact open questions in various scientific fields, and then to determine which types of data would need to be collected, what experiments need to be run, and whether AI could prove useful.</p>
+<p>While it is understandable that physical and financial constraints shape what types of data can be gathered, it is important to stay aware of how these influence research questions and findings. In some cases, a research area may be ignored due to lack of data. In other cases, results may be biased due to only cetain types of data being included. Missing data can be a type of representation bias, in which not all groups are adequately represented (<a href="https://dl.acm.org/doi/fullHtml/10.1145/3465416.3483305">Suresh and Guttag 2021</a>). For example, databases of <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">T cell receptors</a> are highly biased towards particular genetic alleles and certain viral antigens. This data can still help us reach valuable conclusions, but it would be a mistake to overgeneralize those findings to alleles or antigen types that are not well-represented in the underlying data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/suresh-fig1.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Sources of bias at different points throughout the process of creating machine learning models, Figure 1 from Suresh and Guttag, 2021</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-physical-world-is-complex-and-volatile" class="level2">
+<h2 class="anchored" data-anchor-id="the-physical-world-is-complex-and-volatile">The physical world is complex and volatile</h2>
+<p>In other fields, machine learning models have sometimes performed well in testing but failed to work as expected when deployed in the real world (<a href="https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/">Sambasivan et al.&nbsp;2021</a>). Issues can arise when the context and quality of the training data is not fully understood (<a href="https://arxiv.org/abs/1803.09010">Gebru et al.&nbsp;2021</a>). Biases and errors in datasets will propagate to downstream research. For example, The ImageNet Large Scale Visual Recognition Challenge (ILSVRC) dataset, often called ImageNet-1k, is widely used in image recognition research and has been cited 32,000 times. Over a quarter of the images in the dataset are of wild animals, yet researchers later found that over 12% of these wild animals are labeled incorrectly (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26682">Luccioni and Rolnick 2023</a>).</p>
+<p>ML systems are trained in clearly defined environments, while the physical world often has complex and volatile underlying phenomena, which are not fully accounted for during training. This can create a brittleness to ML-generated solutions (<a href="https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/">Sambasivan et al.&nbsp;2021</a>).</p>
+</section>
+<section id="neglecting-mechanistic-understanding" class="level2">
+<h2 class="anchored" data-anchor-id="neglecting-mechanistic-understanding">Neglecting Mechanistic Understanding</h2>
+<p>Language models are great at interpolating between underlying information, but not at creating things that are completely new (<a href="https://arxiv.org/abs/2305.18654">Dziri et al.&nbsp;2023</a>). Brand new theories will still require human ingenuity. Upon receiving the Nobel Prize, biologist Sydney Brenner, warned that increased data does not necessarily lead to deeper understanding, saying “We’re drowning in an ocean, or a sea of data but we are starved of knowledge.” (<a href="https://www.nobelprize.org/prizes/medicine/2002/brenner/interview/">Sylwan 2002</a>). Geneticist Paul Nurse, another Nobel Prize-winner, echoed these concerns. He wrote about the need for a renewed emphasis on new ideas and theory, alongside data. Nurse proposed that computer scientists need to be embedded alongside biologists to deeply understand the domain problems, “It is through deep familiarity with the biology — not simply a drive to collect more and more data — that important questions will be asked.” (<a href="https://www.nature.com/articles/d41586-021-02480-z">Nurse 2021</a>).</p>
+<p>AI is a powerful tool, but it does not replace other ways of knowing about the world, including qualitative research and benchtop quantitative experiments. Machine learning and AI techniques are great at learning patterns in existing data.</p>
+</section>
+<section id="difficulty-of-cross-disciplinary-work" class="level2">
+<h2 class="anchored" data-anchor-id="difficulty-of-cross-disciplinary-work">Difficulty of Cross-Disciplinary Work</h2>
+<p>Interdisciplinary work is challenging, as it can be tough to remain on the cutting edge of two separate fields. At one extreme, you can have research based on sound immunology, but using deep learning techniques which are outdated or perhaps were never considered best practice. At the other extreme, you can have research using state-of-the-art deep learning, yet misunderstanding the core mechanisms of immunology or misconstruing the underlying context of datasets.</p>
+<p>Meaningful collaboration between those with in-depth immunology knowledge and those with in-depth deep learning knowledge is necessary. Cross-disciplinary work is inherently difficult. Challenges can include differences of communication and work practices between practitioners with different backgrounds; insufficient expertise in one of the fields; and the difficulty of reconciling different approaches and priorities. Moreover, many academic institutions, journals, and other research centers often tend to value specific types of expertise over others. Deep learning and areas of the life sciences such as immunology are each highly complex, jargon-laden, and fast-moving fields. Finding researchers, or even teams, which can keep pace with both is challenging.</p>
+<p>Deep learning practitioners often seek to automate systems without understanding what the greatest needs of domain experts are. When this automation leaves gaps, humans are often expected to fill these gaps in ways that are difficult, tedious, or impractical. In contrast, a more fruitful approach may be to take the strengths of both domain experts and deep learning into account from the start to leverage human strengths (<a href="https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml">Thomas 2019</a>).</p>
+</section>
+<section id="the-double-edged-sword-of-competitions" class="level2">
+<h2 class="anchored" data-anchor-id="the-double-edged-sword-of-competitions">The Double-Edged Sword of Competitions</h2>
+<p>Carefully structured competitions can play a valuable role in motivating research. Well-defined benchmarks make it clear how various approaches compare to one another. The winner of the 2012 ImageNet competition to identify objects in photographs, an algorithm called AlexNet, led to the mainstream popularization of neural networks and set off an avalanche of increased research into AI. The winner of the 2020 CASP challenge to take amino acid sequences as input and output the most likely 3D protein structure was a computer program called AlphaFold, which has revolutionized protein structure prediction. While these have been huge breakthroughs for their respective fields, over-focusing on competitions can lead to other research areas being neglected. In other cases, the models created for benchmark tasks may be inappropriately applied to other tasks for which they are less suited (<a href="https://www.sciencedirect.com/science/article/pii/S2666389921001847">Paullada et al.&nbsp;2021</a>).</p>
+<p>It takes effort to construct well-structured competitions. Data must be gathered and selected, often through benchtop laboratory experiments, while being cognizant of biases and overall representation within the dataset. It is also crucial to have appropriate splits between the training set and a held-out test set. When data leakage occurs, clues from the test set can be found in the training set, artificially inflating the performance of models (<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11314/1131416/Hazards-of-data-leakage-in-machine-learning--a-study/10.1117/12.2549313.short#_=_">Samala et al.&nbsp;2020</a>).</p>
+</section>
+<section id="undervaluing-data-work" class="level2">
+<h2 class="anchored" data-anchor-id="undervaluing-data-work">Undervaluing data work</h2>
+<p>Too often the arduous task of curating quality datasets has been neglected, undervalued, and not given the same currency for career advancement as algorithmic work. A research paper which interviewed over 60 machine learning practitioners was titled “Everyone wants to do the model work, not the data work”, drawing on a representative quote from one of the interviewees. The researchers found that data work was systematically devalued, leading to issues which impacted model performance, sometimes with disastrous consequences (<a href="https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/">Sambasivan et al.&nbsp;2021</a>)).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/sambasivan-square.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">Physical world brittleness, inadequate domain expertise, and other factors can have compounding negative impacts on the process of building AI models. Figure 1 from Sambasivan, et al, 2021</figcaption>
+</figure>
+</div>
+<p>Many areas within science lack consistent benchmark datasets. This can result in models that are not consistently reproducible and makes it tough to compare performance across different papers. Organizers of the largest academic AI conference, Neural Information Processing Systems (NeurIPS), recognized that there were too few incentives for researchers to work on datasets and benchmarks. In 2021, they opened a new track of the conference, on equal standing with the original track, to better support and incentivize research on datasets and benchmarks (<a href="https://blog.neurips.cc/2021/04/07/announcing-the-neurips-2021-datasets-and-benchmarks-track/">Vanschoren and Yeung 2021</a>). This is an encouraging model, and I hope to see more efforts to prioritize data curation.</p>
+</section>
+<section id="opportunities-for-ai-in-science" class="level2">
+<h2 class="anchored" data-anchor-id="opportunities-for-ai-in-science">Opportunities for AI in Science</h2>
+<p>The flip side of these risks and gaps is that they offer opportunities for how we can work to improve the application of AI to science and to aim to avoid potential pitfalls. To ensure that we are making the most of AI possibilities in the life sciences, it would be a good idea to:</p>
+<ul>
+<li>Embed scientists and AI practitioners on closely integrated teams</li>
+<li>Survey the biggest open problems in immunology and determine whether AI could help, and if so, what data is needed (as opposed to always just starting with the data we already have)</li>
+<li>Reward dataset collection, through conference tracks and journal issues focused on it, similar to the model adopted by NeurIPS</li>
+<li>Invest in research that is:
+<ul>
+<li>Focused on underlying causal mechanisms</li>
+<li>Values multiple ways of generating knowledge</li>
+<li>Gathering new types of data</li>
+</ul></li>
+<li>Develop benchmark datasets and structured competitions where relevant</li>
+</ul>
+<p>By keeping a broader perspective on different types of expertise, different methods of research, and the need for interdisciplinary work, we can prevent a myopic application of AI to science that risks neglecting important questions.</p>
+<p><em>Thank you to Jeremy Howard for feedback on earlier drafts of this post.</em></p>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>ethics</category>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/index.html</guid>
+  <pubDate>Mon, 09 Sep 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/liquid-drops.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Your Immune System is Not a Muscle</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -61,7 +148,7 @@
 <figcaption class="figure-caption">Our “old friends” parasitic worms may seem gross, but crowd infections can be even grosser</figcaption>
 </figure>
 </div>
-<p>Surprisingly, there are a number of studies showing that <a href="https://elifesciences.org/articles/65180">infections with helminths (parasitic worms)</a> can be <strong>beneficial</strong> in treating allergies and autoimmune disease, including for <a href="https://sci-hub.se/https://link.springer.com/chapter/10.1007/7854_2014_361">multiple sclerosis</a>. A proposed mechanism is that parasites provide a low-level of background activation for the immune system, which prevents excess activation. This in term can prevent inflammatory and autoimmune disorders. However, helminth infections can also be harmful and are not something you should try at home! Researchers are developing therapies based on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4374592/">proteins derived from helminths</a>.</p>
+<p>Surprisingly, there are a number of studies showing that <a href="https://elifesciences.org/articles/65180">infections with helminths (parasitic worms)</a> can be <strong>beneficial</strong> in treating allergies and autoimmune disease, including for <a href="https://sci-hub.se/https://link.springer.com/chapter/10.1007/7854_2014_361">multiple sclerosis</a>. A proposed mechanism is that parasites provide a low-level of background activation for the immune system, which prevents excess activation. This in turn can prevent inflammatory and autoimmune disorders. However, helminth infections can also be harmful and are not something you should try at home! Researchers are developing therapies based on <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4374592/">proteins derived from helminths</a>.</p>
 </section>
 <section id="crowd-infections-are-new-in-human-history" class="level2">
 <h2 class="anchored" data-anchor-id="crowd-infections-are-new-in-human-history">“Crowd infections” are new in human history</h2>
@@ -1586,82 +1673,6 @@
   <guid>https://rachel.fast.ai/posts/2022-05-17-societal-harms/index.html</guid>
   <pubDate>Mon, 16 May 2022 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2022-05-17-societal-harms/air-pollution.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>There’s no such thing as not a math person</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2022-03-15-math-person/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>On the surface, I may seem into math: I have a math PhD, taught a graduate <a href="https://www.fast.ai/2017/07/17/num-lin-alg/">computational linear algebra</a> course, co-founded AI research lab <a href="https://www.fast.ai/about/">fast.ai</a>, and even go by the twitter handle <a href="https://twitter.com/math_rachel"><span class="citation" data-cites="math_rachel">@math_rachel</span></a>.</p>
-<p>Yet many of my experiences of academic math culture have been toxic, sexist, and deeply alienating. At my lowest points, I felt like there was <a href="https://www.youtube.com/watch?v=LqjP7O9SxOM&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6">no place for me</a> in math academia or math-heavy tech culture.</p>
-<p>It is not just mathematicians or math majors who are impacted by this: Western culture is awash in negative feelings and experiences regarding math, which permate from many sources and impact students of all ages. In this post, I will explore the cultural factors, misconceptions, stereotypes, and relevant studies on obstacles that turn people off to math. If you (or your child) doesn’t like math or feels anxious about your own capabilities, you’re not alone, and this isn’t just a personal challenge. The below essay is based on part of <a href="https://www.youtube.com/watch?v=VmA8-vYwjM0&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=8">a talk</a> I recently gave.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/teaching.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">me, teaching sorting algorithms, at an all-women coding academy in 2015</figcaption>
-</figure>
-</div>
-<section id="myth-of-innate-ability-myth-of-the-lone-genius" class="level2">
-<h2 class="anchored" data-anchor-id="myth-of-innate-ability-myth-of-the-lone-genius">Myth of Innate Ability, Myth of the Lone Genius</h2>
-<p>One common myth is the idea that certain people’s brains aren’t “wired” the right way to do math, tech, or AI, that your brain either “works that way” or not. None of the evidence supports this viewpoint, yet when people believe this, it can become a self-fulfilling prophecy. Dr.&nbsp;Omoju Miller, who earned her PhD at UC Berkeley and was a senior machine learning engineer and technical advisor to the CEO at Github, shares some of the research debunking the myth of innate ability in <a href="http://omojumiller.com/articles/The-Myth-Of-Innate-Ability-In-">this essay</a> and in <a href="https://www.youtube.com/watch?v=BFWVHSeakkg">her TEDx talk</a>. In reality, there is no such thing as “not a math person.”</p>
-<p>Dr.&nbsp;Cathy O’Neil, a Harvard Math PhD and author of <a href="https://www.penguin.com.au/books/weapons-of-math-destruction-9780141985411">Weapons of Math Destruction</a>, wrote about the <a href="https://www.bloomberg.com/opinion/articles/2017-06-07/a-mathematician-s-secret-we-re-not-all-geniuses">myth of the lone genius mathematician</a>, <em>“You don’t have to be a genius to become a mathematician. If you find this statement at all surprising, you’re an example of what’s wrong with the way our society identifies, encourages and rewards talent… For each certified genius, there are at least a hundred great people who helped achieve such outstanding results.”</em></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/miller-oneil.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Dr.&nbsp;Miller debunking the myth of innate ability, and Dr.&nbsp;O’Neil debunking the myth of the lone genius mathematician</figcaption>
-</figure>
-</div>
-</section>
-<section id="music-without-singing-or-instruments" class="level2">
-<h2 class="anchored" data-anchor-id="music-without-singing-or-instruments">Music without singing or instruments</h2>
-<p>Imagine a world where children are not allowed to sing songs or play instruments until they reach adulthood, after spending a decade or two transcribing sheet music by hand. This scenario is absurd and nightmarish, yet it is analogous to how math is often taught, with the most creative and interesting parts saved until almost everyone has dropped out. Dr.&nbsp;Paul Lockhart eloquently describes this metaphor in his essay, <a href="https://www.maa.org/sites/default/files/pdf/devlin/LockhartsLament.pdf">A Mathematician’s Lament</a>, on <em>“how school cheats us out of our most fascinating and imaginative art form.”</em> Dr.&nbsp;Lockhart left his role as a university math professor to teach K-12 math, as he felt that so much reform was needed in how math is taught.</p>
-<p>Dr.&nbsp;David Perkins uses the analogy of how children can play baseball wthout knowing all the technical details, without having a full team or playing a full 9 innings, yet still gain a sense of the <a href="https://books.google.com.au/books/about/Making_Learning_Whole.html?id=0DF9WxgGgNsC">“whole game.”</a> Math is usually taught with an overemphasis on dry, technical details, without giving students a concept of the “whole game.” It can take years and years before enough technical details are accumulated to build something interesting. There is an overemphasis on techniques rather than meaning.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/musicbaseball.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">What if math was taught more like how music or sports are taught?</figcaption>
-</figure>
-</div>
-<p>Math curriculums are usually arranged in a vertical manner, with each year building tightly on the previous, such that one bad year can ruin everything that comes after. Many people I talk to can pinpoint the year that math went bad for them: <em>“I used to like math until 6th grade, when I had a bad teacher/was dealing with peer pressure/my undiagnosed ADHD was out of control. After that, I was never able to succeed in future years.”</em> This is less true in other subjects, where one bad history teacher/one bad year doesn’t mean that you can’t succeed at history the following year.</p>
-</section>
-<section id="gender-race-and-stereotypes" class="level2">
-<h2 class="anchored" data-anchor-id="gender-race-and-stereotypes">Gender, race, and stereotypes</h2>
-<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2836676/">Female teachers’ math anxiety affects girls’ math achievement</a>: In the USA, over 90% of primary school teachers are female, and research has found <em>“the more anxious teachers were about math, the more likely girls (but not boys) were to endorse the commonly held stereotype that ‘boys are good at math, and girls are good at reading’ and the lower these girls’ math achievement… People’s fear and anxiety about doing math—over and above actual math ability—can be an impediment to their math achievement.”</em></p>
-<p><a href="https://www.nytimes.com/2015/04/27/opinion/how-to-attract-female-engineers.html">Research</a> across a number of universities has found that more women go into engineering when courses focus on problems with positive social impact.</p>
-<p>Structural racism also impacts what messages teachers impart to students. An Atlantic article <a href="https://www.theatlantic.com/education/archive/2017/04/racist-math-education/524199/">How Does Race Affect a Student’s Math Education?</a> covered the research paper <a href="https://journals.tdl.org/jume/index.php/JUME/article/view/294">A Framework for Understanding Whiteness in Mathematics Education</a>, noting that <em>“Constantly reading and hearing about underperforming Black, Latino, and Indigenous students begins to embed itself into how math teachers view these students, attributing achievement differences to their innate ability to succeed in math… teachers start to expect worse performance from certain students, start to teach lower content, and start to use lower-level math instructional practices. By contrast, white and Asian students are given the benefit of the doubt and automatically afforded the opportunity to do more sophisticated and substantive mathematics.”</em></p>
-</section>
-<section id="the-mathematics-community-is-an-absolute-mess-which-actively-pushes-out-the-sort-of-people-who-might-make-it-better" class="level2">
-<h2 class="anchored" data-anchor-id="the-mathematics-community-is-an-absolute-mess-which-actively-pushes-out-the-sort-of-people-who-might-make-it-better">The mathematics community is “an absolute mess which actively pushes out the sort of people who might make it better”</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-03-15-math-person/piperharron.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Dr.&nbsp;Harron’s website, and some of the coverage of her number theory thesis, including on the Scientific American blog</figcaption>
-</figure>
-</div>
-<p>Dr.&nbsp;Piper Harron made waves with her <a href="http://www.theliberatedmathematician.com/thesis/">Princeton PhD thesis</a>, utilizing humor, analogies, sarcasm, and genuine efforts to be accessible as she described advanced concepts in a ground-breaking way, very atypical for a mathematics PhD thesis. Dr.&nbsp;Harron wrote openly in the prologue of her thesis on how alienating the culture of mathematics is, <em>“As any good grad student would do, I tried to fit in, mathematically. I absorbed the atmosphere and took attitudes to heart. I was miserable, and on the verge of failure. The problem was not individuals, but a system of self-preservation that, from the outside, feels like a long string of betrayals, some big, some small, perpetrated by your only support system.”</em> At her blog, the Liberated Mathematician, <a href="http://www.theliberatedmathematician.com/">she writes</a>, <em>“My view of mathematics is that it is an absolute mess which actively pushes out the sort of people who might make it better.”</em></p>
-<p>These descriptions resonate with my own experiences obtaining a math PhD (as well as the experiences of many friends, at a variety of universities). The toxicity of academic math departments is self-perpetuating, pushing out the people who could make them better.</p>
-</section>
-<section id="the-full-talk" class="level2">
-<h2 class="anchored" data-anchor-id="the-full-talk">The full talk</h2>
-<p>This post is based on the first part of the talk I gave in the below video, which includes more detail and a Q&amp;A. The talk also includes recommendations about math apps and resources, as well as a framework for how to consider screentime. Stay tuned for a future fast.ai blog post covering math apps and screentime.</p>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VmA8-vYwjM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</center>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>advice</category>
-  <category>education</category>
-  <guid>https://rachel.fast.ai/posts/2022-03-15-math-person/index.html</guid>
-  <pubDate>Mon, 14 Mar 2022 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2022-03-15-math-person/teaching.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
