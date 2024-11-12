@@ -1,0 +1,98 @@
+---
+title: "In defense of screen time"
+date: "2024-10-29"
+image: "/posts/2024-10-29-screen-time/music-lab.jpg"
+author: "Rachel Thomas"
+toc: true
+description: "Pundits say my husband and I are parenting wrong."
+categories: [education]
+---
+
+My daughter is constantly creating-- her passions include making art, writing fiction, coding interactive games, and composing music.  Yet, I regularly see news articles and media pundits suggesting that my husband and I are doing things all wrong. The reason for these claims? My daughter uses screen-based tools, at least partially, and in some cases, entirely, to pursue the interests I listed in my first sentence.  To give more detail on how she pursues her passions:
+
+- **Art**: She creates digital art in [Sketchbook Pro](https://www.sketchbook.com/), both on her own and in lessons.  She also takes in-person art courses that involve a mix of acrylic painting, water colors, and sculpture.
+- **Coding**: She loves coding in [Scratch](https://scratch.mit.edu/) and [P5.js](https://p5js.org/) to design and build interactive games.
+- **Creative writing**: While her handwriting is on target for her age, she prefers typing, as it lets her write faster and express more complex ideas-- we taught her touch typing when she was 5.  She writes fiction both individually and collaboratively with friends.
+- **Music**: She plays the piano, takes group singing lessons online, and enjoys composing music.  There is a composition component to her piano lessons (which happen over zoom) and she composes music online through [Chrome MusicLab](https://musiclab.chromeexperiments.com/) and [Flat.io](https://flat.io/).
+
+My daughter is not unique. Our family knows many other children with similar creativity levels who are excelling in their passions beyond what is often believed possible for their age groups.
+
+![Visual from Chrome Music Lab](music-lab.jpg){width=60%}
+
+Parenting approaches are personal and often polarizing, so I normally don’t write on this topic.  However, I am concerned by how several (in my view, false) points are being increasingly repeated by politicians and pundits: that screentime is very harmful for children, that it is essential for children’s well-being to attend in-person school every day ([even](https://apnews.com/article/covid-flu-school-attendance-4845073e737db87f786e1d8c815a48f7) [when](https://www.latimes.com/california/story/2023-08-12/got-a-cold-runny-nose-the-sniffles-no-worries-come-to-school-lausd-says) [sick](https://www.1news.co.nz/2024/09/26/govt-reveals-new-plan-for-getting-kids-to-school-heres-how-it-will-work/)), and that it is important for workers to return to the office (even when their jobs can be done remotely).
+
+![There has been a rise in policies requiring children to attend school while sick](school-attendance.jpg){width=70%}
+
+The above points are interlocking, since getting workers commuting to in-person offices requires children being at in-person school.  And overemphasizing in-person school attendance overlooks a number of children whose needs aren’t being met by in-person school. It also overlooks a number of online and screen-based options opportunities to build skills, express creativity, and form friendships.  Here I want to focus on some innovative ways that we can encourage children’s flourishing, whether that is as a supplement to in-person school, or instead of.
+
+## A False Binary
+
+I often hear statements such as, "I’d rather kids played outside than on a computer."  But these choices aren’t binary! You don’t have to pick just one. My daughter plays outside AND on a computer.  She plays in-person sports regularly AND has online hobbies.  This year we threw her 2 birthday parties: an in-person one for her local friends AND an online one for her long-distance friends.
+
+The term "screen time" is so broad as to be meaningless, clumping together many disparate activities.  A child sitting next to a parent playing a math game together on the computer is screen time.  Calling your grandparents on skype is screen time. Collaboratively composing music with your best friend in another country is screen time. Yet, when many people refer to screen time, they often seem to be referring to a child passively watching TV on their own (something which my husband and I almost never let our daughter do, and that she doesn’t seem interested in).  With any screen-based activity, it is useful to consider:
+
+- Is it social or solitary?
+- Does it involve creating content or consuming content?
+- Is it educational or not?
+
+![A Venn Diagram showing how we think about screentime. We avoid the outside (white) region and mostly stick to the intersections.](venn-diagram.jpg){width=70%}
+
+It is not that some of these options are always good or always bad, but rather that we need to have a nuanced view on different combinations of these factors and how much time you may want to spend on each.
+
+Screens are a crucial tool and outlet for her expressing her creativity, and it saddens me to hear an increasing media narrative vilifying screen time for kids. 
+
+Two of my daughter’s best friends are kids she has never met in person (because they live in a different state and in a different country), yet she talks with each of them several times per week. She also has local friends that we get together with regularly in-person. The fact that she has several close long-distance friends isn’t surprising, because my husband and I have many close online / long-distance friendships as well. Our friendships aren’t any less real because they are over screens.  Opening up the possibility for long-distance friendships has given us the option of finding additional friends we are particularly compatible with.
+
+## Increased options
+
+Screen-based learning options make homeschooling more feasible for a wider range of families.  Online resources (games, classes, and clubs) can offer opportunities that may not be available locally, can fill in gaps parents may not be qualified to cover, and offer an exciting variety of options. For instance, online courses have allowed my daughter to do the following (which are not available locally for us):
+
+- have tutors/teachers based in 5 different countries, providing diverse experiences
+- take science courses including: particle physics for kids, biochem for kids (she has been with the same group of kids for 3 years), and a biology class where a small group of students could share images from their digital microscopes over zoom
+- participate in clubs for creating collaborative narratives, fanart, and fanfiction around two of her favorite series of books
+- complete mastery-based math games at her own pace, which allowed her and a few friends to end up many years above their grade levels
+
+As I wrote about in a previous post, [we homeschool](https://www.fast.ai/posts/2022-09-06-homeschooling.html), and this leaves our daughter with far more time for hobbies and socializing than in-person school gave us.
+
+## In-person school does not work for everyone
+
+There are several categories of kids whose needs are often not met in traditional schools and frequently benefit from online options:
+
+- [Neurodivergent kids](https://www.nytimes.com/2020/08/10/opinion/coronavirus-school-closures.html), who may deal with overstimulating, distracting, or painful sensory experiences in traditional schools
+- Gifted kids, who are not intellectually challenged in traditional schools
+- [Kids from marginalized cultures](https://www.wired.com/story/pandemic-homeschoolers-who-are-not-going-back/), whose cultural heritage may not be reflected at school, or who may experience discrimination
+- Kids who are being bullied
+- Kids who have particular passions they would like to hyper-focus on (which are either not included in their school’s curriculum, or which they don’t get adequate time for)
+- Medically complex kids, including those who may be getting sick so often that they can’t attend school regularly, those for whom an illness could result in hospitalization, or whose health issues make it difficult to attend school in-person
+
+It is an injustice that schools are not inclusive of all children.  While individuals pulling their children out of school does not address this injustice (and we should continue to work for [safer](https://www.abc.net.au/news/2024-09-24/covid-safety-schools-course-sick-days-teachers-long-covid/104319032) and more inclusive schools), many families have found it necessary to leave systems that are harming their kids.
+
+![We were not alone in discovering that homeschooling worked better for our child](homeschool-headlines.jpg){width=60%}
+
+## Don’t judge screentime by a few bad examples
+
+I would caution against writing off screen time or online learning based on a low quality or poorly designed experience. Maybe your child’s school went online in 2020 with no notice and no support, and they were stuck in a zoom with 25 other kids (this is not a good set-up for anyone!).  We have found that with small group online tutoring, my daughter is able to be more social and talkative than she was in a large class at in-person school, and she masters more material in less time.  However, even amongst small online groups, occasionally she’ll try a teacher or club that isn’t a good match for her, and in those cases, we discontinue it.
+
+Since screentime is often equated with a way to occupy kids while parents do something else, there are often unrealistic expectations, particularly for the most rewarding screen-based tools (which tend to involve a learning curve and require support from a trusted adult). In many cases handing your child a new educational app and then leaving them alone can lead to frustration.  Sitting with them and working through the app together can be relationship-building, prevent them from getting overly discouraged, and help them build confidence as you figure it out together.  With age and experience, kids will likely be able to do more on their own.
+
+## Inclusion and accessibility
+
+Countries around the world, including the [USA](https://www.ippr.org/articles/our-greatest-asset), [UK](https://news.sky.com/story/parents-of-children-with-complex-needs-worried-they-could-be-unfairly-fined-under-new-school-absence-rules-13213524), [Australia](https://www.educationtoday.com.au/news-detail/Half-of-Australia-6155), [New Zealand](https://www.rnz.co.nz/news/political/513250/sickness-related-school-absences-to-be-targeted-under-government-plan), [Japan](https://english.kyodonews.net/news/2023/10/d8cd090637bd-japan-school-absenteeism-at-record-high-of-nearly-300000-in-fy-2022.html), [Belgium](https://www.brusselstimes.com/1053759/number-of-absences-and-suspensions-among-pupils-in-belgium-on-the-rise), and [Canada](https://www.cbc.ca/news/canada/school-absence-data-1.7156254) are seeing high levels of school absences. Factors for these record levels of absences include [more frequent illnesses](https://calgaryherald.com/opinion/columnists/opinion-we-dont-know-whats-causing-the-tsunami-of-sick-kids-but-wed-better-figure-it-out-fast) (such as covid, RSV, and flu) and [chronic health issues](https://www.abc.net.au/news/2024-06-16/children-with-long-covid-dismissed-doctors-myth-virus-harmless/103959078). In mid-2024, many countries (including the USA and Australia) experienced a particularly high wave of the ongoing covid pandemic.  Rates of disability are increasing, and people, [including children](https://www.scientificamerican.com/article/long-covid-is-harming-too-many-kids/), are continuing to develop new health conditions after viral infections.
+
+A number of school districts are responding to these waves of illness by placing heightened emphasis on attendance to in-person school, in many cases pressuring or [even](https://apnews.com/article/covid-flu-school-attendance-4845073e737db87f786e1d8c815a48f7) [requiring](https://www.1news.co.nz/2024/09/26/govt-reveals-new-plan-for-getting-kids-to-school-heres-how-it-will-work/) [children](https://www.latimes.com/california/story/2023-08-12/got-a-cold-runny-nose-the-sniffles-no-worries-come-to-school-lausd-says) and [teachers to attend school while sick](https://archive.md/T2oHI).  In parts of the [UK](https://news.sky.com/story/parents-of-children-with-complex-needs-worried-they-could-be-unfairly-fined-under-new-school-absence-rules-13213524), [USA](https://www.indystar.com/story/news/education/2024/08/19/new-law-indiana-school-absences-juvenile-court-missing-school-ips-attendance-policy-criminal-charges/74818189007/), and [New Zealand](https://www.rnz.co.nz/news/political/513250/sickness-related-school-absences-to-be-targeted-under-government-plan), policies are being considered (or implemented) to charge parents fines if their children miss school too often. This is counterproductive, as it is hard to focus when unwell, attending school sick increases the likelihood of spreading illness to others, and [rest is a key way](https://www.latimes.com/california/story/2022-07-07/working-through-covid-sleep-rest-infection-test-positive) to reduce risk of post-viral illness. None of these punitive attendance policies address root causes, such as [improving school air quality](https://www.abc.net.au/news/2024-09-24/covid-safety-schools-course-sick-days-teachers-long-covid/104319032), making sure parents have adequate paid leave to stay home with sick children, or decoupling school funding from attendance.
+
+![Requiring kids to attend school while sick is only going to lead to more sick students and sick teachers](school-attendance.jpg){width=70%}
+
+We are also seeing [rising rates of disability](https://www.abs.gov.au/media-centre/media-releases/55-million-australians-have-disability) amongst [working age](https://x.com/Mike_Honey_/status/1842530019991769108?t=Cc8jUI2CayxAIBCpoZHiXw&s=19) adults.  In the USA, there has been an [increase in people with cognitive disabilities](https://www.ippr.org/articles/our-greatest-asset). A [BBC article](https://www.bbc.com/news/business-68639144) notes that in the UK sick people are leaving the workforce at record highs.  Online access is a crucial part of accessibility and disability rights. For many disabled people, accessibility improved in 2020 with more remote options for work, medical appointments, conferences, and other events, and there is now a counter-reaction in which these options are being removed.
+
+Every child is different, so what works for my family won’t work for everyone.  I am not recommending that all families homeschool, or that nobody should attend in-person school.  However, we need to consider innovative approaches to learning and communication, and that includes screen-based approaches.
+
+## Hopes for a creative and inclusive society
+
+I want children to discover and develop passions that they enjoy (astronomy, writing, art, music, math, oceanography, chess, there are so many possibilities!) and to be able to connect with others who share their interests. Taking advantage of computer-based and online options opens up a world of possibility.  I also want a society in which disabled people are included in events and opportunities, and in which people can rest when they're sick or preferably avoid illness in the first place. Fewer people commuting to the office is better for the environment.  Traditional school is failing a lot of kids.  I hope we can consider a range of innovative educational and social approaches, and not exclude an entire category of valuable ways to communicate, create, and learn (e.g. screentime). 
+
+## Related Posts
+
+- [My family’s unlikely homeschooling journey](https://www.fast.ai/posts/2022-09-06-homeschooling.html): Prior to 2020, we never expected to homeschool, and now we have committed to it long-term.
+- [There's No Such Thing as Not A Math Person](https://www.fast.ai/2022/03/15/math-person/): based on a webinar I gave to parents addressing cultural myths about math and how to support your kids in their math education, even if you don't see yourself as a "math person."
+

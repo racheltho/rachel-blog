@@ -48,7 +48,7 @@ It takes effort to construct well-structured competitions.  Data must be gathere
 
 ## Undervaluing data work
 
-Too often the arduous task of curating quality datasets has been neglected, undervalued, and not given the same currency for career advancement as algorithmic work.  A research paper which interviewed over 60 machine learning practitioners was titled “Everyone wants to do the model work, not the data work”, drawing on a representative quote from one of the interviewees.  The researchers found that data work was systematically devalued, leading to issues which impacted model performance, sometimes with disastrous consequences ([Sambasivan et al. 2021](https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/))).
+Too often the arduous task of curating quality datasets has been neglected, undervalued, and not given the same currency for career advancement as algorithmic work ([Jo and Gebru 2020](https://dl.acm.org/doi/10.1145/3351095.3372829)).  A research paper which interviewed over 60 machine learning practitioners was titled “Everyone wants to do the model work, not the data work”, drawing on a representative quote from one of the interviewees.  The researchers found that data work was systematically devalued, leading to issues which impacted model performance, sometimes with disastrous consequences ([Sambasivan et al. 2021](https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/))).
 
 ![Physical world brittleness, inadequate domain expertise, and other factors can have compounding negative impacts on the process of building AI models. Figure 1 from Sambasivan, et al, 2021](sambasivan-square.jpg){width=75%}
 

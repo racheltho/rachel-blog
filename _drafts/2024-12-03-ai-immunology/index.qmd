@@ -1,0 +1,52 @@
+---
+title: "AI and Immunology"
+date: "2024-12-03"
+image: "/posts/2024-12-03-ai-immunology/thumbnail.jpg"
+description: "Applying powerful tools to a complex and high-impact field."
+author: "Rachel Thomas"
+categories: [machine learning, science]
+toc: true
+---
+
+I spent close to 20 years focused on mathematics and data science, including cofounding the research lab fast.ai, which focused on the powerful family of AI algorithms known as deep learning. A few years ago, I decided to make a big pivot and [return to school](https://rachel.fast.ai/posts/2023-02-07-school-immunology/) for immunology. What motivated my sudden change amidst a successful career? We are now living in [a pandemicene](https://www.theatlantic.com/science/archive/2022/04/how-climate-change-impacts-pandemics/629699/), a period with increasingly likely pandemics. Climate change and habitat destruction are crowding species into closer and closer contact with humans. [Frequent global travel and mega-cities](https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/) allow unprecedented opportunities for viruses to spread and mutate. Antibiotic resistance is rising rapidly.
+
+At the same time, we have been learning more and more about the [long-term consequences of infections](https://rachel.fast.ai/posts/2023-03-07-viruses1/)-- seemingly mild infections can contribute to long-term [autoimmune diseases, neurodegenerative diseases](https://rachel.fast.ai/posts/2023-03-22-viruses2/), and cancer. The human immune system is incredibly complex and there is much we don't know about it.  Immunology is a crucial area to study. In this post, I want to gather some of my writing and talks on how AI is being applied to immunology.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I3q5-cBebKA?si=MFcccYwqKdSTGth0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+<br>
+*My 30 minute presentation on key areas where deep learning is being applied to immunology*
+</center>
+
+
+### Using AI to predict what T cells will bind to
+
+T cells are one of the most important cell types of our immune systems. Figuring out how to predict what a T cell will bind to (meaning what cells it can recognize as bad and coordinate attacks against) would be a vital medical breakthrough. 
+
+- [Decoding T cells with AI](https://rachel.fast.ai/posts/2024-07-09-t-cells/)
+- [The Most Common and Useful Neural Nets](https://rachel.fast.ai/posts/2024-07-24-neural-nets/)
+- [AI’s Quest to Predict T Cell Binding– The Holy Grail of Immunology](https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/)
+
+### Mapping immune cell communication networks
+Immune cells talk to each other through complex networks. NLP, math, and immunology are useful in studying these networks.
+
+- [Applying AI to Immune Cell Networks](https://rachel.fast.ai/posts/2024-01-23-cytokines1/)
+- [How Immune Cells Communicate](https://rachel.fast.ai/posts/2024-02-06-cytokines2/)
+
+### Discovering new antibiotics
+Bacterial resistance to existing antibiotics is an urgent threat. AI is being used to search for new antibiotics.
+
+- [Using AI to Discover New Antibiotics](https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/)
+
+### Ethical risks of AI applied to immunology
+The enthusiasm about AI in medicine is failing to grapple with realities of the system. Recognizing gaps in how AI is applied to scientific research can prevent potential shortcomings and risks. 
+
+- [Gaps and Risks of AI in the Life Sciences](https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/)
+- [“AI will cure cancer” misunderstands both AI and medicine](https://rachel.fast.ai/posts/2024-02-20-ai-medicine/)
+
+You can subscribe to be notified of new blog posts by submitting your email below:
+
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&zx=11a17553b1&tD=156971d471c7b09&sD=156971d471c7cb3"></iframe>
+
+Deep learning is a family of AI algorithms which is revolutionizing image recognition, text generation, and protein folding. It is a powerful method for finding patterns in data. 
