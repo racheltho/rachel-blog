@@ -1,7 +1,7 @@
 ---
 title: "AI and Immunology"
-date: "2024-12-03"
-image: "/posts/2024-12-03-ai-immunology/thumbnail.jpg"
+date: "2024-11-20"
+image: "/posts/2024-11-20-ai-immunology/thumbnail.jpg"
 description: "Applying powerful tools to a complex and high-impact field."
 author: "Rachel Thomas"
 categories: [machine learning, science]
@@ -48,5 +48,3 @@ You can subscribe to be notified of new blog posts by submitting your email belo
 
 <script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
 <iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&zx=11a17553b1&tD=156971d471c7b09&sD=156971d471c7cb3"></iframe>
-
-Deep learning is a family of AI algorithms which is revolutionizing image recognition, text generation, and protein folding. It is a powerful method for finding patterns in data. 
