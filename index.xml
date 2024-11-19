@@ -15,7 +15,69 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 11 Nov 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 19 Nov 2024 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>AI and Immunology</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-11-20-ai-immunology/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I spent close to 20 years focused on mathematics and data science, including cofounding the research lab fast.ai, which focused on the powerful family of AI algorithms known as deep learning. A few years ago, I decided to make a big pivot and <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">return to school</a> for immunology. What motivated my sudden change amidst a successful career? We are now living in <a href="https://www.theatlantic.com/science/archive/2022/04/how-climate-change-impacts-pandemics/629699/">a pandemicene</a>, a period with increasingly likely pandemics. Climate change and habitat destruction are crowding species into closer and closer contact with humans. <a href="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/">Frequent global travel and mega-cities</a> allow unprecedented opportunities for viruses to spread and mutate. Antibiotic resistance is rising rapidly.</p>
+<p>At the same time, we have been learning more and more about the <a href="https://rachel.fast.ai/posts/2023-03-07-viruses1/">long-term consequences of infections</a>– seemingly mild infections can contribute to long-term <a href="https://rachel.fast.ai/posts/2023-03-22-viruses2/">autoimmune diseases, neurodegenerative diseases</a>, and cancer. The human immune system is incredibly complex and there is much we don’t know about it. Immunology is a crucial area to study. In this post, I want to gather some of my writing and talks on how AI is being applied to immunology.</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I3q5-cBebKA?si=MFcccYwqKdSTGth0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+<br> <em>My 30 minute presentation on key areas where deep learning is being applied to immunology</em>
+</center>
+<section id="using-ai-to-predict-what-t-cells-will-bind-to" class="level3">
+<h3 class="anchored" data-anchor-id="using-ai-to-predict-what-t-cells-will-bind-to">Using AI to predict what T cells will bind to</h3>
+<p>T cells are one of the most important cell types of our immune systems. Figuring out how to predict what a T cell will bind to (meaning what cells it can recognize as bad and coordinate attacks against) would be a vital medical breakthrough.</p>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">Decoding T cells with AI</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-07-24-neural-nets/">The Most Common and Useful Neural Nets</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/">AI’s Quest to Predict T Cell Binding– The Holy Grail of Immunology</a></li>
+</ul>
+</section>
+<section id="mapping-immune-cell-communication-networks" class="level3">
+<h3 class="anchored" data-anchor-id="mapping-immune-cell-communication-networks">Mapping immune cell communication networks</h3>
+<p>Immune cells talk to each other through complex networks. NLP, math, and immunology are useful in studying these networks.</p>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-01-23-cytokines1/">Applying AI to Immune Cell Networks</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-02-06-cytokines2/">How Immune Cells Communicate</a></li>
+</ul>
+</section>
+<section id="discovering-new-antibiotics" class="level3">
+<h3 class="anchored" data-anchor-id="discovering-new-antibiotics">Discovering new antibiotics</h3>
+<p>Bacterial resistance to existing antibiotics is an urgent threat. AI is being used to search for new antibiotics.</p>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">Using AI to Discover New Antibiotics</a></li>
+</ul>
+</section>
+<section id="ethical-risks-of-ai-applied-to-immunology" class="level3">
+<h3 class="anchored" data-anchor-id="ethical-risks-of-ai-applied-to-immunology">Ethical risks of AI applied to immunology</h3>
+<p>The enthusiasm about AI in medicine is failing to grapple with realities of the system. Recognizing gaps in how AI is applied to scientific research can prevent potential shortcomings and risks.</p>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/">Gaps and Risks of AI in the Life Sciences</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-02-20-ai-medicine/">“AI will cure cancer” misunderstands both AI and medicine</a></li>
+</ul>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2024-11-20-ai-immunology/index.html</guid>
+  <pubDate>Tue, 19 Nov 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-11-20-ai-immunology/thumbnail.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>5 Devious Tricks Pathogens Use Against Us</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1623,70 +1685,6 @@
   <guid>https://rachel.fast.ai/posts/2022-09-06-homeschooling/index.html</guid>
   <pubDate>Mon, 05 Sep 2022 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2022-09-06-homeschooling/homeschool-headlines.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Qualitative humanities research is crucial to AI</title>
-  <dc:creator>Louisa Bartolo and Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2022-06-01-qualitative/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<center>
-<em>“All research is qualitative; some is also quantitative”</em> <br>– Harvard Social Scientist and Statistician Gary King
-</center>
-<p><br> Suppose you wanted to find out whether a machine learning system being adopted - to <a href="https://hbr.org/2019/05/all-the-ways-hiring-algorithms-can-introduce-bias">recruit candidates</a>, <a href="https://mitibmwatsonailab.mit.edu/research/blog/black-loans-matter-fighting-bias-for-ai-fairness-in-lending/">lend money</a>, or <a href="https://www.propublica.org/podcast/how-we-decided-to-test-racial-bias-in-algorithms">predict future criminality</a> - exhibited racial bias. You might calculate model performance across groups with different races. But <a href="https://dl.acm.org/doi/10.1145/3351095.3372826">how was race categorised</a>– through a census record, a <a href="https://www.youtube.com/watch?v=s24vksJRJeE&amp;list=PLgdVmcMc8gy4sVLlgM0GUnnVZ1Fu0et05&amp;index=6">police officer’s guess</a>, or by an annotator? Each possible answer raises another set of questions. Following the thread of any seemingly quantitative issue around AI ethics quickly leads to a host of qualitative questions. Throughout AI, qualitative decisions are made about what metrics to optimise for, which categories to use, how to define their bounds, who applies the labels. Similarly, qualitative research is necessary to understand AI systems operating in society: evaluating system performance beyond what can be captured in short term metrics, understanding what is missed by large-scale studies (which can elide details and overlook outliers), and shedding light on the circumstances in which data is produced (often by crowd-sourced or poorly paid workers).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-06-01-qualitative/biasheadlines.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Attempting to measure racial bias leads to qualitative questions</figcaption>
-</figure>
-</div>
-<p>Unfortunately, there is often a <a href="https://journals.sagepub.com/doi/full/10.1177/2053951719833404">large divide between</a> computer scientists and social scientists, with over-simplified assumptions and fundamental misunderstandings of one another. Even when cross-disciplinary partnerships occur, <a href="https://journals.sagepub.com/doi/full/10.1177/2053951719833404">they often fall</a> into “normal disciplinary divisions of labour: social scientists observe, data scientists make; social scientists do ethics, data scientists do science; social scientists do the incalculable, data scientists do the calculable.” The solution is not for computer scientists to absorb a shallow understanding of the social sciences, but for deeper collaborations. In a paper on <a href="https://dl.acm.org/doi/10.1145/3442188.3445914">exclusionary practices in AI ethics</a>, an interdisciplinary team wrote of the “indifference, devaluation, and lack of mutual support between CS and humanistic social science (HSS), [which elevates] the myth of technologists as ‘ethical unicorns’ that can do it all, though their disciplinary tools are ultimately limited.”</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-06-01-qualitative/Abstract-art-britto-qb140.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">There are challenges when mixing computer scientsits with social scientists. (Gallery Britto image under Creative Commons Attribution-Share Alike 4.0 International)</figcaption>
-</figure>
-</div>
-<p>This is further reflected in an increasing number of <a href="https://twitter.com/cfiesler/status/1427341587613376514?s=20&amp;t=_5Ud6jmEELMulK5LSha9gA">job ads</a> for AI ethicists that list a <a href="https://www.businessinsider.com/ai-ethics-jobs-catherine-hicks-algorithms">computer science degree as a requirement</a>, “prioritising technical computer science infrastructure over the social science skills that can evaluate AI’s social impact. In doing so, we are building the field of AI Ethics to replicate the very flaws this field is trying to fix.” <a href="https://arxiv.org/abs/2006.12358">Interviews with 26 responsible AI practitioners</a> working in industry highlighted a number of challenges, including that qualitative work was not prioritised. Not only is it impossible to fully understand ethics issues solely through quantitative metrics, inappropriate and misleading quantitative metrics are used to evaluate the responsible AI practitioners themselves. Interviewees reported that their fairness work was evaluated on metrics related to generating revenue, in a stark misalignment of goals.</p>
-<section id="qualitative-research-helps-us-evaluate-ai-systems-beyond-short-term-metrics" class="level2">
-<h2 class="anchored" data-anchor-id="qualitative-research-helps-us-evaluate-ai-systems-beyond-short-term-metrics">Qualitative research helps us evaluate AI systems beyond short term metrics</h2>
-<p>When companies like Google and YouTube want to test whether the recommendations they are making (in the form of search engine results or YouTube videos, for example) are “good” - they will often focus quite heavily on “engagement” or “dwell time” - the time a user spent looking at or watching the item recommended to them. But it turns out, unsurprisingly, that a focus on engagement and dwell time, narrowly understood, <a href="https://arxiv.org/abs/2006.12358">raises all sorts of problems</a>. <a href="https://dl.acm.org/doi/abs/10.1145/3041021.3054197?casa_token=BxsZ44gFqdQAAAAA:uMs35O3Qn8oFsHM8LBYo2XJ5jnQGPD4L2NWhxa7iVa5MMwovG-zd3hoEixb9F5_up1LM0kNSG9Krew">Demographics can impact dwell time</a> (e.g.&nbsp;older users may spend longer on websites than younger users, just as part of the way they use the internet). A system that ‘learns’ from a user’s behavioural cues (rather than their ‘stated preferences’) might lock them into a limiting feedback loop, <a href="https://dl.acm.org/doi/10.1145/2959100.2959179">appealing to that user’s short term interests rather than those of their ‘Better Selves.’</a> Scholars have called for <a href="https://datascience.columbia.edu/news/2018/ethical-principles-okrs-and-kpis-what-youtube-and-facebook-could-learn-from-tukey/">more qualitative research</a> to understand user experience and build this into <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">the development of metrics</a>.</p>
-<p>This is the part where people will point out, rightly, that companies like Google and YouTube rely on a complex range of metrics and signals in their machine learning systems - and that where a website ranks on Google, or how a YouTube video performs in recommendation does not boil down to simple popularity metrics, like engagement. Google employs an extensive process to determine <a href="https://www.google.com/search/howsearchworks/mission/users/">“relevance” and “usefulness” for search results</a>. In its <a href="https://support.google.com/websearch/answer/9281931?hl=en">172-page manual for search result ‘Quality’ evaluation</a>, for example, the company explains how evaluators should assess a website’s ‘Expertise/ Authoritativeness/ Trustworthiness’ or ‘E-A-T’; and what types of content, by virtue of its harmful nature (e.g., to protected groups), should be given a ‘low’ ranking. YouTube has identified specific categories of content (such as news, scientific subjects, and historical information) for which ‘authoritativeness’ should be considered especially important. It has also determined that dubious-but-not-quite-rule-breaking information (what it calls ‘borderline content’) should not be recommended, <a href="https://blog.youtube/inside-youtube/the-four-rs-of-responsibility-raise-and-reduce/">regardless of the video’s engagement levels</a>.</p>
-<p>Irrespective of how successful we consider the existing approaches of Google Search and YouTube to be (and partly, the issue is that evaluating their implementation from the outside is frustratingly difficult), the point here is that there are constant qualitative judgments being made, about what makes a search result or recommendation “good” and of how to define and quantify expertise, authoritativeness, trustworthiness, borderline content, and other values. This is true of all machine learning evaluation, even when it isn’t explicit. In a paper guiding companies about <a href="https://dl.acm.org/doi/10.1145/3351095.3372873">how to carry out internal audits of their AI systems</a>, Inioluwa Deborah Raji and colleagues emphasise the importance of interviews with management and engineering teams to “capture and pay attention to what falls outside the measurements and metrics, and to render explicit the assumptions and values the metrics apprehend.” (p.40).</p>
-<p>The importance of thoughtful humanities research is heightened if we are serious about grappling with the potential broader social effects of machine learning systems (both good and bad), which are often <a href="https://policyreview.info/articles/analysis/beyond-individual-governing-ais-societal-harm">delayed, distributed and cumulative</a>.</p>
-</section>
-<section id="small-scale-qualitative-studies-tell-an-important-story" class="level2">
-<h2 class="anchored" data-anchor-id="small-scale-qualitative-studies-tell-an-important-story">Small-scale qualitative studies tell an important story</h2>
-<p>Hypothetically, let’s say you wanted to find out whether the use of AI technologies by doctors during a medical appointment would make doctors less attentive to patients - what do you think the best way of doing it would be? You could find some criteria and method for measuring ‘attentiveness’, say tracking the amount of eye contact between the doctor and patient, and analyse this across a representative sample of medical appointments where AI technologies were being used, compared to a control group of medical appointments where AI technologies weren’t being used. Or would you interview doctors about their experiences using the technology during appointments? Or talk to patients about how they felt the technology did, or didn’t, impact their experience?</p>
-<p>In research circles, we describe these as ‘epistemological’ choices - your judgement of what constitutes the ‘best’ approach is inextricably linked to your judgement about <a href="https://theconversation.com/how-do-you-know-that-what-you-know-is-true-thats-epistemology-63884"><em>how</em> we can claim to ‘know’ something</a>. These are all valid methods for approaching the question, but you can imagine how they might result in different, even conflicting, insights. For example, you might end up with the following results: - The eye contact tracking experiment suggests that overall, there is no significant difference in doctors’ attentiveness to the patient when the AI tech is introduced. - The interviews with doctors and patients reveal that some doctors and patients feel that the AI technology reduces doctors’ attentiveness to patients, and others feel that it makes no difference or even increases doctors’ attention to the patient.</p>
-<p>Even if people are not negatively impacted by something ‘on average’ (e.g., in our hypothetical eye contact tracking experiment above), there will remain groups of people who will experience negative impacts, perhaps acutely so. “Many of people’s most pressing questions are about effects that vary for different people,” write Matias, Pennington and Chan in a recent paper on the <a href="https://osf.io/tn6x4/">idea of N-of-one trials</a>. To tell people that their experiences aren’t real or valid because they don’t meet some threshold for statistical significance across a large population doesn’t help us account for the breadth and nature of AI’s impacts on the world.</p>
-<p>Examples of this tension between competing claims to knowledge about AI systems’ impacts abound. Influencers who believe they are being systematically downranked (‘shadowbanned’) by Instagram’s algorithmic systems are told by Instagram that this simply isn’t true. Given the inscrutability of these proprietary algorithmic systems, it is impossible for influencers to convincingly dispute Instagram’s claims. Kelley Cotter refers to this as a form of <a href="https://www.tandfonline.com/doi/full/10.1080/1369118X.2021.1994624">“black box gaslighting”</a>: platforms can “leverage perceptions of their epistemic authority on their algorithms to undermine users’ confidence in what they know about algorithms and destabilise credible criticism.” Her interviews with influencers give voice to stakeholder concerns and perspectives that are elided in Instagram’s official narrative about its systems. The mismatch between different stakeholders’ accounts of ‘reality’ is instructive. For example, a widely-cited paper by Netflix employees claims that Netflix recommendation <a href="https://dl.acm.org/doi/10.1145/2843948">“influences choice for about 80% of hours streamed at Netflix.”</a> But this claim stands in stark contrast to Mattias Frey’s mixed-methods research (representative survey plus small sample for interviews) run with UK and US adults, in which <a href="https://www.ucpress.edu/book/9780520382046/netflix-recommends#:~:text=Netflix%20Recommends%20brings%20to%20light,critics%20is%20stronger%20than%20ever.">less than 1 in 5 adults said they primarily relied on Netflix recommendations</a> when deciding what films to watch. Even if this is because users underestimate their reliance on recommender systems, that’s a critically important finding - particularly when we’re trying to regulate recommendation and so many are advocating providing better user-level controls as a check on platform power. Are people really going to go to the trouble of changing their settings if they don’t think they rely on algorithmic suggestions that much anyway?</p>
-</section>
-<section id="qualitative-research-sheds-light-on-the-context-of-data-annotation" class="level2">
-<h2 class="anchored" data-anchor-id="qualitative-research-sheds-light-on-the-context-of-data-annotation">Qualitative research sheds light on the context of data annotation</h2>
-<p>Machine learning systems rely on vast amounts of data. In many cases, for that data to be useful, it needs to be labelled/ annotated. For example, a hate speech classifier (an AI-enabled tool used to identify and flag potential cases of hate speech on a website) relies on huge datasets of text labelled as ‘hate speech’ or ‘not hate speech’ to ‘learn’ how to spot hate speech. But it turns out that <a href="https://arxiv.org/abs/2112.04554"><em>who</em> is doing the annotating and in <em>what context</em> they’re doing it, matters</a>. AI-powered content moderation is often held up as the solution to harmful content online. What has continued to be underplayed is the extent to which those automated systems are and most likely will remain dependent on the manual work of human content moderators sifting through some of the worst and most traumatic online material to power the machine learning datasets on which automated content moderation depends. Emily Denton and her colleagues highlight the significance of annotators’ social identity (e.g., race, gender) and their expertise when it comes to annotation tasks, and they point out the risks associated with overlooking these factors and simply ‘aggregating’ results as ‘ground truth’ rather than properly exploring disagreements between annotators and the important insights that this kind of disagreement might offer.</p>
-<p>Human commercial content moderators (such as the people that identify and remove violent and traumatic imagery on Facebook) often labour in terrible conditions, lacking psychological support or appropriate financial compensation. The <a href="https://yalebooks.yale.edu/book/9780300261479/behind-the-screen/">interview-based research of Sarah T. Roberts</a> has been pioneering in highlighting these conditions. Most demand for crowdsourced digital labour comes from the Global North, <a href="https://journals.sagepub.com/doi/full/10.1177/1024258916687250">yet the majority of these workers</a> are based in the Global South and receive low wages. Semi-structured interviews reveal the extent to which workers feel unable to bargain effectively for better pay in the current regulatory environment. As Mark Graham and his colleagues point out, these findings are hugely important in a context where several governments and supranational development organisations like the World Bank are holding up digital work as a promising tool to fight poverty.</p>
-<p>The decision of how to measure ‘race’ in machine learning systems is highly consequential, especially in the context of existing efforts to evaluate these systems for their “fairness.” Alex Hanna, Emily Denton, Andrew Smart and Jamila Smith-Loud have done <a href="https://dl.acm.org/doi/10.1145/3351095.3372826">crucial work highlighting the limitation</a> of machine learning systems that rely on official records of race or their proxies (e.g.&nbsp;census records), noting that the racial categories provided by such records are “unstable, contingent, and rooted in racial inequality.” The authors emphasise the importance of conducting research in ways that prioritise the perspectives of the marginalised racial communities that fairness metrics are supposed to protect. Qualitative research is ideally placed to contribute to a consideration of “race” in machine learning systems that is grounded in the lived experiences and needs of the racially subjugated.</p>
-</section>
-<section id="what-next" class="level2">
-<h2 class="anchored" data-anchor-id="what-next">What next?</h2>
-<p>Collaborations between quantitative and qualitative researchers are valuable in understanding AI ethics from all angles.</p>
-<p>Consider reading more broadly, outside your particular area. Perhaps using the links and researchers listed here as starting points. They’re just a sliver of the wealth that’s out there. You could also check out the <a href="https://socialmediacollective.org/reading-lists/critical-algorithm-studies/">Social Media Collective’s Critical Algorithm Studies reading list</a>, the reading list provided by the <a href="https://zoeglatt.com/?page_id=545">LSE Digital Ethnography Collective</a>, and <a href="https://medium.com/fair-bytes/reading-list-for-fairness-in-ai-topics-337e8606fd8d">Catherine Yeo’s suggestions</a>.</p>
-<p>Strike up conversations with researchers in other fields, and consider the possibility of collaborations. Find a researcher slightly outside your field but whose work you broadly understand and like, and follow them on Twitter. With any luck, they will share more of their work and help you identify other researchers to follow. Collaboration can be an incremental process: Consider inviting the researcher to form part of a discussion panel, reach out to say what you liked and appreciated about their work and why, and share your own work with them if you think it’s aligned with their interests.</p>
-<p>Within your university or company, is there anything you could do to better reward or facilitate interdisciplinary work? As Humanities Computing Professor <a href="https://www.tandfonline.com/doi/full/10.1080/03080188.2022.2031659">Willard McCarty notes</a>, somewhat discouragingly, “professional reward for genuinely interdisciplinary research is rare.” To be sure, individual researchers and practitioners have to be prepared <a href="https://sciencetechnologystudies.journal.fi/article/view/97321/56310">to put themselves out there, compromise</a> and <a href="https://www.mccarty.org.uk/essays/McCarty,%20Becoming%20interdisciplinary.pdf">challenge themselves</a> - but carefully tailored <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ijmr.12016?casa_token=9f4Qosl_MLEAAAAA%3AMFozyMi171KgZ-BYQrpS-1bK71gt70I4ecjy8lLId54-2zvTobqCGKIK_-9_hEk8-wI5vMR0Em5-">institutional incentives and enablers matter</a>.</p>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>ethics</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2022-06-01-qualitative/index.html</guid>
-  <pubDate>Tue, 31 May 2022 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2022-06-01-qualitative/Abstract-art-britto-qb140.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
