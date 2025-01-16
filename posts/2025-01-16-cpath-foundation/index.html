@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rachel Thomas">
-<meta name="dcterms.date" content="2024-10-29">
-<meta name="description" content="A controversial approach to parenting">
+<meta name="dcterms.date" content="2025-01-16">
+<meta name="description" content="A friendly introduction to Foundation Models for Computational Pathology">
 
-<title>Rachel Thomas, PhD - In defense of screen time</title>
+<title>Rachel Thomas, PhD - What AI can tell us about microscope slides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,13 +65,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Rachel Thomas, PhD - In defense of screen time">
+<meta property="og:title" content="Rachel Thomas, PhD - What AI can tell us about microscope slides">
 <meta property="og:description" content="an AI researcher going back to school for immunology">
-<meta property="og:image" content="https://rachel.fast.ai/posts/2024-10-29-screen-time/music-lab.jpg">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/gleason.jpg">
 <meta property="og:site-name" content="Rachel Thomas, PhD">
-<meta name="twitter:title" content="Rachel Thomas, PhD - In defense of screen time">
+<meta name="twitter:title" content="Rachel Thomas, PhD - What AI can tell us about microscope slides">
 <meta name="twitter:description" content="an AI researcher going back to school for immunology">
-<meta name="twitter:image" content="https://rachel.fast.ai/posts/2024-10-29-screen-time/music-lab.jpg">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/gleason.jpg">
 <meta name="twitter:creator" content="@math_rachel">
 <meta name="twitter:site" content="@math_rachel">
 <meta name="twitter:card" content="summary_large_image">
@@ -133,14 +133,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">In defense of screen time</h1>
+      <h1 class="title">What AI can tell us about microscope slides</h1>
                   <div>
         <div class="description">
-          A controversial approach to parenting
+          A friendly introduction to Foundation Models for Computational Pathology
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">education</div>
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">science</div>
               </div>
                   </div>
   </div>
@@ -158,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 29, 2024</p>
+        <p class="date">January 16, 2025</p>
       </div>
     </div>
     
@@ -266,13 +267,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-false-binary" id="toc-a-false-binary" class="nav-link active" data-scroll-target="#a-false-binary">A False Binary</a></li>
-  <li><a href="#increased-options" id="toc-increased-options" class="nav-link" data-scroll-target="#increased-options">Increased options</a></li>
-  <li><a href="#in-person-school-does-not-work-for-everyone" id="toc-in-person-school-does-not-work-for-everyone" class="nav-link" data-scroll-target="#in-person-school-does-not-work-for-everyone">In-person school does not work for everyone</a></li>
-  <li><a href="#dont-judge-screentime-by-a-few-bad-examples" id="toc-dont-judge-screentime-by-a-few-bad-examples" class="nav-link" data-scroll-target="#dont-judge-screentime-by-a-few-bad-examples">Don’t judge screentime by a few bad examples</a></li>
-  <li><a href="#inclusion-and-accessibility" id="toc-inclusion-and-accessibility" class="nav-link" data-scroll-target="#inclusion-and-accessibility">Inclusion and accessibility</a></li>
-  <li><a href="#hopes-for-a-creative-and-inclusive-society" id="toc-hopes-for-a-creative-and-inclusive-society" class="nav-link" data-scroll-target="#hopes-for-a-creative-and-inclusive-society">Hopes for a creative and inclusive society</a></li>
-  <li><a href="#related-posts" id="toc-related-posts" class="nav-link" data-scroll-target="#related-posts">Related Posts</a></li>
+  <li><a href="#cpath-foundation-models" id="toc-cpath-foundation-models" class="nav-link active" data-scroll-target="#cpath-foundation-models">CPath foundation models</a></li>
+  <li><a href="#learning-the-vocab" id="toc-learning-the-vocab" class="nav-link" data-scroll-target="#learning-the-vocab">Learning the Vocab</a></li>
+  <li><a href="#so-many-tasks" id="toc-so-many-tasks" class="nav-link" data-scroll-target="#so-many-tasks">So Many Tasks!</a>
+  <ul class="collapse">
+  <li><a href="#task-prostate-cancer-cell-grading" id="toc-task-prostate-cancer-cell-grading" class="nav-link" data-scroll-target="#task-prostate-cancer-cell-grading">Task: prostate cancer cell grading</a></li>
+  <li><a href="#task-identifying-early-signs-of-rejection-after-a-heart-transplant" id="toc-task-identifying-early-signs-of-rejection-after-a-heart-transplant" class="nav-link" data-scroll-target="#task-identifying-early-signs-of-rejection-after-a-heart-transplant">Task: identifying early signs of rejection after a heart transplant</a></li>
+  <li><a href="#task-genetic-mutations-in-cancer" id="toc-task-genetic-mutations-in-cancer" class="nav-link" data-scroll-target="#task-genetic-mutations-in-cancer">Task: Genetic Mutations in Cancer</a></li>
+  </ul></li>
+  <li><a href="#we-need-more-data" id="toc-we-need-more-data" class="nav-link" data-scroll-target="#we-need-more-data">We need more data</a></li>
+  <li><a href="#different-scales" id="toc-different-scales" class="nav-link" data-scroll-target="#different-scales">Different scales</a></li>
+  <li><a href="#going-forward" id="toc-going-forward" class="nav-link" data-scroll-target="#going-forward">Going Forward</a></li>
+  <li><a href="#related-reading" id="toc-related-reading" class="nav-link" data-scroll-target="#related-reading">Related Reading:</a></li>
   </ul>
 </nav>
     </div>
@@ -282,105 +288,107 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>My daughter is constantly creating– her passions include making art, writing fiction, coding interactive games, and composing music. Yet, I regularly see news articles and media pundits suggesting that my husband and I are doing things all wrong. The reason for these claims? My daughter uses screen-based tools, at least partially, and in some cases, entirely, to pursue the interests I listed in my first sentence. To give more detail on how she pursues her passions:</p>
-<ul>
-<li><strong>Art</strong>: She creates digital art in <a href="https://www.sketchbook.com/">Sketchbook Pro</a>, both on her own and in lessons. She also takes in-person art courses that involve a mix of acrylic painting, water colors, and sculpture.</li>
-<li><strong>Coding</strong>: She loves coding in <a href="https://scratch.mit.edu/">Scratch</a> and <a href="https://p5js.org/">P5.js</a> to design and build interactive games.</li>
-<li><strong>Creative writing</strong>: While her handwriting is on target for her age, she prefers typing, as it lets her write faster and express more complex ideas– we taught her touch typing when she was 5. She writes fiction both individually and collaboratively with friends.</li>
-<li><strong>Music</strong>: She plays the piano, takes group singing lessons online, and enjoys composing music. There is a composition component to her piano lessons (which happen over zoom) and she composes music online through <a href="https://musiclab.chromeexperiments.com/">Chrome MusicLab</a> and <a href="https://flat.io/">Flat.io</a>.</li>
-</ul>
-<p>My daughter is not unique. Our family knows many other children with similar creativity levels who are excelling in their passions beyond what is often believed possible for their age groups.</p>
+<p>The lavender images below show <a href="https://pubmed.ncbi.nlm.nih.gov/31226662/">breast tissue</a>. There are many questions doctors could want to answer using these images: They could want to know whether there are tumors present or not. If there is a tumor, doctors would want to classify its stage, make predictions about how likely the patient is to respond to treatment, and to detect whether the tumor has spread from another organ.</p>
+<p>All of these are questions which people are now tackling with machine learning. They fall within the area of <a href="https://www.nature.com/articles/s41374-020-00514-0"><strong>computational pathology</strong></a>, often abbreviated <strong>CPath</strong>. In the past year, two CPath AI models were released which achieved state-of-the-art results. Here I will discuss an introduction to this field, what these models do, and what some key challenges are going forward.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="music-lab.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Visual from Chrome Music Lab</figcaption>
+<p><img src="bach.jpg" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption class="figure-caption">Breast tissue images from the BACH: Grand challenge on breast cancer histology</figcaption>
 </figure>
 </div>
-<p>Parenting approaches are personal and often polarizing, so I normally don’t write on this topic. However, I am concerned by how several (in my view, false) points are being increasingly repeated by politicians and pundits: that screentime is very harmful for children, that it is essential for children’s well-being to attend in-person school every day (<a href="https://apnews.com/article/covid-flu-school-attendance-4845073e737db87f786e1d8c815a48f7">even</a> <a href="https://www.latimes.com/california/story/2023-08-12/got-a-cold-runny-nose-the-sniffles-no-worries-come-to-school-lausd-says">when</a> <a href="https://www.1news.co.nz/2024/09/26/govt-reveals-new-plan-for-getting-kids-to-school-heres-how-it-will-work/">sick</a>), and that it is important for workers to return to the office (even when their jobs can be done remotely).</p>
+<section id="cpath-foundation-models" class="level2">
+<h2 class="anchored" data-anchor-id="cpath-foundation-models">CPath foundation models</h2>
+<p>There is a powerful idea about how to make more accurate CPath models. Rather than train a model on a single type of tissue and a single task (e.g.&nbsp;identifying cancer in breast tissue), train a model on images of tissue from many different organs (breasts, lymph nodes, lungs, prostate, heart,…) and on multiple different tasks (recognizing cancer, determining the stage and subtype of the cancer, segmenting cells, and predicting treatment outcomes). Patterns learned from one dataset or one task are likely to generalize to others.</p>
+<p>Such models are known as CPath <a href="https://en.wikipedia.org/wiki/Foundation_model"><strong>foundation models</strong></a>. In general, a <em>foundation model</em> is a machine learning model which is trained on a sufficiently diverse large dataset which can then be adapted for a range of downstream tasks. This idea is commonly used in the area of language models such as Chat-GPT and Claude.ai. Language foundation models are trained on many types of language tasks and intended to generalize across different corpuses of text (e.g.&nbsp;wikipedia, reddit posts, academic papers, online conversations, news articles, and more). ImageNet models trained to recognize a huge variety of different pictures often serve as foundation models for images. The success of foundation models within the areas of language and more general images is a key reason why we might expect pathology foundation models to be useful too.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="school-attendance.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">There has been a rise in policies requiring children to attend school while sick</figcaption>
+<p><img src="types-of-tissue.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Tissues are groups of cells with similar structure and function. Different types of tissue within the human body include nervous, muscle, connective, and epithelial tissue. Image: Wikimedia</figcaption>
 </figure>
 </div>
-<p>The above points are interlocking, since getting workers commuting to in-person offices requires children being at in-person school. And overemphasizing in-person school attendance overlooks a number of children whose needs aren’t being met by in-person school. It also overlooks a number of online and screen-based options opportunities to build skills, express creativity, and form friendships. Here I want to focus on some innovative ways that we can encourage children’s flourishing, whether that is as a supplement to in-person school, or instead of.</p>
-<section id="a-false-binary" class="level2">
-<h2 class="anchored" data-anchor-id="a-false-binary">A False Binary</h2>
-<p>I often hear statements such as, “I’d rather kids played outside than on a computer.” But these choices aren’t binary! You don’t have to pick just one. My daughter plays outside AND on a computer. She plays in-person sports regularly AND has online hobbies. This year we threw her 2 birthday parties: an in-person one for her local friends AND an online one for her long-distance friends.</p>
-<p>The term “screen time” is so broad as to be meaningless, clumping together many disparate activities. A child sitting next to a parent playing a math game together on the computer is screen time. Calling your grandparents on skype is screen time. Collaboratively composing music with your best friend in another country is screen time. Yet, when many people refer to screen time, they often seem to be referring to a child passively watching TV on their own (something which my husband and I almost never let our daughter do, and that she doesn’t seem interested in). With any screen-based activity, it is useful to consider:</p>
-<ul>
-<li>Is it social or solitary?</li>
-<li>Does it involve creating content or consuming content?</li>
-<li>Is it educational or not?</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="venn-diagram.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">A Venn Diagram showing how we think about screentime. We avoid the outside (white) region and mostly stick to the intersections.</figcaption>
-</figure>
-</div>
-<p>It is not that some of these options are always good or always bad, but rather that we need to have a nuanced view on different combinations of these factors and how much time you may want to spend on each.</p>
-<p>Screens are a crucial tool and outlet for her expressing her creativity, and it saddens me to hear an increasing media narrative vilifying screen time for kids.</p>
-<p>Two of my daughter’s best friends are kids she has never met in person (because they live in a different state and in a different country), yet she talks with each of them several times per week. She also has local friends that we get together with regularly in-person. The fact that she has several close long-distance friends isn’t surprising, because my husband and I have many close online / long-distance friendships as well. Our friendships aren’t any less real because they are over screens. Opening up the possibility for long-distance friendships has given us the option of finding additional friends we are particularly compatible with.</p>
+<p>Two notable CPath foundation models were released in 2024: <a href="https://www.nature.com/articles/s41586-024-07441-w">Prov-GigaPath</a> and <a href="https://www.nature.com/articles/s41591-024-02857-3">UNI</a>. Both models achieved state-of-the-art performance on dozens of pathology tasks (although they were not directly compared to one another). Another <a href="https://arxiv.org/abs/2404.15217">relevant paper</a> (from Kaiko.ai) studied the impact of dataset size and model size on CPath model performance.</p>
 </section>
-<section id="increased-options" class="level2">
-<h2 class="anchored" data-anchor-id="increased-options">Increased options</h2>
-<p>Screen-based learning options make homeschooling more feasible for a wider range of families. Online resources (games, classes, and clubs) can offer opportunities that may not be available locally, can fill in gaps parents may not be qualified to cover, and offer an exciting variety of options. For instance, online courses have allowed my daughter to do the following (which are not available locally for us):</p>
-<ul>
-<li>have tutors/teachers based in 5 different countries, providing diverse experiences</li>
-<li>take science courses including: particle physics for kids, biochem for kids (she has been with the same group of kids for 3 years), and a biology class where a small group of students could share images from their digital microscopes over zoom</li>
-<li>participate in clubs for creating collaborative narratives, fanart, and fanfiction around two of her favorite series of books</li>
-<li>complete mastery-based math games at her own pace, which allowed her and a few friends to end up many years above their grade levels</li>
-</ul>
-<p>As I wrote about in a previous post, <a href="https://www.fast.ai/posts/2022-09-06-homeschooling.html">we homeschool</a>, and this leaves our daughter with far more time for hobbies and socializing than in-person school gave us.</p>
+<section id="learning-the-vocab" class="level2">
+<h2 class="anchored" data-anchor-id="learning-the-vocab">Learning the Vocab</h2>
+<p>Medicine is full of jargon and specialized vocabulary. Pathology refers to the study of disease. It is a broad field, and can include everything from dissecting dead bodies to analyzing blood samples. One key focus of <em>computational pathology</em> is analyzing and interpreting <em>whole slide images (WSIs)</em> and in some cases combined with accompanying meta-data about a patient. Whole slide images refers to the complete microscope slide, although in many cases the region of interest (such as particular cancerous or inflamed cells) may be much smaller, just occupying a subset of the slide.</p>
+<p><em>Machine learning (ML)</em> is a subfield of Artificial intelligence (AI) which involves learning from past data, and is increasingly being used with great success in pathology. The focus of most computational pathology ML models is on images of tissue, on microscope slides. That is what we will focus on in this post as well.</p>
 </section>
-<section id="in-person-school-does-not-work-for-everyone" class="level2">
-<h2 class="anchored" data-anchor-id="in-person-school-does-not-work-for-everyone">In-person school does not work for everyone</h2>
-<p>There are several categories of kids whose needs are often not met in traditional schools and frequently benefit from online options:</p>
-<ul>
-<li><a href="https://www.nytimes.com/2020/08/10/opinion/coronavirus-school-closures.html">Neurodivergent kids</a>, who may deal with overstimulating, distracting, or painful sensory experiences in traditional schools</li>
-<li>Gifted kids, who are not intellectually challenged in traditional schools</li>
-<li><a href="https://www.wired.com/story/pandemic-homeschoolers-who-are-not-going-back/">Kids from marginalized cultures</a>, whose cultural heritage may not be reflected at school, or who may experience discrimination</li>
-<li>Kids who are being bullied</li>
-<li>Kids who have particular passions they would like to hyper-focus on (which are either not included in their school’s curriculum, or which they don’t get adequate time for)</li>
-<li>Medically complex kids, including those who may be getting sick so often that they can’t attend school regularly, those for whom an illness could result in hospitalization, or whose health issues make it difficult to attend school in-person</li>
-</ul>
-<p>It is an injustice that schools are not inclusive of all children. While individuals pulling their children out of school does not address this injustice (and we should continue to work for <a href="https://www.abc.net.au/news/2024-09-24/covid-safety-schools-course-sick-days-teachers-long-covid/104319032">safer</a> and more inclusive schools), many families have found it necessary to leave systems that are harming their kids.</p>
+<section id="so-many-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="so-many-tasks">So Many Tasks!</h2>
+<p>There are many different benchmarks that CPath models can be tested on. These involve numerous datasets: related to different areas of the body, with different sizes, and with different purposes. They also involve a variety of tasks, including binary classification, image segmentation, and outcome prediction. Prov-GigaPath attained state-of-the-art performance on 25 out of the 26 tasks it was evaluated on and UNI attained state-of-the-art performance on 34 different tasks. Here I will give examples of just 3 of these tasks.</p>
+<section id="task-prostate-cancer-cell-grading" class="level3">
+<h3 class="anchored" data-anchor-id="task-prostate-cancer-cell-grading">Task: prostate cancer cell grading</h3>
+<p>In the 1960s, the pathologist Dr.&nbsp;Donald Gleason came up with a grading scale for rating cells as they progressed from normal to prostate cancer. The Gleason Grading system is still widely used and is considered a powerful predictor of how prostate cancer patients will fare. A major medical image conference (MICCAI) <a href="https://aggc22.grand-challenge.org/AGGC22/">held a competition in 2022</a> for researchers to create algorithms to determine the Gleason grades when given images of prostate tissue.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="homeschool-headlines.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">We were not alone in discovering that homeschooling worked better for our child</figcaption>
+<p><img src="gleason.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Examples of UNI predictions of Gleason grades for a section of prostate tissue. Figure 3b from the UNI paper</figcaption>
+</figure>
+</div>
+<p>The prostate tissue is shown in pink, and segments have been colored in blocks based on where they fall on the Gleason scale.</p>
+</section>
+<section id="task-identifying-early-signs-of-rejection-after-a-heart-transplant" class="level3">
+<h3 class="anchored" data-anchor-id="task-identifying-early-signs-of-rejection-after-a-heart-transplant">Task: identifying early signs of rejection after a heart transplant</h3>
+<p>Rejection is the main cause of mortality in patients who have received a heart transplant. Since the early stages of rejection can be asymptomatic, it is standard for patients to receive frequent biopsies for 1-2 years following a transplant. These are known as endomyocardial biopsies (EMB), since they remove a small sample of tissue from the inner lining (endo) of the heart (cardial) muscle (myo). Accurately interpreting the results of these biopsies is a key question. Underestimating the chance of rejection could lead to dangerous delays in treatment, but overestimating could lead to alarm and unnecessary follow-ups or treatment. Assessment of the sampled tissue by experienced pathologists has higher variability than many other tasks, such as cancer diagnosis. Deep learning is being used to tackle this task, in models such as <a href="https://www.nature.com/articles/s41591-022-01709-2">Cardiac Rejection Assessment Neural Estimator (CRANE)</a> and the CPath foundation model UNI.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cardiac-tissue-zoom.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Each row shows a different sample of cardiac tissue, with a different medical issue. On the far left are the whole slide images, then zoomed in at higher resolution on a key Region of Interest (ROI). On the far right is a heat map for the most zoomed in area showing which features the algorithm has identified as significant. Figure 3 from the CRANE paper.</figcaption>
 </figure>
 </div>
 </section>
-<section id="dont-judge-screentime-by-a-few-bad-examples" class="level2">
-<h2 class="anchored" data-anchor-id="dont-judge-screentime-by-a-few-bad-examples">Don’t judge screentime by a few bad examples</h2>
-<p>I would caution against writing off screen time or online learning based on a low quality or poorly designed experience. Maybe your child’s school went online in 2020 with no notice and no support, and they were stuck in a zoom with 25 other kids (this is not a good set-up for anyone!). We have found that with small group online tutoring, my daughter is able to be more social and talkative than she was in a large class at in-person school, and she masters more material in less time. However, even amongst small online groups, occasionally she’ll try a teacher or club that isn’t a good match for her, and in those cases, we discontinue it.</p>
-<p>Since screentime is often equated with a way to occupy kids while parents do something else, there are often unrealistic expectations, particularly for the most rewarding screen-based tools (which tend to involve a learning curve and require support from a trusted adult). In many cases handing your child a new educational app and then leaving them alone can lead to frustration. Sitting with them and working through the app together can be relationship-building, prevent them from getting overly discouraged, and help them build confidence as you figure it out together. With age and experience, kids will likely be able to do more on their own.</p>
-</section>
-<section id="inclusion-and-accessibility" class="level2">
-<h2 class="anchored" data-anchor-id="inclusion-and-accessibility">Inclusion and accessibility</h2>
-<p>Countries around the world, including the <a href="https://www.ippr.org/articles/our-greatest-asset">USA</a>, <a href="https://news.sky.com/story/parents-of-children-with-complex-needs-worried-they-could-be-unfairly-fined-under-new-school-absence-rules-13213524">UK</a>, <a href="https://www.educationtoday.com.au/news-detail/Half-of-Australia-6155">Australia</a>, <a href="https://www.rnz.co.nz/news/political/513250/sickness-related-school-absences-to-be-targeted-under-government-plan">New Zealand</a>, <a href="https://english.kyodonews.net/news/2023/10/d8cd090637bd-japan-school-absenteeism-at-record-high-of-nearly-300000-in-fy-2022.html">Japan</a>, <a href="https://www.brusselstimes.com/1053759/number-of-absences-and-suspensions-among-pupils-in-belgium-on-the-rise">Belgium</a>, and <a href="https://www.cbc.ca/news/canada/school-absence-data-1.7156254">Canada</a> are seeing high levels of school absences. Factors for these record levels of absences include <a href="https://calgaryherald.com/opinion/columnists/opinion-we-dont-know-whats-causing-the-tsunami-of-sick-kids-but-wed-better-figure-it-out-fast">more frequent illnesses</a> (such as covid, RSV, and flu) and <a href="https://www.abc.net.au/news/2024-06-16/children-with-long-covid-dismissed-doctors-myth-virus-harmless/103959078">chronic health issues</a>. In mid-2024, many countries (including the USA and Australia) experienced a particularly high wave of the ongoing covid pandemic. Rates of disability are increasing, and people, <a href="https://www.scientificamerican.com/article/long-covid-is-harming-too-many-kids/">including children</a>, are continuing to develop new health conditions after viral infections.</p>
-<p>A number of school districts are responding to these waves of illness by placing heightened emphasis on attendance to in-person school, in many cases pressuring or <a href="https://apnews.com/article/covid-flu-school-attendance-4845073e737db87f786e1d8c815a48f7">even</a> <a href="https://www.1news.co.nz/2024/09/26/govt-reveals-new-plan-for-getting-kids-to-school-heres-how-it-will-work/">requiring</a> <a href="https://www.latimes.com/california/story/2023-08-12/got-a-cold-runny-nose-the-sniffles-no-worries-come-to-school-lausd-says">children</a> and <a href="https://archive.md/T2oHI">teachers to attend school while sick</a>. In parts of the <a href="https://news.sky.com/story/parents-of-children-with-complex-needs-worried-they-could-be-unfairly-fined-under-new-school-absence-rules-13213524">UK</a>, <a href="https://www.indystar.com/story/news/education/2024/08/19/new-law-indiana-school-absences-juvenile-court-missing-school-ips-attendance-policy-criminal-charges/74818189007/">USA</a>, and <a href="https://www.rnz.co.nz/news/political/513250/sickness-related-school-absences-to-be-targeted-under-government-plan">New Zealand</a>, policies are being considered (or implemented) to charge parents fines if their children miss school too often. This is counterproductive, as it is hard to focus when unwell, attending school sick increases the likelihood of spreading illness to others, and <a href="https://www.latimes.com/california/story/2022-07-07/working-through-covid-sleep-rest-infection-test-positive">rest is a key way</a> to reduce risk of post-viral illness. None of these punitive attendance policies address root causes, such as <a href="https://www.abc.net.au/news/2024-09-24/covid-safety-schools-course-sick-days-teachers-long-covid/104319032">improving school air quality</a>, making sure parents have adequate paid leave to stay home with sick children, or decoupling school funding from attendance.</p>
+<section id="task-genetic-mutations-in-cancer" class="level3">
+<h3 class="anchored" data-anchor-id="task-genetic-mutations-in-cancer">Task: Genetic Mutations in Cancer</h3>
+<p>For several common genetic mutations in tumors, there are <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9012285/">specific drugs known to target those mutations</a>. This has a direct application for clinical treatment. Since genetic mutations can change the form and function of cells, it is reasonable to expect that this information could be deduced from images of the cancer cells. Deep learning models have been built to identify genetic mutations from tissue slides. The benefits of using a computational approach are that it can be scaled as an increasing number of relevant genetic mutations and molecular biomarkers are being discovered. <a href="https://www.nature.com/articles/s43018-020-0087-6">Task-specific models</a> have been built for this, and this is one of the tasks that foundation models can be tested on.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="school-attendance.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Requiring kids to attend school while sick is only going to lead to more sick students and sick teachers</figcaption>
+<p><img src="cancer-mutations.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Different types of cancer listed along the y-axis and 20 common genetic mutations listed on the y-axis. Figure 1D from Kather, 2020.</figcaption>
 </figure>
 </div>
-<p>We are also seeing <a href="https://www.abs.gov.au/media-centre/media-releases/55-million-australians-have-disability">rising rates of disability</a> amongst <a href="https://x.com/Mike_Honey_/status/1842530019991769108?t=Cc8jUI2CayxAIBCpoZHiXw&amp;s=19">working age</a> adults. In the USA, there has been an <a href="https://www.ippr.org/articles/our-greatest-asset">increase in people with cognitive disabilities</a>. A <a href="https://www.bbc.com/news/business-68639144">BBC article</a> notes that in the UK sick people are leaving the workforce at record highs. Online access is a crucial part of accessibility and disability rights. For many disabled people, accessibility improved in 2020 with more remote options for work, medical appointments, conferences, and other events, and there is now a counter-reaction in which these options are being removed.</p>
-<p>Every child is different, so what works for my family won’t work for everyone. I am not recommending that all families homeschool, or that nobody should attend in-person school. However, we need to consider innovative approaches to learning and communication, and that includes screen-based approaches.</p>
 </section>
-<section id="hopes-for-a-creative-and-inclusive-society" class="level2">
-<h2 class="anchored" data-anchor-id="hopes-for-a-creative-and-inclusive-society">Hopes for a creative and inclusive society</h2>
-<p>I want children to discover and develop passions that they enjoy (astronomy, writing, art, music, math, oceanography, chess, there are so many possibilities!) and to be able to connect with others who share their interests. Taking advantage of computer-based and online options opens up a world of possibility. I also want a society in which disabled people are included in events and opportunities, and in which people can rest when they’re sick or preferably avoid illness in the first place. Fewer people commuting to the office is better for the environment. Traditional school is failing a lot of kids. I hope we can consider a range of innovative educational and social approaches, and not exclude an entire category of valuable ways to communicate, create, and learn (e.g.&nbsp;screentime).</p>
 </section>
-<section id="related-posts" class="level2">
-<h2 class="anchored" data-anchor-id="related-posts">Related Posts</h2>
+<section id="we-need-more-data" class="level2">
+<h2 class="anchored" data-anchor-id="we-need-more-data">We need more data</h2>
+<p>One key challenge in the area of CPath foundation models is gathering enough training data. <a href="https://www.cancer.gov/ccg/research/genome-sequencing/tcga">The Cancer Genome Atlas (TCGA)</a> was an ambitious project launched in 2006 by the National Cancer Institute in the USA. Over a 12 year period, samples were collected from over 11,000 patients of 33 different cancer types, and all this data was made publicly available. While this is a rich dataset and a useful resource, all 3 papers we’ve looked at concluded that TCGA is not large enough for effective foundation models. In addition to limited data size, TCGA also has limited diversity, consisting mostly of slides from the primary site of cancer, but not metastasized cancers or different types of tissues.</p>
+<p>Researchers at Kaiko.ai <a href="https://arxiv.org/abs/2404.15217">tested the impact of scaling</a> both the size of their model and the size of the training dataset. While they found limited need to scale model size beyond a certain point, they found that larger datasets continued to lead to increased performance. They concluded that TCGA was likely not large enough and shared their plans to build a larger training set, and are now partnering with cancer centers across Europe to create a dataset for their model.</p>
+<p>The researchers behind two other CPath foundation models reached the same conclusion about data set size, and gathered massive datasets to train their models. This required partnering with healthcare centers. <a href="https://www.nature.com/articles/s41586-024-07441-w">Prov-GigaPath</a>, a model created by Microsoft Research and Providence Genomics involved data from 30,000 patients across 28 cancer centers (which are part of Providence Healthcare company). <a href="https://www.nature.com/articles/s41591-024-02857-3">UNI</a>, a cPath model created by a team at Harvard, MIT, and the Broad Institute, involved the creation of the Mass-100K: a dataset with over 100K whole slide images across 20 tissue types collected from Mass General Hospital, Brigham &amp; Women’s Hospital, and Genotype-Tissue Expression (GTEx) consortium.</p>
+<p>These partnerships and curation of training datasets are currently a crucial component of building CPath foundation models. Curating datasets carefully poses many challenges as well. Combining data from different sources, which often use different protocols for how slides are sampled and prepared, can introduce significant biases.</p>
+</section>
+<section id="different-scales" class="level2">
+<h2 class="anchored" data-anchor-id="different-scales">Different scales</h2>
+<p>CPath foundation models face the difficulty of capturing both local patterns (that show up in a small tile within a slide) and global patterns across the whole slide. Many tiny tiles are found within a slide.</p>
+<p>Some models, such as the <a href="https://arxiv.org/abs/2206.02647">Hierarchical Image Pyramid Transformer</a> (from several of the same authors as UNI), use hierarchical approaches to deal with these multiple scales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hierarchical.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Hierarchical Structure of Whole-Slide Images, Figure 1 from Chen, et al, 2020</figcaption>
+</figure>
+</div>
+<p>Other models, such as Prov-GigaPath, treat the tiles as tokens, encoding both the tiles and the slide as a whole as model inputs. Prov-GigaPath uses both a slide encoder and a tile encoder to take into account these two different scales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="slides-prov-gigapath.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Treating slides as tokens, Figure 1a from the Prov-GigaPath paper</figcaption>
+</figure>
+</div>
+<p>In pathology clinics, diagnosis and treatment decisions are often made at the patient level, whereas CPath models are often highly focused on regions of interest. Accommodating the multiple relevant scales (small tiles, whole slides, and patient-level) for pathology is a consideration that CPath models need to balance.</p>
+</section>
+<section id="going-forward" class="level2">
+<h2 class="anchored" data-anchor-id="going-forward">Going Forward</h2>
+<p>It is still early in the world of CPath and there are many growth opportunities, including the continued need for large and diverse datasets, ways to further optimize model training, tasks which have previously received less focus, and the difficulties of integrating models into clinical work. As the <a href="https://arxiv.org/abs/2404.15217">authors of the kaiko.ai paper</a> wrote, “<em>We are still at the very beginning of developing a truly foundational pathology foundation model.</em>” It is a hopeful sign that these models achieve state-of-the-art results on dozens of benchmarks, but it still remains to be seen when and how they will be used in clinical settings.</p>
+</section>
+<section id="related-reading" class="level2">
+<h2 class="anchored" data-anchor-id="related-reading">Related Reading:</h2>
 <ul>
-<li><a href="https://www.fast.ai/posts/2022-09-06-homeschooling.html">My family’s unlikely homeschooling journey</a>: Prior to 2020, we never expected to homeschool, and now we have committed to it long-term.</li>
-<li><a href="https://www.fast.ai/2022/03/15/math-person/">There’s No Such Thing as Not A Math Person</a>: based on a webinar I gave to parents addressing cultural myths about math and how to support your kids in their math education, even if you don’t see yourself as a “math person.”</li>
+<li><a href="https://rachel.fast.ai/posts/2024-07-24-neural-nets/">The Most Common and Useful Neural Nets</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">Using AI to Discover New Antibiotics</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-11-20-ai-immunology/">AI and Immunology</a></li>
 </ul>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
 
 
 </section>

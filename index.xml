@@ -15,7 +15,128 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 19 Nov 2024 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 15 Jan 2025 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>What AI can tell us about microscope slides</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>The lavender images below show <a href="https://pubmed.ncbi.nlm.nih.gov/31226662/">breast tissue</a>. There are many questions doctors could want to answer using these images: They could want to know whether there are tumors present or not. If there is a tumor, doctors would want to classify its stage, make predictions about how likely the patient is to respond to treatment, and to detect whether the tumor has spread from another organ.</p>
+<p>All of these are questions which people are now tackling with machine learning. They fall within the area of <a href="https://www.nature.com/articles/s41374-020-00514-0"><strong>computational pathology</strong></a>, often abbreviated <strong>CPath</strong>. In the past year, two CPath AI models were released which achieved state-of-the-art results. Here I will discuss an introduction to this field, what these models do, and what some key challenges are going forward.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/bach.jpg" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption class="figure-caption">Breast tissue images from the BACH: Grand challenge on breast cancer histology</figcaption>
+</figure>
+</div>
+<section id="cpath-foundation-models" class="level2">
+<h2 class="anchored" data-anchor-id="cpath-foundation-models">CPath foundation models</h2>
+<p>There is a powerful idea about how to make more accurate CPath models. Rather than train a model on a single type of tissue and a single task (e.g.&nbsp;identifying cancer in breast tissue), train a model on images of tissue from many different organs (breasts, lymph nodes, lungs, prostate, heart,…) and on multiple different tasks (recognizing cancer, determining the stage and subtype of the cancer, segmenting cells, and predicting treatment outcomes). Patterns learned from one dataset or one task are likely to generalize to others.</p>
+<p>Such models are known as CPath <a href="https://en.wikipedia.org/wiki/Foundation_model"><strong>foundation models</strong></a>. In general, a <em>foundation model</em> is a machine learning model which is trained on a sufficiently diverse large dataset which can then be adapted for a range of downstream tasks. This idea is commonly used in the area of language models such as Chat-GPT and Claude.ai. Language foundation models are trained on many types of language tasks and intended to generalize across different corpuses of text (e.g.&nbsp;wikipedia, reddit posts, academic papers, online conversations, news articles, and more). ImageNet models trained to recognize a huge variety of different pictures often serve as foundation models for images. The success of foundation models within the areas of language and more general images is a key reason why we might expect pathology foundation models to be useful too.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/types-of-tissue.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Tissues are groups of cells with similar structure and function. Different types of tissue within the human body include nervous, muscle, connective, and epithelial tissue. Image: Wikimedia</figcaption>
+</figure>
+</div>
+<p>Two notable CPath foundation models were released in 2024: <a href="https://www.nature.com/articles/s41586-024-07441-w">Prov-GigaPath</a> and <a href="https://www.nature.com/articles/s41591-024-02857-3">UNI</a>. Both models achieved state-of-the-art performance on dozens of pathology tasks (although they were not directly compared to one another). Another <a href="https://arxiv.org/abs/2404.15217">relevant paper</a> (from Kaiko.ai) studied the impact of dataset size and model size on CPath model performance.</p>
+</section>
+<section id="learning-the-vocab" class="level2">
+<h2 class="anchored" data-anchor-id="learning-the-vocab">Learning the Vocab</h2>
+<p>Medicine is full of jargon and specialized vocabulary. Pathology refers to the study of disease. It is a broad field, and can include everything from dissecting dead bodies to analyzing blood samples. One key focus of <em>computational pathology</em> is analyzing and interpreting <em>whole slide images (WSIs)</em> and in some cases combined with accompanying meta-data about a patient. Whole slide images refers to the complete microscope slide, although in many cases the region of interest (such as particular cancerous or inflamed cells) may be much smaller, just occupying a subset of the slide.</p>
+<p><em>Machine learning (ML)</em> is a subfield of Artificial intelligence (AI) which involves learning from past data, and is increasingly being used with great success in pathology. The focus of most computational pathology ML models is on images of tissue, on microscope slides. That is what we will focus on in this post as well.</p>
+</section>
+<section id="so-many-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="so-many-tasks">So Many Tasks!</h2>
+<p>There are many different benchmarks that CPath models can be tested on. These involve numerous datasets: related to different areas of the body, with different sizes, and with different purposes. They also involve a variety of tasks, including binary classification, image segmentation, and outcome prediction. Prov-GigaPath attained state-of-the-art performance on 25 out of the 26 tasks it was evaluated on and UNI attained state-of-the-art performance on 34 different tasks. Here I will give examples of just 3 of these tasks.</p>
+<section id="task-prostate-cancer-cell-grading" class="level3">
+<h3 class="anchored" data-anchor-id="task-prostate-cancer-cell-grading">Task: prostate cancer cell grading</h3>
+<p>In the 1960s, the pathologist Dr.&nbsp;Donald Gleason came up with a grading scale for rating cells as they progressed from normal to prostate cancer. The Gleason Grading system is still widely used and is considered a powerful predictor of how prostate cancer patients will fare. A major medical image conference (MICCAI) <a href="https://aggc22.grand-challenge.org/AGGC22/">held a competition in 2022</a> for researchers to create algorithms to determine the Gleason grades when given images of prostate tissue.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/gleason.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Examples of UNI predictions of Gleason grades for a section of prostate tissue. Figure 3b from the UNI paper</figcaption>
+</figure>
+</div>
+<p>The prostate tissue is shown in pink, and segments have been colored in blocks based on where they fall on the Gleason scale.</p>
+</section>
+<section id="task-identifying-early-signs-of-rejection-after-a-heart-transplant" class="level3">
+<h3 class="anchored" data-anchor-id="task-identifying-early-signs-of-rejection-after-a-heart-transplant">Task: identifying early signs of rejection after a heart transplant</h3>
+<p>Rejection is the main cause of mortality in patients who have received a heart transplant. Since the early stages of rejection can be asymptomatic, it is standard for patients to receive frequent biopsies for 1-2 years following a transplant. These are known as endomyocardial biopsies (EMB), since they remove a small sample of tissue from the inner lining (endo) of the heart (cardial) muscle (myo). Accurately interpreting the results of these biopsies is a key question. Underestimating the chance of rejection could lead to dangerous delays in treatment, but overestimating could lead to alarm and unnecessary follow-ups or treatment. Assessment of the sampled tissue by experienced pathologists has higher variability than many other tasks, such as cancer diagnosis. Deep learning is being used to tackle this task, in models such as <a href="https://www.nature.com/articles/s41591-022-01709-2">Cardiac Rejection Assessment Neural Estimator (CRANE)</a> and the CPath foundation model UNI.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/cardiac-tissue-zoom.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Each row shows a different sample of cardiac tissue, with a different medical issue. On the far left are the whole slide images, then zoomed in at higher resolution on a key Region of Interest (ROI). On the far right is a heat map for the most zoomed in area showing which features the algorithm has identified as significant. Figure 3 from the CRANE paper.</figcaption>
+</figure>
+</div>
+</section>
+<section id="task-genetic-mutations-in-cancer" class="level3">
+<h3 class="anchored" data-anchor-id="task-genetic-mutations-in-cancer">Task: Genetic Mutations in Cancer</h3>
+<p>For several common genetic mutations in tumors, there are <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9012285/">specific drugs known to target those mutations</a>. This has a direct application for clinical treatment. Since genetic mutations can change the form and function of cells, it is reasonable to expect that this information could be deduced from images of the cancer cells. Deep learning models have been built to identify genetic mutations from tissue slides. The benefits of using a computational approach are that it can be scaled as an increasing number of relevant genetic mutations and molecular biomarkers are being discovered. <a href="https://www.nature.com/articles/s43018-020-0087-6">Task-specific models</a> have been built for this, and this is one of the tasks that foundation models can be tested on.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/cancer-mutations.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Different types of cancer listed along the y-axis and 20 common genetic mutations listed on the y-axis. Figure 1D from Kather, 2020.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="we-need-more-data" class="level2">
+<h2 class="anchored" data-anchor-id="we-need-more-data">We need more data</h2>
+<p>One key challenge in the area of CPath foundation models is gathering enough training data. <a href="https://www.cancer.gov/ccg/research/genome-sequencing/tcga">The Cancer Genome Atlas (TCGA)</a> was an ambitious project launched in 2006 by the National Cancer Institute in the USA. Over a 12 year period, samples were collected from over 11,000 patients of 33 different cancer types, and all this data was made publicly available. While this is a rich dataset and a useful resource, all 3 papers we’ve looked at concluded that TCGA is not large enough for effective foundation models. In addition to limited data size, TCGA also has limited diversity, consisting mostly of slides from the primary site of cancer, but not metastasized cancers or different types of tissues.</p>
+<p>Researchers at Kaiko.ai <a href="https://arxiv.org/abs/2404.15217">tested the impact of scaling</a> both the size of their model and the size of the training dataset. While they found limited need to scale model size beyond a certain point, they found that larger datasets continued to lead to increased performance. They concluded that TCGA was likely not large enough and shared their plans to build a larger training set, and are now partnering with cancer centers across Europe to create a dataset for their model.</p>
+<p>The researchers behind two other CPath foundation models reached the same conclusion about data set size, and gathered massive datasets to train their models. This required partnering with healthcare centers. <a href="https://www.nature.com/articles/s41586-024-07441-w">Prov-GigaPath</a>, a model created by Microsoft Research and Providence Genomics involved data from 30,000 patients across 28 cancer centers (which are part of Providence Healthcare company). <a href="https://www.nature.com/articles/s41591-024-02857-3">UNI</a>, a cPath model created by a team at Harvard, MIT, and the Broad Institute, involved the creation of the Mass-100K: a dataset with over 100K whole slide images across 20 tissue types collected from Mass General Hospital, Brigham &amp; Women’s Hospital, and Genotype-Tissue Expression (GTEx) consortium.</p>
+<p>These partnerships and curation of training datasets are currently a crucial component of building CPath foundation models. Curating datasets carefully poses many challenges as well. Combining data from different sources, which often use different protocols for how slides are sampled and prepared, can introduce significant biases.</p>
+</section>
+<section id="different-scales" class="level2">
+<h2 class="anchored" data-anchor-id="different-scales">Different scales</h2>
+<p>CPath foundation models face the difficulty of capturing both local patterns (that show up in a small tile within a slide) and global patterns across the whole slide. Many tiny tiles are found within a slide.</p>
+<p>Some models, such as the <a href="https://arxiv.org/abs/2206.02647">Hierarchical Image Pyramid Transformer</a> (from several of the same authors as UNI), use hierarchical approaches to deal with these multiple scales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/hierarchical.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Hierarchical Structure of Whole-Slide Images, Figure 1 from Chen, et al, 2020</figcaption>
+</figure>
+</div>
+<p>Other models, such as Prov-GigaPath, treat the tiles as tokens, encoding both the tiles and the slide as a whole as model inputs. Prov-GigaPath uses both a slide encoder and a tile encoder to take into account these two different scales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/slides-prov-gigapath.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Treating slides as tokens, Figure 1a from the Prov-GigaPath paper</figcaption>
+</figure>
+</div>
+<p>In pathology clinics, diagnosis and treatment decisions are often made at the patient level, whereas CPath models are often highly focused on regions of interest. Accommodating the multiple relevant scales (small tiles, whole slides, and patient-level) for pathology is a consideration that CPath models need to balance.</p>
+</section>
+<section id="going-forward" class="level2">
+<h2 class="anchored" data-anchor-id="going-forward">Going Forward</h2>
+<p>It is still early in the world of CPath and there are many growth opportunities, including the continued need for large and diverse datasets, ways to further optimize model training, tasks which have previously received less focus, and the difficulties of integrating models into clinical work. As the <a href="https://arxiv.org/abs/2404.15217">authors of the kaiko.ai paper</a> wrote, “<em>We are still at the very beginning of developing a truly foundational pathology foundation model.</em>” It is a hopeful sign that these models achieve state-of-the-art results on dozens of benchmarks, but it still remains to be seen when and how they will be used in clinical settings.</p>
+</section>
+<section id="related-reading" class="level2">
+<h2 class="anchored" data-anchor-id="related-reading">Related Reading:</h2>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-07-24-neural-nets/">The Most Common and Useful Neural Nets</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">Using AI to Discover New Antibiotics</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-11-20-ai-immunology/">AI and Immunology</a></li>
+</ul>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/index.html</guid>
+  <pubDate>Wed, 15 Jan 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2025-01-16-cpath-foundation/gleason.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>AI and Immunology</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -170,6 +291,124 @@
   <guid>https://rachel.fast.ai/posts/2024-11-12-devious-tricks/index.html</guid>
   <pubDate>Mon, 11 Nov 2024 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2024-11-12-devious-tricks/Coxiella-burnetii-NIH-thumbnail.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>In defense of screen time</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2024-10-29-screen-time/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>My daughter is constantly creating– her passions include making art, writing fiction, coding interactive games, and composing music. Yet, I regularly see news articles and media pundits suggesting that my husband and I are doing things all wrong. The reason for these claims? My daughter uses screen-based tools, at least partially, and in some cases, entirely, to pursue the interests I listed in my first sentence. To give more detail on how she pursues her passions:</p>
+<ul>
+<li><strong>Art</strong>: She creates digital art in <a href="https://www.sketchbook.com/">Sketchbook Pro</a>, both on her own and in lessons. She also takes in-person art courses that involve a mix of acrylic painting, water colors, and sculpture.</li>
+<li><strong>Coding</strong>: She loves coding in <a href="https://scratch.mit.edu/">Scratch</a> and <a href="https://p5js.org/">P5.js</a> to design and build interactive games.</li>
+<li><strong>Creative writing</strong>: While her handwriting is on target for her age, she prefers typing, as it lets her write faster and express more complex ideas– we taught her touch typing when she was 5. She writes fiction both individually and collaboratively with friends.</li>
+<li><strong>Music</strong>: She plays the piano, takes group singing lessons online, and enjoys composing music. There is a composition component to her piano lessons (which happen over zoom) and she composes music online through <a href="https://musiclab.chromeexperiments.com/">Chrome MusicLab</a> and <a href="https://flat.io/">Flat.io</a>.</li>
+</ul>
+<p>My daughter is not unique. Our family knows many other children with similar creativity levels who are excelling in their passions beyond what is often believed possible for their age groups.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-10-29-screen-time/music-lab.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Visual from Chrome Music Lab</figcaption>
+</figure>
+</div>
+<p>Parenting approaches are personal and often polarizing, so I normally don’t write on this topic. However, I am concerned by how several (in my view, false) points are being increasingly repeated by politicians and pundits: that screentime is very harmful for children, that it is essential for children’s well-being to attend in-person school every day (<a href="https://apnews.com/article/covid-flu-school-attendance-4845073e737db87f786e1d8c815a48f7">even</a> <a href="https://www.latimes.com/california/story/2023-08-12/got-a-cold-runny-nose-the-sniffles-no-worries-come-to-school-lausd-says">when</a> <a href="https://www.1news.co.nz/2024/09/26/govt-reveals-new-plan-for-getting-kids-to-school-heres-how-it-will-work/">sick</a>), and that it is important for workers to return to the office (even when their jobs can be done remotely).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-10-29-screen-time/school-attendance.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">There has been a rise in policies requiring children to attend school while sick</figcaption>
+</figure>
+</div>
+<p>The above points are interlocking, since getting workers commuting to in-person offices requires children being at in-person school. And overemphasizing in-person school attendance overlooks a number of children whose needs aren’t being met by in-person school. It also overlooks a number of online and screen-based options opportunities to build skills, express creativity, and form friendships. Here I want to focus on some innovative ways that we can encourage children’s flourishing, whether that is as a supplement to in-person school, or instead of.</p>
+<section id="a-false-binary" class="level2">
+<h2 class="anchored" data-anchor-id="a-false-binary">A False Binary</h2>
+<p>I often hear statements such as, “I’d rather kids played outside than on a computer.” But these choices aren’t binary! You don’t have to pick just one. My daughter plays outside AND on a computer. She plays in-person sports regularly AND has online hobbies. This year we threw her 2 birthday parties: an in-person one for her local friends AND an online one for her long-distance friends.</p>
+<p>The term “screen time” is so broad as to be meaningless, clumping together many disparate activities. A child sitting next to a parent playing a math game together on the computer is screen time. Calling your grandparents on skype is screen time. Collaboratively composing music with your best friend in another country is screen time. Yet, when many people refer to screen time, they often seem to be referring to a child passively watching TV on their own (something which my husband and I almost never let our daughter do, and that she doesn’t seem interested in). With any screen-based activity, it is useful to consider:</p>
+<ul>
+<li>Is it social or solitary?</li>
+<li>Does it involve creating content or consuming content?</li>
+<li>Is it educational or not?</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-10-29-screen-time/venn-diagram.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">A Venn Diagram showing how we think about screentime. We avoid the outside (white) region and mostly stick to the intersections.</figcaption>
+</figure>
+</div>
+<p>It is not that some of these options are always good or always bad, but rather that we need to have a nuanced view on different combinations of these factors and how much time you may want to spend on each.</p>
+<p>Screens are a crucial tool and outlet for her expressing her creativity, and it saddens me to hear an increasing media narrative vilifying screen time for kids.</p>
+<p>Two of my daughter’s best friends are kids she has never met in person (because they live in a different state and in a different country), yet she talks with each of them several times per week. She also has local friends that we get together with regularly in-person. The fact that she has several close long-distance friends isn’t surprising, because my husband and I have many close online / long-distance friendships as well. Our friendships aren’t any less real because they are over screens. Opening up the possibility for long-distance friendships has given us the option of finding additional friends we are particularly compatible with.</p>
+</section>
+<section id="increased-options" class="level2">
+<h2 class="anchored" data-anchor-id="increased-options">Increased options</h2>
+<p>Screen-based learning options make homeschooling more feasible for a wider range of families. Online resources (games, classes, and clubs) can offer opportunities that may not be available locally, can fill in gaps parents may not be qualified to cover, and offer an exciting variety of options. For instance, online courses have allowed my daughter to do the following (which are not available locally for us):</p>
+<ul>
+<li>have tutors/teachers based in 5 different countries, providing diverse experiences</li>
+<li>take science courses including: particle physics for kids, biochem for kids (she has been with the same group of kids for 3 years), and a biology class where a small group of students could share images from their digital microscopes over zoom</li>
+<li>participate in clubs for creating collaborative narratives, fanart, and fanfiction around two of her favorite series of books</li>
+<li>complete mastery-based math games at her own pace, which allowed her and a few friends to end up many years above their grade levels</li>
+</ul>
+<p>As I wrote about in a previous post, <a href="https://www.fast.ai/posts/2022-09-06-homeschooling.html">we homeschool</a>, and this leaves our daughter with far more time for hobbies and socializing than in-person school gave us.</p>
+</section>
+<section id="in-person-school-does-not-work-for-everyone" class="level2">
+<h2 class="anchored" data-anchor-id="in-person-school-does-not-work-for-everyone">In-person school does not work for everyone</h2>
+<p>There are several categories of kids whose needs are often not met in traditional schools and frequently benefit from online options:</p>
+<ul>
+<li><a href="https://www.nytimes.com/2020/08/10/opinion/coronavirus-school-closures.html">Neurodivergent kids</a>, who may deal with overstimulating, distracting, or painful sensory experiences in traditional schools</li>
+<li>Gifted kids, who are not intellectually challenged in traditional schools</li>
+<li><a href="https://www.wired.com/story/pandemic-homeschoolers-who-are-not-going-back/">Kids from marginalized cultures</a>, whose cultural heritage may not be reflected at school, or who may experience discrimination</li>
+<li>Kids who are being bullied</li>
+<li>Kids who have particular passions they would like to hyper-focus on (which are either not included in their school’s curriculum, or which they don’t get adequate time for)</li>
+<li>Medically complex kids, including those who may be getting sick so often that they can’t attend school regularly, those for whom an illness could result in hospitalization, or whose health issues make it difficult to attend school in-person</li>
+</ul>
+<p>It is an injustice that schools are not inclusive of all children. While individuals pulling their children out of school does not address this injustice (and we should continue to work for <a href="https://www.abc.net.au/news/2024-09-24/covid-safety-schools-course-sick-days-teachers-long-covid/104319032">safer</a> and more inclusive schools), many families have found it necessary to leave systems that are harming their kids.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-10-29-screen-time/homeschool-headlines.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">We were not alone in discovering that homeschooling worked better for our child</figcaption>
+</figure>
+</div>
+</section>
+<section id="dont-judge-screentime-by-a-few-bad-examples" class="level2">
+<h2 class="anchored" data-anchor-id="dont-judge-screentime-by-a-few-bad-examples">Don’t judge screentime by a few bad examples</h2>
+<p>I would caution against writing off screen time or online learning based on a low quality or poorly designed experience. Maybe your child’s school went online in 2020 with no notice and no support, and they were stuck in a zoom with 25 other kids (this is not a good set-up for anyone!). We have found that with small group online tutoring, my daughter is able to be more social and talkative than she was in a large class at in-person school, and she masters more material in less time. However, even amongst small online groups, occasionally she’ll try a teacher or club that isn’t a good match for her, and in those cases, we discontinue it.</p>
+<p>Since screentime is often equated with a way to occupy kids while parents do something else, there are often unrealistic expectations, particularly for the most rewarding screen-based tools (which tend to involve a learning curve and require support from a trusted adult). In many cases handing your child a new educational app and then leaving them alone can lead to frustration. Sitting with them and working through the app together can be relationship-building, prevent them from getting overly discouraged, and help them build confidence as you figure it out together. With age and experience, kids will likely be able to do more on their own.</p>
+</section>
+<section id="inclusion-and-accessibility" class="level2">
+<h2 class="anchored" data-anchor-id="inclusion-and-accessibility">Inclusion and accessibility</h2>
+<p>Countries around the world, including the <a href="https://www.ippr.org/articles/our-greatest-asset">USA</a>, <a href="https://news.sky.com/story/parents-of-children-with-complex-needs-worried-they-could-be-unfairly-fined-under-new-school-absence-rules-13213524">UK</a>, <a href="https://www.educationtoday.com.au/news-detail/Half-of-Australia-6155">Australia</a>, <a href="https://www.rnz.co.nz/news/political/513250/sickness-related-school-absences-to-be-targeted-under-government-plan">New Zealand</a>, <a href="https://english.kyodonews.net/news/2023/10/d8cd090637bd-japan-school-absenteeism-at-record-high-of-nearly-300000-in-fy-2022.html">Japan</a>, <a href="https://www.brusselstimes.com/1053759/number-of-absences-and-suspensions-among-pupils-in-belgium-on-the-rise">Belgium</a>, and <a href="https://www.cbc.ca/news/canada/school-absence-data-1.7156254">Canada</a> are seeing high levels of school absences. Factors for these record levels of absences include <a href="https://calgaryherald.com/opinion/columnists/opinion-we-dont-know-whats-causing-the-tsunami-of-sick-kids-but-wed-better-figure-it-out-fast">more frequent illnesses</a> (such as covid, RSV, and flu) and <a href="https://www.abc.net.au/news/2024-06-16/children-with-long-covid-dismissed-doctors-myth-virus-harmless/103959078">chronic health issues</a>. In mid-2024, many countries (including the USA and Australia) experienced a particularly high wave of the ongoing covid pandemic. Rates of disability are increasing, and people, <a href="https://www.scientificamerican.com/article/long-covid-is-harming-too-many-kids/">including children</a>, are continuing to develop new health conditions after viral infections.</p>
+<p>A number of school districts are responding to these waves of illness by placing heightened emphasis on attendance to in-person school, in many cases pressuring or <a href="https://apnews.com/article/covid-flu-school-attendance-4845073e737db87f786e1d8c815a48f7">even</a> <a href="https://www.1news.co.nz/2024/09/26/govt-reveals-new-plan-for-getting-kids-to-school-heres-how-it-will-work/">requiring</a> <a href="https://www.latimes.com/california/story/2023-08-12/got-a-cold-runny-nose-the-sniffles-no-worries-come-to-school-lausd-says">children</a> and <a href="https://archive.md/T2oHI">teachers to attend school while sick</a>. In parts of the <a href="https://news.sky.com/story/parents-of-children-with-complex-needs-worried-they-could-be-unfairly-fined-under-new-school-absence-rules-13213524">UK</a>, <a href="https://www.indystar.com/story/news/education/2024/08/19/new-law-indiana-school-absences-juvenile-court-missing-school-ips-attendance-policy-criminal-charges/74818189007/">USA</a>, and <a href="https://www.rnz.co.nz/news/political/513250/sickness-related-school-absences-to-be-targeted-under-government-plan">New Zealand</a>, policies are being considered (or implemented) to charge parents fines if their children miss school too often. This is counterproductive, as it is hard to focus when unwell, attending school sick increases the likelihood of spreading illness to others, and <a href="https://www.latimes.com/california/story/2022-07-07/working-through-covid-sleep-rest-infection-test-positive">rest is a key way</a> to reduce risk of post-viral illness. None of these punitive attendance policies address root causes, such as <a href="https://www.abc.net.au/news/2024-09-24/covid-safety-schools-course-sick-days-teachers-long-covid/104319032">improving school air quality</a>, making sure parents have adequate paid leave to stay home with sick children, or decoupling school funding from attendance.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2024-10-29-screen-time/school-attendance.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Requiring kids to attend school while sick is only going to lead to more sick students and sick teachers</figcaption>
+</figure>
+</div>
+<p>We are also seeing <a href="https://www.abs.gov.au/media-centre/media-releases/55-million-australians-have-disability">rising rates of disability</a> amongst <a href="https://x.com/Mike_Honey_/status/1842530019991769108?t=Cc8jUI2CayxAIBCpoZHiXw&amp;s=19">working age</a> adults. In the USA, there has been an <a href="https://www.ippr.org/articles/our-greatest-asset">increase in people with cognitive disabilities</a>. A <a href="https://www.bbc.com/news/business-68639144">BBC article</a> notes that in the UK sick people are leaving the workforce at record highs. Online access is a crucial part of accessibility and disability rights. For many disabled people, accessibility improved in 2020 with more remote options for work, medical appointments, conferences, and other events, and there is now a counter-reaction in which these options are being removed.</p>
+<p>Every child is different, so what works for my family won’t work for everyone. I am not recommending that all families homeschool, or that nobody should attend in-person school. However, we need to consider innovative approaches to learning and communication, and that includes screen-based approaches.</p>
+</section>
+<section id="hopes-for-a-creative-and-inclusive-society" class="level2">
+<h2 class="anchored" data-anchor-id="hopes-for-a-creative-and-inclusive-society">Hopes for a creative and inclusive society</h2>
+<p>I want children to discover and develop passions that they enjoy (astronomy, writing, art, music, math, oceanography, chess, there are so many possibilities!) and to be able to connect with others who share their interests. Taking advantage of computer-based and online options opens up a world of possibility. I also want a society in which disabled people are included in events and opportunities, and in which people can rest when they’re sick or preferably avoid illness in the first place. Fewer people commuting to the office is better for the environment. Traditional school is failing a lot of kids. I hope we can consider a range of innovative educational and social approaches, and not exclude an entire category of valuable ways to communicate, create, and learn (e.g.&nbsp;screentime).</p>
+</section>
+<section id="related-posts" class="level2">
+<h2 class="anchored" data-anchor-id="related-posts">Related Posts</h2>
+<ul>
+<li><a href="https://www.fast.ai/posts/2022-09-06-homeschooling.html">My family’s unlikely homeschooling journey</a>: Prior to 2020, we never expected to homeschool, and now we have committed to it long-term.</li>
+<li><a href="https://www.fast.ai/2022/03/15/math-person/">There’s No Such Thing as Not A Math Person</a>: based on a webinar I gave to parents addressing cultural myths about math and how to support your kids in their math education, even if you don’t see yourself as a “math person.”</li>
+</ul>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>education</category>
+  <guid>https://rachel.fast.ai/posts/2024-10-29-screen-time/index.html</guid>
+  <pubDate>Mon, 28 Oct 2024 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2024-10-29-screen-time/music-lab.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Gaps and Risks of AI in the Life Sciences</title>
@@ -1548,143 +1787,6 @@
   <guid>https://rachel.fast.ai/posts/2023-02-21-anki/index.html</guid>
   <pubDate>Mon, 20 Feb 2023 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2023-02-21-anki/stats.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>I was an AI researcher. Now, I am an immunology student.</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2023-02-07-school-immunology/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I like complexity, and I like challenges. When a new topic fascinates me, I want to devote all of my time to it. In 2012, I was working as a quant in energy trading when I became so captivated by the topic of machine learning that I abruptly moved cross-country to San Francisco and spent a decade learning as much as I could about machine learning, AI, data ethics, and algorithmic harms. In 2022, I became fascinated by a new topic: immunology. I completed 7 online courses last year, am currently taking 4 more courses, and have created over 2,000 immunology-related flashcards for myself, which I spend time on daily. (I will write more about how I use Anki flashcards in a future post.)</p>
-<p>I found immunology to be both overwhelming and fascinating. The field is full of jargon, and there is a steep curve just to learn the language: IL-2, IL-4, IL-5, IL-12, IL-13, IL-18, CD-3, CD-22, CD-34, CD-47, CD-155, C3, C5, C8, and so on (lots of letter/number combinations, abbreviations, and acronyms! But underneath them, the mechanisms are fascinating). The more I studied, the more I wanted to learn. It became clear that I needed a formal program to go deeper and to provide appropriate context, so I started applying to graduate school.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-07-school-immunology/anki-streak.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">My daily study practice using Anki flashcards for the last 27 weeks (darker blue means more cards studied)</figcaption>
-</figure>
-</div>
-<section id="back-to-school" class="level2">
-<h2 class="anchored" data-anchor-id="back-to-school">Back to School</h2>
-<p>I was delighted to be accepted to a Masters in Immunology graduate program, and after eager anticipation, last month I officially began my formal degree. While my ultimate goal is to apply my machine learning and data ethics expertise to the field, I want to make sure I fully understand the relevant immunology first. Too often machine learning practitioners unthinkingly grasp for a nail to use their hammer on, without first having the necessary in-depth knowledge of the underlying domain, its data, its context, and its actual challenges.</p>
-<p>The more I learn about immunology, the more I realise how complex, vast, and full of open questions and not-yet-understood phenomena the field is. It was only in 2021 that researchers proved <a href="https://www.science.org/doi/10.1126/science.abj8222">Epstein-Barr virus causes multiple sclerosis</a>. Researchers are making new discoveries about <a href="https://www.cell.com/neuron/fulltext/S0896-6273(22)01147-3">links between viral infections and neurodegenerative diseases</a>, such as Alzheimer’s. A study in late 2022 found a possible mechanism to explain the fact that <a href="https://academic.oup.com/jid/advance-article/doi/10.1093/infdis/jiac405/6749009">varicella zoster virus significantly increases risk of stroke</a>. Unusually severe outbreaks of RSV and Group A Strep (a bacteria that can often follow as a secondary infection after a virus) made headlines in the past few months. A variety of viruses have long been known to sometimes trigger autoimmune diseases or cancer, yet there is still much to discover about these relationships.</p>
-</section>
-<section id="living-in-the-pandemicene" class="level2">
-<h2 class="anchored" data-anchor-id="living-in-the-pandemicene">Living in the Pandemicene</h2>
-<p>Even as the ongoing covid pandemic continues to cause death and disability, science journalist Ed Yong warned that <a href="https://www.theatlantic.com/science/archive/2022/04/how-climate-change-impacts-pandemics/629699/">we are now living in the <em>pandemicene</em></a>, a period with increasingly likely pandemics. Climate change is crowding species into new habitats, <a href="https://www.nature.com/articles/s41586-022-04788-w">raising the risks of viral spillover</a> from the estimated 40,000 viruses that inhabit mammals. Immunology, virology, and microbiology will become even more important in the coming decades.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-07-school-immunology/pandemicene.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Ed Yong’s article in The Atlantic</figcaption>
-</figure>
-</div>
-</section>
-<section id="mathematical-biology-and-ai-in-medicine" class="level2">
-<h2 class="anchored" data-anchor-id="mathematical-biology-and-ai-in-medicine">Mathematical Biology and AI in Medicine</h2>
-<p>For over 20 years, my focus has been on mathematics, computer science, and data ethics. I studied mathematics, computer science, and linguistics as an undergraduate; earned a PhD in mathematics; and then spent 12 years working in a mix of industry and academia as a data scientist, teacher, and researcher. I am best known for my work as cofounder of fast.ai, creator of the most popular deep learning courses in the world, and for previously serving as the founding director of the University of San Francisco Center for Applied Data Ethics. Over the years, I have had a recurring interest in medicine, doing mathematical modelling of cell processes as part of a Howard Hughes Medical Institute fellowship while I was in graduate school, publishing about <a href="https://www.bostonreview.net/articles/rachel-thomas-medicines-machine-learning-problem">machine learning in medicine</a> for The Boston Review, and being an invited keynote speaker for <a href="https://www.youtube.com/watch?v=vVRWeGlMkGk&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=3">Stanford’s AI in Medicine</a> symposium.</p>
-</section>
-<section id="the-value-of-domain-expertise" class="level2">
-<h2 class="anchored" data-anchor-id="the-value-of-domain-expertise">The value of domain expertise</h2>
-<p>Core to the mission of fast.ai is the idea that domain expertise is crucial. In our very first post <a href="https://www.fast.ai/posts/2016-10-07-fastai-launch.html">announcing the launch of fast.ai</a> in 2016, my cofounder Jeremy Howard wrote, <em>“Only domain experts: fully understand and appreciate what are the most important problems in their field; have access to the data necessary to solve those problems; and understand the opportunities and constraints to implementing data driven solutions.”</em> It is dangerous for machine learning practitioners to apply machine learning to fields in which they have only superficial knowledge (unless working closely with domain experts from end-to-end). Collaborative, interdisciplinary, and career changing work has always fascinated me. I have written about how <a href="https://rachel.fast.ai/posts/2022-06-01-qualitative/">necessary qualitative humanities research</a> is to the field of AI. I previously taught software engineering to adult women changing careers, and long-believed that career changers have something special to offer. I am now taking my own advice, and delving into immunology, <strong>with the long-term goal of integrating this new knowledge with my data ethics and machine learning skills.</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-07-school-immunology/textbooks.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Excited to be back in school</figcaption>
-</figure>
-</div>
-<p>After having been in a more “established” place in my career for a while, it is intimidating to publicly start off on a new branch like this. However, it’s also exciting, and I hope to share some of my journey as an immunology student along the way through blog posts and essays, just as <a href="https://rachel.fast.ai/posts/2019-05-13-blogging-advice/">I’ve always encouraged fast.ai students</a> to do.</p>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>education</category>
-  <category>science</category>
-  <guid>https://rachel.fast.ai/posts/2023-02-07-school-immunology/index.html</guid>
-  <pubDate>Mon, 06 Feb 2023 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2023-02-07-school-immunology/textbooks.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>My family’s unlikely homeschooling journey</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2022-09-06-homeschooling/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>My husband Jeremy and I never intended to homeschool, and yet we have now, unexpectedly, committed to homeschooling long-term. Prior to the pandemic, we both worked full-time in careers that we loved and found meaningful, and we sent our daughter to a full-day Montessori school. Although I struggled with significant health issues, I felt unbelievably lucky and fulfilled in both my family life and my professional life. The pandemic upended my careful balance. Every family is different, with different needs, circumstances, and constraints, and what works for one may not work for others. My intention here is primarily to share the journey of my own (very privileged) family.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-09-06-homeschooling/homeschool-headlines.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">We were not alone in discovering that homeschooling worked better for our child</figcaption>
-</figure>
-</div>
-<section id="our-unplanned-introduction-to-homeschooling" class="level2">
-<h2 class="anchored" data-anchor-id="our-unplanned-introduction-to-homeschooling">Our unplanned introduction to homeschooling</h2>
-<p>For the first year of the pandemic, most schools in California, where we lived at the time, were closed. Like countless other families, we were unexpectedly thrust into the world of virtual-school and home-school. We ended up participating in an <a href="https://www.modulo.app/">innovative online program</a> that did NOT try to replicate in-person school. A few key differences:</p>
-<ul>
-<li>Each child could <strong>work at their own pace</strong>, largely through playing educational games and apps that adapted to where they were. There was no particular endpoint that the kids needed to get to at the end of the semester.</li>
-<li>Group video calls were <strong>limited in size</strong> to no more than 6 kids (and often smaller), so kids got lots of personal interaction with their tutors and each other. Even as an adult, I find video calls larger than 6 people overwhelming.</li>
-<li><strong>Regular movement breaks</strong>, where the kids had jumping jack competitions, did <a href="https://www.youtube.com/c/CosmicKidsYoga">Cosmic Kids yoga videos</a>, held dance parties, and ran around the house for scavenger hunts.</li>
-<li><strong>Took advantage of existing materials</strong>: the program did not reinvent the wheel, but instead made use of excellent, existing online videos and educational apps.</li>
-</ul>
-<p>From August 2020 - March 2021, our daughter was with a small group online, where daily she would spend 1 hour on socio-emotional development (including games, getting to know each other, and discussing feelings), 1 hour on reading, and 1 hour on math. For reading and math, the children each worked at their own pace through engaging games, and could ask the teacher and each other questions whenever they needed help. At the end of these 8 months, our daughter, along with several other kids in her small group, were several years beyond their age levels in both math and reading. It had never been our goal for her to end up accelerated; Jeremy and I were mostly trying to keep her happy and busy for a few hours so we could get some of our own work done. She also had fun and made close friends, who she continues to have video calls and Minecraft virtual playdates with regularly.</p>
-</section>
-<section id="our-unconventional-views" class="level2">
-<h2 class="anchored" data-anchor-id="our-unconventional-views">Our unconventional views</h2>
-<p>Although there are plenty of ways to homeschool that don’t involve any screens or technology, Jeremy and I have made use of online tutors, long-distance friendships, educational apps, videos, and web-based games, as key parts of our approach. One thing that helped us going into the pandemic is that we have never treated online/long-distance relationships as inferior to in-person relationships. We both have meaningful friendships that occur primarily, or even entirely, through phone calls, video chats, texts, and online interactions. I have made several big moves since I graduated from high school (moving from Texas to Pennsylvania to North Carolina back to Pennsylvania again and then to California) and I was used to family and close friends being long distance. We live far from our families, and our daughter was already accustomed to chatting with her grandparents on both sides via video calls. My daughter’s best friend is now a child she has never met in person, but has been skyping with almost daily for the last 2 years.</p>
-<p>Another thing that made this transition easier is that Jeremy and I have never been anti-screen time. In fact, we don’t consider “screen time” a useful category, since a child passively watching a movie alone is different than skyping with their grandparent is different than playing an educational game interactively with their parent beside them. While we almost never let our daughter do things passively and alone with screens, we enjoy relational and educational screen time. Furthermore, we focus on including other positive life elements (e.g.&nbsp;making sure she is getting enough time outside, being physically active, reading, getting enough sleep, etc) rather than emphasising limits.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2022-09-06-homeschooling/venndiagram.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">A Venn Diagram showing how I think about screentime. We avoid the outside (white) region and mostly stick to the intersections.</figcaption>
-</figure>
-</div>
-</section>
-<section id="a-return-to-in-person-school" class="level2">
-<h2 class="anchored" data-anchor-id="a-return-to-in-person-school">A return to in-person school</h2>
-<p>In 2021, our family immigrated from the USA to my husband’s home country of Australia, and we enrolled our daughter at an in-person school, which she attended from late April - early Dec 2021. Our state had closed borders and almost no cases of covid transmission during this time. By all measures, the school she attended is great: friendly families, kind staff, and a fun performing arts program. While our daughter adjusted quickly to the new environment and made friends, she was quite bored. She lost her previous curiosity and enthusiasm, became more passive, and started to spend a lot of time zoning out. The school tried to accommodate her, letting her join an older grade level for math each day. While the material was initially new, she still found the pace too slow. She started to get very upset at home practising piano or playing chess (activities she previously loved, but where mistakes are inevitable), because she had grown accustomed to getting everything right without trying. At one point, all schools in our region closed <a href="https://www.nytimes.com/live/2021/07/31/world/covid-delta-variant-vaccine/brisbane-australias-third-largest-city-joins-sydney-in-lockdown">during an 8-day snap lockdown.</a> Our daughter was disappointed when the lockdown ended and she had to return to school.</p>
-</section>
-<section id="when-homeschooling-works-well-and-when-it-doesnt" class="level2">
-<h2 class="anchored" data-anchor-id="when-homeschooling-works-well-and-when-it-doesnt">When homeschooling works well (and when it doesn’t)</h2>
-<p>Over the summer holidays (Dec 2021-Jan 2022), our state pivoted from zero covid to <a href="https://medium.com/@ColinKinner/lethal-stupidity-how-the-palaszczuk-governments-covid-response-has-thrown-queenslanders-under-52a127d67724">promoting mass infection as “necessary”</a>. We pulled our daughter out of school, initially intending that it would just be a temporary measure until her age group could be fully vaccinated (vaccine rollout was later in Australia than in the USA). However, we immediately saw positive changes, with her regaining her old curiosity, enthusiasm, and proactive nature, all of which she had lost being in school. Her perfectionism disappeared and she began to enjoy challenges again. We supplemented her online classes with in-person playdates, extracurriculars, and sports (due to covid risks, we wear masks and stay outdoors for all of these). We are fortunate to live in a beautiful part of the world, where we can spend most of the year outside. We enjoy visiting the beaches, forests, and parks in our region. Our daughter is happy: playing Minecraft with friends online, learning tennis with other local children, riding bikes as a family, spending hours absorbed in books of her own choosing, enjoying piano and chess again, running around in nature, and learning at her own pace.</p>
-<p>Homeschooled kids typically score <a href="https://www.nheri.org/research-facts-on-homeschooling/">15 to 30 percentile points</a> above public-school students on standardised academic achievement tests, and <a href="https://www.nheri.org/research-facts-on-homeschooling/">87% of studies on social development</a> “showed clearly positive outcomes for the homeschooled compared to those in conventional schools”. However, it is understandable that many children had negative experiences with virtual learning in the past 2 years, given that programs were often hastily thrown together with inadequate resources and inappropriately structured to try to mimic in-person school, against the stressful backdrop of a global pandemic. Many parents faced the impossible task of simultaneously needing to work full-time and help their children full-time (and many other parents did not even have the option to stay home). Every family is different, and virtual learning or homeschooling will not suit everyone. There are children who need in-person services only offered within schools; parents whose work constraints don’t allow for it; and kids who thrive being with tons of other kids.</p>
-<p>Despite the difficulty of the pandemic, there are a variety of families who found that virtual or homeschooling was better for their particular kids. Some parents have shared about children with <a href="https://www.nytimes.com/2020/08/10/opinion/coronavirus-school-closures.html">ADHD who found in-person school too distracting; children who were facing bullying or violence at school; kids who couldn’t get enough sleep on a traditional school schedule</a>; <a href="https://www.wired.com/story/pandemic-homeschoolers-who-are-not-going-back/">Black and Latino families whose cultural heritages were not being reflected in curriculums</a>. I enjoyed these article featuring a few such families:</p>
-<ul>
-<li><a href="https://www.nytimes.com/2020/08/10/opinion/coronavirus-school-closures.html">What if Some Kids Are Better Off at Home? | The New York Times</a> <em>For parents like me, the pandemic has come with a revelation: For our children, school was torture.</em></li>
-<li><a href="https://www.wired.com/story/pandemic-homeschoolers-who-are-not-going-back/">They Rage-Quit the School System—and They’re Not Going Back | WIRED</a> <em>The pandemic created a new, more diverse, more connected crop of homeschoolers. They could help shape what learning looks like for everyone.</em></li>
-</ul>
-</section>
-<section id="covid-risks" class="level2">
-<h2 class="anchored" data-anchor-id="covid-risks">Covid Risks</h2>
-<p>I have had brain surgery twice, was hospitalised in the ICU with a life-threatening brain infection, and have a number of chronic health issues. I am both at higher risk for negative outcomes from covid AND acutely aware of how losing your health can destroy your life. It is lonely and difficult being high-risk in a society that has given up on protecting others. While I am nervous about the long-term impact that homeschooling will have on my career (on top of how <a href="https://medium.com/@racheltho/techs-long-hours-are-discriminatory-and-counterproductive-3676e649a601">my existing health issues already hinder it</a>), acquiring additional disabilities would be far, far worse.</p>
-<p>I have been disturbed to follow the ever-accumulating research on <a href="https://www.nature.com/articles/d41586-022-00403-0">cardiovascular</a>, <a href="https://www1.racgp.org.au/newsgp/clinical/research-suggests-covid-affects-brain-even-in-mild">neurological</a>, and <a href="https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-021-02228-6">immune system</a> harms that can be caused by covid, even in <a href="https://missoulian.com/news/local/missed-risk-long-covid-threat-extends-far-beyond-pandemic/article_70311453-1f78-5068-b1ea-02886b41741a.html#tracking-source=most-popular-homepage">previously healthy people</a>, even in <a href="https://www.nature.com/articles/d41586-022-01453-0">the vaccinated</a>, and <a href="https://fortune.com/2022/08/04/covid-creates-higher-risk-kids-children-pediatric-blood-clots-kidney-failure-heart-problems-type-1-diabetes/">even in children</a>. While vaccines significantly reduce risk of death, unfortunately they provide <a href="https://www.nature.com/articles/d41586-022-01453-0">only a limited reduction in Long Covid risk</a>. Immunity wanes, and people face <a href="https://www.abc.net.au/news/2022-06-24/reinfection-covid-more-severe-new-variants/101178246">cumulative risks with each new covid infection</a> (so even if you’ve had covid once or twice, it is best to try to avoid reinfections). I am alarmed that <a href="https://twitter.com/ColinKinner/status/1557257474235076608?s=20&amp;t=hjlgmHIe24111OVNRCDk_Q">leaders are encouraging</a> mass, repeated infections of a generation of children.</p>
-<p>Given all this, I am relieved that our decision to continue homeschooling was relatively clear. It much better suits our daughter’s needs AND drastically reduces our family’s covid risk. We can nurture her innate curiosity, protect her intrinsic motivation, and provide in-person social options that are entirely outdoors and safer than being indoors all day at school. Most families are not so fortunate and many face difficult choices, with no good options.</p>
-</section>
-<section id="the-broader-picture" class="level2">
-<h2 class="anchored" data-anchor-id="the-broader-picture">The Broader Picture</h2>
-<p>I believe that high-quality, equitable, and safe public education is important for a healthy democracy, and I worry about the various ongoing ways in which education is being undermined and attacked. Furthermore, due to a lack of covid protections in communities, high-risk children and children with high-risk families are being shut out of in-person school options in the USA, Australia, and many other places. While the <a href="https://twitter.com/math_rachel/status/1464827214298443780?s=20&amp;t=sRWCS-xGf3G57R4LVWcDdQ">workplaces of politicians</a> and a handful of <a href="https://twitter.com/myrabatchelder/status/1485870339368366083?s=20&amp;t=sRWCS-xGf3G57R4LVWcDdQ">schools in ultra-wealthy areas</a> installed expensive ventilation upgrades, the majority of schools in the USA and Australia have not had any ventilation upgrades, nor received air purifiers. All children deserve access to an education that is safe, fits their needs, and will allow them to thrive. Even when homeschooling does work, it is often still just an individual solution to systemic problems.</p>
-</section>
-<section id="related-posts" class="level2">
-<h2 class="anchored" data-anchor-id="related-posts">Related Posts</h2>
-<p>A few other posts that you may be interested in, related to my views on education and teaching:</p>
-<ul>
-<li><a href="https://www.fast.ai/2022/03/15/math-person/">There’s No Such Thing as Not A Math Person</a>: based on a webinar I gave to parents addressing cultural myths about math and how to support your kids in their math education, even if you don’t see yourself as a “math person”</li>
-<li><a href="https://www.fast.ai/2016/10/08/teaching-philosophy/">The Qualities of a Good Education</a>: common pitfalls in traditional technical education and ideas towards doing better</li>
-<li><a href="https://www.fast.ai/2018/08/27/grad-school/">What You Need to Know Before Considering a PhD</a>: includes a reflection on how my own success in traditional academic environments was actually a weakness, because I’d learned how to solve problems I was given, but not how to how to find and scope interesting problems on my own</li>
-</ul>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>education</category>
-  <guid>https://rachel.fast.ai/posts/2022-09-06-homeschooling/index.html</guid>
-  <pubDate>Mon, 05 Sep 2022 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2022-09-06-homeschooling/homeschool-headlines.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
