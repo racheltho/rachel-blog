@@ -4,7 +4,7 @@ date: "2024-10-29"
 image: "/posts/2024-10-29-screen-time/music-lab.jpg"
 author: "Rachel Thomas"
 toc: true
-description: "Pundits say my husband and I are parenting wrong."
+description: "A controversial approach to parenting"
 categories: [education]
 ---
 
