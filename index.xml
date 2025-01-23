@@ -15,7 +15,121 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Wed, 15 Jan 2025 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Jan 2025 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Missing Medical Data Holding Back AI</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2025-01-24-missing-data/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Amidst the barrage of executive orders and announcements Trump made during his first week in office are two which stand in contradiction to each other:</p>
+<ul>
+<li>He announced a <a href="https://apnews.com/article/trump-health-communications-cdc-hhs-fda-1eeca64c1ccc324b31b779a86d3999a4">freeze on communications</a> from scientific and health agencies, stopping them from sharing health data with the public, including infectious disease data about the emerging H5N1 bird flu outbreak. The CDC was unable to send out its <a href="https://www.medpagetoday.com/infectiousdisease/generalinfectiousdisease/113905">weekly MMWR report</a> for the first time in 60 years. Without data, it can be nearly impossible to understand, much less respond, to growing threats.</li>
+<li>He announced a <a href="https://apnews.com/article/trump-ai-openai-oracle-softbank-son-altman-ellison-be261f8a8ee07a0623d4170397348c41">large investment in AI</a>, including promises to use AI to analyze health records, help doctors care for patients, and treat cancer.</li>
+</ul>
+<p>Hiding health-related data from the public does not improve the lives of patients. These orders exemplify common misunderstandings and obfuscations about the relationship between <a href="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/">data, AI, and power</a>. As I wrote in a <a href="https://rachel.fast.ai/posts/2024-02-20-ai-medicine/">previous post</a>, claims that AI will cure cancer are often used as superficial marketing, ignoring the ways that AI could further disempower patients (whose knowledge and experiences are already disregarded by the medical system).</p>
+<p>The orders for scientific agencies to pause communications are a particularly vivid and drastic example of the <a href="https://rachel.fast.ai/posts/2021-10-12-medicine-political/">political nature of data</a>. However, choices about what data is collected and who it is made available to have been shaped by social influences, financial factors, and power disparities long before this past week.</p>
+<section id="missing-data-sets" class="level2">
+<h2 class="anchored" data-anchor-id="missing-data-sets">Missing Data Sets</h2>
+<p>A decade ago, Mimi Onuoha coined the concept of <a href="https://github.com/MimiOnuoha/missing-datasets">Missing Data Sets</a>. She uses this term specifically to refer to “<em>blank spots that exist in spaces that are otherwise data-saturated</em>.” So it’s not just that this data does not exist, but that it ought to exist.</p>
+<p>Originally writing in 2016, Onuoha gives the example of how “<em>traditionally there has been little history of standardized and rigorous data collected about police brutality… The group who would make the most sense to monitor this issue—the law enforcement agents who create the data set in the first place—have no incentive to actually gather such data, which could prove incriminating</em>.”</p>
+<p>Missing Datasets are not just a USA-based phenomenon. In early 2024, the <a href="https://theconversation.com/the-uk-government-aims-to-stop-publishing-stats-on-homeless-peoples-deaths-heres-why-thats-a-problem-223879">UK government announced</a> that it would stop collecting and publishing statistics about homeless people’s deaths, even as rising evictions and a housing shortage were making the issue more urgent than ever. Public outcry led the government to reconsider. As another example, <a href="https://thesicktimes.org/2024/02/06/how-we-track-covid-19-with-wastewater-and-other-data-sources/">wastewater data provides</a> a reliable indicator of covid rates, even in the absence of tests. The health department in my home state (Queensland, Australia) used to monitor covid wastewater data, but <a href="https://www.data.qld.gov.au/dataset/queensland-wastewater-surveillance-for-sars-cov-2">stopped doing so in 2022</a>, even as several other states in Australia have continued to collect and share such data. This was a political decision. The lack of this data for Queensland from late 2022 onwards registers as a blank space compared to <a href="https://www.cdc.gov/nwss/rv/COVID19-nationaltrend.html">other countries</a> and <a href="https://www.health.wa.gov.au/articles/a_e/coronavirus/covid19-wastewater-surveillance">other</a> <a href="https://www.health.nsw.gov.au/Infectious/covid-19/Pages/sewage-surveillance.aspx">Australian states</a>, and compared to Queensland’s own record in 2020-2022. There have been multiple covid waves since 2022. This is missing data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-24-missing-data/covid-wastewater.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">This graph from San Jose, California shows how closely wastewater data (in red) tracked with covid positive tests (green) up until most people stopped testing in mid-2022. In Queensland, we do not have access to this data.</figcaption>
+</figure>
+</div>
+<p>Onuoha explains several reasons that <a href="https://github.com/MimiOnuoha/missing-datasets">data may be missing</a>. Those who could collect it lack incentives to do so, or in some cases may even want to hide or obscure it. Another possible reason is that the data in question may be of a type that resists straight-forward quantification or doesn’t fit with our current modes of collection. Her work also reminds us that data won’t solve all problems, and that in some cases missing data can function as protection for disadvantaged groups.</p>
+</section>
+<section id="decades-of-work-not-instant-magic" class="level2">
+<h2 class="anchored" data-anchor-id="decades-of-work-not-instant-magic">Decades of work, not instant magic</h2>
+<p>Some people mistakenly believe AI can just be sprinkled on a problem to achieve a magic solution, without understanding the many necessary underlying ingredients. The example of AlphaFold, whose creators won a Nobel Prize in Chemistry for their work, disproves these misconceptions. AlphaFold can predict the 3D structures of proteins with unprecedented accuracy. While clever algorithmic innovations were pivotal to AlphaFold, its success would not have been possible without a large, high-quality dataset that thousands of researchers contributed to for decades.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-24-missing-data/insulin-2ways.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">AlphaFold takes a string of amino acids (on the left) and converts it into a 3D structure (on the right)</figcaption>
+</figure>
+</div>
+<p>The construction of the dataset that made AlphaFold possible began a full 50 years earlier. The Protein Data Bank (PDB) was <a href="https://www.nature.com/articles/newbio233223b0">announced in 1971</a> as a database to store information about the 3D structures of proteins. The files were originally shared and distributed using magnetic tape data storage. Initially, just a handful of entries were added to the database each year. By 1980, there were a total of 69 entries present in the database. However, that number <a href="https://www.rcsb.org/stats/growth/growth-released-structures">grew exponentially</a>, reaching 500 entries (cumulative) by 1990, 34,000 entries by 2005, and nearly 200,000 entries by 2022. Access to the data was updated from magnetic tapes to the world wide web.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-24-missing-data/PDB-per-year.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">The number of proteins stored in PDB grew exponentially with time</figcaption>
+</figure>
+</div>
+<p>In the mid-1990s, a <a href="https://onlinelibrary.wiley.com/doi/10.1002/prot.340230303">bi-annual competition</a> known as CASP (Critical Assessment of Structure Prediction) was created, in which teams were given sequences of amino acids and asked to predict the 3D structure. The existence and quality of the PDB and CASP are what led to the creation of AlphaFold, which shattered all previous records of prediction accuracy by a large factor.</p>
+<p>AlphaFold wouldn’t have been possible without the rich data of the PDB. Machine learning engineer <a href="https://www.owlposting.com/p/wet-lab-innovations-will-lead-the">Abhishaike Mahajan writes</a>, “<em>In my opinion, what Alphafold2 pulled off — applying a clever model to a large body of pre-existing data to revolutionize a field — is something that will be extremely hard to replicate. Why? Because we’re almost out of that pre-existing data. If we had enough, sure, throw ML at it and call it a day, just as Alphafold2 did. But we don’t have that luxury anymore</em>.”</p>
+<p>Mahajan argues that <a href="https://www.owlposting.com/p/wet-lab-innovations-will-lead-the">“<em>We are running out of data</em>,”</a> and that the next big innovations of AI applied to biology will require new wet-lab techniques to collect larger quantities of different biological data types than currently possible.</p>
+</section>
+<section id="ai-projects-begin-at-the-wrong-starting-point" class="level2">
+<h2 class="anchored" data-anchor-id="ai-projects-begin-at-the-wrong-starting-point">AI projects begin at the wrong starting point</h2>
+<p>Many machine learning projects begin with an existing dataset, and ask “what can we do with this data?” However, this ignores all the data that we don’t have and ends up overlooking many important questions. The harder question is, “what are the biggest questions in your area, and what data would be useful to answering them?”</p>
+<p>In some cases, technical limitations prevent the collection of more, better, or different data. In the case of PDB and CASP, creating those datasets required large teams working for decades to produce, curate, and organize data.</p>
+<p>One thing that is holding back the application of AI to medicine is lack of the <strong>right</strong> data. It is not just that medical data may be scattered or hard to access; in many cases, the most interesting variables aren’t being measured or collected at all. Scores of useful and high impact data are not being gathered. For example, widespread medical biases often lead doctors to incorrectly dismiss the pain or physiological symptoms of patients as “anxiety” or “drug-seeking” behavior. In these cases, doctors may fail to record relevant observations or run tests that could gather valuable data. Promises about what AI can achieve with electronic health records must be tempered with the awareness that the data within is too often biased, incorrect, or missing.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-24-missing-data/med-bias-research.jpg" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption class="figure-caption">An AI analysis of electronic health records will be shaped by all the above biases in diagnosis delays, pain mismanagement, and misdiagnoses</figcaption>
+</figure>
+</div>
+<p>As another example, many people have observed that an infection was the trigger for onset of Type 1 Diabetes in themselves or their children, yet they often don’t know which type of virus caused that infection. Determining causality around this requires large longitudinal studies, which are expensive and difficult to run.</p>
+<p>AI is great at finding patterns in existing data. However, AI will not be able to solve this problem of missing and erroneous underlying data.</p>
+</section>
+<section id="asking-the-right-questions" class="level2">
+<h2 class="anchored" data-anchor-id="asking-the-right-questions">Asking the right questions</h2>
+<p>The most fundamental machine learning question, prior to the questions I mentioned above, is “what type of society do we want to live in?”</p>
+<p>When <a href="https://archive.is/OdM2b">school districts implemented a computer program</a> to automatically fire supposedly low-performing teachers, there were numerous issues with the underlying algorithm and data. One key type of data used as input was student test scores, which had often been altered due to cheating scandals by school administrators. The algorithms were also based on the dubious assumption that changes in standardized test scores were a reasonable proxy for teacher quality.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-24-missing-data/teacher-fired.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Washington Post headline about a teacher who was loved by students and parents, but fired by an algorithm</figcaption>
+</figure>
+</div>
+<p>Test scores don’t capture a teacher’s creativity, care for their students, or ingenuity. They don’t capture the challenges their particular students are facing, or how those students may grow and flourish apart from test scores.</p>
+<p>This is an example of an algorithm where there was low quality data, the wrong data, and faulty assumptions. However, even if it had been implemented differently, the whole premise would still be a terrible idea. Many of us (myself included) find the idea of a society where we use computerized algorithms to fire teachers to be dystopian. The answer to “How can we best use AI to fire teachers?” is that we shouldn’t.</p>
+</section>
+<section id="negative-spaces" class="level2">
+<h2 class="anchored" data-anchor-id="negative-spaces">Negative spaces</h2>
+<p>The decisions around which, where, and how data is collected, and who it is shared with, all exert a strong but often overlooked influence on the shape of scientific research and algorithm creation. As I dive deeper into the intersection of microbiology and machine learning, I am seeking to understand not just the data that I’m shown, but also the factors shaping its collection and the negative spaces of what is missing.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-01-24-missing-data/negative-space.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
+<figcaption class="figure-caption">Negative Space, image by Boris Thaser, Wikimedia Commons</figcaption>
+</figure>
+</div>
+<p>We are in a disturbing era, in which relevant health and safety data that we previously had access to are actively being cut off. Issues of bias and politics that dismiss the viewpoints of marginalized groups were already bad and seem to be worsening.</p>
+<p>While promises of AI improving healthcare may seem appealing, systems that ignore patient expertise risk building on faulty premises and causing more harm than good.</p>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://dl.acm.org/doi/10.1145/3351095.3372829">Lessons from archives: strategies for collecting sociocultural data in machine learning</a> by Eun Seo Jo and Timnit Gebru, on lessons machine learning practitioners could learn from the library sciences</li>
+<li><a href="https://github.com/MimiOnuoha/missing-datasets">On Missing Data Sets</a> by Mimi Onuoha</li>
+<li><a href="https://www.researchgate.net/publication/258173934_The_end_of_forgetting_Strategic_agency_beyond_the_panopticon">The end of forgetting: Strategic agency beyond the panopticon</a> by Jonah Bossewitch and Aram Sinnreich, on how information flow relates to power dynamics</li>
+<li><a href="https://rachel.fast.ai/posts/2024-02-20-ai-medicine/">“AI will cure cancer” misunderstands both AI and medicine</a> by Rachel Thomas</li>
+<li><a href="https://rachel.fast.ai/posts/2021-11-04-data-disasters/">Avoiding Data Disasters</a> by Rachel Thomas</li>
+</ul>
+<p><br><br></p>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>ethics</category>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2025-01-24-missing-data/index.html</guid>
+  <pubDate>Thu, 23 Jan 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2025-01-24-missing-data/negative-space-header.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>What AI can tell us about microscope slides</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1697,96 +1811,6 @@
   <guid>https://rachel.fast.ai/posts/2023-03-07-viruses1/index.html</guid>
   <pubDate>Mon, 06 Mar 2023 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2023-03-07-viruses1/exosomes.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>How to Remember Anything</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2023-02-21-anki/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="anki-is-a-learning-superpower" class="level2">
-<h2 class="anchored" data-anchor-id="anki-is-a-learning-superpower">Anki is a learning superpower</h2>
-<p>I have been using Anki flashcards to help me study. Anki is a free, open-source system based on the research of spaced repetition learning. I have been using this technique to study immunology, but it can be used for any subject. You make your own cards and they can include anything you like. Anki is an app available on Android, iPhone, and desktop, and it is easy to sync between your phone and computer (it is free on Android and desktop, although costs money for the iPhone). I want to explain the basics of the approach. This post is intended for people new to Anki– I will not cover power user features.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/flashcard2.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">The front and back of one of my flashcards (the graphs are screenshots I took from one of my professor’s lectures)</figcaption>
-</figure>
-</div>
-<p>Over 6 months ago, <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">I began studying immunology</a> every day. Every immunology professor I’ve watched lectures from has said that learning immunology is like learning a foreign language and that the amount of specialised jargon is intense. At first, I pulled out a notebook to write down what I wanted to remember. However, I soon decided to try out Anki flashcards instead.</p>
-</section>
-<section id="spaced-repetition-learning" class="level2">
-<h2 class="anchored" data-anchor-id="spaced-repetition-learning">Spaced Repetition Learning</h2>
-<p>In order to retain information, research shows that the best time to be quizzed about something you are learning is right before you otherwise would have forgotten it. For new information, this will be relatively soon. However, as you study a piece of information more times, you can go longer and longer before you need to be prompted about it. The other key factor in when you need to see a card again is how difficult a question is for you. If you find it easy, you can wait longer before you need to see it again, but if it’s hard, you should review it sooner. And if you got it wrong or didn’t know the answer, you should study it again in the same session. Anki handles the spacing of cards for you, keeping track of when you need to see each card again.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-streak2.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">My practice using Anki for the last 28 weeks (darker blue means more cards studied)</figcaption>
-</figure>
-</div>
-<p>You create the cards. You can write with text, include images, and/or use a fill-in-the-blank format (called cloze). I usually make flashcards as I watch video lectures, pausing the video to screenshot images I want to use or to transcribe key points I want to remember. I make cards on my laptop as I watch videos and then study on my phone.</p>
-</section>
-<section id="again-hard-good-easy" class="level2">
-<h2 class="anchored" data-anchor-id="again-hard-good-easy">Again, Hard, Good, Easy</h2>
-<p>On the back of each card, at the bottom, Anki offers you 4 choices to rate whether you need to see the card again (choose this if you got it wrong) or whether you found it hard, good, or easy. For a new card, all the choices will lead to reviewing again soon, with “easy” corresponding to 4 days. However, over time, the choices for all options get longer as you answer the card correctly more times (except for “again”, which indicates you forgot and need to restart that card). This shows the options Anki gives on 3 different cards: a brand new one, one I’ve seen a few times, and one I’ve gotten correct many times (and likely won’t need to see again for many months).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-bottom.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">The lengths of time vary based on your history with the card</figcaption>
-</figure>
-</div>
-<p>If you get a card wrong/need to see it again, Anki will reset to showing you the card with higher frequency again. Here is an old card that I missed. After I select “Again” (because I forgot an answer), these were the options the next time I see that card:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/reset.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">Resetting</figcaption>
-</figure>
-</div>
-</section>
-<section id="sustainable-over-time" class="level2">
-<h2 class="anchored" data-anchor-id="sustainable-over-time">Sustainable over time</h2>
-<p>Since you will see older cards less and less often (assuming you are getting them mostly correct), the number of Anki cards you need to do each day will decline with time if you don’t add more cards. This makes Anki feel very sustainable to pick up, and I have found a rhythm around how many new cards I can add each day, while keeping the time I spend on Anki relatively constant. <strong>It is reassuring to know that as long as I keep up on my daily cards, I will be able to retain the information I am learning.</strong></p>
-<p>For instance, I can look at my stats on Anki and see that today I did 114 cards, but for each day going forward I will have less and less (this graph doesn’t take into account that I plan to continue adding new cards each day).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-02-21-anki/anki-stats.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">How many cards I will have each day going forward if I stop adding new cards</figcaption>
-</figure>
-</div>
-</section>
-<section id="for-all-ages-and-all-subjects" class="level2">
-<h2 class="anchored" data-anchor-id="for-all-ages-and-all-subjects">For all ages and all subjects</h2>
-<p>My daughter is currently taking <a href="https://biochemistryliteracyforkids.com/">Biochemistry Literacy for Kids</a>, a biochem course aimed at elementary aged children. The teacher suggested that the kids should memorise the 20 basic amino acids. While my daughter was initially unsure if she’d be able to do it, she had fun making up silly stories about each one (based on their structure and name), only spends a few minutes on Anki each day, and now has a strong sense of pride that she knows the amino acids (and her parents don’t).</p>
-<p>My partner Jeremy used Anki <a href="https://vimeo.com/40265872">to study Chinese characters</a>. After 6 months of study, when he went to Beijing to attend an in-person Chinese school, he tested into a class where the other students had years of practice.</p>
-</section>
-<section id="combining-with-other-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="combining-with-other-techniques">Combining with other techniques</h2>
-<p>Anki can (and should) be combined with other memory techniques, such as creating short stories that are funny, surprising, sexy, violent, unexpected, or related to family, friends, and celebrities (all these are attributes proven to make things more memorable).</p>
-</section>
-<section id="other-resources-on-effective-learning-and-memory" class="level2">
-<h2 class="anchored" data-anchor-id="other-resources-on-effective-learning-and-memory">Other Resources on Effective Learning and Memory</h2>
-<p>Many people incorrectly believe that memory is purely a fixed talent that you either have or you don’t, but there are a number of techniques proven to help make both memory and learning more effective. For more on how to learn effectively, here are several books, videos, and courses:</p>
-<ul>
-<li><a href="https://www.booktopia.com.au/moonwalking-with-einstein-joshua-foer/book/9780143120537.html">Moonwalking with Einstein: The Art and Science of Remembering Everything</a>, by Joshua Foer</li>
-<li><a href="https://www.penguin.com.au/books/remember-remember-9780141903545">Remember, Remember</a>, by world memory champion Ed Cooke</li>
-<li><a href="https://barbaraoakley.com/books/a-mind-for-numbers/">A Mind For Numbers: How to Excel at Math and Science (Even If You Flunked Algebra), by Barbara Oakley</a></li>
-<li><a href="https://vimeo.com/40265872">Jeremy Howard’s talk on techniques for learning Chinese</a></li>
-<li><a href="https://www.coursera.org/learn/learning-how-to-learn">Coursera class on Learning How to Learn</a>, taught by Barbara Oakley. This is one of the most popular Coursera courses of all time.</li>
-<li><a href="https://rachel.fast.ai/posts/2022-03-15-math-person/">There’s no such thing as not a math person</a>: my post about learning math and myths of innate ability</li>
-</ul>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>advice</category>
-  <category>education</category>
-  <guid>https://rachel.fast.ai/posts/2023-02-21-anki/index.html</guid>
-  <pubDate>Mon, 20 Feb 2023 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2023-02-21-anki/stats.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
