@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2025-01-27">
+<meta name="description" content="A friendly introduction to Foundation Models for Computational Pathology">
+
+<title>Rachel Thomas, PhD - What AI can tell us about microscope slides</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Rachel Thomas, PhD - What AI can tell us about microscope slides">
+<meta property="og:description" content="an AI researcher going back to school for immunology">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2025-01-27-cpath-foundation/gleason.jpg">
+<meta property="og:site-name" content="Rachel Thomas, PhD">
+<meta name="twitter:title" content="Rachel Thomas, PhD - What AI can tell us about microscope slides">
+<meta name="twitter:description" content="an AI researcher going back to school for immunology">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2025-01-27-cpath-foundation/gleason.jpg">
+<meta name="twitter:creator" content="@math_rachel">
+<meta name="twitter:site" content="@math_rachel">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/playlist?list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6" rel="" target=""><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../archive.html" rel="" target="">
+ <span class="menu-text">Archive</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">What AI can tell us about microscope slides</h1>
+                  <div>
+        <div class="description">
+          A friendly introduction to Foundation Models for Computational Pathology
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">science</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 27, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<!--Zoho Campaigns Web-Optin Form's Header Code Starts Here-->
+
+<script type="text/javascript" src="https://zcmp-pd.maillist-manage.com.au/js/optin.min.js" onload="setupSF('sf3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7','ZCFORMVIEW',false,'light',false,'0')"></script>
+<script type="text/javascript">
+    function runOnFormSubmit_sf3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7(th){
+        /*Before submit, if you want to trigger your event, "include your code here"*/
+    };
+</script>
+
+<style>
+.quick_form_8_css * {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word
+}
+@media only screen and (max-width: 600px) {.quick_form_8_css[name="SIGNUP_BODY"] { width: 100% !important; min-width: 100% !important; margin: 0px auto !important; padding: 0px !important } .SIGNUP_FLD { width: 90% !important; margin: 10px 5% !important; padding: 0px !important } .SIGNUP_FLD input { margin: 0 !important; border-radius: 25px !important } }
+</style>
+
+<!--Zoho Campaigns Web-Optin Form's Header Code Ends Here--><!--Zoho Campaigns Web-Optin Form Starts Here-->
+
+<div id="sf3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7" data-type="signupform" style="opacity: 1;">
+    <div id="customForm">
+        <div class="quick_form_8_css" style="background-color: rgb(255, 255, 255); z-index: 2; font-family: Arial; border-width: 1px; border-color: rgb(235, 235, 235); overflow: hidden; width: 202px; height: 160px; border-style: none" name="SIGNUP_BODY">
+            <div>
+                <div style="font-family: Arial; font-weight: bold; color: rgb(100, 100, 100); text-align: left; padding: 10px 20px 5px; width: 100%; display: block; font-size: 13px; height: 24px" id="SIGNUP_HEADING">Receive new blog posts:</div>
+                <div style="position:relative;">
+                    <div id="Zc_SignupSuccess" style="display:none;position:absolute;margin-left:4%;width:90%;background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154);  margin-top: 10px;margin-bottom:10px;word-break:break-all">
+                        
+<table data-quarto-postprocess="true" width="100%" data-cellpadding="0" data-cellspacing="0" data-border="0" class="table">
+<tbody>
+<tr class="odd">
+<td width="10%"><img src="https://zcmp-pd.maillist-manage.com.au/images/challangeiconenable.jpg" class="successicon img-fluid" data-align="absmiddle"></td>
+<td><span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px;word-break:break-word">&nbsp;&nbsp;Thank you for Signing Up</span></td>
+</tr>
+</tbody>
+</table>
+
+
+                    </div>
+                </div>
+                <form method="POST" id="zcampaignOptinForm" style="margin: 0px; width: 100%" action="https://zcmp-pd.maillist-manage.com.au/weboptin.zc" target="_zcSignup">
+                    <div style="background-color: rgb(255, 235, 232); padding: 10px; color: rgb(210, 0, 0); font-size: 11px; margin: 20px 10px 0px; border: 1px solid rgb(255, 217, 211); opacity: 1; display: none" id="errorMsgDiv">Please correct the marked field(s) below.</div>
+                    <div style="position: relative; margin: 10px; height: 30px; display: inline-block; width: 176px" class="SIGNUP_FLD">
+                        <div id="Zc_SignupSuccess" style="position: absolute; width: 87%; background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154); margin-bottom: 10px; word-break: break-all; opacity: 1; display: none">
+                            <div style="width: 20px; padding: 5px; display: table-cell">
+                                <img class="successicon" src="https://campaigns.zoho.com/images/challangeiconenable.jpg" style="width: 20px">
+                            </div>
+                            <div style="display: table-cell">
+                                <span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px; line-height: 30px; display: block"></span>
+                            </div>
+                        </div>
+                        <input type="text" style="font-size: 14px; border: 1px solid rgb(157, 155, 155); border-radius: 0px; width: 100%; height: 100%; z-index: 4; outline: none; padding: 5px 10px; color: rgb(100, 100, 100); text-align: left; font-family: Arial; background-color: rgb(255, 255, 255); box-sizing: border-box" placeholder="Email" changeitem="SIGNUP_FORM_FIELD" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL">
+                    </div>
+                    <div style="position: relative; margin: 10px; width: 100px; height: 30px; text-align: left; display: inline-block" class="SIGNUP_FLD">
+                        <input type="button" style="text-align: center; border-radius: 5px; width: 100%; height: 100%; z-index: 5; border: 0px; color: rgb(255, 255, 255); cursor: pointer; outline: none; font-size: 14px; background-color: rgb(66, 148, 118); margin: 0px 0px 0px -5px" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Subscribe">
+                    </div>
+                    <input type="hidden" id="fieldBorder" value="">
+                    <input type="hidden" id="submitType" name="submitType" value="optinCustomView">
+                    <input type="hidden" id="emailReportId" name="emailReportId" value="">
+                    <input type="hidden" id="formType" name="formType" value="QuickForm">
+                    <input type="hidden" name="zx" id="cmpZuid" value="11a17553b1">
+                    <input type="hidden" name="zcvers" value="2.0">
+                    <input type="hidden" name="oldListIds" id="allCheckedListIds" value="">
+                    <input type="hidden" id="mode" name="mode" value="OptinCreateView">
+                    <input type="hidden" id="zcld" name="zcld" value="156971d471c7bcf">
+                    <input type="hidden" id="zctd" name="zctd" value="156971d471c7b09">
+                    <input type="hidden" id="document_domain" value="">
+                    <input type="hidden" id="zc_Url" value="zcmp-pd.maillist-manage.com.au">
+                    <input type="hidden" id="new_optin_response_in" value="2">
+                    <input type="hidden" id="duplicate_optin_response_in" value="0">
+                    <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
+                    <input type="hidden" id="zc_formIx" name="zc_formIx" value="3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7">
+                    <input type="hidden" id="viewFrom" value="URL_ACTION">
+                    <span style="display: none" id="dt_CONTACT_EMAIL">1,true,6,Contact Email,2</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <img src="https://zcmp-pd.maillist-manage.com.au/images/spacer.gif" id="refImage" onload="referenceSetter(this)" style="display:none;">
+</div>
+<input type="hidden" id="signupFormType" value="QuickForm_Horizontal">
+<div id="zcOptinOverLay" oncontextmenu="return false" style="display:none;text-align: center; background-color: rgb(0, 0, 0); opacity: 0.5; z-index: 100; position: fixed; width: 100%; top: 0px; left: 0px; height: 988px;"></div>
+<div id="zcOptinSuccessPopup" style="display:none;z-index: 9999;width: 800px; height: 40%;top: 84px;position: fixed; left: 26%;background-color: #FFFFFF;border-color: #E6E6E6; border-style: solid; border-width: 1px;  box-shadow: 0 1px 10px #424242;padding: 35px;">
+    <span style="position: absolute;top: -16px;right:-14px;z-index:99999;cursor: pointer;" id="closeSuccess">
+        <img src="https://zcmp-pd.maillist-manage.com.au/images/videoclose.png">
+    </span>
+    <div id="zcOptinSuccessPanel"></div>
+</div>
+
+<!--Zoho Campaigns Web-Optin Form Ends Here-->
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cpath-foundation-models" id="toc-cpath-foundation-models" class="nav-link active" data-scroll-target="#cpath-foundation-models">CPath foundation models</a></li>
+  <li><a href="#learning-the-vocab" id="toc-learning-the-vocab" class="nav-link" data-scroll-target="#learning-the-vocab">Learning the Vocab</a></li>
+  <li><a href="#so-many-tasks" id="toc-so-many-tasks" class="nav-link" data-scroll-target="#so-many-tasks">So Many Tasks!</a>
+  <ul class="collapse">
+  <li><a href="#task-prostate-cancer-cell-grading" id="toc-task-prostate-cancer-cell-grading" class="nav-link" data-scroll-target="#task-prostate-cancer-cell-grading">Task: prostate cancer cell grading</a></li>
+  <li><a href="#task-identifying-early-signs-of-rejection-after-a-heart-transplant" id="toc-task-identifying-early-signs-of-rejection-after-a-heart-transplant" class="nav-link" data-scroll-target="#task-identifying-early-signs-of-rejection-after-a-heart-transplant">Task: identifying early signs of rejection after a heart transplant</a></li>
+  <li><a href="#task-genetic-mutations-in-cancer" id="toc-task-genetic-mutations-in-cancer" class="nav-link" data-scroll-target="#task-genetic-mutations-in-cancer">Task: Genetic Mutations in Cancer</a></li>
+  </ul></li>
+  <li><a href="#we-need-more-data" id="toc-we-need-more-data" class="nav-link" data-scroll-target="#we-need-more-data">We need more data</a></li>
+  <li><a href="#different-scales" id="toc-different-scales" class="nav-link" data-scroll-target="#different-scales">Different scales</a></li>
+  <li><a href="#going-forward" id="toc-going-forward" class="nav-link" data-scroll-target="#going-forward">Going Forward</a></li>
+  <li><a href="#related-reading" id="toc-related-reading" class="nav-link" data-scroll-target="#related-reading">Related Reading:</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><em>This article was originally posted on <a href="https://rachel.fast.ai/">rachel.fast.ai</a>, where Rachel has been writing about her journey as an AI researcher returning to school for immunology.</em></p>
+<p>The lavender images below show <a href="https://pubmed.ncbi.nlm.nih.gov/31226662/">breast tissue</a>. There are many questions doctors could want to answer using these images: They could want to know whether there are tumors present or not. If there is a tumor, doctors would want to classify its stage, make predictions about how likely the patient is to respond to treatment, and to detect whether the tumor has spread from another organ.</p>
+<p>All of these are questions which people are now tackling with machine learning. They fall within the area of <a href="https://www.nature.com/articles/s41374-020-00514-0"><strong>computational pathology</strong></a>, often abbreviated <strong>CPath</strong>. In the past year, two CPath AI models were released which achieved state-of-the-art results. Here I will discuss an introduction to this field, what these models do, and what some key challenges are going forward.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="bach.jpg" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption class="figure-caption">Breast tissue images from the BACH: Grand challenge on breast cancer histology</figcaption>
+</figure>
+</div>
+<section id="cpath-foundation-models" class="level2">
+<h2 class="anchored" data-anchor-id="cpath-foundation-models">CPath foundation models</h2>
+<p>There is a powerful idea about how to make more accurate CPath models. Rather than train a model on a single type of tissue and a single task (e.g.&nbsp;identifying cancer in breast tissue), train a model on images of tissue from many different organs (breasts, lymph nodes, lungs, prostate, heart,…) and on multiple different tasks (recognizing cancer, determining the stage and subtype of the cancer, segmenting cells, and predicting treatment outcomes). Patterns learned from one dataset or one task are likely to generalize to others.</p>
+<p>Such models are known as CPath <a href="https://en.wikipedia.org/wiki/Foundation_model"><strong>foundation models</strong></a>. In general, a <em>foundation model</em> is a machine learning model which is trained on a sufficiently diverse large dataset which can then be adapted for a range of downstream tasks. This idea is commonly used in the area of language models such as Chat-GPT and Claude.ai. Language foundation models are trained on many types of language tasks and intended to generalize across different corpuses of text (e.g.&nbsp;wikipedia, reddit posts, academic papers, online conversations, news articles, and more). ImageNet models trained to recognize a huge variety of different pictures often serve as foundation models for images. The success of foundation models within the areas of language and more general images is a key reason why we might expect pathology foundation models to be useful too.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="types-of-tissue.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Tissues are groups of cells with similar structure and function. Different types of tissue within the human body include nervous, muscle, connective, and epithelial tissue. Image: Wikimedia</figcaption>
+</figure>
+</div>
+<p>Two notable CPath foundation models were released in 2024: <a href="https://www.nature.com/articles/s41586-024-07441-w">Prov-GigaPath</a> and <a href="https://www.nature.com/articles/s41591-024-02857-3">UNI</a>. Both models achieved state-of-the-art performance on dozens of pathology tasks (although they were not directly compared to one another). Another <a href="https://arxiv.org/abs/2404.15217">relevant paper</a> (from Kaiko.ai) studied the impact of dataset size and model size on CPath model performance.</p>
+</section>
+<section id="learning-the-vocab" class="level2">
+<h2 class="anchored" data-anchor-id="learning-the-vocab">Learning the Vocab</h2>
+<p>Medicine is full of jargon and specialized vocabulary. Pathology refers to the study of disease. It is a broad field, and can include everything from dissecting dead bodies to analyzing blood samples. One key focus of <em>computational pathology</em> is analyzing and interpreting <em>whole slide images (WSIs)</em> and in some cases combined with accompanying meta-data about a patient. Whole slide images refers to the complete microscope slide, although in many cases the region of interest (such as particular cancerous or inflamed cells) may be much smaller, just occupying a subset of the slide.</p>
+<p><em>Machine learning (ML)</em> is a subfield of Artificial intelligence (AI) which involves learning from past data, and is increasingly being used with great success in pathology. The focus of most computational pathology ML models is on images of tissue, on microscope slides. That is what we will focus on in this post as well.</p>
+</section>
+<section id="so-many-tasks" class="level2">
+<h2 class="anchored" data-anchor-id="so-many-tasks">So Many Tasks!</h2>
+<p>There are many different benchmarks that CPath models can be tested on. These involve numerous datasets: related to different areas of the body, with different sizes, and with different purposes. They also involve a variety of tasks, including binary classification, image segmentation, and outcome prediction. Prov-GigaPath attained state-of-the-art performance on 25 out of the 26 tasks it was evaluated on and UNI attained state-of-the-art performance on 34 different tasks. Here I will give examples of just 3 of these tasks.</p>
+<section id="task-prostate-cancer-cell-grading" class="level3">
+<h3 class="anchored" data-anchor-id="task-prostate-cancer-cell-grading">Task: prostate cancer cell grading</h3>
+<p>In the 1960s, the pathologist Dr.&nbsp;Donald Gleason came up with a grading scale for rating cells as they progressed from normal to prostate cancer. The Gleason Grading system is still widely used and is considered a powerful predictor of how prostate cancer patients will fare. A major medical image conference (MICCAI) <a href="https://aggc22.grand-challenge.org/AGGC22/">held a competition in 2022</a> for researchers to create algorithms to determine the Gleason grades when given images of prostate tissue.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gleason.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Examples of UNI predictions of Gleason grades for a section of prostate tissue. Figure 3b from the UNI paper</figcaption>
+</figure>
+</div>
+<p>The prostate tissue is shown in pink, and segments have been colored in blocks based on where they fall on the Gleason scale.</p>
+</section>
+<section id="task-identifying-early-signs-of-rejection-after-a-heart-transplant" class="level3">
+<h3 class="anchored" data-anchor-id="task-identifying-early-signs-of-rejection-after-a-heart-transplant">Task: identifying early signs of rejection after a heart transplant</h3>
+<p>Rejection is the main cause of mortality in patients who have received a heart transplant. Since the early stages of rejection can be asymptomatic, it is standard for patients to receive frequent biopsies for 1-2 years following a transplant. These are known as endomyocardial biopsies (EMB), since they remove a small sample of tissue from the inner lining (endo) of the heart (cardial) muscle (myo). Accurately interpreting the results of these biopsies is a key question. Underestimating the chance of rejection could lead to dangerous delays in treatment, but overestimating could lead to alarm and unnecessary follow-ups or treatment. Assessment of the sampled tissue by experienced pathologists has higher variability than many other tasks, such as cancer diagnosis. Deep learning is being used to tackle this task, in models such as <a href="https://www.nature.com/articles/s41591-022-01709-2">Cardiac Rejection Assessment Neural Estimator (CRANE)</a> and the CPath foundation model UNI.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cardiac-tissue-zoom.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Each row shows a different sample of cardiac tissue, with a different medical issue. On the far left are the whole slide images, then zoomed in at higher resolution on a key Region of Interest (ROI). On the far right is a heat map for the most zoomed in area showing which features the algorithm has identified as significant. Figure 3 from the CRANE paper.</figcaption>
+</figure>
+</div>
+</section>
+<section id="task-genetic-mutations-in-cancer" class="level3">
+<h3 class="anchored" data-anchor-id="task-genetic-mutations-in-cancer">Task: Genetic Mutations in Cancer</h3>
+<p>For several common genetic mutations in tumors, there are <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9012285/">specific drugs known to target those mutations</a>. This has a direct application for clinical treatment. Since genetic mutations can change the form and function of cells, it is reasonable to expect that this information could be deduced from images of the cancer cells. Deep learning models have been built to identify genetic mutations from tissue slides. The benefits of using a computational approach are that it can be scaled as an increasing number of relevant genetic mutations and molecular biomarkers are being discovered. <a href="https://www.nature.com/articles/s43018-020-0087-6">Task-specific models</a> have been built for this, and this is one of the tasks that foundation models can be tested on.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cancer-mutations.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Different types of cancer listed along the y-axis and 20 common genetic mutations listed on the y-axis. Figure 1D from Kather, 2020.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="we-need-more-data" class="level2">
+<h2 class="anchored" data-anchor-id="we-need-more-data">We need more data</h2>
+<p>One key challenge in the area of CPath foundation models is gathering enough training data. <a href="https://www.cancer.gov/ccg/research/genome-sequencing/tcga">The Cancer Genome Atlas (TCGA)</a> was an ambitious project launched in 2006 by the National Cancer Institute in the USA. Over a 12 year period, samples were collected from over 11,000 patients of 33 different cancer types, and all this data was made publicly available. While this is a rich dataset and a useful resource, all 3 papers we’ve looked at concluded that TCGA is not large enough for effective foundation models. In addition to limited data size, TCGA also has limited diversity, consisting mostly of slides from the primary site of cancer, but not metastasized cancers or different types of tissues.</p>
+<p>Researchers at Kaiko.ai <a href="https://arxiv.org/abs/2404.15217">tested the impact of scaling</a> both the size of their model and the size of the training dataset. While they found limited need to scale model size beyond a certain point, they found that larger datasets continued to lead to increased performance. They concluded that TCGA was likely not large enough and shared their plans to build a larger training set, and are now partnering with cancer centers across Europe to create a dataset for their model.</p>
+<p>The researchers behind two other CPath foundation models reached the same conclusion about data set size, and gathered massive datasets to train their models. This required partnering with healthcare centers. <a href="https://www.nature.com/articles/s41586-024-07441-w">Prov-GigaPath</a>, a model created by Microsoft Research and Providence Genomics involved data from 30,000 patients across 28 cancer centers (which are part of Providence Healthcare company). <a href="https://www.nature.com/articles/s41591-024-02857-3">UNI</a>, a cPath model created by a team at Harvard, MIT, and the Broad Institute, involved the creation of the Mass-100K: a dataset with over 100K whole slide images across 20 tissue types collected from Mass General Hospital, Brigham &amp; Women’s Hospital, and Genotype-Tissue Expression (GTEx) consortium.</p>
+<p>These partnerships and curation of training datasets are currently a crucial component of building CPath foundation models. Curating datasets carefully poses many challenges as well. Combining data from different sources, which often use different protocols for how slides are sampled and prepared, can introduce significant biases.</p>
+</section>
+<section id="different-scales" class="level2">
+<h2 class="anchored" data-anchor-id="different-scales">Different scales</h2>
+<p>CPath foundation models face the difficulty of capturing both local patterns (that show up in a small tile within a slide) and global patterns across the whole slide. Many tiny tiles are found within a slide.</p>
+<p>Some models, such as the <a href="https://arxiv.org/abs/2206.02647">Hierarchical Image Pyramid Transformer</a> (from several of the same authors as UNI), use hierarchical approaches to deal with these multiple scales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hierarchical.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Hierarchical Structure of Whole-Slide Images, Figure 1 from Chen, et al, 2020</figcaption>
+</figure>
+</div>
+<p>Other models, such as Prov-GigaPath, treat the tiles as tokens, encoding both the tiles and the slide as a whole as model inputs. Prov-GigaPath uses both a slide encoder and a tile encoder to take into account these two different scales.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="slides-prov-gigapath.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Treating slides as tokens, Figure 1a from the Prov-GigaPath paper</figcaption>
+</figure>
+</div>
+<p>In pathology clinics, diagnosis and treatment decisions are often made at the patient level, whereas CPath models are often highly focused on regions of interest. Accommodating the multiple relevant scales (small tiles, whole slides, and patient-level) for pathology is a consideration that CPath models need to balance.</p>
+</section>
+<section id="going-forward" class="level2">
+<h2 class="anchored" data-anchor-id="going-forward">Going Forward</h2>
+<p>It is still early in the world of CPath and there are many growth opportunities, including the continued need for large and diverse datasets, ways to further optimize model training, tasks which have previously received less focus, and the difficulties of integrating models into clinical work. As the <a href="https://arxiv.org/abs/2404.15217">authors of the kaiko.ai paper</a> wrote, “<em>We are still at the very beginning of developing a truly foundational pathology foundation model.</em>” It is a hopeful sign that these models achieve state-of-the-art results on dozens of benchmarks, but it still remains to be seen when and how they will be used in clinical settings.</p>
+</section>
+<section id="related-reading" class="level2">
+<h2 class="anchored" data-anchor-id="related-reading">Related Reading:</h2>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-07-24-neural-nets/">The Most Common and Useful Neural Nets</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">Using AI to Discover New Antibiotics</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-11-20-ai-immunology/">AI and Immunology</a></li>
+</ul>
+<p>You can subscribe to be notified of Rachel’s microbiology blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="racheltho/rachel-blog" data-repo-id="R_kgDOIxf7pQ" data-category="Announcements" data-category-id="DIC_kwDOIxf7pc4CcEZ1" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
