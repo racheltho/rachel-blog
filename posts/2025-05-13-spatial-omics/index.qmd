@@ -1,8 +1,8 @@
 ---
 title: "Will gene sequencing finally prove its worth?"
 date: "2025-05-13"
-image: "/posts/2025-05-13-spatial-omics/legos.jpg"
-description: "DNA sequencing hasn’t lived up to the hype. Can newer technologies address its shortcomings?"
+image: "/posts/2025-05-13-spatial-omics/time-94-99.jpg"
+description: "DNA sequencing hasn’t lived up to the hype (so far). Can newer technologies address its shortcomings?"
 author: "Rachel Thomas"
 categories: [science]
 toc: true
