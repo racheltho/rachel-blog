@@ -20,16 +20,17 @@ about:
 
 :::{#using-template}
 
-MS Microbiology-Immunology student and cofounder of fast.ai
+Microbiology PhD student and Cofounder of fast.ai
+
+Now: focused on the microbiome, autoimmune disease, type 1 diabetes, multi-omics, and machine learning
 
 Past: professor & director of University of San Francisco Center for Applied Data Ethics, data scientist, one of Forbes 20 Incredible Women in AI, early engineer at Uber, PhD in mathematics from Duke University
 
-Interests: <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a> 
+[//]: #Areas: <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a> 
 
-Current Location: Brisbane, Australia
+Location: Brisbane, Australia
 
 :::
-
 <h3 id="mathbio">Mathematical Biology and AI in Medicine</h3>
 
 - [A Mathematical Model of Glutathione Metabolism](https://tbiomed.biomedcentral.com/articles/10.1186/1742-4682-5-8), Journal of Theoretical Biology and Medical Modeling
