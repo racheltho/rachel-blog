@@ -55,7 +55,7 @@
 <section id="the-errors" class="level2">
 <h2 class="anchored" data-anchor-id="the-errors">The Errors</h2>
 <p>The Transformer model in the Nature Communications paper made hundreds of “novel” predictions that are almost certainly erroneous. The paper had followed a standard methodology of evaluating performance on a held-out test set, and did quite well on that (although later investigation suggests there may have been <a href="https://www.kaggle.com/code/alexisbcook/data-leakage">data leakage</a>). The results claimed for enzymes where no ground truth is known were full of errors.</p>
-<p>For instance, the gene E. coli YjhQ was predicted to be a mycothiol synthase, but mycothiol is not synthesized by E. coli at all! The gene yciO, which evolved from the gene TsaC, had already been shown a decade earlier <em>in vivo</em> to not have the same function as TsaC, yet the Nature Communications paper concluded it did have the same function.</p>
+<p>For instance, the gene <em>E. coli</em> YjhQ was predicted to be a mycothiol synthase, but mycothiol is not synthesized by <em>E. coli</em> at all! The gene yciO, which evolved from the gene TsaC, had already been shown a decade earlier <em>in vivo</em> to not have the same function as TsaC, yet the Nature Communications paper concluded it did have the same function.</p>
 <p>Of the 450 “novel” results given in the paper, 135 of these results were not novel at all; they were already listed in the online database UniProt. Another 148 showed unreasonably high levels of repetition, with the same very specific enzyme functions reappearing up to 12 times for genes of <em>E. coli</em>, which biologically implausible.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -111,8 +111,8 @@
 <section id="related-reading" class="level2">
 <h2 class="anchored" data-anchor-id="related-reading">Related Reading:</h2>
 <ul>
+<li><a href="https://rachel.fast.ai/posts/2019-09-24-metrics/">The problem with metrics is a big problem for AI</a></li>
 <li><a href="https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/">Gaps and Risks of AI in the Life Sciences</a></li>
-<li><a href="https://rachel.fast.ai/posts/2024-11-20-ai-immunology/">AI and Immunology</a></li>
 <li><a href="https://rachel.fast.ai/posts/2024-02-20-ai-medicine/">“AI will cure cancer” misunderstands both AI and medicine</a></li>
 </ul>
 <p><br></p>
