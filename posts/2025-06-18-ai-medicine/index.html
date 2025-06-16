@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rachel Thomas">
+<meta name="dcterms.date" content="2025-06-18">
+<meta name="description" content="The risks of machine learning mirror existing failures in the medical system.">
+
+<title>Rachel Thomas, PhD - AI &amp; medicine: promise &amp; peril</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Rachel Thomas, PhD - AI &amp; medicine: promise &amp; peril">
+<meta property="og:description" content="an AI researcher going back to school for immunology">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2025-06-18-ai-medicine/denied-ai-thumbnail.jpg">
+<meta property="og:site-name" content="Rachel Thomas, PhD">
+<meta name="twitter:title" content="Rachel Thomas, PhD - AI &amp; medicine: promise &amp; peril">
+<meta name="twitter:description" content="an AI researcher going back to school for immunology">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2025-06-18-ai-medicine/denied-ai-thumbnail.jpg">
+<meta name="twitter:creator" content="@math_rachel">
+<meta name="twitter:site" content="@math_rachel">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Rachel Thomas, PhD</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/math_rachel" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/rachel-thomas-942a7923/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/playlist?list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6" rel="" target=""><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../archive.html" rel="" target="">
+ <span class="menu-text">Archive</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">AI &amp; medicine: promise &amp; peril</h1>
+                  <div>
+        <div class="description">
+          The risks of machine learning mirror existing failures in the medical system.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">ethics</div>
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">science</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Rachel Thomas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 18, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<!--Zoho Campaigns Web-Optin Form's Header Code Starts Here-->
+
+<script type="text/javascript" src="https://zcmp-pd.maillist-manage.com.au/js/optin.min.js" onload="setupSF('sf3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7','ZCFORMVIEW',false,'light',false,'0')"></script>
+<script type="text/javascript">
+    function runOnFormSubmit_sf3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7(th){
+        /*Before submit, if you want to trigger your event, "include your code here"*/
+    };
+</script>
+
+<style>
+.quick_form_8_css * {
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word
+}
+@media only screen and (max-width: 600px) {.quick_form_8_css[name="SIGNUP_BODY"] { width: 100% !important; min-width: 100% !important; margin: 0px auto !important; padding: 0px !important } .SIGNUP_FLD { width: 90% !important; margin: 10px 5% !important; padding: 0px !important } .SIGNUP_FLD input { margin: 0 !important; border-radius: 25px !important } }
+</style>
+
+<!--Zoho Campaigns Web-Optin Form's Header Code Ends Here--><!--Zoho Campaigns Web-Optin Form Starts Here-->
+
+<div id="sf3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7" data-type="signupform" style="opacity: 1;">
+    <div id="customForm">
+        <div class="quick_form_8_css" style="background-color: rgb(255, 255, 255); z-index: 2; font-family: Arial; border-width: 1px; border-color: rgb(235, 235, 235); overflow: hidden; width: 202px; height: 160px; border-style: none" name="SIGNUP_BODY">
+            <div>
+                <div style="font-family: Arial; font-weight: bold; color: rgb(100, 100, 100); text-align: left; padding: 10px 20px 5px; width: 100%; display: block; font-size: 13px; height: 24px" id="SIGNUP_HEADING">Receive new blog posts:</div>
+                <div style="position:relative;">
+                    <div id="Zc_SignupSuccess" style="display:none;position:absolute;margin-left:4%;width:90%;background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154);  margin-top: 10px;margin-bottom:10px;word-break:break-all">
+                        
+<table data-quarto-postprocess="true" width="100%" data-cellpadding="0" data-cellspacing="0" data-border="0" class="table">
+<tbody>
+<tr class="odd">
+<td width="10%"><img src="https://zcmp-pd.maillist-manage.com.au/images/challangeiconenable.jpg" class="successicon img-fluid" data-align="absmiddle"></td>
+<td><span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px;word-break:break-word">&nbsp;&nbsp;Thank you for Signing Up</span></td>
+</tr>
+</tbody>
+</table>
+
+
+                    </div>
+                </div>
+                <form method="POST" id="zcampaignOptinForm" style="margin: 0px; width: 100%" action="https://zcmp-pd.maillist-manage.com.au/weboptin.zc" target="_zcSignup">
+                    <div style="background-color: rgb(255, 235, 232); padding: 10px; color: rgb(210, 0, 0); font-size: 11px; margin: 20px 10px 0px; border: 1px solid rgb(255, 217, 211); opacity: 1; display: none" id="errorMsgDiv">Please correct the marked field(s) below.</div>
+                    <div style="position: relative; margin: 10px; height: 30px; display: inline-block; width: 176px" class="SIGNUP_FLD">
+                        <div id="Zc_SignupSuccess" style="position: absolute; width: 87%; background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154); margin-bottom: 10px; word-break: break-all; opacity: 1; display: none">
+                            <div style="width: 20px; padding: 5px; display: table-cell">
+                                <img class="successicon" src="https://campaigns.zoho.com/images/challangeiconenable.jpg" style="width: 20px">
+                            </div>
+                            <div style="display: table-cell">
+                                <span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px; line-height: 30px; display: block"></span>
+                            </div>
+                        </div>
+                        <input type="text" style="font-size: 14px; border: 1px solid rgb(157, 155, 155); border-radius: 0px; width: 100%; height: 100%; z-index: 4; outline: none; padding: 5px 10px; color: rgb(100, 100, 100); text-align: left; font-family: Arial; background-color: rgb(255, 255, 255); box-sizing: border-box" placeholder="Email" changeitem="SIGNUP_FORM_FIELD" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL">
+                    </div>
+                    <div style="position: relative; margin: 10px; width: 100px; height: 30px; text-align: left; display: inline-block" class="SIGNUP_FLD">
+                        <input type="button" style="text-align: center; border-radius: 5px; width: 100%; height: 100%; z-index: 5; border: 0px; color: rgb(255, 255, 255); cursor: pointer; outline: none; font-size: 14px; background-color: rgb(66, 148, 118); margin: 0px 0px 0px -5px" name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Subscribe">
+                    </div>
+                    <input type="hidden" id="fieldBorder" value="">
+                    <input type="hidden" id="submitType" name="submitType" value="optinCustomView">
+                    <input type="hidden" id="emailReportId" name="emailReportId" value="">
+                    <input type="hidden" id="formType" name="formType" value="QuickForm">
+                    <input type="hidden" name="zx" id="cmpZuid" value="11a17553b1">
+                    <input type="hidden" name="zcvers" value="2.0">
+                    <input type="hidden" name="oldListIds" id="allCheckedListIds" value="">
+                    <input type="hidden" id="mode" name="mode" value="OptinCreateView">
+                    <input type="hidden" id="zcld" name="zcld" value="156971d471c7bcf">
+                    <input type="hidden" id="zctd" name="zctd" value="156971d471c7b09">
+                    <input type="hidden" id="document_domain" value="">
+                    <input type="hidden" id="zc_Url" value="zcmp-pd.maillist-manage.com.au">
+                    <input type="hidden" id="new_optin_response_in" value="2">
+                    <input type="hidden" id="duplicate_optin_response_in" value="0">
+                    <input type="hidden" name="zc_trackCode" id="zc_trackCode" value="ZCFORMVIEW">
+                    <input type="hidden" id="zc_formIx" name="zc_formIx" value="3zdfb6745d9acad780281060170790e51ac477370600802a15ea307e524ccb10b7">
+                    <input type="hidden" id="viewFrom" value="URL_ACTION">
+                    <span style="display: none" id="dt_CONTACT_EMAIL">1,true,6,Contact Email,2</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <img src="https://zcmp-pd.maillist-manage.com.au/images/spacer.gif" id="refImage" onload="referenceSetter(this)" style="display:none;">
+</div>
+<input type="hidden" id="signupFormType" value="QuickForm_Horizontal">
+<div id="zcOptinOverLay" oncontextmenu="return false" style="display:none;text-align: center; background-color: rgb(0, 0, 0); opacity: 0.5; z-index: 100; position: fixed; width: 100%; top: 0px; left: 0px; height: 988px;"></div>
+<div id="zcOptinSuccessPopup" style="display:none;z-index: 9999;width: 800px; height: 40%;top: 84px;position: fixed; left: 26%;background-color: #FFFFFF;border-color: #E6E6E6; border-style: solid; border-width: 1px;  box-shadow: 0 1px 10px #424242;padding: 35px;">
+    <span style="position: absolute;top: -16px;right:-14px;z-index:99999;cursor: pointer;" id="closeSuccess">
+        <img src="https://zcmp-pd.maillist-manage.com.au/images/videoclose.png">
+    </span>
+    <div id="zcOptinSuccessPanel"></div>
+</div>
+
+<!--Zoho Campaigns Web-Optin Form Ends Here-->
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#promise-in-medicine" id="toc-promise-in-medicine" class="nav-link" data-scroll-target="#promise-in-medicine">Promise in Medicine</a></li>
+  <li><a href="#what-is-machine-learning" id="toc-what-is-machine-learning" class="nav-link" data-scroll-target="#what-is-machine-learning">What is Machine Learning?</a></li>
+  <li><a href="#why-now" id="toc-why-now" class="nav-link" data-scroll-target="#why-now">Why now?</a></li>
+  <li><a href="#fast.ai" id="toc-fast.ai" class="nav-link" data-scroll-target="#fast.ai">fast.ai</a></li>
+  <li><a href="#ml-centralizes-power" id="toc-ml-centralizes-power" class="nav-link" data-scroll-target="#ml-centralizes-power">ML centralizes power</a></li>
+  <li><a href="#real-world-harms" id="toc-real-world-harms" class="nav-link" data-scroll-target="#real-world-harms">Real world harms</a></li>
+  <li><a href="#feedback-loops" id="toc-feedback-loops" class="nav-link" data-scroll-target="#feedback-loops">Feedback Loops</a></li>
+  <li><a href="#failures-of-the-medical-system" id="toc-failures-of-the-medical-system" class="nav-link" data-scroll-target="#failures-of-the-medical-system">Failures of the Medical System</a></li>
+  <li><a href="#a-deeper-problem-than-bias" id="toc-a-deeper-problem-than-bias" class="nav-link" data-scroll-target="#a-deeper-problem-than-bias">A Deeper Problem than Bias</a></li>
+  <li><a href="#a-path-forward" id="toc-a-path-forward" class="nav-link" data-scroll-target="#a-path-forward">A Path Forward</a></li>
+  <li><a href="#related-reading" id="toc-related-reading" class="nav-link" data-scroll-target="#related-reading">Related Reading:</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>I recently gave a talk tying together many of the topics I care about most: the potential of AI in immunology, racial and gender bias in medicine, harms of AI in society, the systemic dismissal of patient experience by doctors, and the promise of participatory, patient-led approaches. I hope you’ll watch my 29 minute talk in full here:</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Stg2UfsGALY?si=zn0fa0Kz3IDB9rqy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</center>
+<p>Below is an edited transcript of the talk, with timestamps if you want to jump to specific sections in the video.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=0s">[00:01]</a>: I’ll be speaking about the opportunities and the risk of applying AI in medicine] and some of some of what’s currently happening in the field. As a brief bit of background about me, I earned my PhD in mathematics at Duke University and worked in the tech industry as a software developer and data scientist. Then in 2016, together with Jeremy Howard, I founded Fast AI. Our goal with Fast AI was to make deep learning more accessible and easier to use for people from a variety of different domain expertise areas. Our work was featured in <a href="https://www.economist.com/business/2018/10/27/new-schemes-teach-the-masses-to-build-ai">The Economist</a>, <a href="https://www.forbes.com/sites/mariyayao/2017/04/10/why-we-need-to-democratize-ai-machine-learning-education/">Forbes</a>, <a href="https://www.technologyreview.com/2018/08/10/141098/small-team-of-ai-coders-beats-googles-code/">MIT Tech Review</a>, and elsewhere. And we’ve had millions of students take our courses and use our software library.</p>
+<p>I became increasingly focused on the harms that machine learning was causing as well and I wrote <a href="https://www.bostonreview.net/product/redesigning-ai-spring-2021/">three</a> <a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527">book</a> <a href="https://www.oreilly.com/library/view/97-things-about/9781492072652/">chapters</a> on data ethics as well as becoming the founding director of the Center for Applied Data Ethics at the University of San Francisco. More recently, I’ve become really fascinated with applications in microbiology and immunology. I went <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">back to school</a> and earned a master’s in the area because I believe domain expertise is so important and I’m now working on a PhD related to autoimmunity.</p>
+</section>
+<section id="promise-in-medicine" class="level2">
+<h2 class="anchored" data-anchor-id="promise-in-medicine">Promise in Medicine</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=94s">[01:35]</a>: AI is being applied to a lot of areas in medicine which hold a lot of opportunity and seem quite promising. One area is for <a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">drug discovery and drug design</a>. The space of potential drugs out there is huge and so it can be very helpful to have machine learning to help iterate through and filter down which candidates may be the most promising for further study. A second big area where AI is being applied in medicine is to reading medical images, such as detecting Parkinson’s disease or strokes from images of the back of the eye.</p>
+<p>A third area is taking a sequence of amino acids. Amino acids are the building blocks of proteins and so here on the left, this is hemoglobin written as its sequence of amino acids, and on the right is its 3D structure. So these two things are the same (they are both hemoglobin), but the 3D structure has has more information. The <a href="https://www.youtube.com/watch?v=pB0RxG1NdtA&amp;list=PLtmWHNX-gukLirebdPH8lla41SS78kjLD&amp;index=5">computer program AlphaFold</a>, which is based on deep learning, made international headlines by smashing all previous records on how accurately it could predict structures. The developers of AlphaFold were awarded a Nobel Prize in Chemistry last year for their work. Protein folding has many, many applications. One that particularly interests me is to try to figure out <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">what a T cell will bind to</a>, which has applications to cancer vaccines.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hemoglobin.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">AlphaFold transforms sequences of amino acids (on the left) to 3D protein structures (on the right)</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-is-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-machine-learning">What is Machine Learning?</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=257s">[04:18]</a>: Let me step back for a moment. I have shared some areas that are quite promising to think about of AI and medicine. But what what is AI? What is machine learning? AI is a pretty pretty wide umbrella, and I’m going to focus on deep learning, which is a subfield of machine learning. Let’s go all the way back to the 1950s, when IBM researcher Arthur Samuel coined the term machine learning.</p>
+<p>A rules-based approach, which is not using machine learning, involves handcrafting relevant rules. And if you didn’t want to use machine learning, you could teach a computer to play checkers by programming the rules of checkers into the computer. Arthur Samuel had a different idea, which is that he didn’t want to <strong>teach a computer to play checkers</strong>, he wanted to <strong>teach a computer to <em>learn</em> to play checkers</strong> from previous data. <a href="https://ieeexplore.ieee.org/document/5392560">Arthur wrote</a> that instead of specifying in “minute and exact detail” what a computer can do, that he would rather have it learn from data. To apply this to this problem I mentioned earlier of protein folding, rules-based approaches often had scores about hydrogen bonds or different biochemical properties that are that are well known, whereas approaches such as AlphaFold rely on previous protein structures.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="samuel.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Arthur Samuel coined the term “machine learning” in 1959. Image: IBM Watson Media</figcaption>
+</figure>
+</div>
+<p>Machine learning algorithms LEARN to match inputs to outputs. And so for this reason, it’s very important to think about what your inputs are and what your outputs are. This is crucial. A lot depends on the input data. I want you all to keep this in mind when people are trying to sell you something because there’s a lot of snake oil out there, as well as often people may overhype discoveries, so you need to really think about the nature and quality of the input data and if what’s being claimed is even plausible.</p>
+<p>Another key moment in the history of machine learning and of deep learning in particular comes from the late 1980s when Yann LeCun and a team developed a deep learning algorithm for the US Postal Service. Deep learning refers to multi-layered neural networks, a family of algorithms, and it involves a lot of matrix math. They used this algorithm to identify handwritten zip codes because the US Postal Service wanted a computer program that could sort letters. It is very useful to automatically sort letters by zip code. However, people have messy handwriting and tere are a bunch of different ways you can write each digit. Yann LeCun used multi-layered neural networks or deep learning to do this. And now when we hear about breakthroughs in AI in the news, typically they’re using deep learning.</p>
+</section>
+<section id="why-now" class="level2">
+<h2 class="anchored" data-anchor-id="why-now">Why now?</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=453s">[07:35]</a>: And so even though this dates back decades, it’s really only since 2012 that we’ve kind of reached this popular moment in deep learning where it’s being applied much more broadly. It’s achieving unprecedented success on a number a number of tasks. And there are three key components of why this is happening now:</p>
+<ol type="1">
+<li>One is the existence of large enough data sets to train these algorithms. ImageNet is a key example of a data set of images that was curated for a competition.</li>
+<li>Compute power, in the form of GPUs. GPU stands for graphic graphics processing unit and it’s what’s used to render video games. The video gaming industry really pushed the computer development along that has been useful for deep learning as well because it’s the same same types of calculations.</li>
+<li>Algorithmic advances have made it more feasible to to train and use deep learning. Pictured below is the algorithm behind AlexNet, which won the 2012 ImageNet competition.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="why-now.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Three key ingredients to the deep learning revolution: GPUs, large datasets, and algorithmic advances</figcaption>
+</figure>
+</div>
+<p>I was living in San Francisco in 2012 and saw that this seemed like a very promising and exciting area. However, there were a lot of barriers to entry at the time. You had to have done your PhD with a small handful of advisors and a lot of the practical knowledge was not being written down. People would publish theoretical math papers based on it, but it was hard to hard to learn practical details to implement it for yourself if you were outside a few elite institutions.</p>
+</section>
+<section id="fast.ai" class="level2">
+<h2 class="anchored" data-anchor-id="fast.ai">fast.ai</h2>
+<p><a href="https://youtu.be/Stg2UfsGALY?si=Ey1SkG04yyksU5Mb&amp;t=552">[09:33]</a>: So in 2016, Jeremy Howard and I started Fast AI to try to address this problem. We really wanted to get experts from all sorts of domains able to use this technology and to really focus on the practical of kind of how how do you implement this in code. Most people that took our course, I’ll sometimes refer to them as students, but they were working professionals doing this in their part-time, in many cases wanting to learn learn how to apply deep learning to the field they were already working in or to pivot their careers. Many went on to get jobs at top top tech companies, to start their own startups, to work in research, kind of a wide a wide range of applications and a wide range of different fields where they’ve applied deep learning.</p>
+<p>Our focus was quite unusual in that we were really interested in people with limited resources, which is most of the world. The focus of big tech companies is often on experiments that costs $50 million worth of computers, which almost nobody can do. We were interested in what you can do if you have very little compute power and limited resources and are working in these kind of unusual domains that are outside outside the focus of the the tech industry. This is actually something that can be an advantage. <a href="https://www.fast.ai/posts/2018-04-30-dawnbench-fastai.html">Resource constraints can drive creativity</a>.</p>
+<p>In fact, we in 2018, a team of Fast AI students beat teams from Google and Intel that had access to way more resources than we did. And the kind of the reason behind this is that our constraints and resources forced more creative solutions. And so I love this example and I I think there’s often a misconception of if you’re trying to do something that’s more accessible or reaching people from non-traditional backgrounds that it must be watered down or that it’s not state-of-the-art. This win of Fast AI over Google and Intel in a competition hosted by Stanford was covered in the <a href="https://www.technologyreview.com/2018/08/10/141098/small-team-of-ai-coders-beats-googles-code/">MIT Tech Review</a> and <a href="https://www.theverge.com/2018/5/7/17316010/fast-ai-speed-test-stanford-dawnbench-google-intel">The Verge</a>. I’m really proud of our students for that. And I love the idea of getting people from different domains using deep learning because you know about problems that nobody else knows about. And that’s that’s really important.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dawnbench.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">News coverage of fast.ai’s win</figcaption>
+</figure>
+</div>
+<p>A question I have been asked many times over the years is, “isn’t this dangerous to make AI accessible to more people?” or “Don’t you worry about it falling into the wrong hands?” And while it’s not implicit in these questions, there’s often an assumption that as long as only billion-dollar elite corporations have access to this, we’ll all be safe, that these are the more ethical stewards of this technology. And I really disagree with that. In fact, I think it’s quite dangerous to have a very homogeneous and elite group in the tech industry creating creating things that impact the entire world. Having greater diversity and more backgrounds is important and very powerful.</p>
+</section>
+<section id="ml-centralizes-power" class="level2">
+<h2 class="anchored" data-anchor-id="ml-centralizes-power">ML centralizes power</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=816s">[13:39]</a>: That said, there is a lot that can and is going wrong, and people that are being harmed. And in many cases these harms can be caused by people from from elite companies or institutions. I spent many years studying and writing about the harms, looking at different case studies, and seeing patterns of key risks in machine learning. A lot of harms fall under this property that machine learning often has the effect of centralizing power. And it does this in several ways.</p>
+<p>One is that it can be used at massive scale and cheaply. And that’s often the appeal; it can be used for for cost cutting endeavors, but those often involve a centralization of power. It’s often implemented with no system for recourse and no way to identify or correct mistakes. It’s adding another node of complexity to systems which can be used to evade responsibility. I’ll give examples of all of these in a moment. As systems become more complex, there’s another finger to point to and say, “well, it’s the algorithm’s fault”, which then if nobody feels responsible that doesn’t lead to to systems with good outcomes. It can create feedback loops where it kind of is creating an outcome and amplifying it. And I’ll speak about that in more detail in a moment. Sometimes people will say, “yes, machine learning is biased, but so are humans”. But there are published cases where machine learning amplifies biases from humans making them even larger.</p>
+</section>
+<section id="real-world-harms" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-harms">Real world harms</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=934s">[15:34]</a>: A case study that I return to often comes from <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">an algorithm that’s used in many US states</a> to determine home healthcare benefits. And when it was implemented in one state, there was a bug in the code. This software error incorrectly cut care for people with cerebral palsy. And so people like this woman, <a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=964s">Tammy Dobs, who’s featured here</a>, had drastic and devastating cuts in her care that really impacted her quality of life to suddenly lose this care. And she she was given no explanation. She was like, “Why has this happened?” And they’re just like, “Well, that’s what that’s what the algorithm said.” Although she didn’t just need an explanatio, what she needed was actionable recourse. She needed a way to get this reverted and to receive her care again.</p>
+<p>Eventually there was a lengthy court case and they discover the software bug. The patients got their care reinstated. But that is that is not an ideal process at all that they had to go all this time without care. This is actually a common issue: systems are implemented with no way to identify and address mistakes. I also want to point out that it was patients with cerebral palsy who noticed the air first. And that the people who are directly impacted noticed the error and they had no way to surface that information to anyone that would listen. More recently, there has been investigations into how <a href="https://www.statnews.com/2023/03/13/medicare-advantage-plans-denial-artificial-intelligence/">Medicare Advantage is using AI algorithms</a> to cut needed care.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="denied-by-ai.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">STAT news coverage of how Medicare Advantage uses AI to deny needed care</figcaption>
+</figure>
+</div>
+<p>This is not unique to the US. I live in Australia and we have had a scandal with Robodebt. This software was implemented by the government to determine if people had been overpaid welfare benefits and then automatically issue them debts that they had to pay back. And the way Robodebt was implemented was later found to be unlawful and used incorrect calculations. It was also set up where the burden of proof was almost impossibly high of what people needed to try to appeal. This ruined lives, including <a href="https://www.theguardian.com/australia-news/2023/feb/20/platitudes-and-false-words-mother-of-robodebt-victim-who-took-own-life-tells-inquiry-of-government-stonewalling">leading to suicides</a>. Robodebt happened at a massive scale. The Australian government went from issuing 20,000 debts per year to 20,000 debts per week. That’s a <a href="https://www.theguardian.com/australia-news/2020/may/29/robodebt-government-to-repay-470000-unlawful-centrelink-debts-worth-721m">50x scale up</a>. There are also a lot of examples from across the EU as well. Human Rights Watch has written a thorough report on this, <a href="https://www.hrw.org/news/2021/11/10/how-eus-flawed-artificial-intelligence-regulation-endangers-social-safety-net">How the EU’s Flawed Artificial Intelligence Regulation Endangers the Social Safety Net</a>.</p>
+</section>
+<section id="feedback-loops" class="level2">
+<h2 class="anchored" data-anchor-id="feedback-loops">Feedback Loops</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1168s">[19:28]</a>: Feedback loops are another mechanism of centralization of power. Police departments use software to recommend how many police officers they should send to different neighborhoods of you know, we think there’s going to be more crime in X neighborhood and less crime in Y neighborhood, so let’s send more police to X. <strong>However, algorithms don’t just make predictions, they help determine outcomes.</strong> And if you send more police to a neighborhood, they are likely to make more arrests in that neighborhood than a neighborhood where there are no police. That data gets fed back into the algorithm. And so the algorithm might say, “Wow, you’re making a lot of arrests in neighborhood X. Send even more police there.” And you start <a href="https://proceedings.mlr.press/v81/ensign18a.html">creating outcomes and and amplifying them into runaway loops</a>.</p>
+<p>This same dynamic of feedback loops shows up in recommendation systems. YouTube recommends videos for you that will often start autoplaying. The YouTube algorithm learned that showing people conspiracy theories often gets them to <a href="https://www.wired.com/story/the-toxic-potential-of-youtubes-feedback-loop/">watch even more conspiracy theories</a>. “Wow, you liked this conspiracy theory. Here’s some more!” Because if people get hooked on conspiracy theories, they want to watch more. And this is true of many recommendation systems across different social media platforms and media platforms.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="feedback-loop.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Algorithms don’t just make predictions; they determine and amplify outcomes</figcaption>
+</figure>
+</div>
+<p>To recap, we’ve seen this centralizing effect. Machine learning centralizes power because it can:</p>
+<ul>
+<li>be used at massive scale, cheaply</li>
+<li>be implemented with no system for recourse &amp; no way to identify mistakes</li>
+<li>be used to evade responsibility</li>
+<li>create feedback loops</li>
+<li>amplify, not just encode, bias</li>
+</ul>
+<p>The risks of machine learning mirror existing shortcomings in medical system. Disempowerment is already a problem in medicine, and I really worry about how AI could make it worse. And so stepping stepping away from the machine learning for a moment, I want to talk about how how this problem shows up in medicine.</p>
+</section>
+<section id="failures-of-the-medical-system" class="level2">
+<h2 class="anchored" data-anchor-id="failures-of-the-medical-system">Failures of the Medical System</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1321s">[22:01]</a>: Dr.&nbsp;Ilene Ruhoy is a neurologist. She’s an MD PhD and she developed a 7 cm brain tumor. She was experiencing a variety of disturbing neurological symptoms. She knew something was wrong, but when she went to the doctor, and she went to multiple doctors, <a href="https://www.washingtonpost.com/wellness/interactive/2022/women-pain-gender-bias-doctors/">she recounts</a>, “I was told I knew too much, that I was working too hard, that I was stressed out, that I was anxious.” They were dismissing her symptoms. And this went on for months. Eventually, eventually she did get the MRI, although her tumor was likely much larger at that point than if it had been diagnosed earlier, and got got rushed into emergency surgery. However, this is not not a one-off case.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="bias-studies.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Gender and racial bias in medicine is well-documented across a range of diseases</figcaption>
+</figure>
+</div>
+<p>There are studies on this. Almost <a href="https://www.bbc.com/future/article/20180523-how-gender-bias-affects-your-healthcare">1 in 3 patients with brain tumors</a> had to visit doctors at least five times before they received an accurate diagnosis. And so if you think about AI, you know, it can be exciting to hear about, oh, this is, you know, AI that can can read MRIs accurately, that’s not going to help patients whose doctors won’t take their symptoms seriously enough to order an MRI in the first place. This is not unique to brain tumors. Gender and racial bias are common in medicine. This is well documented and impacts everything from cancer diagnosis delays to how much pain medication is given. As I said before, machine learning is all about matching input data to outputs. Keep in mind this <a href="https://www.bostonreview.net/articles/rachel-thomas-medicines-machine-learning-problem/">input data is very much going to be shaped</a> by the patients who are misdiagnosed, the patients who were incorrectly dismissed or didn’t have their symptoms taken seriously.</p>
+</section>
+<section id="a-deeper-problem-than-bias" class="level2">
+<h2 class="anchored" data-anchor-id="a-deeper-problem-than-bias">A Deeper Problem than Bias</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1446s">[24:06]</a>: I believe that the problem is actually much deeper than bias. And bias is huge, but fundamentally, we’re talking about the relationship between <a href="https://academic.oup.com/jmp/article-abstract/49/1/58/7329090?redirectedFrom=fulltext">patient expertise and medical authority</a> here. Knowledge is often seen as a one directional flow from doctor to patient, without recognition of patient knowledge. The forms that patient expertise take can really vary. Patient expertise can be an umbrella term to include everything from the lived experience of knowing what is going on in your body to also including the patients that are out there reading lots of medical papers and keeping up on the literature. There are patients that are even publishing medical medical papers. And I’ll give a few examples of that in a moment. A lot of this comes back to this kind of question about whose expertise was or wasn’t included in the design and construction of these these systems. And this is an issue in machine learning as well, even for non-medical applications, about whose expertise is not included. Machine learning systems can <a href="https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/">fail catastrophically</a> when expertise from those closest to the problem is not included.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="whose-expertise-2.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Whose expertise wasn’t included?</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-path-forward" class="level2">
+<h2 class="anchored" data-anchor-id="a-path-forward">A Path Forward</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1537s">[25:37]</a>: I want to end with some examples that give me hope. One of the best events I’ve attended in the past several years was the <a href="https://participatoryml.github.io/">Participatory Approaches to Machine Learning workshop from ICML 2020</a>. It is all online, so you can access the talks and papers. The organizers of this workshop were interested in seeking more cooperative, more democratic, more participatory approaches for how machine learning systems can can be designed and operated. We really need to consider how all stakeholders, including the people who will be most impacted, can and should be involved in in the creation and running of ML systems.</p>
+<p>Pratyusha Kalluri, who’s an AI researcher, wrote an excellent article titled, “<a href="https://www.nature.com/articles/d41586-020-02003-2">Don’t ask if AI is good or fair. Ask how it shifts power</a>.” Who is going to have more or less power after after particular AI systems are implemented? That’s what really poses poses a risk for exploitation.</p>
+<p>On the medical side, something that really gives me hope is to see efforts of patient-led research. Here is a neat paper that came out just six months ago, where the author of the paper has long COVID and she also has a doctorate in pharmacology. She surveyed <a href="https://www.medrxiv.org/content/10.1101/2024.11.27.24317656v1.full-text">4,000 patients about over 150 different treatments</a> that they’ve tried, and together with her co-authors did clustering of different subtypes of symptoms. She brought a deep knowledge that comes from being an informed and active patient that is plugged into patient communities. I love to see this type of research. There’s also a <a href="https://patientresearchcovid19.com/publication/">Patient-Led Research Collaborative</a> that is publishing innovative work. The way the risks of machine learning mirror existing shortcomings in medicine and the potential negative negative synergy of how those could combine scares me. I look towards ideas of participatory approaches to machine learning and to patient-led research as sources of hope of how we might be able to to do this in more constructive ways.</p>
+<p>So with that, if you have any thoughts or questions, I hope you’ll join me in the comment section below. Thank you.</p>
+</section>
+<section id="related-reading" class="level2">
+<h2 class="anchored" data-anchor-id="related-reading">Related Reading:</h2>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/">AI and Power: The Ethical Challenges of Automation, Centralization, and Scale</a> - a deeper dive into how AI centralizes power</li>
+<li><a href="https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/">Gaps and Risks of AI in the Life Sciences</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-11-20-ai-immunology/">AI and Immunology</a></li>
+</ul>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://giscus.app/client.js" data-repo="racheltho/rachel-blog" data-repo-id="R_kgDOIxf7pQ" data-category="Announcements" data-category-id="DIC_kwDOIxf7pc4CcEZ1" data-mapping="pathname" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

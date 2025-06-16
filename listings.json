@@ -2,6 +2,7 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/2025-06-17-ai-medicine/index.html",
       "/posts/2025-06-04-enzyme-ml-fails/index.html",
       "/posts/2025-05-13-spatial-omics/index.html",
       "/posts/2025-01-24-missing-data/index.html",
@@ -63,6 +64,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2025-06-17-ai-medicine/index.html",
       "/posts/2025-06-04-enzyme-ml-fails/index.html",
       "/posts/2025-05-13-spatial-omics/index.html",
       "/posts/2025-01-24-missing-data/index.html",

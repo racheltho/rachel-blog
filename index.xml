@@ -15,7 +15,168 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 03 Jun 2025 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 16 Jun 2025 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>AI &amp; medicine: promise &amp; peril</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2025-06-17-ai-medicine/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I recently gave a talk tying together many of the topics I care about most: the potential of AI in immunology, racial and gender bias in medicine, harms of AI in society, the systemic dismissal of patient experience by doctors, and the promise of participatory, patient-led approaches. I hope you’ll watch my 29 minute talk in full here:</p>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Stg2UfsGALY?si=zn0fa0Kz3IDB9rqy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</center>
+<p>Below is an edited transcript of the talk, with timestamps if you want to jump to specific sections in the video.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=0s">[00:01]</a>: I’ll be speaking about the opportunities and the risk of applying AI in medicine] and some of some of what’s currently happening in the field. As a brief bit of background about me, I earned my PhD in mathematics at Duke University and worked in the tech industry as a software developer and data scientist. Then in 2016, together with Jeremy Howard, I founded Fast AI. Our goal with Fast AI was to make deep learning more accessible and easier to use for people from a variety of different domain expertise areas. Our work was featured in <a href="https://www.economist.com/business/2018/10/27/new-schemes-teach-the-masses-to-build-ai">The Economist</a>, <a href="https://www.forbes.com/sites/mariyayao/2017/04/10/why-we-need-to-democratize-ai-machine-learning-education/">Forbes</a>, <a href="https://www.technologyreview.com/2018/08/10/141098/small-team-of-ai-coders-beats-googles-code/">MIT Tech Review</a>, and elsewhere. And we’ve had millions of students take our courses and use our software library.</p>
+<p>I became increasingly focused on the harms that machine learning was causing as well and I wrote <a href="https://www.bostonreview.net/product/redesigning-ai-spring-2021/">three</a> <a href="https://www.amazon.com/Deep-Learning-Coders-fastai-PyTorch/dp/1492045527">book</a> <a href="https://www.oreilly.com/library/view/97-things-about/9781492072652/">chapters</a> on data ethics as well as becoming the founding director of the Center for Applied Data Ethics at the University of San Francisco. More recently, I’ve become really fascinated with applications in microbiology and immunology. I went <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">back to school</a> and earned a master’s in the area because I believe domain expertise is so important and I’m now working on a PhD related to autoimmunity.</p>
+</section>
+<section id="promise-in-medicine" class="level2">
+<h2 class="anchored" data-anchor-id="promise-in-medicine">Promise in Medicine</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=94s">[01:35]</a>: AI is being applied to a lot of areas in medicine which hold a lot of opportunity and seem quite promising. One area is for <a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/">drug discovery and drug design</a>. The space of potential drugs out there is huge and so it can be very helpful to have machine learning to help iterate through and filter down which candidates may be the most promising for further study. A second big area where AI is being applied in medicine is to reading medical images, such as detecting Parkinson’s disease or strokes from images of the back of the eye.</p>
+<p>A third area is taking a sequence of amino acids. Amino acids are the building blocks of proteins and so here on the left, this is hemoglobin written as its sequence of amino acids, and on the right is its 3D structure. So these two things are the same (they are both hemoglobin), but the 3D structure has has more information. The <a href="https://www.youtube.com/watch?v=pB0RxG1NdtA&amp;list=PLtmWHNX-gukLirebdPH8lla41SS78kjLD&amp;index=5">computer program AlphaFold</a>, which is based on deep learning, made international headlines by smashing all previous records on how accurately it could predict structures. The developers of AlphaFold were awarded a Nobel Prize in Chemistry last year for their work. Protein folding has many, many applications. One that particularly interests me is to try to figure out <a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">what a T cell will bind to</a>, which has applications to cancer vaccines.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/hemoglobin.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">AlphaFold transforms sequences of amino acids (on the left) to 3D protein structures (on the right)</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-is-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-machine-learning">What is Machine Learning?</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=257s">[04:18]</a>: Let me step back for a moment. I have shared some areas that are quite promising to think about of AI and medicine. But what what is AI? What is machine learning? AI is a pretty pretty wide umbrella, and I’m going to focus on deep learning, which is a subfield of machine learning. Let’s go all the way back to the 1950s, when IBM researcher Arthur Samuel coined the term machine learning.</p>
+<p>A rules-based approach, which is not using machine learning, involves handcrafting relevant rules. And if you didn’t want to use machine learning, you could teach a computer to play checkers by programming the rules of checkers into the computer. Arthur Samuel had a different idea, which is that he didn’t want to <strong>teach a computer to play checkers</strong>, he wanted to <strong>teach a computer to <em>learn</em> to play checkers</strong> from previous data. <a href="https://ieeexplore.ieee.org/document/5392560">Arthur wrote</a> that instead of specifying in “minute and exact detail” what a computer can do, that he would rather have it learn from data. To apply this to this problem I mentioned earlier of protein folding, rules-based approaches often had scores about hydrogen bonds or different biochemical properties that are that are well known, whereas approaches such as AlphaFold rely on previous protein structures.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/samuel.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Arthur Samuel coined the term “machine learning” in 1959. Image: IBM Watson Media</figcaption>
+</figure>
+</div>
+<p>Machine learning algorithms LEARN to match inputs to outputs. And so for this reason, it’s very important to think about what your inputs are and what your outputs are. This is crucial. A lot depends on the input data. I want you all to keep this in mind when people are trying to sell you something because there’s a lot of snake oil out there, as well as often people may overhype discoveries, so you need to really think about the nature and quality of the input data and if what’s being claimed is even plausible.</p>
+<p>Another key moment in the history of machine learning and of deep learning in particular comes from the late 1980s when Yann LeCun and a team developed a deep learning algorithm for the US Postal Service. Deep learning refers to multi-layered neural networks, a family of algorithms, and it involves a lot of matrix math. They used this algorithm to identify handwritten zip codes because the US Postal Service wanted a computer program that could sort letters. It is very useful to automatically sort letters by zip code. However, people have messy handwriting and tere are a bunch of different ways you can write each digit. Yann LeCun used multi-layered neural networks or deep learning to do this. And now when we hear about breakthroughs in AI in the news, typically they’re using deep learning.</p>
+</section>
+<section id="why-now" class="level2">
+<h2 class="anchored" data-anchor-id="why-now">Why now?</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=453s">[07:35]</a>: And so even though this dates back decades, it’s really only since 2012 that we’ve reached this popular moment in deep learning where it’s being applied much more broadly. It’s achieving unprecedented success on a number a number of tasks. And there are three key components of why this is happening now:</p>
+<ol type="1">
+<li>One is the existence of large enough data sets to train these algorithms. ImageNet is a key example of a data set of images that was curated for a competition.</li>
+<li>Compute power, in the form of GPUs. GPU stands for graphic graphics processing unit and it’s what’s used to render video games. The video gaming industry really pushed the computer development along that has been useful for deep learning as well because it’s the same same types of calculations.</li>
+<li>Algorithmic advances have made it more feasible to to train and use deep learning. Pictured below is the algorithm behind AlexNet, which won the 2012 ImageNet competition.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/why-now.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Three key ingredients to the deep learning revolution: GPUs, large datasets, and algorithmic advances</figcaption>
+</figure>
+</div>
+<p>I was living in San Francisco in 2012 and saw that this seemed like a very promising and exciting area. However, there were a lot of barriers to entry at the time. You had to have done your PhD with a small handful of advisors and a lot of the practical knowledge was not being written down. People would publish theoretical math papers based on it, but it was hard to hard to learn practical details to implement it for yourself if you were outside a few elite institutions.</p>
+</section>
+<section id="fast.ai" class="level2">
+<h2 class="anchored" data-anchor-id="fast.ai">fast.ai</h2>
+<p><a href="https://youtu.be/Stg2UfsGALY?si=Ey1SkG04yyksU5Mb&amp;t=552">[09:33]</a>: So in 2016, Jeremy Howard and I started Fast AI to try to address this problem. We really wanted to get experts from all sorts of domains able to use this technology and to focus on the practical side of how to implement this in code. Most people that took our course, I’ll sometimes refer to them as students, but they were working professionals doing this in their part-time, wanting to apply deep learning to the field they were already working in or to pivot their careers. Many went on to get jobs at top top tech companies, to start their own startups, or to work in research. There are a wide range of applications and a wide range of different fields where they’ve applied deep learning.</p>
+<p>Our focus was quite unusual in that we were interested in people with limited resources, which is most of the world. The focus of big tech companies is often on experiments that cost $50 million worth of computer time, which almost nobody can do. We were interested in what you can do if you have very little compute power and limited resources and are working in unusual domains that are outside the focus of the the tech industry. This can actually be an advantage. <a href="https://www.fast.ai/posts/2018-04-30-dawnbench-fastai.html">Resource constraints can drive creativity</a>.</p>
+<p>In fact, in 2018 a team of Fast AI students beat teams from Google and Intel that had access to way more resources than we did. And the reason behind this is that our constraints forced more creative solutions. I think there’s often a misconception of if you’re trying to do something that’s more accessible or reaching people from non-traditional backgrounds that it must be watered down or that it’s not state-of-the-art. This win of Fast AI over Google and Intel in a competition hosted by Stanford was covered in the <a href="https://www.technologyreview.com/2018/08/10/141098/small-team-of-ai-coders-beats-googles-code/">MIT Tech Review</a> and <a href="https://www.theverge.com/2018/5/7/17316010/fast-ai-speed-test-stanford-dawnbench-google-intel">The Verge</a>. I’m really proud of our students for that. And I love the idea of getting people from different domains using deep learning because you know about problems that nobody else knows about. And that’s that’s really important.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/dawnbench.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption class="figure-caption">News coverage of fast.ai’s win</figcaption>
+</figure>
+</div>
+<p>A question I have been asked many times over the years is, “isn’t this dangerous to make AI accessible to more people?” or “Don’t you worry about it falling into the wrong hands?” And while it’s not implicit in these questions, there’s often an assumption that as long as only billion-dollar elite corporations have access to this, we’ll all be safe, that these are the more ethical stewards of this technology. And I really disagree with that. In fact, I think it’s quite dangerous to have a very homogeneous and elite group in the tech industry creating creating things that impact the entire world. Having greater diversity and more backgrounds is important and very powerful.</p>
+</section>
+<section id="ml-centralizes-power" class="level2">
+<h2 class="anchored" data-anchor-id="ml-centralizes-power">ML centralizes power</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=816s">[13:39]</a>: That said, there is a lot that can and is going wrong, and people that are being harmed. And in many cases these harms can be caused by people from from elite companies or institutions. I spent many years studying and writing about the harms, looking at different case studies, and seeing patterns of key risks in machine learning. A lot of harms fall under this property that machine learning often has the effect of centralizing power. And it does this in several ways.</p>
+<p>One is that it can be used at massive scale and cheaply. And that’s often the appeal; it can be used for for cost cutting endeavors, but those often involve a centralization of power. It’s often implemented with no system for recourse and no way to identify or correct mistakes. It’s adding another node of complexity to systems which can be used to evade responsibility. I’ll give examples of all of these in a moment. As systems become more complex, there’s another finger to point to and say, “well, it’s the algorithm’s fault”, which then if nobody feels responsible that doesn’t lead to to systems with good outcomes. It can create feedback loops where it causes an outcome and then amplifies it. I’ll speak about that in more detail in a moment. Sometimes people will say, “yes, machine learning is biased, but so are humans”. But there are published cases where machine learning amplifies biases from humans making them even larger.</p>
+</section>
+<section id="real-world-harms" class="level2">
+<h2 class="anchored" data-anchor-id="real-world-harms">Real world harms</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=934s">[15:34]</a>: A case study that I return to often comes from <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">an algorithm that’s used in many US states</a> to determine home healthcare benefits. And when it was implemented in one state, there was a bug in the code. This software error incorrectly cut care for people with cerebral palsy. And so people like this woman, <a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=964s">Tammy Dobs, who’s featured here</a>, had drastic and devastating cuts in her care that really impacted her quality of life to suddenly lose this care. And she she was given no explanation. She was like, “Why has this happened?” And they’re just like, “Well, that’s what that’s what the algorithm said.” Although she didn’t just need an explanatio, what she needed was actionable recourse. She needed a way to get this reverted and to receive her care again.</p>
+<p>Eventually there was a lengthy court case and they discover the software bug. The patients got their care reinstated. But that is that is not an ideal process at all that they had to go all this time without care. This is actually a common issue: systems are implemented with no way to identify and address mistakes. I also want to point out that it was patients with cerebral palsy who noticed the air first. And that the people who are directly impacted noticed the error and they had no way to surface that information to anyone that would listen. More recently, there has been investigations into how <a href="https://www.statnews.com/2023/03/13/medicare-advantage-plans-denial-artificial-intelligence/">Medicare Advantage is using AI algorithms</a> to cut needed care.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/denied-by-ai.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">STAT news coverage of how Medicare Advantage uses AI to deny needed care</figcaption>
+</figure>
+</div>
+<p>This is not unique to the US. I live in Australia and we have had a scandal with Robodebt. This software was implemented by the government to determine if people had been overpaid welfare benefits and then automatically issue them debts that they had to pay back. And the way Robodebt was implemented was later found to be unlawful and used incorrect calculations. It was also set up where the burden of proof was almost impossibly high of what people needed to try to appeal. This ruined lives, including <a href="https://www.theguardian.com/australia-news/2023/feb/20/platitudes-and-false-words-mother-of-robodebt-victim-who-took-own-life-tells-inquiry-of-government-stonewalling">leading to suicides</a>. Robodebt happened at a massive scale. The Australian government went from issuing 20,000 debts per year to 20,000 debts per week. That’s a <a href="https://www.theguardian.com/australia-news/2020/may/29/robodebt-government-to-repay-470000-unlawful-centrelink-debts-worth-721m">50x scale up</a>. There are also a lot of examples from across the EU as well. Human Rights Watch has written a thorough report on this, <a href="https://www.hrw.org/news/2021/11/10/how-eus-flawed-artificial-intelligence-regulation-endangers-social-safety-net">How the EU’s Flawed Artificial Intelligence Regulation Endangers the Social Safety Net</a>.</p>
+</section>
+<section id="feedback-loops" class="level2">
+<h2 class="anchored" data-anchor-id="feedback-loops">Feedback Loops</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1168s">[19:28]</a>: Feedback loops are another mechanism of centralization of power. Police departments use software to recommend how many police officers they should send to different neighborhoods of you know, we think there’s going to be more crime in X neighborhood and less crime in Y neighborhood, so let’s send more police to X. <strong>However, algorithms don’t just make predictions, they help determine outcomes.</strong> And if you send more police to a neighborhood, they are likely to make more arrests in that neighborhood than a neighborhood where there are no police. That data gets fed back into the algorithm. And so the algorithm might say, “Wow, you’re making a lot of arrests in neighborhood X. Send even more police there.” And you start <a href="https://proceedings.mlr.press/v81/ensign18a.html">creating outcomes and and amplifying them into runaway loops</a>.</p>
+<p>This same dynamic of feedback loops shows up in recommendation systems. YouTube recommends videos for you that will often start autoplaying. The YouTube algorithm learned that showing people conspiracy theories often gets them to <a href="https://www.wired.com/story/the-toxic-potential-of-youtubes-feedback-loop/">watch even more conspiracy theories</a>. “Wow, you liked this conspiracy theory. Here’s some more!” Because if people get hooked on conspiracy theories, they want to watch more. And this is true of many recommendation systems across different social media platforms and media platforms.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/feedback-loop.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Algorithms don’t just make predictions; they determine and amplify outcomes</figcaption>
+</figure>
+</div>
+<p>To recap, we’ve seen this centralizing effect. Machine learning centralizes power because it can:</p>
+<ul>
+<li>be used at massive scale, cheaply</li>
+<li>be implemented with no system for recourse &amp; no way to identify mistakes</li>
+<li>be used to evade responsibility</li>
+<li>create feedback loops</li>
+<li>amplify, not just encode, bias</li>
+</ul>
+<p>The risks of machine learning mirror existing shortcomings in medical system. Disempowerment is already a problem in medicine, and I really worry about how AI could make it worse. And so stepping stepping away from the machine learning for a moment, I want to talk about how how this problem shows up in medicine.</p>
+</section>
+<section id="failures-of-the-medical-system" class="level2">
+<h2 class="anchored" data-anchor-id="failures-of-the-medical-system">Failures of the Medical System</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1321s">[22:01]</a>: Dr.&nbsp;Ilene Ruhoy is a neurologist. She’s an MD PhD and she developed a 7 cm brain tumor. She was experiencing a variety of disturbing neurological symptoms. She knew something was wrong, but when she went to the doctor, and she went to multiple doctors, <a href="https://www.washingtonpost.com/wellness/interactive/2022/women-pain-gender-bias-doctors/">she recounts</a>, “I was told I knew too much, that I was working too hard, that I was stressed out, that I was anxious.” They were dismissing her symptoms. And this went on for months. Eventually, eventually she did get the MRI, although her tumor was likely much larger at that point than if it had been diagnosed earlier, and got got rushed into emergency surgery. However, this is not not a one-off case.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/bias-studies.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Gender and racial bias in medicine is well-documented across a range of diseases</figcaption>
+</figure>
+</div>
+<p>There are studies on this. Almost <a href="https://www.bbc.com/future/article/20180523-how-gender-bias-affects-your-healthcare">1 in 3 patients with brain tumors</a> had to visit doctors at least five times before they received an accurate diagnosis. And so if you think about AI, you know, it can be exciting to hear about, oh, this is, you know, AI that can can read MRIs accurately, that’s not going to help patients whose doctors won’t take their symptoms seriously enough to order an MRI in the first place. This is not unique to brain tumors. Gender and racial bias are common in medicine. This is well documented and impacts everything from cancer diagnosis delays to how much pain medication is given. As I said before, machine learning is all about matching input data to outputs. Keep in mind this <a href="https://www.bostonreview.net/articles/rachel-thomas-medicines-machine-learning-problem/">input data is very much going to be shaped</a> by the patients who are misdiagnosed, the patients who were incorrectly dismissed or didn’t have their symptoms taken seriously.</p>
+</section>
+<section id="a-deeper-problem-than-bias" class="level2">
+<h2 class="anchored" data-anchor-id="a-deeper-problem-than-bias">A Deeper Problem than Bias</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1446s">[24:06]</a>: I believe that the problem is actually much deeper than bias. And bias is huge, but fundamentally, we’re talking about the relationship between <a href="https://academic.oup.com/jmp/article-abstract/49/1/58/7329090?redirectedFrom=fulltext">patient expertise and medical authority</a> here. Knowledge is often seen as a one directional flow from doctor to patient, without recognition of patient knowledge. The forms that patient expertise take can really vary. Patient expertise can be an umbrella term to include everything from the lived experience of knowing what is going on in your body to also including the patients that are out there reading lots of medical papers and keeping up on the literature. There are patients that are even publishing medical medical papers. And I’ll give a few examples of that in a moment. A lot of this comes back to the question of whose expertise was or wasn’t included in the design and construction of these these systems. And this is an issue in machine learning as well, even for non-medical applications, about whose expertise is not included. Machine learning systems can <a href="https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/">fail catastrophically</a> when expertise from those closest to the problem is not included.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/whose-expertise-2.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">Whose expertise wasn’t included?</figcaption>
+</figure>
+</div>
+</section>
+<section id="a-path-forward" class="level2">
+<h2 class="anchored" data-anchor-id="a-path-forward">A Path Forward</h2>
+<p><a href="https://www.youtube.com/watch?v=Stg2UfsGALY&amp;t=1537s">[25:37]</a>: I want to end with some examples that give me hope. One of the best events I’ve attended in the past several years was the <a href="https://participatoryml.github.io/">Participatory Approaches to Machine Learning workshop from ICML 2020</a>. It is all online, so you can access the talks and papers. The organizers of this workshop were interested in seeking more cooperative, more democratic, more participatory approaches for how machine learning systems can can be designed and operated. We really need to consider how all stakeholders, including the people who will be most impacted, can and should be involved in in the creation and running of ML systems.</p>
+<p>Pratyusha Kalluri, who’s an AI researcher, wrote an excellent article titled, “<a href="https://www.nature.com/articles/d41586-020-02003-2">Don’t ask if AI is good or fair. Ask how it shifts power</a>.” Who is going to have more or less power after after particular AI systems are implemented? That’s what really poses poses a risk for exploitation.</p>
+<p>On the medical side, something that really gives me hope is to see efforts of patient-led research. Here is a neat paper that came out just six months ago, where the author of the paper has long COVID and she also has a doctorate in pharmacology. She surveyed <a href="https://www.medrxiv.org/content/10.1101/2024.11.27.24317656v1.full-text">4,000 patients about over 150 different treatments</a> that they’ve tried, and together with her co-authors did clustering of different subtypes of symptoms. She brought a deep knowledge that comes from being an informed and active patient that is plugged into patient communities. I love to see this type of research. There’s also a <a href="https://patientresearchcovid19.com/publication/">Patient-Led Research Collaborative</a> that is publishing innovative work. The way the risks of machine learning mirror existing shortcomings in medicine and the potential negative negative synergy of how those could combine scares me. I look towards ideas of participatory approaches to machine learning and to patient-led research as sources of hope of how we might be able to to do this in more constructive ways.</p>
+<p>So with that, if you have any thoughts or questions, I hope you’ll join me in the comment section below. Thank you.</p>
+</section>
+<section id="related-reading" class="level2">
+<h2 class="anchored" data-anchor-id="related-reading">Related Reading:</h2>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/">AI and Power: The Ethical Challenges of Automation, Centralization, and Scale</a> - a deeper dive into how AI centralizes power</li>
+<li><a href="https://rachel.fast.ai/posts/2024-09-10-gaps-risks-science/">Gaps and Risks of AI in the Life Sciences</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-11-20-ai-immunology/">AI and Immunology</a></li>
+</ul>
+<p>You can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>ethics</category>
+  <category>machine learning</category>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2025-06-17-ai-medicine/index.html</guid>
+  <pubDate>Mon, 16 Jun 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2025-06-17-ai-medicine/denied-ai-thumbnail.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Deep learning gets the glory, deep fact checking gets ignored</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1714,159 +1875,6 @@
   <guid>https://rachel.fast.ai/posts/2024-01-09-insects/index.html</guid>
   <pubDate>Mon, 08 Jan 2024 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2024-01-09-insects/psyllid.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>AI and Power: The Ethical Challenges of Automation, Centralization, and Scale</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Friends with no previous interest in AI ethics have begun asking me questions in the wake of the release of ChatGPT4, Bard, and Bing Chat. This new generation of large language models <a href="https://www.nytimes.com/2022/12/10/technology/ai-chat-bot-chatgpt.html">has made headlines</a> and sparked widespread debate. To consider the risks posed by new AI applications, it is useful to first understand several underlying concepts. <a href="https://rachel.fast.ai/about.html">I spent years</a> researching the mechanisms by which algorithmic systems can cause harm, and in late 2021, I gave a 20-minute talk on what I consider key ideas at the heart of AI ethics. With the advent of the newest generation of language models, these concepts are more relevant than ever.</p>
-<p>Over the past decade, topics such as <em>explainability</em> (having computers generate an explanation of why they compute the outputs they do) and <em>fairness/bias</em> (addressing when algorithms have worse accuracy on some groups of people than others) have gained more attention within the field of AI and in the media. Some computer scientists and journalists have stopped there: assuming that a computer program that can explain the logic behind its decision making, or a program that has the same accuracy on light-skinned men as on dark-skinned women, must now be ethical. While these principles are important, on their own they are not enough to address nor prevent harms of AI systems.</p>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/spHB7IEFXbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
-</iframe>
-</center>
-<p>Below is an edited transcript of this talk.</p>
-<section id="actionable-recourse" class="level2">
-<h2 class="anchored" data-anchor-id="actionable-recourse">Actionable Recourse</h2>
-<p><em>Explainability</em> on its own is insufficient. Consider an algorithmic system that is making decisions about whether or not someone should get a loan. Often a question will be “why was my loan denied?”, but really the underlying question is “what can I change about my situation to get a loan in the future?”</p>
-<p>An explanation should be <em>actionable</em>. For example, it’s not okay to deny a loan because of ethnicity. That’s discrimination and it would not make for a satisfying explanation. For decisions impacting people’s lives, there also needs to be a mechanism for <em>recourse</em>, so that decisions can be changed. This is <em>actionable recourse</em>, as <a href="https://arxiv.org/abs/1809.06514">described by Berk Ustun</a>.</p>
-<p>This underlying idea of actionable recourse shows up in many applications. There is an example I return to often, since it’s a pattern that we see across many countries. In the USA there is an algorithm to determine poor people’s health care benefits. When it was implemented in one state there was a <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">bug in the code that incorrectly cut care</a> for people with cerebral palsy. Tammy Dobbs was one of the many people that lost care due to a software bug. She needed this care for very basic life functions: to help her get out of bed in the morning, to get her breakfast, and so on. She asked for an explanation and they didn’t give her one; they just said this is what the algorithm determined. At the root, what she needed was not just an explanation, but a mechanism for recourse to get the decision changed. Eventually the error was revealed through a lengthy court case, but that is a terrible setup.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/cuts-healthcare2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">When an algorithm cuts your health care</figcaption>
-</figure>
-</div>
-<p>This illustrates a common issue that shows up again and again: <strong>automated systems are often implemented with no way to identify and address mistakes</strong>.</p>
-<p>There are a few reasons why there is no mechanism for catching mistakes. Often automation is being used as a cost cutting measure and having robust error checking in place and ways to surface mistakes would cost more. There can also be biases of people mistakenly believing that computers are perfectly accurate.</p>
-<p><a href="https://www.hrw.org/news/2021/11/10/how-eus-flawed-artificial-intelligence-regulation-endangers-social-safety-net">Human Rights Watch put out a report</a> on automated system use in the EU for social benefits. Country after country had alarming examples where there were errors, yet no clear way to identify, much less address, them. There was a case in France where an algorithm to determine food benefits made errors in at least 60,000 cases. One woman said her case manager even agreed this was a bug and that she deserved to receive benefits, but the case manager didn’t have the power to reinstate them!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/hrw-eu.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption class="figure-caption">Human Rights Watch report</figcaption>
-</figure>
-</div>
-<p>Another domain to consider is content moderation. The <a href="https://santaclaraprinciples.org/">Santa Clara Principles for content moderation</a> were developed by a group of ethicists, although these principles are not observed by the major platforms. I want to share Principle 3, because I love the wording, which is that companies should provide a <em>meaningful opportunity for timely appeal</em>. I really like this idea of appeal being <em>meaningful</em> and <em>timely</em>. I think this is relevant far, far beyond content moderation. Too often, even when there is a way to try to report a mistake, you just get an automated response that clearly hasn’t been read or you have to wait months for an answer. It is important that appeals are not just available, but also that they are meaningful and timely.</p>
-</section>
-<section id="contestability" class="level2">
-<h2 class="anchored" data-anchor-id="contestability">Contestability</h2>
-<p><a href="https://dl.acm.org/doi/abs/10.1145/3311957.3359435"><em>Contestability</em></a> is the idea of building an algorithmic system to include mechanisms for questioning and disagreeing with results as part of the system, rather than as an external add-on. Too often we build computational systems assuming okay this is going to work great, and then when there are errors, we tack on something extra at the end. I found this provocative to think about how we <strong>include disagreement into the core of the system</strong>.</p>
-<p>I had considered this from a slightly different angle in my work with fast.ai, where we have a concept of what we call <em>augmented machine learning</em>. This is in contrast to auto machine learning, which is often about automating a process end to end. With <a href="https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml">augmented machine learning</a> we really wanted to think about what are the things that humans are really good at and how can we take advantage of human strengths as opposed to simply trying to automate everything and then being left with weird gaps of stuff that computers are not doing well. How can humans and computers best work together? This is important to keep in mind with system design.</p>
-</section>
-<section id="fairness-and-bias" class="level2">
-<h2 class="anchored" data-anchor-id="fairness-and-bias">Fairness and Bias</h2>
-<p>It is important to consider fairness and bias, but that alone is insufficient. I imagine many of you are familiar with the <a href="http://gendershades.org/overview.html">Gender Shades research</a> on facial recognition by Joy Boulamwini, Timnit Gebru, and Deborah Raji. They evaluated commercial computer vision products that had been released from a number of big name companies including Microsoft, IBM, and <a href="https://www.nytimes.com/2019/01/24/technology/amazon-facial-technology-study.html">Amazon</a>. They found that the products performed worse on women than on men and worse on people with dark skin than on people with light skin, leading to terrible results for dark-skinned women. For instance, IBM’s product had 99.7% accuracy on light skinned men, but just 65% accuracy on dark-skinned women. That is a huge discrepancy in a product that had been commercially released. This research was ground-breaking in bringing attention to a pernicious issue.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/gendershades.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
-<figcaption class="figure-caption">Results from one of the GenderShades studies</figcaption>
-</figure>
-</div>
-<p>Some people have reacted with a superficial response, which is not consistent what the researchers wrote, concluding that the solution is solely to get more pictures of dark-skinned women and then call it a day. While issues of representation in underlying training datasets need to be addressed, this is only one part of the problem. We have to look at how these systems are used, which poses many other significant harms.</p>
-</section>
-<section id="harmful-if-it-doesnt-work-harmful-if-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="harmful-if-it-doesnt-work-harmful-if-it-works">Harmful if it doesn’t work; Harmful if it works</h2>
-<p>In several USA cities, <a href="https://www.nbcmiami.com/investigations/miami-police-used-facial-recognition-technology-in-protesters-arrest/2278848/">police have</a> used <a href="https://www.theverge.com/2020/8/18/21373316/nypd-facial-recognition-black-lives-matter-activist-derrick-ingram">facial recognition</a> to <a href="https://www.theverge.com/2016/10/11/13243890/facebook-twitter-instagram-police-surveillance-geofeedia-api">identify Black people</a> protesting police racism and police murders of unarmed civilians. There’s a huge power issue when you look at this type of use of technology. I believe this is unethical whether or not it works. It is certainly terrible to misidentify people and arrest the wrong person, but it’s a threat to civil rights to identify protesters.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/police-facial-rec.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption class="figure-caption">Headlines about police use of facial recognition to identify protesters in Miami, NYC, and Baltimore</figcaption>
-</figure>
-</div>
-<p><a href="https://www.nytimes.com/2019/11/19/technology/artificial-intelligence-bias.html">Dr.&nbsp;Timnit Gebru wrote</a>, <em>“A lot of times, people are talking about bias in the sense of equalizing performance across groups. They’re not thinking about the underlying foundation, whether a task should exist in the first place, who creates it, who will deploy it on which population, who owns the data, and how is it used?”</em> These are all crucial questions to ask. They are questions of power. Yes, you should check the error rates on different subgroups, but that alone is insufficient, and doesn’t address questions of power.</p>
-<p>While the policing examples are from the USA, this is a pattern throughout history and throughout the world. <a href="https://digitalrepository.unm.edu/nmlr/vol50/iss3/2/">Professor Alvaro Bedoya wrote</a>, <em>“It is a pattern throughout history that surveillance is used against those considered ‘less than’, against the poor man, the person of color, the immigrant, the heretic. It is used to try to stop marginalized people from achieving power.”</em> The history of surveillance as a weapon used against the marginalised stretches back centuries and predates computers, but <strong>AI has now turbocharged this dynamic</strong>.</p>
-</section>
-<section id="operating-at-scale" class="level2">
-<h2 class="anchored" data-anchor-id="operating-at-scale">Operating at scale</h2>
-<p>Robodebt was a program where the Australian government created unlawful debts for hundreds of thousands of people through an automated system. People would be notified that they had been overpaid on welfare (often, this was false, but contesting it required documentation most people didn’t have) and that they now owed the government significant amounts of money. This destroyed many lives, even driving some <a href="https://www.theguardian.com/australia-news/2023/feb/20/platitudes-and-false-words-mother-of-robodebt-victim-who-took-own-life-tells-inquiry-of-government-stonewalling">victims to suicide</a>. A <a href="https://www.theguardian.com/australia-news/2020/may/29/robodebt-government-to-repay-470000-unlawful-centrelink-debts-worth-721m">detail that struck me</a> is that the number of debts issued went from 20,000 <em>per year</em>, back when it was a more manual process, to 20,000 <em>per week</em> with automation. That is a 50x scale up! <strong>Automation was used to drastically scale putting poor people into debt</strong>. This is another disturbing pattern in machine learning.</p>
-</section>
-<section id="centralizing-power" class="level2">
-<h2 class="anchored" data-anchor-id="centralizing-power">Centralizing Power</h2>
-<p>Machine learning often has the effect of centralizing power. It can be implemented with no system for recourse and no way to identify mistakes, as we saw earlier with people whose <a href="https://www.theverge.com/2018/3/21/17144260/healthcare-medicaid-algorithm-arkansas-cerebral-palsy">healthcare was wrongly cut due to a bug</a>. It can be used cheaply at massive scale, as shown with Robodebt. It can also replicate identical biases or errors at scale.</p>
-<p>Often when I teach about how automated systems can cause harm, <a href="https://rachel.fast.ai/posts/2018-08-07-hbr-bias-algorithms/">people will point out</a> how humans make mistakes and are biased too. However, there are key differences in automated systems. It is not just plug-and-play interchangeable when you switch from a human decision maker to an automated decision maker.</p>
-<p>Automated systems can also be used to evade responsibility. This is true of bureaucracy in general. While in non-automated bureaucracies you also get a passing of the buck (“I was just following orders” or ”it’s this other person’s fault”); however, as dana boyd has pointed out, <a href="https://www.youtube.com/watch?v=NTl0yyPqf3E">automated systems are often being used to extend bureaucracy</a> (as explained by danah boyd), adding additional places to deflect responsibility.</p>
-<p>In the example health care software bug example that I shared, a journalist interviewed the creator of that algorithm. He is earning royalties through a private company, and he said it’s not the company’s responsibility to offer an explanation. He blamed policymakers for the errors. The policymakers could blame the particular people that implemented this software. Everyone can point to somebody else or even to the software itself. Systems where nobody takes responsibility do not lead to good outcomes.</p>
-</section>
-<section id="feedback-loops" class="level2">
-<h2 class="anchored" data-anchor-id="feedback-loops">Feedback loops</h2>
-<p>Feedback loops occur when you create the outcome that you were trying to predict. Data can become tainted from the output of the model. Furthermore, machine learning models can amplify bias, not just encode it. There have been <a href="https://arxiv.org/abs/1901.09451">multiple papers</a> showing that if <a href="https://www.wired.com/story/machines-taught-by-photos-learn-a-sexist-view-of-women/">you start</a> with <a href="https://arxiv.org/abs/1706.09847">a biased dataset</a> you can actually train a model that is even <strong>more</strong> biased than the training dataset.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/talk-power.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption class="figure-caption">Screenshot from my talk at QUT, on ways that AI can centralize power</figcaption>
-</figure>
-</div>
-<p>In summary, these are several reasons why machine learning can end up centralising power and why automated systems are different from human decision makers. AI researcher Pratyusha Kalluri advises us that rather than ask whether an AI application is fair to instead <a href="https://www.nature.com/articles/d41586-020-02003-2">ask how it shifts power</a>.</p>
-</section>
-<section id="the-people-impacted" class="level2">
-<h2 class="anchored" data-anchor-id="the-people-impacted">The People Impacted</h2>
-<p>Another thing I want to highlight about the healthcare example is that the people whose healthcare was incorrectly cut saw the problem right away, but there was no way to get that mistake acknowledged or addressed.</p>
-<p>Another tragic example of people recognizing an issue but not being able to get it addressed is Facebook’s role in the genocide in Myanmar. In 2018, the UN found that Facebook had <a href="https://www.reuters.com/article/us-myanmar-rohingya-facebook-idUSKCN1GO2PN">played a “determining role”</a> in the genocide; however that was not not a surprise to anyone who had been following the events. A tech entepreneur <a href="https://www.wired.com/story/how-facebooks-rise-fueled-chaos-and-confusion-in-myanmar/">based in Myanmar said</a>, “That’s not 20/20 hindsight. The scale of this problem was significant. It was already apparent [going back to 2013].”</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/myanmar.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption class="figure-caption">Articles about the role of Facebook in the Myanmar genocide</figcaption>
-</figure>
-</div>
-<p>It’s important to understand that genocide does not come out of nowhere. It gradually escalates. From 2013, people warned executives about how Facebook was being used in Myanmar to incite violence and to dehumanize an ethnic minority. In 2013, 2014, and 2015, people raised warnings and they were not listened to.</p>
-<p>An indication of how little Facebook did to address the issues is that the start of 2015 they only had two contractors who spoke Burmese, and they only hired 2 more that year. Compared to the number of Burmese-speaking users in Myanmar, it was a tiny number. Facebook invested very few resources in this (contrast the situation with when <a href="https://www.fast.ai/posts/2018-04-19-facebook.html#myanmar">Facebook rapidly hired over a thousand content moderators</a> in Germany to avoid a fine).</p>
-<p>This is a pattern that we see over and over, that often the people most impacted by a system recognize the issues earliest, but they are not listened to and don’t have effective ways to raise an alarm. They also best understand the needed interventions for addressing the ethical risk. It is crucial that the people most impacted have avenues for participation and power.</p>
-</section>
-<section id="practical-resources" class="level2">
-<h2 class="anchored" data-anchor-id="practical-resources">Practical Resources</h2>
-<p>The <a href="https://icml.cc/virtual/2020/workshop/5720">participatory approaches to machine learning</a> workshop at ICML 2020 was fantastic. The organizers of the workshop highlighted that the designers of a machine learning system have far more power over the system than the individuals impacted. Even within algorithmic fairness or human-centered ML, <strong>ethics work is often focused on centralized solutions, which can further increase the power of system creators</strong>. The workshop organizers called for more democratic, cooperative, and participatory approaches.</p>
-<p>I want to share some practical resources with you. The Markkula Center for Applied Ethics at Santa Clara University has a packet of resources online for ethics and technology practice and in particular I love their <a href="https://www.scu.edu/ethics-in-technology-practice/ethical-toolkit/">Tech Ethics Toolkit</a>. This is a set of practices that you could implement within your organization. As an example, tool 3 is “expanding the ethical circle”, which involves setting a regular time aside to make sure you are going through who all the stakeholders are that will be directly affected by a system, as well as who will be indirectly affected in significant ways. It involves asking whose skills, experiences, and values have we simply assumed rather than actually consulted. The toolkit goes into more detail about this on questions to ask and things to look for.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/diverse-voices.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Diverse Voices Guide</figcaption>
-</figure>
-</div>
-<p>Another useful resource on this is the <a href="https://techpolicylab.uw.edu/news/diverse-voices-guide/">Diverse Voices guide</a> from the University of Washington Tech Policy Lab. In addition to an academic paper, they have a practical how-to guide on assembling panels of groups who are not be well-represented and whose input you need. They include examples, such as panels of people who are formerly incarcerated, people who don’t drive cars, and extremely low income people.</p>
-</section>
-<section id="data-are-not-bricks-to-be-stacked-oil-to-be-drilled" class="level2">
-<h2 class="anchored" data-anchor-id="data-are-not-bricks-to-be-stacked-oil-to-be-drilled">Data are not bricks to be stacked, oil to be drilled</h2>
-<p>In conclusion, explainability on its own is insufficient; we need actionable recourse and contestability. Fairness is insufficient; we need justice. The people most impacted by a system need avenues for participation and power.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/talk-end.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption class="figure-caption">Screenshot from my talk at QUT</figcaption>
-</figure>
-</div>
-<p>These are very difficult problems but some steps towards solutions are:</p>
-<ul>
-<li>making sure you have ways to identify, report, and address errors quickly</li>
-<li>offering timely meaningful appeals</li>
-<li>include consultation with voices that are often overlooked (and not just in a tokenistic way</li>
-<li>designing products processes processes and technology with contestability in mind</li>
-<li>diversity in hiring retention and promotions (diversity including nationality and language)</li>
-</ul>
-<p>I’ll close with a quote that I love from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7296309/">AI researcher Inioluwa Deborah Raji</a>, <em>“But data are not bricks to be stacked, oil to be drilled, gold to be mined, opportunities to be harvested. Data are humans to be seen, maybe loved, hopefully taken care of.”</em></p>
-<p>The video version of my talk is <a href="https://www.youtube.com/watch?v=spHB7IEFXbg&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">available here</a>.</p>
-</section>
-<section id="further-reading-watching" class="level2">
-<h2 class="anchored" data-anchor-id="further-reading-watching">Further reading / watching</h2>
-<p>You may also be intersted in:</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=KChtdexd5Jo&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">The New Era in NLP | SciPy 2019 | Rachel Thomas</a>: keynote talk I gave at SciPy 2019, just after the release of GPT-2, about the technical advances and ethical risks of language models</li>
-<li><a href="https://rachel.fast.ai/posts/2021-08-17-eleven-ethics-videos/">11 Short Videos About AI Ethics</a>: short videos about machine learning ethics, which I created for the fast.ai deep learning course</li>
-<li><a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">Reliance on metrics is a fundamental challenge for AI</a>: academic paper David Uminsky and I wrote about how AI is perhaps too good at optimizing metrics, and the problems this can create</li>
-</ul>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>ethics</category>
-  <category>machine learning</category>
-  <guid>https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/index.html</guid>
-  <pubDate>Mon, 15 May 2023 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2023-05-16-ai-centralizes-power/cuts-healthcare.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
