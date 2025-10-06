@@ -15,7 +15,146 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 16 Jun 2025 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 06 Oct 2025 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>Scientists Just Connected the Dots Between Viruses and… Everything</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Most people catch many viruses in their lives– for example, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8752571/">over 90% of adults have Epstein-Barr virus</a>, and adults <a href="https://www.bbc.com/news/health-31698038">catch the flu</a> about once every 5 years. For a long time, catching frequent viruses was considered both inevitable and harmless. But it turns out that common, seemingly-mild viruses have disturbing long-term health impacts.</p>
+<p>Common respiratory viruses increase the risk of <a href="https://academic.oup.com/cardiovascres/article/121/9/1330/8164343">heart attacks and strokes</a>. Viruses are linked to <a href="https://www.cell.com/neuron/fulltext/S0896-6273%2822%2901147-3">dementia and Alzheimer’s Disease</a>. They can <a href="https://www.nature.com/articles/s41586-025-09332-0">re-awaken cancer cells</a> in patients whose cancer was previously in remission. Persistent infections <a href="https://www.youtube.com/watch?v=6EvdTlVTazo">accelerate aging</a> and undermine longevity. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10051805/">Viruses can be the trigger</a> that kicks off life-long autoimmune diseases. New studies come out each week confirming that viruses can harm the health of your <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8231753/">heart</a>, <a href="https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehaf430/8236450?login=false">blood vessels</a>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8231753/">brain</a>, <a href="https://www.cell.com/neuron/fulltext/S0896-6273%2822%2901147-3">nervous system</a>, and <a href="https://gut.bmj.com/content/70/4/698">gut</a>.</p>
+<p>Please pause and let this sink in. If we were to truly internalize this information, there would be massive shifts in the practice of medicine, scientific research, and public policy.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/accelerate-aging.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">Pathogens accelerate aging in many ways. Proal and VanElzakker, 2025</figcaption>
+</figure>
+</div>
+<p>What you can avoid (infections) may be just as important as what you seek out (exercise, healthy foods). This news seems depressing. It’s too late, viruses are everywhere, everyone has already caught them– what can be done?</p>
+<p>There actually is a lot we can do. First of all, developing new anti-viral therapies and treatments should be a top priority. Second, regardless of what infections you’ve already had, preventing or reducing future infections will have a positive impact. There is exciting work happening towards both of these goals, including AI-assisted drug design, patient-led biomedical research, initiatives to <a href="https://theconversation.com/why-investment-in-clean-indoor-air-is-vital-preparation-for-the-pandemics-and-climate-emergencies-to-come-265743">improve indoor air quality</a> and <a href="https://www.nature.com/articles/s41598-022-08462-z">new technologies</a> for cleaning the air.</p>
+<p>How can viruses cause all these bad outcomes when some people who catch them are fine? Human health is complicated. Disease development involves a complex interplay of factors: infections, underlying genetics, environment, the microbiome, and more. Let’s return to the example of Epstein-Barr Virus (EBV). EBV has been strongly linked to <a href="https://www.science.org/doi/10.1126/science.abj8222">Multiple Sclerosis</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/19564299/">prolonged fatigue</a>, and <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8752571/">6 different types of cancer</a>. Given that almost everyone has had EBV, even though “only” a percentage of people develop these lasting impacts, this is a major cause of suffering.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/disease-venn-diagram.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Viruses tilt the probabilities against you</figcaption>
+</figure>
+</div>
+<section id="a-new-world-and-a-powerful-idea" class="level2">
+<h2 class="anchored" data-anchor-id="a-new-world-and-a-powerful-idea">A new world and a powerful idea</h2>
+<p>You may wonder why so many of these health issues are on the rise, when viruses are nothing new. Our world has changed drastically in recent decades compared to most of human evolution. We live in a hyperconnected age of global mega-cities and record numbers of large international flights now. We spend our time indoors in crowded, poorly ventilated buildings. These factors have allowed viruses to travel faster and farther than ever before.</p>
+<p>The misleadingly named “Hygiene Hypothesis” is often used to justify the misconception that all microbes are good for us. However, this theory is more accurately reframed as the <a href="https://pubmed.ncbi.nlm.nih.gov/24401109/">“Old friends hypothesis”</a>: humans co-evolved with friendly bacteria and some parasites. Viruses are not our friends, but rather enemies. <a href="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/">We did not co-evolve</a> with these crowd infections of mass travel, mega-cities, and indoor confines.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/old-friends.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Not all infections are the same! Modern crowd infections are causing huge harm. Figure from Rook, 2014</figcaption>
+</figure>
+</div>
+<p>The idea that viruses are contributing so much to human suffering and long-term disease is powerful. It will transform how we approach medicine, health, and aging, if we let it. This revelation is one of the key reasons that I decided to make a mid-life career pivot, stepping back from fulfiling work in AI to <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">return to graduate school</a> in Microbiology-Immunology, a journey I have been chronicling here on my blog.</p>
+<p>I hope to spend the next few decades applying my machine learning skills to problems at the intersection of infections, multi-omic data sets, the microbiome, and chronic disease. Below, I will share some of what has captured my attention and upended my old views on disease and medicine.</p>
+</section>
+<section id="viruses-have-many-ways-to-wreak-havoc" class="level2">
+<h2 class="anchored" data-anchor-id="viruses-have-many-ways-to-wreak-havoc">Viruses have many ways to wreak havoc</h2>
+<p>Viruses have evolved to evade, outmatch, commandeer, and otherwise hurt our immune systems. Here is an incomplete and overlapping list of ways that viruses can harm us:</p>
+<section id="persistence" class="level3">
+<h3 class="anchored" data-anchor-id="persistence">1. Persistence</h3>
+<p>Some viruses quietly stick around for years or decades after our initial illness. They may re-awaken later to cause more problems, or they may spawn surprising issues that we don’t recognize as part of our initial infection.</p>
+<p>When they persist in our cells, viruses can impact gene expression, hijacking processes our cells need to gain nutrition and energy. <a href="https://www.youtube.com/watch?v=6EvdTlVTazo">Dr.&nbsp;Amy Proal</a>, a researcher in this area, says that treating <a href="https://www.sciencedirect.com/science/article/pii/S1568163725002119">persistent infections</a> will be necessary to combat aging and extend healthspan.</p>
+</section>
+<section id="autoimmunity" class="level3">
+<h3 class="anchored" data-anchor-id="autoimmunity">2. Autoimmunity</h3>
+<p>During an infection, sometimes our immune cells get confused into attacking our own tissue that may “look” similar to the virus (this process is known as <a href="https://creativemeddoses.com/topics-list/molecular-mimicry-in-guillain-barre-syndrome/">molecular mimicry</a>). Once it has mistakenly learned to attack self-tissue, the immune system may continue to do so, even after the virus has been defeated. This is just one of several ways by which <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10051805/">viruses can trigger</a> autoimmune diseases such as Lupus, Multiple Sclerosis, Rheumatoid Arthritis, or Type 1 Diabetes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/molecular-mimicry.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">A confused antibody decides to attack a pathogen, as well as the similar-looking myelin covering of the nerves, causing Guillain-Barré syndrome (Comic from Creative Med Doses)</figcaption>
+</figure>
+</div>
+</section>
+<section id="microbiome-changes" class="level3">
+<h3 class="anchored" data-anchor-id="microbiome-changes">3. Microbiome changes</h3>
+<p>You might expect a stomach bug like norovirus to <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0048224">change the gut microbiome</a> for the worse. Surprisingly, respiratory viruses such as <a href="https://link.springer.com/article/10.1186/s40168-017-0386-z?getft_integrator=asm">Influenza</a>, <a href="https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2018.00182/full">RSV</a>, and <a href="https://www.nature.com/articles/s41575-022-00698-4">Covid</a> all harm the gut microbiome too. This is bad news, since the gut microbiome helps to regulate the immune system and produces neurotransmitters for our brain.</p>
+</section>
+<section id="immune-dysregulation" class="level3">
+<h3 class="anchored" data-anchor-id="immune-dysregulation">4. Immune Dysregulation</h3>
+<p>There are a bunch of ways that the immune system can malfunction (including the ones listed above). Measles can cause <a href="https://www.science.org/doi/10.1126/science.aay6485">immune amnesia</a>, where the immune system forgets previous infections it had learned to fight, leading people to catch the exact same diseases again. There is growing evidence that <a href="https://www.bmj.com/content/390/bmj.r1733">covid has a negative impact</a> on the immune system as well.</p>
+</section>
+<section id="reactivation-of-other-pathogens" class="level3">
+<h3 class="anchored" data-anchor-id="reactivation-of-other-pathogens">5. Reactivation of other pathogens</h3>
+<p>Infection with a new virus can wake up old infections that were sleeping quietly in your cells. It is unfair, but sometimes viruses will gang up on you, <a href="https://www.jci.org/articles/view/163669">re-activating other viruses</a> (or bacteria) that weren’t bothering you before.</p>
+</section>
+<section id="cardiac-damage" class="level3">
+<h3 class="anchored" data-anchor-id="cardiac-damage">6. Cardiac damage</h3>
+<p><a href="https://theconversation.com/chickenpox-and-shingles-virus-lying-dormant-in-your-neurons-can-reactivate-and-increase-your-risk-of-stroke-new-research-identified-a-potential-culprit-194627">Chickenpox/Shingles</a>, Influenza, and <a href="https://theconversation.com/long-covid-viruses-and-zombie-cells-new-research-looks-for-links-to-chronic-fatigue-and-brain-fog-261108">Covid</a> all raise the <a href="https://academic.oup.com/cardiovascres/article/121/9/1330/8164343">risk of heart attacks and strokes</a>. Viruses have <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8078120/">many ways of harming</a> our cardiac systems: inflammation, damage to the blood vessles, increased blood clots, and damage to the heart.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/virus-cardiac-events.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">From a meta-analysis of 48 studies about respiratory viruses triggering heart attacks &amp; strokes (Nguyen, et al, 2025)</figcaption>
+</figure>
+</div>
+</section>
+<section id="cancer" class="level3">
+<h3 class="anchored" data-anchor-id="cancer">7. Cancer</h3>
+<p>Cancer involves a failure of the immune system to kill cells that have gone rogue and turned over to the dark side. In 2008, it was estimated that <a href="https://www.mdanderson.org/cancerwise/8-viruses-that-cause-cancer.h00-159774867.html">viral infections</a> contribute to <a href="https://www.sciencedirect.com/science/article/pii/S0925443907002384">15-20% of human cancer</a> cases. Additional research further linking viruses and cancer has come out since then, so the percentage may be higher now. Both flu and covid infections can <a href="https://www.nature.com/articles/d41586-025-02420-1">reawaken “sleeping” cancer cells</a> that had previously been in remission or cause cancer to spread.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/8-viruses-cancer.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">An article from MD Anderson on 8 Viruses that Cause Cancer</figcaption>
+</figure>
+</div>
+</section>
+<section id="cumulative-impacts" class="level3">
+<h3 class="anchored" data-anchor-id="cumulative-impacts">8. Cumulative impacts</h3>
+<p>You might hope that you could catch a virus, get it over, and be done with it. Unfortunately, that is often not the case. A young college student was fine after having covid twice, but then struggled to walk short distances <a href="https://newrepublic.com/article/177849/biden-democrats-covid-pandemic-2024">after her 3rd infection</a>. A <a href="https://www.aspendailynews.com/opinion/marolt-if-i-haven-t-seemed-like-myself-lately/article_514db18c-11c1-11ef-a507-3fb6e81cde90.html">Colorado newspaper columnist</a> was skiing, biking, mountain climbing, and running half-marathons up until his 5th covid infection. At this point, he developed pain, fatigue, and migraines that prevent him from doing the activities he loves most. These are not just isolated anecdotes, <a href="https://www.nature.com/articles/s41591-022-02051-3">research confirms</a> the <a href="https://www.cidrap.umn.edu/covid-19/covid-reinfection-may-raise-risk-persistent-symptoms-35">cumulative dangers</a> of repeat infections. In children, a <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(25)00476-1/fulltext">second covid infection</a> is more likely to cause Long Covid than the first infection. Whatever your previous history, reducing risk of future infections is a worthwhile goal.</p>
+<p>The above mechanisms are not exclusive. For example, some microbiome changes can make it easier for pathogens to pass from the gut into the bloodstream and provoke an autoimmune reaction (a process I talked about in this <a href="https://www.youtube.com/embed/6BYocBxOfsU?si=iGUjSMqG_f95N4zr">5-minute video</a>)</p>
+</section>
+</section>
+<section id="the-paradigm-shift" class="level2">
+<h2 class="anchored" data-anchor-id="the-paradigm-shift">The Paradigm Shift</h2>
+<p>For most viruses, people focus on just a few weeks of initial symptoms. This is the wrong way to think about infections. Viral meningitis or EBV increases your risk of Alzheimer’s or dementia, <a href="https://www.cell.com/neuron/fulltext/S0896-6273%2822%2901147-3">5-15 years later</a>. Chicken pox (varicella zoster virus) can reactivate decades afterwards as shingles, which itself then leads to <a href="https://theconversation.com/chickenpox-and-shingles-virus-lying-dormant-in-your-neurons-can-reactivate-and-increase-your-risk-of-stroke-new-research-identified-a-potential-culprit-194627">increased risk of stroke</a> for at least the following year. We need to radically change how we think about viruses.</p>
+<p>There is much we still don’t know about the immune system. Early during the covid pandemic, many experts made definitive statements about the risks of covid, assuming that those who didn’t die in the first few weeks must be completely fine. However, perturbations from infections that initially seem minor can have far-reaching, long-lasting, and time-delayed impacts. There is a ton that is still unknown.</p>
+<p>Trying to figure out how viruses hijack cell processes, alter microbiomes, and dysregulate the immune system are complex questions. Researching these areas with curiosity, determination, and an open mind will reveal a lot.</p>
+</section>
+<section id="reasons-for-hope" class="level2">
+<h2 class="anchored" data-anchor-id="reasons-for-hope">Reasons for Hope</h2>
+<p>It can be gloomy to think about all the damage viruses can cause. The good news is that we don’t have to resign ourselves to these outcomes. Facing the disturbing reality that many viruses are worse than we thought is just the first step towards coming up with creative new solutions. There are some bright, curious, and determined people focused on these problems, although we need even more hands and brains to get involved.</p>
+<p>The breadth and depth of the harms caused by viruses can focus biomedical research in new directions. Most viruses do not have effective anti-viral treatments. This creates a huge need. Scientific inquiry can <a href="https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/">fail catastrophically</a> when those closest to the problem are not included. Patient-led research gives me hope, because it is centered on the <a href="https://rachel.fast.ai/posts/2024-02-20-ai-medicine/index.html">expertise of those closest to the problem</a>. I am also optimistic about the use of AI for <a href="https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/index.html">discovering new drugs</a> and <a href="https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/index.html">designing immune therapies</a>.</p>
+<p>On the prevention side, reducing how frequently people get sick will have a big impact. Different viruses spread in different ways. In recent years, we have learned that many <a href="https://www.theatlantic.com/health/archive/2021/09/coronavirus-pandemic-ventilation-rethinking-air/620000/">infections are airborne</a>. Healthy indoor air is a human right, <a href="https://theconversation.com/why-investment-in-clean-indoor-air-is-vital-preparation-for-the-pandemics-and-climate-emergencies-to-come-265743">like access to clean drinking water</a>. The UN recently held a high-level event focused on the <a href="https://www.science.org.au/news-and-events/news-and-media-releases/australia-to-lead-first-ever-united-nations-indoor-air-quality-global-pledge">right to clean air</a>. There are many measures we can take to reduce transmission of airborne diseases, such as improved ventilation, air purification, and far-UVC technologies. <a href="https://x.com/_CatintheHat/status/1760626083534414110">Parliament houses</a>, <a href="https://slate.com/technology/2023/01/davos-covid-precaution-uv-lights-air-filters.html">venues for elites</a>, and <a href="https://x.com/LongDesertTrain/status/1494126572625924098">barns for pigs</a> have already received these air quality upgrades. We need children in schools, employees in workplaces, and patients in hospitals to get the same protections. Hopefully, we are on the cusp of a <a href="https://www.airclub.org/">clean air revolution</a>, with more people and organizations recognizing that healthy indoor air is essential.</p>
+<p><a href="https://www.iqair.com/newsroom/air-pollution-masks-what-works-what-doesn-t">N95 masks offer</a> an immediate way to significantly reduce how often you get sick. Thankfully, the N95s available currently are more comfortable and <a href="https://theconversation.com/what-is-the-best-mask-for-covid-19-a-mechanical-engineer-explains-the-science-after-2-years-of-testing-masks-in-his-lab-175481">more effective</a> than the surgical or cloth masks that many of us wore back in 2020.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/indoor-air.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="figure-caption">On the brink of an indoor air quality revolution</figcaption>
+</figure>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Viruses can harm our cardiac health and cognition, and increase our chances of cancer. If this revelation is fully realized, it will change how the field of medicine operates, priorities in research funding, and public policy on everything from indoor air quality standards to paid sick leave and school attendance. I believe we are on the threshold of what could be a drastic shift in better understanding, preventing, and treating viruses, thus unlocking longer and healthier lives.</p>
+<p>Related posts you may also be interested in:</p>
+<ul>
+<li><a href="https://rachel.fast.ai/posts/2024-11-12-devious-tricks/index.html">5 Devious Tricks Pathogens Use Against Us</a></li>
+<li><a href="https://rachel.fast.ai/posts/2023-03-07-viruses1/index.html">Viruses are weirder, worse, &amp; more preventable than you realise</a></li>
+<li><a href="https://rachel.fast.ai/posts/2023-03-22-viruses2/index.html">Viruses: The Silent Triggers of Autoimmune and Neurodegenerative Diseases</a></li>
+<li><a href="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/index.html">Your Immune System is Not a Muscle</a></li>
+</ul>
+<p>If you enjoy my posts, please subscribe to be notified of new posts via email:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>science</category>
+  <guid>https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/index.html</guid>
+  <pubDate>Mon, 06 Oct 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/accelerate-aging-rectangle-2.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>AI &amp; medicine: promise &amp; peril</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1817,64 +1956,6 @@
   <guid>https://rachel.fast.ai/posts/2024-01-23-cytokines1/index.html</guid>
   <pubDate>Mon, 22 Jan 2024 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2024-01-23-cytokines1/biolegend-zoom.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>4 Things I Learned About Bugs</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2024-01-09-insects/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>I am currently halfway through my Masters of Microbiology &amp; Immunology. My goal is to apply my previous decade of experience as a data scientist and AI researcher to immunology. Even though my primary interest is on long-term impacts of viruses on humans, I wanted a broader and deeper understanding of microbiology in general. This past semester, I was pleasantly surprised to learn several fascinating facts about insects!</p>
-<section id="insects-are-useful-for-making-medications-and-vaccines" class="level2">
-<h2 class="anchored" data-anchor-id="insects-are-useful-for-making-medications-and-vaccines">Insects are useful for making medications and vaccines</h2>
-<p>Proteins are a key component of many vaccines and medications. To create these proteins, scientists have come up with a range of <strong>protein expression systems</strong>. Bacteria, yeast, mammalian cells, and genetically modified animals can all be used to produce proteins for medications. And so can insects! For instance, <a href="https://www.nature.com/articles/nbt1095">baculovirus is a virus</a> that mostly infects insects, and its genome can be modified to produce various cytokines (chemical messengers), antivirals (such as type 1 interferons), and vaccine components.</p>
-<p>There are trade-offs with any choice of protein expression system. For example, <em>bacteria</em> are fast and cheap to use, but because they are quite dissimilar to humans, they are much worse for key steps such as protein folding or adding sugars to proteins (a process called glycosylation). And while <em>mammalian</em> cells or genetically modified animals will produce much more accurately folded proteins and glycosylation, they are expensive and slow for production. Baculoviruses from insects aren’t the worst in any of these categories, which makes them a widely useful workhorse for protein expression.</p>
-<p>Insect cells are more similar to human cells than yeast or bacteria are, which means that the proteins they produce (when infected with <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7159335/">modified baculoviruses</a>) are more likely to be folded correctly, and they make for cheaper and faster expression systems than mammalian cells do. A baculovirus expression system is used, for example, to produce Novavax, a popular protein-based covid vaccine (which may have fewer side-effects than mRNA-based covid vaccines such as Pfizer and Moderna).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2024-01-09-insects/expression-systems.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
-<figcaption class="figure-caption">Comparing Different Expression Systems, image from brainkart.com</figcaption>
-</figure>
-</div>
-</section>
-<section id="insects-have-the-same-problems-humans-do-viral-bacterial-fungal-and-protozoan-infections" class="level2">
-<h2 class="anchored" data-anchor-id="insects-have-the-same-problems-humans-do-viral-bacterial-fungal-and-protozoan-infections">Insects have the same problems humans do: viral, bacterial, fungal, and protozoan infections</h2>
-<p>Insects can be infected with harmful viruses, bacteria, fungi, and protozoa. <strong>Entomopathogens</strong> is a fun vocabulary word for pathogens that infect arthropods (arthropods include insects, mites, ticks, spiders, and more). These are sometimes used as natural pesticides, in order to try to control insect pests that may be feeding on crops or spreading disease. <a href="https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=24119">Entomopathogens may kill, limit reproduction, or shorten the life of arthropod pests</a>. They are generally less toxic to humans and other animals than other pesticides, although it is a risk that they could spread to related species.</p>
-</section>
-<section id="insects-really-need-the-bacteria-in-their-guts" class="level2">
-<h2 class="anchored" data-anchor-id="insects-really-need-the-bacteria-in-their-guts">Insects really need the bacteria in their guts</h2>
-<p>While some bacteria are harmful to insects, other bacteria are not only beneficial, but even essential. A diet consisting only of sap is not nutritionally complete. Neither is a diet just of blood. Some arthropods can’t produce all the vitamins they need, and instead rely on bacteria in their guts to help synthesize essential vitamins. These bacteria (known as obligate symbionts) rely on their hosts as well, in a mutually beneficial relationship. Bioinformatics and modern gene sequencing has revolutionized the study of these obligate symbionts by allowing for their genomes to be sequenced and studied. One paper calls them the <a href="https://pubmed.ncbi.nlm.nih.gov/24995872/">“The Tiniest Tiny Genomes”</a>, and describes how through a long process of coevolution the bacteria lost the genes to manufacture cell membrane components. They are completely reliant on their hosts, while also producing B vitamins and essential amino acids.</p>
-<p>While many types of bacteria help bugs synthesize nutrients, other types can help synthesize protective toxins to be used against predators. Diaphorina is an insect pest of citrus plants. Profftella, one of the bacterial obligate symbionts in its gut, is noteworthy for helping to <a href="https://pubmed.ncbi.nlm.nih.gov/32797185/">synthesize both vitamins and protective toxins</a> for its host, whereas many symbionts provide either vitamins or toxins, but not both.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2024-01-09-insects/psyllid.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">A Diaphorina on a leaf– gut bacteria not pictured. Photo by David Hall, USDA ID d595-1.</figcaption>
-</figure>
-</div>
-</section>
-<section id="a-common-bacteria-in-insects-reduces-risk-of-dengue-virus-to-humans" class="level2">
-<h2 class="anchored" data-anchor-id="a-common-bacteria-in-insects-reduces-risk-of-dengue-virus-to-humans">A common bacteria in insects reduces risk of Dengue Virus to humans</h2>
-<p>An astonishing <a href="https://www.cdc.gov/mosquitoes/mosquito-control/community/emerging-methods/wolbachia.html">60% of insects</a> (including butterflies, bees, and beetles) around the world have the bacteria Wolbachia. This fascinating bacteria can have some surprising impacts, including reducing the ability of mosquitoes to carry or transmit dengue virus.</p>
-<p><em>A. aegypti</em> mosquitoes are carriers of dengue virus. They do not naturally carry Wolbachia, but when mosquitoes with Wolbachia were <a href="https://www.nature.com/articles/s41598-023-42336-2">released in North Queensland, Australia</a>, predicted transmission of dengue infections dropped by 95% over the following 2 years. <a href="https://www.nejm.org/doi/full/10.1056/nejmoa2030243">A randomized study in Indonesia</a> released Wolbachia-infected mosquitoes in some regions but not others, and found the regions with the Wolbachia-infected mosquitoes had 77% fewer dengue cases.</p>
-<p>Another surprising effect of the bacteria is that a male mosquito with Wolbachia mates with a female mosquito that doesn’t have it, the fertilized eggs will not be viable. And two mosquitoes with different strains of Wolbachia can not produce viable eggs. Isn’t this weird??? This has been used in some efforts to reduce mosquito populations.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2024-01-09-insects/cytoplasmic-incompatibility.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
-<figcaption class="figure-caption">Cytoplasmic incompatibility, figure from https://almob.biomedcentral.com/articles/10.1186/s13015-020-00174-1</figcaption>
-</figure>
-</div>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>science</category>
-  <guid>https://rachel.fast.ai/posts/2024-01-09-insects/index.html</guid>
-  <pubDate>Mon, 08 Jan 2024 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2024-01-09-insects/psyllid.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
