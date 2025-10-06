@@ -1,0 +1,121 @@
+---
+title: 'Scientists Just Connected the Dots Between Viruses and… Everything'
+date: "2025-10-07"
+image: "/posts/2025-10-07-rethinking-viruses/accelerate-aging-rectangle-2.jpg"
+description: "We need to rethink everything we thought we knew about getting sick."
+author: "Rachel Thomas"
+categories: [science]
+toc: true
+---
+
+Most people catch many viruses in their lives-- for example, [over 90% of adults have Epstein-Barr virus](https://pmc.ncbi.nlm.nih.gov/articles/PMC8752571/), and adults [catch the flu](https://www.bbc.com/news/health-31698038) about once every 5 years.  For a long time, catching frequent viruses was considered both inevitable and harmless. But it turns out that common, seemingly-mild viruses have disturbing long-term health impacts.
+
+Common respiratory viruses increase the risk of [heart attacks and strokes](https://academic.oup.com/cardiovascres/article/121/9/1330/8164343). Viruses are linked to [dementia and Alzheimer’s Disease](https://www.cell.com/neuron/fulltext/S0896-6273%2822%2901147-3).  They can [re-awaken cancer cells](https://www.nature.com/articles/s41586-025-09332-0) in patients whose cancer was previously in remission. Persistent infections [accelerate aging](https://www.youtube.com/watch?v=6EvdTlVTazo) and undermine longevity.  [Viruses can be the trigger](https://pmc.ncbi.nlm.nih.gov/articles/PMC10051805/) that kicks off life-long autoimmune diseases. New studies come out each week confirming that viruses can harm the health of your [heart](https://pmc.ncbi.nlm.nih.gov/articles/PMC8231753/), [blood vessels](https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehaf430/8236450?login=false), [brain](https://pmc.ncbi.nlm.nih.gov/articles/PMC8231753/), [nervous system](https://www.cell.com/neuron/fulltext/S0896-6273%2822%2901147-3), and [gut](https://gut.bmj.com/content/70/4/698). 
+
+Please pause and let this sink in. If we were to truly internalize this information, there would be massive shifts in the practice of medicine, scientific research, and public policy.
+
+![Pathogens accelerate aging in many ways. Proal and VanElzakker, 2025](accelerate-aging.jpg){width=50%}
+
+What you can avoid (infections) may be just as important as what you seek out (exercise, healthy foods). This news seems depressing. It’s too late, viruses are everywhere, everyone has already caught them-- what can be done? 
+
+There actually is a lot we can do.  First of all, developing new anti-viral therapies and treatments should be a top priority. Second, regardless of what infections you’ve already had, preventing or reducing future infections will have a positive impact. There is exciting work happening towards both of these goals, including AI-assisted drug design, patient-led biomedical research, initiatives to [improve indoor air quality](https://theconversation.com/why-investment-in-clean-indoor-air-is-vital-preparation-for-the-pandemics-and-climate-emergencies-to-come-265743) and [new technologies](https://www.nature.com/articles/s41598-022-08462-z) for cleaning the air.
+
+How can viruses cause all these bad outcomes when some people who catch them are fine? Human health is complicated. Disease development involves a complex interplay of factors: infections, underlying genetics, environment, the microbiome, and more. Let's return to the example of Epstein-Barr Virus (EBV). EBV has been strongly linked to [Multiple Sclerosis](https://www.science.org/doi/10.1126/science.abj8222), [prolonged fatigue](https://pubmed.ncbi.nlm.nih.gov/19564299/), and [6 different types of cancer](https://pmc.ncbi.nlm.nih.gov/articles/PMC8752571/). Given that almost everyone has had EBV, even though "only" a percentage of people develop these lasting impacts, this is a major cause of suffering.
+
+![Viruses tilt the probabilities against you](disease-venn-diagram.jpg){width=60%}
+
+## A new world and a powerful idea
+
+You may wonder why so many of these health issues are on the rise, when viruses are nothing new. Our world has changed drastically in recent decades compared to most of human evolution. We live in a hyperconnected age of global mega-cities and record numbers of large international flights now. We spend our time indoors in crowded, poorly ventilated buildings. These factors have allowed viruses to travel faster and farther than ever before. 
+
+The misleadingly named "Hygiene Hypothesis” is often used to justify the misconception that all microbes are good for us. However, this theory is more accurately reframed as the [“Old friends hypothesis”](https://pubmed.ncbi.nlm.nih.gov/24401109/): humans co-evolved with friendly bacteria and some parasites. Viruses are not our friends, but rather enemies. [We did not co-evolve](https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/) with these crowd infections of mass travel, mega-cities, and indoor confines.
+
+![Not all infections are the same! Modern crowd infections are causing huge harm. Figure from Rook, 2014](old-friends.jpg){width=65%}
+
+The idea that viruses are contributing so much to human suffering and long-term disease is powerful. It will transform how we approach medicine, health, and aging, if we let it. This revelation is one of the key reasons that I decided to make a mid-life career pivot, stepping back from fulfiling work in AI to [return to graduate school](https://rachel.fast.ai/posts/2023-02-07-school-immunology/) in Microbiology-Immunology, a journey I have been chronicling here on my blog. 
+
+I hope to spend the next few decades applying my machine learning skills to problems at the intersection of infections, multi-omic data sets, the microbiome, and chronic disease. Below, I will share some of what has captured my attention and upended my old views on disease and medicine.
+
+## Viruses have many ways to wreak havoc
+
+Viruses have evolved to evade, outmatch, commandeer, and otherwise hurt our immune systems.  Here is an incomplete and overlapping list of ways that viruses can harm us:
+
+### 1. Persistence 
+
+Some viruses quietly stick around for years or decades after our initial illness. They may re-awaken later to cause more problems, or they may spawn surprising issues that we don’t recognize as part of our initial infection.
+
+When they persist in our cells, viruses can impact gene expression, hijacking processes our cells need to gain nutrition and energy.  [Dr. Amy Proal](https://www.youtube.com/watch?v=6EvdTlVTazo), a researcher in this area, says that treating [persistent infections](https://www.sciencedirect.com/science/article/pii/S1568163725002119) will be necessary to combat aging and extend healthspan.
+
+### 2. Autoimmunity
+
+During an infection, sometimes our immune cells get confused into attacking our own tissue that may “look” similar to the virus (this process is known as [molecular mimicry](https://creativemeddoses.com/topics-list/molecular-mimicry-in-guillain-barre-syndrome/)).  Once it has mistakenly learned to attack self-tissue, the immune system may continue to do so, even after the virus has been defeated.  This is just one of several ways by which [viruses can trigger](https://pmc.ncbi.nlm.nih.gov/articles/PMC10051805/) autoimmune diseases such as Lupus, Multiple Sclerosis, Rheumatoid Arthritis, or Type 1 Diabetes.
+
+![A confused antibody decides to attack a pathogen, as well as the similar-looking myelin covering of the nerves, causing Guillain-Barré syndrome (Comic from Creative Med Doses)](molecular-mimicry.jpg){width=70%}
+
+### 3. Microbiome changes
+
+You might expect a stomach bug like norovirus to [change the gut microbiome](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0048224) for the worse. Surprisingly, respiratory viruses such as [Influenza](https://link.springer.com/article/10.1186/s40168-017-0386-z?getft_integrator=asm), [RSV](https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2018.00182/full), and [Covid](https://www.nature.com/articles/s41575-022-00698-4) all harm the gut microbiome too. This is bad news, since the gut microbiome helps to regulate the immune system and produces neurotransmitters for our brain.
+
+### 4. Immune Dysregulation
+
+There are a bunch of ways that the immune system can malfunction (including the ones listed above). Measles can cause [immune amnesia](https://www.science.org/doi/10.1126/science.aay6485), where the immune system forgets previous infections it had learned to fight, leading people to catch the exact same diseases again. There is growing evidence that [covid has a negative impact](https://www.bmj.com/content/390/bmj.r1733) on the immune system as well.
+
+### 5. Reactivation of other pathogens
+
+Infection with a new virus can wake up old infections that were sleeping quietly in your cells.  It is unfair, but sometimes viruses will gang up on you, [re-activating other viruses](https://www.jci.org/articles/view/163669) (or bacteria) that weren’t bothering you before.
+
+### 6. Cardiac damage
+
+[Chickenpox/Shingles](https://theconversation.com/chickenpox-and-shingles-virus-lying-dormant-in-your-neurons-can-reactivate-and-increase-your-risk-of-stroke-new-research-identified-a-potential-culprit-194627), Influenza, and [Covid](https://theconversation.com/long-covid-viruses-and-zombie-cells-new-research-looks-for-links-to-chronic-fatigue-and-brain-fog-261108) all raise the [risk of heart attacks and strokes](https://academic.oup.com/cardiovascres/article/121/9/1330/8164343). Viruses have [many ways of harming](https://pmc.ncbi.nlm.nih.gov/articles/PMC8078120/) our cardiac systems: inflammation, damage to the blood vessles, increased blood clots, and damage to the heart.
+
+![From a meta-analysis of 48 studies about respiratory viruses triggering heart attacks & strokes (Nguyen, et al, 2025)](virus-cardiac-events.jpg){width=65%}
+
+
+### 7. Cancer
+
+Cancer involves a failure of the immune system to kill cells that have gone rogue and turned over to the dark side. In 2008, it was estimated that [viral infections](https://www.mdanderson.org/cancerwise/8-viruses-that-cause-cancer.h00-159774867.html) contribute to [15-20% of human cancer](https://www.sciencedirect.com/science/article/pii/S0925443907002384) cases. Additional research further linking viruses and cancer has come out since then, so the percentage may be higher now. Both flu and covid infections can [reawaken “sleeping” cancer cells](https://www.nature.com/articles/d41586-025-02420-1) that had previously been in remission or cause cancer to spread.
+
+![An article from MD Anderson on 8 Viruses that Cause Cancer](8-viruses-cancer.jpg){width=65%}
+
+
+### 8. Cumulative impacts
+
+You might hope that you could catch a virus, get it over, and be done with it. Unfortunately, that is often not the case. A young college student was fine after having covid twice, but then struggled to walk short distances [after her 3rd infection](https://newrepublic.com/article/177849/biden-democrats-covid-pandemic-2024). A [Colorado newspaper columnist](https://www.aspendailynews.com/opinion/marolt-if-i-haven-t-seemed-like-myself-lately/article_514db18c-11c1-11ef-a507-3fb6e81cde90.html) was skiing, biking, mountain climbing, and running half-marathons up until his 5th covid infection. At this point, he developed pain, fatigue, and migraines that prevent him from doing the activities he loves most. These are not just isolated anecdotes, [research confirms](https://www.nature.com/articles/s41591-022-02051-3) the [cumulative dangers](https://www.cidrap.umn.edu/covid-19/covid-reinfection-may-raise-risk-persistent-symptoms-35) of repeat infections. In children, a [second covid infection](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(25)00476-1/fulltext) is more likely to cause Long Covid than the first infection. Whatever your previous history, reducing risk of future infections is a worthwhile goal.
+
+The above mechanisms are not exclusive.  For example, some microbiome changes can make it easier for pathogens to pass from the gut into the bloodstream and provoke an autoimmune reaction (a process I talked about in this [5-minute video](https://www.youtube.com/embed/6BYocBxOfsU?si=iGUjSMqG_f95N4zr))
+
+## The Paradigm Shift
+
+For most viruses, people focus on just a few weeks of initial symptoms. This is the wrong way to think about infections. Viral meningitis or EBV increases your risk of Alzheimer’s or dementia, [5-15 years later](https://www.cell.com/neuron/fulltext/S0896-6273%2822%2901147-3). Chicken pox (varicella zoster virus) can reactivate decades afterwards as shingles, which itself then leads to [increased risk of stroke](https://theconversation.com/chickenpox-and-shingles-virus-lying-dormant-in-your-neurons-can-reactivate-and-increase-your-risk-of-stroke-new-research-identified-a-potential-culprit-194627) for at least the following year.  We need to radically change how we think about viruses.
+
+There is much we still don’t know about the immune system. Early during the covid pandemic, many experts made definitive statements about the risks of covid, assuming that those who didn’t die in the first few weeks must be completely fine.  However, perturbations from infections that initially seem minor can have far-reaching, long-lasting, and time-delayed impacts. There is a ton that is still unknown.
+
+Trying to figure out how viruses hijack cell processes, alter microbiomes, and dysregulate the immune system are complex questions.  Researching these areas with curiosity, determination, and an open mind will reveal a lot.
+
+## Reasons for Hope
+
+It can be gloomy to think about all the damage viruses can cause.  The good news is that we don’t have to resign ourselves to these outcomes. Facing the disturbing reality that many viruses are worse than we thought is just the first step towards coming up with creative new solutions. There are some bright, curious, and determined people focused on these problems, although we need even more hands and brains to get involved.  
+
+The breadth and depth of the harms caused by viruses can focus biomedical research in new directions. Most viruses do not have effective anti-viral treatments. This creates a huge need. Scientific inquiry can [fail catastrophically](https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/) when those closest to the problem are not included.  Patient-led research gives me hope, because it is centered on the [expertise of those closest to the problem](https://rachel.fast.ai/posts/2024-02-20-ai-medicine/index.html). I am also optimistic about the use of AI for [discovering new drugs](https://rachel.fast.ai/posts/2024-04-03-ai-antibiotics/index.html) and [designing immune therapies](https://rachel.fast.ai/posts/2024-08-01-ai-t-cells/index.html).
+
+On the prevention side, reducing how frequently people get sick will have a big impact. Different viruses spread in different ways.  In recent years, we have learned that many [infections are airborne](https://www.theatlantic.com/health/archive/2021/09/coronavirus-pandemic-ventilation-rethinking-air/620000/). Healthy indoor air is a human right, [like access to clean drinking water](https://theconversation.com/why-investment-in-clean-indoor-air-is-vital-preparation-for-the-pandemics-and-climate-emergencies-to-come-265743). The UN recently held a high-level event focused on the [right to clean air](https://www.science.org.au/news-and-events/news-and-media-releases/australia-to-lead-first-ever-united-nations-indoor-air-quality-global-pledge).  There are many measures we can take to reduce transmission of airborne diseases, such as improved ventilation, air purification, and far-UVC technologies.  [Parliament houses](https://x.com/_CatintheHat/status/1760626083534414110), [venues for elites](https://slate.com/technology/2023/01/davos-covid-precaution-uv-lights-air-filters.html), and [barns for pigs](https://x.com/LongDesertTrain/status/1494126572625924098) have already received these air quality upgrades. We need children in schools, employees in workplaces, and patients in hospitals to get the same protections. Hopefully, we are on the cusp of a [clean air revolution](https://www.airclub.org/), with more people and organizations recognizing that healthy indoor air is essential.
+
+[N95 masks offer](https://www.iqair.com/newsroom/air-pollution-masks-what-works-what-doesn-t) an immediate way to significantly reduce how often you get sick. Thankfully, the N95s available currently are more comfortable and [more effective](https://theconversation.com/what-is-the-best-mask-for-covid-19-a-mechanical-engineer-explains-the-science-after-2-years-of-testing-masks-in-his-lab-175481) than the surgical or cloth masks that many of us wore back in 2020. 
+
+![On the brink of an indoor air quality revolution](indoor-air.jpg){width=70%}
+
+## Conclusion
+
+Viruses can harm our cardiac health and cognition, and increase our chances of cancer. If this revelation is fully realized, it will change how the field of medicine operates, priorities in research funding, and public policy on everything from indoor air quality standards to paid sick leave and school attendance. I believe we are on the threshold of what could be a drastic shift in better understanding, preventing, and treating viruses, thus unlocking longer and healthier lives.
+
+Related posts you may also be interested in:
+
+- [5 Devious Tricks Pathogens Use Against Us](https://rachel.fast.ai/posts/2024-11-12-devious-tricks/index.html)
+- [Viruses are weirder, worse, & more preventable than you realise](https://rachel.fast.ai/posts/2023-03-07-viruses1/index.html)
+- [Viruses: The Silent Triggers of Autoimmune and Neurodegenerative Diseases](https://rachel.fast.ai/posts/2023-03-22-viruses2/index.html)
+- [Your Immune System is Not a Muscle](https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/index.html)
+
+If you enjoy my posts, please subscribe to be notified of new posts via email:
+
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&zx=11a17553b1&tD=156971d471c7b09&sD=156971d471c7cb3"></iframe>

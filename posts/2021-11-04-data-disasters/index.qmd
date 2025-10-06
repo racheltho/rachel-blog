@@ -64,6 +64,7 @@ Often, our approaches to addressing fairness or other ethics issues, further cen
 ## Towards Greater Data Resilience
 
 I hope that we can improve data resilience through:
+
 - Valuing data work
 - Documenting context of data
 - Close contact with the data

@@ -20,11 +20,9 @@ about:
 
 :::{#using-template}
 
-Microbiology PhD student and Cofounder of fast.ai
+Now: focused on the microbiome, autoimmune disease, multi-omics, and machine learning
 
-Now: focused on the microbiome, autoimmune disease, type 1 diabetes, multi-omics, and machine learning
-
-Past: professor & director of University of San Francisco Center for Applied Data Ethics, data scientist, one of Forbes 20 Incredible Women in AI, early engineer at Uber, PhD in mathematics from Duke University
+Past: cofounder of fast.ai, professor & director of University of San Francisco Center for Applied Data Ethics, data scientist, one of Forbes 20 Incredible Women in AI, early engineer at Uber, PhD in mathematics from Duke University
 
 [//]: #Areas: <a href="#mathbio">mathematical biology</a>, <a href="#ethics">data ethics</a>, and <a href="#ml">machine learning</a> 
 

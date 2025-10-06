@@ -78,4 +78,4 @@ In a [previous essay](https://rachel.fast.ai/posts/2021-10-12-medicine-political
 
 Our understanding of the wide-ranging, surprising, and sometimes devastating impacts of viruses is growing everyday, with new scientific discoveries and connections being made.  If we can accelerate support for such research, as well as work to reduce transmission of viruses, we could significantly improve human well-being.
 
-*This is Part 2 in a 3-part series.  Read [Part 1 here](https://rachel.fast.ai/posts/2023-03-07-viruses1/) and stay tuned for Part 3.*
+*This is Part 2 in a 2-part series.  Read [Part 1 here](https://rachel.fast.ai/posts/2023-03-07-viruses1/).*

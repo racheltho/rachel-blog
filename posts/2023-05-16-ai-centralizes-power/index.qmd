@@ -1,8 +1,8 @@
 ---
-title: "AI and Power: The Ethical Challenges of Automation, Centralization, and Scale"
+title: "The real risk of AI is how it concentrates power"
 date: "2023-05-16"
 image: "/posts/2023-05-16-ai-centralizes-power/cuts-healthcare.jpg"
-description: "Moving AI ethics beyond explainability and fairness to empowerment and justice"
+description: "Understanding *how* AI causes harm"
 author: "Rachel Thomas"
 categories: [ethics, machine learning]
 toc: true
