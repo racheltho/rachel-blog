@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rachel Thomas">
-<meta name="dcterms.date" content="2016-11-17">
-<meta name="description" content="On the difference between big data, machine learning, and deep learning.">
+<meta name="dcterms.date" content="2017-07-28">
+<meta name="description" content="Teaching computers to play Atari (while ignorning risks of mass unemployment, wealth inequality, and gender &amp; racial bias)">
 
-<title>Rachel Thomas, PhD - Please don’t say ‘It used to be called big data and now it’s called deep learning’</title>
+<title>Rachel Thomas, PhD - Thoughts on OpenAI, reinforcement learning, and killer robots</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,13 +65,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Rachel Thomas, PhD - Please don’t say ‘It used to be called big data and now it’s called deep learning’">
+<meta property="og:title" content="Rachel Thomas, PhD - Thoughts on OpenAI, reinforcement learning, and killer robots">
 <meta property="og:description" content="an AI researcher going back to school for immunology">
-<meta property="og:image" content="https://rachel.fast.ai/posts/2016-11-17-not-all-the-same/nikkei2.jpg">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2017-07-28-killer-robots/openai.jpg">
 <meta property="og:site-name" content="Rachel Thomas, PhD">
-<meta name="twitter:title" content="Rachel Thomas, PhD - Please don’t say ‘It used to be called big data and now it’s called deep learning’">
+<meta name="twitter:title" content="Rachel Thomas, PhD - Thoughts on OpenAI, reinforcement learning, and killer robots">
 <meta name="twitter:description" content="an AI researcher going back to school for immunology">
-<meta name="twitter:image" content="https://rachel.fast.ai/posts/2016-11-17-not-all-the-same/nikkei2.jpg">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2017-07-28-killer-robots/openai.jpg">
 <meta name="twitter:creator" content="@math_rachel">
 <meta name="twitter:site" content="@math_rachel">
 <meta name="twitter:card" content="summary_large_image">
@@ -133,13 +133,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Please don’t say ‘It used to be called big data and now it’s called deep learning’</h1>
+      <h1 class="title">Thoughts on OpenAI, reinforcement learning, and killer robots</h1>
                   <div>
         <div class="description">
-          On the difference between big data, machine learning, and deep learning.
+          Teaching computers to play Atari (while ignorning risks of mass unemployment, wealth inequality, and gender &amp; racial bias)
         </div>
       </div>
                           <div class="quarto-categories">
+                <div class="quarto-category">ethics</div>
                 <div class="quarto-category">machine learning</div>
               </div>
                   </div>
@@ -158,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 17, 2016</p>
+        <p class="date">July 28, 2017</p>
       </div>
     </div>
     
@@ -262,7 +263,15 @@ ul.task-list li input[type="checkbox"] {
 
 <!--Zoho Campaigns Web-Optin Form Ends Here-->
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#artificial-general-intelligence" id="toc-artificial-general-intelligence" class="nav-link active" data-scroll-target="#artificial-general-intelligence">Artificial General Intelligence</a></li>
+  <li><a href="#practical-artificial-intelligence" id="toc-practical-artificial-intelligence" class="nav-link" data-scroll-target="#practical-artificial-intelligence">Practical Artificial Intelligence</a></li>
+  <li><a href="#harms-happening-now" id="toc-harms-happening-now" class="nav-link" data-scroll-target="#harms-happening-now">Harms Happening Now</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -270,29 +279,32 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>At the Financial Times-Nikkei conference on <a href="https://www.eventbrite.com/e/nikkei-innovation-forum-the-future-of-ai-robots-and-us-tickets-27689144978#"><em>The Future of AI, Robots, and Us</em></a> a few weeks ago, Andreessen Horowitz partner Chris Dixon spoke just before Jeremy Howard and I were on stage. Dixon said many totally <em>reasonable</em> things in his talk–but it’s no fun to comment on them, so I’m going to focus on something rather <em>unreasonable</em> that he said, which was: “A few years ago it was called big data and then it was machine learning and now it’s called deep learning”. It was not entirely clear if he was saying that these are all terms for the same thing (they are most definitely not!) or if he was suggesting that the “in” data-driven approach changes from year to year. Either way, this obscures what a complete game-changer deep learning is. It is not just the 2016 version of “big data” (which has always been an empty buzzword). It is going to have an impact the size of the impact of the internet, or as Andrew Ng suggests, the <a href="https://www.fast.ai/posts/2016-10-11-fortune.html">impact of electricity</a>. It is going to affect every industry, and leaders of every type of organization are going to be wishing that they had looked into it sooner.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="nikkei.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Jeremy and I speaking at the Financial-Nikkei Times conference</figcaption>
-</figure>
-</div>
-<p>First, to clear up some terms:</p>
-<p><strong>Big Data</strong>: This was an empty marketing term that falsely convinced many people that the size of your data is what matters. It also cost companies huge sums of money on Hadoop clusters they didn’t actually need. Vendors of these clusters did everything they could to maintain momentum on this nonsense because when CEOs believe it’s the size of your hardware that counts, it’s a very profitable situation if you make, sell, install, or service that hardware…</p>
-<p>Francois Chollet, creator of the popular deep learning library <a href="https://keras.io/">Keras</a> and now at Google Brain, has an excellent tutorial entitled <a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html"><em>Building powerful image classification models using very little data</em></a> in which he trains an image classifier on only 2,000 training examples. At Enlitic, Jeremy Howard led a team that used just 1,000 examples of lung CT scans with cancer to build an algorithm that was <a href="http://money.cnn.com/2015/03/12/technology/enlitic-technology/">more accurate at diagnosing lung cancer</a> than a panel of 4 expert radiologists. The C++ library <a href="http://dlib.net/">Dlib</a> has an example in which a face detector is accurately trained using only <a href="http://blog.dlib.net/2016/10/easily-create-high-quality-object.html">4 images</a>, containing just 18 faces!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="face-rec.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">Face Recognition with Dlib</figcaption>
-</figure>
-</div>
-<p><strong>Machine Learning</strong>: Machine learning is the science of getting computers to act without being explicitly programmed. For instance, instead of coding rules and strategies of chess into a computer, the computer can watch a number of chess games and learn by example. Machine learning encompasses a wide variety of algorithms.</p>
-<p><strong>Deep Learning</strong>: Deep learning refers to many-layered neural networks, one specific class of machine learning algorithms. Deep learning is achieving unprecedented state of the art results, by an order of magnitude, in nearly all fields to which it’s been applied so far, including image recognition, voice recognition, and language translation. I personally think deep learning is an unfortunate name, but that’s no reason to dismiss it. If you studied neural networks in the 80s and are wondering what has changed since then, the answer is the development of: - Using multiple hidden layers instead of just one. (Even though the <a href="http://neuralnetworksanddeeplearning.com/chap4.html">Universal Approximation Theorem</a> shows that it’s theoretically possible to just have one hidden layer, it requires exponentially more hidden units, which means exponentially more parameters to learn.) - <a href="https://www.tacc.utexas.edu/documents/13601/88790/8Things.pdf">GPGPU</a>, programmable libraries for GPUs that allow them to be used for applications other than video games, resulting in orders of magnitude faster training and inference for deep learning - A number of algorithmic tweaks (especially the Adam optimizer, ReLU activation functions, batch normalization, and dropout) that have made training faster and more resilient - Larger datasets– although this has been a driver of progress, it’s value is often over-emphasized, as the “little data” examples above show.</p>
-<p>Another common misconception Chris Dixon stated was that deep learning talent is incredibly scarce, and it will take years for graduate programs at the top schools to catch up to the demand. Although in the past a graduate degree from one of just a handful of schools was necessary to become a deep learning expert, this is a completely artificial barrier and no longer the case. As Josh Schwartz, chief of engineering and data science at Chartbeat, writes in the Harvard Business Review, <a href="https://hbr.org/2016/10/machine-learning-is-no-longer-just-for-experts">“machine learning is not just for experts”</a>. There has been a proliferation of cutting-edge commercially usable machine learning frameworks, machine learning specific services being released from major cloud providers Amazon and Google, tutorials, publicly released code, and publicly released data sets.</p>
-<p>We are currently in the middle of teaching 100 students <a href="http://www.fast.ai/2016/10/08/curriculum/">deep learning from scratch</a>, with the only prerequisite being one year of programming experience. This will be turned into a MOOC shortly after the in-person class finishes. We’re in the 4th week of the course, and already the students are building world-class image recognition models in Python.</p>
-<p>It is <em>far better</em> to take a domain expert within your organization and teach them deep learning, than it is to take a deep learning expert and throw them into your organization. Deep learning PhD graduates are very unlikely to have the wide range of relevant experiences that you value in your most effective employees, and are much more likely to be interested in solving fun engineering problems, instead of keeping a razor-sharp focus on the most commercially important problems. In our experiences across many industries and many years of applying machine learning to a range of problems, we’ve consistently seen organizations under-appreciate and under invest in their existing in-house talent. In the days of the big data fad, this meant companies spent their money on external consultants. And in these days of the false “deep learning exclusivity” meme, it means searching for those unicorn deep learning experts, often including paying vastly inflated sums for failing deep learning startups.</p>
+<p>“So how is fast.ai different from OpenAI?” I’ve been asked this question numerous times, and on the surface, there are several similarities: both are non-profits, both value openness, and both have been characterized as <em>democratizing AI</em>. One significant difference is that fast.ai has not been funded with $1 billion from Elon Musk to create an elite team of researchers with PhDs from the most impressive schools who publish in the most elite journals. OpenAI, however, has.</p>
+<p>It turns out we’re different in pretty much every other way as well: in our goals, values, motivations, and target audiences.</p>
+<section id="artificial-general-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="artificial-general-intelligence">Artificial General Intelligence</h2>
+<p>There is a lot of confusion about the term <em>AI</em>. To some people, AI means building a super-intelligent computer that is similar to a human brain (this is often referred to as <em>Artificial General Intelligence</em> or <em>AGI</em>). These people are often interested in philosophical questions such as <em>What does it mean to be human?</em> or <em>What is the nature of intelligence?</em> They may have fears such as <em>Could super-intelligent machines destroy the human race?</em> A <a href="http://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny">New Yorker article describes</a> OpenAI’s goal as making sure that AI doesn’t wipe out humanity, and it’s webpage says that the <a href="https://openai.com/about/">mission is to create artificial general intelligence</a>. Elon Musk has expressed fear about DeepMind (acquired by Google for $500 million) and the development of evil AI, <a href="http://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny">saying</a> “If the A.I. that they develop goes awry, we risk having an immortal and superpowerful dictator forever. Murdering all competing A.I. researchers as its first move strikes me as a bit of a character flaw.”</p>
+<p>Cracking AGI is a very long-term goal. The most relevant field of research is considered by many to be reinforcement learning: the study of teaching computers how to beat Atari. Formally, reinforcement learning is the study of problems that require sequences of actions that result in a reward/loss, and not knowing how much each action contributes to the outcome. Hundreds of the world’s brightest minds, with the most elite credentials, are working on this Atari problem. Their research has applications to robotics, although a lot of it is fairly theoretical. OpenAI is largely motivated by publishing in top academic journals in the field, and you would need to have a similarly elite background to understand their papers.</p>
+</section>
+<section id="practical-artificial-intelligence" class="level2">
+<h2 class="anchored" data-anchor-id="practical-artificial-intelligence">Practical Artificial Intelligence</h2>
+<p>To other people, AI refers to that algorithms that display some level of intelligence in doing application-focused tasks, such as algorithms that can:</p>
+<ul>
+<li><a href="http://money.cnn.com/2015/03/12/technology/enlitic-technology/index.html">Identify whether a tumor in a CT scan is cancerous</a>,</li>
+<li>Predict a company’s earnings, or</li>
+<li><a href="https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html">Translate between languages</a>.</li>
+</ul>
+<p>Many rapid advances are happening right now in the area of these algorithms that do their application-focused tasks very, very well. These algorithms would not be mistaken for humans (outside their excellent performance on the application they were designed for). This may sound less exciting than <em>OMG super-intelligent human-like machines</em>, but these algorithms are having a much bigger impact on the world today: they are more accurate than <a href="http://money.cnn.com/2015/03/12/technology/enlitic-technology/index.html">human radiologists at diagnosing cancer</a>, more accurate at<a href="https://www.nextbigfuture.com/2015/12/baidus-deep-learning-system-is-better.html">understanding Mandarin and English speech than humans</a>, at work in self-driving cars, <a href="https://arxiv.org/pdf/1701.06675.pdf">improving treatment for pediatric ICU patients</a>, working to end illegal logging in endangered rainforests, <a href="https://www.forbes.com/sites/mariyayao/2017/04/10/why-we-need-to-democratize-ai-machine-learning-education/#5f5931031197">granting the visually impaired more independence, reducing farmer suicides in India</a>, and more (note: although they are in the same family, a specific algorithm was trained and tuned for each of these applications).</p>
+<p>The capabilities listed above are transformative: improvements to medicine will help fill a <a href="http://www.who.int/mediacentre/news/releases/2013/health-workforce-shortage/en/">global shortage of doctors</a>, improve outcomes even in countries that have enough doctors, and save millions of lives. Self-driving cars are safer and will drastically reduce traffic fatalities, congestion, and pollution.</p>
+</section>
+<section id="harms-happening-now" class="level2">
+<h2 class="anchored" data-anchor-id="harms-happening-now">Harms Happening Now</h2>
+<p>However, these application-focused algorithms are also already having some scary negative impacts as well: an increase in <a href="https://www.technologyreview.com/s/515926/how-technology-is-destroying-jobs/">unemployment as more jobs are automated</a>, widening wealth inequality (as highly profitable companies are created using these algorithms and employing relatively few workers), <a href="https://www.youtube.com/watch?v=25nC0n9ERq4">encoding existing biases</a> (for example, Google Photos labeling Black people as “gorillas” as part of their automatic photo labeling), and with <a href="https://www.ribbonfarm.com/2017/05/23/there-are-bots-look-around/">the potential of bots</a> and <a href="https://www.economist.com/news/science-and-technology/21724370-generating-convincing-audio-and-video-fake-events-fake-news-you-aint-seen">convincing fake videos</a> to further impact politics.</p>
+<p>At fast.ai, we are not working on AGI, but instead focused on how to make it possible for more people from a wide variety of backgrounds to create and use neural net algorithms. <a href="../../2017/02/27/not-just-silicon-valley/">We have students</a> working to stop illegal deforestation, create more resources for the Pakistani language Urdu, help farmers in India prove how much land they own so they qualify for crop insurance, working on wearable devices to monitor Parkinson’s disease, and more. These are issues that Jeremy and I knew very little (if anything) about, and illustrate the importance of making this technology as accessible as possible. People with different backgrounds, in different locations, with different passions, are going to be aware of whole new sets of problems that they want to solve.</p>
+<p>It is hard for me to empathize with Musk’s fixation on evil super-intelligent AGI killer robots in a very distant future. I support research funding at all levels, and have nothing against mostly theoretical research, but is it really the best use of resources to throw $1 billion at reinforcement learning without any similar investments into addressing mass unemployment and wealth inequality (both of which are well-documented to cause political instability), how existing gender and racial biases are being encoded in our algorithms, and on how to best get this technology into the hands of people working on high impact areas like medicine and agriculture around the world?</p>
 
 
+</section>
 
 <p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rachel Thomas">
-<meta name="dcterms.date" content="2016-11-17">
-<meta name="description" content="On the difference between big data, machine learning, and deep learning.">
+<meta name="dcterms.date" content="2017-02-27">
+<meta name="description" content="Making AI accessible to people outside of elite institutions, who are tackling problems in meaningful but low-resource areas">
 
-<title>Rachel Thomas, PhD - Please don’t say ‘It used to be called big data and now it’s called deep learning’</title>
+<title>Rachel Thomas, PhD - Deep Learning: Not Just for Silicon Valley</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,13 +65,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Rachel Thomas, PhD - Please don’t say ‘It used to be called big data and now it’s called deep learning’">
+<meta property="og:title" content="Rachel Thomas, PhD - Deep Learning: Not Just for Silicon Valley">
 <meta property="og:description" content="an AI researcher going back to school for immunology">
-<meta property="og:image" content="https://rachel.fast.ai/posts/2016-11-17-not-all-the-same/nikkei2.jpg">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2017-02-27-not-just-silicon-valley/Silicon_Valley.jpg">
 <meta property="og:site-name" content="Rachel Thomas, PhD">
-<meta name="twitter:title" content="Rachel Thomas, PhD - Please don’t say ‘It used to be called big data and now it’s called deep learning’">
+<meta name="twitter:title" content="Rachel Thomas, PhD - Deep Learning: Not Just for Silicon Valley">
 <meta name="twitter:description" content="an AI researcher going back to school for immunology">
-<meta name="twitter:image" content="https://rachel.fast.ai/posts/2016-11-17-not-all-the-same/nikkei2.jpg">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2017-02-27-not-just-silicon-valley/Silicon_Valley.jpg">
 <meta name="twitter:creator" content="@math_rachel">
 <meta name="twitter:site" content="@math_rachel">
 <meta name="twitter:card" content="summary_large_image">
@@ -133,14 +133,15 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Please don’t say ‘It used to be called big data and now it’s called deep learning’</h1>
+      <h1 class="title">Deep Learning: Not Just for Silicon Valley</h1>
                   <div>
         <div class="description">
-          On the difference between big data, machine learning, and deep learning.
+          Making AI accessible to people outside of elite institutions, who are tackling problems in meaningful but low-resource areas
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">education</div>
+                <div class="quarto-category">inclusion</div>
               </div>
                   </div>
   </div>
@@ -158,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 17, 2016</p>
+        <p class="date">February 27, 2017</p>
       </div>
     </div>
     
@@ -270,27 +271,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>At the Financial Times-Nikkei conference on <a href="https://www.eventbrite.com/e/nikkei-innovation-forum-the-future-of-ai-robots-and-us-tickets-27689144978#"><em>The Future of AI, Robots, and Us</em></a> a few weeks ago, Andreessen Horowitz partner Chris Dixon spoke just before Jeremy Howard and I were on stage. Dixon said many totally <em>reasonable</em> things in his talk–but it’s no fun to comment on them, so I’m going to focus on something rather <em>unreasonable</em> that he said, which was: “A few years ago it was called big data and then it was machine learning and now it’s called deep learning”. It was not entirely clear if he was saying that these are all terms for the same thing (they are most definitely not!) or if he was suggesting that the “in” data-driven approach changes from year to year. Either way, this obscures what a complete game-changer deep learning is. It is not just the 2016 version of “big data” (which has always been an empty buzzword). It is going to have an impact the size of the impact of the internet, or as Andrew Ng suggests, the <a href="https://www.fast.ai/posts/2016-10-11-fortune.html">impact of electricity</a>. It is going to affect every industry, and leaders of every type of organization are going to be wishing that they had looked into it sooner.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="nikkei.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Jeremy and I speaking at the Financial-Nikkei Times conference</figcaption>
-</figure>
-</div>
-<p>First, to clear up some terms:</p>
-<p><strong>Big Data</strong>: This was an empty marketing term that falsely convinced many people that the size of your data is what matters. It also cost companies huge sums of money on Hadoop clusters they didn’t actually need. Vendors of these clusters did everything they could to maintain momentum on this nonsense because when CEOs believe it’s the size of your hardware that counts, it’s a very profitable situation if you make, sell, install, or service that hardware…</p>
-<p>Francois Chollet, creator of the popular deep learning library <a href="https://keras.io/">Keras</a> and now at Google Brain, has an excellent tutorial entitled <a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html"><em>Building powerful image classification models using very little data</em></a> in which he trains an image classifier on only 2,000 training examples. At Enlitic, Jeremy Howard led a team that used just 1,000 examples of lung CT scans with cancer to build an algorithm that was <a href="http://money.cnn.com/2015/03/12/technology/enlitic-technology/">more accurate at diagnosing lung cancer</a> than a panel of 4 expert radiologists. The C++ library <a href="http://dlib.net/">Dlib</a> has an example in which a face detector is accurately trained using only <a href="http://blog.dlib.net/2016/10/easily-create-high-quality-object.html">4 images</a>, containing just 18 faces!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="face-rec.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">Face Recognition with Dlib</figcaption>
-</figure>
-</div>
-<p><strong>Machine Learning</strong>: Machine learning is the science of getting computers to act without being explicitly programmed. For instance, instead of coding rules and strategies of chess into a computer, the computer can watch a number of chess games and learn by example. Machine learning encompasses a wide variety of algorithms.</p>
-<p><strong>Deep Learning</strong>: Deep learning refers to many-layered neural networks, one specific class of machine learning algorithms. Deep learning is achieving unprecedented state of the art results, by an order of magnitude, in nearly all fields to which it’s been applied so far, including image recognition, voice recognition, and language translation. I personally think deep learning is an unfortunate name, but that’s no reason to dismiss it. If you studied neural networks in the 80s and are wondering what has changed since then, the answer is the development of: - Using multiple hidden layers instead of just one. (Even though the <a href="http://neuralnetworksanddeeplearning.com/chap4.html">Universal Approximation Theorem</a> shows that it’s theoretically possible to just have one hidden layer, it requires exponentially more hidden units, which means exponentially more parameters to learn.) - <a href="https://www.tacc.utexas.edu/documents/13601/88790/8Things.pdf">GPGPU</a>, programmable libraries for GPUs that allow them to be used for applications other than video games, resulting in orders of magnitude faster training and inference for deep learning - A number of algorithmic tweaks (especially the Adam optimizer, ReLU activation functions, batch normalization, and dropout) that have made training faster and more resilient - Larger datasets– although this has been a driver of progress, it’s value is often over-emphasized, as the “little data” examples above show.</p>
-<p>Another common misconception Chris Dixon stated was that deep learning talent is incredibly scarce, and it will take years for graduate programs at the top schools to catch up to the demand. Although in the past a graduate degree from one of just a handful of schools was necessary to become a deep learning expert, this is a completely artificial barrier and no longer the case. As Josh Schwartz, chief of engineering and data science at Chartbeat, writes in the Harvard Business Review, <a href="https://hbr.org/2016/10/machine-learning-is-no-longer-just-for-experts">“machine learning is not just for experts”</a>. There has been a proliferation of cutting-edge commercially usable machine learning frameworks, machine learning specific services being released from major cloud providers Amazon and Google, tutorials, publicly released code, and publicly released data sets.</p>
-<p>We are currently in the middle of teaching 100 students <a href="http://www.fast.ai/2016/10/08/curriculum/">deep learning from scratch</a>, with the only prerequisite being one year of programming experience. This will be turned into a MOOC shortly after the in-person class finishes. We’re in the 4th week of the course, and already the students are building world-class image recognition models in Python.</p>
-<p>It is <em>far better</em> to take a domain expert within your organization and teach them deep learning, than it is to take a deep learning expert and throw them into your organization. Deep learning PhD graduates are very unlikely to have the wide range of relevant experiences that you value in your most effective employees, and are much more likely to be interested in solving fun engineering problems, instead of keeping a razor-sharp focus on the most commercially important problems. In our experiences across many industries and many years of applying machine learning to a range of problems, we’ve consistently seen organizations under-appreciate and under invest in their existing in-house talent. In the days of the big data fad, this meant companies spent their money on external consultants. And in these days of the false “deep learning exclusivity” meme, it means searching for those unicorn deep learning experts, often including paying vastly inflated sums for failing deep learning startups.</p>
+<p>Recent American news events range from horrifying to dystopian, but reading the applications of our fast.ai <a href="https://www.fast.ai/posts/2017-01-28-diversity-international-part-ii.html">international fellows</a> brought me joy and optimism. I was blown away by how many bright, creative, resourceful folks from all over the world are applying deep learning to tackle a variety of meaningful and interesting problems. Their passions range from <strong>ending illegal logging</strong>, <strong>diagnosing malaria</strong> in rural Uganda, <strong>translating Japanese</strong> manga, <strong>reducing farmer suicides</strong> in India via better loans, making <strong>Nigerian fashion recommendations</strong>, <strong>monitoring patients with Parkinson’s</strong> disease, and more. Our mission at fast.ai is to make deep learning accessible to people from varied backgrounds outside of elite institutions, who are tackling problems in meaningful but low-resource areas, far from mainstream deep learning research.</p>
+<p>Our group of selected fellows for Deep Learning Part 2 includes people from Nigeria, Ivory Coast, South Africa, Pakistan, Bangladesh, India, Singapore, Israel, Canada, Spain, Germany, France, Poland, Russia, and Turkey. We wanted to introduce just a few of our international fellows to you today.</p>
+<p><strong>Tahsin Mayeesha</strong> is a Bangladeshi student who created a network visualization project analyzing data from a prominent Bangladeshi newspaper to explore the media coverage of violence against women. She wrote up her <a href="https://medium.com/learning-machine-learning/network-visualization-of-media-coverage-of-violence-against-women-in-bangladesh-ce13e6112341#.i0zuv0dqg">methodology and findings here</a>, and hopes that the project can increase knowledge and empathy. In working on her Udacity Machine Learning Nano-degree, she overcame the <a href="https://medium.com/learning-machine-learning/udacity-nanodegree-experience-part-2-658f1114d760#.y4pmtcykc">challenges of a broken generator</a> and intermittent electricity during Ramadan to successfully complete her projects. Mayeesha is a fan of Naruto, a popular Japanese manga series, and would like to use deep learning to translate it into English. Naruto characters use different stylized hand signs for different fight moves, and she is interested in trying to recognize these with a CNN. On a broader scale, Mayeesha wants to explore the question of how ML will impact places like Bangladesh with a semi-broken infrastructure.</p>
+<p><strong>Karthik Mahadevan</strong>, an industrial designer in Amsterdam, previously created an interactive medical toy for children with cancer. More recently, he helped develop <a href="https://vimeo.com/202413138">smart diagnosis solutions</a> for rural health centres in Uganda. His team developed a smartphone-based device that captures magnified images of blood smear of malaria patients. The images are processed through an AI-based software that highlights potential parasites in the image for lab technicians to check. The long-term aim, however, is to create a fully automated diagnosis system to compensate for the shortage of lab technicians in rural Uganda (84% of the population of Uganda lives in rural areas.)</p>
+<p>After being selected as our first international fellow, and completing part 1 of our course, language researcher <strong>Samar Haider</strong> of Pakistan collected the largest dataset ever of his native language of Urdu. He says he was inspired by Lesson 5 of Part 1 to acquire, clean, and segment into sentences an Urdu corpus with over 150 million tokens. Haider trained a model to learn vector representations of the words, which captured useful semantic relationships and lexical variations. Haider writes “this marks the first time such word representations have been trained for Urdu, and, while they are themselves an incredibly valuable resource, it is exciting to think of ways in which they can be used to advance the state of natural language processing for Urdu in applications ranging from text classification to sentiment analysis to machine translation.” Haider will be joining us again for Part 2 and says, “In the long run, I hope to use deep learning techniques to bridge gaps in human communication (an especially important duty in these polarizing times) by helping computers better process and understand regional languages and helping unlock a world of information for people who don’t speak English or other popular languages.”</p>
+<p><strong>Xinxin Li</strong> previously developed carbon management technologies as an environmental research engineer, and built a Python app to diagnose plant diseases through photos of leaves. She is now working with a wearable technology company to develop a system for Parkinson’s patient therapy management, the core of which is a machine learning model to be trained with clinical trial data. This new system would enable a doctor to gauge patients’ symptoms, such as tremors and dyskinetic, via sensor data collected out of clinic, rather than relying on written diaries or interviews with patient caregivers.</p>
+<p><strong>Sahil Singla</strong> works at a social impact startup in India, using deep learning on satellite imagery to help the Indian government identify which villages have problems of landlessness or crop failure. Singla plans to use deep learning to build better crop insurance and agriculture lending models, thus reducing farmer suicides (<a href="https://www.theguardian.com/environment/2008/nov/05/gmcrops-india">exorbitant interest rates</a> on <a href="http://www.businessinsider.com/hundreds-of-suicides-in-india-linked-to-microfinance-organizations-2012-2">predatory loans</a> contribute to the high suicide rate of Indian farmers).</p>
+<p><strong>Amy Xiao</strong>, an undergraduate at the University of Toronto, plans to create tools such as browser extensions to help people distinguish between facts and fiction in online information. Her goal is to rate the legitimacy of online content via a deep learning model by integrating sentiment analysis of the comments, legitimacy of news source, and the content itself, trained on labeled articles with a “predetermined” score. She is also interested in exploring how to discern legitimate vs.&nbsp;fake reviews from online sites.</p>
+<p><strong>Prabu Ravindran</strong> is developing a deep learning system for automated wood identification in the Center for Wood Anatomy Research, Forest Products Laboratory, and the U of Wisconsin Botany Department. This system will be deployed to combat illegal logging and identify wood products. <strong>Orlando Adeyemi</strong>, a Nigerian currently working in Malaysia, has already begun scraping Nigerian fashion websites for data that he plans to apply deep learning to. Previously, he created an iOS app for Malaysian cinema times, and won an award for his arduino wheelchair stabilizer.</p>
+<p><strong>Gurumoorthy C</strong> is excited about the “Clean India” initiative <a href="http://thediplomat.com/2014/10/why-india-is-dirty-and-how-to-clean-it/">launched by Prime Minister Modi</a>. Together with a group of friends, Gurumoorthy plans to create a small robot to pick up trash in the street, and correctly identify waste. <strong>Karthik Kannan</strong> is currently working on a idea that incorporates deep learning and wearable cameras to help the visually impaired navigate closed spaces in India.</p>
+<p><strong>Alexis Fortin-Cote</strong> is a PhD student in robotics at U Laval from French-speaking Quebec. He plans to create a model capable of inferring the level of fun players are experiencing from video games, using bio sensor information and self-reported emotional state. Together with a team from the school of psychology, he has already collected over 400 total hours of data from 200 players.</p>
+<p>We welcome the above fellows, along with the rest of our international fellows and our in-person participants to Deep Learning Part 2. We are very excited about this community, and what we can build together!</p>
 
 
 

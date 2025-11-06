@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rachel Thomas">
-<meta name="dcterms.date" content="2018-07-23">
-<meta name="description" content="Analyzing Google’s claims that we all need customized, bespoke neural network architectures">
+<meta name="dcterms.date" content="2018-04-19">
+<meta name="description" content="Why you can’t just throw AI at serious problems">
 
-<title>Rachel Thomas, PhD - Google’s AutoML: Cutting Through the Hype</title>
+<title>Rachel Thomas, PhD - How Facebook Responded to Genocide in Myanmar vs.&nbsp;Financial Fine in Germany</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,13 +65,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Rachel Thomas, PhD - Google’s AutoML: Cutting Through the Hype">
+<meta property="og:title" content="Rachel Thomas, PhD - How Facebook Responded to Genocide in Myanmar vs.&nbsp;Financial Fine in Germany">
 <meta property="og:description" content="an AI researcher going back to school for immunology">
-<meta property="og:image" content="https://rachel.fast.ai/posts/2018-07-23-automl3/sundar_pichai.jpg">
+<meta property="og:image" content="https://rachel.fast.ai/posts/2018-04-19-facebook/german_moderation_center.jpg">
 <meta property="og:site-name" content="Rachel Thomas, PhD">
-<meta name="twitter:title" content="Rachel Thomas, PhD - Google’s AutoML: Cutting Through the Hype">
+<meta name="twitter:title" content="Rachel Thomas, PhD - How Facebook Responded to Genocide in Myanmar vs.&nbsp;Financial Fine in Germany">
 <meta name="twitter:description" content="an AI researcher going back to school for immunology">
-<meta name="twitter:image" content="https://rachel.fast.ai/posts/2018-07-23-automl3/sundar_pichai.jpg">
+<meta name="twitter:image" content="https://rachel.fast.ai/posts/2018-04-19-facebook/german_moderation_center.jpg">
 <meta name="twitter:creator" content="@math_rachel">
 <meta name="twitter:site" content="@math_rachel">
 <meta name="twitter:card" content="summary_large_image">
@@ -133,15 +133,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Google’s AutoML: Cutting Through the Hype</h1>
+      <h1 class="title">How Facebook Responded to Genocide in Myanmar vs.&nbsp;Financial Fine in Germany</h1>
                   <div>
         <div class="description">
-          Analyzing Google’s claims that we all need customized, bespoke neural network architectures
+          Why you can’t just throw AI at serious problems
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">technical</div>
-                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">ethics</div>
               </div>
                   </div>
   </div>
@@ -159,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 23, 2018</p>
+        <p class="date">April 19, 2018</p>
       </div>
     </div>
     
@@ -263,7 +262,19 @@ ul.task-list li input[type="checkbox"] {
 
 <!--Zoho Campaigns Web-Optin Form Ends Here-->
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#genocide-in-myanmar-vs.-a-monetary-fine-in-germany" id="toc-genocide-in-myanmar-vs.-a-monetary-fine-in-germany" class="nav-link active" data-scroll-target="#genocide-in-myanmar-vs.-a-monetary-fine-in-germany">Genocide in Myanmar vs.&nbsp;a Monetary Fine in Germany</a></li>
+  <li><a href="#can-ai-solve-hate-speech" id="toc-can-ai-solve-hate-speech" class="nav-link" data-scroll-target="#can-ai-solve-hate-speech">Can AI solve hate speech?</a></li>
+  <li><a href="#you-cant-just-throw-ai-at-a-problem" id="toc-you-cant-just-throw-ai-at-a-problem" class="nav-link" data-scroll-target="#you-cant-just-throw-ai-at-a-problem">You can’t just throw AI at a problem</a></li>
+  <li><a href="#data-privacy-is-a-public-good" id="toc-data-privacy-is-a-public-good" class="nav-link" data-scroll-target="#data-privacy-is-a-public-good">Data privacy is a public good</a></li>
+  <li><a href="#the-power-of-tech-lobbies" id="toc-the-power-of-tech-lobbies" class="nav-link" data-scroll-target="#the-power-of-tech-lobbies">The power of tech lobbies</a></li>
+  <li><a href="#free-basics-aka-internet.org" id="toc-free-basics-aka-internet.org" class="nav-link" data-scroll-target="#free-basics-aka-internet.org">Free Basics, aka Internet.org</a></li>
+  <li><a href="#rethinking-the-web" id="toc-rethinking-the-web" class="nav-link" data-scroll-target="#rethinking-the-web">Rethinking the Web</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -271,141 +282,66 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><em>This is part 3 in a series. <a href="http://www.fast.ai/2018/07/12/auto-ml-1/">Part 1 is here</a> and <a href="http://www.fast.ai/2018/07/16/auto-ml2/">Part 2 is here</a>.</em></p>
-<p>To announce Google’s AutoML, Google CEO Sundar Pichai <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">wrote</a>, “Today, designing neural nets is extremely time intensive, and requires an expertise that limits its use to a smaller community of scientists and engineers. That’s why we’ve created an approach called AutoML, showing that it’s possible for neural nets to design neural nets. We hope AutoML will take an ability that a few PhDs have today and <strong>will make it possible in three to five years for hundreds of thousands of developers to design new neural nets for their particular needs</strong>.” (emphasis mine)</p>
+<p>While many news outlets <a href="https://abcnews.go.com/Technology/wireStory/mark-zuckerberg-wear-suit-congress-testimony-54354805">have</a> <a href="https://www.usatoday.com/story/tech/talkingtech/2018/04/10/no-hoodie-no-gray-t-shirt-facebook-ceo-mark-zuckerberg-suited-up-congress/503121002/">covered</a> <a href="https://www.nytimes.com/2018/04/10/fashion/mark-zuckerberg-suit-congress.html">what</a> <a href="https://www.npr.org/2018/04/11/601630161/facebooks-zuckerberg-ditches-his-signature-hoodie-for-a-suit-at-congress">Zuckerberg</a> <a href="https://slate.com/technology/2018/04/mark-zuckerbergs-congressional-hearing-suit-and-tie-reviewed.html">wore</a> for his testimony before congress last week, I wish that several more substantial issues were getting greater coverage, such as the lackluster response of Facebook to its role in the genocide in Myanmar, what concrete regulations could help us, the continued push of Facebook lobbyists to gut the few privacy laws we have, and the role that Free Basics (aka Internet.org– remember that?) has played in global hate speech and violence. So let’s discuss them now.</p>
+<section id="genocide-in-myanmar-vs.-a-monetary-fine-in-germany" class="level2">
+<h2 class="anchored" data-anchor-id="genocide-in-myanmar-vs.-a-monetary-fine-in-germany">Genocide in Myanmar vs.&nbsp;a Monetary Fine in Germany</h2>
+<p>The impact of Facebook is much larger than just the USA and UK: there is a <a href="https://www.amnesty.org/en/latest/news/2017/10/myanmar-new-evidence-of-systematic-campaign-to-terrorize-and-drive-rohingya-out/">genocide happening in Myanmar</a>, with hundreds of thousands of people from an ethnic minority being systematically driven from their homes, raped, and/or killed, and with entire villages being burnt and bulldozed to the ground. Facebook is <a href="https://www.nytimes.com/2017/10/27/world/asia/myanmar-government-facebook-rohingya.html">the primary source of news in Myanmar</a> (in part due to the Facebook program “Free Basics”, explained more below), and it has been used <strong>for years</strong> to spread dehumanizing propaganda about the ethnic minority (as well as to censor news reports about violence against the minority). Local activists have been asking Facebook to address this issue <strong>since 2013</strong> and news outlets have been covering <a href="https://www.aljazeera.com/indepth/features/2014/06/facebook-myanmar-rohingya-amplifying-hate-speech-2014612112834290144.html">Facebook’s role in the genocide since 2014</a>, yet Facebook has been beyond sluggish to respond. (I previously wrote about <a href="../../2017/11/02/ethics/">Facebook’s role in Myanmar here</a>.)</p>
+<p>Even now, Zuckerberg promised during the congressional hearings to hire “dozens” to address the genocide in Myanmar (in 2018, years after the genocide had begun), which stands in stark contrast to Facebook quickly <a href="http://thehill.com/policy/technology/361722-facebook-opens-second-german-office-to-comply-with-hate-speech-law">hiring 1,200 people in Germany</a> to try to avoid expensive penalties under a new German law against hate speech. Clearly, Facebook is more reactive to the threat of a financial penalty than to the systematic destruction of an ethnic minority.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="sundar_pichai.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Google CEO Sundar Pichai says that we all need to design our own neural nets</figcaption>
+<p><img src="german_moderation_center.jpg" class="img-fluid figure-img" width="500"></p>
+<figcaption class="figure-caption">photo of inside of Facebook’s Moderation Center in Berlin from https://www.thelocal.de/20170711/the-first-beheading-video-made-me-weep-a-day-in-the-life-of-facebook-moderators</figcaption>
 </figure>
 </div>
-<p>When Google’s Head of AI, Jeff Dean, suggested that <strong>100x computational power could replace the need for machine learning expertise</strong>, computationally expensive neural architecture search was the only example he gave to illustrate this point. (<a href="https://www.youtube.com/watch?v=kSa3UObNS6o">around 23:50 in his TensorFlow DevSummit keynote</a>)</p>
-<p>This raises a number of questions: do hundreds of thousands of developers <strong>need</strong> to “design new neural nets for their particular needs” (to quote <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">Pichai’s vision</a>), or <strong>is there an effective way for neural nets to generalize to similar problems</strong>? Can large amounts of computational power really replace machine learning expertise?</p>
-<p>In evaluating Google’s claims, it’s valuable to keep in mind <strong>Google has a vested financial interest in convincing us that the key to effective use of deep learning is more computational power</strong>, because this is an area where they clearly beat the rest of us. If true, we may all need to purchase Google products. On its own, this doesn’t mean that Google’s claims are false, but it’s good be aware of what financial motivations could underlie their statements.</p>
-<p>In my previous posts, I shared an introduction to the <a href="http://www.fast.ai/2018/07/16/auto-ml2/#auto-ml">history of AutoML</a>, defined <a href="http://www.fast.ai/2018/07/16/auto-ml2/#nas">what neural architecture search is</a>, and <a href="http://www.fast.ai/2018/07/12/auto-ml-1/#complex">pointed out</a> that for <strong>many machine learning projects, designing/choosing an architecture is nowhere near the hardest, most time-consuming, or most painful part of the problem</strong>. In today’s post, I want to look specifically at Google’s AutoML, a product which has received a lot of media attention, and address the following:</p>
+</section>
+<section id="can-ai-solve-hate-speech" class="level2">
+<h2 class="anchored" data-anchor-id="can-ai-solve-hate-speech">Can AI solve hate speech?</h2>
+<p>Facebook’s actions in Germany of hiring 1,200 human content moderators also stand in contrast to <a href="https://www.washingtonpost.com/news/the-switch/wp/2018/04/11/ai-will-solve-facebooks-most-vexing-problems-mark-zuckerberg-says-just-dont-ask-when-or-how/?utm_term=.583b388b6bf9">Zuckerberg’s vague assurance</a> that Facebook will use AI to address hate speech. It’s valuable to look at how Facebook actually behaves when facing a potential financial penalty, and not what sort of vague promises are made to Congress. As Cornell Law Tech professor <a href="https://www.washingtonpost.com/news/the-switch/wp/2018/04/11/ai-will-solve-facebooks-most-vexing-problems-mark-zuckerberg-says-just-dont-ask-when-or-how/?utm_term=.583b388b6bf9">James Grimmelmann said</a>, “[AI] won’t solve Facebook’s problems, but it will solve Zuckerberg’s: getting someone else to take responsibility.”</p>
+<p>As two concrete examples of just how far the tech giants are from effectively using AI on these problems, let’s consider Google. In 2017, Google released a tool called Perspective to automatically detect online harassment and abusive speech, with high-profile launch partners including The New York Times, The Economist, and Wikipedia. Librarian Jessamyn West found <a href="https://twitter.com/jessamyn/status/900867154412699649">a number of sexist, racist</a>, and <a href="https://twitter.com/jessamyn/status/901476036956782593">ableist biases</a> (confirmed and covered in <a href="https://www.engadget.com/2017/09/01/google-perspective-comment-ranking-system/">more detail here</a>). For instance, the statement <em>I am a gay Black woman</em> got an 87 percent toxicity score (out of 100), while <em>I am a man</em> was one of the least toxic phrases tested (just 20 percent). Also in 2017, <a href="https://youtube.googleblog.com/2017/08/an-update-on-our-commitment-to-fight.html">Google boasted</a> that they’d implemented cutting-edge machine learning to identify and remove YouTube videos promoting violent extremism or terrorism. The <a href="http://www.middleeasteye.net/news/youtube-admits-wrong-call-over-deletion-syrian-war-crime-videos-1140126078">removed videos included</a> those of activist groups documenting Syrian war crimes, evidence from the Chelsea Manning court case, and documentation of the destruction of ancient artifacts by Islamic State (many of these videos were later put back and Google conceded it had made mistakes). These examples demonstrate a few key points:</p>
 <ul>
-<li>
-<a href="#goog">What is Google’s AutoML?</a>
-</li>
-<li>
-<a href="#transfer">What is transfer learning?</a>
-</li>
-<li>
-<a href="#vs">Neural architecture search vs.&nbsp;transfer learning: two opposite approaches</a>
-</li>
-<li>
-<a href="#evidence">In need of more evidence</a>
-</li>
-<li>
-<a href="#hype">Why all the hype about Google’s AutoML?</a>
-</li>
-<li>
-<a href="#shortage">How can we address the shortage of machine learning expertise?</a>
-</li>
+<li>Using AI to address harassment and abusive speech is incredibly hard.</li>
+<li>You can’t just throw AI at a problem without deeply understanding the problem.</li>
+<li>Although Facebook is in the spotlight right now, <strong>Google has the same business model (targeted ads) and same monopoly status, and Google is causing huge societal harms as well.</strong> For instance, YouTube has been well-documented to <a href="https://twitter.com/zeynep/status/973271727798083584">recommend white supremacist videos</a> and <a href="https://medium.com/@guillaumechaslot/how-algorithms-can-learn-to-discredit-the-media-d1360157c4fa">conspiracy theories</a> from a wide-range of starting points, and it is playing a role in <a href="https://www.nytimes.com/2018/03/10/opinion/sunday/youtube-politics-radical.html">radicalizing users</a> into dangerous viewpoints.</li>
 </ul>
-<h2 id="goog" class="anchored">
-What is Google’s AutoML?
-</h2>
-<p>Although the field of <a href="https://www.automl.org/">AutoML</a> has been around for years (including <a href="http://www.ml4aad.org/automl/">open-source AutoML libraries</a>, <a href="https://www.ml4aad.org/workshops/">workshops</a>, <a href="https://www.ml4aad.org/automl/literature-on-neural-architecture-search/">research</a>, and <a href="http://automl.chalearn.org/">competitions</a>), in May 2017 Google co-opted the term <em>AutoML</em> for its <a href="http://www.fast.ai/2018/07/16/auto-ml2/#nas">neural architecture search</a>. In blog posts accompanying announcements made at the conference Google I/O, Google CEO <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">Sundar Pichai wrote</a>, <i>“That’s <b>why we’ve created an approach called AutoML</b>, showing that it’s possible for neural nets to design neural nets”</i> and Google AI researchers <a href="https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html">Barret Zoph and Quoc Le wrote</a> <i>“In our approach (<b>which we call”AutoML”</b>), a controller neural net can propose a “child” model architecture…“</i></p>
-<p>Google’s Cloud AutoML was <a href="https://techcrunch.com/2018/01/17/googles-automl-lets-you-train-custom-machine-learning-models-without-having-to-code/">announced in January 2018</a> as a suite of machine learning products. So far it consists of one publicly available product, <strong>AutoML Vision</strong>, an API that identifies or classifies objects in pictures. According to the <a href="https://cloud.google.com/automl/">product page</a>, Cloud AutoML Vision relies on two core techniques: <strong>transfer learning</strong> and <strong>neural architecture search</strong>. Since we’ve already explained <a href="http://www.fast.ai/2018/07/16/auto-ml2/#nas">neural architecture search</a>, let’s now take a look at transfer learning, and see how it relates to neural architecture search.</p>
+</section>
+<section id="you-cant-just-throw-ai-at-a-problem" class="level2">
+<h2 class="anchored" data-anchor-id="you-cant-just-throw-ai-at-a-problem">You can’t just throw AI at a problem</h2>
+<p><strong>Expertise in history, sociology, and psychology is necessary.</strong> As I said in <a href="https://www.technologyreview.com/video/610690/accessible-ai-expanding-the-reach-of-intelligent-solutions/">my talk at the MIT Tech Review Conference</a>, domain expertise is incredibly important. <a href="https://twitter.com/drewharwell/status/984144729574199296">You can’t just have techies throwing AI</a> at a problem without really understanding it, or the domain. For instance, radiologists who have also become deep learning practitioners have been able to catch some errors in deep learning work on radiology that deep learning experts missed. To this end, I think it is crucial that Facebook work with sociologists, historians, psychologists, and experts on topics like authoritarian governments, propaganda, etc. to better understand the problems they’ve created and plausible solutions.</p>
+</section>
+<section id="data-privacy-is-a-public-good" class="level2">
+<h2 class="anchored" data-anchor-id="data-privacy-is-a-public-good">Data privacy is a public good</h2>
+<p>Hopefully the above examples have made clear that data privacy is not just an individual choice, but it has profound societal impacts. As UNC Professor and techno-sociology expert <a href="https://www.nytimes.com/2018/01/30/opinion/strava-privacy.html">Zeynep Tufekci wrote</a>, <em>Data privacy is not like a consumer good, where you click ‘I accept’ and all is well. Data privacy is more like air quality or safe drinking water, a public good that cannot be effectively regulated by trusting in the wisdom of millions of individual choices. A more collective response is needed.</em></p>
+<p>Tufekci <a href="https://www.nytimes.com/2018/04/09/opinion/zuckerberg-testify-congress.html">highlights some policies</a> she recommends (and I agree): 1. Data collection should only be through a clear, concise, &amp; transparent opt-in process. 2. People should have access to all data collected on them. 3. Data collection should be limited to specifically enumerated purposes, for a designated period of time. 4. Aggregate use of data should be regulated.</p>
+<p>Another area of potential regulation is to address the monopoly status of tech giants like Facebook and force interoperability. Professor <a href="https://qz.com/847640/facebook-needs-to-hand-over-its-algorithm-if-it-really-wants-to-end-fake-news/">Jonathan Zittrain of Harvard</a> has suggested, <em>The key is to have the companies actually be the ‘platforms’ they claim they are. Facebook should allow anyone to write an algorithm to populate someone’s feed.</em></p>
+<p>Professor <a href="https://www.nytimes.com/2018/04/09/opinion/zuckerberg-testify-congress.html">Tufekci also proposed</a>, <em>If anything, we should all be thinking of ways to reintroduce competition into the digital economy. Imagine, for example, requiring that any personal data you consent to share be offered back to you in an “interoperable” format, so that you could choose to work with companies you thought would provide you better service, rather than being locked in to working with one of only a few.</em></p>
+</section>
+<section id="the-power-of-tech-lobbies" class="level2">
+<h2 class="anchored" data-anchor-id="the-power-of-tech-lobbies">The power of tech lobbies</h2>
+<p>While regulation is necessary for items we consider public goods, in the USA we face a significant obstacle due to the amount the tech industry spends on lobbying and the outsize impact that corporate lobbies have on our policies. As Alvaro Bedoya, Executive Director at the Georgetown Law Center on Privacy and Technology and a former senate staffer who worked on privacy laws points out, <a href="https://www.publicintegrity.org/2016/12/13/20538/lobbying-muscle-may-help-tech-titans-trump-trump">the last major consumer privacy law</a> was passed in 2009, before Google, Facebook, and Amazon had really ramped up their lobbying spending. <em>I’m sitting here watching Mark Zuckerberg say he’s sorry and that Facebook will do better on privacy, yet literally as he testifies lobbyists paid by Facebook in Illinois and California are working to stop or gut privacy laws,</em> <a href="https://www.wired.com/story/despite-zuckerberg-pledge-facebook-fights-state-privacy-laws/">said Bedoya</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="automl-headlines.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="figure-caption">Headlines from just a few of the many, many articles written about Google’s AutoML and Neural Architecture Search</figcaption>
+<p><img src="anti_privacy_lobby.jpg" class="img-fluid figure-img" width="500"></p>
+<figcaption class="figure-caption">photo from https://www.publicintegrity.org/2016/12/13/20538/lobbying-muscle-may-help-tech-titans-trump-trump</figcaption>
 </figure>
 </div>
-<p><em>Note: Google Cloud AutoML also has a <a href="https://twitter.com/math_rachel/status/1014301136902283264">drag-and-drop ML product</a> that is still in alpha. I applied for access to it over 2 months ago, but I have not heard back from Google yet. I plan to write a post once it’s released.</em></p>
-<h2 id="transfer" class="anchored">
-What is transfer learning?
-</h2>
-<p><a href="http://nlp.fast.ai/#transfer"><strong>Transfer learning</strong></a> is a powerful technique that lets people with smaller datasets or less computational power achieve state-of-the-art results, by taking advantage of pre-trained models that have been trained on similar, larger data sets. Because the model learned via transfer learning doesn’t have to learn from scratch, it can generally reach higher accuracy with much less data and computation time than models that don’t use transfer learning.</p>
-<p>Transfer learning is a core technique that we use throughout our free <a href="http://course.fast.ai/">Practical Deep Learning for Coders</a> course– and that our students have been applying in production in everything from their own startups to Fortune 500 companies. Although transfer learning seems to be considered “less sexy” than neural architecture search, it is being used to achieve ground-breaking academic results, such as in Jeremy Howard and Sebastian Ruder’s <a href="http://nlp.fast.ai/">application of transfer learning to NLP</a>, which achieved state-of-the-art classification on 6 datasets and is serving as a basis for <a href="https://blog.openai.com/language-unsupervised/">further research in this area</a> at OpenAI.</p>
-<h2 id="vs" class="anchored">
-Neural architecture search vs.&nbsp;transfer learning: two opposing approaches
-</h2>
-<p>The underlying idea of transfer learning is that neural net architectures will generalize for similar types of problems: for example, that many images have underlying features (such as corners, circles, dog faces, or wheels) that show up in a variety of different types of images. In contrast, <strong>the underlying idea of promoting neural architecture search for every problem is the opposite</strong>: that each dataset has a unique, highly specialized architecture it will perform best with.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="features.png" class="img-fluid figure-img" style="width:90.0%"></p>
-<figcaption class="figure-caption">Examples from Matthew Zeiler and Rob Fergus of 4 features learned by image classifiers: corners, circles, dog faces, and wheels</figcaption>
-</figure>
-</div>
-<p>When neural architecture search discovers a new architecture, you must learn weights for that architecture from scratch, while with transfer learning, you begin with existing weights from a pre-trained model. In this sense, you <strong>you can’t use</strong> neural architecture search and transfer learning on the same problem: if you’re learning a new architecture, you would need to train new weights for it; whereas if you are using transfer learning on a pretrained model, you can’t make substantial changes to the architecture.</p>
-<p>Of course, you can apply transfer learning to an architecture learned through neural architecture search (which I think is a good idea!). This requires only that a few researchers use neural architecture search and open-source the models that they find. <strong>It is not necessary for all machine learning practitioners to be using neural architecture search themselves on all problems</strong> when they can instead use transfer learning. However, <a href="https://www.youtube.com/watch?v=kSa3UObNS6o">Jeff Dean’s keynote</a>, <a href="https://blog.google/technology/ai/making-ai-work-for-everyone/">Sundar Pichai’s blog post</a>, Google Cloud’s promotional materials, and the media coverage all suggest the opposite: that everybody needs to be able to use neural architecture search directly.</p>
-<h2 id="good" class="anchored">
-What Neural Architecture Search is good for
-</h2>
-<p>Neural architecture search is good for finding new architectures! Google’s <a href="https://arxiv.org/pdf/1802.01548.pdf">AmoebaNet</a> was learned via neural architecture search, and (with the inclusion of <a href="https://www.fast.ai/posts/2018-04-30-dawnbench-fastai.html">fast.ai advances</a> such as an aggressive learning schedule and changing the image size as training progresses) is now the <strong>cheapest way to train ImageNet on a single machine</strong>!</p>
-<p>AmoebaNet was not designed with a reward function that involved the ability to scale, and so it didn’t scale as well as ResNet to multiple machines, but a neural net that scales well could potentially be learned in the future, optimized for different qualities.</p>
-<h2 id="evidence" class="anchored">
-In need of more evidence
-</h2>
-<p>We haven’t seen evidence that every dataset would be best modeled with its own custom model, as opposed to instead fine-tuning an existing model. Since neural architecture search requires a larger training set, this would particularly be an issue for smaller data sets. Even some of Google’s own research uses transferable techniques instead of finding a new architecture for each data set, such as <a href="https://arxiv.org/abs/1707.07012">NASNet</a> (<a href="https://ai.googleblog.com/2017/11/automl-for-large-scale-image.html">blog post here</a>), which learned an architectural building block on Cifar10 and then used that building block to create an architecture for ImageNet. I don’t know of any widely-entered machine learning competitions that have been won using neural architectures search yet.</p>
-<p>Furthermore, we don’t know that the mega-computationally expensive approach to neural architecture search that Google touts is the superior approach. For instance, more recent papers such as <a href="https://arxiv.org/pdf/1802.03268.pdf">Efficient Neural Architecture Search (ENAS)</a> and<br>
-<a href="https://www.groundai.com/project/darts-differentiable-architecture-search/">Differentiable architecture search (DARTS)</a> propose significantly more efficient algorithms. <strong>DARTS takes just 4 GPU days</strong>, compared to <strong>1800 GPU days for NASNet</strong> and <strong>3150 GPU days for AmoebaNet</strong> (all learned to the same accuracy on Cifar-10). Jeff Dean is an author on the ENAS paper, which proposed a technique that is 1000x <strong>less</strong> computationally expensive, which seems inconsistent with his emphasis at the TF DevSummit one month later on using approaches that are 100x <strong>more</strong> computationally expensive.</p>
-<h2 id="hype" class="anchored">
-Then why all the hype about Google’s AutoML?
-</h2>
-<p>Given the above limitations, why has Google AutoML’s hype been so disproportionate to its proven usefulness (at least so far)? I think there are a few explanations:</p>
-<ol type="1">
-<li><p>Google’s AutoML highlights some of the <strong>dangers of having an academic research lab embedded in a for-profit corporation</strong>. There is a temptation to try to build products around interesting academic research, without assessing if they fulfill an actual need. This is also the story of many AI start-ups, such as MetaMind or Geometric Intelligence, that end up as acquihires without ever having produced a product. My <a href="https://www.fast.ai/posts/2018-01-08-startups.html">advice for startup founders</a> is to avoid productionizing your PhD thesis and to avoid hiring only academic researchers.</p></li>
-<li><p><strong>Google excels at marketing</strong>. Artificial intelligence is seen as an inaccessible and intimidating field by many outsiders, who don’t feel that they have a way to evaluate claims, particularly from lionized companies like Google. Many journalists fall prey to this as well, and uncritically channel Google’s hype into glowing articles. I periodically talk to people that do not work in machine learning, yet are excited about various Google ML products that they’ve never used and can’t explain anything about.</p>
-<p>One example of Google’s misleading coverage of its own achievements occurred when <a href="https://ai.googleblog.com/2017/12/deepvariant-highly-accurate-genomes.html">Google AI researchers released</a> “a deep learning technology to reconstruct the true human genome”, compared their own work to Nobel prize-winning discoveries (the hubris!), and the story was picked up <a href="https://www.wired.com/story/google-is-giving-away-ai-that-can-build-your-genome-sequence/">by Wired</a>. However, Steven Salzberg, a distinguished professor of Biomedical Engineering, Computer Science, and Biostatistics at Johns Hopkins University <a href="https://www.forbes.com/sites/stevensalzberg/2017/12/11/no-googles-new-ai-cant-build-your-genome-sequence/#6d91bdd57747">debunked Google’s post</a>. Salzberg <a href="https://www.forbes.com/sites/stevensalzberg/2017/12/11/no-googles-new-ai-cant-build-your-genome-sequence/#6d91bdd57747">pointed out</a> that the research <b>didn’t actually reconstruct the human genome</b> and was “little more than an incremental improvement over existing software, and it might be even less than that.” A number of other <a href="https://twitter.com/math_rachel/status/940450068796022784">genomics researchers chimed in to agree</a> with Salzberg.</p>
-<p>There is some great work happening at Google, but it would be easier to appreciate if we didn’t have to sift through so much misleading hype to figure out what is legitimate.</p>
-<center>
-<blockquote class="twitter-tweet blockquote" data-lang="en">
-<p lang="en" dir="ltr">
-</p><p>Google’s DeepVariant “is little more than an incremental improvement over existing software, and it might be even less than that.” <a href="https://twitter.com/StevenSalzberg1?ref_src=twsrc%5Etfw"><span class="citation" data-cites="StevenSalzberg1">@StevenSalzberg1</span></a> <br><br>What do others genomics researchers think?<a href="https://t.co/vaAECQhvSi">https://t.co/vaAECQhvSi</a></p>
-<p></p>
-<p>— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/940450068796022784?ref_src=twsrc%5Etfw">December 12, 2017</a></p>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center></li>
-<li><p><strong>Google has a vested interest in convincing us that the key to effective use of deep learning is more computational power</strong>, because this is an area where they clearly beat the rest of us. AutoML is often very computationally expensive, such as in the examples of Google using 450 K40 GPUs for 7 days (the equivalent of 3150 GPU days) to learn AmoebaNet.</p>
-<p>While <b>engineers and the media often drool over bare-metal power and anything bigger</b>, history has shown that innovation is often birthed instead by constraint and creativity. Google works on the biggest data possible using the most expensive computers possible; how well can this really <b>generalize to the problems that the rest of us face</b> living in a constrained world of limited resources?</p>
-<p>Innovation comes from doing things differently, not from doing things bigger. The recent <a href="https://www.fast.ai/posts/2018-04-30-dawnbench-fastai.html">success of fast.ai</a> in the Stanford DAWNBench competition is one example of this.</p></li>
-</ol>
-<center>
-<blockquote class="twitter-tweet blockquote" data-lang="en">
-<p lang="en" dir="ltr">
-Innovation come from doings things differently, not doing things bigger. <a href="https://twitter.com/jeremyphoward?ref_src=twsrc%5Etfw"><span class="citation" data-cites="jeremyphoward">@jeremyphoward</span></a> <a href="https://t.co/3TJYs8OCbr">https://t.co/3TJYs8OCbr</a> <a href="https://t.co/I55a6gT1OF">pic.twitter.com/I55a6gT1OF</a>
-</p>
-— Rachel Thomas (<span class="citation" data-cites="math_rachel">@math_rachel</span>) <a href="https://twitter.com/math_rachel/status/991726810000850944?ref_src=twsrc%5Etfw">May 2, 2018</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center>
-<h2 id="shortage" class="anchored">
-How can we address the shortage of machine learning expertise?
-</h2>
-<p>To return to the issue that Jeff Dean raised in his <a href="https://www.youtube.com/watch?v=kSa3UObNS6o">TensorFlow DevSummit keynote</a> about the global shortage of machine learning practitioners, a different approach is possible. We can remove the biggest obstacles to using deep learning in several ways by:</p>
-<ol type="1">
-<li>making deep learning easier to use</li>
-<li>debunking myths about what it takes <a href="https://www.fast.ai/posts/2017-11-16-what-you-need.html">to do deep learning</a></li>
-<li>increasing access for people that lack the money or credit cards needed to use a cloud GPU</li>
-</ol>
-<h3 id="easier" class="anchored">
-Making Deep Learning Easier to Use
-</h3>
-<p>Research to make deep learning easier to use has a huge impact, making it faster and simpler to train better networks. Examples of exciting discoveries that have now become standard practice are:</p>
-<ul>
-<li><strong>Dropout</strong> allows training on smaller datasets without over-fitting.</li>
-<li><strong>Batch normalization</strong> allows for faster training.</li>
-<li><strong>Rectified linear units</strong> help avoid gradient explosions.</li>
-</ul>
-<p>Newer research to improve ease of use includes: - The <a href="https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0">learning rate finder</a> makes the training process more robust. - <a href="http://www.fast.ai/2018/07/02/adam-weight-decay/">Super convergence</a> speeds up training, requiring fewer computational resources. - <a href="http://course.fast.ai/lessons/lesson8.html">“Custom heads”</a> for existing architectures (e.g.&nbsp;modifying ResNet, which was initially designed for classification, so that it can be used to find bounding boxes or perform style transfer) allow for easier architecture reuse across a range of problems.</p>
-<p>None of the above discoveries involve bare-metal power; instead, all of them were creative ideas of ways to do things differently.</p>
-<h3 id="myths" class="anchored">
-Address Myths About What it Takes to Do Deep Learning
-</h3>
-<p>Another obstacle is the many myths that cause people to believe that deep learning isn’t for them: falsely believing that their data is too small, that they don’t have the right education or background, or that their computers aren’t big enough. One such myth says that only machine learning PhDs are capable of using deep learning, and many companies that can’t afford to hire expensive experts don’t even bother trying. However, it’s not only possible for companies to <a href="https://www.fast.ai/posts/2016-11-17-not-all-the-same.html">train the employees</a> they already have to become machine learning experts, it’s even preferable, because your current employees already have domain expertise for the area you work in!</p>
-<p>For the vast majority of people I talk with, the <a href="https://www.fast.ai/posts/2017-11-16-what-you-need.html">barriers to entry</a> for deep learning are far <a href="https://www.technologyreview.com/video/610690/accessible-ai-expanding-the-reach-of-intelligent-solutions/">lower than they expected</a>: one year of coding experience and access to a GPU.</p>
-<h3 id="colab" class="anchored">
-Increasing Access: Google Colab Notebooks
-</h3>
-<p>Although the cost of cloud GPUs (around 50 cents per hour) are within the budgets of many of us, I’m periodically contacted by students from around the world that can’t afford <strong>any GPU use</strong> at all. In some countries, rules about banking and credit cards can make it difficult for students to use services like AWS, even when they have the money. <a href="https://colab.research.google.com/notebooks/welcome.ipynb">Google Colab notebooks</a> are a solution! Colab notebooks provide a Jupyter notebook environment that requires no setup to use, runs entirely in the cloud, and gives users access to a free GPU (although long-running GPU use is not allowed). They can also be used to create documentation that contains working code samples running in an interactive environment. Google colab notebooks will do much more to democratize deep learning than Google’s AutoML will; perhaps this would be a better target for Google’s marketing machine in the future.</p>
-<p><strong>If you haven’t already, check out Part 1: <a href="http://www.fast.ai/2018/07/12/auto-ml-1/">What is it that machine learning practitioners do?</a> and Part 2: <a href="http://www.fast.ai/2018/07/16/auto-ml2/">An Opinionated Introduction to AutoML Neural Architecture Search</a> of this series.</strong></p>
+<p>The <a href="https://www.theverge.com/2016/5/27/11794512/facial-recognition-law-illinois-facebook-google-snapchat">Illinois Biometric Information Privacy Act</a> is one of the strongest privacy laws in the US, requiring a person’s explicit consent before a company can make a biometric scan of their body. At <a href="https://www.nytimes.com/2018/04/11/opinion/silicon-valley-lobbyists-privacy.html">the same time that Zuckerburg was telling Congress</a> how people’s facial images should be protected data, Facebook lobbyists have been working to gut this Illinois law.</p>
+<p>Based on his experience as a senate staffer working on privacy laws, <a href="https://www.nytimes.com/2018/04/11/opinion/silicon-valley-lobbyists-privacy.html">Alvaro makes the valuable point</a> that instead of passing overly broad regulations (which lobbyists can more easily render meaningless), we may have a better chance at passing <strong>specific</strong> privacy protections, such as trying to outlaw <a href="https://www.judiciary.senate.gov/imo/media/doc/06-04-14SouthworthTestimony.pdf">stalking apps</a> that abusers can use to track their victims, or to regulate the currently <a href="https://www.perpetuallineup.org/">unregulated use by police of facial recognition programs</a> with unknown error rates and racial biases.</p>
+<p>In the USA, we also face the issue of whether our laws will actually be enforced when tech giants are found to violate them. For instance, in 2016 Propublica discovered that Facebook <a href="https://www.propublica.org/article/facebook-lets-advertisers-exclude-users-by-race">allowed the placement of housing ads</a> that would not be shown to African-American, Hispanic, or Asian-American people, which is a violation of the <strong>Fair Housing Act</strong> of 1968. “This is horrifying. This is massively illegal. This is about as blatant a violation of the federal Fair Housing Act as one can find,” said prominent civil rights lawyer John Relman. Facebook apologized (although it did not face any penalty); yet over a year later in 2017, Facebook was still found to let people place <a href="https://www.propublica.org/article/facebook-advertising-discrimination-housing-race-sex-national-origin">housing ads that would not be shown</a> to certain groups of people, such as <strong>African Americans, people interested in wheelchair ramps, Jews, and Spanish speakers</strong>. Again, please contrast this with <strong>how swiftly and strongly Facebook responded in Germany to the threat of a penalty</strong>. As a further example, Facebook has been found to be violating the <strong>Age Discrimination in Employment Act</strong> of 1967 by allowing companies, including Verizon, Amazon, Goldman Sachs, Target, and Facebook itself, to <a href="https://www.propublica.org/article/facebook-ads-age-discrimination-targeting">place job advertisements targeted solely at young people</a>.</p>
+</section>
+<section id="free-basics-aka-internet.org" class="level2">
+<h2 class="anchored" data-anchor-id="free-basics-aka-internet.org">Free Basics, aka Internet.org</h2>
+<p>Zooming back out to Facebook’s global impact, it is important to understand the role that Facebook’s program Free Basics has played in the genocide in Myanmar, <a href="https://www.bloomberg.com/news/features/2017-12-07/how-rodrigo-duterte-turned-facebook-into-a-weapon-with-a-little-help-from-facebook">the election of a violent strongman in the Philipines</a> who is notorious for his use of extrajudicial killings, and elsewhere. Free Basics (formerly called Internet.org) was initially touted as a charitable effort in which Facebook provides free access to Facebook and a small number of other sites, but not to the internet as a whole, in countries including Myanmar, Somalia, the Philippines, Nigeria, Iraq, Pakistan, and others. For users in these countries, there is no charge for using the Facebook app on a smartphone, while the data rates for other apps is often prohibitively expensive. Despite it’s original name and description of benevolent aims, Internet.org was not a non-profit, but rather <a href="https://www.computerworld.com/article/3032646/internet/the-surprising-truth-about-facebooks-internetorg.html">a business development group</a> within Facebook aimed at increasing users and revenue.</p>
+<p>Free Basics has led to <a href="https://qz.com/333313/milliions-of-facebook-users-have-no-idea-theyre-using-the-internet/">large numbers of Facebook users</a> who say they don’t use the internet and never follow links outside of facebook (56% of Facebook users in Indonesia and 61% in Nigeria). In some countries, people use <em>internet</em> and <em>Facebook</em> interchangeably, and Facebook is the primary way that people access news. Free Basics violates net neutrality and was <a href="https://www.theverge.com/2016/2/8/10913398/free-basics-india-regulator-ruling">banned in India</a> in 2016 for this reason. While Facebook may have had good intentions with this program, it should have been accompanied with a huge sense of responsibility, and it needs to be re-evaluated in light of its role in inciting violence. Facebook needs to put significant resources into analyzing the impact Free Basics is having in the countries where it is offered, and to work closely with local experts from those countries.</p>
+<p>I want to thank <a href="https://twitter.com/omojumiller">Omoju Miller</a>, a machine learning engineer at Github who has her PhD from Berkeley, for recently reminding me about Free Basics and asking why more journalists aren’t writing about the role it’s played in global events.</p>
+</section>
+<section id="rethinking-the-web" class="level2">
+<h2 class="anchored" data-anchor-id="rethinking-the-web">Rethinking the Web</h2>
+<p>In French President Emmanuel Macron’s <a href="https://t.co/4O7AS5HmuD">recent interview about AI</a> said: <em>In the US, [AI] is entirely driven by the private sector, large corporations, and some startups dealing with them. All the choices they make are private choices that deal with collective values. That’s exactly the problem you have with Facebook and Cambridge Analytica or autonomous driving… The key driver should not only be technological progress, but human progress. This is a huge issue. I do believe that Europe is a place where we are able to assert collective preferences and articulate them with universal values.</em> Perhaps France will provide a template of laws that support technical progress while protecting human values.</p>
+<p>To end on a note of hope, Tim Berners-Lee, inventor of the web, <a href="https://www.theguardian.com/commentisfree/2018/mar/12/tim-berners-lee-web-weapon-regulation-open-letter">wrote an op-ed</a> saying, <em>two myths currently limit our collective imagination: the myth that advertising is the only possible business model for online companies, and the myth that it’s too late to change the way platforms operate. On both points, we need to be a little more creative. While the problems facing the web are complex and large, I think we should see them as bugs: problems with existing code and software systems that have been created by people – and can be fixed by people. Create a new set of incentives and changes in the code will follow.</em></p>
+<p>It’s easy to jump to simplistic conclusions: many commenters assume that Facebook must be supported at all times on the assumption that technology providers have the power to help society (or by disregarding the role that regulation plays in maintaining healthy markets and a health society); and many assume that Facebook and all involved must be evil and everyone needs to stop using their services right away. The reality is more complex. Technology can be greatly beneficial for society, and it can also have a disastrous impact. The complex problems we are facing require creative and nuanced solutions.</p>
 
 
+</section>
 
 <p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
