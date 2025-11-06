@@ -1,0 +1,43 @@
+
+
+---
+author: "Rachel Thomas"
+date: "2017-07-28"
+title: "Thoughts on OpenAI, reinforcement learning, and killer robots"
+description: "Teaching computers to play Atari (while ignorning risks of mass unemployment, wealth inequality, and gender & racial bias)"
+image: "/posts/2017-07-28-killer-robots/openai.jpg"
+categories: [ethics, machine learning]
+toc: true
+
+---
+
+"So how is fast.ai different from OpenAI?" I've been asked this question numerous times, and on the surface, there are several similarities: both are non-profits, both value openness, and both have been characterized as *democratizing AI*.  One significant difference is that fast.ai has not been funded with $1 billion from Elon Musk to create an elite team of researchers with PhDs from the most impressive schools who publish in the most elite journals. OpenAI, however, has.
+
+It turns out we're different in pretty much every other way as well: in our goals, values, motivations, and target audiences.
+
+## Artificial General Intelligence
+
+There is a lot of confusion about the term *AI*.  To some people, AI means building a super-intelligent computer that is similar to a human brain (this is often referred to as *Artificial General Intelligence* or *AGI*). These people are often interested in philosophical questions such as *What does it mean to be human?* or *What is the nature of intelligence?* They may have fears such as *Could super-intelligent machines destroy the human race?* A [New Yorker article describes](http://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny) OpenAI's goal as making sure that AI doesn't wipe out humanity, and it's webpage says that the [mission is to create artificial general intelligence](https://openai.com/about/). Elon Musk has expressed fear about DeepMind (acquired by Google for $500 million) and the development of evil AI, [saying](http://www.newyorker.com/magazine/2016/10/10/sam-altmans-manifest-destiny) "If the A.I. that they develop goes awry, we risk having an immortal and superpowerful dictator forever. Murdering all competing A.I. researchers as its first move strikes me as a bit of a character flaw."
+
+Cracking AGI is a very long-term goal. The most relevant field of research is considered by many to be reinforcement learning: the study of teaching computers how to beat Atari. Formally, reinforcement learning is the study of problems that require sequences of actions that result in a reward/loss, and not knowing how much each action contributes to the outcome.  Hundreds of the world's brightest minds, with the most elite credentials, are working on this Atari problem. Their research has applications to robotics, although a lot of it is fairly theoretical. OpenAI is largely motivated by publishing in top academic journals in the field, and you would need to have a similarly elite background to understand their papers.
+
+## Practical Artificial Intelligence
+
+To other people, AI refers to that algorithms that display some level of intelligence in doing application-focused tasks, such as algorithms that can:
+
+* [Identify whether a tumor in a CT scan is cancerous](http://money.cnn.com/2015/03/12/technology/enlitic-technology/index.html),
+* Predict a company's earnings, or
+* [Translate between languages](https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html).
+
+Many rapid advances are happening right now in the area of these algorithms that do their application-focused tasks very, very well. These algorithms would not be mistaken for humans (outside their excellent performance on the application they were designed for). This may sound less exciting than *OMG super-intelligent human-like machines*, but these algorithms are having a much bigger impact on the world today: they are more accurate than [human radiologists at diagnosing cancer](http://money.cnn.com/2015/03/12/technology/enlitic-technology/index.html), more accurate at[ understanding Mandarin and English speech than humans](https://www.nextbigfuture.com/2015/12/baidus-deep-learning-system-is-better.html), at work in self-driving cars, [improving treatment for pediatric ICU patients](https://arxiv.org/pdf/1701.06675.pdf), working to end illegal logging in endangered rainforests, [granting the visually impaired more independence, reducing farmer suicides in India](https://www.forbes.com/sites/mariyayao/2017/04/10/why-we-need-to-democratize-ai-machine-learning-education/#5f5931031197), and more (note: although they are in the same family, a specific algorithm was trained and tuned for each of these applications).
+
+The capabilities listed above are transformative: improvements to medicine will help fill a [global shortage of doctors](http://www.who.int/mediacentre/news/releases/2013/health-workforce-shortage/en/), improve outcomes even in countries that have enough doctors, and save millions of lives.  Self-driving cars are safer and will drastically reduce traffic fatalities, congestion, and pollution.
+
+## Harms Happening Now
+
+However, these application-focused algorithms are also already having some scary negative impacts as well: an increase in [unemployment as more jobs are automated](https://www.technologyreview.com/s/515926/how-technology-is-destroying-jobs/), widening wealth inequality (as highly profitable companies are created using these algorithms and employing relatively few workers), [encoding existing biases](https://www.youtube.com/watch?v=25nC0n9ERq4) (for example, Google Photos labeling Black people as "gorillas" as part of their automatic photo labeling), and with [the potential of bots](https://www.ribbonfarm.com/2017/05/23/there-are-bots-look-around/) and [convincing fake videos](https://www.economist.com/news/science-and-technology/21724370-generating-convincing-audio-and-video-fake-events-fake-news-you-aint-seen) to further impact politics.  
+
+At fast.ai, we are not working on AGI, but instead focused on how to make it possible for more people from a wide variety of backgrounds to create and use neural net algorithms.  [We have students](/2017/02/27/not-just-silicon-valley/) working to stop illegal deforestation, create more resources for the Pakistani language Urdu, help farmers in India prove how much land they own so they qualify for crop insurance, working on wearable devices to monitor Parkinson's disease, and more.  These are issues that Jeremy and I knew very little (if anything) about, and illustrate the importance of making this technology as accessible as possible.  People with different backgrounds, in different locations, with different passions, are going to be aware of whole new sets of problems that they want to solve.
+
+It is hard for me to empathize with Musk's fixation on evil super-intelligent AGI killer robots in a very distant future. I support research funding at all levels, and have nothing against mostly theoretical research, but is it really the best use of resources to throw $1 billion at reinforcement learning without any similar investments into addressing mass unemployment and wealth inequality (both of which are well-documented to cause political instability), how existing gender and racial biases are being encoded in our algorithms, and on how to best get this technology into the hands of people working on high impact areas like medicine and agriculture around the world?
+

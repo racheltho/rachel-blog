@@ -8,7 +8,7 @@ categories: [inclusion]
 toc: true
 ---
 
-*This article has been [translated into Spanish](http://mata.juegos/es/2016/07/mujeres-tecnologia/) at Matajuegos and [into Russian](https://habr.com/ru/post/511658/) by Dmitry Si.*
+*This article was originally posted on [Medium](https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996).  It has been [translated into Spanish](http://mata.juegos/es/2016/07/mujeres-tecnologia/) at Matajuegos and [into Russian](https://habr.com/ru/post/511658/) by Dmitry Si.*
 
 According to the [Harvard Business Review](http://documents.library.nsf.gov/edocs/HD6060-.A84-2008-PDF-Athena-factor-Reversing-the-brain-drain-in-science,-engineering,-and-technology.pdf), 41% of women working in tech eventually end up leaving the field (compared to just 17% of men), and I can understand why…
 

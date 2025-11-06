@@ -1,0 +1,102 @@
+---
+author: "Rachel Thomas"
+date: "2018-08-27"
+categories: [advice, education]
+title: "What You Need to Know Before Considering a PhD"
+image: "/posts/2018-08-27-considering-phd/woc5.jpg"
+description: "Underappreciated risks of graduate school"
+toc: true
+---
+
+*My newest Ask-A-Data-Scientist post addresses the question of whether to pursue a PhD. You can find my previous [Ask-A-Data-Scientist advice columns here](http://www.fast.ai/topics/#advice).*
+
+*Question: I'm an undergrad student passionate about machine learning, and I feel a bit of pressure to get a PhD. Would it maybe make more sense to go into industry for a couple years and then consider going back to school? Any advice you have would be greatly appreciated.*
+
+Conversations around whether or not to do a PhD often suffer from *selection bias*: people considering PhDs ask successful people with PhDs for their advice. On the other side, there are many people doing fascinating and cutting-edge work without PhDs, who are less likely to be asked for advice on the topic. Other important factors, such as the disproportionately high rate of depression amongst graduate students or the opportunity cost of doing a PhD, are rarely discussed.  As someone with a math PhD, I regret spending so many years over-focusing on a narrow area, while neglecting many other important skills.  Once I joined the workforce, I felt like I was playing catch-up on many crucial skills and experiences! 
+
+## Understanding Opportunity Costs
+
+I grossly underestimated how much I could learn by working in industry. I believed the falsehood that the best way to always keep learning is to stay in academia, and I didn't have a good grasp on the opportunity costs of doing a PhD. My undergraduate experience had been magical, and I had always both excelled at and enjoyed being in school. The idea of getting paid to be in school sounded like a sweet deal! 
+
+As I wrote about [here](http://www.fast.ai/2016/10/08/teaching-philosophy/), I later realized that my traditional academic success was actually a weakness, as I'd learned how to solve problems I was given, but not how to how to find and scope interesting problems on my own. I think for many top students (my former self included), **getting a PhD feels like a "safe" option: it's a well-defined path to doing something considered prestigious**. But this can just be a way of postponing many necessary personal milestones: of learning to define and set your own goals apart from a structured academic system and of connecting more deeply with your own intrinsic motivations and values.
+
+At the time, I felt like I was learning a lot during my PhD: taking advanced courses, reading papers, conducting research, regularly giving presentations, organizing two conferences in my field, coordinating a student-run graduate course, serving as an elected representative for grad students in my department, and writing a thesis.  In hindsight, all of these were part of **a narrower range of skills** than I realized, and many of these skills were **less transferable** than I'd hoped. For instance,  academic writing is very different from the type of writing I do through my blogging (which reaches a much wider audience!), and understanding academic politics was very different from startup politics, since the structure and incentives are so different.
+
+![Should you do a PhD? photo from #WOCinTech Chat](woc3.jpg){width=500}
+
+I finished my PhD and started my first full-time adult job around the time I turned 27 (Note: I was earning a stipend through various research and teaching fellowships in graduate school, but that was different.) I had a lot to learn about working in industry and major gaps in my practical skills. Despite taking 2 years of C++ in high school, minoring in CS in college, and doing a few programming projects during my math PhD, I had focused on the more theoretical parts of computer science and was lacking in many practical computer skills. In contrast, my fast.ai co-founder Jeremy Howard started his first full-time adult job at 18 as a McKinsey consultant, and **by the same age when I was first entering the workforce, Jeremy had been working full-time for nearly a decade and had founded two start-ups that are still operational today**.  I could have learned so many other things working in tech during the time I instead did my PhD.
+
+To be clear, life is not a race. You can [switch into tech](http://www.fast.ai/2017/03/01/changing-careers/) and learn new skills at any age. The tech industry is [deeply ageist](https://www.usatoday.com/story/tech/columnist/2017/08/04/ageism-forcing-many-look-outside-silicon-valley-but-tech-hubs-offer-little-respite/479468001/), and the glorification of young founders is a [harmful myth](https://hbr.org/2018/07/research-the-average-age-of-a-successful-startup-founder-is-45).  However, I am never again going to have the energy I did in my early 20s (I eat healthy, lift heavy weights, and prioritize sleep, but I don't feel the same), and I regret spending that time and energy being miserable while over-focusing on a narrow subject area and neglecting a lot of other skills.
+
+## You don't need a PhD
+
+Just off the top of my head, I thought of the following people **who don't have PhDs** and who are doing interesting, cutting-edge work in deep learning (this list is incomplete and there are tons of others): 
+
+- [Chris Olah](http://colah.github.io/), co-editor of distill.pub, creator of insightful visualizations, researcher at Google Brain (no college degree) 
+- [Jeremy Howard](http://www.fast.ai/about/#jeremy), co-founder of fast.ai, founder of Enlitic (1st start-up to apply deep learning to medicine), previous #1-ranked Kaggler and Kaggle president, founder of fastmail and Optimal Decisions Group
+- [David Ha](https://ai.google/research/people/105004), creator of [Sketch-RNN](https://experiments.withgoogle.com/sketch-rnn-demo) doodles, researcher at Google Brain 
+- [Smerity](http://smerity.com/articles/articles.html), previous Salesforce/MetaMind researcher, inventor of [AWD-LSTM](https://github.com/salesforce/awd-lstm-lm), startup founder
+- [Pete Warden](https://petewarden.com/), research engineer at Google Brain and tech lead for TensorFlow mobile, founder of JetPac (acquired by Google), author of O'Reilly ebook ["Building Mobile Applications with TensorFlow"](https://www.oreilly.com/data/free/building-mobile-applications-with-tensorflow.csp)
+- [Greg Brockman](https://gregbrockman.com/), CTO and co-founder of OpenAI, leads their DOTA efforts (no college degree)
+- [Catherine Olsson](https://scholar.google.com/citations?user=TvdMDhwAAAAJ&hl=en), research engineer at Google Brain, formerly helped build OpenAI Gym
+- [Sara Hooker](https://www.sarahooker.me/), Google Brain researcher working on interpretability and model compression, founder of data for good non-profit Delta Analytics
+- [Denny Britz](http://www.wildml.com/), previously a Google Brain resident and worked on Spark at Berkeley, blogs at WildML
+- [Helena Sarin](https://twitter.com/glagolista?lang=en), deep learning researcher creating innovative artwork
+- [Sylvain Gugger](https://sgugger.github.io/), fast.ai's first research fellow, has done research on [AdamW and super-convergence](http://www.fast.ai/2018/07/02/adam-weight-decay/)
+- [Mariya Yao](https://mariyayao.com/), CTO of Metamaven, chief editor of TOPBOTS, author of Applied Artificial Intelligence, part of the Duke team that took 2nd place in the DARPA grand challenge
+- Devaki Raj, CEO and co-founder of [startup CrowdAI](https://techcrunch.com/2017/01/05/crowdai/) applying AI to satellite imagery, previously worked on maps and Android at Google
+- [Choong Ng](https://choongng.com/), CEO and co-founder of Vertex.ai (acquired by Intel), which created [PlaidML](https://github.com/plaidml/plaidml) for fast and easy deploy of deep learning on any device
+- [Brian Brackeen](https://ventureforamerica.org/the-vfa-podcast/brian-brackeen-founder-ceo-of-kairos/), founder and CEO of Kairos computer vision start-up, took [admirable stance](https://techcrunch.com/2018/06/25/facial-recognition-software-is-not-ready-for-use-by-law-enforcement/) against use of facial recognition by law enforcement
+
+In all the jobs I've had, including a couple that technically "required" a PhD, I had teammates without graduate degrees. My teammates without PhDs were often more productive and helpful then those of us with PhDs (perhaps because they had more practical experience). 
+
+Of course, there are plenty of **people with PhDs** who do fascinating and valuable work, such as [Arvind Narayanan](http://randomwalker.info/), [Latanya Sweeney](https://dataprivacylab.org/people/sweeney/), [Timnit Gebru](http://ai.stanford.edu/~tgebru/), [Moustapha Cisse](http://moustaphacisse.com/), [Yann Dauphin](http://www.dauphin.io/), [Shakir Mohamed](https://shakirm.com/), [Leslie Smith](https://scholar.google.com/citations?user=pwh7Pw4AAAAJ&hl=en), [Erin LeDell](https://www.stat.berkeley.edu/~ledell/), [Andrea Frome](https://scholar.google.com/citations?user=f9_wq_kAAAAJ&hl=en), and others. I deeply admire everyone I've listed, and I am **not** arguing that a PhD is never useful or never works out well.
+
+## Depression, Isolation, & Mental Health Problems among Grad Students
+
+*67 percent of graduate students said they had felt hopeless at least once in the last year; 54 percent felt so depressed they had a hard time functioning; and nearly 10 percent said they had considered suicide, a 2004 survey found. By comparison, an estimated 9.5 percent of American adults suffer from depressive disorders in a given year, according to the National Institute of Mental Health,* [according to research](https://www.chronicle.com/article/Just-Dont-Go-Part-2/44786) on UC Berkeley students.
+
+![photo from #WOCinTech Chat](woc5.jpg){width=500}
+
+*Grad school is not all fun and personal enrichment for many people. It can involve poverty-level wages, uncertain employment conditions, contradictory demands by supervisors, irrelevant research projects, and disrespectful treatment by both the tenured faculty members and the undergraduates (both of whom behave, all too often, as management and customers.) Grad school is a confidence-killing daily assault of petty degradations. All of this is compounded by the fear that it is all for nothing; that you are a useful fool,* [one professor wrote](https://www.chronicle.com/article/So-You-Want-to-Go-to-Grad/45239) in the Chronicle of Higher Education, in an article that was about humanities students in particular, yet applies to many STEM students as well. *I hardly know anyone who was a grad student in the last decade who is not deeply embittered. Because of my columns on this site, a few people have told me how their graduate-school years coincided with long periods of suicidal ideation. More commonly, grad students suffer from untreated chronic ailments such as weight fluctuation, fatigue, headache, stomach pain, nervousness, and alcoholism.*
+
+While sexism and harassment contributed to my own negative experience in graduate school, many of my male classmates were miserable as well, due to isolation, bullying, or humiliating treatment from professors, and an exploitative system dominated by egos, rigid hierarchy, and obsession with prestige. One of the authors of a [comprehensive report](https://www.chronicle.com/article/Just-Dont-Go-Part-2/44786) from the National Academy of Sciences stated, "Scientists have equated rigor and being critical with being cruel."
+
+## Sexism and Racism in Academia
+
+In science, engineering, & medicine, between 20%-50% of female students and more than 50% of women faculty have experienced harassment, according to a [National Academy of Sciences report](https://www.washingtonpost.com/news/speaking-of-science/wp/2018/06/12/half-of-women-in-science-experience-harassment-a-sweeping-new-report-finds/).  In [interviews with 60 women of Color](http://www.uchastings.edu/news/articles/2015/01/double-jeopardy-report.pdf) who work in STEM research, 100% of them had experienced discrimination, and the particular negative stereotypes they faced differed depending on their race. 
+
+**Credentials can be more important for people from underrepresented groups**, who frequently face a [higher level of scrutiny](https://medium.com/@racheltho/how-to-make-tech-interviews-a-little-less-awful-c29f35431987) due to [unconscious bias](https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996) (particularly if they are self-taught). While underrepresented minorities may need the credentials more, unfortunately, due to the sexism and racism in higher education, they also may face worse environments in trying to obtain those credentials. I don't have an answer for this, but wanted to note the tension.
+
+<center>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">4.  I've watched a lot of very smart women get driven out of math PhD programs.  Math is not open to all with a community like that.</p>&mdash; Rachel Thomas (@math_rachel) <a href="https://twitter.com/math_rachel/status/867029113789308932?ref_src=twsrc%5Etfw">May 23, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+
+Piper Harron, a Black woman who earned her PhD in math at Princeton, [wrote a passage](http://www.theliberatedmathematician.com/math/) in her thesis, *Respected research math is dominated by men of a certain attitude. Even allowing for individual variation, there is still a tendency towards an oppressive atmosphere, which is carefully maintained and even championed by those who find it conducive to success. As any good grad student would do, I tried to fit in, mathematically. I absorbed the atmosphere and took attitudes to heart. I was miserable, and on the verge of failure. The problem was not individuals, but a system of self-preservation that, from the outside, feels like a long string of betrayals, some big, some small, perpetrated by your only support system.*
+
+## Toxic Graduate School is Worse than Other Toxic Jobs
+
+I consider my time in graduate school as one of the [two most toxic environments I've been in](https://code.likeagirl.io/toxic-jobs-low-self-esteem-interviewing-6c4650a3c28a).  While most of [the advice I gave](https://code.likeagirl.io/toxic-jobs-low-self-esteem-interviewing-6c4650a3c28a) for coping with toxic jobs applies to toxic graduate school as well, there is one key distinction: **it is much, much harder to switch graduate programs than it is to switch jobs**.  This makes the power difference between student and professor much greater than the power difference between an employee and boss in the tech industry (which thus means there is greater potential for abuse or exploitation).
+
+I know people who have switched advisors or even switched programs, and yes, **this can set you back years**. However, the costs (in terms of mental and physical health, as well as opportunity costs) of staying in a toxic program is very high, and I know people who have spent years recovering from graduate school. It becomes even more complex if you are an immigrant on a student visa and have to consider visa/residency issues. There is not an easy solution for toxic graduate school situations.
+
+## Higher Education is Changing
+
+The only situation where you definitely need a PhD is to become a professor. However, higher education is changing a lot: the shift to more adjuncts, the [overproduction of PhDs](https://www.theatlantic.com/education/archive/2016/04/bad-job-market-phds/479205/), severe budget cuts to research funding in the USA, an increasing number of schools [laying off](https://www.nature.com/news/2009/090624/full/4591042a.html) [tenured faculty](https://www.google.com/search?q=laying+off+tenured+faculty&oq=laying+off+tenured), having to make repeated major moves for a series of post-docs, and unsustainable levels of student loan debt amongst undergraduates. I'm not sure what the future holds for higher education, but I think it will be different than the past (and this played a significant role in my own change of career goals).
+
+I feel skeptical now when I hear undergraduates (including my younger self) say that they are certain they want to become professors, as it can be hard coming straight from undergraduate to understand the huge breadth and depth of career options that are out there, even if they have had a few internships or part-time jobs.  Also, at that point, many students have primarily been surrounded by professors and students. 
+
+Coding bootcamps and MOOCs such as Coursera were not invented until I was well into [my transition into tech](http://www.fast.ai/2017/03/01/changing-careers/), but both can be useful and are having a big impact on education.  I've taken and benefitted from a number of online courses, and I would have benefitted from a coding bootcamp if they'd existed 10 or 15 years ago. In the past few years, I've worked both as an instructor for an in-person bootcamp and been a co-founder in building fast.ai's MOOCs, which include [Practical Deep Learning for Coders](http://course.fast.ai/) and [Computational Linear Algebra](http://www.fast.ai/2017/07/17/num-lin-alg/). I've seen how powerful and useful these new educational formats can be when done well (there are also plenty of useless or sketchy bootcamps and MOOCs out there as well, so do your research).
+
+## Further Reading/Watching
+
+You may be interested in some of my previous posts and talks on related topics:
+
+- [Machine learning hasn't been commoditized yet, but that doesn't mean you need a PhD](http://www.fast.ai/2017/03/17/not-commoditized-no-phd/)
+- [Alternatives to a Degree to Prove Yourself in Deep Learning](http://www.fast.ai/2017/04/06/alternatives/)
+- [6 Myths about Using AI](https://www.technologyreview.com/video/610690/accessible-ai-expanding-the-reach-of-intelligent-solutions/) (including the myth that you need a PhD)
+- [How to Learn Deep Learning When You're Not a CS PhD](https://vimeo.com/214233053)
+- [67 Questions for a fast.ai Researcher](https://www.youtube.com/watch?v=RsOpnFbufcY&index=1&list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6)
+
+When considering a PhD, it is important to carefully weigh the opportunity costs and risks, as well as to consider the experiences of a variety of people: those that have found success without PhDs, the many who have had negative graduate school experiences, and those that have succeeded following a traditional academic path. 

@@ -5,7 +5,7 @@ date: "2016-11-17"
 categories: [machine learning]
 toc: true
 description: "On the difference between big data, machine learning, and deep learning."
-image: "nikkei.jpg"
+image: "nikkei2.jpg"
 ---
 
 At the Financial Times-Nikkei conference on [*The Future of AI, Robots, and Us*](https://www.eventbrite.com/e/nikkei-innovation-forum-the-future-of-ai-robots-and-us-tickets-27689144978#) a few weeks ago, Andreessen Horowitz partner Chris Dixon spoke just before Jeremy Howard and I were on stage. Dixon said many totally *reasonable* things in his talk--but it's no fun to comment on them, so I'm going to focus on something rather *unreasonable* that he said, which was: "A few years ago it was called big data and then it was machine learning and now it's called deep learning". It was not entirely clear if he was saying that these are all terms for the same thing (they are most definitely not!) or if he was suggesting that the "in" data-driven approach changes from year to year. Either way, this obscures what a complete game-changer deep learning is. It is not just the 2016 version of "big data" (which has always been an empty buzzword). It is going to have an impact the size of the impact of the internet, or as Andrew Ng suggests, the [impact of electricity](https://www.fast.ai/posts/2016-10-11-fortune.html). It is going to affect every industry, and leaders of every type of organization are going to be wishing that they had looked into it sooner. 

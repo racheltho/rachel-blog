@@ -1,5 +1,5 @@
 ---
-title: "Tech’s Long Hours Are Discriminatory and Counterproductive"
+title: "Long Hours Are Discriminatory and Counterproductive"
 date: "2019-02-19"
 image: "overwork.jpg"
 description: "Why working longer doesn't work."

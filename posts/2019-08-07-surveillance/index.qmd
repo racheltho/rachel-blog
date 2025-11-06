@@ -1,10 +1,10 @@
 ---
-title: "8 Things You Need to Know about Surveillance"
+title: "How IBM Helped the Nazis and What That Teaches Us About Surveillance"
 image: "ibm-hitler.jpg"
 date: "2019-08-07"
 author: "Rachel Thomas"
 categories: [ethics]
-description: How surveillance makes us less safe
+description: "Why increasing surveillance doesn't keep us safer"
 toc: true
 ---
 

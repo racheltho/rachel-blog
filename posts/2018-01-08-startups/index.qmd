@@ -1,0 +1,73 @@
+
+---
+title: 'Five Trends to Avoid When Founding a Startup'
+date: "2018-01-08"
+description: "How common startup advice gets it wrong"
+author: "Rachel Thomas"
+image: "/posts/2018-01-08-startups/nikkei.jpg"
+categories: [advice, work]
+toc: true
+---
+
+*This post was inspired by a round-table discussion I led on the topics of founding start-ups and personal branding at the [Women in Machine Learning Workshop](http://wimlworkshop.org/2017/), co-located with deep learning conference [NIPS](https://nips.cc/). I covered [personal branding in a previous post](/2017/12/18/personal-brand/).*
+
+*This post has been translated [into Korean here](https://jongjinchoi.com/2018/01/five-trends-to-avoid-when-founding-a-startup/)*.
+
+When I first moved to San Francisco in 2012, I was thrilled by how many startups there are here; the culture seemed so creative! Then I realized that most of the startups were **indistinguishable** from one another: nearly everyone was following the **same destructive trends** which are **bad for employees** and **bad for products**. 
+
+If you are working on a startup, I want you to know that there are options in how to to do things. After working at several startups and watching friends found start-ups, I took the leap and started fast.ai, together with Jeremy Howard. We are unusual in many ways: we have no interest in growing our tiny team; we are allergic to traditional venture capital; and we don't plan to hire any deep learning PhDs. Yet we are still having a big impact!
+
+![fast.ai founders Jeremy and Rachel speaking at the Nikkei Innovation Forum](nikkei.jpg){width=450}
+
+If you are going to avoid making the same mistakes that so many entrepreneurs have made, the first step is to be able to recognize them.  I've identified 5 dominant narratives in Bay Area Tech start-ups that not only harm employees, but lead to weaker companies and worse products. This post offers a high-level overview, and I'll dig into the trends in greater detail in future posts (adding links as I do so):
+
+1. **Venture Capital** often pushes what could've been a successful small business to over-expand and ultimately fail; prevents companies from focusing their priorities; distracts from finding a monetization plan; causes conflict due to the misalignment of incentives between VCs and founders; and is full of far too many unethical bullies and thugs.
+2. **Hypergrowth** is nearly impossible to manage and leads to communication failures, redundant work, burnout, and high employee attrition.
+3. **Trying to be "like a family"** severely limits your pool of potential employees, leaves you unprepared for conflict or HR incidents, and sets employees up to feel betrayed.
+4. **Attempting to productionize a PhD thesis** is rarely a good business plan.  The priorities and values of academia and business are drastically different.
+5. **Hiring a bunch of academic researchers** will not improve your product and harms your company by diverting so many resources (unless your goal is an aquihire).
+
+I recognize that there are many startups following these trends that have high-valuations on paper.  However, that does not mean that these companies will succeed in the long-term (we've already seen many highly valued, high profile startups fail in recent years).
+
+## Negative trend 1: Venture Capital
+
+Imagine you were to create a business where you could profitably support yourself and 10 employees selling a product your customers liked, and after running it for 10 years you sold it for $10 million, of which half ended up in your pocket and half with your employees. Most VCs would consider that an **abject failure**.  They are looking for at least 100x returns, because all of their profits come from the one or two best performers in their portfolio.
+
+Therefore, VCs often push companies to grow too quickly, before they've nailed down product-market fit and monetization.  Growing at a slow, sustainable rate helps keep your priorities in order. Funding yourself (through part-time consulting, saving up money in advance, and/or getting a simple product to market quickly) will force you to stay smaller and grow more slowly than VC funded businesses, but **this is good**. Staying small keeps you focused on a **small number of high-impact features**.
+
+I have seen a lot of deeply unethical, bullying, and downright illegal behavior by venture capitalists against close friends of mine. This is not just a few bad actors: the behavior is wide-spread, including by many well-known and ultra-wealthy investors (although founders often don't speak out about it because of fear of professional repercussions).  
+
+## Negative trend 2: Hypergrowth
+
+Hypergrowth typically involves: **chaos**, **inefficiency**, and **severe burn-out** (none of which is good for your business) I've worked at several companies that have doubled in size in just a year.  It was always painful and chaotic. Communication broke down. There was duplicate and redundant work. Company politics became increasingly destructive. Burnout was endemic and many people quit.  In all cases, **the quality of the product suffered**.
+
+Management is hard, and management of hypergrowth is an order of magnitude harder. So many start-ups work their employees into the ground for the sake of short-term growth. Burnout is a very real and expensive problem in the tech industry, and hypergrowth routinely leads to burnout.
+
+## Negative trend 3: "Our startup is like a family"
+
+Many startups claim that they're creating a family-like culture amongst their employees: they don't just work together, they go out after work, share the same hobbies, and are best friends. Doing this **severely limits** your pool of potential employees.  Employees with **health problems, long commutes, families, outside hobbies, outside friendships, or from under-represented groups** may all struggle to thrive in such a culture. 
+
+Secondly, you are making a promise you can't keep, which sets people up for **feeling betrayed**.  You're not actually a family; you are a company. You will need to make hard decisions for the sake of the business. You can't actually offer people anything remotely close to lifelong loyalty or security, and it's dishonest to implicitly do so.
+
+## Negative trend 4 (AI specific): Productionizing your PhD thesis
+
+The best approach to starting a start-up is to address a problem that people in the business world have.  Your PhD thesis is not doing this, and it is highly unlikely that it will give you a competitive edge. You and your adviser picked your thesis topic because it's an interesting technical problem with good opportunities to publish, **not** because it has a large opportunity for impact in an underserved market with few barriers to entry.
+
+In the business world, products are not evaluated on underlying theoretical novelty, but on implementation, ease-of-use, effectiveness, and how they relate to revenues. 
+
+## Negative trend 5 (AI specific): Hiring a bunch of PhDs
+
+You almost certainly do not need a bunch of PhDs.  There are so many things that go into a successful product beyond the algorithm: the product-market fit, software engineering that productionizes and deploys it, the act of selling it, supporting your users, etc.  And even for highly technical aspects like deep learning, fast.ai has shown that people with 1-year of coding experience can become world-class deep learning practitioners; you don't need to hire Stanford PhDs. By diverting valuable resources into academic research at your startup, you are hurting the product. 
+
+## My journey to fast.ai
+
+Whilst avoiding these trends, fast.ai has accomplished far more than I ever expected in our first year and a half: over 100,000 people have started our [Practical Deep Learning for Coders course](http://course.fast.ai/) and fast.ai students have landed new jobs, launched companies, had their work [shown on HBO](https://medium.com/@timanglade/how-hbos-silicon-valley-built-not-hotdog-with-mobile-tensorflow-keras-react-native-ef03260747f3), been [featured in Forbes](https://www.forbes.com/sites/mariyayao/2017/04/10/why-we-need-to-democratize-ai-machine-learning-education/#7b9552a81197), won hackathons, and been accepted to the Google Brain AI Residency. Fast.ai has been mentioned in the [Harvard Business Review](https://hbr.org/cover-story/2017/07/the-business-of-artificial-intelligence) and the [New York Times](https://www.nytimes.com/2017/10/22/technology/artificial-intelligence-experts-salaries.html).
+
+Fast.ai is solving a problem that I experienced first-hand: how hard it can be to break into deep learning and gain practical AI knowledge if you don't have the "right" background and didn't train with the academic stars of the field. I have seen and experienced some of the **obstacles facing outsiders: inequality, discrimination, and lack of access**.
+
+I grew up in Texas (not in a major city) and attended a poor, predominantly Black public high school that was later ranked in **the bottom 2% of Texas schools**.  We had far fewer resources and opportunities compared to the wealthier, predominantly White schools around us.  In graduate school, the sexism and harassment I experienced led me to abandon my dreams of becoming a math professor, although [I then experienced similar problems in the the tech industry](https://medium.com/tech-diversity-files/if-you-think-women-in-tech-is-just-a-pipeline-problem-you-haven-t-been-paying-attention-cb7a2073b996). When I first became interested in deep learning in 2013, I found that [experts weren't writing down the practical methods](https://vimeo.com/214233053) they used to actually get their research to work, instead just publishing the theory.  I believe deep learning will have a huge impact across all industries, and I want the creators of this technology to be a more diverse and less exclusive group. 
+
+With fast.ai, I'm finally able to do work completely in line with my values, on a tiny team characterized by trust and respect. Having a small team forces us to prioritize ruthlessly, and to focus only on what we value most or think will be highest impact.   Something that has surprised me with fast.ai is how much I've been able to invest in my own career and own skills, in ways that I never could in previous jobs. Jeremy and I are committed to fast.ai for the long term, so neither of us has any interest in burning out. We believe you can have an impact with your work, without destroying your health and relationships.
+
+I'd love to see more small companies building useful products in a healthy and sustainable way.
+

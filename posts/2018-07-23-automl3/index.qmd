@@ -3,7 +3,7 @@ title: "Google's AutoML: Cutting Through the Hype"
 date: "2018-07-23"
 author: "Rachel Thomas"
 categories: [technical, machine learning]
-description: Analyzing Google's claims that we all need custom neural networks
+description: "Analyzing Google's claims that we all need customized, bespoke neural network architectures"
 image: "sundar_pichai.jpg"
 toc: true
 ---

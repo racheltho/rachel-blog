@@ -1,5 +1,5 @@
 ---
-title: " an AI researcher going back to school for microbiology"
+title: "AI, science, education, & ethics"
 listing:
   contents: posts
   sort: "date desc"
