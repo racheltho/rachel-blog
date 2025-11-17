@@ -59,6 +59,7 @@ I believe that high-quality, equitable, and safe public education is important f
 
 A few other posts that you may be interested in, related to my views on education and teaching:
 
-- [There's No Such Thing as Not A Math Person](https://www.fast.ai/2022/03/15/math-person/): based on a webinar I gave to parents addressing cultural myths about math and how to support your kids in their math education, even if you don't see yourself as a "math person"
-- [The Qualities of a Good Education](https://www.fast.ai/2016/10/08/teaching-philosophy/): common pitfalls in traditional technical education and ideas towards doing better
-- [What You Need to Know Before Considering a PhD](https://www.fast.ai/2018/08/27/grad-school/): includes a reflection on how my own success in traditional academic environments was actually a weakness, because I'd learned how to solve problems I was given, but not how to how to find and scope interesting problems on my own
+- [There's No Such Thing as Not A Math Person](https://rachel.fast.ai/posts/2022-03-15-math-person/): based on a webinar I gave to parents addressing cultural myths about math and how to support your kids in their math education, even if you don't see yourself as a "math person"
+- [In Defense of Screen Time](https://rachel.fast.ai/posts/2024-10-29-screen-time/index.html): embracing positive uses of screens opens up myriad opportunities for children to create art, music, writing, and code, as well as to connect with friends with shared interests
+- [The Qualities of a Good Education](https://rachel.fast.ai/posts/2016-10-08-teaching-philosophy/): common pitfalls in traditional technical education and ideas towards doing better
+- [What You Need to Know Before Considering a PhD](https://rachel.fast.ai/posts/2018-08-27-considering-phd/): includes a reflection on how my own success in traditional academic environments was actually a weakness, because I'd learned how to solve problems I was given, but not how to how to find and scope interesting problems on my own

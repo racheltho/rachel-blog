@@ -1,0 +1,93 @@
+---
+title: "A Decade of Writing Stuff That People, To My Surprise, Actually Read"
+date: "2025-11-18"
+image: "/posts/2025-11-18-ten-years/collage2.jpg"
+description: "Challenging conventional wisdom, debunking AI hype, and democratizing machine learning"
+author: "Rachel Thomas"
+categories: [machine learning, advice]
+toc: true
+---
+
+As a former mathematician, I was used to nobody reading what I wrote. So when I first began blogging in 2015, I never expected that several of my blog posts would go viral or to have multiple journalists contact me (including from NPR, Wired, and Fortune), make the front page of Hacker News (over 10 times), receive conference keynote invitations, and be interviewed on podcasts.
+
+I do not consider myself a "natural" writer. In college, I tried to avoid classes that required essays, because writing was a struggle for me. It wasn't until I was 30 that I set out to practice writing more. I share [tips I use for blogging here](https://rachel.fast.ai/posts/2019-05-13-blogging-advice/index.html), which include being willing to put **a lot of time** into a single post, incorporating high quality information, and having a clear idea of my intended audience.
+
+I have selected some of my most popular and impactful posts below. Several of these were originally posted on [Medium](https://medium.com/@racheltho) or [fast.ai](https://www.fast.ai/) (the two sites where my writing used to live). They are grouped into clusters based on theme.  I hope you might enjoy reading these if you haven't seen them before!
+
+##  Challenging Conventional Wisdom
+
+Questioning widely-held assumptions about tech culture, education, and health has been the basis for several popular posts.
+
+#### [If you think women in tech is just a pipeline problem, you haven’t been paying attention](https://rachel.fast.ai/posts/2015-07-27-not-pipeline/) (2015) 
+
+In 2015, I felt burnt out and disillusioned by my experiences working in tech. I was frustrated with how much the popular conversation was still focused on "the pipeline problem": training young girls to code while ignoring all the adult women being driven out of the tech industry by mistreatment. I spent 9 months researching and writing this post. It went viral and remains my most popular essay. This, together with my other posts, led to me being interviewed and quoted in Wired [several](https://web.archive.org/web/20170331174059/https://www.wired.com/2017/03/hey-tech-giants-action-diversity-not-just-reports/) [times](https://web.archive.org/web/20170725111700/https://www.wired.com/story/ap-computer-science-2017/) regarding [diversity in tech](https://web.archive.org/web/20250727061412/https://www.wired.com/story/artificial-intelligence-researchers-gender-imbalance/) (as well as [other](https://web.archive.org/web/20251001035853/https://www.wired.com/story/the-apple-card-didnt-see-genderand-thats-the-problem/) [AI topics](https://web.archive.org/web/20250717150737/https://www.wired.com/story/ai-and-enormous-data-could-make-tech-giants-harder-to-topple/)).
+
+![My first post](pipeline-long.jpg){width=100%}
+
+#### [Trends to Avoid When Founding a Startup](http://www.fast.ai/2018/01/08/startups/) (2018)
+
+The dominant narrative for Bay Area tech startups is to try to raise venture capital, achieve exponential hypergrowth, and hire lots of computer science PhDs.  I argued that these approaches not only harm employees, but lead to weaker companies and worse products.
+
+#### [My family’s unlikely homeschooling journey](https://rachel.fast.ai/posts/2022-09-06-homeschooling/) (2022)
+
+Many people hold a stereotyped and outdated view of homeschooling, not realizing the explosion of innovative, non-traditional education options available in recent years.  My husband and I never planned to homeschool, but we unexpectedly found that our child thrives with this approach.
+
+#### [Your Immune System is Not a Muscle](https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/) (2024)
+The misleadingly named “Hygiene Hypothesis” is often used to justify the misconception that all microbes are good for us. However, this theory is more accurately reframed as the “Old friends hypothesis”: humans co-evolved with friendly bacteria and some parasites. We did not co-evolve with the crowd infections of mega-cities and 100,000 global flights per day.
+
+## AI Beyond Elite Institutions
+
+Machine learning isn't just for those at billion dollar companies. These posts highlight unconventional practitioners and offer practical guidance for people in varied domains.
+
+#### [Deep Learning: Not Just for Silicon Valley](https://rachel.fast.ai/posts/2017-02-27-not-just-silicon-valley/index.html) (2017)
+
+Our goal at fast.ai is making AI accessible to people outside of elite institutions, who are tackling meaningful problems in low-resource areas.  This post introduced some of our earliest international fellows and the diverse range of problems they were working on.  I always enjoyed writing about fascinating use cases from our deep learning community.
+
+#### [How (and why) to create a good validation set](https://rachel.fast.ai/posts/2017-11-13-validation-sets/) (2017) 
+
+An all-too-common scenario: a seemingly impressive machine learning model is a complete failure when implemented in production. Advice on one common culprit of this, and how to avoid it.  In the early years of fast.ai, I wrote numerous posts with practical advice for machine learning.
+
+![This article asked the question, "Can A.I. conquer its Excel problem?](fortune2.jpg){width=60%}
+
+#### [An Introduction to Deep Learning for Tabular Data](https://rachel.fast.ai/posts/2018-04-29-categorical-embeddings/) (2018)
+Deep learning is not just for images and text.  Companies such as Pinterest and Instacart are also applying it to tabular data, the type of data you might normally put in a spreadsheet.  This post caught the attention of a reporter with Fortune, who ended up interviewing me and [writing about the topic here](https://archive.is/uoDHp).
+
+## Debunking AI Hype & Holding Tech Accountable
+The narratives about AI put forth by major tech companies are often misleading about what is necessary, what values matter, and what types of harms can result. 
+
+#### [Google's AutoML: Cutting Through the Hype](https://rachel.fast.ai/posts/2018-07-23-automl3/) (2018) 
+
+In a 3-part series, I countered claims that all data scientists need customized, bespoke neural network architectures. While I was nervous about disagreeing with both Google's CEO and head of AI, my posts led to an [invitation to keynote](https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml) the prestigous ICML AutoML workshop. Seven years later, my critiques have been proved valid, with transfer learning a cornerstone of ML and automated neural network search not commonly used.
+
+![By 2023, we were supposed to all be using AutoML neural architecture search](sundar_pichai.jpg){width=60%}
+
+#### [Five Things That Scare Me About AI](https://rachel.fast.ai/posts/2019-01-29-five-scary-things/) (2019)
+
+AI ethics is not just a theoretical topic. I was (and still am) alarmed about the harms already being caused to human beings by AI systems irresponsibly applied to healthcare, employment decisions, policing, and more.
+
+#### [The Problem with Metrics is a Big Problem for AI](https://rachel.fast.ai/posts/2019-09-24-metrics/) (2019)
+
+Overemphasizing metrics leads to a variety of real-world harms, including manipulation, gaming, and a myopic focus on the short-term. AI is metric optimization on steroids. I later turned this blog post into an [academic paper](https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3), together with David Uminsky.
+
+![Two disturbing case studies I keep returning to are how computerized algorithms have been used to cut healthcare and to fire teachers](no-accountability.jpg){width=65%}
+
+#### [Deep learning gets the glory, deep fact checking gets ignored](https://rachel.fast.ai/posts/2025-06-04-enzyme-ml-fails/) (2025)
+A microbiologist discovered hundreds of errors in a paper that used AI to classify enzymes.  This is a case study of how challenging it can be to evaluate AI claims outside our area of expertise, as well as of the misaligned incentives that reward flashy results, but not diligent fact-checking.  This has been by far my most popular [post on LinkedIn](https://www.linkedin.com/posts/rachel-thomas-942a7923_deep-learning-is-glamorous-and-highly-rewarded-activity-7335778935252611073-mndy).
+
+## Immunology & Science
+
+#### [Decoding T cells with AI](https://rachel.fast.ai/posts/2024-07-09-t-cells/) (2024)
+T cells are a crucial component of the adaptive immune system.  Accurately pedicting what they can bind to would impact a range of treatments. Numerous algorithms have been developed for this question, but the problem is far from solved.
+
+![The surface of a T cell.  I've enjoyed exploring how AI is being applied to immunology](tcell-niaid-fingernail.jpg){width=50%}
+
+#### [Scientists Just Connected the Dots Between Viruses and… Everything](https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/) (2025)
+For a long time, catching frequent viruses was considered both inevitable and harmless. But it turns out that common, seemingly-mild viruses have disturbing long-term health impacts. 
+
+[![A thread about viruses](virus-tweet2.jpg){width=65%}](https://x.com/math_rachel/status/1975660202952417518)
+
+Thanks for joining me on this walk through the past!  Also, you can subscribe to be notified of new blog posts by submitting your email below:
+
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&zx=11a17553b1&tD=156971d471c7b09&sD=156971d471c7cb3"></iframe>
+

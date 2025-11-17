@@ -7,14 +7,14 @@ project:
 website:
   title: "Rachel Thomas, PhD"
   site-url: https://rachel.fast.ai
-  description: "an AI researcher going back to school for immunology"
+  description: "AI, science, education, & ethics"
   image: "/images/thomas-card.jpg"
   open-graph:
-    description: "an AI researcher going back to school for immunology"
+    description: "AI, science, education, & ethics"
   twitter-card:
     creator: "@math_rachel"
     site: "@math_rachel"
-    description: "an AI researcher going back to school for immunology"
+    description: "AI, science, education, & ethics"
   margin-header: subscribe.html
   body-footer: "<br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i>"
   comments:
