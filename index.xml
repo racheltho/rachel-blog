@@ -15,7 +15,136 @@
 <link>https://rachel.fast.ai/index.html</link>
 </image>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Mon, 06 Oct 2025 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 17 Nov 2025 14:00:00 GMT</lastBuildDate>
+<item>
+  <title>A Decade of Writing Stuff That People, To My Surprise, Actually Read</title>
+  <dc:creator>Rachel Thomas</dc:creator>
+  <link>https://rachel.fast.ai/posts/2025-11-18-ten-years/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>As a former mathematician, I was used to nobody reading what I wrote. So when I first began blogging in 2015, I never expected that several of my blog posts would go viral or to have multiple journalists contact me (including from NPR, Wired, and Fortune), make the front page of Hacker News (over 10 times), receive conference keynote invitations, and be interviewed on podcasts.</p>
+<p>I do not consider myself a “natural” writer. In college, I tried to avoid classes that required essays, because writing was a struggle for me. It wasn’t until I was 30 that I set out to practice writing more. I share <a href="https://rachel.fast.ai/posts/2019-05-13-blogging-advice/index.html">tips I use for blogging here</a>, which include being willing to put <strong>a lot of time</strong> into a single post, incorporating high quality information, and having a clear idea of my intended audience.</p>
+<p>I have selected some of my most popular and impactful posts below. Several of these were originally posted on <a href="https://medium.com/@racheltho">Medium</a> or <a href="https://www.fast.ai/">fast.ai</a> (the two sites where my writing used to live). They are grouped into clusters based on theme. I hope you might enjoy reading these if you haven’t seen them before!</p>
+<section id="challenging-conventional-wisdom" class="level2">
+<h2 class="anchored" data-anchor-id="challenging-conventional-wisdom">Challenging Conventional Wisdom</h2>
+<p>Questioning widely-held assumptions about tech culture, education, and health has been the basis for several popular posts.</p>
+<section id="if-you-think-women-in-tech-is-just-a-pipeline-problem-you-havent-been-paying-attention-2015" class="level4">
+<h4 class="anchored" data-anchor-id="if-you-think-women-in-tech-is-just-a-pipeline-problem-you-havent-been-paying-attention-2015"><a href="https://rachel.fast.ai/posts/2015-07-27-not-pipeline/">If you think women in tech is just a pipeline problem, you haven’t been paying attention</a> (2015)</h4>
+<p>In 2015, I felt burnt out and disillusioned by my experiences working in tech. I was frustrated with how much the popular conversation was still focused on “the pipeline problem”: training young girls to code while ignoring all the adult women being driven out of the tech industry by mistreatment. I spent 9 months researching and writing this post. It went viral and remains my most popular essay. This, together with my other posts, led to me being interviewed and quoted in Wired <a href="https://web.archive.org/web/20170331174059/https://www.wired.com/2017/03/hey-tech-giants-action-diversity-not-just-reports/">several</a> <a href="https://web.archive.org/web/20170725111700/https://www.wired.com/story/ap-computer-science-2017/">times</a> regarding <a href="https://web.archive.org/web/20250727061412/https://www.wired.com/story/artificial-intelligence-researchers-gender-imbalance/">diversity in tech</a> (as well as <a href="https://web.archive.org/web/20251001035853/https://www.wired.com/story/the-apple-card-didnt-see-genderand-thats-the-problem/">other</a> <a href="https://web.archive.org/web/20250717150737/https://www.wired.com/story/ai-and-enormous-data-could-make-tech-giants-harder-to-topple/">AI topics</a>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-11-18-ten-years/pipeline-long.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">My first post</figcaption>
+</figure>
+</div>
+</section>
+<section id="trends-to-avoid-when-founding-a-startup-2018" class="level4">
+<h4 class="anchored" data-anchor-id="trends-to-avoid-when-founding-a-startup-2018"><a href="http://www.fast.ai/2018/01/08/startups/">Trends to Avoid When Founding a Startup</a> (2018)</h4>
+<p>The dominant narrative for Bay Area tech startups is to try to raise venture capital, achieve exponential hypergrowth, and hire lots of computer science PhDs. I argued that these approaches not only harm employees, but lead to weaker companies and worse products.</p>
+</section>
+<section id="my-familys-unlikely-homeschooling-journey-2022" class="level4">
+<h4 class="anchored" data-anchor-id="my-familys-unlikely-homeschooling-journey-2022"><a href="https://rachel.fast.ai/posts/2022-09-06-homeschooling/">My family’s unlikely homeschooling journey</a> (2022)</h4>
+<p>Many people hold a stereotyped and outdated view of homeschooling, not realizing the explosion of innovative, non-traditional education options available in recent years. My husband and I never planned to homeschool, but we unexpectedly found that our child thrives with this approach.</p>
+</section>
+<section id="your-immune-system-is-not-a-muscle-2024" class="level4">
+<h4 class="anchored" data-anchor-id="your-immune-system-is-not-a-muscle-2024"><a href="https://rachel.fast.ai/posts/2024-08-13-crowds-vs-friends/">Your Immune System is Not a Muscle</a> (2024)</h4>
+<p>The misleadingly named “Hygiene Hypothesis” is often used to justify the misconception that all microbes are good for us. However, this theory is more accurately reframed as the “Old friends hypothesis”: humans co-evolved with friendly bacteria and some parasites. We did not co-evolve with the crowd infections of mega-cities and 100,000 global flights per day.</p>
+</section>
+</section>
+<section id="ai-beyond-elite-institutions" class="level2">
+<h2 class="anchored" data-anchor-id="ai-beyond-elite-institutions">AI Beyond Elite Institutions</h2>
+<p>Machine learning isn’t just for those at billion dollar companies. These posts highlight unconventional practitioners and offer practical guidance for people in varied domains.</p>
+<section id="deep-learning-not-just-for-silicon-valley-2017" class="level4">
+<h4 class="anchored" data-anchor-id="deep-learning-not-just-for-silicon-valley-2017"><a href="https://rachel.fast.ai/posts/2017-02-27-not-just-silicon-valley/index.html">Deep Learning: Not Just for Silicon Valley</a> (2017)</h4>
+<p>Our goal at fast.ai is making AI accessible to people outside of elite institutions, who are tackling meaningful problems in low-resource areas. This post introduced some of our earliest international fellows and the diverse range of problems they were working on. I always enjoyed writing about fascinating use cases from our deep learning community.</p>
+</section>
+<section id="how-and-why-to-create-a-good-validation-set-2017" class="level4">
+<h4 class="anchored" data-anchor-id="how-and-why-to-create-a-good-validation-set-2017"><a href="https://rachel.fast.ai/posts/2017-11-13-validation-sets/">How (and why) to create a good validation set</a> (2017)</h4>
+<p>An all-too-common scenario: a seemingly impressive machine learning model is a complete failure when implemented in production. Advice on one common culprit of this, and how to avoid it. In the early years of fast.ai, I wrote numerous posts with practical advice for machine learning.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-11-18-ten-years/fortune2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">This article asked the question, “Can A.I. conquer its Excel problem?</figcaption>
+</figure>
+</div>
+</section>
+<section id="an-introduction-to-deep-learning-for-tabular-data-2018" class="level4">
+<h4 class="anchored" data-anchor-id="an-introduction-to-deep-learning-for-tabular-data-2018"><a href="https://rachel.fast.ai/posts/2018-04-29-categorical-embeddings/">An Introduction to Deep Learning for Tabular Data</a> (2018)</h4>
+<p>Deep learning is not just for images and text. Companies such as Pinterest and Instacart are also applying it to tabular data, the type of data you might normally put in a spreadsheet. This post caught the attention of a reporter with Fortune, who ended up interviewing me and <a href="https://archive.is/uoDHp">writing about the topic here</a>.</p>
+</section>
+</section>
+<section id="debunking-ai-hype-holding-tech-accountable" class="level2">
+<h2 class="anchored" data-anchor-id="debunking-ai-hype-holding-tech-accountable">Debunking AI Hype &amp; Holding Tech Accountable</h2>
+<p>The narratives about AI put forth by major tech companies are often misleading about what is necessary, what values matter, and what types of harms can result.</p>
+<section id="googles-automl-cutting-through-the-hype-2018" class="level4">
+<h4 class="anchored" data-anchor-id="googles-automl-cutting-through-the-hype-2018"><a href="https://rachel.fast.ai/posts/2018-07-23-automl3/">Google’s AutoML: Cutting Through the Hype</a> (2018)</h4>
+<p>In a 3-part series, I countered claims that all data scientists need customized, bespoke neural network architectures. While I was nervous about disagreeing with both Google’s CEO and head of AI, my posts led to an <a href="https://slideslive.com/38917533/lessons-learned-from-helping-200000-nonml-experts-use-ml">invitation to keynote</a> the prestigous ICML AutoML workshop. Seven years later, my critiques have been proved valid, with transfer learning a cornerstone of ML and automated neural network search not commonly used.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-11-18-ten-years/sundar_pichai.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">By 2023, we were supposed to all be using AutoML neural architecture search</figcaption>
+</figure>
+</div>
+</section>
+<section id="five-things-that-scare-me-about-ai-2019" class="level4">
+<h4 class="anchored" data-anchor-id="five-things-that-scare-me-about-ai-2019"><a href="https://rachel.fast.ai/posts/2019-01-29-five-scary-things/">Five Things That Scare Me About AI</a> (2019)</h4>
+<p>AI ethics is not just a theoretical topic. I was (and still am) alarmed about the harms already being caused to human beings by AI systems irresponsibly applied to healthcare, employment decisions, policing, and more.</p>
+</section>
+<section id="the-problem-with-metrics-is-a-big-problem-for-ai-2019" class="level4">
+<h4 class="anchored" data-anchor-id="the-problem-with-metrics-is-a-big-problem-for-ai-2019"><a href="https://rachel.fast.ai/posts/2019-09-24-metrics/">The Problem with Metrics is a Big Problem for AI</a> (2019)</h4>
+<p>Overemphasizing metrics leads to a variety of real-world harms, including manipulation, gaming, and a myopic focus on the short-term. AI is metric optimization on steroids. I later turned this blog post into an <a href="https://www.cell.com/patterns/fulltext/S2666-3899(22)00056-3">academic paper</a>, together with David Uminsky.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-11-18-ten-years/no-accountability.jpg" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption class="figure-caption">Two disturbing case studies I keep returning to are how computerized algorithms have been used to cut healthcare and to fire teachers</figcaption>
+</figure>
+</div>
+</section>
+<section id="deep-learning-gets-the-glory-deep-fact-checking-gets-ignored-2025" class="level4">
+<h4 class="anchored" data-anchor-id="deep-learning-gets-the-glory-deep-fact-checking-gets-ignored-2025"><a href="https://rachel.fast.ai/posts/2025-06-04-enzyme-ml-fails/">Deep learning gets the glory, deep fact checking gets ignored</a> (2025)</h4>
+<p>A microbiologist discovered hundreds of errors in a paper that used AI to classify enzymes. This is a case study of how challenging it can be to evaluate AI claims outside our area of expertise, as well as of the misaligned incentives that reward flashy results, but not diligent fact-checking. This has been by far my most popular <a href="https://www.linkedin.com/posts/rachel-thomas-942a7923_deep-learning-is-glamorous-and-highly-rewarded-activity-7335778935252611073-mndy">post on LinkedIn</a>.</p>
+</section>
+</section>
+<section id="immunology-science" class="level2">
+<h2 class="anchored" data-anchor-id="immunology-science">Immunology &amp; Science</h2>
+<section id="decoding-t-cells-with-ai-2024" class="level4">
+<h4 class="anchored" data-anchor-id="decoding-t-cells-with-ai-2024"><a href="https://rachel.fast.ai/posts/2024-07-09-t-cells/">Decoding T cells with AI</a> (2024)</h4>
+<p>T cells are a crucial component of the adaptive immune system. Accurately pedicting what they can bind to would impact a range of treatments. Numerous algorithms have been developed for this question, but the problem is far from solved.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://rachel.fast.ai/posts/2025-11-18-ten-years/tcell-niaid-fingernail.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">The surface of a T cell. I’ve enjoyed exploring how AI is being applied to immunology</figcaption>
+</figure>
+</div>
+</section>
+<section id="scientists-just-connected-the-dots-between-viruses-and-everything-2025" class="level4">
+<h4 class="anchored" data-anchor-id="scientists-just-connected-the-dots-between-viruses-and-everything-2025"><a href="https://rachel.fast.ai/posts/2025-10-07-rethinking-viruses/">Scientists Just Connected the Dots Between Viruses and… Everything</a> (2025)</h4>
+<p>For a long time, catching frequent viruses was considered both inevitable and harmless. But it turns out that common, seemingly-mild viruses have disturbing long-term health impacts.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://x.com/math_rachel/status/1975660202952417518"><img src="https://rachel.fast.ai/posts/2025-11-18-ten-years/virus-tweet2.jpg" class="img-fluid figure-img" style="width:65.0%"></a></p>
+<figcaption class="figure-caption">A thread about viruses</figcaption>
+</figure>
+</div>
+<p>Thanks for joining me on this walk through the past! Also, you can subscribe to be notified of new blog posts by submitting your email below:</p>
+<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
+<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
+</iframe>
+
+
+</section>
+</section>
+
+<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
+  <category>machine learning</category>
+  <category>advice</category>
+  <guid>https://rachel.fast.ai/posts/2025-11-18-ten-years/index.html</guid>
+  <pubDate>Mon, 17 Nov 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://rachel.fast.ai/posts/2025-11-18-ten-years/collage2.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Scientists Just Connected the Dots Between Viruses and… Everything</title>
   <dc:creator>Rachel Thomas</dc:creator>
@@ -1881,81 +2010,6 @@
   <guid>https://rachel.fast.ai/posts/2024-02-06-cytokines2/index.html</guid>
   <pubDate>Mon, 05 Feb 2024 14:00:00 GMT</pubDate>
   <media:content url="https://rachel.fast.ai/posts/2024-02-06-cytokines2/rieckmann-network.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Applying AI to Immune Cell Networks</title>
-  <dc:creator>Rachel Thomas</dc:creator>
-  <link>https://rachel.fast.ai/posts/2024-01-23-cytokines1/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="the-value-of-domain-expertise" class="level2">
-<h2 class="anchored" data-anchor-id="the-value-of-domain-expertise">The value of domain expertise</h2>
-<p>Back in 2016, Jeremy Howard and I founded the research lab <a href="https://www.fast.ai/posts/2016-10-07-fastai-launch.html">fast.ai</a>. At the time, deep learning (the technique behind recent advances in AI) was the purview of a small and homogeneous handful of practitioners. The standard approach was to have computer science PhDs tackle problems in domains they had little familiarity with.</p>
-<p>Jeremy and I proposed an ambitious idea–we wanted to teach people from all domains and backgrounds to be able to use deep learning. We weren’t even sure if our goal was possible. However, <a href="https://course.fast.ai/">our online course</a> became one of the most popular deep learning courses in the world, and members of the fast.ai community went on to join top research labs and major tech companies, <a href="https://www.theverge.com/2018/5/7/17316010/fast-ai-speed-test-stanford-dawnbench-google-intel">win competitions against Google</a>, and launch their own startups.</p>
-<p>A core part of our mission was the belief that the people closest to a topic best understand the problems in that area and are best equipped to address them. I’m now one of those people in another domain, as I have <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">immersed myself in the field of immunology</a>. I am particularly interested in studying the intersection of immunology and AI. In this 2-part series, I will share some exciting research at this intersection.</p>
-</section>
-<section id="a-most-complicated-system" class="level2">
-<h2 class="anchored" data-anchor-id="a-most-complicated-system">A Most Complicated System</h2>
-<p>The immune system is even “more complicated than the human genome,” <a href="https://www.freethink.com/health/human-immunome">says John Tsang</a>, a professor at Yale School of Medicine. One component of this complexity is the complicated network by which immune cells communicate with one another via protein messengers known as <em>cytokines</em>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2024-01-23-cytokines1/biolegend.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Poster of immune cell interactions from <a href="https://www.biolegend.com/en-ie/immunologic-networks-2011">https://www.biolegend.com/en-ie/immunologic-networks-2011</a></figcaption>
-</figure>
-</div>
-<p>Immune cell communication through cytokines is a key area for us to better understand medicine and disease. Various immune cell types must communicate to coordinate their response to threats. However, the immune system may end up over-reacting, under-reacting, or having a misplaced reaction, all of which can cause disease. Sepsis occurs when the immune system responds too vigorously, damaging our own organs. In cancer, the immune system may under-respond, failing to attack cancerous cells that it should. Several types of cancer therapies involve trying to activate or reactivate our own immune cells. In other cases, the immune system mistakenly attacks our own tissue, causing autoimmune diseases including Type 1 diabetes, rheumatoid arthritis, multiple sclerosis, and psoriasis.</p>
-<p>Recent research, drawing on a blend of immunology, mathematics, and natural language processing (NLP) AI, is helping us better understand immune cell-cytokine networks. I have a PhD in math, taught a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">masters course in NLP</a>, and <a href="https://rachel.fast.ai/posts/2023-02-07-school-immunology/">now study immunology</a>, so I have a particular interest in this work. Understanding how the immune system is communicating and coordinating is necessary for knowing why and how the immune response can go awry.</p>
-</section>
-<section id="how-immune-cells-communicate" class="level2">
-<h2 class="anchored" data-anchor-id="how-immune-cells-communicate">How Immune Cells Communicate</h2>
-<p>There are dozens of types of immune cells. The main way that immune cells communicate and coordinate with each other is by sending small protein messengers known as cytokines. There are hundreds of types of cytokines. A single cytokine can have different effects on different cell types. The impact of a cytokine depends on the type of cell sending it, the type of cell receiving it, and the state of the cell. This makes interpreting immune responses challenging!</p>
-<p>Cytokine-based therapies are used to treat some diseases, including cancer and autoimmune disorders. The interactions between cells and cytokines form complex networks, which are not fully mapped.</p>
-<p><em>Note: You may have heard the term “cytokine storm” in <a href="https://www.nytimes.com/2020/04/01/health/coronavirus-cytokine-storm-immune-system.html">the news</a> during early coverage of covid (other diseases and some medical treatments can lead to cytokine storms as well). A cytokine storm occurs when the immune system reacts too vigorously, sending tons of messages and ramping up its inflammatory response to a level that is dangerous to the patient. The double-edged nature of the immune system is part of what piqued my interest about the topic.</em></p>
-</section>
-<section id="nlp-for-cell-cytokine-interactions" class="level2">
-<h2 class="anchored" data-anchor-id="nlp-for-cell-cytokine-interactions">NLP for Cell-Cytokine Interactions</h2>
-<p>Language models such as ChatGPT are part of the active field Natural Language Processing (NLP). NLP applies data science and machine learning to collections of text documents. At fast.ai, Jeremy Howard, Sylvain Gugger, and I developed a <a href="https://www.fast.ai/posts/2019-07-08-fastai-nlp.html">course on NLP in 2019</a>, teaching cutting edge techniques like transformers, which are now used in ChatGPT and other popular models.</p>
-<p>One paper in immunology is published every 30 minutes! That is a lot of immunology papers, and NLP techniques can be used to help synthesize this huge quantity of information. While models like ChatGPT are trained using a huge variety of texts scraped from the internet, immune-focused work may focus on a more specific group of documents, such as PubMed abstracts. <a href="https://www.nature.com/articles/nbt.4152">A computer program called ImmuneXpresso</a> was developed to text-mine the 16 million abstracts available on PubMed and create triples containing a cell type, cytokine, and whether the relationship was in-coming or out-going (i.e.&nbsp;if the cell was sending or receiving the cytokine).</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2024-01-23-cytokines1/immunexpresso.jpg" class="img-fluid figure-img" style="width:75.0%"></p>
-<figcaption class="figure-caption">Information flow of families of cytokines between families of cells (Figure 2A from ImmuneXpresso)</figcaption>
-</figure>
-</div>
-<p>The above figure from the <a href="https://www.nature.com/articles/nbt.4152">ImmuneXpresso paper</a> shows some of the information flow. Each family of cytokines shown contains multiple cytokines, and each family of cells contains multiple sub-types. The researchers relied on sentence syntax to parse these relationships, and captured associations with 188 diseases. A machine learning classifier was used to predict whether the data captured were related to cell-cytokine relationships. Over 4,000 directional cell–cytokine interactions were documented via this process. The authors experimentally tested two interactions that were predicted, but are not well-established in the literature, and validated that they hold true.</p>
-</section>
-<section id="a-famous-data-scientist-turns-to-immunology" class="level2">
-<h2 class="anchored" data-anchor-id="a-famous-data-scientist-turns-to-immunology">A famous data scientist turns to immunology</h2>
-<p>Jeff Hammerbacher created and led the data team at Facebook in 2006-2008 and was a founder of the successful cloud computing company Cloudera. A decade ago he made a similar pivot to the one I am currently attempting, starting <a href="https://www.hammerlab.org/">his own immunology lab</a> at Mt. Sinai and later the Medical University of South Carolina. He has applied machine learning to a variety of immunology problems, including <a href="https://pubmed.ncbi.nlm.nih.gov/26856372/">predicting surgery outcomes</a>, <a href="https://www.frontiersin.org/articles/10.3389/fimmu.2017.01807/full">designing cancer vaccines</a>, and starting a <a href="https://www.related.vc/">data science focused drug-discovery firm</a>.</p>
-<p>Hammerbacher, together with Ed Czech, tackled the problem of <a href="https://www.biorxiv.org/content/10.1101/643767v2">using NLP to extract cell type-cytokine relationships</a>. To give an example of the type of problems that must be addressed in NLP, “<em>Th1 (CD4+IL-17-IFN-γhi) cells</em>” is referring to the same cell type as “<em>helper CD4+IL-17-IFN-γhi type 1 cells</em>.” Expert knowledge must be encoded in how to properly parse and categorize cells, knowing when two different strings refer to the same cell type and when they are different.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://rachel.fast.ai/posts/2024-01-23-cytokines1/t-cells.jpg" class="img-fluid figure-img" style="width:85.0%"></p>
-<figcaption class="figure-caption">A few different T-cells communicating. Source: biolegend.com</figcaption>
-</figure>
-</div>
-<p>They compared two different deep learning models. In one case, they used a generative model with weak supervision, which allowed for them to begin with a smaller labeled dataset to generate labels for previously unlabeled data. In the other case, they used a language model (SciBERT) which had been pre-trained on scientific texts, and then they fine-tuned it for the specific PubMed immunology articles they were using. This is an example of <strong>transfer learning</strong>, a technique in which a machine learning model trained on a large dataset can be customized for use on a much smaller dataset. Transfer learning has been a central part of the fast.ai approach from the start, and was a key technique I featured in my <a href="https://www.youtube.com/watch?v=frc7FgheUj4&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=11">keynotes at JupyterCon 2017</a> and <a href="https://www.youtube.com/watch?v=KChtdexd5Jo&amp;list=PLtmWHNX-gukLQlMvtRJ19s7-8MrnRV6h6&amp;index=6">SciPy 2019</a>.</p>
-<p>As part of Czech and Hammerbacher’s research, they created a database of T-cell specific cytokines and transcription factors, including relationships between 75 cell types, 262 cytokines, and 382 transcription factors. Their work was distinctive for having a tiny team (just 2 people, compared to 16 authors and 11 annotators for ImmuneXpresso), using 53k full-text documents (rather than solely abstracts), and focusing more narrowly on T-cells (as opposed to all immune cells). Techniques such as transfer learning are powerful in that they allow small teams of researchers to leverage previous models via fine-tuning. In addition to <a href="https://www.biorxiv.org/content/10.1101/643767v2">the paper</a>, Hammerbacher shared about this work in a <a href="https://www.youtube.com/watch?v=pvj9tIdvOXQ">talk he gave at the Allen Institute for AI</a>.</p>
-</section>
-<section id="stay-tuned" class="level2">
-<h2 class="anchored" data-anchor-id="stay-tuned">Stay Tuned</h2>
-<p>Stay tuned for part 2 of this series, which will cover more fascinating research about how immune cells communicate. You can subscribe to be notified of new blog posts by submitting your email below:</p>
-<script type="text/javascript" src="https://campaigns.zoho.com.au/js/zc.iframe.js"></script>
-<iframe scrolling="no" frameborder="0" id="iframewin" width="100%" height="100%" src="https://zcmp-pd.maillist-manage.com.au/ua/Optin?od=11d0c075b7ed49&amp;zx=11a17553b1&amp;tD=156971d471c7b09&amp;sD=156971d471c7cb3">
-</iframe>
-
-
-</section>
-
-<p><br><br><i>I look forward to reading your responses. Create a free GitHub account to comment below.</i></p> ]]></description>
-  <category>machine learning</category>
-  <category>science</category>
-  <guid>https://rachel.fast.ai/posts/2024-01-23-cytokines1/index.html</guid>
-  <pubDate>Mon, 22 Jan 2024 14:00:00 GMT</pubDate>
-  <media:content url="https://rachel.fast.ai/posts/2024-01-23-cytokines1/biolegend-zoom.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
